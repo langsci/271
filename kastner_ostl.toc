@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}The trivalency of Voice}{1}{chapter.1}
+\contentsline {part}{I\hspace {1em}Hebrew}{2}{part.1}
+\contentsline {chapter}{\numberline {2}Underspecified Voice}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}\text {Voice$_{\text {[--D]}}$}}{4}{chapter.3}
+\contentsline {chapter}{\numberline {4}\text {Voice$_{\text {[+D]}}$}}{5}{chapter.4}
+\contentsline {chapter}{\numberline {5}Passives and nominalizations}{6}{chapter.5}
+\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{7}{part.2}
+\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{8}{chapter.6}
+\contentsline {chapter}{\numberline {7}The features of Voice}{9}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{10}{chapter.8}
