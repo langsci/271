@@ -1,0 +1,186 @@
+\section{Overview}
+
+
+
+\section{Voice}
+
+In the ``simple'' template \tkal~there are no restrictions on argument structure alternations; the root is free to require any interpretation from v and Voice (save for reflexive and reciprocal which have been argued to be syntactically complex).\\
+    \begin{minipage}[t]{0.5\textwidth}
+    \pex
+        \a Unaccusative:\\ \emph{nafal} `fell', \emph{kara} `happened', \emph{halax} `vanished'.
+        \a Unergative:\\ \emph{rakad} `danced', \emph{kafats} `jumped', \emph{halax} `walked'.
+        \a Figure reflexive:\\ \emph{ala al-} `climbed', \emph{xana be-} `parked'.
+        \a Transitive:\\ \emph{axal} `ate', \emph{ʃata} `drank', \emph{haras} `destroyed', \emph{tafas} `caught'.
+        \a Ditransitive:\\ \emph{natan} `gave', \emph{lakax} `took'.
+    \xe
+\end{minipage}
+\begin{minipage}[t]{0.05\textwidth}
+    \phantom{asdfasdf}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+    \ex
+%        \scalebox{1}{
+%        \begin{forest} qtree
+%        [VoiceP
+%            [DP ]
+%            [
+%                [Voice ]
+%                [vP
+%                    [v
+%                        [v ]
+%                        [\root{\gsc{ROOT}} ]
+%                    ]
+%                    [(DP/\emph{p}P) ]
+%                ]
+%            ]
+%        ]
+%        \end{forest}
+%        }
+    \xe
+\end{minipage}
+
+The underspecification of this template---and of the underlying structure---can be likened to the lack of morphological marking on forms such as \emph{break} in English. These forms participate in the causative alternation (\emph{John broke the vase} $\sim$ \emph{The vase broke}.) Assuming that there is no special syntactic head deriving one form from the other, the analysis can make reference to different allosemes of Voice: causative when adjacent to an external argument, an identity function if not.
+\pex
+	\a \denote{Voice} = $\lambda$x$\lambda$e.Agent(x,e) / DP \trace~\root{\gsc{break}}
+	\a \denote{Voice} = $\lambda$P.P / \trace~\root{\gsc{BREAK}}
+\xe
+
+While this template is underspecified in the syntax and semantics, the lack of overt heads constraining the structure means that it can be marked in the phonology. {The intuition is that if there are no overt affixes, the root will have free reign in the phonology.} For example, verbal stems are normally longer than one syllable except for some roots in \tkal:
+\ex \emph{ba} `came', \emph{ʃav} `returned', \emph{tsats} `appeared'.
+\xe
+The phonological markedness of this template has been discussed in contemporary work by \cite{ussishkin00phd,ussishkin05} and \cite{laks11}. I will not have much to add on this point here, but it is consistent with the theory developed in Chapter 3.
+
+\cite{borer13oup,borer15roots} takes \tkal~to be a verbalized root, without functional material attaching to it. The two main reasons for this are the wide range of nominalizations possible in this template (see \S\ref{syn:templates:nmlz}) and the idiosyncratic phonology. We will revisit this point in {\S\ref{sec:others-same:borer}} after discussing the phonology in more depth. For now, suffice it to say that because of the way \citeauthor{borer13oup}'s system is constructed, our account and hers are compatible: both allow for \tkal~to be as idiosyncratic as it needs to be.
+
+
+\section{Agentive modification}
+
+For this part of the puzzle I will modify the suggestion made by \cite{doron03} according to which Hebrew has an agentive modifier with predictable spell-out and consistent semantics. The current section formalizes this element as {\va} and draws comparisons with other languages.
+
+In Hebrew the modifier {\va} is attested in {\thit} and in the ``intensive'' template {\tpie}. Consider first the typical difference between verbs in {\tkal} (with unmarked Voice) and {\tpie} (with Voice and \va~\!). In~(\ref{ex:piel1}) both agents and causes are possible with the ``simple'' {\tkal} verb \emph{ʃavru} `broke', but in~(\ref{ex:piel2}) only the agent is available with the ``intensive'' {\tpie} verb \emph{ʃibru} `broke to bits'.
+\pex \citet[20]{doron03}
+	\a \label{ex:piel1}\begingl
+	\gla \{\cmark~ha-jeladim / \cmark~ha-tiltulim ba-argaz \} ʃa\glemph{v}r-u et + \phantom{\{\cmark~}ha-kosot.//
+	\glb \phantom{\{\cmark~}the-children {} \phantom{\cmark~}the-shaking in.the-box {} broke.\gsc{SMPL}-\gsc{PL} \gsc{ACC} \phantom{\{\cmark~}the-glasses//
+	\glft `\{The children / Shaking around in the box\} broke the glasses.'//
+	\endgl
+
+	\a \label{ex:piel2}\begingl
+	\gla \{\cmark~ha-jeladim / \xmark~ha-tiltulim ba-argaz \} ʃi\glemph{b}r-u et + \phantom{\{\cmark~}ha-kosot.//
+	\glb \phantom{\{\cmark~}the-children {} \phantom{\xmark~}the-shaking in.the-box {} broke.\gsc{INTNS}-\gsc{PL} \gsc{ACC} \phantom{\{\cmark~}the-glasses//
+	\glft `\{The children / *Shaking around in the box\} broke the glasses to bits.'//
+	\endgl
+\xe
+
+This element is phonologically overt. I follow \cite{doron03} and \cite{kastner16nllt} in assuming that {\tkal} is derived morphophonologically through the combination of Voice, v and the root, whereas {\tpie} is the result of adding {\va}. The Hebrew consonants /p/, /b/ and /k/ normally spirantize to [f], [v] and [x] following a vowel, but not when {\va} is in the structure. This element has the phonological property that spirantization of the middle root consonant is blocked. In~(\lastx a), the medial /b/ of \root{ʃbr} spirantizes to [v] following a vowel. But in~(\lastx) it remains [b], as discussed elsewhere in the phonological literature \citep{temkinmartinez08wccfl,gouskova12nllt,kastner16nllt}. 
+
+An anonymous reviewer asserts that this morphophonological process has no bearing on the internal structure of these verbs. Two considerations lead me to disagree: whether the spirantization process is productive, and whether the blocking is grammatical. On both counts, the answer is affirmative. \cite{temkinmartinzemuellner16} conducted a nonce word study for Hebrew and found that native speakers normally spirantize the three stops, but do not spirantize them in medial position of {\tpie}, as would be expected. The results were not categorical, however, in line with previous work; \cite{adam02} previously identified patterns of variation in the application of the phonological rule and the morphophonological one. Clearly, then, there is a variable phonological process which is blocked by grammatical means, indicating that these grammatical means should part of the the analysis.
+
+As far as the semantics is concerned, the difference in possible interpretations between~(\lastx a) and~(\lastx b) reduces to whether or not overt {\va} is there to force an agentive reading. \cite{doron03} proposed that this modifier carries the semantics of Action, which is slightly weaker than that of Agent. I believe that {\va} enforces a reading that has appeared in a number of recent works on argument structure. In their study of animacy in English, Italian, Greek and Russian, \cite{folliharley08} considered a range of data in which the acceptability of an external argument depends on whether it is \emph{teleologically capable} of causing the event (as opposed to an agency or animacy restriction). In a study of manner and causation in English, \cite{beaverskoontzgarboden12} used the notion of \emph{actor} and \emph{non-actor} to discuss events in which an animate causer is or is not responsible for the consequences of its act, distinguishing causation from actorhood. In two studies of external arguments in nominalizations, \cite{sichel10n} and \cite{alexiadouetal13} similarly differentiated agentivity from \emph{direct causation}. In a study of reflexives in Greek (which we return to in Section \ref{sec:others-theory:afto}), \cite{spathasetal15} identified the prefix \emph{afto-} as an \emph{anti-assistive} modifier, again performing a similar semantic function. And in Tamil, the suffix -\emph{koɭ} adds affective semantics in a way that is otherwise difficult to pin down immediately \citep{sundaresanmcfadden17}.
+
+To be clear, the crosslinguistic claim is not that {\va} is the sole element responsible for all of these cases. Instead, the pretheoretical picture which emerges from these works is that natural language has a way of making this fine-grained distinction, a distinction we are not yet fully able to explain. Since this phenomenon appears to be semantic in nature (rather than demonstrably syntactic), it is formalized in Hebrew using {\va}. As a root, this element has phonological and semantic content but no syntactic requirements. Not much hinges on whether this element is a root or a functional head in this language; I take the simple view that it has no syntactic influence, and so is root-like. The question of what other such ``underspecified'' roots might exist in natural language remains an open one for further crosslinguistic research.
+
+
+
+I proposed above that the template {\tpie} is derived by use of a special root, \va. There are three points to be made about this element: what does it do, why should it be a root, and what is its crosslinguistic validity.
+
+As mentioned in \S\ref{syn:middle:refl}, \va~introduces agentive or ``self-propelled'' \citep{folliharley08} semantics. Examples~(\ref{ex:piel1})--(\ref{ex:piel2}) are repeated here to show that \tpie~verbs involve agentive entailments. Inanimate causers are possible in~(\nextx a) where the verb is in \tkal~but not in~(\nextx b) where the verb is in \tpie~with \va. That these are the two templates is evidenced by the vocalism in the stem and by the spirantization contrast between [b]$\sim$[v].
+\pex
+	\a \begingl
+		\gla \emph{\{}\cmark~ha-jeladim / \cmark~ha-tiltulim ba-argaz\emph{\}} \textbf{ʃa\underline{v}r}-u et ha-kosot//
+		\glb \phantom{\{\cmark~}the-children {} \phantom{\cmark~}the-shaking in.the-box \textbf{broke.\gsc{SMPL}}-\gsc{PL} \gsc{ACC} the-glasses//
+		\glft `\{The children / Shaking around in the box\} broke the glasses.'//
+		\endgl
+	
+	\a \begingl
+		\gla \emph{\{}\cmark~ha-jeladim / \xmark~ha-tiltulim ba-argaz\emph{\}} \textbf{ʃi\underline{b}r}-u et ha-kosot//
+		\glb \phantom{\{\cmark~}the-children {} \phantom{\xmark~}the-shaking in.the-box \textbf{broke.\gsc{INTNS}}-\gsc{PL} \gsc{ACC} the-glasses//
+		\glft `\{The children / *Shaking around in the box\} broke the glasses to bits.' \trailingcitation{\citep[20]{doron03}}//
+		\endgl
+\xe
+
+The \tpie~template, made up of a lexical root, \va~and Voice, is traditionally called the ``intensive'', but it can also house pluractional verbs (c--e) and various others (f--g):
+\ex\label{table:piel-meanings}Pretheoretical classification of some verbs in \tpie:\\
+	\begin{tabular}{lll|ll|ll}
+	& & & \multicolumn{2}{c|}{\tkal} &  \multicolumn{2}{c}{\tpie}\\\hline
+	\multirow{2}{*}{Intensive} & a.& \root{ʃbr} & ʃavar & `broke' & ʃiber & `broke to pieces'\\
+	    & b.& \root{'kl} & axal & `ate' & ikel & `corroded, consumed'\\\hline
+
+ 	\multirow{3}{*}{Pluractional} & c.& \root{hlx} & halax & `walked' & hilex & `walked around'\\
+ 	    & d.& \root{r\dgs{k}d} & rakad & `danced' & riked & `danced around'\\
+  	    & e.& \root{\dgs{k}fts} & kafats & `jumped' & kipets/kiftsets & `jumped around'\\\hline
+  		
+  		\multirow{2}{*}{Non-derived} & f. & \root{tps} & \multicolumn{2}{c|}{---} & tipes & `climbed'\\
+	    & g. & \root{ltf} & \multicolumn{2}{c|}{---} & litef & `petted'\\
+	\end{tabular}
+\xe
+There is no obvious interpretation of this element beyond agentive semantics; verbs in \tpie~are not simply verbs in \tkal~with added agentivity entailments. In fact, ``agentive semantics'' is too gross a generalization itself; \cite{doron03} describes the relevant thematic role as an Actor, though \cite{doron14adj} returns to Agent. For general discussion of related notions of a direct causing participant crosslinguistically see \cite{folliharley08} mentioned above, as well as \cite{sichel10n}, \cite{beaverskoontzgarboden12} and \cite{alexiadouetal13}.
+
+	\subsection{Pluractionality}
+One possible way to describe the semantics of \va~is by extended reference to pluractionality. The intuition as is follows. Assume that \va~is a pluractional (and perhaps also agentive) affix. Building on recent work by \cite{henderson12phd,henderson16nllt}---whom I thank for discussing this data with me---pluractionality can be seen as a way of pluralizing an event. This pluralization can hold spatially as well as temporally. In the data in~(\lastx a--b), the underlying verb in \tkal~has a direct object. The corresponding pluralized events in \tpie~can be individuated with respect to the direct objects: many broken pieces in (\ref{table:piel-meanings}a), many different simultaneous corrosions of the material in (\ref{table:piel-meanings}b).
+
+For the forms in (\ref{table:piel-meanings}c)--(\ref{table:piel-meanings}e), observe that the underlying verbs in \tkal~are unergative. The pluralizing operation has no direct object to operate on, and so it pluralizes the spatio-temporal event itself in \tpie.
+
+Lastly, in (\ref{table:piel-meanings}f)--(\ref{table:piel-meanings}g) there is no underlying form and hence nothing to pluralize.
+
+The database of verbs from \cite{ehrenfeld12} contains over 900 forms in \tpie, so this line of inquiry faces a serious amount of empirical corroboration. A number of potential counterexamples can be conjured up fairly easily, though. These are cases where the alternation does not plausibly result in a plural event:
+\pex
+	\a \emph{lamad} `learned' $\sim$ \emph{limed} `taught'
+	\a \emph{ratsa} `wanted' $\sim$ \emph{ritsa} `satisfied'
+\xe
+In the examples in~(\lastx) the event does not entail change of state, unlike with breaking and eating/corroding. So perhaps there is a tripartite division of roots to be made, as follows:
+\pex
+	\a \textbf{Other-oriented (change of state):} pluralization of the object.
+	\a \textbf{Self-oriented:} pluralization of the spatio-temporal aspects of the event.
+	\a \textbf{Other cases:} no pluralization.
+\xe
+Proper evaluation of this novel proposal will proceed along the lines laid out above, testing whether each root instantiated in this template does indeed fit into one of the three cases in~(\lastx).
+
+	\subsection{Agentivity}
+Setting the pluractionality hypothesis aside and keeping things uniform for the time being, I assume that \va~triggers an agentive alloseme of Voice, as in \S\ref{syn:middle:refl} and following \cite{doron03,doron14adj}.
+\ex \denote{Voice} = $\lambda$e$\lambda$x.e \& \text{Agent}(x,e) / \trace~\va
+\xe
+It has been pointed out to me by Hagit Borer that a number of verbs in \tpie~would stretch the notion of Agent/Actor to the point where such a denotation is no longer tenable. In the examples in~(\nextx), the verb can hardly be described as agentive since the subject is inanimate, while in~(\anextx) the subject is animate but non-volitional. These verbs are compatible with agentive subjects as well, but clearly do not require them.
+\pex
+  \a \begingl
+    \gla \textbf{ha-midgam} \underline{ʃikef} et totsot ha-emet//
+    \glb the-poll reflected.\gsc{INTNS} \gsc{ACC} results.\gsc{CS} the-truth//
+    \glft `The polls (correctly) reflected the results.'//
+  \endgl
+    
+  \a \begingl
+    \gla be-ritsa axat \textbf{ha-ʃaon} ʃel garmin kimat \underline{diek} kaaʃer hetsig stia kimat xasrat maʃmaut ʃel axuz ve-ktsat//
+    \glb in-run one the-watch of Garmin almost was.accurate.\gsc{INTNS} when showed deviation almost devoid.of meaning of percent and-little//
+    \glft `In one run, the Garmin watch was precise as it showed an almost insignificant deviation of just over one percent.'\trailingcitation{\url{www.haaretz.co.il/sport/active/.premium-1.2309128}}//
+  \endgl
+  \a \begingl
+    \gla \textbf{ha-xom} \underline{ʃibeʃ} l-i et ha-medidot//
+    \glb the-heat disrupted.\gsc{INTNS} to-me \gsc{ACC} the-measurements//
+    \glft `The heat messed up my measurements.//
+  \endgl
+\xe
+
+\ex \begingl
+  \gla \textbf{hu} \underline{kibel} maka xazaka ba-regel//
+  \glb he received.\gsc{INTNS} hit strong in.the-leg//
+  \glft `He got hit hard in the leg.'//
+  \endgl
+\xe
+
+In these examples an external argument is still required, regardless of whether it can felicitously be called an Agent or not. What these examples show is that a rigid denotation of \va~is difficult to specify, beyond some general notion of a direct cause. I believe it is significant, though, that the verbs in~(\blastx)--(\lastx) do not have correspondents in \tkal. That is, they are not derived by adding \va~to an existing verb or via some process of causativization: \emph{ʃikef} $\nless$ *\emph{ʃakaf}, \emph{diek} $\nless$ *\emph{dajak}, \emph{ʃibeʃ} $\nless$ *\emph{ʃabaʃ}, and \emph{kibel} $\nless$ *\emph{kabal}. They are derived when \va~selects the alloseme of the root directly without having to agentivize a verb in \tkal.
+
+Let us summarize the semantic contributions of \va:
+\pex
+  \a When attaching to an already-existing verb in \tkal, \va~adds Agent/Actor semantics.
+  \a When attaching to an already-existing verb in \tkal, \va~might change the meaning as in~(\ref{table:piel-meanings}).
+  \a When attaching to the root without a verb already existing in \tkal, agentive semantics need not be entailed (but an external argument is still obligatory).
+\xe
+
+Why, then, should this element be a root? The same job could in principle be accomplished using a  ``flavor'' of little v{, but I see no empirical need for ``flavors'' of v in my theory. }{Some other} functional head could be invoked, but it would have to be independently motivated. {I contend instead that} this morpheme behaves more like a root than a functional head: it does not {do syntactic work or }introduce an argument as syntactic heads do, and it has a range of possible meanings and phonological information that can be associated with it, more in line with a lexical element than a functional one. If \va~is a root rather than a functional head, its partially unpredictable contributions to the meaning of the verb are to be expected.
+
+Even if it were a functional head, the equivalent question would be asked: what kind of functional head is it? As things stand, there is little to choose from in terms of empirical support for one view over the other.
+
+In the phonology, \va~blocks spirantization of the middle root consonant and triggers the insertion of vowels specific to \tpie/\thit. Neither of these behaviors is problematic: \va~is local to both root and Voice, so it can derive unpredictable semantics from the former and condition allomorphy on both. For a more explicit discussion of the morphophonology see \S\ref{sec:t-phi}.
+
+
+\section{Psych-verbs}

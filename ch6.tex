@@ -1,0 +1,469 @@
+\section{Introduction} \label{sec:intro}
+\ex \cite{schaefer08} provided two kinds of innovation for the way we analyze argument structure within minimalism/DM.
+	(also \citealt{alexiadouetal06,layering15})
+\xe
+
+\pex\label{florian-conce}\textbf{Conceptual} innovation:
+	\a Syntactic transitivity (Spec,VoiceP).
+	\a Semantic transitivity (Agent).
+\xe
+
+\pex\label{florian-tech}\textbf{Technical} innovation:
+	\a Active/Non-active Voice.
+	\a Thematic/expletive Voice.
+\xe
+
+\textbf{Today:} contrast two specific implementations.
+
+\pex\label{intro-layer}The \textbf{Layering} theory \citep{schaefer08,layering15}.
+	\a Proposed on the basis of English and German (mostly).\\
+		Further developed for Latin, Albanian, Greek, Icelandic, Quechua and more English:\\ \cite{embick04,kallulli13,spathasetal15,wood15springer,schaefervivanco16,myler17oup,schaefer17oup}.
+	\a Syntactic and semantic features combine freely.
+\xe
+
+\pex\label{intro-feat}The \textbf{Featural} theory \citep{kastner16phd}.
+	\a Proposed on the basis of Hebrew.\\
+		Further developed for Japanese, Austronesian, Polynesian and more Hebrew:\\ \cite{kastner17gjgl,kastner18tlr,kastner18nllt,oseki17nyu,nie17}.
+	\a Syntactic features feed semantic features.
+\xe
+
+\ex The empirical difference underlying the difference: the Layering theories considered anticausative marking, not causative marking.
+\xe
+
+\newpage
+\section{Syntactic vs semantic transitivity}
+	\subsection{Formalisms}
+\ex\label{typo-layer}The four-celled typology in \citet[109]{layering15}:\\
+%\begin{tabular}{c|ll|ll}
+%	& \multicolumn{2}{c|}{Semantics $\lambda$x}	& 	\multicolumn{2}{c}{Semantics {\zero}} \\\hline
+%%&&&&\\
+%Syntax & 	a.&	Thematic active 	&	c.&	Thematic non-active\\
+%+D 	 & &
+%\Tree
+%[.VoiceP 
+%	[.DP ]
+%	[.VoiceP
+%		[.{Voice\{$\lambda$x, D\}} ]
+%		[.{\dots~vP \dots} ]
+%	]
+%]
+%& &
+%\Tree
+%[.VoiceP 
+%	[.DP\\\fbox{\gsc{SE}} ]
+%	[.VoiceP
+%		[.{Voice\{\zero, D\}} ]
+%		[.{\dots~vP \dots} ]
+%	]
+%]
+%\\
+%&&&&\\
+%& & \ding{228} Business as usual.	& & \ding{228} Marked anticausatives (German).\\
+%&&&&\\\hline
+%Syntax & 	b.&	Thematic non-activex 	&	d.&	Expletive non-active\\
+%{\zero}	 & &
+%\Tree
+%[.VoiceP 
+%		[.{Voice\{$\lambda$x, \zero\}\\\fbox{\gsc{NACT}}} ]
+%		[.{\dots~vP \dots} ]
+%]
+%
+%& &
+%\Tree
+%[.VoiceP 
+%		[.{Voice\{\zero, \zero\}\\\fbox{\gsc{NACT}}} ]
+%		[.{\dots~vP \dots} ]
+%]
+%\\
+%&&&&\\
+%& & \ding{228} Passives in Greek.	& & \ding{228} Anticausatives in Greek.\\
+%\end{tabular}
+
+\begin{tabular}{c|ll|ll}
+	& \multicolumn{2}{c|}{Syntax D}	& 	\multicolumn{2}{c}{Syntax {\zero}} \\\hline
+%&&&&\\
+Semantics & 	a.&	Thematic active 	&	b.&	Thematic non-active\\
+$\lambda$x 	 & &
+\Tree
+[.VoiceP 
+	[.DP ]
+	[.VoiceP
+		[.{Voice\{$\lambda$x, D\}} ]
+		[.{\dots~vP \dots} ]
+	]
+]
+& &
+\Tree
+[.VoiceP 
+		[.{Voice\{$\lambda$x, \zero\}\\\fbox{\gsc{NACT}}} ]
+		[.{\dots~vP \dots} ]
+]
+\\
+&&&&\\
+& & \ding{228} Business as usual.	& & \ding{228} Passives in Greek.\\
+&&&&\\\hline
+Semantics & 	c.&	Expletive active 	&	d.&	Expletive non-active\\
+{\zero}	 & &
+\Tree
+[.VoiceP 
+	[.DP\\\fbox{\gsc{SE}} ]
+	[.VoiceP
+		[.{Voice\{\zero, D\}} ]
+		[.{\dots~vP \dots} ]
+	]
+]
+& &
+\Tree
+[.VoiceP 
+		[.{Voice\{\zero, \zero\}\\\fbox{\gsc{NACT}}} ]
+		[.{\dots~vP \dots} ]
+]
+\\
+&&&&\\
+& & \ding{228} Marked anticausatives (German).	& & \ding{228} Anticausatives in Greek.\\
+\end{tabular}
+\xe
+
+\pex \textbf{Mismatches} (the interesting cases -- not evaluating these):
+	\a Passives~(\ref{typo-layer}b) have a semantic external argument but no syntactic external argument.\\
+	$\Rightarrow$ Need to allow existential closure on an open $\lambda$x. \hfill \citep[124]{layering15}
+	\a Marked anticausatives~(\ref{typo-layer}c) predict no semantic effect of \gsc{SE}.\\
+	$\Rightarrow$ different derivation than reflexive \gsc{SE}. \hfill \citep[111]{layering15}
+\xe
+
+\ex\label{ex:alternations-heb}Hebrew has \textbf{trivalent} morphological marking \citep{kastner18nllt}:\\
+	\begin{tabular}{cll|ll|ll}
+	& \multicolumn{2}{P{4.2cm}|}{causative} &	\multicolumn{2}{P{4cm}|}{underspecified}	& \multicolumn{2}{P{4.2cm}}{anticausative}\\\cline{2-7}
+	\phantom{Semantics} & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
+	& \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
+	& \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
+	\end{tabular}
+\xe
+
+\ex\label{typo-feat}\textbf{The typology of Featural:}\\
+\begin{tabular}{c|ll|ll|ll}
+	& \multicolumn{2}{P{4cm}|}{\vd}	&  \multicolumn{2}{P{4cm}|}{Voice}	& \multicolumn{2}{P{4cm}}{\vz} \\\hline
+%&&&&\\
+Semantics	 & 		a.	&	&			b.	&& 	c. & \\
+$\lambda$x 	 & 
+&\Tree
+[.VoiceP 
+	[.DP ]
+	[.
+		[.{\vd} ]
+		[.vP ]
+	]
+]
+& 
+&\Tree
+[.VoiceP 
+	[.DP ]
+	[.
+		[.Voice ]
+		[.vP ]
+	]
+]
+&& \phantom{Undefined.}
+\\\hline
+Semantics	 & 		d.		& &			e.	& &	f. & \\
+\zero	 &
+& \phantom{Undefined.}
+&
+&\Tree
+	[.VoiceP
+		[.Voice ]
+		[.vP ]
+	]
+&
+&\Tree
+	[.VoiceP
+		[.{\vz} ]
+		[.vP ]
+	]\\
+\end{tabular}
+\xe
+%\begin{tabular}{c|l|l}
+%	& Semantics $\lambda$x	&  Semantics \zero	\\\hline
+%%&&&&\\
+%{\vd}	 & 		a.		&			d.	\\
+% 	 & 
+%\Tree
+%[.VoiceP 
+%	[.DP ]
+%	[.
+%		[.{\vd} ]
+%		[.vP ]
+%	]
+%]
+%& 
+%\phantom{Undefined.}
+%\\\hline
+%
+%Voice & b.		&		e. \\
+%	&
+%\Tree
+%[.VoiceP 
+%	[.DP ]
+%	[.
+%		[.Voice ]
+%		[.vP ]
+%	]
+%]
+%&
+%\Tree
+%	[.VoiceP
+%		[.Voice ]
+%		[.vP ]
+%	]
+%\\\hline
+%
+%{\vz}	 & 		c.		&			f. \\
+%	 &
+%\phantom{Undefined.}
+%&
+%\Tree
+%	[.VoiceP
+%		[.{\vz} ]
+%		[.vP ]
+%	]\\
+%\end{tabular}
+
+\ex\label{ex:alternations-heb2}Featural analysis of the templates:\\
+	\begin{tabular}{cll|ll|ll}
+	& \multicolumn{2}{P{4cm}|}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}|}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\
+	\phantom{Semantics} & \multicolumn{2}{c|}{causative} &	\multicolumn{2}{c|}{transitive}	& \multicolumn{2}{c}{anticausative}\\\cline{2-7}
+	& \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
+	& \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
+	& \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
+	\end{tabular}
+\xe
+
+\pex\label{sem-feat}Semantics (abstracting away from Agent $\neq$ Cause):
+	\a \denote{\vd} = $\lambda x \lambda e$.Agent($x,e$)
+	\a \denote{Voice}\phantom{.......} = $\begin{cases}
+		\lambda x \lambda e.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{eat}}, \dots\} }\\
+		\lambda e.e & \text{/ \trace \{\root{\gsc{fall}}, \dots\} }\\
+	\end{cases}$
+	\a \denote{\vz}\phantom{.} = $\begin{cases}
+		\lambda e.e & \text{/ \trace \{\root{\gsc{burn}}, \dots\} }\\
+		\lambda e \exists x.\text{Agent}(x,e) & \\
+	\end{cases}$
+\xe
+
+\ex The \textbf{typological predictions} are clear: find me a language with overt \emph{causative} marking and an expletive. Currently predicted not to exist.
+\xe
+
+	\subsection{Comparison}
+\pex No Voice in Layering = {\vz} in Featural.
+	\a 	Voice \lra~\gsc{NACT} / \trace No Spec
+	\a  {\vz} \lra~\gsc{NACT} \hfill (always No Spec)
+	\a A little cleaner closslinguistically?
+\xe
+\ding{228} Not a substantive difference.
+
+\pex The missing cells (\ref{typo-feat}c)--(\ref{typo-feat}d):
+	\a This is an attempt to constrain the system.
+	\a Not the case that everything goes.
+	\a The syntactic heads do have semantic implications, (\ref{sem-feat}).
+	\a Could also be done in the Layering way.
+\xe
+
+\pex What about \textbf{passives} in Greek (\ref{typo-layer}b)--(\ref{typo-feat}c,f)?
+	\a For every root we need to state whether the \gsc{NACT} variant will be anticausative, passive, or compatible with both.
+	\a We have to do this regardless of formalization.
+	\a \cite{layering15} for Greek, \cite{ahdoutkastner18} for Hebrew.
+\xe
+	
+\pex What about \textbf{expletives} in Romance and Germanic, (\ref{typo-layer}c)--(\ref{typo-feat}b,d)?
+	\a Regular Voice with an expletive in its Spec.
+	\a But see \cite{wood15springer} for more variants.
+\xe
+	
+\pex \textbf{To sum up}, I would say:
+	\a {\vd} is always $\lambda$x.
+	\a {\vz} is always $\lambda${\zero}.
+\xe
+\ding{228} (But my figure reflexives are different... hmm...)
+
+\pex Which language has what?
+	\a Possibility 1: All languages are Featureal languages like in (\ref{typo-feat}).
+	\a Possibility 2: The flavors of Voice need to be morphophonologically distinct.\\
+		\cite{layering15}: English learners don't hypothesize (\ref{typo-layer}c) or (\ref{typo-layer}d) because they have no phonological evidence for expletive Voice.
+	\a Possibility 3: All languages are at least active/non-active Voice languages, even without phonological evidence.
+\xe
+
+
+\ruler
+\section{The causative-causativer alternation}
+\pex
+	\a Most of the existing work is on marking of anticausatives.
+	\a Compare the typological spread of languages in (\ref{intro-layer}a)--(\ref{intro-feat}a).
+\xe
+
+\pex The causative-inchoative alternation.
+	\a \emph{John} \textbf{Voice} [_{\text{vP}} \emph{broke the glass}].
+	\a \textbf{\vz} [_{\text{vP}} \emph{The glass broke}].
+	\a What's important is that the vP is a predicate over eventualities. Voice can add an external argument if it ``wants'' to \citep{layering15}.
+\xe
+
+\pex This section:
+	\a Regular Voice allows us to add an external argument.
+	\a What's left for an additional grammatical device (\vd) to do?
+	\a Difference in productivity between the anticausative and the causative-r alternations.
+\xe
+
+	\subsection{Marked causatives}
+\pex What about \textbf{marked causatives}?
+	\a Japanese, Hebrew, \dots
+	\a \citet[62f3]{layering15}: causative version $\Rightarrow$ thematic voice.
+	\a Featural: causative version $\Rightarrow$ {\vd}.
+\xe
+
+\ex Well, that was easy!
+\xe
+
+	\subsection{It wasn't}
+\pex \textbf{How productive} are these alternations?
+	\a Very, in the sense that there are lots of roots with both {\tkal} (Voice) and {\thif} (\vd) forms.
+	\a About 300 out of 500-550 verbs in {\thif} in general \citep{kastner18tlr}.
+\xe
+
+\pex \textbf{How predictable} are these alternations? Not very. Recall (\ref{ex:alternations-heb2}).
+	\a The causative of `wrote' is `dictated'.
+	\a \begingl
+		\gla ha-talmidim \textbf{katvu} et ha-nosim//
+		\glb the-students wrote \gsc{ACC} topics//
+		\glft `The students wrote down the list of topics.'//
+		\endgl
+	\a \begingl
+		\gla ha-more \textbf{hextiv} et ha-nosim (la-talmidim)//
+		\glb the-teacher dictated \gsc{ACC} topics to.the-students//
+		\glft `The teacher dictated the list of topics (to the students).//
+	\endgl
+	\a \Tree [. [.students ] [. [.Voice ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]		\Tree [. [.teacher ] [. [.{\vd} ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]
+\xe
+
+\pex
+	\a The causative of \emph{axal} `ate': \emph{heexil et (be-)} `fed s.o (s.th)'.
+	\a Why not `made eat'?
+	\a What about the added argument syntactically?\\
+		\Tree [. [.John ] [. [.Voice ] [. [.\root{\gsc{ATE}} ] [.cake ] ] ] ]		\Tree [. [.Mary ] [. [.{\vd} ] [. [.\root{\gsc{ATE}} ] [.John ] ] ] ]
+\xe
+
+\pex Some more:\\
+		\begin{tabular}{lll@{ $\sim$ }ll}
+		a.& \emph{kara} & `read'		& \emph{hekri}	& `read out'\\
+		b.& \emph{laxa\texttslig} & `pressed'	& \emph{helxi\texttslig} & `pressured'\\
+		c.&	\emph{daxak}	& `shoved'	& \emph{hedxik}	& `suppressed'\\
+		d.& \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'\\
+		\end{tabular}
+\xe
+
+\pex Predictable meaning?\\
+	\begin{tabular}{lcc}
+		& Make X Verb	& make X be Verb-ed\\
+	a. `ate' - `fed'	& \cmark & \xmark\\
+	b. `read' - `read out' & \xmark & \cmark\\
+	c. `closed' - `extradited' & \xmark	& \textbf{?}\\
+	\end{tabular}
+\xe
+\ding{228} Other factors might be at play, depending on the animacy of the object and so on.
+	
+\ex Or maybe your language has Voice-over-Voice \citep{nie17}.
+\xe
+
+	\subsection{Generalization}
+\pex The anticausative-transitive alternation seems more transparent:\\
+		\begin{tabular}{lll@{ $\sim$ }lc@{ $\sim$ }ll}
+		a.& \textbf{\emph{nikra}} & \textbf{`was read'} & \emph{kara} & `read'		& \emph{hekri}	& read out\\
+		b. & \textbf{\emph{nilxa\texttslig}} & \textbf{`was pressured'} & \emph{laxa\texttslig} & `pressed'	& \emph{helxi\texttslig} & `pressured'\\
+		c.&	\textbf{\emph{nidxak}} & \textbf{`was shoved (aside)'} & \emph{daxak}	& `shoved'	& \emph{hedxik}	& `suppressed'\\
+		d.& \textbf{\emph{nisgar}} & \textbf{`was closed'} & \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'\\
+		\end{tabular}
+\xe
+
+\pex \textbf{The super-causative generalization for transitivity alternations}\\
+	(alternative names are welcome):
+	\a The anticausative alternation is transparent.
+	\a The causativer alternation is not: root-specific.
+\xe
+
+\pex So would we even call this a generalization? Why not different roots/verbs?
+	\a No doublets: there are no additional verbs in {\tnif} that alternate with {\thif}.
+	\a E.g.~additional \emph{nikra} *`was read out' alternating with \emph{hekri} `read out' for (\blastx a).
+\xe
+
+	\subsection{Analysis}
+\pex This pattern follows directly from the general layering approach to transitivity alternations.
+	\a If the basic vP already has causation, then it's clear what \textbf{not} adding an external argument would mean.
+	\a It's also relatively clear what adding an external argument would mean.
+	\a But adding an external argument in another, differentiating way would be hard.
+	\a $\Rightarrow$ Necessitates change in meaning as well.
+\xe
+
+\pex 
+	\a Say we have an event of causation:\\
+\Tree
+	[.vP
+		[.v ]
+		[.DP ]
+	]
+
+	\a \textbf{Not} adding a causer is easy:\\
+\Tree
+[.VoiceP
+	[.{\vz} ]
+	[.vP
+		[.v ]
+		[.DP ]
+	]
+]
+
+	\a And you can have various kinds of external arguments to go with different causation events:\\
+\Tree
+[.VoiceP
+	[.DP_1 ]
+	[.
+		[.Voice ]
+		[.vP
+			[.v ]
+			[.DP ]
+		]
+	]
+]
+\Tree
+[.VoiceP
+	[.DP_2 ]
+	[.
+		[.{\vd} ]
+		[.vP
+			[.v ]
+			[.DP ]
+		]
+	]
+]
+
+	\a But how would you have various kinds of lack of external arguments? Different events of minimal causation?
+\xe
+
+\pex Prediction:\\
+	Few triplets of the form [marked \textbf{unaccusative} $\sim$ unmarked \textbf{uanccusative} $\sim$ marked causative].
+	\a Correct!
+	\a \root{xrv} `\root{\gsc{DEMOLISH}}': \emph{nexrav} $\sim$ ??\emph{xarav} $\sim$ \emph{hexriv}
+	\a \root{ʃlm} `\root{\gsc{BE.WHOLE}}': \emph{niʃlam} $\sim$ ??\emph{ʃalam} $\sim$ \emph{heʃlim}
+	\a Not productive in {\tkal}, speakers prefer the {\tnif} form for the anticausative.
+\xe
+
+
+\ruler
+\section{Summary}
+\pex Layering $\Rightarrow$ Featural.
+	\a More natural(?) way to model the syntax/semantics interface.
+	\a No Layering $\prec$ Layering $\prec$ Featural.
+	\a Necessary for causativer alternations.
+\xe
+
+\pex Causative alternations:
+	\a Different than anticausative alternations.
+	\a Asymmetry is captured(?) by the syntactic analysis.
+\xe

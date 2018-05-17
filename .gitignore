@@ -6,3 +6,6 @@
 *.pdf
 *.bib
 *.bst
+*.out
+*.toc
+.DS_Store

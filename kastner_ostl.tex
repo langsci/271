@@ -124,7 +124,8 @@
 \usepackage{stmaryrd}
 \usepackage{wasysym} %checkbox, pointer
 \usepackage{array} %tabular column formatting
-
+	\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+	
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{dashrule} %\hdashrule
@@ -179,6 +180,8 @@
 %	\newcommand\gray[1]{\textcolor{gray}{#1}}
 \newcommand\denote[1]{$\llbracket$#1$\rrbracket$}
 \newcommand\lra{$\leftrightarrow$}
+
+\newcommand\glemph[1]{\textbf{#1}}
 
 %Color macros
 %\newcommand\red[1]{\textcolor{red}{#1}}
@@ -419,7 +422,7 @@
     \include{f-titlepage} % include title page
     \pagestyle{plain}
 
-\doublespacing
+%\doublespacing
 
 %    \chapter*{Dedication}
 %    \addcontentsline{toc}{chapter}{Dedication}
