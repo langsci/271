@@ -17,7 +17,7 @@
 \section{Non-active verbs}
 This section presents the first class of verbs in niXYaZ, defending the following hypothesis: verbs in this class are unaccusative (anticausative). The idea that verbs in this template are anticausative variants of those in XaYaZ is certainly not new. However, the explicit morphosyntactic implementation is (following \cite{kastner17gjgl}), providing a necessary backdrop for the novel claims about figure reflexives and nominalizations. We present the relevant data and diagnostics in section @ and our proposal in section @.
 
-Data
+	\subsection{Data}
 This section concerns verbs such as those in (@), which we analyze as non-active. Based on the diagnostics discussed below, we have found that @@ of the @@ verbs in niXYaZ are non-active, or ambiguous between non-active and figure reflexive.
 
 (@) niʃbar   'broke'
@@ -28,7 +28,7 @@ This section concerns verbs such as those in (@), which we analyze as non-active
 
 The diagnostics used here are compatibility with various agent-oriented adverbs, including the use of ‘by itself’, and the two standard unaccusativity diagnostics for Hebrew.
 
-Adverbial modifiers
+		\subsubsection{Adverbial modifiers}
 A common assumption in studies of anticausativity is that the existence of an agent can be probed using adverbial modifiers such as adverbs and the phrase 'by itself' \citep{unaccusativity95,alexiadouanagnostopoulou04,koontzgarboden09,alexiadoudoron12,kastner17gjgl}. Hebrew me-aʦmo 'by itself' diagnoses the non-existence of an external argument, regardless of whether the external argument is explicit (as in transitive verbs) or implicit (as in passives). The test is appropriate with anticausatives in the niXYaZ template shown above, (@), but not with direct objects of transitive verbs, (@), or with passive verbs, (@). The examples are adapted from \cite{kastner17gjgl}.
     ha-kise niʃbar me-aʦmo.
        the-chair broke.MID from-itself
@@ -58,7 +58,7 @@ Agent-oriented adverbs are likewise incompatible with anticausatives.
      the-bracelet broke.MID in-skill
      (int. 'The bracelet was dismantled skillfully')
  
-Unaccusativity diagnostics
+		\subsubsection{Unaccusativity diagnostics}
 
 The syntactic literature on Hebrew has identified two unaccusativity diagnostics. These diagnostics are VS order and the possessive dative, although it is important to acknowledge that their status as robust tests has been challenged in recent years \citep{gafter14li,linzen14pd,kastner17gjgl}. Crucially for our purposes, the two classes of verbs behave differently with regards to these diagnostics.
 
@@ -91,7 +91,9 @@ dana ʃavra l-i et ha-ʃaon.        Internal Argument
          'The three cats whined and I was adversely affected.' (int. 'My three cats whined')
    
 Taken together, these tests provide strong evidence for the common assumption that at least some verbs in niXYaZ are anticausative. A formal analysis follows next.
-Analysis
+
+	
+	\subsection{Analysis}
 Our analysis is cast in Distributed Morphology \citep{dm}, in particular adopting the assumption that Voice is the functional head introducing the external argument \citep{kratzer96,pylkkanen08}. We also adopt the treatment of non-active verbs in Hebrew proposed by \cite{alexiadoudoron12} and \cite{kastner17gjgl}, in which non-actives are derived by merging a non-active variant of Voice, namely Voice[-D], following similar proposals for German \citep{schaefer08,layering15}, English \cite{bruening14nllt}, Greek \citep{alexiadoudoron12,spathasetal15}, Icelandic \citep{wood15springer} and Latin \citep{kastnerzu15li}, although some details differ between the implementations.
 
 The full typology of Voice heads has been explored in recent work by \cite{kastner16phd,kastner17gjgl,kastner16nllt,kastner18}, \cite{oseki17nyu} and \cite{nie17}. For our purposes in this paper, the only relevant distinction is between "underspecified" Voice and non-active Voice[-D]. The [±D] feature is an EPP feature which either requires a DP in its specifier ([+D]), prohibits a DP in its specifier ([-D]) or is indifferent to whether Spec,VoiceP is filled.
@@ -109,12 +111,43 @@ In the phonological component, the Vocabulary Items for the two variants differ,
 These functional heads function in the following way. Verb phrases (vPs) contain no reference to the external argument, since that role is licensed by Voice. What this means is that a vP is simply a predicate of events, potentially transitive ones. The verb ʃavar 'broke' is made up of a vP, denoting a set of breaking events, and a head introducing an addition external argument.
 
     XaYaZ, ʃavar 'broke' 
-
+\ex 
+\Tree
+	[.VoiceP
+		[.DP ]
+		[.
+			[.Voice ]
+			[.vP
+				[.v
+					[.v ]
+					[.\root{ʃbr} ]
+				]
+				[.DP ]
+			]
+		]
+	]		
+\xe
 
 Anticausative verbs differ minimally in that no external argument is introduced. In line with the claim that causatives and anticausatives are derived from a common core \citep{layering15}, the grammar might build a transitive vP as above (verbalizer, root and internal argument) and merging Voice[-D]. This configuration gives us niʃbar 'broke' in (@). Since no external argument can be merged in the specifier of Voice[-D], the structure in (@) is unaccusative.
 
 
     niXYaZ, niʃbar 'got broken' 
+\ex 
+\Tree
+	[.VoiceP
+		[.{} ]
+		[.
+			[.{\vz\\\emph{ni-}} ]
+			[.vP
+				[.v
+					[.v ]
+					[.\root{ʃbr} ]
+				]
+				[.DP ]
+			]
+		]
+	]		
+\xe
 
 
 This basic distinction between Voice and Voice[-D] in the syntax thus feeds differences across the interfaces, as in previous work on Hebrew and beyond: the spell-out is different, the semantics is different and the resulting constructions are different. This basic machinery allows us to derive some typical argument structure alternations in the language. The next section proposes a different analysis for another class of verbs in niXYaZ, one which correlates their different syntax and semantics with different morphosyntactic configurations.
@@ -122,7 +155,8 @@ This basic distinction between Voice and Voice[-D] in the syntax thus feeds diff
 
 \section{Height of attachment: Figure reflexives}
 The previous section identified a class of verbs in niXYaZ which are demonstrably non-active. In the current section we propose that another class of niXYaZ verbs exists, and a fairly large one at that. We call these figure reflexives (following \cite{woord14nllt}) and defend the claim that they have an external argument and an obligatory prepositional phrase as their complement but are otherwise intransitive, i.e unergative. Figure reflexives might denote an action (@@), motion (@@) or psych-verb (@@), but in all cases, a prepositional phrase is the obligatory complement of the verb. We will confirm that these verbs are active and then present a structure which involves an agent in Spec,VoiceP and a prepositional phrase complement to the verb.
-Data
+
+	\subsection{Data}
 This section concerns verbs such as those in (@), which we analyze as figure reflexives. Based on the diagnostics discussed below, we have found that @@ of the @@ verbs in niXYaZ are figure reflexive, or ambiguous between a non-active and a figure reflexive reading.
    
 (@)     nixnas  *(le-)  'entered (into)' 
@@ -132,7 +166,7 @@ This section concerns verbs such as those in (@), which we analyze as figure ref
         neexaz  *(be-)  'held on to' 
     
 We repeat the diagnostics from Section @ below, showing that figure reflexives pattern the opposite way from non-actives. We then highlight the role of the complement to the verb.
-Adverbial modifiers
+		\subsubsection{Adverbial modifiers}
 'By itself' is not possible:
      * dana nixnesa la-kita me-aʦma
          Dana entered.MID to.the-classroom from-itself
@@ -143,7 +177,9 @@ Agent-oriented adverbs are possible with figure reflexives:
          'Dana confidently entered the classroom.'
 
 By-phrases are an irrelevant diagnostic when the external argument is explicit.
-Unaccusativity diagnostics
+
+
+		\subsubsection{Unaccusativity diagnostics}
 
 Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-active verbs,
 
@@ -168,12 +204,31 @@ The novel observation about finite verbs in niXYaZ - which will carry into a gen
         neexaz  *(be-)  'held on to' 
 
 This claim has not been made before in either the traditional grammars or contemporary work, as far as we can tell (the closest are \citet[87]{berman78}, who stated that some verbs show ''ingression'', and \cite{schwarzwald08}, who noted that some verbs in this template are active). The resulting generalization is that external arguments in niXYaZ are possible if and only if a prepositional phrase is required, a claim borne out by @ verbs in our database. This generalization can be derived from the analysis in the next section.
-Analysis
+
+	\subsection{Analysis}
 Our treatment of prepositional phrases requires us to be more explicit about their internal structure. We do that in section @ and then discuss the compositional mechanism at work in section @. The pieces are put together in section @.
-Prepositional phrases
+
+	\subsection{Prepositional phrases}
 Now that we have convinced ourselves of the fact that figure reflexives are active verbs, we turn to their complements. In order to be precise about the argument structure of prepositions, we adopt the idea that subjects of prepositional phrases are introduced by a separate functional head. This suggestion was made in one way or another by a number of authors \citep{vanriemsdijk90,rooryck96,koopman97,gehrke08phd,dendikken03,dendikken10}. though what is striking is that these accounts dealt with various empirical phenomena, none of which is the same as the case discussed here. Most concretely we follow \cite{svenonius03,svenonius07,svenonius10} who implements this idea using the functional head p. Borrowing terminology from \cite{talmy78} and related work, \cite{wood14nllt} is explicit in calling the DP in Spec,pP the Figure and the complement of P the Ground.
 
 The dashed arrows in (@) show the assignment of semantic (thematic) roles, in a system without theta-roles as primitives \cite{schaefer08,layering15,wood14nllt,wood15springer,woodmarantz17,myler16,kastner17gjgl}; this difference is often referred to as “syntactic transitivity” versus “semantic transitivity”. For now, all that matters is that functional heads can make syntactic requirements (as with the [D] feature) and introduce semantic roles (as with Voice).
+\ex
+ \Tree
+	 [.\emph{p}P
+	 	[.DP\\\emph{the book}\\{\tikz{\node (Fig) {\textbf{\textsc{figure}}};}} ]
+	 	[
+	 		[.{\tikz{\node (p) {\emph{p}};}} ]
+	 		[.PP
+	 			[.P\\{\tikz{\node (P) {\emph{on}};}} ]
+	 			[.DP\\\emph{the table}\\{\tikz{\node (Ground) {\textbf{\textsc{ground}}};}} ]
+	 		]
+	 	]
+	 ]
+	\begin{tikzpicture}[overlay]
+	\draw[dotted,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
+	\draw[dotted,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	\end{tikzpicture}
+\xe
 
     \denote{Voice}  =  λxλe.Agent(x,e) 
     \denote{p}  =  λxλs.Figure(x,s) 
@@ -183,7 +238,30 @@ A concrete example of an ordinary prepositional phrase in Hebrew - a pP - is giv
    (@)      eliana sama sefer al ha-ʃulxan
          Eliana put book on the-table
          'Eliana put a book on the table.'    
-    
+ 
+\Tree
+		[.VoiceP
+		   [.{DP\\\emph{eliana}\\\textsc{agent}} ]
+		   [
+				[.Voice ]
+		        [
+					[.v
+						[.{\root{sjm}} ]
+						[.v ]
+		            ]
+					[.\emph{p}P
+		                  [.DP\\\emph{sefer}\\{`book'}\\\textsc{figure} ]
+		                  [
+		                      [.\emph{p} ]
+		                      [.PP
+			                      [.P\\\emph{al}\\{`on'} ]
+			                      \qroof{\emph{ha-ʃulxan}\\{`the table'}\\\textsc{ground}}.DP
+		                      ]
+		                  ]
+		              ]
+		          ]
+		   ]
+		]
 
 Consider next the similarities between Voice and p. Both introduce external arguments within their extended projection and both are usually silent (though Voice can be argued to trigger the phonology of XaYaZ in Hebrew). We have assumed that a variant of Voice exists, Voice[-D], which prohibits the Merge of a DP in its specifier. Continuing this reasoning, and following \cite{wood15springer}, we further postulate a variant of p, namely p[-D], which prohibits the Merge of a DP in Spec,pP.
 
@@ -193,18 +271,68 @@ Consider next the similarities between Voice and p. Both introduce external argu
 
     Voice[-D] and p[-D] are spelled out identically in Hebrew: a prefix (ni-) and stem vowels, resulting in niXYaZ. In section @ we return to the idea that these are one and the same head, i*, differing only in its height of attachment. But first, the compositional details.
 
-Delayed saturation
+	\subsection{Delayed saturation}
 
 Since syntactic and semantic requirements of functional heads are separated, a given head might impose a semantic requirement which is fulfilled immediately. If the semantic predicate is saturated later on in the derivation, we have a case of delayed saturation. Such cases have been recently identified (as “delayed gratification”) in work on Icelandic \citep{wood14nllt,wood15springer}, English, Quechua \citep{myler16mit} and Japanese \citep{woodmarantz17}, as well as for reflexive verbs in Hebrew \citep{kastner17gjgl}, although the idea that a predicate may be saturated in delayed fashion is of course not new in and of itself \citep{higginbotham85}.
 
 The current analysis follows closely \citeauthor{wood15springer}’s (\citeyear{wood15springer}) analysis of certain figure reflexives in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. The intuition is that the role of Figure is not saturated within the pP, since no DP is possible in Spec,pP. Rather, an argument introduced later on (the agent) saturates the predicate. The schematic in (@) shows the saturation of semantic roles.
 
+\ex
+		 \Tree
+		 [.VoiceP
+			 [.{DP\\\tikz{\node (Agent) {\textsc{agent}};}\\\tikz{\node (Figup) {\textsc{figure}};}} ]
+			 [
+				 [.\tikz{\node (Voice) {Voice};} ]
+				 [
+					 [.v ]
+					 [.\emph{p}P
+						 [.\tikz{\node (Figdown) {---};} ]
+						 [
+							 [.\tikz{\node (pz) {\pz};} ]
+							 [.PP
+								 [.\tikz{\node (P) {P};} ]
+								 [.{DP\\\tikz{\node (Ground) {\textsc{ground}};}} ]
+							]
+						]
+					]
+				]
+			]
+		]
+	  \begin{tikzpicture}[overlay]
+	  \draw[dotted,thick,->] (Voice) .. controls +(north west:1) and +(north east:1) .. (Agent);
+	  \draw[dotted,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	  \draw[dotted,thick,->] (pz) .. controls +(south:1) and +(south:2) .. (Figup);
+	  \draw[dotted,thick,->] (pz) .. controls +(south west:1) and +(south west:1) .. node{\LARGE $\times$}(Figdown);
+	  \end{tikzpicture}		    
+\xe
 
 
 A concrete derivation is given in (@) for the figure reflexive nixnas le- ‘entered’ in niXYaZ. Note again that p[-D] expects a Figure semantically but does not introduce one in the syntax.
 
     oren nixnas la-xeder Oren entered the room'
-
+\ex
+\hspace{-3em}
+\scalebox{0.9}{
+\Tree
+    [.{VoiceP\\ λe∃s.\underline{Agent(Oren,e)} \& \underline{Figure(Oren,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
+       [.{DP\\\emph{oren}} ]
+       [.{λxλe∃s.\underline{Agent(x,e)} \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)}
+           [.{Voice\\ λxλe.Agent(x,e)} ]
+           [.{vP\\ λxλe∃s.\underline{Figure(x,s)} \& \underline{in(s,room)} \& enter(e) \& Cause(e,s)}
+              [.{v\\ λPλe∃s.P(s) \& enter(e) \& Cause(e,s)}
+	             [.\root{kns} ]
+	             [.v ]
+              ]
+              [.{\emph{p}P\\ λxλs.Figure(x,s) \& \underline{in(s,room)}}
+                  [.{\pz\\ λxλs.Figure(x,s)\\ \emph{ni-}} ]
+                  \qroof{λs.in(s,room)}.PP
+%                  ]
+              ]
+          ]
+       ]
+    ]
+}
+\xe
 
 
 The pP is composed via Event Identification, the vP via Function Composition (Restrict \cite{chungladusaw04}?), and the VoiceP again via Event Identification.
@@ -270,7 +398,7 @@ The full semantic details can be found in \cite{wood14nllt,wood15springer}. The 
 
 
 
-Alternatives
+	\subsection{Alternatives}
 We assumed an ''emergent'' view of templates, according to which they arise from the combination of functional heads. The traditional approach to Semitic templates approaches them as primitives, but has been shown to fall short of understanding the argument structure alternations in the system \citep{doron03,kastner16phd,kastner17gjgl,kastner18}. The idea that that templates are morphemes can be implemented in various ways, including distinct spell-outs of Voice \citep{arad05}, distinct exo-skeletal functors \citep{borer13oup}, conjugation classes \citep{aronoff07}, and lexicalist morphemes \citep{reinhartsiloni05,laks11,laks14}.
 
 As far as morphemic analyses are concerned, an overarching problem is that a given template does not have a deterministic syntax nor does it have a deterministic semantics; this much should be clear from the current paper so far. The morphemic analysis would have to say that niXYaZ is ambiguous between a non-active and figure reflexive reading. Two crucial problems then arise. The first is that not all verbs in this template are ambiguous. The second is that the existing readings are an accident; the template could just as well have been ambiguous between a transitive and a reflexive reading, but no Hebrew template has this property \citep{doron05,kastner16phd}. The emergent theories have principled explanations for what is and is not possible, as with niXYaZ where we have shown a morphological correlation between lack of Agent and lack of Figure. In contrast, a morphemic theory is unnecessarily powerful and must arbitrarily list what each template, and perhaps each verb, may do.
