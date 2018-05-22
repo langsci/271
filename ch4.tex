@@ -97,10 +97,10 @@ Very little contemporary work has analyzed causative alternations in depth withi
 
 For explicitness, let us give the two alternations the following names:
 \ex
-\begin{tabular}{l|cc|cc}
-	&	Anticausative & Causative & Anticausative & Causative\\\hline
-Basic alternation	& {\vz} & Voice &  & \\
-Marked alternation		&		&  & Voice & {\vd}\\
+\begin{tabular}{l|ccc}
+	&	Anticausative & Causative & Causative\\\hline
+Basic alternation	& {\vz} & Voice &   \\
+Marked alternation		&		&  Voice & {\vd}\\
 \end{tabular}
 \xe
 
@@ -120,87 +120,82 @@ It is fairly clear that both types of alternation are well attested.
 
 The second question is whether there is a difference between the semantics of the alternations, and here I believe the basic alternation is more transparent. The question is one of predictability: given the anticausative variant, can we predict the meaning of the causative variant. In the basic alternation, the answer is usually affirmative, just like with the prototypical \emph{break}-\emph{break} and \emph{open}-\emph{open} examples in English; the Hebrew cases were discussed at depth in Chapter @@. A few examples were seen again above, one is elaborated on in~(\nextx):
 \pex
-	\a \emph{neexal} `was eaten'\\
-		Eating event of a DP, no cause specified.
-	\a \emph{axal} `ate'\\
-		Eating event of a DP, external argument specified, external argument understood as cause.
+	\a \emph{nixtav} `was written'\\
+		Writing event of a DP, no cause specified.
+	\a \emph{katab} `wrote'\\
+		Writing event of a DP, external argument specified in the syntax and understood as agent.
 \xe
-I suggest that the causative variant of a basic alternation introduces a direct causer \citep{bittner99,kratzer05}.
+I suggest that the causative variant of a basic alternation introduces a direct causer \citep{bittner99,kratzer05} but that the external argument in the marked alternation is less restricted.\footnote{A similar intuition was expressed in \citealt{doron03}, where the strongest claims about a template's meaning were limited to cases in which a root alternates between two templates.} For the marked causative, the informal phrasing in~(\nextx) will do for now (I return below to the question of whether a writing event even holds in these cases):
+\ex \emph{hextiv} `dictated'\\
+	Writing event of a DP, external argument specified in the syntax and understood as an (indirect) causer.
+\xe
 
-
-@@@
-\cite{fodor70}
-
-
-some paradigmatic/competition/blocking effect?
-
-
-\pex \textbf{How predictable} are these alternations? Not very. Recall (\ref{ex:alternations-heb2}).
-	\a The causative of `wrote' is `dictated'.
+In terms of syntax, there is no difference between the constructions. 
+\pex 
 	\a \begingl
 		\gla ha-talmidim \textbf{katvu} et ha-nosim//
 		\glb the-students wrote \gsc{ACC} topics//
 		\glft `The students wrote down the list of topics.'//
-		\endgl
+		\endgl\\
+		\Tree [. [.students ] [. [.Voice ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]		
 	\a \begingl
 		\gla ha-more \textbf{hextiv} et ha-nosim (la-talmidim)//
 		\glb the-teacher dictated \gsc{ACC} topics to.the-students//
 		\glft `The teacher dictated the list of topics (to the students).//
-	\endgl
-	\a \Tree [. [.students ] [. [.Voice ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]		\Tree [. [.teacher ] [. [.{\vd} ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]
+	\endgl\\
+		\Tree [. [.teacher ] [. [.{\vd} ] [. [.\root{\gsc{WROTE}} ] [.topics ] ] ] ]
 \xe
 
+In the basic alternation, adding a causer to writing immediately identifies the writer. But adding the marked causer changes the event slightly: the teacher does not cause writing to occur, strictly speaking. Rather, he is the causer of a dictating event, which itself brings about the writing down of the topics.
+
+A similar pattern can be seen with \emph{neexal} `was eaten', where the basic variant \emph{axal} means `ate' and the marked variant \emph{heexil (et)} means `fed (s.o.~s.th)'. Why should this be the meaning, and not `made someone eat'? The different kind of event (feeding versus causing to eat) also implies a different position for the eater: subject in the basic variant, object in the marked variant.
 \pex
-	\a The causative of \emph{axal} `ate': \emph{heexil et (be-)} `fed s.o (s.th)'.
-	\a Why not `made eat'?
-	\a What about the added argument syntactically?\\
-		\Tree [. [.John ] [. [.Voice ] [. [.\root{\gsc{ATE}} ] [.cake ] ] ] ]		\Tree [. [.Mary ] [. [.{\vd} ] [. [.\root{\gsc{ATE}} ] [.John ] ] ] ]
+	\a \begingl
+		\gla beki axl-a uxmanjot//
+		\glb Becky ate-\gsc{F} blueberries//
+		\glft `Becky ate blueberries.'//
+		\endgl\\
+		\Tree [. [.\textbf{Becky} ] [. [.Voice ] [. [.\root{\gsc{ATE}} ] [.blueberries ] ] ] ]
+	\a \begingl
+		\gla aba heexil et beki (uxmanjot)//
+		\glb dad fed \gsc{ACC} Becky blueberries//
+		\glft `Dad fed Becky (blueberries).'//
+		\endgl\\
+		\Tree [. [.Mary ] [. [.{\vd} ] [. [.\root{\gsc{ATE}} ] [.\textbf{Becky} ] ] ] ]
 \xe
 
-\pex Some more:\\
-		\begin{tabular}{lll@{ $\sim$ }ll}
-		a.& \emph{kara} & `read'		& \emph{hekri}	& `read out'\\
-		b.& \emph{laxa\texttslig} & `pressed'	& \emph{helxi\texttslig} & `pressured'\\
-		c.&	\emph{daxak}	& `shoved'	& \emph{hedxik}	& `suppressed'\\
-		d.& \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'\\
+This contrast illustrates the limits of syntax within the current system: it can rigidly dictate which elements go where, but the structure itself is not driven by semantic or lexical-semantic considerations.
+
+A few more examples of the marked alternation are given in~(\nextx), showing that the exact type of ``causative'' relation for the marked variant is not uniform.
+\pex
+		\begin{tabular}{l|ll|ll|llcc}
+		\multicolumn{7}{c}{}		& Make O V	& Make O be V-ed\\\hline
+		 a.& \emph{neexal}	& `was eaten'	& \emph{axal} & `ate'		& \emph{heexil} & `fed'			& \cmark	& \xmark\\
+		b.& \emph{nikra}	& `was read'	& \emph{kara} & `read'		& \emph{hekri}	& `read out'	& \cmark	& \xmark \\\hdashline
+		c.&	\emph{nidxak}	& `was pushed aside'	& \emph{daxak}	& `shoved'	& \emph{hedxik}	& `suppressed'\footnotemark	& \xmark	& \cmark\\
+		d.& \emph{nilxa\texttslig}	& `was pressed' &  \emph{laxa\texttslig} & `pressed'	& \emph{helxi\texttslig} & `pressured'	& \xmark	& \cmark \\\hdashline
+		e. & \emph{nidgam} & `was sampled'	& \emph{dagam} & `sampled'	& \emph{hedgim}		& `demonstrated'	& \xmark	& \xmark\\
+		f.& \emph{nisgar}	& `closed'	& \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'	& \xmark	& \cmark?\\
 		\end{tabular}
 \xe
+%jalad nolad holid
+\footnotetext{E.g.~memories or emotions.}
 
-\pex Predictable meaning?\\
-	\begin{tabular}{lcc}
-		& Make X Verb	& make X be Verb-ed\\
-	a. `ate' - `fed'	& \cmark & \xmark\\
-	b. `read' - `read out' & \xmark & \cmark\\
-	c. `closed' - `extradited' & \xmark	& \textbf{?}\\
-	\end{tabular}
-\xe
-\ding{228} Other factors might be at play, depending on the animacy of the object and so on.
-	
-\ex Or maybe your language has Voice-over-Voice \citep{nie17}.
-\xe
+The last examples,~(\lastx e--f), are particularly revealing: to extradite someone is in no way an obvious semantic extension of ``closing'' them. More examples like this can be found, in which the basic alternant has predictable semantics but the marked one does not.
 
-	\subsubsection{Generalization}
-\pex The anticausative-transitive alternation seems more transparent:\\
-		\begin{tabular}{lll@{ $\sim$ }lc@{ $\sim$ }ll}
-		a.& \textbf{\emph{nikra}} & \textbf{`was read'} & \emph{kara} & `read'		& \emph{hekri}	& read out\\
-		b. & \textbf{\emph{nilxa\texttslig}} & \textbf{`was pressured'} & \emph{laxa\texttslig} & `pressed'	& \emph{helxi\texttslig} & `pressured'\\
-		c.&	\textbf{\emph{nidxak}} & \textbf{`was shoved (aside)'} & \emph{daxak}	& `shoved'	& \emph{hedxik}	& `suppressed'\\
-		d.& \textbf{\emph{nisgar}} & \textbf{`was closed'} & \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'\\
-		\end{tabular}
-\xe
-dagam nidgam hedgim
-jalad nolad holid
+As a sidebar, the fact that marked causatives can vary so widely in their interpretation from the basic variants can be taken as an argument against treating these verbs as sharing the same abstract root. That is to say, why should we even think that closing and extraditing share the same root? Would that not be stretching its assumed shared semantics too thin? I will not defend the current position here, as I believe the overall picture emerging from this book and from work treating roots more directly is that we do want to discuss abstract roots, but be more specific in what their shared meaning is and under which circumstances it can vary.
 
-\pex \textbf{The super-causative generalization for transitivity alternations}\\
-	(alternative names are welcome):
+More concretely, however, we can make an argument from the lack of doublets. There are no \emph{additional} verbs in {\tnif} that alternate with {\thif}. That is to say, suppose that \emph{nikra} `was read' and \emph{kara} `read' are derived from \root{krj1} and that \emph{hekri} `read out' was derived from a homophonous root \root{krj2}. Assume similarly that \emph{nisgar} `closed' and \emph{sagar} `closed' were derived from \root{sgr1} but that \emph{hesgir} `extradited' was derived from \root{sgr2}. And so on for all cases of non-predictable causative variants. If this were the case, we would suppose that \root{krj2} and \root{sgr2} could also be instantiated with other functional heads, for instance with {\vz} to create an anticausative in {\tnif}. But this is not the case: there is no \#\emph{nikra} `was read out' to alternate with \emph{hekri} `read out', and no \#\emph{nisgar} `got extradited' to alternate with \emph{hesgir} `extradited'. In other words, there are no \emph{doublets}.
+
+@@@
+
+Taken together, we arrive at the proposed generalization for causitivity marking:
+\pex \textbf{The causative generalization for transitivity alternations}\\
+	If a language has both anticausative and causative marking:
 	\a The anticausative alternation is transparent.
-	\a The causativer alternation is not: root-specific.
+	\a The causative alternation is not (root-specific).
 \xe
 
-\pex So would we even call this a generalization? Why not different roots/verbs?
-	\a No doublets: there are no additional verbs in {\tnif} that alternate with {\thif}.
-	\a E.g.~additional \emph{nikra} *`was read out' alternating with \emph{hekri} `read out' for (\blastx a).
-\xe
 
 
 \pex This pattern follows directly from the general layering approach to transitivity alternations.
@@ -294,7 +289,17 @@ Entailments?
 	dani patax et ha-delet aval hi lo niftexa
 	tereza heexila et ha-tinok aval hu lo axal
 	ha-more hextiv et reSimat ha-nosim la-xibur aval ha-talmidim lo katvu otam
+
+
+\cite{fodor70}
+
+
+some paradigmatic/competition/blocking effect?
+
 	
+	\subsection{Alternative: Added structure}
+
+
 
 \section{Inchoative alternations}
 
