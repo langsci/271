@@ -1,40 +1,139 @@
+\label{chap:vd}
+\section{Introduction}
+In Chapter \ref{chap:vz} we explored the workings of {\vz}, a non-active head responsible for processes of anticausativization. The literature on transitivity alternations has, to a large extent, focused on this ``direction'' of derivation (direction intended here intuitively, since both causatives and anticausatives are derived from the same base). It is perhaps no accident that this literature has also been based for the most part on European languages. In this chapter, we will probe the function of {\vd}, a novel theoretical proposal. I will first describe the general properties of {\vd} and how the template it gives rise to, {\thif}, participates in alternations. We will then look more closely at the relationship between a verb in {\tkal} and its alternants in {\tnif} and {\thif}, in Section @@. This discussion will be followed by a brief examination of cases in which anticausative verbs appear in {\thif}, in Section @@. Section @@ considers some alternative approaches.
+
 \section{Causative marking}
-
-
-
-\section{The causative-causativer alternation}
-\pex
-	\a Most of the existing work is on marking of anticausatives.
-	\a Compare the typological spread of languages in (\ref{intro-layer}a)--(\ref{intro-feat}a).
+Recall the core observation motivating the trivalent system: Hebrew is morphological marking of both causative and anticausative forms, in addition to a ``simple'' verbal form, (\nextx).
+\ex\label{vd:ex:alternations-heb}
+	\begin{tabular}{ll|ll|ll}
+	\multicolumn{2}{P{4.2cm}|}{causative} &	\multicolumn{2}{P{4cm}|}{underspecified}	& \multicolumn{2}{P{4.2cm}}{anticausative}\\\hline
+	\multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
+	\emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
+	\emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
+	\end{tabular}
 \xe
 
-\pex The causative-inchoative alternation.
+	\subsection{An active Voice head}
+The template {\thif} is traditionally called the ``causative'' one, since verbs in it are often causative versions of a verb in {\tkal} (or {\tnif}), as in~(\nextx a). Many verbs are also causative without alternating, as in~(\nextx b), and others are unergative,~(\nextx c). This is the usual case in {\thif}: over 500 of the 550--600 verbs in this template would fit in this list.
+\ex\label{vd:ex:alternations-heb}
+	\begin{tabular}{lll|ll|ll}
+	& \multicolumn{4}{c|}{anticausative} & \multicolumn{2}{c}{causative}\\
+	& \multicolumn{2}{c|}{\tnif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\thif}\\\hline
+	a.& \emph{nixnas} & `entered' & && \emph{hexnis} & `inserted'\\
+	 & \emph{notar} & `remained' & && \emph{hotir} & `left behind'\\
+	 & \emph{nikxad} & `went extinct' & && \emph{hekxid} & `eradicated'\\
+	 & \emph{ni{\texttslig}al} & `was saved' & && \emph{he{\texttslig}il} & `saved'\\
+	 & \emph{nee{\texttslig}av} & `was saddened' & && \emph{hee{\texttslig}iv} & `saddened'\\
+	 & \emph{nexlaʃ} & `grew weak' & && \emph{hexliʃ} & `weakened'\\
+	 & && \emph{kafa} & `froze' & \emph{hekpi} & `froze'\\
+	 & && \emph{baar} & `burned' & \emph{hevir} & `lit up'\\
+	 & && \emph{xazar} & `returned' & \emph{hexzir} & `returned'\\
+	 & && \emph{tava} & `drowned' & \emph{hetbia} & `drowned'\\
+	 & && \emph{jaʃav} & `sat down' & \emph{hoʃiv} & `sat down'\\
+	 & && \emph{paxad} & `was afraid' & \emph{hefxid} & `scared'\\
+	 & && \emph{rakad} & `danced' & \emph{herkid} & `caused to dance'\\
+	 \hline
+	b.& &&&& \emph{heʃmid} & `destroyed' \\
+	& &&&& \emph{heir} & `illuminated'\\
+	& &&&& \emph{hevis} & `defeated'\\
+	& &&&& \emph{hegdir} & `defined'\\
+	& &&&& \emph{hezmin} & `invited'\\
+	& &&&& \emph{heka} & `struck'\\
+	& &&&& \emph{hesnif} & `sniffed'\\
+	& &&&& \emph{heflil} & `incriminated'\\
+	\hline
+	c.	& &&&&  \emph{hedrim} & `went south' \\
+		& &&&&  \emph{hegzim} & `exaggerated' \\
+		& &&&&  \emph{heflig} & `set sail' \\
+		& &&&&  \emph{heria} & `cheered' \\
+		& &&&& \emph{heezin} & `listened'\\
+		& &&&& \emph{hemtin} & `waited'\\
+		& &&&& \emph{heskim} & `agreed'\\
+	\end{tabular}
+\xe
+
+Many of the unergatives are most natural with an indirect object, e.g.~\emph{hemtin le-} `waited for'. The purpose of the list in~(\lastx) is not to exhaust the possible syntactic configurations of verbs in {\thif}, simply to show why this template has traditionally been viewed as causative. But it is more accurate to say that the template is predominantly \emph{active}, i.e.~it has an agentive, external argument.
+
+
+If it is true that there is an external argument regardless of the root, the presence of this argument should be encoded in the syntax. This goal is achieved using {\vd}: it requires that a DP be merged in its specifier, guaranteeing that an external argument appear. Remember that I am abstracting away from the difference between Agents and Causers (Chapter @@).
+\pex 
+	\a \textbf{\vd:}\\
+	{\vd} is a Voice head with a [\!+\!D] feature, requiring that some element with a [D] feature merge in its specifier.
+	\a \denote{\vd} = $\lambda$x$\lambda$e.Cause(x,e)
+\xe
+This semantics of {\vd} in~(\lastx) will be slightly modified in Section @. The structure is straightforwardly as in~(\nextx), where {\vd} obligatorily introduces an external argument.
+\ex\label{vd:tree:thif}
+\Tree
+        [.VoiceP
+            [.DP ]
+            [
+                [.{\vd}\\\emph{he-} ]
+                [.vP
+                    [.v
+                        [.v ]
+                        [.\root{\gsc{ROOT}} ]
+                    ]
+                    [.(DP) ]
+                ]
+            ]
+        ]
+    \xe
+
+This proposal is, on its own, enough to describe most of the empirical landscape. In Section @@ I return to a handful of cases in which inchoative verbs appear in {\thif}. But first, there are a number of consequences of causation that are worth exploring.
+
+	\subsection{The causative-causative alternation}
+Recall the basics of the anticausative alternation which we have been assuming. Both (marked) anticausatives and (unmarked) causatives share a common base, formally the vP. This phrase is a predicate over eventualities, to which Voice can add an external argument \citep{schaefer08,layering15}, (\nextx).
+\pex 
 	\a \emph{John} \textbf{Voice} [_{\text{vP}} \emph{broke the glass}].
 	\a \textbf{\vz} [_{\text{vP}} \emph{The glass broke}].
-	\a What's important is that the vP is a predicate over eventualities. Voice can add an external argument if it ``wants'' to \citep{layering15}.
+\xe
+But if this is the case, how and why does {\vd} differ from underspecified Voice? If Voice allows the grammar to add an external argument, what's left for an additional device (\vd) to do, the hypothetical (\nextx)?
+\ex \emph{John} \textbf{\vd} [_{\text{vP}} \emph{broke the glass}].
 \xe
 
-\pex This section:
-	\a Regular Voice allows us to add an external argument.
-	\a What's left for an additional grammatical device (\vd) to do?
-	\a Difference in productivity between the anticausative and the causative-r alternations.
+Since the syntactic behavior is identical as far as licensing a specifier is concerned, in this section I will discuss the semantic difference between the resulting causative verbs. Concretely, I will argue that Voice-causatives are more transparent than {\vd}-causatives, whereby the morphological markedness of the latter mirrors some semantic markedness or opacity.
+
+Very little contemporary work has analyzed causative alternations in depth within a general theory of argument structure alternations; such work normally draws on languages that are typologically distant from Indo-European, like Japanese \citep{jacobsen92}. \citet[62f3]{layering15} speculate that a marked causative should entail thematic Voice (semantically if not syntactically), but as far as I know no proposal has explored the implications of marked anticausatives and marked causatives existing side by side.
+
+For explicitness, let us give the two alternations the following names:
+\ex
+\begin{tabular}{l|cc|cc}
+	&	Anticausative & Causative & Anticausative & Causative\\\hline
+Basic alternation	& {\vz} & Voice &  & \\
+Marked alternation		&		&  & Voice & {\vd}\\
+\end{tabular}
 \xe
 
-	\subsection{Marked causatives}
-\pex What about \textbf{marked causatives}?
-	\a Japanese, Hebrew, \dots
-	\a \citet[62f3]{layering15}: causative version $\Rightarrow$ thematic voice.
-	\a Featural: causative version $\Rightarrow$ {\vd}.
-\xe
+The first question to ask is how productive these two alternations are. As already noted above, there are many roots showing both {\tkal} (Voice) and {\thif} (\vd) verbal forms. A rough count is as follows:
 
-\ex Well, that was easy!
-\xe
+{\tnif} total @@
+	{\tnif} anticausatives @@
+		Basic alternation with {\tkal} @@
+{\thit} total @@
+	{\thit} anticausatives @@
+		Basic alternation with {\tpie} @@
+{\thif} total 550@
+	{\thif} actives 500@
+		Marked alternation with {\tkal} @@
 
-	\subsection{It wasn't}
-\pex \textbf{How productive} are these alternations?
-	\a Very, in the sense that there are lots of roots with both {\tkal} (Voice) and {\thif} (\vd) forms.
-	\a About 300 out of 500-550 verbs in {\thif} in general \citep{kastner18tlr}.
+It is fairly clear that both types of alternation are well attested.
+
+The second question is whether there is a difference between the semantics of the alternations, and here I believe the basic alternation is more transparent. The question is one of predictability: given the anticausative variant, can we predict the meaning of the causative variant. In the basic alternation, the answer is usually affirmative, just like with the prototypical \emph{break}-\emph{break} and \emph{open}-\emph{open} examples in English; the Hebrew cases were discussed at depth in Chapter @@. A few examples were seen again above, one is elaborated on in~(\nextx):
+\pex
+	\a \emph{neexal} `was eaten'\\
+		Eating event of a DP, no cause specified.
+	\a \emph{axal} `ate'\\
+		Eating event of a DP, external argument specified, external argument understood as cause.
 \xe
+I suggest that the causative variant of a basic alternation introduces a direct causer \citep{bittner99,kratzer05}.
+
+
+@@@
+\cite{fodor70}
+
+
+some paradigmatic/competition/blocking effect?
+
 
 \pex \textbf{How predictable} are these alternations? Not very. Recall (\ref{ex:alternations-heb2}).
 	\a The causative of `wrote' is `dictated'.
@@ -80,7 +179,7 @@
 \ex Or maybe your language has Voice-over-Voice \citep{nie17}.
 \xe
 
-	\subsection{Generalization}
+	\subsubsection{Generalization}
 \pex The anticausative-transitive alternation seems more transparent:\\
 		\begin{tabular}{lll@{ $\sim$ }lc@{ $\sim$ }ll}
 		a.& \textbf{\emph{nikra}} & \textbf{`was read'} & \emph{kara} & `read'		& \emph{hekri}	& read out\\
@@ -89,6 +188,8 @@
 		d.& \textbf{\emph{nisgar}} & \textbf{`was closed'} & \emph{sagar} & `closed'		& \emph{hesgir} & `extradited'\\
 		\end{tabular}
 \xe
+dagam nidgam hedgim
+jalad nolad holid
 
 \pex \textbf{The super-causative generalization for transitivity alternations}\\
 	(alternative names are welcome):
@@ -101,7 +202,7 @@
 	\a E.g.~additional \emph{nikra} *`was read out' alternating with \emph{hekri} `read out' for (\blastx a).
 \xe
 
-	\subsection{Analysis}
+
 \pex This pattern follows directly from the general layering approach to transitivity alternations.
 	\a If the basic vP already has causation, then it's clear what \textbf{not} adding an external argument would mean.
 	\a It's also relatively clear what adding an external argument would mean.
@@ -180,6 +281,20 @@ make X verb (make someone suspéct)
 שלום לפני בערך 5 אלף החלפתי גלגל''ש כולל שרשרת (z750 2010)והמחיר שקבלתי קצת החשיד אותי
 גלאי המתכות לא התריע ובכל זאת הפלסטיני החשיד את לוחמי משמר הגבול של משטרת ישראל
 
+
+Entailments?
+	John opened the door but it didn't open
+	John fed the baby but it didn't eat
+	The teacher dictated the list of essay topics but the students didn't write them down
+	
+	Hans öffnete die Tür, aber sie hat sich nicht geöffnet
+	Hans fütterte das Kind, aber es hat nicht(s) gegessen
+	
+	
+	dani patax et ha-delet aval hi lo niftexa
+	tereza heexila et ha-tinok aval hu lo axal
+	ha-more hextiv et reSimat ha-nosim la-xibur aval ha-talmidim lo katvu otam
+	
 
 \section{Inchoative alternations}
 
