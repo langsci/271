@@ -1,9 +1,9 @@
 \label{chap:vz}
 \section{Introduction}
-In the previous chapter we saw how one morphological form in Hebrew is associated with various argument structure configurations: verbs in {\tkal} might be unaccusative, unergative, transitive or ditransitive, all depending on the root. In this chapter and the next we will consider alternations in which the same root is instantiated in different template, which can be thought of as akin to distinct suffixes in European languages (this latter point is made explicitly in \citealt{kastner18nllt}).
+In the previous chapter we saw how one morphological form in Hebrew is associated with various argument structure configurations: verbs in {\tkal} might be unaccusative, unergative, transitive or ditransitive, all depending on the root. The theory developed in this book attributes this freedom to the behavior of Voice, which at least in Hebrew is not specified with regards to the existence of an external argument or lack of one. In this chapter and in the next we will consider cases in which a different value of Voice is merged in the structure, leading to specific consequences for the syntax, semantics and phonology of the resulting verb. In terms of the morphology, we will see alternations in which the same root is instantiated in different templates, which can be thought of as akin to distinct suffixes in European languages (this latter point was made explicitly in \citealt{kastner18nllt}).
 
-The current chapter motivates the non-active head {\vz} based on argument structure alternations in Hebrew such as those in~(\nextx). This head will stand in opposition to the ``default'' head Voice of Chapter~\ref{chap:voice}.
-\ex\label{ex:anticaus}Examples of anticausatives:\\
+The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules out the addition of an external argument. In the simplest case, this configuration leads to argument structure alternations as in~(\nextx), where the anticausative variants are essentially marked with non-active morphology.
+\ex\label{ex:anticaus}
 \begin{tabular}{ll|c|ll|ll}
 \multicolumn{2}{c|}{Templates} & Root & \multicolumn{2}{c|}{Causative} & \multicolumn{2}{c}{Anticausative} \\\hline
 \multirow{3}{*}{a.} & \multirow{3}{*}{\tkal~$\sim$ \tnif} & \root{ʃbr}& ʃavar & `broke' & niʃbar & `got broken'\\
@@ -15,25 +15,30 @@ The current chapter motivates the non-active head {\vz} based on argument struct
 \end{tabular}
 \xe
 
-The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (or ``middle'') Voice. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to provide a detailed analysis of the Hebrew data, to motivate the benefits of adopting this specific technical implementation, and to highlight points of divergence from existing work (in particular \citealt{layering15}).
+The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (or ``middle'') Voice, and I will return to a direct comparison with that theory in Chapter~\ref{chap:aas}. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to motivate the benefits of adopting this specific technical implementation, to provide a detailed analysis of the Hebrew data. and to highlight points of divergence from existing work in preparation for the more in-depth discussion in the second part of this book.
 
-To this end, we will first see in Section~\ref{vz:nact} how {\vz} derives the alternation between {\tkal} and {\tnif}, seen in~(\lastx a). Section~\ref{vz:figrefl} presents a new generalization about \emph{active} verb forms in {\tnif} and show how their existence can be explained if {\vz} is merged lower in the structure, in a prepositional phrase. Section~\ref{vz:va} extends the system by introducing the agentive modifier {\vz} of Chapter @@; it correctly derives alternations such as those in~(\lastx b) and the active verbs of the preceding section but also a special type of verb, one that does not appear in any other template, i.e.~in no other morphosyntactic configuration: the reflexive. The analysis concludes in Section~\ref{vz:inch} by discussing what {\vz} does when there is no active Voice form with which it can alternate. This discussion includes denominal verbs, which have in the past been trumpeted as a major problem for root-based theories of morphology, especially Semitic morphology (and Hebrew in particular). That point leads naturally to the examination of alternatives in Section~\ref{vz:others}.
+My approach in this chapter will continue to be programmatic: by presenting the theoretical construct, we will generate expectations for what the language can express using these morphosyntactic means. These expectations will then be substantiated and further exemplified. The idea is to develop the theory by means of examples from Hebrew in a way which can be applied to other languages as well.\footnote{For a different kind of exposition, one whose rhetorical goal is to provide an analysis of the Hebrew system first and foremost, see \cite{kastner16phd}. There, the guiding question would have been something like ``What is {\tnif}?''. Here, we ask ``What does {\vz} do?''. The final result, after taking the entire range of data into account, is the same.}
 
-My approach in this chapter (and the next) will be programmatic: by presenting the theoretical construct, we will generate expectations for what the language expresses. These will then be substantiated and further exemplified. For example, the next section sets up expectations for what {\vz} is supposed to do, and then tests them by means of various anticausativity diagnostics. Additional data is then brought up, for example in Section @@, to supplement the picture. The idea is to develop the theory by means of examples from Hebrew in a way which can be applied to other languages as well.\footnote{For a different kind of exposition, one whose rhetorical goal is to provide an analysis of the Hebrew system first and foremost, see \cite{kastner16phd}. There, the guiding question would have been something like ``What is {\tnif}?''. Here, we ask ``What does {\vz} do?''. The final result, after taking the entire range of data into account, is the same.}
+Section~\ref{vz:nact} first sets up expectations for what {\vz} is supposed to do, and then tests them by means of various anticausativity diagnostics, thus deriving the alternation between {\tkal} and {\tnif} seen in~(\lastx a). Additional data is then brought up to supplement the picture. Section~\ref{vz:figrefl} presents a new generalization about \emph{active} verb forms in {\tnif} and show how their existence can be explained if {\vz} is merged lower in the structure, in a prepositional phrase. Section~\ref{vz:va} extends the system by reintroducing the agentive modifier {\va} of Chapter \ref{voice:va}; it correctly derives alternations such as those in~(\lastx b) and the active verbs of the preceding section but also a special type of verb, one that does not appear in any other template, i.e.~in no other morphosyntactic configuration: the reflexive. The analysis concludes in Section~\ref{vz:inch} by discussing what {\vz} does when there is no active Voice form with which it can alternate. This discussion includes denominal verbs, which have in the past been trumpeted as a major problem for root-based theories of morphology, especially Semitic morphology (and Hebrew in particular). That point leads naturally to the examination of alternatives in Section~\ref{vz:others}.
+
+
+
 
 
 \section{Non-active verbs} \label{vz:nact}
 The non-active variant of Voice is {\vz}, defined in~(\nextx).
 \pex \textbf{\vz}
 	\a A Voice head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.\\
-    As typically assumed for unaccusative little v or unaccusative Voice, {\vz} does not assign accusative case itself \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
-	\a \denote{{\vz}} = λP<s,t>.P
-	\a {\vz} \lra~{\tnif}
+    As typically assumed for unaccusative little \emph{v} or unaccusative Voice, {\vz} does not assign accusative case either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
+	\a \denote{{\vz}} = λP$_{<s,t>}$.P
+	\a {\vz} \lra~{\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va})
 \xe
 
-The syntax of {\vz} is similar to that of ``middle Voice'', ``non-active Voice'' or Voice_{\{\}} \citep{lidz01,schaefer08,alexiadoudoron12,layering15,bruening13,wood15springer,myler16mit,kastnerzu17}. Its semantics does not introduce an Agent, and the Vocabulary Item spelling it out manifests as the template {\tnif}, and not as {\tkal}. The morphophonological details are fleshed out in \citep{kastner16nllt}; in Section @ I will refine the picture slightly by explaining what happens when {\va} is added to the structure.
+The syntax of {\vz} is similar to that of ``middle Voice'', ``non-active Voice'' or Voice_{\{\}} \citep{lidz01,schaefer08,alexiadoudoron12,layering15,bruening13,wood15springer,myler16mit,kastnerzu17} in that it does not license a specifier of Voice. Its semantics does not introduce an Agent, and the Vocabulary Item spelling it out manifests as the template {\tnif}, and not as {\tkal}. The morphophonological details are fleshed out in \citep{kastner16nllt}; in Section \ref{vz:va} I will refine the picture slightly by explaining what happens when {\va} is added to the structure.
 
-Voice and {\vz} function in a way familiar from the work cited immediately above. Verb phrases (vPs) contain no reference to the external argument, since that role is licensed by Voice. What this means is that a vP is a predicate of events (potentially transitive ones). As we saw in the previous chapter, the verb \emph{ʃavar} `broke' in {\tkal} is made up of a vP, denoting a set of breaking events, and a head introducing an addition external argument.
+Voice and {\vz} function in a way familiar from the work cited immediately above. Verb phrases (vPs) contain no reference to the external argument, a position (Spec,VoiceP) which is licensed by Voice in the syntax and whose thematic role (Agent) is introduced by Voice in the semantics. What this means is that a vP is a predicate of events (potentially transitive ones).
+
+Continuing with an example from the previous chapter, we have seen that the verb \emph{ʃavar} `broke' in {\tkal} is made up of a vP, denoting a set of breaking events, and the head Voice that introduced an addition external argument, (\nextx).
 \ex \emph{XaYaZ}, \emph{ʃavar} 'broke' \\
 \Tree
 	[.VoiceP
@@ -56,7 +61,7 @@ Merging {\vz} instead of Voice should give us the same basic breaking event with
 \ex {\tnif}, \emph{niʃbar} 'got broken' \\
 \Tree
 	[.VoiceP
-		[.{} ]
+		[.{---} ]
 		[.
 			[.{\textbf{\vz}\\\emph{ni-}} ]
 			[.vP
@@ -70,27 +75,27 @@ Merging {\vz} instead of Voice should give us the same basic breaking event with
 	]		
 \xe
 
-This basic distinction between Voice and {\vz} in the syntax thus feeds differences across the interfaces, as in previous work on Hebrew and beyond: the spell-out is different, the semantics is different and the resulting constructions are different. This basic machinery allows us to derive some typical argument structure alternations in the language.
+This basic distinction between Voice and {\vz} in the syntax thus feeds differences across the interfaces: the spell-out is different, the semantics is different and the resulting constructions are different. This basic machinery is again familiar from languages such as Greek \citep{alexiadoudoron12,layering15} and allows us to derive some typical argument structure alternations in the language. The idea that verbs in this template are anticausative variants of those in {\tkal} is certainly not new. However, the explicit morphosyntactic implementation is (see also \citealt{kastner17gjgl} and \citealt{ahdoutkastner18}), providing a necessary backdrop for the analyses of figure reflexives and reflexives coming up.
 
-The idea that verbs in this template are anticausative variants of those in {\tkal} is certainly not new. However, the explicit morphosyntactic implementation is (see also \citealt{kastner17gjgl} and \citealt{ahdoutkastner18}), providing a necessary backdrop for the novel claims about figure reflexives in Section @ and nominalizations in Chapter @.
+The next step is to confirm that our derivation is correct: are verbs with {\vz} in {\tnif} really anticausative? For the most part, yes. But it will also emerge below there are two classes of verbs in {\tnif}, one anticausative and one which I call \emph{figure reflexive}. The latter are demonstrably not anticausative in a way which will be made precise in Section \ref{vz:figrefl}, after we go through the anticausatives.
 
-The next step is to confirm that this is actually the case: are verbs in {\tnif} really anticausative? It will emerge below that there are two classes of verbs in {\tnif}, one anticausative and one which I call figure reflexive. The latter are demonstrably not anticausative in a way which will be made precise in Section @, where I suggest that {\vz} merges lower, as the specifier of a prepositional phrase, while the verb itself combines with regular Voice.
-
-	\subsection{Anticausatives in {\tnif}}
-This section concerns verbs like those in~(\nextx), which I analyze as anticausative. Based on the diagnostics discussed below, \cite{ahdoutkastner18} found that @@ of the @@ verbs in {\tnif} are anticausative, or ambiguous between anticausative---as discussed in this section---and figure reflexive, discussed in Section @.
+	\subsection{Anticausatives in {\tnif}} \label{vz:nact:anticaus}
+This section concerns verbs like those on the right-hand side of~(\nextx), which I analyze as anticausative. Based on the diagnostics discussed below, \cite{ahdoutkastner18} found that 196 of the 415 verbs in {\tnif} are anticausative, or ambiguous between anticausative---as discussed in this section---and figure reflexive, discussed in Section~\ref{vz:figrefl}.
 \ex \begin{tabular}{lllll}
-	niʃbar  & 'broke' & $\sim$ & ʃavar & `broke'\\
-    nigmar  & 'ended' & $\sim$ & gamar & `ended'\\
-    nisgar  & 'closed' & $\sim$ & sagar & `closed'\\
-    nimtax  & 'stretched' & $\sim$ & matax & `stretched'\\
-    nifsak  & 'stopped' & $\sim$ & pasak & `stopped'\\
+	\emph{ʃavar} & `broke' & $\sim$ & \emph{niʃbar}  & 'broke' \\
+    \emph{gamar} & `ended' & $\sim$ & \emph{nigmar}  & 'ended' \\
+    \emph{sagar} & `closed' & $\sim$  & \emph{nisgar}  & 'closed'\\
+    \emph{matax} & `stretched' & $\sim$ & \emph{nimtax}  & 'stretched' \\
+    \emph{pasak} & `stopped' & $\sim$ & \emph{nifsak}  & 'stopped' \\
    \end{tabular}
 \xe
 
-The diagnostics used here are compatibility with various agent-oriented adverbs, including the use of `by itself’, and the two standard unaccusativity diagnostics for Hebrew.
+The diagnostics used here are compatibility with various agent-oriented adverbs, including the use of `by itself’ (Section~\ref{vz:nact:anticaus:adv}), and the two standard unaccusativity diagnostics for Hebrew (Section~\ref{vz:nact:anticaus:unacc}).
 
-		\subsubsection{Adverbial modifiers}
-A common assumption in studies of anticausativity is that the existence of an agent can be probed using adverbial modifiers such as adverbs and the phrase 'by itself' \citep{unaccusativity95,alexiadouanagnostopoulou04,layering15,alexiadoudoron12,koontzgarboden09,kastner17gjgl}. Hebrew me-a{\ts}mo `by itself' diagnoses the non-existence of an external argument, regardless of whether the external argument is explicit (as in transitive verbs) or implicit (as in passives). The test is appropriate with anticausatives in the {\tnif} template shown above, (\nextx a), but not with direct objects of transitive verbs, (\nextx b), or with passive verbs, (\nextx c). The examples are taken from \cite{ahdoutkastner18}.
+		\subsubsection{Adverbial modifiers} \label{vz:nact:anticaus:adv}
+A common assumption in studies of anticausativity is that the existence of an agent can be probed using adverbial modifiers such as adverbs and the phrase 'by itself' \citep{unaccusativity95,alexiadouanagnostopoulou04,layering15,alexiadoudoron12,koontzgarboden09,kastner17gjgl}.\footnote{\cite{layering15} emphasize that for cases where `by itself' agrees with the internal argument as in Hebrew and English, `by itself' diagnoses the absence of an implicit (external) argument which may be an agent or a cause, rather than simply being sensitive to agentivity.}
+
+The Hebrew equivalent of `by itself', \emph{me-a{\ts}mo} (lit.~`from himself/itself'), can be thus assumed to diagnose the non-existence of an external argument, regardless of whether the external argument is explicit (as in transitive verbs) or implicit (as in passives). The test is appropriate with anticausatives in the {\tnif} template shown above, (\nextx a), but not with direct objects of transitive verbs, (\nextx b), or with passive verbs, (\nextx c). The examples are taken from \cite{ahdoutkastner18}.
 \pex
 	\a \begingl
 	\gla ha-kise niʃbar me-a{\ts}mo//
@@ -99,8 +104,8 @@ A common assumption in studies of anticausativity is that the existence of an ag
     \endgl
     
     \a \ljudge{*} \begingl
-    \gla miri ʃavra et ha-kise me-a{\ts}mo.//
-    \glb Miri broke.SMPL ACC the-chair from-itself//
+    \gla miri ʃavr-a et ha-kise me-a{\ts}mo.//
+    \glb Miri broke.SMPL-\gsc{F} ACC the-chair from-itself//
     \glft (int. 'Miri broke the chair of its own accord')//
     \endgl
     
@@ -111,7 +116,7 @@ A common assumption in studies of anticausativity is that the existence of an ag
    \endgl
 \xe
     
-Anticausatives are also incompatible with by-phrases, which would otherwise refer to an agent.
+Anticausatives are also incompatible with \emph{by}-phrases, which would otherwise refer to an agent.
 \ex \ljudge{*} \begingl
 	\gla ha-{\ts}amid niʃbar al-jedej ha-{\ts}oref//
 	\glb the-bracelet broke.MID by the-jeweler//
@@ -127,49 +132,61 @@ Agent-oriented adverbs are likewise incompatible with anticausatives.
 	\endgl
 \xe
 
-@@@
-		\subsubsection{Unaccusativity diagnostics}
+		\subsubsection{Unaccusativity diagnostics} \label{vz:nact:anticaus:unacc}
+The syntactic literature on Hebrew has identified two unaccusativity diagnostics. These diagnostics are verb-subject order and the possessive dative, although it is important to acknowledge that their status as robust tests has been challenged in recent years \citep{gafter14li,linzen14pd,kastner17gjgl}.
 
-The syntactic literature on Hebrew has identified two unaccusativity diagnostics. These diagnostics are VS order and the possessive dative, although it is important to acknowledge that their status as robust tests has been challenged in recent years \citep{gafter14li,linzen14pd,kastner17gjgl}. Crucially for our purposes, the two classes of verbs behave differently with regards to these diagnostics.
+\textbf{The first test} is the ordering of the subject and the verb. Modern Hebrew is typically SV(O), but promoted subjects may appear after the verb, resulting in VS order. This is true for both unaccusatives, (\nextx a), and passives, (\nextx b), presumably because the underlying object remains in its original VP-internal position. Unergatives do not allow VS, with the exception of a marked structure referred to as ''stylistic inversion'', (\anextx). For additional discussion see \cite{shlonsky87}, to whom the test is attributed, as well as \cite{shlonskydoron91}, \cite{borer95} and \cite{preminger10} for other aspects.
 
-The first test is the ordering of the subject and the verb. Modern Hebrew is typically SV(O), but promoted subjects may appear after the verb, resulting in VS order. This is true for both unaccusatives, (@), and passives, (@), presumably because the underlying object remains in its original VP-internal position. Unergatives do not allow VS, with the exception of a marked structure referred to as ''stylistic inversion'', @. For additional discussion see \cite{shlonsky87}, to whom the test is attributed, as well as \cite{shlonskydoron91}, \cite{borer95} and \cite{preminger10} for other aspects.
+\pex
+	\a  \begingl
+	\gla\rightcomment{\cmark~Internal Argument}nafl-u ʃaloʃ kosot be-ʃmone ba-boker//
+	\glb fell.SMPL-3PL three glasses in-eight in.the-morning//
+	\glft `Three glasses fell at 8am.'//
+	\endgl
 
-nafl-u ʃaloʃ kosot be-ʃmone ba-boker.         V Internal Argument
-     fell.SMPL-3PL three glasses in-eight in.the-morning
-     'Three glasses fell at 8am.'
-    
-    @@passive example@@
+	\a \begingl
+	\gla\rightcomment{\cmark~Internal Argument}huʃlex-u ʃaloʃ kosot be-ʃmone ba-boker//
+	\glb throw.CAUS.PASS-3PL three glasses in-eight in.the-morning//
+	\glft `Three glasses were discarded at 8am.'//
+	\endgl
+\xe
 
-     \# jilel-u ʃloʃa xatulim be-ʃmone ba-boker.    * External argument
-         whined-3PL three cats in-eight in.the-morning
-        'And thence whined three cats at 8am.' (Marked variant)
+\ex \begingl
+	\gla\rightcomment{\xmark~External Argument}\ljudge{\#}jilel-u ʃloʃa xatulim be-ʃmone ba-boker//
+	\glb whined-3PL three cats in-eight in.the-morning//
+	\glft `And thence whined three cats at 8am.' (Marked variant)//
+	\endgl
+\xe
    
-The second unaccusativity diagnostic is the possessive dative, a construction in which the possessor appears in a prepositional phrase in a separate constituent from the possessee (possessor raising). This construction is taken to be unique to internal arguments in the language \citep{borergrodzinsky86}.
+\textbf{The second unaccusativity diagnostic} is the possessive dative, a construction in which the possessor appears in a prepositional phrase in a separate constituent from the possessee (possessor raising). This construction is taken to be unique to internal arguments in the language \citep{borergrodzinsky86}.
 
-A transitive construction is compatible with the possessive dative, (@), as is a non-active construction in {\tnif}, whereas an unergative verb leads to an affected interpretation of the kind discussed by \cite{arieletal15} and \cite{barashersiegalboneh16}, (@). 
+A transitive construction is compatible with the possessive dative, (\nextx a), as is a non-active construction in {\tnif}, (\nextx b), whereas an unergative verb leads to an affected interpretation of the kind discussed by \cite{arieletal15} and \cite{barashersiegalboneh16}, (\anextx). 
 
-dana ʃavra l-i et ha-ʃaon.        Internal Argument
- Dana broke.SMPL to-me ACC the-watch
- 'Dana broke my watch.'
-
-      niʃbar l-i ha-ʃaon
-         broke.MID to-me the-watch
-         'My watch broke.'
-                 
-        \# jilel-u l-i ʃloʃet ha-xatulim        * External argument
-         whined.INTNS-3PL to-me three the-cats
-         'The three cats whined and I was adversely affected.' (int. 'My three cats whined')
-   
-Taken together, these tests provide strong evidence for the common assumption that at least some verbs in {\tnif} are anticausative. A formal analysis follows next.
-
+\pex
+	\a \begingl
+	\gla\rightcomment{\cmark~Internal Argument}dana ʃavra l-i et ha-ʃaon//
+	\glb Dana broke.SMPL to-me ACC the-watch//
+	\glft `Dana broke my watch.'//
+	\endgl
 	
+	\a \begingl
+	\gla\rightcomment{\cmark~Internal Argument}niʃbar l-i ha-ʃaon//
+	\glb broke.MID to-me the-watch//
+	\glft `My watch broke.'//
+	\endgl
+\xe
 
-The next section proposes a different analysis for another class of verbs in {\tnif}, one which correlates their different syntax and semantics with different morphosyntactic configurations.
-
-
-
+\ex \begingl
+	\gla\ljudge{\#}\rightcomment{\xmark~External Argument}jilel-u l-i ʃloʃet ha-xatulim//
+	\glb whined.INTNS-3PL to-me three the-cats//
+	\glft `The three cats whined and I was adversely affected.' (int. 'My three cats whined')//
+	\endgl
+\xe
+   
+Taken together, these tests confirm what the derivation using {\vz} led us to expect: that at least these verbs in {\tnif} are anticausative. A common assumption in the Hebrew literature is that verbs in this template are all non-active, but the next section proposes a different analysis for another class of verbs in {\tnif}, one which correlates their different syntax and semantics with the height in which the [--D] head attaches.
 
 \section{Height of attachment: Figure reflexives} \label{vz:figrefl}
+@@@
 The previous section identified a class of verbs in {\tnif} which are demonstrably non-active. In the current section we propose that another class of {\tnif} verbs exists, and a fairly large one at that. We call these figure reflexives (following \cite{woord14nllt}) and defend the claim that they have an external argument and an obligatory prepositional phrase as their complement but are otherwise intransitive, i.e unergative. Figure reflexives might denote an action (@@), motion (@@) or psych-verb (@@), but in all cases, a prepositional phrase is the obligatory complement of the verb. We will confirm that these verbs are active and then present a structure which involves an agent in Spec,VoiceP and a prepositional phrase complement to the verb.
 
 	\subsection{Data}
