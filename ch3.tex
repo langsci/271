@@ -186,7 +186,9 @@ A transitive construction is compatible with the possessive dative, (\nextx a), 
 Taken together, these tests confirm what the derivation using {\vz} led us to expect: that at least these verbs in {\tnif} are anticausative. A common assumption in the Hebrew literature is that verbs in this template are all non-active, but the next section proposes a different analysis for another class of verbs in {\tnif}, one which correlates their different syntax and semantics with the height in which the [--D] head attaches.
 
 \section{Height of attachment: Figure reflexives} \label{vz:figrefl}
-It has been commonly assumed that verbs in {\tnif} are medio-passive, but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. I call them figure reflexives, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. These verbs are otherwise intransitive, i.e~unergative. Their existence can be explained if, like \cite{wood14nllt,wood15springer}, we make specific assumptions about how prepositional phrases are built up. I explore these verbs in Section~\ref{vz:figrefl:data} and show how they an be analyzed using the [--D] feature in Section~\ref{vz:figrefl:analys}, deriving a structure which involves an agent in Spec,VoiceP and a prepositional phrase complement to the verb.
+It has been commonly assumed that verbs in {\tnif} are medio-passive, but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. I call them figure reflexives, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. 
+
+These verbs are otherwise intransitive, i.e~unergative. Their existence can be explained if, like \cite{wood14nllt,wood15springer}, we make specific assumptions about how prepositional phrases are built up. I explore these verbs in Section~\ref{vz:figrefl:data} and show how they an be analyzed using the [--D] feature in Section~\ref{vz:figrefl:analys}, deriving a structure which involves an agent in Spec,VoiceP and a prepositional phrase complement to the verb.
 
 	\subsection{Data} \label{vz:figrefl:data}
 Figure reflexives in {\tnif} include verbs such as those in (\nextx). Based on the diagnostics discussed here, \cite{ahdoutkastner18} have found that 76 of the 415 verbs in {\tnif} are figure reflexive, or ambiguous between a non-active and a figure reflexive reading.   
@@ -266,14 +268,14 @@ The novel observation is that figure reflexives take an obligatory prepositional
 This claim has not been made before in either the traditional grammars or contemporary work, as far as I know (the closest are \citealt[87]{berman78}, who stated that some verbs show ''ingression'', and \citealt{schwarzwald08}, who noted that some verbs in this template are active). The resulting generalization is that external arguments in {\tnif} are possible if and only if a prepositional phrase is required. Returning to [--D], this generalization can be derived from the structure, as I show next.
 
 	\subsection{Analysis} \label{vz:figrefl:analys}
-	@@@
-Our treatment of prepositional phrases requires us to be more explicit about their internal structure. We do that in section @ and then discuss the compositional mechanism at work in section @. The pieces are put together in section @.
+Understanding figure reflexives and the behavior of [--D] requires me to be more explicit about their internal structure. I do that in Section~\ref{vz:figrefl:analys:pp} and then discuss the compositional mechanisms at work in Section~\ref{vz:figrefl:analys:delay}. Much of the analysis here follows the analysis if similar constructions in Icelandic proposed by \cite{wood15springer}.
 
-		\subsubsection{Prepositional phrases}
-Now that we have convinced ourselves of the fact that figure reflexives are active verbs, we turn to their complements. In order to be precise about the argument structure of prepositions, we adopt the idea that subjects of prepositional phrases are introduced by a separate functional head. This suggestion was made in one way or another by a number of authors \citep{vanriemsdijk90,rooryck96,koopman97,gehrke08phd,dendikken03,dendikken10}. though what is striking is that these accounts dealt with various empirical phenomena, none of which is the same as the case discussed here. Most concretely we follow \cite{svenonius03,svenonius07,svenonius10} who implements this idea using the functional head p. Borrowing terminology from \cite{talmy78} and related work, \cite{wood14nllt} is explicit in calling the DP in Spec,pP the Figure and the complement of P the Ground.
+		\subsubsection{Prepositional phrases} \label{vz:figrefl:analys:pp}
+I adopt the idea that subjects of prepositional phrases are introduced by a separate functional head, a suggestion which has already been made in various guises by a number of researchers interested in the structure of prepositional phrases \citep{vanriemsdijk90,rooryck96,koopman97,gehrke08phd,dendikken03,dendikken10}. In particular, \cite{svenonius03,svenonius07,svenonius10} implements this idea using the functional head \emph{p}. Borrowing terminology from \cite{talmy78} and related work, Likening the \emph{p}P to VoiceP, \cite{wood14nllt,wood15springer} suggests a parallelism: just like the verb assigns the semantic role of Theme to its complement, P assigns the semantic role of \textbf{Ground}. And just like Voice assigns the semantic role of Agent to its specifier, \emph{p} assigns the semantic role of \textbf{Figure} to its own specifier.
 
-The dashed arrows in (@) show the assignment of semantic (thematic) roles, in a system without theta-roles as primitives \cite{schaefer08,layering15,wood14nllt,wood15springer,woodmarantz17,myler16,kastner17gjgl}; this difference is often referred to as “syntactic transitivity” versus “semantic transitivity”. For now, all that matters is that functional heads can make syntactic requirements (as with the [D] feature) and introduce semantic roles (as with Voice).
-\ex
+The dashed arrows in~(\nextx) show the assignment of semantic (thematic) roles in this system.\footnote{I take it for given that thematic roles are semantic functions but that something like the traditional theta-roles does not exist \citep{schaefer08,layering15,wood14nllt,wood15springer,woodmarantz17,myler16mit,kastner17gjgl}; see the background given in Section @.} 
+\pex
+	\a 
  \Tree
 	 [.\emph{p}P
 	 	[.DP\\\emph{the book}\\{\tikz{\node (Fig) {\textbf{\textsc{figure}}};}} ]
@@ -289,20 +291,21 @@ The dashed arrows in (@) show the assignment of semantic (thematic) roles, in a 
 	\draw[dotted,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
 	\draw[dotted,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
 	\end{tikzpicture}
+	\a     \denote{Voice}  =  λxλe.Agent(x,e) 
+	\a     \denote{\emph{p}}  =  λxλs.Figure(x,s) 
 \xe
 
-    \denote{Voice}  =  λxλe.Agent(x,e) 
-    \denote{p}  =  λxλs.Figure(x,s) 
 
-A concrete example of an ordinary prepositional phrase in Hebrew - a pP - is given in (@), for a verb in the “simple” template XaYaZ. This template has been argued to comprise minimal verbal structure, here v and Voice \citep{doron03,borer13oup,kastner16nllt,kastner17gjgl}.
-
-   (@)      eliana sama sefer al ha-ʃulxan
-         Eliana put book on the-table
-         'Eliana put a book on the table.'    
- 
-\Tree
+An ordinary prepositional phrase in Hebrew is given in~(\nextx), for a verb in {\tkal}. As seen in the previous chapter, the structure comprises the root, v and underspecified Voice.
+\pex
+	\a \begingl
+		\gla marsel sam {\texttslig}aa{\texttslig}ua al ha-smixa//
+		\glb Marcel put toy on the-blanket//
+		\glft `Marcel put a toy on the blanket.'//
+		\endgl
+	\a \Tree
 		[.VoiceP
-		   [.{DP\\\emph{eliana}\\\textsc{agent}} ]
+		   [.{DP\\\emph{marsel}\\\textsc{agent}} ]
 		   [
 				[.Voice ]
 		        [
@@ -311,44 +314,42 @@ A concrete example of an ordinary prepositional phrase in Hebrew - a pP - is giv
 						[.v ]
 		            ]
 					[.\emph{p}P
-		                  [.DP\\\emph{sefer}\\{`book'}\\\textsc{figure} ]
+		                  [.DP\\\emph{{\texttslig}aa{\texttslig}ua}\\{`toy'}\\\textsc{figure} ]
 		                  [
 		                      [.\emph{p} ]
 		                      [.PP
 			                      [.P\\\emph{al}\\{`on'} ]
-			                      \qroof{\emph{ha-ʃulxan}\\{`the table'}\\\textsc{ground}}.DP
+			                      \qroof{\emph{ha-smixa}\\{`the blanket'}\\\textsc{ground}}.DP
 		                      ]
 		                  ]
 		              ]
 		          ]
 		   ]
 		]
-
-Consider next the similarities between Voice and p. Both introduce external arguments within their extended projection and both are usually silent (though Voice can be argued to trigger the phonology of XaYaZ in Hebrew). We have assumed that a variant of Voice exists, {\vz}, which prohibits the Merge of a DP in its specifier. Continuing this reasoning, and following \cite{wood15springer}, we further postulate a variant of p, namely p[--D], which prohibits the Merge of a DP in Spec,pP.
-
-(@)    p[--D]:
-    p[--D] (pronounced ''little p zero'' or ''little p minus dee'') is a p head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.
-    \denote{p[--D]} = \denote{p} = λxλs.Figure(x,s)
-
-    {\vz} and p[--D] are spelled out identically in Hebrew: a prefix (ni-) and stem vowels, resulting in {\tnif}. In section @ we return to the idea that these are one and the same head, i*, differing only in its height of attachment. But first, the compositional details.
-
-		\subsubsection{Delayed saturation}
-
-Since syntactic and semantic requirements of functional heads are separated, a given head might impose a semantic requirement which is fulfilled immediately. If the semantic predicate is saturated later on in the derivation, we have a case of delayed saturation. Such cases have been recently identified (as “delayed gratification”) in work on Icelandic \citep{wood14nllt,wood15springer}, English, Quechua \citep{myler16mit} and Japanese \citep{woodmarantz17}, as well as for reflexive verbs in Hebrew \citep{kastner17gjgl}, although the idea that a predicate may be saturated in delayed fashion is of course not new in and of itself \citep{higginbotham85}.
-
-
-Icelandic exhibits a specific kind of reflexive-like construction, the ``figure reflexive'', in which an argument is interpreted both as an agent and as a \emph{figure} (theme) of a motion event. These constructions appear with the clitic -\emph{st}, as in~(\ref{ex:figrefl}).
-\ex \label{ex:figrefl}\textit{Icelandic} \citep[1399]{wood14nllt}\\
-	 \begingl
- 	\gla Bjartur \textbf{tr\'oð}-\glemph{st} gegnum mann{\textthorn}r\"ongina.//
- 	\glb Bjartur.\gsc{NOM} squeezed-\gsc{ST} through the.crowd//
- 	\glft `Bjartur squeezed (himself) through the crowd.'//
- 	\endgl
 \xe
 
+The similarities between Voice and \emph{p} will play a crucial part in what follows. Both heads introduce external arguments within their extended projection and both are usually silent (though Voice can be argued to trigger the phonology of {\tkal}, as in Chapter @). This chapter explores the functions of {\vz}, which prohibits merging a DP in its specifier. Continuing this reasoning, and following \cite{wood15springer}, we can further postulate a variant of \emph{p}, namely {\pz}, which prohibits the Merge of a DP in Spec,\emph{p}P, (\nextx).
+\pex
+	\a \textbf{\pz:}\\
+    A \emph{p} head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.
+    \a \denote{\pz} = \denote{\emph{p}} = λxλs.Figure(x,s)
+\xe
 
-The current analysis follows closely \citeauthor{wood15springer}’s (\citeyear{wood15springer}) analysis of certain figure reflexives in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. The intuition is that the role of Figure is not saturated within the pP, since no DP is possible in Spec,pP. Rather, an argument introduced later on (the agent) saturates the predicate. The schematic in (@) shows the saturation of semantic roles.
+In Hebrew, {\vz} and {\pz} are spelled out identically: a prefix (\emph{ni}-) and the relevant stem vowels, resulting in {\tnif}. This should not be an accident. In Section~\ref{vz:intersum} and in Chapter~\ref{chap:i} I return to the idea that these are one and the same head, \emph{i}*, differing only in its height of attachment. But for now, we need to finish the derivation of figure reflexives.
 
+		\subsubsection{The composition} \label{vz:figrefl:analys:delay}
+In the current system, a given head might impose a semantic requirement which is usually fulfilled immediately if the syntactic requirement is compatible. For example, Voice might introduce an Agent role and license Spec,VoiceP. But it is also possible for a semantic predicate to be saturated later on in the derivation, in \emph{delayed saturation}. Such cases have been recently identified (as “delayed gratification”) in work on Icelandic \citep{wood14nllt,wood15springer}, English, Quechua \citep{myler16mit} and Japanese \citep{woodmarantz17}, although the idea that a predicate may be saturated in delayed fashion is not new in and of itself \citep{higginbotham85}.
+
+Consider first an existing analysis of Icelandic. Figure reflexives in this language can appear in two configurations, one with a clitic -\emph{st} which does not concern us here \citep{wood14nllt}, and the other without it, as in~(\nextx):
+\ex\label{ex:vz:is-figrefl}
+	 \begingl
+	 \gla Hann labbaði inn í herbergið//
+	 \glb he.NOM strolled in to room.the.ACC//
+	 \glft `He strolled into the room.'\trailingcitation{Icelandic, \citealt[168]{wood15springer}}//
+	 \endgl
+\xe
+
+On \citeauthor{wood15springer}’s (\citeyear{wood15springer}) analysis, the role of Figure is not saturated within the \emph{p}P, since no DP is possible in Spec,{\pz}P. Rather, an argument introduced later, in Spec,VoiceP, saturates this predicate. The schematic in~(\nextx) shows the saturation of semantic roles.
 \ex
 		 \Tree
 		 [.VoiceP
@@ -378,42 +379,35 @@ The current analysis follows closely \citeauthor{wood15springer}’s (\citeyear{
 	  \end{tikzpicture}		    
 \xe
 
-
-On the analysis of \cite{wood14nllt} the subject of PPs, the \emph{figure}, is introduced by a functional head \emph{p} merging above the PP, following independently made suggestions along similar lines \citep{vanriemsdijk90,rooryck96,koopman97,gehrke08phd,dendikken03,dendikken10,svenonius03,svenonius07,svenonius10}. In this system, \emph{p} assigns the thematic role of \gsc{figure} and Voice assigns \gsc{agent}. These labels indicate semantic interpretation at LF, rather than traditional theta-roles.
-
-The structure for~(\ref{ex:figrefl}) is given in~(\ref{tree:figrefl-is}). \citeauthor{wood14nllt}'s insight is that -\emph{st} serves as an expletive, filling Spec,\emph{p}P in the syntax without contributing any semantics. The next DP merged in the structure, \emph{Bjartur}, will then saturate both Voice's semantic role (\gsc{AGENT}) and the role of \gsc{FIGURE} introduced by \emph{p}. A variety of diagnostics show that the verb is agentive, with the DP \emph{Bjartur} merged in Spec,VoiceP.
-\ex \label{tree:figrefl-is}
+The structure for~(\ref{ex:vz:is-figrefl}) is given in~(\ref{tree:vz:is-figrefl}), adapted from \citet[170]{wood15springer}. \citeauthor{wood15springer}'s insight is that there is no argument filling Spec,{\pz}P which can saturate the Figure role of {\pz}. The next DP merged in the structure, \emph{hann} `he', will then saturate both Voice's semantic role (Agent) and the role of Figure introduced by {\pz}. A variety of diagnostics for Icelandic show that the verb is agentive, with the DP \emph{Hann} merged in Spec,VoiceP, just like Hebrew figure reflexives are agentive.
+\ex \label{tree:vz:is-figrefl}
 		\Tree
 		[.VoiceP
-			[.{DP\\{\emph{Bjartur}}\\\textsc{agent}\\\textsc{figure}} ]
+			[.{DP\\{\emph{hann}}\\`he'\\\textsc{agent}\\\textsc{figure}} ]
 			[
-				[.Voice\\{(assigns \gsc{AGENT})} ]
+				[.Voice\\{(assigns Agent)} ]
 				[
 					[.v
 						[.v ]
-						[.{\root{\gsc{SQUEEZE}}} ]
+						[.{\root{\gsc{STROLL}}} ]
 					]
-					[.\emph{p}P
-						[.\emph{-st} ]
-						[
-							[.\emph{p}\\{(assigns \gsc{FIGURE})} ]
-							\qroof{\emph{gegnum} \dots}.PP
-						]
+					[.{\pz}
+							[.\emph{p}\\{(assigns Figure)} ]
+							\qroof{\emph{inn} \dots}.PP
 					]
 				]
 			]
 		]
 \xe
 
-The full semantic details can be found in \cite{wood14nllt,wood15springer}. The intuition is that a function can remain unsaturated by the syntactic arguments of its head; in this case the semantic role of \gsc{FIGURE} is not saturated by -\emph{st}, which is the element introduced by \emph{p} in the syntax. Instead, an argument introduced later on (\emph{Bjartur}) saturates the predicate. What I call delayed saturation is more of a side effect of the nature of the derivation than a novel mechanism. It is of course not the norm for saturating functions, since otherwise \emph{John kicked} could mean `John$_i$ kicked John$_i$' with delayed saturation of the Agent role. @internal vs external argument@
-
-
-
-A concrete derivation is given in (@) for the figure reflexive nixnas le- `entered’ in {\tnif}. Note again that p[--D] expects a Figure semantically but does not introduce one in the syntax.
-
-    oren nixnas la-xeder Oren entered the room'
-\ex
-\hspace{-3em}
+Returning to Hebrew, we can adopt this proposal and give the derivation in~(\nextx) for a verb like \emph{nixnas le}- `entered’ in {\tnif}, where {\pz} introduces a Figure semantically but does not in the syntax.
+\pex
+	\a  \begingl
+	\gla oren nixnas la-xeder//
+	\glb Oren entered.MID to.the-room//
+	\glft `Oren entered the room.'//
+	\endgl
+	\a \hspace{-3em}
 \scalebox{0.9}{
 \Tree
     [.{VoiceP\\ λe∃s.\underline{Agent(Oren,e)} \& \underline{Figure(Oren,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
@@ -436,26 +430,26 @@ A concrete derivation is given in (@) for the figure reflexive nixnas le- `enter
 }
 \xe
 
+In~(\lastx) The \emph{p}P is composed via Event Identification, the vP via Function Composition (cf.~Restrict of \citealt{chungladusaw04}), and the VoiceP again via Event Identification.
 
-The pP is composed via Event Identification, the vP via Function Composition (Restrict \cite{chungladusaw04}?), and the VoiceP again via Event Identification.
+%\denote{PP} = λs.in(s,room)
+%        \denote{p[--D]} = λxλs.Figure(x,s)
+%        Via Event Identification:
+%        \denote{pP} = λxλs.Figure(x,s) \& in(s,room) 
+%        \denote{v} = λPλe∃s.P(s) \& enter(e) \& Cause(e,s)
+%    Via Function Composition (Restrict \cite{chungladusaw04}?)
+%           \denote{vP} = λxλe∃s.Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)
+%        \denote{Voice} = λxλe.Agent(x,e)
+%       \denote{Voice'} = λxλe∃s.Agent(x,e) \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)
+%        \denote{VoiceP} = \denote{Voice'}(Danny) = 
+%        λe∃s.Agent(Danny,e) \& Figure(Danny,s) \& in(s,room) \& enter(e) \& Cause(e,s) 
+%        ''The set of entering events, for which Danny is the Agent, and which cause Danny to be in the room''
 
-\denote{PP} = λs.in(s,room)
-        \denote{p[--D]} = λxλs.Figure(x,s)
-        Via Event Identification:
-        \denote{pP} = λxλs.Figure(x,s) \& in(s,room) 
-        \denote{v} = λPλe∃s.P(s) \& enter(e) \& Cause(e,s)
-    Via Function Composition (Restrict \cite{chungladusaw04}?)
-           \denote{vP} = λxλe∃s.Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)
-        \denote{Voice} = λxλe.Agent(x,e)
-       \denote{Voice'} = λxλe∃s.Agent(x,e) \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)
-        \denote{VoiceP} = \denote{Voice'}(Danny) = 
-        λe∃s.Agent(Danny,e) \& Figure(Danny,s) \& in(s,room) \& enter(e) \& Cause(e,s) 
-        ''The set of entering events, for which Danny is the Agent, and which cause Danny to be in the room''
-
-The two main consequences of this configuration are that an external argument may be merged in Spec,VoiceP and that the obligatory prepositional phrase does not have a subject of its own. Since p[--D] does not allow anything to be merged in its specifier, the preposition `in’ p[--D] does not have an immediate subject. Instead, the predicate p[--D] “waits” until the external argument is merged in Spec,VoiceP and this DP is then interpreted as the subject of the preposition. The generalization on figure reflexives receives an explanation: external arguments in {\tnif} saturate the Figure role of an otherwise subjectless preposition.
+The two main consequences of this configuration are that an external argument may be merged in Spec,VoiceP and that the obligatory prepositional phrase does not have a subject of its own. The generalization on figure reflexives can now be derived: external arguments in {\tnif} saturate the Figure role of an otherwise subjectless preposition. While in Icelandic {\vz} and {\pz} are silent, in Hebrew we find morphological support for both.
 
 
-	\subsection{Interim summary} \label{vz:figrefl:sum}
+	\section{Interim summary} \label{vz:intersum}
+@@@
 The core puzzle of verbal forms in {\tnif} has now been addressed: internal and external arguments are possible across this template, but not within the same verb. We suggested that two distinct verb classes exist which share the same morphology. Non-active verbs in {\tnif} are unaccusative: the sole argument is the internal argument and there is no agentive external argument. Figure reflexives are active verbs which have an agentive external argument and must take a prepositional complement. We have proposed a generalization correlating the external argument with a pP complement and explained it structurally by making reference to the height and featural makeup of independently proposed functional heads. This analysis supports a specific view of argument structure which distinguishes between syntactic features, such as the requirement for a specifier, and semantic roles, such as the requirement for an Agent or a Figure.
 
 One point remains to be made. We have assumed that {\vz} and p[--D] are spelled out the same, or trigger the same morphophonological processes. Unless anything additional is said, this similarity remains an accident. It has recently been proposed by \cite{woodmarantz17} that heads such as Voice, Appl and p are in fact contextual variants of the same functional head, which they call i*. On their view - which we will not explore in detail here - "Voice" is simply the name we give to i* which takes a vP complement, "high Appl" is the name we give to i* which takes a vP complement and is in turn embedded in a higher i* (itself being Voice), "p" is the name we give to an i* which takes a PP complement, and so on.
