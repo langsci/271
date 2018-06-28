@@ -35,46 +35,43 @@
 \contentsline {subsection}{\numberline {3.3.2}Analysis}{33}{subsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Prepositional phrases}{33}{subsubsection.3.3.2.1}
 \contentsline {subsubsection}{\numberline {3.3.2.2}The composition}{34}{subsubsection.3.3.2.2}
-\contentsline {section}{\numberline {3.4}Interim summary}{36}{section.3.4}
+\contentsline {section}{\numberline {3.4}Interim summary: [--D]}{36}{section.3.4}
 \contentsline {section}{\numberline {3.5}Agentive modification}{37}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}\text {Voice$_{\text {[--D]}}$}+ {$\sqrt {\text {\textsc {\lowercase {ACTION}}}}$} = \emph {hitXa\textsubarch {Y}eZ}}{37}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Anticausatives and figure reflexives}{38}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}Anticausatives}{38}{subsubsection.3.5.2.1}
-\contentsline {paragraph}{\numberline {3.5.2.1.1}Order of subject and verb}{39}{paragraph.3.5.2.1.1}
-\contentsline {paragraph}{\numberline {3.5.2.1.2}Possessive datives}{40}{paragraph.3.5.2.1.2}
-\contentsline {subsubsection}{\numberline {3.5.2.2}The semantics of anticausatives}{40}{subsubsection.3.5.2.2}
-\contentsline {subsubsection}{\numberline {3.5.2.3}Figure reflexives}{41}{subsubsection.3.5.2.3}
-\contentsline {subsection}{\numberline {3.5.3}Reflexives}{41}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Analysis}{44}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Summary}{46}{subsubsection.3.5.3.2}
-\contentsline {section}{\numberline {3.6}Inchoatives}{46}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Inchoatives}{47}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Null allosemy in inchoatives}{49}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Null allosemy in \emph {hitXa\textsubarch {Y}eZ}}{50}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Summary}{51}{subsection.3.6.4}
-\contentsline {section}{\numberline {3.7}Alternatives}{51}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Distributed morphosemantics \citep {doron03}}{53}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Templates as morphemes}{54}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Notes}{54}{section.3.8}
-\contentsline {chapter}{\numberline {4}\text {Voice$_{\text {[\tmspace -\thinmuskip {.1667em}+\tmspace -\thinmuskip {.1667em}D]}}$}}{55}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{55}{section.4.1}
-\contentsline {section}{\numberline {4.2}Causative marking}{55}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}An active Voice head}{55}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}The causative-causative alternation}{57}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Markedness}{57}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Markedness in Voice heads}{60}{subsubsection.4.2.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Alternative: Added structure}{63}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Inchoative alternations}{63}{section.4.3}
-\contentsline {section}{\numberline {4.4}Roots}{65}{section.4.4}
+\contentsline {subsection}{\numberline {3.5.1}Anticausatives and figure reflexives}{38}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Anticausatives}{38}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Figure reflexives}{40}{subsubsection.3.5.1.2}
+\contentsline {subsection}{\numberline {3.5.2}Reflexives}{40}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}Data}{41}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}Analysis}{42}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}Summary}{44}{subsubsection.3.5.2.3}
+\contentsline {section}{\numberline {3.6}Inchoatives}{45}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Inchoatives}{46}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Null allosemy in inchoatives}{47}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Null allosemy in \emph {hitXa\textsubarch {Y}eZ}}{49}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Summary}{50}{subsection.3.6.4}
+\contentsline {section}{\numberline {3.7}Alternatives}{50}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Distributed morphosemantics \citep {doron03}}{51}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Templates as morphemes}{52}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}Notes}{53}{section.3.8}
+\contentsline {chapter}{\numberline {4}\text {Voice$_{\text {[\tmspace -\thinmuskip {.1667em}+\tmspace -\thinmuskip {.1667em}D]}}$}}{54}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{54}{section.4.1}
+\contentsline {section}{\numberline {4.2}Causative marking}{54}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}An active Voice head}{54}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The causative-causative alternation}{56}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Markedness}{56}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Markedness in Voice heads}{59}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Alternative: Added structure}{62}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Inchoative alternations}{62}{section.4.3}
+\contentsline {section}{\numberline {4.4}Roots}{64}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Classification}{65}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Discussion}{66}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Template}{67}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Causatives}{67}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Inchoatives}{68}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}Structure}{68}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.4.2}Discussion}{65}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Template}{66}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Causatives}{66}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Inchoatives}{67}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Structure}{67}{subsubsection.4.5.2.1}
 \contentsline {subsubsection}{\numberline {4.5.2.2}Derivation}{69}{subsubsection.4.5.2.2}
-\contentsline {section}{\numberline {4.6}The labile alternation}{71}{section.4.6}
-\contentsline {section}{\numberline {4.7}Conclusion}{72}{section.4.7}
+\contentsline {section}{\numberline {4.6}The labile alternation}{70}{section.4.6}
+\contentsline {section}{\numberline {4.7}Conclusion}{71}{section.4.7}
 \contentsline {section}{\numberline {4.8}Alternatives}{72}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Alternative: Existential closure}{72}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}Alternative: Contextual allomorphy}{73}{subsection.4.8.2}
@@ -96,28 +93,28 @@
 \contentsline {subsubsection}{\numberline {5.2.0.2}Diagnostics in Hebrew}{91}{subsubsection.5.2.0.2}
 \contentsline {subsubsection}{\numberline {5.2.0.3}Adjectival passives in Hebrew}{94}{subsubsection.5.2.0.3}
 \contentsline {subsubsection}{\numberline {5.2.0.4}Breakdown by template}{96}{subsubsection.5.2.0.4}
-\contentsline {subsubsection}{\numberline {5.2.0.5}Summary}{97}{subsubsection.5.2.0.5}
-\contentsline {section}{\numberline {5.3}Nominalization}{98}{section.5.3}
-\contentsline {section}{\numberline {5.4}Denominal verbs}{100}{section.5.4}
-\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{101}{part.2}
-\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{102}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{102}{section.6.1}
-\contentsline {section}{\numberline {6.2}Layering}{102}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Causative base}{102}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{103}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Implementation}{104}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Predictions}{105}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Comparison}{106}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{106}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}The trivalency of semantic transitivity}{107}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Hebrew with Layering}{108}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Conclusion}{110}{section.6.4}
-\contentsline {chapter}{\numberline {7}The features of Voice}{113}{chapter.7}
-\contentsline {section}{\numberline {7.1}i*}{113}{section.7.1}
-\contentsline {section}{\numberline {7.2}Japanese}{114}{section.7.2}
-\contentsline {subsubsection}{\numberline {7.2.0.1}Logical possibilities for combinations}{115}{subsubsection.7.2.0.1}
-\contentsline {section}{\numberline {7.3}Valuing features}{117}{section.7.3}
-\contentsline {section}{\numberline {7.4}Against added structure}{117}{section.7.4}
-\contentsline {section}{\numberline {7.5}Notes}{118}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusion}{119}{chapter.8}
-\contentsline {chapter}{Bibliography}{120}{chapter.8}
+\contentsline {subsubsection}{\numberline {5.2.0.5}Summary}{98}{subsubsection.5.2.0.5}
+\contentsline {section}{\numberline {5.3}Nominalization}{99}{section.5.3}
+\contentsline {section}{\numberline {5.4}Denominal verbs}{101}{section.5.4}
+\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{102}{part.2}
+\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{103}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{103}{section.6.1}
+\contentsline {section}{\numberline {6.2}Layering}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Causative base}{103}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{104}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Implementation}{105}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Predictions}{106}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Comparison}{107}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{107}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}The trivalency of semantic transitivity}{108}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Hebrew with Layering}{109}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Conclusion}{111}{section.6.4}
+\contentsline {chapter}{\numberline {7}The features of Voice}{114}{chapter.7}
+\contentsline {section}{\numberline {7.1}i*}{114}{section.7.1}
+\contentsline {section}{\numberline {7.2}Japanese}{115}{section.7.2}
+\contentsline {subsubsection}{\numberline {7.2.0.1}Logical possibilities for combinations}{116}{subsubsection.7.2.0.1}
+\contentsline {section}{\numberline {7.3}Valuing features}{118}{section.7.3}
+\contentsline {section}{\numberline {7.4}Against added structure}{118}{section.7.4}
+\contentsline {section}{\numberline {7.5}Notes}{119}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusion}{120}{chapter.8}
+\contentsline {chapter}{Bibliography}{121}{chapter.8}
