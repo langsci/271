@@ -847,7 +847,7 @@ This analysis showcases how complex structure ({\vz} and {\va}~\!) correlates wi
 
 
 	\subsubsection{Summary} \label{vz:va:refl:sum}
-Reflexive verbs appear only in the template {\thit}, a fact which had not previously received any formal analysis. In a system such as the one put forward in this book, combining the agentivity requirement of {\va} with the single-argumenthood of {\vz} derives this pattern. What is more, this analysis receives confirmation in the morphology.
+Reflexive verbs appear only in the template {\thit}, a fact which had not previously received any formal analysis. In a system such as the one put forward in this book, combining the agentivity requirement of {\va} with the single-argumenthood of {\vz} derives this pattern. This analysis receives additional confirmation in the morphology, where the spell-out of both {\va} and {\vz} can be seen.
 
 Two points should be emphasized before moving on. The first is that I treat reflexives as underlyingly unaccusative, yet they pass agentivity diagnostics and fail unaccusativity diagnostics. The question is what these diagnostics are actually diagnosing. Assuming that the agentivity diagnostics are semantic in nature concords with the current analysis, since the Agent role is saturated. The unaccusativity diagnostics are more complicated: \cite{kastner17gjgl} summarizes evidence indicating that the requirement for the possessive dative might be semantic as well, and further speculates that VS order only obtains with surface unaccusatives (where the internal argument remains low; see \citealt{unaccusativity95}).
 
@@ -1037,19 +1037,19 @@ The second point is that this analysis calls into question any attempt to view t
 %We will now turn to alternative theories of reflexivity in Section \ref{sec:others-theory} and alternative theories of the Hebrew verb in Section \ref{sec:others-heb}.
 
 
-
-
 \section{Inchoatives} \label{vz:inch}
-@@@
-Unlike with anticausative verbs, it is not always the case that an active version of a middle verb exists in another template. Some middle verbs could not have been derived from a counterpart in \tkal~or \tpie~because the root was never instantiated in the active template in the first place. For example, \emph{hit'alef} is not derived from active *\emph{ilef}. Call these middle verbs \emph{inchoatives}.
-\ex\label{ex:incho}Examples of inchoatives:\\
-\begin{tabular}{ll|c|ll|ll}
+Our theory of {\vz} has so far been silent as to the exact status of the vP with which it merges. In principle, we would expect the vP to describe an event which might then receive an Agent, as in the cases in Section~\ref{vz:nact:anticaus}. But Hebrew has another surprise up its sleeve: cases where the vP has no meaning when we attempt to Merge it with Voice, only when when merged with {\vz}. This section sharpens the empirical picture and draws conclusions for theories of locality in morphosemantics. The so-called ``Arad/Marantz Hypothesis'' claims that the first categorizing head merging with a root selects the exact meaning of the root. My tweak, based on the behavior of {\vz}, is that it is the first \emph{contentful} functional head merging with a root which selects the meaning of the latter, in a sense I make clear below.
+
+	\subsection{Data} \label{vz:inch:data}
+Our empirical domain for this section is verbs in {\tnif} and {\thit} which I call \textbf{inchoative}. Simply put, these verbs do not alternate with a transitive version. Unlike with anticausative verbs, it is not always the case that an active version of a middle verb exists in another template. Some middle verbs could not have been derived from a counterpart in {\tkal}or {\tpie} because the root was never instantiated in the active template in the first place. For example, \emph{hitalef} is not derived from active *\emph{ilef}.
+\ex\label{ex:vz:incho}Examples of inchoatives:\\
+\begin{tabular}{ll|c|ll|>{\em}ll}
 \multicolumn{2}{c|}{Templates} & Root & \multicolumn{2}{c|}{Causative} & \multicolumn{2}{c}{Inchoative} \\\hline
-\multirow{3}{*}{a.} & \multirow{3}{*}{\tpie~$\sim$ \thit} & \root{'lf}& \multicolumn{2}{c|}{---} & hit'alef & `fainted' \\
-	& & \root{'tʃ}& \multicolumn{2}{c|}{---} & hit'ateʃ & `sneezed'\\
-	& & \root{'rk} & \multicolumn{2}{c|}{---} & hit'arex & `grew longer'\\\hline
+\multirow{3}{*}{a.} & \multirow{3}{*}{\tpie~$\sim$ \thit} & \root{'lf}& \multicolumn{2}{c|}{---} & hitalef & `fainted' \\
+	& & \root{'tʃ}& \multicolumn{2}{c|}{---} & hitateʃ & `sneezed'\\
+	& & \root{'rk} & \multicolumn{2}{c|}{---} & hitarex & `grew longer'\\\hline
 \multirow{3}{*}{b.} & \multirow{3}{*}{\tkal~$\sim$ \tnif} & \root{rdm}& \multicolumn{2}{c|}{---} & nirdam & `fell asleep'\\
-	& & \root{'lm}& \multicolumn{2}{c|}{---} & ne'elam & `disappeared'\\
+	& & \root{'lm}& \multicolumn{2}{c|}{---} & neelam & `disappeared'\\
 	& & \root{kxd}& \multicolumn{2}{c|}{---} & nikxad & `went extinct'\\
 \end{tabular}
 %  \a \thit: \emph{hit'alef} `fainted' ($\nless$ *\emph{'ilef}), \emph{hit'ateʃ} `sneezed' ($\nless$ *\emph{'iteʃ}), \emph{hit'arex} `grew longer' ($\nless$ *\emph{'irex}).
@@ -1071,6 +1071,14 @@ That inchoatives like those in~(\ref{ex:incho}) are nonactive as well can be sho
 		\endgl
 \xe
 
+%\pex 
+%	\a \label{ex:incho1} \begingl
+%	\gla dani \underline{hit'ateʃ} \emph{\{}me-ha-avak / ??be-xavana\emph{\}}//
+%	\glb Danny sneezed.\gsc{INTNS.MID} \phantom{\{}from-the-dust {} \phantom{??}on-purpose//
+%	\glft `Danny sneezed because of the dust/??on purpose'//
+%	\endgl
+%\xe
+
 \ex Possessive datives:\\
 	\begingl
 	\gla \underline{nirdam} l-i ha-kelev al ha-regel, ma la'asot?//
@@ -1087,55 +1095,18 @@ That inchoatives like those in~(\ref{ex:incho}) are nonactive as well can be sho
 	\endgl
 \xe
 
-The full structures for both kinds of verbs are as follows. Nonactive middles are derived using the head \vz. As this head does not allow anything to be merged in its specifier, no external argument can be introduced into the structure. The difference between \tnif~in (\ref{ex:trees-nact}a) and \thit~in (\ref{ex:trees-nact}b) is that \thit~is the result of {adjoining} \va{ to \vz}. This morpheme is an additional root which I discuss at more length in \S\S\ref{syn:middle:reflrecip}, \ref{syn:templates:tpie}. For now, let us assume that this root has the phonological {realization} of {added} vowels and {blocked} spirantization (\dgs{Y} in \thit). When it is adjoined to default Voice it derives the ``intensive'' template \tpie.
-\ex \label{ex:trees-nact}
-a. \begin{minipage}[t]{0.35\textwidth}
-	{\textbf{\tnif}~\emph{nisgar} `closed',\\\emph{nirdam} `fell asleep':}\\
-	\scalebox{1}{
-% 	[VoiceP
-% 		[{---} ]
-% 		[
-% 			[{\vz}\\\emph{ni}- ]
-% 			[
-% 				[v
-% 					[v ]
-% 					[\root{sgr}/\root{rdm} ]
-% 				]
-% 				[DP ]
-% 			]
-% 		]
-% 	]
- 	}
-\end{minipage}
-\begin{minipage}[t]{0.05\textwidth}
-	\phantom{asdf}
-\end{minipage}
-b. \begin{minipage}[t]{0.45\textwidth}
-	{\textbf{\thit}~\emph{hitparek} `fell apart',\\\emph{hit'alef} `fainted':}\\
- 	\scalebox{1}{
-% 	[VoiceP
-% 		[{---} ]
-% 		[
-% 			[{\vz}\\\emph{hit}-
-%	 			[{\va} ]
-%	 			[{\vz} ]
-% 			]
-% 			[
-% 				[v
-% 				    [v ]
-% 				    [\root{pr\dgs{k}}/\root{'lf} ]
-% 				]
-% 				[DP ]
-% 			]
-% 		]
-% 	]
- 	}
-\end{minipage}
+In terms of structure, inchoatives are identical to anticausatives. A brief refresher is given in~(\nextx).
+\pex
+	\a {[}T [{\vz} vP]]\\
+	Non-active verb in {\tnif} (anticausative or inchoative).
+	\a {[}T [{\vz} [{\va} vP]]]\\
+	Non-active verb in {\thit} (anticausative or inchoative).
 \xe
 
-Before proceeding to active middles, it is worth exploring in more detail the implications of semantically inert elements.
+The question is, given that {\vz} is supposed to be minimally different than Voice, what does it mean when Voice cannot combine with the vP but {\vz} can.
 
-  \subsection{Null allosemy in inchoatives} \label{syn:middle:nonactive:null}
+  \subsection{Null allosemy in inchoatives} \label{vz:inch:analysis}
+@@@
 I have assumed that certain configurations allow for interpretations of the root conditioned by a high functional head (e.g.~Voice) over a lower functional head (e.g.~v). The theory involved is one in which allosemy is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements only. The \tnif~template will serve as a case in point.
 
 In~(\ref{ex:allosemy-decaus}a), the combination of v and \root{root} results in a contentful combination, the verb \emph{sagar} `closed'. This root can have various related meanings, but at this point in the derivation its meaning has been fixed. As a consequence, any higher material will only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root. \vz~has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:allosemy-decaus}b). These are the anticausatives discussed above.
@@ -1186,33 +1157,8 @@ The forms *\emph{sbaglia} and *\emph{pentir\'a} are not possible without \gsc{SE
 \xe
 Similar patterns are discussed for Latin, German, Greek and Icelandic by \cite{embick04}, \cite{kallulli13}, \cite{kastnerzu15li} and \cite{wood15springer}. I do not have anything theoretically impactful to say about how individual roots implement their requirement for nonactive morphology. We simply note that the theory allows such a {selectional requirement} to be interpreted.
 
-	\subsection{Null allosemy in \thit} \label{syn:middle:nonactive:elena}
-I have presented inchoatives in \tnif~which are not derived from underlying active verbs. Similar examples can be found in \thit, where \va~is doing its regular morphophonological work but is not available to create ``intensive'' verbs in \tpie.
-\ex \emph{hit'alef} `fainted' ($\nless$ *\emph{ilef} `int. made someone faint')
-\xe
-{\va} contributes general agentive meaning. In this case, I require that the root ``turn off'' the semantic contribution of \va, and with it the ability of \va~to choose an alloseme of the root itself. Yet \va~still contributes morphophonological information, as expected. This state of affairs is true for nonactive verbs such as inchoatives:
-\pex 
-	\a \label{ex:incho1} \begingl
-	\gla dani \underline{hit'ateʃ} \emph{\{}me-ha-avak / ??be-xavana\emph{\}}//
-	\glb Danny sneezed.\gsc{INTNS.MID} \phantom{\{}from-the-dust {} \phantom{??}on-purpose//
-	\glft `Danny sneezed because of the dust/??on purpose'//
-	\endgl
-	
-	\a \label{ex:incho2} \begingl
-	\gla josi \underline{hit'alef} \emph{\{}me-ha-xom / ??be-xavana\emph{\}}//
-	\glb Yossi fainted.\gsc{INTNS.MID} \phantom{\{}from-the-heat {} \phantom{??}on-purpose//
-	\glft `Yossi fainted due to the heat/??on purpose'//
-	\endgl
-\xe
 
-Impoverishment of \va~for these roots proceeds as in~(\nextx). Note that this is a case of Impoverishment in the semantics \citep{nevins15roots}---which operates at a distance---rather than local allomorphy{ or allosemy: {\va} is rendered null in the context of certain roots. The rule of impoverishment is given in} (\nextx a) and its effect in the semantics is shown in (\nextx b).
-\pex\label{sem:thit-incho}
-	\a {\denote{\va~} $\rightarrow$ \zero~/ \trace~\{\root{XYZ} | \root{XYZ} $\in$ \root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \dots\}}
-	\a \denote{\va~} = $\lambda$P.P~/ \trace~\{\root{XYZ} | \root{XYZ} $\in$ \root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \dots\}
-\xe
-There is an intuition captured by~(\lastx), namely that these roots are understood to be active (by convention). This list of roots could be simply called ``Class 1'', but keeping with our overarching theme of lexical and functional material, I will call them Other--Oriented roots: dismantling, cooking and so on are usually activities carried out on {something} else. By making this division we are able to see how the requirements of different roots are imposed at the interfaces. In this case, semantic information is relevant at Transfer to LF. I return to the derivation of other root classes in \thit~in \S\ref{syn:middle:reflrecip}, and to the question of different root classes in different structures in \S\ref{syn:middle:roots}.
-
-Turning to a possible crosslinguistic parallel, it has recently been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
+Turning to a possible crosslinguistic parallel, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
 \ex \label{ex:elena1} \emph{if-an-tos} weave-\gsc{VBLZ}-\gsc{ADJ} `woven'
 \xe
 \ex \label{ex:elena2} \emph{fit-ef-tos} plant-\gsc{VBLZ}-\gsc{ADJ} `planted' \hfill \citep[97]{elenasamioti14}
@@ -1224,6 +1170,8 @@ In fact, the part of the structure consisting of the root and verbalizer might n
 In a similar vein, \cite{marantz13} argues that an \emph{atomized individual} need not have undergone atomization, and analyzes a similar phenomenon in Japanese ``continuative'' forms that must be vacuously verbalized first{ before being nominalized} \citep{volpe05}. \cite{anagnostopoulou14thli} extends this idea of a semantically null exponent to cases like -\emph{ify}- in \emph{the class\underline{ifie}ds} (but see \citealt{borer14lingua} for a dissenting view).
 
 Returning to Hebrew, we have some evidence that v and \va~can be active in the phonology without selecting an alloseme of the root, deriving nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable. This analysis leaves open the possibility of the unattested form \emph{'ilef} in \tpie~arising as an innovation. This does seem to be the case: although \emph{hit'alef} `fainted' is not derived from active *\emph{'ilef} in standard usage, for some younger speakers it is possible to say ^{\%}\emph{'ilef} to mean `amazed' figuratively \citep{laks14}.
+
+With the empirical picture for configurations with {\vz} (and {\pz}) wrapped up, I turn to a few alternative approaches.
 
 
 \section{Alternative accounts} \label{vz:others}
