@@ -1106,22 +1106,23 @@ In terms of structure, inchoatives are identical to anticausatives. A brief refr
 The question is, given that {\vz} is supposed to be minimally different than Voice, what does it mean when Voice cannot combine with the vP but {\vz} can.
 
   \subsection{Null allosemy in inchoatives} \label{vz:inch:analysis}
-@@@
-I have assumed that certain configurations allow for interpretations of the root conditioned by a high functional head (e.g.~Voice) over a lower functional head (e.g.~v). The theory involved is one in which allosemy is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements only. The \tnif~template will serve as a case in point.
+Theories of Voice like the current one or that of \cite{layering15} adopt the so-called \textbf{Arad/Marantz Hypothesis} \citep{elenasamioti14}, according to which the first categorizing head selects the meaning (or alloseme) of the root \citep{arad03,marantz13}. What I will assume next is that certain configurations allow for interpretations of the root conditioned by a high functional head (in this case {\vz}) over a lower functional head (v). The theory involved is one in which allosemy is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements only \citep{marantz13,kastner18nllt}.
 
-In~(\ref{ex:allosemy-decaus}a), the combination of v and \root{root} results in a contentful combination, the verb \emph{sagar} `closed'. This root can have various related meanings, but at this point in the derivation its meaning has been fixed. As a consequence, any higher material will only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root. \vz~has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:allosemy-decaus}b). These are the anticausatives discussed above.
-\pex Locality in interpretation: anticausatives.\label{ex:allosemy-decaus}
-    \a \fbox{{[}v \root{sgr}~\!]} = \emph{sagar} `closed'
+In~(\ref{ex:vz:allosemy-decaus}a), the combination of v and \root{sgr} results in a contentful combination, the predicate of closing events. The root can have various related meanings, but at this point in the derivation its meaning has been chosen. As a consequence, any higher material will in principle only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root (this point will be expanded in Chapter~\ref{vd:caus}). {\vz} has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:vz:allosemy-decaus}b). These were the anticausatives discussed earlier.
+\pex Locality in interpretation: anticausatives.\label{ex:vz:allosemy-decaus}
+    \a \fbox{{[}v \root{sgr}~\!]} = $\lambda$x$\lambda$e.\emph{closing}(e) \& Theme(x,e)
     \a {[} \fbox{\textbf{\vz}} \fbox{[\emph{close}]} ] = \emph{nisgar} `got closed'
 \xe
 
-If a given root combines with v to be verbalized, it is possible that v introduces an event but carries no additional semantic content when combined with this root. No verb results in this configuration,~(\ref{ex:allosemy-incho}a). As a result, the next functional head will have a chance to select the interpretation of the root, as with \vz~in~(\ref{ex:allosemy-incho}b). These are the inchoatives discussed above.
-\pex Locality in interpretation: inchoatives.\label{ex:allosemy-incho}
-    \a \fbox{{[}v \root{rdm}~\!]} -- does not exist
-    \a {[} \fbox{\textbf{\vz}} \fbox{[(v) \root{rdm}~\!]} ] = `fell asleep'
+If a given root combines with v to be verbalized, it is possible that v introduces an event variable but carries no additional semantic content when combined with this root. No verb results in this configuration,~(\ref{ex:vz:allosemy-incho}a). As a result, the next functional head will have a chance to select the interpretation of the root, as with \vz~in~(\ref{ex:vz:allosemy-incho}b). In a sense, the root selects for a specific additional functional head.
+\pex Locality in interpretation: inchoatives.\label{ex:vz:allosemy-incho}
+    \a \dbox{{[}v \root{rdm}~\!]} -- undefined
+    \a {[} \fbox{\textbf{\vz}} \dbox{[(v) \root{rdm}~\!]} ] = `fell asleep'
 \xe
-In a sense, the root selects for a specific additional functional head; similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). Glosses are his.
-\pex \citet[39]{burzio86}, Italian:
+
+	\subsection{Crosslinguistic similarities}
+These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). Glosses are his.
+\pex
 	\a \begingl
 		\gla Giovanni \textbf{si} sbaglia//
 		\glb Giovanni himself mistakes//
@@ -1131,10 +1132,10 @@ In a sense, the root selects for a specific additional functional head; similar 
 	\a \ljudge{*} \begingl
 		\gla Giovanni sbaglia Piero//
 		\glb Giovanni mistakes Piero//
-		\glft (int. `Giovanni mistakes Piero')//
+		\glft (int. `Giovanni mistakes Piero')\trailingcitation{(\citealt[39]{burzio86}, Italian)}//
 	\endgl
 \xe
-\ex \citet[70]{burzio86}, Italian:\\
+\ex
 	\begingl
 		\gla Giovanni \textbf{se} ne pentir\'a//
 		\glb Giovanni himself of.it will.repent//
@@ -1145,20 +1146,23 @@ In a sense, the root selects for a specific additional functional head; similar 
 	\begingl
 		\gla Giovanni ci \textbf{si} \'e arrangiato//
 		\glb Giovanni there himself is managed//
-		\glft `Giovanni has managed it.'//
+		\glft `Giovanni has managed it.'\trailingcitation{(\citealt[70]{burzio86}, Italian)}//
 	\endgl
 \xe
-The forms *\emph{sbaglia} and *\emph{pentir\'a} are not possible without \gsc{SE}; some verbs simply require \gsc{SE} or the equivalent nonactive marker in their language, however encoded.\footnote{The facts are slightly more complicated: \emph{sbaglia} `mistake' is possible in certain contexts but I believe that the generalization about \emph{pentirsi} `repent' is robust \citep[40]{burzio86}.} The famous case of deponents in Latin is similar: as discussed by grammarians and by contemporary authors such as~\cite{aronoff94}, deponents are verbs with nonactive morphology but active syntax. Although they appear with a nonactive suffix, the verbs themselves are unergative or transitive. The deponent verb \emph{sequor} `to follow' is syntactically transitive but has no morphologically active forms:
+
+The forms *\emph{sbaglia} and *\emph{pentir\'a} are not possible without \gsc{SE}; some verbs simply require \gsc{SE} or the equivalent nonactive marker in their language, however encoded.\footnote{The facts are slightly more complicated: \emph{sbaglia} `mistake' is possible in certain contexts but I believe that the generalization about \emph{pentirsi} `repent' is robust \citep[40]{burzio86}.}
+
+The famous case of deponents in Latin is similar: as discussed by various authors (e.g.~\citealt{xuetal07}), deponents are verbs with nonactive morphology but active syntax. Although they appear with a nonactive suffix, the verbs themselves are unergative or transitive. The deponent verb \emph{sequor} `to follow' is syntactically transitive but has no morphologically active forms:
 \pex
     \a Regular Latin alternation:\\
         \emph{amo-r} `I am loved' $<$ \emph{am\=o} `I love'
     \a Deponent Latin verb:\\
         \emph{sequo-r} `I follow' $\nless$ *\emph{sequ\=o} `I follow'
 \xe
-Similar patterns are discussed for Latin, German, Greek and Icelandic by \cite{embick04}, \cite{kallulli13}, \cite{kastnerzu15li} and \cite{wood15springer}. I do not have anything theoretically impactful to say about how individual roots implement their requirement for nonactive morphology. We simply note that the theory allows such a {selectional requirement} to be interpreted.
 
+Similar patterns have been discussed for various Indo-European languages by \cite{aronoff94}, \cite{embick04}, \cite{kallulli13}, \cite{wood15springer}, \cite{kastnerzu17} and \cite{grestenberger18}, among many others. While the analyses differ, what these cases all have in common is that individual roots require nonactive morphology. I simply note that the current theory allows such a requirement to be interpreted.
 
-Turning to a possible crosslinguistic parallel, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
+Turning to another possible crosslinguistic parallel with inchoatives, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
 \ex \label{ex:elena1} \emph{if-an-tos} weave-\gsc{VBLZ}-\gsc{ADJ} `woven'
 \xe
 \ex \label{ex:elena2} \emph{fit-ef-tos} plant-\gsc{VBLZ}-\gsc{ADJ} `planted' \hfill \citep[97]{elenasamioti14}
@@ -1169,7 +1173,7 @@ In fact, the part of the structure consisting of the root and verbalizer might n
 
 In a similar vein, \cite{marantz13} argues that an \emph{atomized individual} need not have undergone atomization, and analyzes a similar phenomenon in Japanese ``continuative'' forms that must be vacuously verbalized first{ before being nominalized} \citep{volpe05}. \cite{anagnostopoulou14thli} extends this idea of a semantically null exponent to cases like -\emph{ify}- in \emph{the class\underline{ifie}ds} (but see \citealt{borer14lingua} for a dissenting view).
 
-Returning to Hebrew, we have some evidence that v and \va~can be active in the phonology without selecting an alloseme of the root, deriving nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable. This analysis leaves open the possibility of the unattested form \emph{'ilef} in \tpie~arising as an innovation. This does seem to be the case: although \emph{hit'alef} `fainted' is not derived from active *\emph{'ilef} in standard usage, for some younger speakers it is possible to say ^{\%}\emph{'ilef} to mean `amazed' figuratively \citep{laks14}.
+In sum, we have evidence that v can be active in the semantics without selecting an alloseme of the root, allowing a higher {\vz} head to derive nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable. This analysis leaves open the possibility of the forms such as *\emph{radam} or \emph{ilef} arising as an innovation. This does seem to be the case for the latter: although \emph{hitalef} `fainted' is not derived from active *\emph{ilef} in standard usage, for some younger speakers it is possible to say ^{\%}\emph{ilef} to mean `amazed' figuratively \citep{laks14}.
 
 With the empirical picture for configurations with {\vz} (and {\pz}) wrapped up, I turn to a few alternative approaches.
 

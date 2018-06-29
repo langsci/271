@@ -47,9 +47,10 @@
 \contentsline {section}{\numberline {3.6}Inchoatives}{44}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Data}{44}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Null allosemy in inchoatives}{45}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Crosslinguistic similarities}{46}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Alternative accounts}{47}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Distributed morphosemantics \citep {doron03}}{48}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Templates as morphemes}{48}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.2}Templates as morphemes}{49}{subsection.3.7.2}
 \contentsline {chapter}{\numberline {4}\text {Voice$_{\text {[\tmspace -\thinmuskip {.1667em}+\tmspace -\thinmuskip {.1667em}D]}}$}}{50}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{50}{section.4.1}
 \contentsline {section}{\numberline {4.2}Causative marking}{50}{section.4.2}
