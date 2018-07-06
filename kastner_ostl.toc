@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.2}Warm-up: Some data}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}{\emph {XaYaZ}} varies in its argument structure (underspecified)}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}{\emph {niXYaZ}} is non-active}{2}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}{\emph {heXYiZ}} is active}{2}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.3}{\emph {heXYiZ}} is active}{3}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}That's all we need}{4}{subsection.1.2.4}
 \contentsline {section}{\numberline {1.3}Traditional descriptions of the Hebrew verbal system}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Transliteration and notation}{6}{section.1.4}
@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {3.5.1}Anticausatives and figure reflexives}{40}{subsection.3.5.1}
 \contentsline {subsubsection}{\numberline {3.5.1.1}Anticausatives}{40}{subsubsection.3.5.1.1}
 \contentsline {subsubsection}{\numberline {3.5.1.2}Figure reflexives}{42}{subsubsection.3.5.1.2}
-\contentsline {subsection}{\numberline {3.5.2}Reflexives}{42}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}Reflexives}{43}{subsection.3.5.2}
 \contentsline {subsubsection}{\numberline {3.5.2.1}Data}{43}{subsubsection.3.5.2.1}
 \contentsline {subsubsection}{\numberline {3.5.2.2}Analysis}{44}{subsubsection.3.5.2.2}
 \contentsline {subsubsection}{\numberline {3.5.2.3}Summary}{45}{subsubsection.3.5.2.3}
@@ -63,58 +63,57 @@
 \contentsline {subsection}{\numberline {4.3.1}Markedness in causation}{55}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Markedness in Voice heads}{58}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Productivity}{60}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Inchoative alternations}{61}{section.4.4}
+\contentsline {section}{\numberline {4.4}The inchoative alternation}{61}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Roots}{63}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Classification}{64}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Classification}{63}{subsubsection.4.4.1.1}
 \contentsline {subsubsection}{\numberline {4.4.1.2}Discussion}{64}{subsubsection.4.4.1.2}
 \contentsline {subsection}{\numberline {4.4.2}Template}{65}{subsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.2.1}Structure}{65}{subsubsection.4.4.2.1}
 \contentsline {subsubsection}{\numberline {4.4.2.2}Derivation}{67}{subsubsection.4.4.2.2}
-\contentsline {subsection}{\numberline {4.4.3}Summary: The labile alternation}{68}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Alternative approaches}{69}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Alternative: Added structure}{69}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Existential closure}{69}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Alternative: Contextual allomorphy}{70}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Alternative: Verbalizing affix}{70}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}Summary}{74}{section.4.6}
-\contentsline {chapter}{\numberline {5}Passives and nominalizations}{75}{chapter.5}
-\contentsline {section}{\numberline {5.1}Passivization}{75}{section.5.1}
-\contentsline {section}{\numberline {5.2}Adjectival passives}{76}{section.5.2}
-\contentsline {subsubsection}{\numberline {5.2.0.1}Adjectival passives: The state of the art}{78}{subsubsection.5.2.0.1}
-\contentsline {subsubsection}{\numberline {5.2.0.2}Diagnostics in Hebrew}{83}{subsubsection.5.2.0.2}
-\contentsline {subsubsection}{\numberline {5.2.0.3}Adjectival passives in Hebrew}{86}{subsubsection.5.2.0.3}
-\contentsline {subsubsection}{\numberline {5.2.0.4}Breakdown by template}{88}{subsubsection.5.2.0.4}
-\contentsline {subsubsection}{\numberline {5.2.0.5}Summary}{89}{subsubsection.5.2.0.5}
-\contentsline {section}{\numberline {5.3}Nominalization}{90}{section.5.3}
-\contentsline {section}{\numberline {5.4}Denominal verbs}{92}{section.5.4}
-\contentsline {section}{\numberline {5.5}Psych-verbs}{92}{section.5.5}
-\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{93}{part.2}
-\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{94}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{94}{section.6.1}
-\contentsline {section}{\numberline {6.2}Layering}{94}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Causative base}{94}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{95}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Implementation}{96}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Predictions}{97}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Comparison}{98}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{98}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}The trivalency of semantic transitivity}{99}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Hebrew with Layering}{100}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Conclusion}{102}{section.6.4}
-\contentsline {chapter}{\numberline {7}The features of Voice}{105}{chapter.7}
-\contentsline {section}{\numberline {7.1}i*}{105}{section.7.1}
-\contentsline {section}{\numberline {7.2}Japanese}{106}{section.7.2}
-\contentsline {subsubsection}{\numberline {7.2.0.1}Logical possibilities for combinations}{107}{subsubsection.7.2.0.1}
-\contentsline {section}{\numberline {7.3}Valuing features}{109}{section.7.3}
-\contentsline {section}{\numberline {7.4}Against added structure}{109}{section.7.4}
-\contentsline {section}{\numberline {7.5}Notes}{110}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusion}{111}{chapter.8}
-\contentsline {section}{\numberline {8.1}Theories of Hebrew morphology}{111}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Root-based theories}{112}{subsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.1}Templates as morphemes \citep {arad05}}{112}{subsubsection.8.1.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.2}The Exo-Skeletal Model \citep {borer13oup,borer15roots}}{113}{subsubsection.8.1.1.2}
-\contentsline {subsection}{\numberline {8.1.2}Stem-based approaches}{113}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.1}Morphomes and conjugation classes \citep {aronoff94,aronoff07}}{113}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.2}The Theta System \citep {reinhartsiloni05,laks11}}{114}{subsubsection.8.1.2.2}
-\contentsline {subsubsection}{\numberline {8.1.2.3}Experimental arguments for ``frozen'' entries \citep {fadlon12}}{114}{subsubsection.8.1.2.3}
-\contentsline {chapter}{Bibliography}{115}{subsubsection.8.1.2.3}
+\contentsline {subsection}{\numberline {4.4.3}Discussion: The labile alternation}{68}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Alternative accounts}{69}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Added structure}{69}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Existential closure}{70}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Alternative: Contextual allomorphy}{71}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Alternative: Verbalizing affix}{71}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Conclusion}{75}{section.4.6}
+\contentsline {chapter}{\numberline {5}Passives and nominalizations}{76}{chapter.5}
+\contentsline {section}{\numberline {5.1}Passivization}{76}{section.5.1}
+\contentsline {section}{\numberline {5.2}Adjectival passives}{77}{section.5.2}
+\contentsline {subsubsection}{\numberline {5.2.0.1}Adjectival passives: The state of the art}{79}{subsubsection.5.2.0.1}
+\contentsline {subsubsection}{\numberline {5.2.0.2}Diagnostics in Hebrew}{84}{subsubsection.5.2.0.2}
+\contentsline {subsubsection}{\numberline {5.2.0.3}Adjectival passives in Hebrew}{87}{subsubsection.5.2.0.3}
+\contentsline {subsubsection}{\numberline {5.2.0.4}Breakdown by template}{89}{subsubsection.5.2.0.4}
+\contentsline {subsubsection}{\numberline {5.2.0.5}Summary}{91}{subsubsection.5.2.0.5}
+\contentsline {section}{\numberline {5.3}Nominalization}{92}{section.5.3}
+\contentsline {section}{\numberline {5.4}Denominal verbs}{94}{section.5.4}
+\contentsline {section}{\numberline {5.5}Psych-verbs}{94}{section.5.5}
+\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{95}{part.2}
+\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{96}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{96}{section.6.1}
+\contentsline {section}{\numberline {6.2}Layering}{96}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Causative base}{96}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{97}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Implementation}{98}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Predictions}{99}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Comparison}{100}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{100}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}The trivalency of semantic transitivity}{101}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Hebrew with Layering}{102}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Conclusion}{104}{section.6.4}
+\contentsline {chapter}{\numberline {7}The features of Voice}{107}{chapter.7}
+\contentsline {section}{\numberline {7.1}i*}{107}{section.7.1}
+\contentsline {section}{\numberline {7.2}Japanese}{108}{section.7.2}
+\contentsline {subsubsection}{\numberline {7.2.0.1}Logical possibilities for combinations}{109}{subsubsection.7.2.0.1}
+\contentsline {section}{\numberline {7.3}Valuing features}{111}{section.7.3}
+\contentsline {section}{\numberline {7.4}Notes}{111}{section.7.4}
+\contentsline {chapter}{\numberline {8}Conclusion}{113}{chapter.8}
+\contentsline {section}{\numberline {8.1}Theories of Hebrew morphology}{113}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Root-based theories}{114}{subsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.1.1}Templates as morphemes \citep {arad05}}{114}{subsubsection.8.1.1.1}
+\contentsline {subsubsection}{\numberline {8.1.1.2}The Exo-Skeletal Model \citep {borer13oup,borer15roots}}{115}{subsubsection.8.1.1.2}
+\contentsline {subsection}{\numberline {8.1.2}Stem-based approaches}{115}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.1}Morphomes and conjugation classes \citep {aronoff94,aronoff07}}{115}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.2}The Theta System \citep {reinhartsiloni05,laks11}}{116}{subsubsection.8.1.2.2}
+\contentsline {subsubsection}{\numberline {8.1.2.3}Experimental arguments for ``frozen'' entries \citep {fadlon12}}{116}{subsubsection.8.1.2.3}
+\contentsline {chapter}{Bibliography}{117}{subsubsection.8.1.2.3}

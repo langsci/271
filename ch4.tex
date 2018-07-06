@@ -2,7 +2,7 @@
 \section{Introduction}
 In Chapter \ref{chap:vz} we explored the workings of {\vz}, a non-active head responsible for various processes, the most notable of them being anticausativization. The literature on transitivity alternations has, to a large extent, focused on comparing transitive verbs to their anticausative counterparts. It is perhaps no accident that this literature has also been based for the most part on European languages.
 
-In this chapter we will probe the function of {\vd}, a functional head distinct from ordinary Voice (and as such a novel theoretical proposal). I will first describe the general properties of {\vd} and how the template it gives rise to, {\thif}, participates in alternations, in Section~\ref{vd:vd}. We will then look more closely at the relationship between a verb in {\tkal} and its alternants in {\tnif} and {\thif}, in Section~\ref{vd:caus}. This discussion will be followed in Section~\ref{vd:inch} by an examination of cases in which anticausative verbs appear. Section~\ref{vd:others} considers some alternative approaches and Section~\ref{vd:sum} summarizes.
+In this chapter we will probe the function of {\vd}, a functional head distinct from ordinary Voice (and as such a novel theoretical proposal). I will first describe the general properties of {\vd} and how the template it gives rise to, {\thif}, participates in alternations, in Section~\ref{vd:vd}.\footnote{This template usually appears in the literature as \emph{h\textbf{i}XYiZ}, with an /i/-/i/ vocalic pattern. Yet contemporary speakers use /ɛ/, as documented for example by \cite{trachtman16}, and so I transcribe ``e'' throughout. Conversely, the initial /h/ is usually dropped in speech but is retained in my transcription for two reasons. First, /h/ is still pronounced by some older speakers and certain sociolinguistic groups, often marginalized ones \citep[cf.~][]{schwarzwald81biu,gafter14phd}. And second, the initial \emph{h}- should help non-Semitist readers to distinguish this template from other ones.} We will then look more closely at the relationship between a verb in {\tkal} and its alternants in {\tnif} and {\thif}, in Section~\ref{vd:caus}. This discussion will be followed in Section~\ref{vd:inch} by an examination of cases in which anticausative verbs appear. Section~\ref{vd:others} considers some alternative approaches and Section~\ref{vd:sum} summarizes.
 
 \section{An active Voice head} \label{vd:vd}
 This chapter discusses {\vd}, a syntactic head with a [+D] feature, requiring a DP in Spec,Voice. Having seen evidence for underspecified Voice and non-active {\vz} in Hebrew, let us begin with the empirical motivation for {\vd}.
@@ -106,11 +106,11 @@ It is now clearer why the template {\thif} is traditionally called the ``causati
 
 Many of the unergatives are most natural with an indirect object, e.g.~\emph{heria le-} `cheered for'. The list in~(\lastx) does not attempt to exhaust the possible syntactic configurations of verbs in {\thif}. It is there simply to show why this template has traditionally been viewed as causative. But it is more accurate to say that the template is predominantly \emph{active}, i.e.~it has an agentive, external argument.
 
-If it is true that there is an external argument regardless of the root, the presence of this argument should be encoded in the syntax. This goal is achieved using {\vd}: it requires that a DP be merged in its specifier, guaranteeing that an external argument appear.\footnote{Again abstracting away from the difference between Agents and Causers, on which see Chapter @.}
+If it is true that there is an external argument regardless of the root, the presence of this argument should be encoded in the syntax. This goal is achieved using {\vd}: it requires that a DP be merged in its specifier, guaranteeing that an external argument appear.\footnote{Again abstracting away from the difference between Agents and Causers, regarding which see Chapter~\ref{chap:voice}.}
 \pex 
 	\a \textbf{\vd:}\\
 	{\vd} is a Voice head with a [\!+\!D] feature, requiring that some element with a [D] feature merge in its specifier.
-	\a \denote{\vd} = $\lambda$x$\lambda$e.Agent(x,e)
+	\a\label{ex:vd:sem} \denote{\vd} = $\lambda$x$\lambda$e.Agent(x,e)
 	\a {\vd} {\lra} {\thif} \hfill (see \citealt{kastner18nllt} for the morhophonological details)
 \xe
 
@@ -185,7 +185,7 @@ Considering the current proposal, how and why would {\vd} differ from underspeci
 
 Since the syntactic behavior is identical as far as licensing a specifier is concerned, in this section I will discuss the semantic difference between the resulting causative verbs. Concretely, I will argue that Voice-causatives are more transparent than {\vd}-causatives, whereby the morphological markedness of the latter mirrors some semantic markedness or opacity.
 
-		\subsection{Markedness in causation}
+		\subsection{Markedness in causation} \label{vd:caus:marked}
 Very little contemporary work has analyzed causative alternations in depth within a general theory of argument structure alternations; such work normally draws on languages like Japanese \citep{jacobsen92} that are typologically distant from Indo-European ones. \citet[62ff]{layering15} speculate that a marked causative should entail thematic Voice (semantically if not syntactically), but as far as I know no proposal has explored the implications of marked anticausatives and marked causatives existing side by side.
 
 For concreteness, let us give the two alternations the names in~(\nextx). The claim will be that the marked alternation is marked not only morphologically but also semantically.
@@ -262,7 +262,7 @@ A similar pattern can be seen with \emph{neexal} `was eaten', where the basic va
 
 This contrast illustrates the limits of syntax within the current system: it can rigidly dictate which elements go where, but the structure itself is not driven by semantic or lexical-semantic considerations.
 
-A few more examples of the marked alternation are given in~(\nextx), showing that the exact type of ``causative'' relation for the marked variant is not uniform.
+A few more examples of the marked alternation are given in~(\nextx), showing that the exact type of ``causative'' relation for the marked variant is not uniform.\footnote{The lexical semantics of the root could have something to do with the type of causation in the marked alternation, but I leave that question open for future work.}
 \ex\label{vd:ex:triplets-caus}
 \xe
 \begin{small}
@@ -289,7 +289,7 @@ Before we go on to discuss the consequences of these differences, it is importan
 
 More concretely, however, we can make an argument from the lack of doublets. There are no \emph{additional} verbs in {\tnif} that alternate with {\thif}. That is to say, suppose that \emph{nikra} `was read' and \emph{kara} `read' are derived from \root{krj1} and that \emph{hekri} `read out' was derived from a homophonous root \root{krj2}. Assume similarly that \emph{nisgar} `closed' and \emph{sagar} `closed' were derived from \root{sgr1} but that \emph{hesgir} `extradited' was derived from \root{sgr2}. And so on for all cases of non-predictable causative variants. If this were the case, we would suppose that \root{krj2} and \root{sgr2} could also be instantiated with other functional heads, for instance with {\vz} to create an anticausative in {\tnif}. But this is not the case: there is no \#\emph{nikra} `was read out' to alternate with \emph{hekri} `read out', and no \#\emph{nisgar} `got extradited' to alternate with \emph{hesgir} `extradited'. In other words, there are no \emph{doublets} (compare the discussion of root suppletion in \citealt{harley14thlia,harley14thlib,harley15roots} and \citealt{borer14thli}).
 
-		\subsection{Markedness in Voice heads}
+		\subsection{Markedness in Voice heads} \label{vd:caus:markvoice}
 The observations made so far bring us to the proposed generalization for causitivity marking in~(\nextx).
 \pex\label{ex:vd:causgen}\textbf{The causative generalization for transitivity alternations}\\
 	If a language has both anticausative and causative marking:
@@ -427,71 +427,13 @@ In sum, there are clear compositional differences with the marked causative alte
 
 
 
-\section{Inchoative alternations} \label{vd:inch}
-@@@
+\section{The inchoative alternation} \label{vd:inch}
+The approach taken in this book has been to develop a basic theoretical framework, test its immediate predictions, and then explore the empirical picture. This chapter has so far implemented {\vd} in Section~\ref{vd:vd} and explored causative marking in Section~\ref{vd:caus}. We will now look examine cases which appear not to be predicted by the most basic reading of the theory.
 
+As noted already in our discussion of markedness, Hebrew does not generally have the alternation referred to as ``labile'', ``zero-derivation'' or ``conversion'' (as with English transitive and intransitive \emph{break}$\sim$\emph{break}), with the exception of certain verbs in {\thif}. A handful of examples are attested in other templates, including \emph{a{\texttslig}ar} `stopped' (often dispreferred to \emph{nee{\texttslig}ar} as an inchoative), \emph{miher} `hurried' and \emph{ixer} `delayed', although the latter two are not part of my own causative vocabulary. In Section~\ref{vd:vd} I mentioned that over 500 of the 550--600 verbs in {\thif} are active. In this section, I explore the 33 that do undergo the labile alternation.
 
-\begin{table}[ht] \small \centering \singlespacing
-	\begin{tabular}{|p{3cm}||p{4.5cm}|p{4.5cm}||p{3cm}|}\hline
-		&	Unaccusative	&  Unergative & Transitive \\\hline\hline
-	Change of color & \emph{he'edim} `reddened', \emph{helbin} `whitened', \emph{hekxil} `became blue', \emph{hetshiv} `yellowed', \emph{heʃxir} `blackened', \emph{hezhiv} `goldened', 
-		& --- & --- \\\hline
-	
-	Change of bodily function, shape or appearance & \emph{heʃmin} `fattened', \emph{herza} `thinned', \emph{hezkin} `grew old', \emph{hekriax} `became bald', \emph{hevri} `became healthy', \emph{hertsin} `became serious', \emph{hexvir} `grew pale' &
-		\emph{he'emik} `deepened', \emph{he'erix} `lengthened', \emph{hetser} `narrowed', \emph{hesmik} `blushed' & \emph{hefʃit} `undressed', \emph{henmix} `lowered', \emph{hextim} `stained', \dots \\\hline
-
-	Change of consistency, taste or smell & \emph{hekʃiax} `stiffened', \emph{hefʃir} `thawed', \emph{hevʃil} `ripened', \emph{hekrim} `crusted'
-		& \emph{hexmits} `soured', \emph{herkiv} `rotted'
-		& \emph{hetsis} `fermented', \emph{heriax} `smelled', \emph{hetpil} `desalinated', \emph{heflir} `flouridated', \dots \\\hline
-	
-	Emission & --- & \emph{heki} `threw up', \emph{hesriax} `stank', \emph{hezia} `sweat', \emph{heflits} `farted', \emph{hev'iʃ} `became putrid', \emph{hetsxin} `smelled pungent' & --- \\\hline
-	
-	Change of speed or direction & --- & \emph{he'its} `sped up', \emph{he'et} `slowed down', \emph{hesmil} `went left' & \emph{heziz} `moved', \emph{hotsi} `removed', \dots \\\hline
-	
-	Change of sound & --- & \emph{her'iʃ} `made loud noise', \emph{hexriʃ} `quieted down' & \emph{heʃtik} `shut up' \\\hline
-	
-	Other & \emph{hetsliax} `succeeded', \emph{hexmir} `deteriorated' & \emph{hektsin} `escalated' &  \\\hline
-	\end{tabular}
-\caption{Lexical semantic classes for alternating verbs in \thif~and transitive foils.\label{table:thif-roots}}
-\end{table}
-
-
-The verbal morphology of Modern Hebrew famously consists of seven ``templates'', in which consonants (here X, Y and Z) slot into vocalic and affixal patterns \citep{doron03,arad05,borer13oup,kastner16phd}. Our focus is on the template {\thif}, often called the ``causative'' form; verbs in it are generally active, as in~(\nextx).\footnote{This template usually appears in the literature as \emph{h\textbf{i}XYiZ}, with an /i/-/i/ vocalic pattern. Yet contemporary speakers use /\textipa{E}/ \citep{trachtman16}, and so I transcribe ``e'' throughout. Conversely, the initial /h/ is usually dropped in speech but I retain it for two reasons. First, /h/ is still pronounced by some older speakers and certain sociolinguistic groups, often marginalized ones \citep[cf.~][]{schwarzwald81biu,gafter14phd}. And second, the initial \emph{h}- should help non-Semitist readers to distinguish this template from other ones.}
-\pex\label{ex:thif-active}
-	\a \textbf{Causative:} \emph{heʃmid} `destroyed', \emph{hexnis} `inserted', \emph{hekpi} `froze', \dots
-	\a \textbf{Unergative:} \emph{he{\texttslig}pin} `went north', \emph{hedrim} `went south', \emph{hejmin} `went to the right', \emph{heemin} `believed', \emph{hegzim} `exaggerated', \emph{hemtin} `awaited', \emph{heflig} `set sail', \emph{hebit} `looked', \emph{heria} `cheered', \dots
-\xe
-
-Hebrew does not generally have a labile alternation (zero-derivation as in English \emph{break}$\sim$\emph{break}), with the exception of certain verbs in {\thif}.\footnote{A handful of examples in other templates includes \emph{a{\texttslig}ar} `stopped' (often dispreferred to \emph{nee{\texttslig}ar} as an inchoative), \emph{miher} `hurried' and \emph{ixer} `delayed', with the latter two suggested by a reviewer and attested in use though not part of my own causative vocabulary.} The list in~(\lastx)---which is not meant to be comprehensive---presents a number of verbs that do not participate in the alternation. This is the unmarked case in \thif: over 500 of the 550--600 verbs in this template would fit in this list.
-
-I will use \emph{inchoative} as a descriptive term: an inchoative verb in {\thif} is one in which the sole argument has undergone the change of state (or changed on a scale). \emph{Causative} is likewise a descriptive term here, identical in use to \emph{transitive}: a structure with an external argument and an internal argument (complement to the verb). The two kinds will receive different analyses in Section~\ref{sec:template}.
-
-Some examples of verbs that do undergo the alternation are given in~(\nextx). Even in those cases where the inchoative is frequent, a causative context can be set up fairly easily. Full lists are given later on, in Section~\ref{sec:roots}.
-\pex\label{ex:thif-alt}Alternating unergatives in \thif:
-	\a \textbf{Full alternation:} \emph{hei{\texttslig}} `sped up', \emph{heemik} `deepened', \emph{heerix} `lengthened', \emph{hekʃiax} `stiffened', \emph{hefʃir} `thawed', \emph{heʃmin} `fattened', \emph{herza} `grew thin', \dots
-	\a \textbf{Unergative preferred but causative innovation attested:} \emph{hesriax} `stank', \emph{hesmil} `went to the left',\footnote{Attested example for causative ``leften'':
-	\ex
-		\begingl
-		\gla kol ha-kavod le-barak. \textbf{hesmil} et netanjahu//
-		\glb all the-respect to-Barak. made.left \gsc{ACC} Netanyahu//
-		\glft `Well done to [Ehud] Barak. He made [Benjamin] Netanyahu look like a leftist.'\trailingcitation{	\url{http://www.ynet.co.il/Ext/App/TalkBack/CdaViewOpenTalkBack/0,11382,L-4010352,00.html}}//
-		\endgl
-	\xe
-	} \emph{hetsxin} `smelled pungent', \emph{herkiv} `rotted', \dots
-	\a \textbf{Unaccusative preferred but causative innovation attested:} \emph{he'edim} `reddened', \emph{helbin} `whitened', \emph{heʃxir} `blackened', \emph{hevri} `got healthy',
-		\emph{hexvir} `grew pale',\footnote{Attested example for causative ``palen'':
-		\ex ``The girl looked as though someone wrapped her up in massive metallic toilet paper. \dots
-			\begingl
-			\gla afilu ha-tseva ha-meanjen \emph{[}\dots\emph{]} \textbf{hexvir} et hofa'a-ta ʃel danst//
-			\glb even the-color the-interesting {} paled \gsc{ACC} appearence-hers of Dunst//
-			\glft `Even the interesting color \dots~made Dunst's appearance pale.'\trailingcitation{\url{http://www.mako.co.il/women-fashion/whats_in/Article-174f70ed642f121004.htm}}//
-			\endgl
-		\xe
-		} \emph{hertsin} `became serious', \dots
-\xe
-
-The alternation is further exemplified by \emph{hefʃir} `thawed' in~(\nextx).
-\pex\label{ex:thif-hefSir}
+In this section I use the label \textbf{inchoative} as a descriptive term: an inchoative verb in {\thif} is one in which the sole argument has undergone the change of state (or changed on a scale). \textbf{Causative} is likewise a descriptive term in this section, identical in use to ``transitive'': a structure with an external argument and an internal argument (complement to the verb). The two kinds will receive different analyses in Section~\ref{vd:inch:template}. The alternation is exemplified by \emph{hefʃir} `thawed' in~(\nextx).
+\pex\label{ex:vd:thif-hefSir}
 	\a \begingl
 		\gla ha-jaxasim ben ʃtej ha-medinot \textbf{hefʃir-u} axarej bikur roʃ ha-memʃala//
 		\glb the-relations between both the-states thawed.\gsc{CAUS}-\gsc{3PL} after visit head.\gsc{CS} the-government//
@@ -505,63 +447,86 @@ The alternation is further exemplified by \emph{hefʃir} `thawed' in~(\nextx).
 		\endgl
 \xe
 
-This paper attempts to understand, on the one hand, what is special about the roots in~(\ref{ex:thif-alt}) that allows their verbs to alternate, and on the other hand, what is special about the morphological template that allows some verbs to alternate. A satisfying analysis of these patterns must address two questions: why these roots and why this template. I take these questions up in turn.
+Some examples of verbs that undergo the alternation are given in~(\nextx). Even in those cases where the inchoative is frequent, a causative context can be set up fairly easily. Full lists are given later on, in Section~\ref{vd:inch:roots}.
+\pex\label{ex:vd:thif-alt}Alternating unergatives in \thif:
+	\a \textbf{Full alternation:} \emph{hei{\texttslig}} `sped up', \emph{heemik} `deepened', \emph{heerix} `lengthened', \emph{hekʃiax} `stiffened', \emph{hefʃir} `thawed', \emph{heʃmin} `fattened', \emph{herza} `grew thin', \dots
+	\a \textbf{Unergative preferred but causative innovation attested:} \emph{hesriax} `stank', \emph{hesmil} `went to the left',\footnote{Attested example for causative ``leften'':
+	\ex
+		\begingl
+		\gla kol ha-kavod le-barak. \textbf{hesmil} et netanjahu//
+		\glb all the-respect to-Barak. made.left \gsc{ACC} Netanyahu//
+		\glft `Well done to [Ehud] Barak. He made [Benjamin] Netanyahu look like a leftist.'\trailingcitation{	\url{http://www.ynet.co.il/Ext/App/TalkBack/CdaViewOpenTalkBack/0,11382,L-4010352,00.html}}//
+		\endgl
+	\xe
+	} \emph{he{\texttslig}xin} `smelled pungent', \emph{herkiv} `rotted', \dots
+	\a \textbf{Unaccusative preferred but causative innovation attested:} \emph{heedim} `reddened', \emph{helbin} `whitened', \emph{heʃxir} `blackened', \emph{hevri} `got healthy',
+		\emph{hexvir} `grew pale',\footnote{Attested example for causative ``palen'':
+		\ex ``The girl looked as though someone wrapped her up in massive metallic toilet paper. \dots
+			\begingl
+			\gla afilu ha-tseva ha-meanjen \emph{[}\dots\emph{]} \textbf{hexvir} et hofa'a-ta ʃel danst//
+			\glb even the-color the-interesting {} paled \gsc{ACC} appearence-hers of Dunst//
+			\glft `Even the interesting color \dots~made Dunst's appearance pale.'\trailingcitation{\url{http://www.mako.co.il/women-fashion/whats_in/Article-174f70ed642f121004.htm}}//
+			\endgl
+		\xe
+		} \emph{her{\texttslig}in} `became serious', \dots
+\xe
 
-%Unaccusativity judgments are fickle in Hebrew: the ``possessive dative'' of \cite{borergrodzinsky86} has been critiqued by \cite{gafter14li} and \cite{linzen14pd}, while verb preposing (Verb-Subject order in an otherwise SVO language, \citealt{shlonsky87}) is not always reliable. See \cite{kastner17gjgl} for discussion. Nevertheless, it is possible to find unaccusative verbs in \thif~which perform satisfactorily on the Verb-Subject order diagnostic, as the following examples show. \citet[149]{borer91} likewise argues that inchoatives in \thif~can be either unergative or unaccusative.
-%\pex VS order with unaccusative inchoatives in \thif. No \emph{by}-phrase possible.
-%	\a \begingl
-%		\gla \underline{hefʃir-a} \emph{(}l-i\emph{)} kol ha-glida \emph{(}*{al jedej} ha-xom\emph{)}//
-%		\glb thawed-\gsc{F} to-me all the-ice.cream \phantom{*(}by the-heat//
-%		\glft `All (my) ice cream defrosted completely (*by the heat).'//
-%	\endgl
-%	
-%	\a \begingl
-%		\gla \underline{hevʃil-u} ha-tna'im le-hafʃara ba-jaxasim \emph{(}*{al jedej} ha-bikur\emph{)}//
-%		\glb ripened-\gsc{3PL} the-conditions to-thawing in.the-relations \phantom{*(}by the-visit//
-%		\glft `The conditions matured for the relations to thaw (*by the visit).'//
-%	\endgl
-%\xe
-%Accordingly, I will assume that all three constructions (transitive, unergative and unaccusative) are possible in this template in principle.
-%
-%I have classified the alternating verbs by the alternations they participate in. Barring a judgment survey, and given that I know of no comparable lists, the following lists reflect my own intuitions. Some verbs are equally acceptable in both alternations, as with \emph{hefʃir} `thawed' in~(\ref{ex:thif-hefSir}). Others are predominantly used as inchoatives, though causative uses have been attested. This procedure is repeated separately for unaccusatives in~(\ref{ex:thif-unacc-alt}) and for unergatives in~(\ref{ex:thif-act-alt}).
-
-%I have not yet found, or at least not yet noticed, any alternations in which the causative is preferred and the inchoative is a recent innovation; or inchoatives in \thif~which have no causative counterpart. I take these findings to be emblematic of the causative meaning inherent in \thif: even if inchoative verbs have arisen, contemporary usage overwhelmingly tends to coin causatives in this template rather than another kind of verb \citep{laks14}.
-
-
-	\subsection{Roots} \label{vd:inch:roots}
-Based on the corpus of~\cite{ehrenfeld12}, approximately 550--600 verbs exist in Modern Hebrew {\thif}. Of these, 33 show the causative-inchoative alternation by my own estimate.\footnote{\cite{arad05} counted 11 such verbs in her corpus whereas \cite{laks11} found 34. \cite{lev16} counted 81 in a survey taking into account many naturally attested, but perhaps spurious, forms.} The 33 alternating verbs are broken down as follows: 15 alternating unergatives and 18 alternating unaccusatives. 
-
-The analytical question is whether we can identify which roots form verbs that participate in the labile alternation. In this section I classify these verbs according to the broad lexical semantics of the root, building towards the claim that they are all degree achievements. The resulting classification is necessarily based on the existing verbs in {\thif}, rather than on categories such as those in \cite{levin93}.
-
-	\subsubsection{Classification}
-The classification also notes whether these verbs are unaccusative or unergative. Inchoatives demonstrably lack a Causer: they are compatible with `by itself' \citep{unaccusativity95,alexiadouanagnostopoulou04,koontzgarboden09,alexiadoudoron12,kastner17gjgl}, for example, (\nextx).
-\ex
-	\begingl
-	\gla ha-ʃeleg \textbf{hefʃir} me-a{\texttslig}mo//
-	\glb the-snow thawed.\gsc{CAUS} of-itself//
-	\glft `The snow thawed by itself.'//
+As mentioned in particular in Chapter~\ref{vz:nact:anticaus:unacc}, unaccusativity judgments can be fickle in Hebrew: the ``possessive dative'' of \cite{borergrodzinsky86} has been critiqued by \cite{gafter14li} and \cite{linzen14pd}, while verb preposing (Verb-Subject order in an otherwise SVO language, \citealt{shlonsky87}) is not necessarily reliable as a diagnostic of deep unaccustivity \citep{kastner17gjgl}. Nevertheless, it is possible to find unaccusative verbs in \thif~which perform satisfactorily on the Verb-Subject order diagnostic, as the examples in~(\nextx) show. \citet[149]{borer91} likewise argues that inchoatives in {\thif} can be either unergative or unaccusative. Accordingly, I will assume that all three constructions (transitive, unergative and unaccusative) are possible in this template in principle.
+\pex\label{ex:vd:vs} VS order with unaccusative inchoatives in \thif. No \emph{by}-phrase possible.
+	\a \begingl
+		\gla \textbf{hefʃir-a} \emph{(}l-i\emph{)} kol ha-glida \emph{(}*{al jedej} ha-xom\emph{)}//
+		\glb thawed-\gsc{F} to-me all the-ice.cream \phantom{*(}by the-heat//
+		\glft `All (my) ice cream defrosted completely (*by the heat).'//
+	\endgl
+	
+	\a \begingl
+		\gla \textbf{hevʃil-u} ha-tnaim le-hafʃara ba-jaxasim \emph{(}*{al jedej} ha-bikur\emph{)}//
+		\glb ripened-\gsc{3PL} the-conditions to-thawing in.the-relations \phantom{*(}by the-visit//
+		\glft `The conditions matured for the relations to thaw (*by the visit).'//
 	\endgl
 \xe
 
-They also pass unaccusativity diagnostics, although these are are fickle in Hebrew: the ``possessive dative'' of \cite{borergrodzinsky86} has been critiqued by \cite{gafter14li}, \cite{linzen14pd} and \cite{barashersiegalboneh15,barashersiegalboneh16}, while verb preposing (Verb-Subject order in an otherwise SVO language, \citealt{shlonsky87}) is not always reliable. See \cite{kastner17gjgl} for discussion. Nevertheless, it is possible to find unaccusative verbs in {\thif} which perform satisfactorily on the Verb-Subject order diagnostic. Barring a judgment survey, and given that I know of no comparable lists, the following lists reflect my own intuitions and will not be motivated as such.
+I have classified the alternating verbs by the alternations they participate in. Barring a judgment survey, and given that I know of no comparable lists, the lists below reflect my own intuitions. Some verbs are equally acceptable in both alternations, as with \emph{hefʃir} `thawed' in~(\ref{ex:vd:thif-hefSir}). Others are predominantly used as inchoatives, though causative uses have been attested.
 
-First off, there are classes that contain only unergative (alternating) inchoatives. These include \textbf{verbs of emission}: \emph{hesriax} `stank', \emph{heviʃ} `became putrid', \emph{he{\texttslig}xin} `smelled pungent';\footnote{Other verbs of emission do not entail change of state: \emph{heki} `threw up', \emph{hezia} `sweat', \emph{hefli{\texttslig}} `farted'.} %No non-alternating transitive verbs of emission exist, as far as I could find.
-%It is often unclear whether verbs of emission are unaccusative or unergative, with the answer often varying by language \citep{rosen84}. In Hebrew I treat them as unergative, given that they do not allow VS order (not shown here) and following \cite{potashnik12}.
-\textbf{verbs of change of speed or direction}: \emph{hei{\texttslig}} `accelerated', \emph{heet} `slowed down', \emph{hesmil} `went left'; %Transitive verbs of this semantic class do exist, e.g.~\emph{heziz} `moved', \emph{ho{\texttslig}i} `removed'.
-and \textbf{verbs of change of sound}: \emph{heriʃ} `made loud noise', \emph{hexriʃ} `quieted down'. %One transitive verb exists: \emph{heʃtik} `shut up'.
-%The last two clearly show change on a scale. Their transitive variant means ``caused NP to be Aer''. The first can either have a cognate-like object (what was thrown up), or also a causative meaning (e.g.~make the room pungent).
-One more unergative verb which does not fit into any of these categories is \emph{hek{\texttslig}in} `escalated'.
+The remainder of this section will illustrate what is special about roots such as those in~(\ref{ex:vd:thif-alt}) that allows their verbs to alternate, on the one hand, and what is special about the morphological template that allows some verbs to alternate, on the other hand (based on \citealt{kastner18tlr}). A satisfying analysis of these patterns must address two questions: why these roots and why this template. I take these up in turn.
 
-Next we have classes whose inchoatives can be either unergative or unaccusative. For
-\textbf{verbs of change of consistency, taste or smell}, the unergatives are \emph{hexmi{\texttslig}} `soured' and \emph{herkiv} `rotted'. The unaccusatives are \emph{hekʃiax} `stiffened', \emph{hefʃir} `thawed', \emph{hevʃil} `ripened' and \emph{hekrim} `crusted'. %Transitive-only verbs exist too, e.g.~\emph{he{\texttslig}is} `fermented', \emph{heriax} `smelled', \emph{hetpil} `desalinated', \emph{heflir} `flouridated'.
-\textbf{For change of physical function, shape or appearance}, the unergatives are \emph{heemik} `deepened', \emph{heerix} `lengthened', \emph{he{\texttslig}er} `narrowed' and \emph{hesmik} `blushed'. The unaccusatives are \emph{heʃmin} `fattened', \emph{herza} `thinned', \emph{hezkin} `grew old', \emph{hekriax} `became bald', \emph{hevri} `became healthy', \emph{her{\texttslig}in} `became serious' and \emph{hexvir} `grew pale'. %Transitives include \emph{hefʃit} `undressed', \emph{henmix} `lowered', \emph{hextim} `stained' and others.
+	\subsection{Roots} \label{vd:inch:roots}
+Based on my database, approximately 550--600 verbs exist in Modern Hebrew {\thif}. Of these, 33 show the causative-inchoative alternation by my own estimate. A number of estimates can be found in the recent literature: \cite{arad05} counted 11 such verbs in her corpus whereas \cite{laks11} found 34. \cite{lev16} counted 81 in a survey taking into account many naturally attested, but perhaps spurious, forms. My 33 alternating verbs are broken down as follows: 15 alternating unergatives and 18 alternating unaccusatives.
 
-And lastly, there are classes whose inchoatives are solely unaccusative. These are the \textbf{verbs of change of color}: \emph{heedim} `reddened', \emph{helbin} `whitened', \emph{hekxil} `became blue', \emph{he{\texttslig}hiv} `yellowed', \emph{heʃxir} `blackened' and \emph{hezhiv} `goldened'. %No transitive-only verbs exist in this category.
+The analytical question is whether we can identify which roots form verbs that participate in the labile alternation. I propose a pretheoretical classification intor verb classes which is based on the existing verbs, rather than on categories such as those in \cite{levin93}. In this section I classify these verbs according to the broad lexical semantics of the root, building towards the claim that they are all degree achievements.
 
-Additionally, \emph{hexmir} `deteriorated' appears to be an unaccusative verb that does not fall under any of the categories above.
+	\subsubsection{Classification}
+Table~\ref{tab:vd:thif-roots} lists the alternating verbs in~{\thit}. The first three rows show classes where the only inchoatives are unergative. The next row (change of color) shows a class in which the only inchoatives are unaccusative. Verbs in the other classes may be unergative or unaccusative, decided on a verb-by-verb basis. I also list whether there are transitive verbs in this template whose lexical semantics makes them eligible to be part of the verb class.
+
+\begin{table}[htb] \small \centering \singlespacing
+	\begin{tabular}{|p{3cm}||p{4.5cm}|p{4.5cm}|p{3cm}|}\hline
+		&	\textbf{Unaccusative}	&  \textbf{Unergative} & \textbf{Transitive} \\\hline\hline
+	Emission & --- & \emph{hesriax} `stank', \emph{heviʃ} `became putrid', \emph{hetsxin} `smelled pungent'\footnotemark & --- \\\hline
+	
+	Change of speed or direction & --- & \emph{hei\texttslig} `accelerated', \emph{heet} `slowed down', \emph{hesmil} `went left' & \emph{heziz} `moved', \emph{hotsi} `removed', \dots \\\hline
+	
+	Change of sound & --- & \emph{heriʃ} `made loud noise', \emph{hexriʃ} `quieted down' & \emph{heʃtik} `shut up' \\\hline\hline
+	
+	Change of color & \emph{heedim} `reddened', \emph{helbin} `whitened', \emph{hekxil} `became blue', \emph{he{\texttslig}hiv} `yellowed', \emph{heʃxir} `blackened', \emph{hezhiv} `goldened', 
+				& --- & --- \\\hline\hline
+		
+	Change of physical function, shape or appearance & \emph{heʃmin} `fattened', \emph{herza} `thinned', \emph{hezkin} `grew old', \emph{hekriax} `became bald', \emph{hevri} `became healthy', \emph{her{\texttslig}in} `became serious', \emph{hexvir} `grew pale' &
+		\emph{heemik} `deepened', \emph{heerix} `lengthened', \emph{he{\texttslig}er} `narrowed', \emph{hesmik} `blushed' & \emph{hefʃit} `undressed', \emph{henmix} `lowered', \emph{hextim} `stained', \dots \\\hline
+
+	Change of consistency, taste or smell & \emph{hekʃiax} `stiffened', \emph{hefʃir} `thawed', \emph{hevʃil} `ripened', \emph{hekrim} `crusted'
+		& \emph{hexmi\texttslig} `soured', \emph{herkiv} `rotted'
+		& \emph{hetsis} `fermented', \emph{heriax} `smelled', \emph{hetpil} `desalinated', \emph{heflir} `flouridated', \dots \\\hline\hline
+		
+	Other & \emph{hexmir} `deteriorated' & \emph{hek{\texttslig}in} `escalated' &  \\\hline
+	\end{tabular}
+\caption{Lexical semantic classes for alternating verbs in \thif~and transitive foils.\label{tab:vd:thif-roots}}
+\end{table}
+
+\footnotetext{Other verbs of emission do not entail change of state: \emph{heki} `threw up', \emph{hezia} `sweat', \emph{hefli\texttslig} `farted'.}
+
 
 		\subsubsection{Discussion}
-A number of tentative generalizations can be drawn from the lists above: for instance, it seems clear that change of color allows for inchoative verbs (unaccusative ones). Yet a large degree of arbitrariness exists, as when we might also have expected the forms in~(\nextx) to exist, contrary to fact. The semantic criteria alone are not enough to predict how all roots in the language will behave.
+A number of tentative generalizations can be drawn from Table~\ref{tab:vd:thif-roots}. For instance, it seems clear that change of color allows for inchoative verbs (unaccusative ones). Yet a large degree of arbitrariness exists, as when we might also have expected the forms in~(\nextx) to exist, contrary to fact. The semantic criteria alone are not enough to predict how all roots in the language will behave.
 \pex
 	\a Change of speed:
 		*\emph{hemhir} ($\nless$ \emph{mahir} `quick').
@@ -571,20 +536,17 @@ A number of tentative generalizations can be drawn from the lists above: for ins
 
 It is also not the case that any root in the categories above necessarily derives an inchoative in {\thif}: \emph{heziz} `moved' is a change of direction, \emph{heʃtik} `shut up' is a change of sound and \emph{henmix} `lowered' is a change of physical shape, but these three verbs (and many others) are only causative, never inchoative.
 
-One insightful claim, made recently by \cite{lev16}, it that inchoatives in {\thif} are degree achievements: change of state verbs which are derived from gradable adjectives (for related discussion see \citealt{dowty91,hayetal99,rotsteinwinter04,kennedylevin08,bobaljik12}, a.m.o). This hypothesis covers a fair bit of empirical landscape and I will adopt it in what follows, although it is important to note that this it does not account for a few datapoints which \cite{lev16} subsumes under a different part of his analysis. 
-
-\cite{lev16} additionally sketches a theory in which labile verbs are less agentive in general, a claim that could explain why \emph{heet} `slowed down' is possible as opposed to *\emph{hemhir} (from `quick'), but that cannot be extended to explain the existence of minimally different \emph{hei{\texttslig}} `accelerated'. I leave the classification above as is, assuming the relevance of degree achievements and turning to examine the syntactic context.
-
-%Lev: hesmik et (caused X to Aer) vs hezia et (cognate object) b/c blushing is externally controlled and sweating internally brought about
+One insightful claim, made recently by \cite{lev16} and endorsed by \cite{kastner18tlr}, is that inchoatives in {\thif} are \textbf{degree achievements}: change of state verbs which are derived from gradable adjectives (see \citealt{dowty91,hayetal99,rotsteinwinter04,kennedylevin08,bobaljik12}, a.m.o). This hypothesis covers a fair bit of empirical ground and I will adopt it in what follows, although it is important to note that it does not account for a few datapoints which \cite{lev16} subsumes under a different part of his analysis. 
 
 	\subsection{Template} \label{vd:inch:template}
-Two questions must now be asked about {\thif}: first, what is the appropriate formal analysis for verbs with this form \citep{schwarzwald81,bolozky82}? And second, why do labile alternations exist in this template alone?
-This section concerns itself with the first question of the two. I argue next that causatives have different structure than inchoatives, echoing claims made by \cite{borer91}. Causatives will be argued to be derived from the root, whereas inchoatives will be argued to be derived from an existing adjective or noun.%\footnote{From a cross-Semitic perspective, Arabic ``Form 9'' \emph{iXYaZZ} verbs show some parallels with \thif, though the Arabic forms are exclusively nonactive.} 
+Two questions must now be asked about {\vd}: first, how must our understanding of it change? And second, why is it this head alone that leads to labile alternations in the language?
+
+This section concerns itself with the first question of the two. I argue next that causatives have different structure than inchoatives, echoing claims made by \cite{borer91}. Causatives will be argued to be derived from the root, whereas inchoatives will be argued to be derived from an existing adjective or noun.\footnote{From a cross-Semitic perspective, Arabic ``Form 9'' \emph{iXYaZZ} verbs show some parallels with {\thif}, though the Arabic forms are exclusively nonactive.}
 
 		\subsubsection{Structure}
-As a first step, I will assume that inchoatives in {\thif} are never derived directly from the root, but from an underlying adjective or noun. A similar claim was already made by \cite{borer91}, who argued that causatives are derived directly from the root while these inchoatives are derived from an underlying adjective. As I point out here, inchoatives can also be derived from an underlying noun:
+As a first step, I will assume that inchoatives in {\thif} are never derived directly from the root but from an underlying adjective or noun. A similar claim was already made by \cite{borer91}, who argued that causatives are derived directly from the root while these inchoatives are derived from an underlying adjective. As I point out here, inchoatives can also be derived from an underlying noun:
 \pex
-	\a Underlying adjective: \emph{he'edim} $<$ \emph{adom} `red', \emph{heʃmin} $<$ \emph{ʃamen} `fat'.
+	\a Underlying adjective: \emph{heedim} $<$ \emph{adom} `red', \emph{heʃmin} $<$ \emph{ʃamen} `fat'.
 	\a Underlying noun: \emph{heki} $<$ \emph{ki} `vomit', \emph{he{\texttslig}xin} $<$ \emph{{\texttslig}axana} `stench'.
 \xe
 
@@ -611,9 +573,9 @@ The structure is as in~(\nextx).
  }
 \xe
 
-This assumption is admittedly a bit of a morphophonological stretch in certain cases (the verb \emph{hei{\texttslig}} `accelerated' is arguably not derived from the noun \emph{teu{\texttslig}a} `acceleration', whose initial /t/ is not preserved), indicating that perhaps the claim should be weakened such that some inchoatives are derived from adjectives/nouns and other from the root. Nevertheless, the strong view carries a few benefits. First, it allows us to talk about different constructions in terms of explicit structures. Second, it allows for the degree semantics of the underlying adjective to transfer to the verb straightforwardly. And third, it makes a correct prediction. 
+This assumption is admittedly a bit of a morphophonological stretch in certain cases. For example, the verb \emph{hei{\texttslig}} `accelerated' is arguably not derived from the noun \emph{teu{\texttslig}a} `acceleration', whose initial /t/ is not preserved \citep{batel94,arad03}. This much indicates that perhaps the claim should be weakened such that some inchoatives are derived from adjectives/nouns and other from the root. Nevertheless, the strong view carries a few benefits. First, it allows us to talk about different constructions in terms of explicit, uniform structures. Second, it allows for the degree semantics of the underlying adjective to transfer to the verb straightforwardly. And third, it makes a correct prediction regarding idiomatic meaning, as I show next.
 
-My theory of morphosemantics assumes the so-called Arad/Marantz hypothesis, according to which the first categorizing head selects the alloseme of the root \citep{arad03,marantz13,elenasamioti14}. If~(\lastx) is the right structure for inchoatives, it is predicted that for roots which participate in the alternation, the causative might have a meaning that the inchoative does not share. This is because in causatives {\vd} is local enough to the root to select a special meaning, whereas in inchoatives little a or little n will have already chosen an alloseme. This prediction is borne out by idioms involving \emph{helbin} `whitened', as in~(\nextx), and \emph{heʃxir} `blackened' (with the metaphorical meaning `tarnished'), as in \citet[79]{kastner16phd}.
+My theory of morphosemantics assumes the so-called Arad/Marantz hypothesis, according to which the first categorizing head selects the alloseme of the root (Chapter~\ref{vz:inch}). If~(\lastx) is the right structure for inchoatives, it is predicted that for roots which participate in the alternation, the causative might have a meaning that the inchoative does not share. This is because in causatives {\vd} is local enough to the root to select a special meaning, whereas in inchoatives little a or little n will have already chosen an alloseme. This prediction is borne out by idioms involving \emph{helbin} `whitened' with the metaphorical meaning `laundered', as in~(\nextx), and \emph{heʃxir} `blackened' with the metaphorical meaning `tarnished', as in~(\anextx).
 \pex
 	\a Causative, literal meaning:\\
 		\begingl
@@ -645,56 +607,48 @@ My theory of morphosemantics assumes the so-called Arad/Marantz hypothesis, acco
 		\endgl
 \xe
 
-
-%\pex
-%	\a Causative, literal meaning:\\
-%		\begingl
-%			\gla ha-piax \underline{heʃxir} et ha-avir//
-%			\glb the-soot blackened \gsc{ACC} the-air//
-%			\glft `The air grew black with soot.'//
-%		\endgl
-%	
-%	\a Causative, non-transparent meaning:\\
-%		\begingl
-%			\gla son'e-j israel menas-im \underline{lehaʃxir} et pane-ha ʃel medina-t israel ba-zira ha-benleumit//
-%			\glb haters-\gsc{CS} Israel try.\gsc{PTCP}-\gsc{M.PL} to.blacken \gsc{ACC} faces-\gsc{3F} of state-\gsc{CS} Israel in.the-arena the-international//
-%			\glft `Israel's haters are trying to make the State of Israel look bad on the international stage.'\trailingcitation{\url{http://www.ynet.co.il/articles/0,7340,L-4781034,00.html}}//
-%		\endgl
-%	\a Inchoative, only literal meaning:\\
-%		\begingl
-%			\gla\ljudge{??}pane-ha ʃel ha-medina \underline{heʃxir-u} axarej ha-ʃaarurija ha-axrona//
-%			\glb faces-\gsc{3F} of the-state blackened-\gsc{3PL} after the-scandal the-last//
-%			\glft (int. `The country was made to look bad after the latest scandal')//
-%		\endgl
-%\xe
+\pex
+	\a Causative, literal meaning:\\
+		\begingl
+			\gla ha-piax \textbf{heʃxir} et ha-avir//
+			\glb the-soot blackened \gsc{ACC} the-air//
+			\glft `The air grew black with soot.'//
+		\endgl
+	
+	\a Causative, non-transparent meaning:\\
+		\begingl
+			\gla son'e-j israel menas-im \textbf{lehaʃxir} et pane-ha ʃel medina-t israel ba-zira ha-benleumit//
+			\glb haters-\gsc{CS} Israel try.\gsc{PTCP}-\gsc{M.PL} to.blacken \gsc{ACC} faces-\gsc{3F} of state-\gsc{CS} Israel in.the-arena the-international//
+			\glft `Israel's haters are trying to make the State of Israel look bad on the international stage.'\trailingcitation{\url{http://www.ynet.co.il/articles/0,7340,L-4781034,00.html}}//
+		\endgl
+	\a Inchoative, only literal meaning:\\
+		\begingl
+			\gla\ljudge{??}pane-ha ʃel ha-medina \textbf{heʃxir-u} axarej ha-ʃaarurija ha-axrona//
+			\glb faces-\gsc{3F} of the-state blackened-\gsc{3PL} after the-scandal the-last//
+			\glft (int. `The country was made to look bad after the latest scandal')//
+		\endgl
+\xe
 
 %	panav helbinu (*ba-rabim) != he was humiliated (in public).
 %		ha-malbin pnej xaver-o ba-rabim, keilu Safax dam-o
 
-%The small list of roots that derive only inchoatives in \thif~trigger a different alloseme as in~(\ref{ex:thif-sem}a). The elsewhere case is repeated from~(\lastx).\footnote{This situation is reminiscent of deponents in some European languages. In our case, active syntax allows for a few inchoative exceptions. With deponents, non-active syntax allows for a few active exceptions. See \cite{kastnerzu15li} for one overview of the issues.}
-%\pex\label{ex:thif-sem}
-%	\a \denote{\vd} = $\lambda$P.P / \trace~\{\root{pʃr} \gsc{THAW}, \root{ʃmn} \gsc{FAT}, \root{'dm} \gsc{RED}, \root{lbn} \gsc{WHITE}, \dots \}
-%	\a \denote{\vd} = $\lambda$P$\lambda$x.P \& Cause(x,P)
-%\xe
+\cite{borer91} provides additional arguments for deriving the inchoative from the adjective, which I scrutinize in Section~\ref{vd:others:borer}.
 
-\cite{borer91} provides additional arguments for deriving the inchoative from the adjective, though these have been subjected to some scrutiny in \citet[83]{kastner16phd}.
-
-The full semantics for \vd~looks as in~(\nextx), without introducing a causer for inchoative events in~(\nextx a--b):
-\pex\label{ex:thif-sem}
-	\a \denote{\vd} = $\lambda$e.e / \trace~(v) a \phantom{xxxxx} (v does not select an alloseme)
-	\a \denote{\vd} = $\lambda$e.e / \trace~(v) n \phantom{xxxxx} (v does not select an alloseme)
+The full semantics for {\vd} now looks as in~(\nextx), without introducing a causer for inchoative events in~(\nextx a--b), in an update to~(\ref{ex:vd:sem}).
+\pex\label{ex:vd:sem-full}
+	\a \denote{\vd} = $\lambda$e.e / \trace~(v) a \hfill (v does not select an alloseme)
+	\a \denote{\vd} = $\lambda$e.e / \trace~(v) n \hfill (v does not select an alloseme)
 	\a \denote{\vd} = $\lambda$x$\lambda$e.Cause(x,e) \hfill (or Agent)
 \xe
 
 
 		\subsubsection{Derivation}
-The derivation proceeds straightforwardly for most cases, except that we must allow for unaccusative inchoatives. Our definition of {\vd}, however, states that its EPP feature requires its specifier to be filled; this definition is not compatible with an unaccusative argument remaining low as in VS order.
+The derivation proceeds straightforwardly for most cases, except that we must allow for unaccusative inchoatives. Our definition of {\vd}, however, states that its specifier must be filled. This definition is not compatible with an unaccusative argument remaining, which is a configuration we must allow under the assumption that VS order exemplifies surface unaccusartives, (\ref{ex:vd:vs}).
 
-To account for these cases, assume instead that the [D] feature on {\vd} requires valuation of phi-features \citep{nie17,schaefer17oup}. This valuation proceeds straightforwardly under Spec-Head Agreement but something else needs to be said if the sole argument in the phase is the internal argument. In this case, I propose that the feature [D] can be checked by the internal argument \emph{in situ}: {\vd} probes into its specifier upwards, finds no target, and so it probes downwards and is valued by the internal argument. For more in-depth discussion of the direction of Agree, see works such as \cite{bejarrezac09}, \cite{zeijlstra12}, \cite{preminger13tlr} and \cite{deal15nels}.
+To account for these cases, assume instead that the [D] feature on {\vd} requires valuation of phi-features \citep{nie17,schaefer17oup}. This valuation proceeds straightforwardly under Spec-Head Agreement but something else needs to be said if the sole argument in the phase is the internal argument. In this case, I propose that [D] can be checked by the internal argument \emph{in situ}: {\vd} probes into its specifier upwards, finds no target, and so it probes downwards and is valued by the internal argument. For more in-depth discussion of the direction of Agree, see works such as \cite{bejarrezac09}, \cite{zeijlstra12}, \cite{preminger13tlr} and \cite{deal15nels}. In Chapter~\ref{chap:i} I turn to a recent proposal about {\vd} which paves the way for a different analysis of inchoatives in {\thif}.
 
-Here is what this means for an inchoative example like~(\ref{ex:thif-inch}) with the structure in~(\ref{tree:thif-inch}). {\vd} has nothing in its specifier, so it probes downward and checks its unvalued phi-features with the internal argument \emph{ha-xatul} `the cat'. The derivation converges in the syntax. The interpretation is as in~(\ref{ex:thif-sem}a): no Cause is introduced.
-
-\ex\label{ex:thif-inch} \begingl
+Here is what the current proposal means for an inchoative example like~(\ref{ex:vd:thif-inch}) with the structure in~(\ref{tree:vd:thif-inch}). {\vd} probes its specifier and finds nothing, (\ref{tree:vd:thif-inch}-\ding{172}), so it probes downward and checks its unvalued phi-features with the internal argument \emph{ha-xatul} `the cat' (\ref{tree:vd:thif-inch}-\ding{173}). The derivation converges in the syntax. The interpretation is as in~(\ref{ex:vd:sem-full}a): no Cause is introduced.
+\ex\label{ex:vd:thif-inch} \begingl
 	\gla ha-xatul \textbf{heʃmin}//
 	\glb the-cat fattened//
 	\glft `The cat grew fat.'//
@@ -703,7 +657,7 @@ Here is what this means for an inchoative example like~(\ref{ex:thif-inch}) with
 %\begin{wrapfigure}[8]{r}{0.6\textwidth}
 %	\vspace{-6em}
 	
-	\ex\label{tree:thif-inch}
+	\ex\label{tree:vd:thif-inch}
 		\scalebox{0.9}{
 	    \Tree
 	    [.VoiceP
@@ -729,7 +683,7 @@ Here is what this means for an inchoative example like~(\ref{ex:thif-inch}) with
 	    }
 	\xe
 %\end{wrapfigure}
-
+\bigskip
 
 As a consequence, ungrammatical cases like~(\nextx) must now be ruled out.
 \pex\label{ex:counterex}
@@ -755,34 +709,47 @@ As a consequence, ungrammatical cases like~(\nextx) must now be ruled out.
 	\endgl
 \xe
 
-For~(\lastx a) there is no adjective `inserted' that could be verbalized and no inchoative can be generated. In~(\lastx b) an adjective \emph{mahir} `quick' does exist, but it cannot be instantiated in {\thif} in general due to some arbitrary gap, as already mentioned in Section~\ref{sec:roots} (or at least, I assume that this is an arbitrary gap, in lieu of a more principled explanation).
+For~(\lastx a) there is no adjective `inserted' that could be verbalized and no inchoative can be generated. In~(\lastx b) an adjective \emph{mahir} `quick' does exist, but it cannot be instantiated in {\thif} in general due to some arbitrary gap, as already mentioned in Section~\ref{vd:inch:roots} (or at least, I assume that this is an arbitrary gap, in lieu of a more principled explanation).
 
 Finally, (\ref{ex:counterex}c) is not a possible inchoative even though there exists an underlying adjective, namely \emph{kafu} `frozen'. There are a number of possible explanations which can be pursued. One is that \emph{freeze} is not a degree achievement in Hebrew, and so that adjective is not a possible input to the structure. Another kind of explanation falls along the lines of extra-grammatical paradigmatic pressure, in that an inchoative (non-alternating) freezing verb already exists in another template: \emph{kafa} `froze' in {\tkal}. In this regard, I should note that speakers do steer clear of {\thif} for certain inchoatives, instantiating them in other, more canonically non-active templates: \emph{hitarex} `grew long' in {\thit} rather than \emph{heerix}, \emph{hizdaken} `grew old' in {\thit} rather than \emph{hezkin}, \emph{raza} `thinned' in {\tkal} instead of \emph{herza}, and \emph{hitadem} `reddened' in {\thit} rather than \emph{heedim} (but see \citealt[22]{doron03} for a grammatical difference between the two).
 
-With the formal analysis in place, we can now turn to the final point of the discussion: why is the labile alternation formed in {\thif} specifically?
+With the formal analysis in place, we can now turn to the final point of the discussion: why is the labile alternation formed with {\vd} specifically?
 
 
-	\subsection{Summary: The labile alternation}
-The main characteristic of {\vd} is that it guarantees the availability of an external argument; in other words, a transitive construction is possible if the even has change-of-state semantics, i.e.~an internal argument. Let us assume that the process of inchoative formation in {\thif} is productive, as argued for by \cite{lev16}, and not a short list of exceptions, as assumed in most of the literature. Then, when the speaker is faced with the choice of a construction for their de-adjectival or denominal verb, they would choose {\vd} because this structure guarantees that a causer can be added.
+	\subsection{Discussion: The labile alternation}
+The main characteristic of {\vd} is that it guarantees the availability of an external argument; in other words, a transitive construction is possible if the even has change-of-state semantics, i.e.~an internal argument. I have not yet found, or at least not yet noticed, any alternations in which the causative is preferred and the inchoative is a recent innovation; or inchoatives in {\thif} which have no causative counterpart. I take these findings to be emblematic of the causative meaning inherent in {\vd}: even if inchoative verbs have arisen, contemporary usage overwhelmingly tends to coin causatives in this template rather than another kind of verb \citep{laks14}.
 
-One consequence of this analysis is that it allows us to state in formal terms the difference in argument distribution between causatives and inchoatives. As seen in~(\ref{ex:thif-active}) and~(\ref{table:kal-thif}) above, active verbs in {\thif} might be unergative, transitive or ditransitive. These possibilities are wiped out for inchoatives, which are uniformly intransitive. Let us assume that whatever requirements a verb has for its complements emerge upon combination of v and the root. I speculate that once the structure contains a more deeply embedded a/n node as in~(\ref{tree:thif-inch}), v is too far away from the root for particular selectional requirements to be stated. This idea receives potential corroboration from the behavior of -\emph{en} in English. As noted by \cite{harley09n}, English verbalizers such as -\emph{ify}, \emph{-ize} and \emph{-ate} can derive verbs that are uniformly unaccusative (e.g.~\emph{oscillate}), uniformly unergative (e.g.~\emph{detoriorate}) or labile (e.g.~\emph{activate}), but -\emph{en} verbs are always labile. An examination of the list in \citet[245]{levin93} confirms this claim. If we assume that these latter verbs contain additional structure, for instance [v [CMPR [a \root{Root}~\!]]] \citep{bobaljik12}, we arrive at a similar analysis to that of {\thif} inchoatives: they cannot impose selectional restrictions and are ``stuck'' with the argument structure imposed by the syntax. But I will not push this point further due to space limitations.
+Let us continue to assume that the process of inchoative formation in {\thif} is productive, as argued for by \cite{lev16}, and is not merely a list of exceptions, as implicitly assumed in most of the literature (with the exception of \citealt{doron03}, to be discussed in Section~\ref{vd:others:ed}). Then, when the speaker is faced with the choice of a construction for their de-adjectival or denominal verb, they would choose {\vd} because this structure guarantees that an external causer can be added.
 
-Finally, the strong claim about separate derivational strategies for causatives and inchoatives awaits a more articulated semantic analysis. As a reviewer points out, in~(\ref{ex:thif-hefSir}) the verb \emph{hefʃir} means `thawed', i.e.~became warmer, while the underlying adjective \emph{poʃer} means `lukewarm', i.e.~not warm. Another incongruity between verb and adjective can be seen with \emph{heʃmin}, `grew fatter', which does not entail that its argument becomes \emph{ʃamen} `fat'. Important discussion of the relevant scales and entailments is given by~\cite{borer91}.
+One consequence of this analysis is that it allows us to state in formal terms the difference in argument distribution between causatives and inchoatives. As seen in Sections~\ref{vd:vd}--\ref{vd:caus}, active verbs in {\thif} might be unergative, transitive or ditransitive. These possibilities are wiped out for inchoatives, which are uniformly intransitive. Let us assume that whatever requirements a verb has for its complements emerge upon combination of v and the root. I propose that once the structure contains a more deeply embedded a/n node as in~(\ref{tree:vd:thif-inch}), v is too far away from the root for particular selectional requirements to be stated.
 
+This idea receives potential corroboration from the behavior of -\emph{en} in English.\footnote{Thanks to Jim Wood for pointing out this phenomenon.} As noted by \cite{harley09n}, English verbalizers such as -\emph{ify}, \emph{-ize} and \emph{-ate} can derive verbs that are uniformly unaccusative (e.g.~\emph{oscillate}), uniformly unergative (e.g.~\emph{detoriorate}) or labile (e.g.~\emph{activate}), but -\emph{en} verbs are always labile. An examination of the list in \citet[245]{levin93} confirms this claim. If we assume that these latter verbs contain additional structure, for instance [v [CMPR [a \root{Root}~\!]]] \citep{bobaljik12}, we arrive at a similar analysis to that of {\thif} inchoatives: they cannot impose selectional restrictions and are ``stuck'' with the argument structure imposed by the syntax. I will not develop this idea any further at this point.
 
-Discussion of alternative analyses is likewise not possible in the current paper. Three possibilities are existential closure over a Cause in Spec,{\vd} \citep{doron03}, treating {\thif} like a standard verbalizing affix on a par with -\emph{en} \citep{borer91}; and a solution in terms of contextual allomorphy of {\vz}, the non-active counterpart of {\vd}. These are all discussed in \citet[81]{kastner16phd}.
+Finally, the strong claim about separate derivational strategies for causatives and inchoatives awaits a more articulated semantic analysis. As a reviewer for \cite{kastner18tlr} pointed out, in~(\ref{ex:vd:thif-hefSir}) the verb \emph{hefʃir} means `thawed', i.e.~became warmer, while the underlying adjective \emph{poʃer} means `lukewarm', i.e.~not warm. Yet the inchoative does not mean ``became lukewarm''. Another incongruity between verb and adjective can be seen with \emph{heʃmin}, `grew fatter', which does not entail that its argument becomes \emph{ʃamen} `fat'. Important discussion of the relevant scales and entailments is given by~\cite{borer91} which I turn to in the discussion of alternatives, the subject of the next section.
 
+\section{Alternative accounts} \label{vd:others}
+I focus below on a number of competing analyses aiming to explain the behavior of verbs in {\thif}, mostly focusing on the inchoative alternation. Apart from these, \cite{lev16} sketched a theory in which labile verbs are less agentive than others, a claim that could explain why \emph{heet} `slowed down' is possible as opposed to *\emph{hemhir} (from `quick'). However, that idea cannot be extended to explain the existence of minimally different \emph{hei{\texttslig}} `accelerated'. 
 
-\section{Alternative approaches} \label{vd:others}
-
-	\subsection{Alternative: Added structure}
+In addition, a possible objection to the treatment of marked causatives in cases of low semantic similarity between the two causative forms was already shot down at the end of Section~\ref{vd:caus:marked} based on the lack of doublets.
 	
-	\subsection{Existential closure}
-One alternative analysis would posit a silent, generic Cause in Spec,\vd. The analysis in \citet[61]{doron03}---which in many ways is a precursor to the theory presented in this work---assumes that a Causative head $\gamma$ gives rise to \thif. The problem for the system in \cite{doron03} is that if these verbs are derived using a Causative head rather than a Middle head, we have no explanation for their unaccusativity.
+	\subsection{Added structure} \label{vd:others:struct}
+Generally speaking, it could be argued that {\vd} does not exist. On this view, verbs in {\thif} are not derived using {\vd} but by additional structure atop of Voice.
 
-As a result, \citeauthor{doron03} must conclude that ``\emph{x reddened} is equivalent to \emph{Something caused x to redden}'' \citep[62]{doron03}, with the Causative head $\gamma$ introducing a Causer that is existentially quantified over. This kind of account is more in line with a passive analysis than a causative one.
+Let me briefly outline what such an analysis would look like. This structure would presumably consist of some higher causative head, perhaps another layer of Voice. For variants of the idea that an analytic causative can be deriving using Voice-over-Voice, see \citep{tubinoblanco11},\cite{harley13lingua,harley17oup} and \cite{nie17}. While this idea holds theoretical promise, there are two reasons I do not think it can account for the Hebrew data, having to do with incorrect predictions in the phonology and in the syntax-semantics.
 
-Assume for the sake of the argument that a silent element fills Spec,\vd~in inchoatives. One would need to specify the exact featural makeup of this element, for example a null subject \emph{pro}. The result would be a transitive structure where \emph{pro} should be assigned Nominative case and the IA should be assigned Accusative case. Definite accusative objects in Hebrew take the direct object marker \emph{et}, so we would predict that \emph{et} appears before inchoatives in \thif. But this is incorrect: the generic Cause cannot be a silent pronoun in a transitive relationship with the internal argument.
+First, {\vd} seems as integrated into the morphophonological system as the other heads, namely Voice and {\vz}. In particular, the analysis in \cite{kastner18nllt} shows that the spell-out of {\vd} is subject to the same locality constraints as that of Voice and {\vz}. Splitting {\vd} into two layers of Voice will disrupt these locality relations, thereby making the wrong predictions in the phonological component.
+
+Second, this approach would treat {\thif} as a straightforward ``make''-causative. This much is clearly wrong for the unergative and unaccusative verbs in this template. In addition, this analysis misses the fact that many causatives in this template are ``lexical'', as discussed in Section~\ref{vd:caus:marked}, meaning that this head will need to be much closer to the root/v. Finally, assuming that another Voice head can be added makes the false prediction that a transitive in {\tkal} and a causative in {\thif} will have the same internal argument. This is once again incorrect, as we saw in Section~\ref{vd:caus:marked}.
+
+Finally, in Chapter~\ref{passn:pass} I discuss how passives are derived by use of an additional head Pass. As explained there, Pass can only attach to {\vd} or to Voice+{\va}, but not to Voice on its own. If we were to assume that {\vd} is actually Voice+Voice, we would need to make an additional stipulation regarding constructions that can be passivized. This last problem is not insurmountable but it would complicate the theory.
+
+	
+	\subsection{Existential closure} \label{vd:others:ed}
+A different kind of alternative analysis concerns itself mostly with the inchoatives of Section~\ref{vd:inch}. This analysis might posit a silent, generic Cause in Spec,{\vd}. The analysis in \citet[61]{doron03}---which in many ways is a precursor to the theory presented in this work---assumes that a Causative head $\gamma$ gives rise to {\thif}. The problem for the system in \cite{doron03} is that if these verbs are derived using a Causative head rather than a Middle head, we have no explanation for their unaccusativity.
+
+As a result, \citet[62]{doron03} must conclude that ``\emph{x reddened} is equivalent to \emph{Something caused x to redden}'', with the Causative head $\gamma$ introducing a Causer that is existentially quantified over. This kind of account is more in line with a passive analysis than a causative one.
+
+Assume for the sake of the argument that a silent element fills Spec,{\vd} in inchoatives. One would need to specify the exact featural makeup of this element, for example a null subject \emph{pro}. The result would be a transitive structure where \emph{pro} should be assigned Nominative case and the IA should be assigned Accusative case. Definite accusative objects in Hebrew take the direct object marker \emph{et}, so we would predict that \emph{et} appears before inchoatives in \thif. But this is incorrect: the generic Cause cannot be a silent pronoun in a transitive relationship with the internal argument.
 \pex
 	\a \ljudge{*} \begingl
 		\gla heʃmin \textbf{et} ha-xatul//
@@ -796,52 +763,51 @@ Assume for the sake of the argument that a silent element fills Spec,\vd~in inch
 	\endgl
 \xe
 
-Another tack would be to say that instead of \emph{pro}, the silent external argument is a Weak Implicit Argument in the sense of \cite{landau10}: a bundle of ɸ-features with no [D] feature, distinguishing it from a Strong Implicit Argument such as \emph{pro}. If there is no [D] feature on the weak EA, it does not participate in the calculus of case and the IA will receive unmarked case, i.e.~Nominative.
-
-But note that this analysis ends up being very similar to ours: the EA is not taking part in any relevant syntactic process, and whatever requirements \vd~has still need to be satisfied. Furthermore, the exact characterization of Weak Implicit Arguments is not fully fleshed out; \citet[380]{landau10} concludes that they may not be direct objects, only oblique objects, and that they may not be subjects of predication, but his system makes no claims as to whether they can function as the generic kind of EA we would need here. In the absence of a convincing account for implied causers, I reject this analysis.
-
+Another tack would be to say that instead of \emph{pro}, the silent external argument is a Weak Implicit Argument in the sense of \cite{landau10}: a bundle of ɸ-features with no [D] feature, distinguishing it from a Strong Implicit Argument such as \emph{pro}. If there is no [D] feature on the weak EA, it does not participate in the calculus of case and the IA will receive unmarked case, i.e.~Nominative. This analysis ends up being very similar to the one in this chapter: the external argument is not taking part in any relevant syntactic process, and whatever requirements {\vd} has still need to be satisfied. Furthermore, the exact characterization of Weak Implicit Arguments is not fully fleshed out; \citet[380]{landau10} concludes that they may not be direct objects, only oblique objects, and that they may not be subjects of predication, but his system makes no claims as to whether they can function as the generic kind of external argument we would need here. In the absence of a convincing account for implied causers, I reject this analysis.
 
 	\subsection{Alternative: Contextual allomorphy}
-Another possible analysis is strictly morphological in nature. Under this account, unaccusative inchoatives are true unaccusatives derived with the \vz~morpheme of \S\ref{syn:middle:nonactive}, except that the allomorphic rule in~(\ref{ex:hifil-unacc}) causes \vz~to be pronounced like \gsc{CAUS} (which is a placeholder for of the morphology of \thif) rather than \gsc{MID} (which is a placeholder for the morphology of \tnif~and \thit).
+Another possible analysis of inchoatives is strictly morphological in nature. Under this account, unaccusative inchoatives are true unaccusatives derived with {\vz}, except that the allomorphic rule in~(\ref{ex:vd:allo-unacc}) causes {\vz} to be pronounced like {\thit} rather than like {\tnif}.
 \pex
-  \a \vz~\lra~\gsc{CAUS} / \trace~\{\root{lbn}, \root{'dm}, \root{xl\dgs{k}}, \root{xvr}, \root{ʃmn}, \dots \}\label{ex:hifil-unacc}
+  \a \vz~\lra~\gsc{CAUS} / \trace~\{\root{lbn}, \root{'dm}, \root{xl\dgs{k}}, \root{xvr}, \root{ʃmn}, \dots \}\label{ex:vd:allo-unacc}
   \a \vz~\lra~\gsc{MID}
 \xe
-Since the number of unaccusative verbs in \thif~is fairly small, or at the very least non-productive, it is plausible that an arbitrary list of roots conditioning this allomorphy can be learned. Still, the mystery remains why it is specifically \thif~that houses inchoatives: why doesn't the rule in~(\lastx a) insert the form of any other template, such as \tkal, \tnif~or \tpie? This solution is technically possible but conceptually unenlightening.
 
-%The rule in~(\ref{ex:hifil-unacc}) is stated in order to account for a number of exceptions which presumably must be learned. Yet it also makes a prediction: that the roots to which this rule applies cannot surface in the ``middle'' template \tnif, only in ``causative'' \thif. The reason is that the ``middle'' template is generated using \vz, but \vz~is pronounced \gsc{CAUS} for these roots. This prediction seems to be correct:
-%\ex\label{ex:hifil-nonif}
-%\begin{tabular}[t]{lllp{8.5em}llll}
-%	a. & \emph{helbin} & $\sim$ & *\emph{nilban} & c. & \emph{hexlik} & $\sim$ & \emph{*nixlax}\\
-%	b. & \emph{he'edim} & $\sim$ & *\emph{ni'dam} & d. & \emph{heʃmin} & $\sim$ & \emph{*niʃman}\\
-%\end{tabular}
-%\xe
+One question which arises is whether we would like to postulate this rule for a list of over 30 roots. Furthermore, the mystery would remain of why it is specifically {\thif} that houses inchoatives: why doesn't the rule in~(\lastx a) insert the form of any other template, such as {\tkal}, {\tnif} or {\tpie}? This solution is technically possible but conceptually unenlightening.
 
-	\subsection{Alternative: Verbalizing affix} \label{syn:templates:thif:borer}
-\cite{borer91} presents an analysis of \thif~alternations couched in Parallel Morphology, which I will {}translate into {comparable} terms{ in the current theory}. Her account consists of two main parts. In the first, she argues that inchoative forms are derived from adjectives while causative forms are derived from a root/verb. In the second, she presents an analysis showing why it must be the case---given certain assumptions---that causatives are formed in the lexicon and inchoatives in the syntax. Our analysis is similar to hers in adopting separate structures for causatives and inchoatives, albeit using different argumentation. The content of the analysis is different, though, since for \cite{borer91} \thif~is a single verbalizing morpheme which subcategorizes for an adjectival element.
+That being said, it does correctly predict that the roots to which this rule applies cannot surface in {\tnif}, only in {\thit}. The reason is that forms in {\tnif} are generated using {\vz}, but {\vz} is pronounced as {\thif}.
+\ex\label{ex:vd:allo-pred}
+\begin{tabular}{lllll}
+	a. & \emph{helbin} & $\sim$ & *\emph{nilban} & `whitened' \\
+	b. & \emph{heedim} & $\sim$ & *\emph{nidam} & `reddened'\\
+	c. & \emph{heʃmin} & $\sim$ & \emph{*niʃman} & `fattened'\\
+\end{tabular}
+\xe
 
-In her analysis, \citet[136]{borer91} takes Hebrew \thif~and English -\emph{en} to be verbalizers subcategorizing for an adjectival stem, be it a property root or an adjective. %Both the adjective and the verbalizer are able to---but need not---assign an external theta-role \citep[142]{borer91}.
+	\subsection{Alternative: Verbalizing affix} \label{vd:others:borer}
+\cite{borer91} presents an analysis of {\thif} alternations couched in Parallel Morphology, which I will translate into comparable terms in the current theory. Her account consists of two main parts. In the first, she argues that inchoative forms are derived from adjectives while causative forms are derived from a root/verb. In the second, she presents an analysis showing why it must be the case---given certain assumptions---that causatives are formed in the lexicon and inchoatives in the syntax. The current analysis is similar to hers in adopting separate structures for causatives and inchoatives, albeit using different argumentation. The content of the analysis is different, though, since for \cite{borer91} {\thif} is a single verbalizing morpheme which subcategorizes for an adjective.
+
+In her analysis, \citet[136]{borer91} takes Hebrew {\thif} and English -\emph{en} to be verbalizers subcategorizing for an adjectival stem, be it a property root or an adjective. %Both the adjective and the verbalizer are able to---but need not---assign an external theta-role \citep[142]{borer91}.
 When this is done in the ``lexicon'' by verbalizing a root, the result is a causative verb:
-\ex\label{ex:thif-borer-caus}{[}_{\text{v}} \root{\gsc{wide}} -\emph{en}]
+\ex\label{ex:vd:thif-borer-caus}{[}_{\text{v}} \root{\gsc{wide}} -\emph{en}]
 \xe
 When this is done in the syntax by verbalizing an adjective, the result is an inchoative verb:
-\ex\label{ex:thif-borer-inch}{[}_{\text{v}} [_{\text{a}} \root{\gsc{wide}} a] -\emph{en}]
+\ex\label{ex:vd:thif-borer-inch}{[}_{\text{v}} [_{\text{a}} \root{\gsc{wide}} a] -\emph{en}]
 \xe
 
-Crucially for us, the analysis does not answer the questions posed at the beginning of the discussion: why this template and why these roots. \thif~is assumed to be a de-adjectival verbalizer, just like -\emph{en}, without discussion of this template's role in the overall morphosyntax of the language. While it is stipulated that \thif~as a verbalizer subcategorizes for an adjective, this is not always the case: as alluded to above, the run-of-the-mill causatives \emph{hexnis} `inserted', \emph{he'exil} `fed' and \emph{helbiʃ} `dressed' are not derived from underlying adjectives.
+Crucially for us, the analysis does not answer the questions posed at the beginning of the discussion: why this template and why these roots. \thif~is assumed to be a de-adjectival verbalizer, just like -\emph{en}, without discussion of this template's role in the overall morphosyntax of the language. While it is stipulated that \thif~as a verbalizer subcategorizes for an adjective, this is not always the case: as shown above, many inchoatives are derived from underlying nouns. More importantly, even run-of-the-mill causatives such as \emph{hexnis} `inserted', \emph{he'exil} `fed' and \emph{helbiʃ} `dressed' are not derived from underlying adjectives, as I show next.
 
-\textbf{\emph{hexnis}} `inserted' is derived from \root{kns}, but without a simple adjective *[_{a} \root{kns} a]. One could posit an abstract adjective that is never lexicalized, but it is unclear what this non-existent adjective would be like or what its phonological form would have been (*\emph{kanus}?).
+The causative \emph{hexnis} `inserted' is derived from \root{kns}, but without a simple adjective *[_{a} \root{kns} a]. One could posit an abstract adjective that is never lexicalized, but it is unclear what this non-existent adjective would be like or what its phonological form would have been (*\emph{kanus}?).
 \ex \begingl
-	\gla ha-nasix \underline{hexnis} et ha-sefer la-tik//
+	\gla ha-nasix \textbf{hexnis} et ha-sefer la-tik//
 	\glb the-prince inserted.\gsc{CAUS} \gsc{ACC} the-book to.the-bag//
 	\glft `The prince put the book in the bag.'//
 	\endgl
 \xe
 
-\textbf{\emph{he'exil}} `fed' is derived from \root{'kl}, but probably not from \emph{axul} `consumed', a rare adjectival passive of \emph{axal} `ate'.
+The causative \emph{heexil} `fed' is derived from \root{'kl}, but probably not from \emph{axul} `consumed', a rare adjectival passive of \emph{axal} `ate'.
 \pex
 	\a \begingl
-		\gla ha-nasix \underline{he'exil} et ha-kivsa//
+		\gla ha-nasix \textbf{he'exil} et ha-kivsa//
 		\glb the-prince fed.\gsc{CAUS} \gsc{ACC} the-sheep//
 		\glft `The prince fed the sheep'//
 		\endgl
@@ -853,10 +819,10 @@ Crucially for us, the analysis does not answer the questions posed at the beginn
 		\endgl
 \xe
 
-\textbf{\emph{helbiʃ}} `dressed' is derived from \root{lbʃ}, but probably not from \emph{lavuʃ} `dressed up', the adjectival passive of \emph{lavaʃ} `wore', which seems to be reserved for descriptions of a full costume.
+And the causative \emph{helbiʃ} `dressed' is derived from \root{lbʃ}, but probably not from \emph{lavuʃ} `dressed up', the adjectival passive of \emph{lavaʃ} `wore', which seems to be reserved for descriptions of a full costume.
 \pex
 	\a \begingl
-		\gla ha-ima \underline{helbiʃ-a} et ha-jeled (be-)xalifa jafa//
+		\gla ha-ima \textbf{helbiʃ-a} et ha-jeled (be-)xalifa jafa//
 		\glb the-mom dressed.\gsc{CAUS}-\gsc{F.SG} \gsc{ACC} the-boy in-suit pretty//
 		\glft `The mother put the boy's pretty suit on (him).//
 		\endgl
@@ -864,7 +830,7 @@ Crucially for us, the analysis does not answer the questions posed at the beginn
 	\a ``On making his discovery, the astronomer had presented it to the International Astronomical Congress, in a great demonstration, \dots\\
 	\begingl
 %		\gla le'axar ʃe-gila et taglit-o, hetsig ota ha-astronom ha-turki bifne-j ha-kongres ha-astronomi ha-benleumi, be-tetsuga marʃima,
-		\gla aval iʃ lo he'ezin le-dvara-v, miʃum ʃe-haja \underline{lavuʃ} be-tilobʃet turkit. ka'ele hem ha-mevugarim//
+		\gla aval iʃ lo he'ezin le-dvara-v, miʃum ʃe-haja \textbf{lavuʃ} be-tilobʃet turkit. ka'ele hem ha-mevugarim//
 %		\glb after \gsc{COMP}-discovered \gsc{ACC} discovery-his presented it the-astronomer the-Turkish in.front.of the-congress the-astronominal the-international in-display impressive
 		\glb but nobody \gsc{NEG} listened to-words-his, since \gsc{COMP}-was dressed.up in-outfit Turkish such \gsc{3PL} the-grown.ups//
 		\glft But he was in Turkish costume, and so nobody would believe what he said. Grown-ups are like that.''\hfill {(Antoine de Saint-Exup\'ery, \emph{The Little Prince}, Chapter 4. Hebrew by Jude Shva\footnotemark)}//
@@ -872,10 +838,11 @@ Crucially for us, the analysis does not answer the questions posed at the beginn
 \footnotetext{\url{http://www.oocities.org/sant\_exupery/c4.htm}}
 \xe
 
-\cite{borer91} did not claim that the sole function of \thif~is to verbalize adjectives. But even if this is one of its functions, we have seen that not all verbs in \thif~show the alternation. As her system stands, it is not clear how it could allow for a certain root to be instantiated only in a ``syntactic'' (inchoative) derivation but not in a ``lexical'' (causative) one. Similarly, and as shown above, not all inchoatives in this template are de-adjectival: \emph{heki} `threw up' comes from the noun \emph{ki} `vomit', \emph{hekrim} `clotted' from the noun \emph{krem} `cream', and \emph{hetsxin} `smelled pungent' from the noun \emph{tsaxana} `pungent smell'.
+To be clear, \cite{borer91} did not claim that the sole function of {\thif} is to verbalize adjectives. But even if this is only one of its functions, we have seen that not all verbs in {\thif} show the alternation. As her system stands, it is not clear how it could allow for a certain root to be instantiated only in a ``syntactic'' (inchoative) derivation but not in a ``lexical'' (causative) one.
+%Similarly, and as shown above, not all inchoatives in this template are de-adjectival: \emph{heki} `threw up' comes from the noun \emph{ki} `vomit', \emph{hekrim} `clotted' from the noun \emph{krem} `cream', and \emph{hetsxin} `smelled pungent' from the noun \emph{tsaxana} `pungent smell'.
 %Another question is whether -\emph{en} and \thif~are productive enough as de-adjectival verbal forms to merit a derivational rule as in the Parallel Morphology system, rather than what is in effect a list of exceptional forms as in mine.
 
-The analysis in \cite{borer91} does not aim to find an underlying reason for why \thif~is used for both causatives and inchoatives, as well as for general causativization in the rest of the system. Nevertheless, it remains the only in-depth study of this alternation that I know of. Recall, for the last part of this discussion, that this analysis also postulates a structural difference between \thif~causatives, (\ref{ex:thif-borer-caus}), and inchoatives, (\ref{ex:thif-borer-inch}). I review this distinction next.
+The analysis in \cite{borer91} did not attempt to find an underlying reason for why {\thif} is used for both causatives and inchoatives, as well as for general causativization in the rest of the system. Nevertheless, it remains the only in-depth study of this alternation that I know of. Recall, for the last part of this discussion, that this analysis also postulates a structural difference between {\thif} causatives, (\ref{ex:vd:thif-borer-caus}), and inchoatives, (\ref{ex:vd:thif-borer-inch}). I review this distinction next.
 
 The logic works as follows: if an adjective passes certain diagnostics, and the inchoative does but the causative does not, then the adjective must be embedded in the inchoative \citep[130]{borer91}. Starting with an English example, the adjective \emph{wide} is said to license comparisons with \emph{as}/\emph{like} and comparative forms, whereas the inchoative \emph{widen} does not. \citeauthor{borer91}'s claim is that comparison adverbials and the comparative must be licensed by an adjective (judgments hers).
 \pex
@@ -896,13 +863,13 @@ Taking the adjective \emph{ʃmen-a} `fat-\gsc{F.SG}', it is claimed to license c
   \endgl
   
   \a Inchoative:\\ \begingl
-    \gla \textbf{ha-xatula} \underline{heʃmina} \emph{\{}kmo xazir / joter mi-xazir\emph{\}}//
+    \gla \underline{ha-xatula} \textbf{heʃmina} \emph{\{}kmo xazir / joter mi-xazir\emph{\}}//
     \glb the-cat fattened like pig {} more than-pig//
     \glft `The cat grew as fast as a pig / fatter than a pig.'//
   \endgl
 
   \a Causative:\\ \begingl
-    \gla \ljudge{*}\textbf{ha-zrika} \underline{heʃmina} et ha-xatula \emph{\{}*kmo xazir / *joter me-xazir\emph{\}}//
+    \gla \ljudge{*}\underline{ha-zrika} \textbf{heʃmina} et ha-xatula \emph{\{}*kmo xazir / *joter me-xazir\emph{\}}//
     \glb the-injection fattened \gsc{OM} the-cat.\gsc{F} like pig {} more than-pig//
     \glft (int. `The injection made the cat fat as a pig / more than a pig is fat.')//
   \endgl
@@ -913,41 +880,41 @@ Similarly, some adverbs (\emph{haxi ʃe-efʃar} `as much as possible') must be l
 It seems to me that the success of this diagnostic depends to a large extent on the lexical items chosen. For example, using the antonym \emph{herza} `grew thin', my judgments are slightly different:
 \pex
   \a Adjective:\\ \begingl
-    \gla ha-xatula \underline{raza} \emph{\{}kmo makel / ?joter mi-makel\emph{\}}//
+    \gla ha-xatula \textbf{raza} \emph{\{}kmo makel / ?joter mi-makel\emph{\}}//
     \glb the-cat thin like stick {} more than-stick//
     \glft `The cat is as thin as a rail / skinnier than a rail.'//
   \endgl
   
   \a Inchoative:\\ \begingl
-    \gla\ljudge{?}\textbf{ha-xatula} \underline{herzeta} \emph{\{}kmo makel / ??joter mi-makel\emph{\}}//
+    \gla\ljudge{?}\underline{ha-xatula} \textbf{herzeta} \emph{\{}kmo makel / ??joter mi-makel\emph{\}}//
     \glb the-cat thinned like stick {} more than-stick//
     \glft (int. `The cat became as thin as a rail / skinnier than a rail.')//
   \endgl
 
   \a Causative:\\ \begingl
-    \gla \ljudge{??}\textbf{ha-zrika} \underline{herzeta} et ha-xatula \emph{\{}kmo makel / joter me-makel\emph{\}}//
+    \gla \ljudge{??}\underline{ha-zrika} \textbf{herzeta} et ha-xatula \emph{\{}kmo makel / joter me-makel\emph{\}}//
     \glb the-injection thinned \gsc{OM} the-cat like stick {} more than-stick//
     \glft (int. `The injection made the cat as thin as a rail / skinnier than a rail.')//
   \endgl
 \xe
 
-With \emph{he'et} `slowed down' I judge inchoatives unacceptable and causatives slightly better though still degraded. These judgments are meant to highlight the variance, not to be taken as categorical for all alternations or all speakers.
+With \emph{heet} `slowed down' I judge inchoatives unacceptable and causatives slightly better though still degraded. These judgments are meant to highlight the variance, not to be taken as categorical for all alternations or all speakers.
 \pex
 	\a Adjective:\\ \begingl
-		\gla ha-mexonit ha-zo \textbf{itit} \emph{\{}kmo tsav / joter mi-tsav\emph{\}}//
+		\gla ha-mexonit ha-zo \textbf{itit} \emph{\{}kmo {\texttslig}av / joter mi-{\texttslig}av\emph{\}}//
 		\glb the-car the-this slow like turtle {} more than-turtle//
 		\glft `This car is as slow as a turtle / slower than a turtle.'//
 	\endgl
 
 	\a Inchoative:\\ \begingl
-		\gla\ljudge{*}ha-mexonit ha-zo \underline{he'eta} \emph{\{}kmo tsav / joter mi-tsav\emph{\}}//
+		\gla\ljudge{*}ha-mexonit ha-zo \textbf{heeta} \emph{\{}kmo {\texttslig}av / joter mi-{\texttslig}av\emph{\}}//
 		\glb the-car the-this slowed like turtle {} more than-turtle//
 		\glft (int. `This car slowed down to turtle speed / to sub-turtle speed.')\\
 			(More acceptable on a reading of `The car slowed down like a turtle slowed down'.)//
 	\endgl
 
 	\a Causative:\\ \begingl
-		\gla\ljudge{??}\textbf{ha-ba'aja} \textbf{ba-hiluxim} \underline{he'eta} et ha-mexonit \emph{\{}kmo tsav / joter mi-tsav\emph{\}}//
+		\gla\ljudge{??}\underline{ha-baaja} \underline{ba-hiluxim} \textbf{heeta} et ha-mexonit \emph{\{}kmo {\texttslig}av / joter mi-{\texttslig}av\emph{\}}//
 		\glb the-problem in.the-gears slowed \gsc{ACC} the-car like turtle {} more than-turtle//
 		\glft (int. `The problem with the gear box slowed the car down to turtle speed / to sub-turtle speed.')//
 	\endgl
@@ -956,26 +923,20 @@ With \emph{he'et} `slowed down' I judge inchoatives unacceptable and causatives 
 It is also left vague what precisely this diagnostic is probing. In~(\nextx), for instance, there is no underlying adjective `beloved' but the utterance is completely acceptable:\footnote{Thanks to Idan Landau for pointing this out to me.}
 \ex
 	\begingl
-	\gla ani \underline{ohev} otxa \textbf{kmo} \textbf{ax}//
+	\gla ani \textbf{ohev} otxa \underline{kmo} \underline{ax}//
 	\glb I love.\gsc{SMPL}.\gsc{PTCP} you.\gsc{M} like brother//
 	\glft `I love you like a brother.'//
 	\endgl
 \xe
 
-The remainder of \citeauthor{borer91}'s article is devoted to working through the different possible structures that her framework generates and discussing whether they are licit or not. The final few pages \citep[150]{borer91} raise the issue of whether these verbs give comparative (change on a scale) or absolute (result) readings, concluding that both are in principle possible but are constrained by the root. That is to say, both English \emph{reddened} and Hebrew \emph{he'edim} `reddened' are as compatible with a `became redder' meaning as with a `became red' meaning, but some verbs like \emph{quicken} are only compatible with a `became quicker' meaning (see \citealt[ch.~5]{bobaljik12} for some relevant recent discussion).
+The remainder of the article is devoted to working through the different possible structures generated by the framework and discussing whether they are licit or not. The final few pages \citep[150]{borer91} raise the issue of whether these verbs give comparative (change on a scale) or absolute (result) readings, concluding that both are in principle possible but are constrained by the root. That is to say, both English \emph{reddened} and Hebrew \emph{heedim} `reddened' are as compatible with a `became redder' meaning as with a `became red' meaning, but some verbs like \emph{quicken} are only compatible with a `became quicker' meaning (see \citealt[ch.~5]{bobaljik12} and the literature on degree achievements referenced in Section~\ref{vd:inch:template} for relevant discussion).
 
-Since I am not sure that the argument from comparatives generalizes, and given that no explicit syntax or semantics for this modification was put forward, I do not endorse at this point the arguments for distinct structures put forward in \cite{borer91}. Nevertheless, I have recast the original intuition in contemporary terms and supported it using different arguments. In any case, the original proposal should serve as a stepping stone in the next stage of investigation into these kinds of alternations. Future experimental studies could test the predictions that these theories of {\thif} make for speakers' usage of nonce verbs in this template, as sketched in \S\ref{acq:prod:template}.
+Since I am not sure that the argument from comparatives generalizes, and given that no explicit syntax or semantics for this modification was put forward, I do not endorse the arguments for distinct structures put forward in \cite{borer91}. Nevertheless, the current proposal has recast that intuition in contemporary terms and supported it using different arguments. Future experimental studies could test the predictions that these theories of {\thif} make for speakers' usage of nonce verbs in this template.
 
 
-\section{Summary} \label{vd:sum}
-The template \thif~predominantly instantiates active verbs, usually causatives. It is also reasonably productive. Yet a number of roots derive inchoative verbs in this template. The analysis proposed here showed how the influence of a certain class of roots can be accommodated in the grammar, while keeping constant the overall behavior of the functional head which derives this template morphophonologically.
+\section{Conclusion} \label{vd:sum}
+This chapter developed the theory of [D] in {\vd} based on an in-depth analysis of various verb types in {\thif}. This template predominantly instantiates active verbs, usually causatives. It is also reasonably productive. Yet a number of roots derive inchoative verbs in this template. The analysis proposed here showed how the influence of a certain class of roots can be accommodated in the grammar, while keeping constant the overall behavior of the functional head.
 
 The two factors conspiring to create a labile alternation in a language that otherwise does not allow such an alternation are the root and the syntactic structure. The roots fall under various lexical semantic classes but all appear to derive degree achievements from underlying nouns or adjectives, as suggested by \cite{lev16}. The syntax which facilitates this derivation is one in which a noun or adjective is first formed before it is verbalized, and then combined with a specific causative head {\vd}. This theoretical approach allows us to ask more specific questions about how the idiosyncratic information associated with roots interacts with the syntactic structure in which they are embedded.
 
-
-
-
-
-	
-%AM: We've been re-visiting the account of Japanese +D causative -s marking, with the possible correlation with obligatory -o marking (and thus no -o drop), precisely because Yining's use of +D on voice is designed to force obligatory phi agreement with the/an object (which is straightforward for ergative languages, in which the phi agreement goes along with the absolute, but less intuitive for nom/acc language, in which the spec of the +D voice will generally be able to provide phi features for T; nevertheless, the prediction is that +D voice should go along with object marking of the specific/definite/animate sort, and a type of transitivity that elevates the direct object to discourse representation status as a potential topic or focus).
-
+Taken together, these last three chapters cashed out the trivalent theory of Voice which is at the core of this book. The next chapter rounds off the empirical picture by examining cases in which these heads interact with additional structure: passivization, adjectival passives and nominalization.
