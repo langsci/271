@@ -405,6 +405,9 @@
 \gdef_#1{\ensuremath{{}\sb{#1}}}%
 \catcode`^=\active%
 \gdef^#1{\ensuremath{{}\sp{#1}}}%
+
+\renewcommand*\l@section{\ifnum\c@tocdepth>\z@\vskip 1pt plus 1pt minus 1pt \fi
+                         \@dottedtocline{1}{1.5em}{2.3em}}
 \makeatother
 
 
@@ -462,25 +465,31 @@
     \mainmatter
     \pagestyle{plain}
 
-    \newchapter{ch1}{The trivalency of Voice}
+    \newchapter{ch1holder}{The trivalency of Voice}
 
 \part{Hebrew}
 
-    \newchapter{ch2}{Underspecified Voice}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \newchapter{ch2holder}{Underspecified Voice}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
 
     \newchapter{ch3}{\vz}
 
     \newchapter{ch4}{\vd}
-    
-    \newchapter{ch5}{Passives and nominalizations}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \newchapter{ch5holder}{Passives and nominalization}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
 
 \part{Crosslinguistic consequences}
 
     \newchapter{ch6}{Syntactic vs semantic transitivity}
 
-    \newchapter{ch7}{The features of Voice}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \newchapter{ch7holder}{The features of Voice}
 
-    \newchapter{ch8}{Conclusion}
+    \newchapter{ch8holder}{Conclusion}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
 %    \chapter*{Appendix: Some Data}
 %     \addcontentsline{toc}{chapter}{Appendix: Some Data Here}
 %    \input{f_appendixA}
