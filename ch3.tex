@@ -4,6 +4,7 @@ In the previous chapter we saw how one morphological form in Hebrew is associate
 
 The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules out the addition of an external argument. In the simplest case, this configuration leads to argument structure alternations as in~(\nextx), where the anticausative variants are essentially marked with non-active morphology.
 \ex\label{ex:anticaus}
+\raisebox{-4em}{
 \begin{tabular}{ll|c|ll|ll}
 \multicolumn{2}{c|}{Templates} & Root & \multicolumn{2}{c|}{Causative} & \multicolumn{2}{c}{Anticausative} \\\hline
 \multirow{3}{*}{a.} & \multirow{3}{*}{\tkal~$\sim$ \tnif} & \root{ʃbr}& ʃavar & `broke' & niʃbar & `got broken'\\
@@ -13,6 +14,7 @@ The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules
 	& & \root{p{\ts}{\ts}}& po{\ts}e{\ts} & `detonated' & hitpo{\ts}e{\ts} & `exploded'\\
 	& & \root{bʃl} & biʃel & `cooked' & hitbaʃel & `got cooked'\\
 \end{tabular}
+}
 \xe
 
 The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (or ``middle'') Voice, and I will return to a direct comparison with that theory in Chapter~\ref{chap:aas}. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to motivate the benefits of adopting this specific technical implementation, to provide a detailed analysis of the Hebrew data. and to highlight points of divergence from existing work in preparation for the more in-depth discussion in the second part of this book.
@@ -81,13 +83,15 @@ The next step is to confirm that our derivation is correct: are verbs with {\vz}
 
 \label{vz:nact:anticaus}
 This section concerns verbs like those on the right-hand side of~(\nextx), which I analyze as anticausative. Based on the diagnostics discussed below, \cite{ahdoutkastner18} found that 196 of the 415 verbs in {\tnif} are anticausative, or ambiguous between anticausative---as discussed in this section---and figure reflexive, discussed in Section~\ref{vz:figrefl}.
-\ex \begin{tabular}{lllll}
+\ex\raisebox{-2.5em}{
+\begin{tabular}{lllll}
 	\emph{ʃavar} & `broke' & $\sim$ & \emph{niʃbar}  & 'broke' \\
     \emph{gamar} & `ended' & $\sim$ & \emph{nigmar}  & 'ended' \\
     \emph{sagar} & `closed' & $\sim$  & \emph{nisgar}  & 'closed'\\
     \emph{matax} & `stretched' & $\sim$ & \emph{nimtax}  & 'stretched' \\
     \emph{pasak} & `stopped' & $\sim$ & \emph{nifsak}  & 'stopped' \\
    \end{tabular}
+}
 \xe
 
 The diagnostics used here are compatibility with various agent-oriented adverbs, including the use of `by itself’ (Section~\ref{vz:nact:anticaus:adv}), and the two standard unaccusativity diagnostics for Hebrew (Section~\ref{vz:nact:anticaus:unacc}).
@@ -105,13 +109,13 @@ The Hebrew equivalent of `by itself', \emph{me-a{\ts}mo} (lit.~`from himself/its
     
     \a \ljudge{*} \begingl
     \gla miri ʃavr-a et ha-kise me-a{\ts}mo.//
-    \glb Miri broke.SMPL-\gsc{F} ACC the-chair from-itself//
+    \glb Miri broke.\gsc{SMPL}-\gsc{F} \gsc{ACC} the-chair from-itself//
     \glft (int. 'Miri broke the chair of its own accord')//
     \endgl
     
     \a \ljudge{*} \begingl
     \gla ha-kise porak me-a{\ts}mo.//
-    \glb the-chair dismantled.INTNS.Pass from-itself//
+    \glb the-chair dismantled.\gsc{INTNS}.\gsc{PASS} from-itself//
     \glft (int. 'The chair was dismantled of its own accord')//
    \endgl
 \xe
@@ -119,7 +123,7 @@ The Hebrew equivalent of `by itself', \emph{me-a{\ts}mo} (lit.~`from himself/its
 Anticausatives are also incompatible with \emph{by}-phrases, which would otherwise refer to an agent.
 \ex \ljudge{*} \begingl
 	\gla ha-{\ts}amid niʃbar al-jedej ha-{\ts}oref//
-	\glb the-bracelet broke.MID by the-jeweler//
+	\glb the-bracelet broke.\gsc{MID} by the-jeweler//
 	\glft (int. 'The bracelet was dismantled by the jeweler')//
 	\endgl
 \xe
@@ -127,7 +131,7 @@ Anticausatives are also incompatible with \emph{by}-phrases, which would otherwi
 Agent-oriented adverbs are likewise incompatible with anticausatives.
 \ex \ljudge{*} \begingl
 	\gla ha-{\ts}amid niʃbar be-mejomanut//
-	\glb the-bracelet broke.MID in-skill//
+	\glb the-bracelet broke.\gsc{MID} in-skill//
 	\glft (int. 'The bracelet was dismantled skillfully')//
 	\endgl
 \xe
@@ -140,20 +144,20 @@ The syntactic literature on Hebrew has identified two unaccusativity diagnostics
 \pex
 	\a  \begingl
 	\gla\rightcomment{\cmark~Internal Argument}nafl-u ʃaloʃ kosot be-ʃmone ba-boker//
-	\glb fell.SMPL-3PL three glasses in-eight in.the-morning//
+	\glb fell.\gsc{SMPL}-\gsc{3PL} three glasses in-eight in.the-morning//
 	\glft `Three glasses fell at 8am.'//
 	\endgl
 
 	\a \begingl
 	\gla\rightcomment{\cmark~Internal Argument}huʃlex-u ʃaloʃ kosot be-ʃmone ba-boker//
-	\glb throw.CAUS.PASS-3PL three glasses in-eight in.the-morning//
+	\glb throw.\gsc{CAUS}.\gsc{PASS}-\gsc{3PL} three glasses in-eight in.the-morning//
 	\glft `Three glasses were discarded at 8am.'//
 	\endgl
 \xe
 
 \ex \begingl
 	\gla\rightcomment{\xmark~External Argument}\ljudge{\#}jilel-u ʃloʃa xatulim be-ʃmone ba-boker//
-	\glb whined-3PL three cats in-eight in.the-morning//
+	\glb whined-\gsc{3PL} three cats in-eight in.the-morning//
 	\glft `And thence whined three cats at 8am.' (Marked variant)//
 	\endgl
 \xe
@@ -165,20 +169,20 @@ A transitive construction is compatible with the possessive dative, (\nextx a), 
 \pex
 	\a \begingl
 	\gla\rightcomment{\cmark~Internal Argument}dana ʃavra l-i et ha-ʃaon//
-	\glb Dana broke.SMPL to-me ACC the-watch//
+	\glb Dana broke.\gsc{SMPL} to-me \gsc{ACC} the-watch//
 	\glft `Dana broke my watch.'//
 	\endgl
 	
 	\a \begingl
 	\gla\rightcomment{\cmark~Internal Argument}niʃbar l-i ha-ʃaon//
-	\glb broke.MID to-me the-watch//
+	\glb broke.\gsc{MID} to-me the-watch//
 	\glft `My watch broke.'//
 	\endgl
 \xe
 
 \ex \begingl
 	\gla\ljudge{\#}\rightcomment{\xmark~External Argument}jilel-u l-i ʃloʃet ha-xatulim//
-	\glb whined.INTNS-3PL to-me three the-cats//
+	\glb whined.\gsc{INTNS}-\gsc{3PL} to-me three the-cats//
 	\glft `The three cats whined and I was adversely affected.' (int. 'My three cats whined')//
 	\endgl
 \xe
@@ -208,14 +212,14 @@ I will repeat the diagnostics from Sections~\ref{vz:nact:anticaus:adv}--\ref{vz:
 `By itself' is not possible with figure reflexives:
 \ex \begingl
 	\gla\ljudge{*}dana nixnes-a la-xeder me-a{\ts}ma/me-a{\ts}mo//
-	\glb Dana entered.MID-\gsc{F} to.the-room from-herself/itself//
+	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-room from-herself/itself//
 	\endgl
 \xe
 
 Agent-oriented adverbs are possible with figure reflexives:
 \ex\label{ex:vz:nixnesa}\begingl
 	\gla dana nixnesa la-kita be-bitaxon//
-	\glb Dana entered.MID-\gsc{F} to.the-classroom in-confidence//
+	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom in-confidence//
 	\glft `Dana confidently entered the classroom.'//
 	\endgl
 \xe
@@ -226,7 +230,7 @@ And \emph{by}-phrases are an irrelevant diagnostic when the external argument is
 Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-active verbs. \textbf{VS order} is unavailable, again being grammatical but resulting in ``stylistic inversion'':
 \ex \begingl
 	\gla\ljudge{\#}nixnes-u ʃaloʃ xajal-ot la-kita//
-	\glb entered.MID-3PL three soldiers-F.PL to.the-classroom//
+	\glb entered.\gsc{MID}-\gsc{3PL} three soldiers-\gsc{F.PL} to.the-classroom//
 	\glft (int. 'Three soldiers entered the classroom.')//
 	\endgl
 \xe
@@ -234,7 +238,7 @@ Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-activ
 The \textbf{possessive dative} is likewise incompatible with figure reflexives; example~(\nextx) is infelicitous on a reading where the cat is the speaker's.
 \ex \begingl
 	\gla\ljudge{\#}ha-xatul nixnas l-i la-xeder (kol ha-zman), ma laasot?//
-	\glb the-cat enters.MID to-me to.the-room (all the-time) what to.do//
+	\glb the-cat enters.\gsc{MID} to-me to.the-room (all the-time) what to.do//
 	\glft (int. 'My cat keeps coming into into my room, what should I do?')//
 	\endgl
 \xe
@@ -255,12 +259,12 @@ The novel observation is that figure reflexives take an obligatory prepositional
 \pex Prepositional phrase complements (indirect objects) to figure reflexives are obligatory:
 	\a \begingl
 		\gla dana nixnesa *(la-kita)//
-		\glb Dana entered.MID-\gsc{F} to.the-classroom//
+		\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom//
 		\glft `Dana confidently entered the classroom.'//
 	\endgl
 	\a \begingl
 		\gla ahed nilxema *(be-avlot)//
-		\glb Ahed fought.MID-\gsc{F} in-wrongs//
+		\glb Ahed fought.\gsc{MID}-\gsc{F} in-wrongs//
 		\glft `Ahed fought wrondgoings.'//
 	\endgl
 \xe
@@ -344,7 +348,7 @@ Consider first an existing analysis of Icelandic. Figure reflexives in this lang
 \ex\label{ex:vz:is-figrefl}
 	 \begingl
 	 \gla Hann labbaði inn í herbergið//
-	 \glb he.NOM strolled in to room.the.ACC//
+	 \glb he.\gsc{NOM} strolled in to room.the.\gsc{ACC}//
 	 \glft `He strolled into the room.'\trailingcitation{Icelandic, \citealt[168]{wood15springer}}//
 	 \endgl
 \xe
@@ -404,11 +408,11 @@ Returning to Hebrew, we can adopt this proposal and give the derivation in~(\nex
 \pex
 	\a  \begingl
 	\gla oren nixnas la-xeder//
-	\glb Oren entered.MID to.the-room//
+	\glb Oren entered.\gsc{MID} to.the-room//
 	\glft `Oren entered the room.'//
 	\endgl
-	\a \hspace{-3em}
-\scalebox{0.9}{
+	\a \hspace{-5em}
+\scalebox{0.8}{
 \Tree
     [.{VoiceP\\ λe∃s.\underline{Agent(Oren,e)} \& \underline{Figure(Oren,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
        [.{DP\\\emph{oren}} ]
@@ -468,23 +472,22 @@ The morphological result of combining {\pz} and {\va} (or {\pz} and {\va}) is th
 	
 	\a \begingl
 		\gla ha-marak \textbf{hitbaʃel} ba-ʃemeʃ.//
-		\glb the-soup got.cooked.\gsc{INTNS.MID} in.the-sun//
+		\glb the-soup got.cooked.\gsc{INTNS.\gsc{MID}} in.the-sun//
 		\glft `The soup cooked in the sun.''//
 	\endgl
 \xe
 
 \pex\label{ex:vz:figrefl-va}\textit{Figure reflexive}
 	\a \begingl
-		\gla //
-		\glb //
-		\glft //
-	\endgl
-	
+		\gla bjartur hiʃtaxel (be-xavana) derex ha-kahal / la-xeder//
+		\glb Bjartur squeezed.\gsc{INTNS}.\gsc{MID} in-purpose through the-crowd {} to.the-room//
+		\glft `Bjartur squeezed (his way) on purpose through the crowd/into the room.'//
+		\endgl
 	\a \begingl
-		\gla //
-		\glb //
-		\glft //
-	\endgl
+		\gla ha-xatul hitnapel al ha-regel ʃeli (be-zaam)//
+		\glb the-cat pounced.\gsc{INTNS}.\gsc{MID} on the-foot mine in-wrath//
+		\glft `The cat angrily pounced on my foot.'//
+		\endgl
 \xe
 
 \pex\label{ex:vz:refl-va}\textit{Reflexive}
@@ -496,7 +499,7 @@ The morphological result of combining {\pz} and {\va} (or {\pz} and {\va}) is th
 	
 	\a \begingl
 		\gla tomi \textbf{hitaper}.//
-		\glb Tommy made.up.\gsc{INTNS.MID}//
+		\glb Tommy made.up.\gsc{INTNS.\gsc{MID}}//
 		\glft `Tommy put on make-up' (*`Tommy got make-up applied to him')//
 	\endgl
 \xe
@@ -510,7 +513,7 @@ The morphological result of combining {\pz} and {\va} (or {\pz} and {\va}) is th
 	
 	\a \begingl
 		\gla josi ve-{\textdyoghlig}ager \textbf{hitxabk}-u.//
-		\glb Yossi and-Jagger hugged.\gsc{INTNS.MID}-\gsc{3PL}//
+		\glb Yossi and-Jagger hugged.\gsc{INTNS.\gsc{MID}}-\gsc{3PL}//
 		\glft `Yossi and Jagger hugged.'//
 	\endgl
 \xe
@@ -522,7 +525,7 @@ In addition to elucidating the properties of anticausatives and figure reflexive
 The semantics relevant to {\va} is repeated in~(\nextx):
 \pex\label{ex:vz:denote-va}
 	\a \denote{Voice} \lra~$\lambda$e$\lambda$x.Agent(x,e) / \trace~\va
-	\a \denote{Voice} \lra~$\lambda$e$\lambda$x.Cause(x,e) or $\lambda$e$\lambda$x.Agent(x,e)
+	\a \denote{Voice} \lra~$\lambda$e$\lambda$x.\gsc{CAUS}e(x,e) or $\lambda$e$\lambda$x.Agent(x,e)
 \xe
 
 While this formalization aims to be explicit, I have taken a few shortcuts. First, as already argued for by \cite{layering15}, it is the vP which already provides the causative component, not Voice. The formalization in~(\lastx) is meant to indicate that both Causes and Agents are compatible with Voice, but that only Agents are possible once {\va} is in the structure. In this section we will see two allosemes of {\vz}, one the identity function we are familiar with and one the agentive version one would expect from {\va}, (\nextx). What we will see in Section~{\ref{vz:va:refl} is that even with {\va}, the non-active alloseme can still be triggered by specific roots.
@@ -565,8 +568,8 @@ The unprefixed base forms in {\tpie} is active, (\nextx), but the derived verb i
 
 \pex
 	\a \begingl
-	\gla ha-{\texttslig}amid \textbf{hitparek} ({\cmark} me-a{\texttslig}mo / {\xmark} be-mejomanut / {\xmark} al-jedej ha-{\texttslig}oref).//
-	\glb the-bracelet dismantled.\gsc{INTNS.MID} {} from-itself {} {} in-skill {} {} by the-jeweler//
+	\gla ha-{\texttslig}amid \textbf{hitparek} ({\cmark} me-a{\texttslig}mo / {\xmark} be-mejomanut / {\xmark}~al-jedej ha-{\texttslig}oref).//
+	\glb the-bracelet dismantled.\gsc{INTNS.\gsc{MID}} {} from-itself {} {} in-skill {} {\phantom{\xmark}}~by the-jeweler//
 	\glft `The bracelet fell apart of its own accord.'//
 	\endgl
 
@@ -603,15 +606,16 @@ Anticausatives in {\thit} are also compatible with the two unaccusativity diagno
 \ex
 \begingl
 \gla\rightcomment{\gsc{\cmark~Internal Argument}}\textbf{hitparek} \glemph{l-i} ha-ʃaon.//
-\glb dismantled.\gsc{INTNS.MID} to-me the-watch//
+\glb dismantled.\gsc{INTNS.\gsc{MID}} to-me the-watch//
 \glft `My watch broke.'//
 \endgl
 \xe
 
 When we put the pieces together, however, we find that {\va} could not have effected agentive semantics. \cite{kastner17gjgl} proposes that the rule of allosemy in~(\ref{ex:vz:thit-impov}) removes the agentivity requirement of {\va}~for roots such as \root{pr\dgs{k}}. \cite{kastner16phd,kastner17gjgl} develops a view of roots according to which their lexical semantics determines, at least in part, whether they will trigger the rule in~(\ref{ex:vz:thit-impov}). This change renders the resulting verb \emph{hitparek} `fell apart' anticausative, rather than a potential reflexive such as `tore himself to pieces'. The process can be likened to impoverishment \citep{bonet91,noyer98} in the semantic component (cf.~\citealt{nevins15roots}.
 \ex\label{ex:vz:thit-impov}\denote{\va~\!} $\rightarrow$ {\zero} / {\vz} \trace~\{\root{XYZ} | 
-	% \\ \phantom{a} \hfill 
-	 \root{XYZ} $\in$ \root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{p\texttslig \texttslig} `\gsc{EXPLODE}', \dots\}
+ \root{XYZ} $\in$ 
+ \\ \phantom{a} \hfill 
+	\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{p\texttslig \texttslig} `\gsc{EXPLODE}', \dots\}
 \xe
 
 In this context in is also worth mentioning that the view of anticausatives in {\thit} as alternants of a an agentive transitive verb in {\tpie} is unexpected under a conception which has proven popular in previous work on argument structure. The purported generalization is that decausativization can only occur if the external argument of the causative verb is not specified with respect to its thematic role, i.e.~can be a Cause \citep{unaccusativity95,reinhart02}. If verbs in {\tpie} are indeed agentive, but can nonetheless be decausativized into an anticausative in {\thit}, this generalization will need to be amended, but I will not do that here; see \citet[52]{layering15} for an overview of related work and ideas.
@@ -621,22 +625,22 @@ Figure reflexives exist in {\thit} as well, as the result of combining underspec
 \pex
 	\a \begingl
 		\gla bjartur hiʃtaxel (be-xavana) derex ha-kahal / la-xeder//
-		\glb Bjartur squeezed.INTNS.MID in-purpose through the-crowd {} to.the-room//
+		\glb Bjartur squeezed.\gsc{INTNS}.\gsc{MID} in-purpose through the-crowd {} to.the-room//
 		\glft `Bjartur squeezed (his way) on purpose through the crowd/into the room.'//
 		\endgl
 	\a \begingl
 		\gla ha-xatul hitnapel al ha-regel ʃeli (be-zaam)//
-		\glb the-cat pounced.INTNS.MID on the-foot mine in-wrath//
+		\glb the-cat pounced.\gsc{INTNS}.\gsc{MID} on the-foot mine in-wrath//
 		\glft `The cat angrily pounced on my foot.'//
 		\endgl
 	\a \begingl
 		\gla ahed hitmarda neged ha-avlot//
-		\glb Ahed rebelled.INTNS.MID against the-wrongs//
+		\glb Ahed rebelled.\gsc{INTNS}.\gsc{MID} against the-wrongs//
 		\glft `Ahed rebelled against the wrongs.'//
 		\endgl
 \xe
 
-These sentences pattern identically to the figure reflexives seen earlier with regards to agentivity and unaccusativity diagnostics. In~(\lastx) it can be seen that they are compatible with agent-oriented adverbs. They are also incompatible with `by itself' and with the two unaccusativity diagnostics.
+These sentences pattern identically to the figure reflexives seen earlier with regards to agentivity and unaccusativity diagnostics. In~(\lastx) it can be seen that they are compatible with agent-oriented adverbs. They are also incompatible with `by itself' and with the two unaccusativity diagnostics.\footnote{\cite{siloni08} assumes that simple unergatives exist in {\thit}, but my view of the psych-verbs she presents is that they too require a PP complement, e.g.~\emph{hitbajeʃ *(me)-} `was shy (of)'.}
 
 What is particularly interesting, however, is that they share their morphological marking with actual reflexives (which do not exist in {\tnif}). These are discussed next.
 
@@ -691,13 +695,13 @@ This chapter has focused on {\vz} and the non-active readings it yields. Crossli
 %\pex \textit{Hebrew}
 %	\a \begingl
 %	\gla luk ve-pier \textbf{hitlabʃ-u}. (*me-a{\texttslig}mam)//
-%	\glb Luc and-Pierre dressed.up.\gsc{INTNS.MID}-\gsc{3PL} \phantom{(*}from-themselves//
+%	\glb Luc and-Pierre dressed.up.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} \phantom{(*}from-themselves//
 %	\glft `Luc and Pierre got dressed' \hfill [reflexive only]//
 %	\endgl
 %
 %	\a \begingl
 %	\gla ha-saxkan \textbf{hita\texttslig ben} (*be-xavana) kʃe-lo masru lo.//
-%	\glb the-player got.annoyed.\gsc{INTNS.MID} \phantom{(*}on-purpose when-\gsc{NEG} passed to.him//
+%	\glb the-player got.annoyed.\gsc{INTNS.\gsc{MID}} \phantom{(*}on-purpose when-\gsc{NEG} passed to.him//
 %	\glft `The player got annoyed when he wasn't passed the ball.'//
 %	\endgl
 %\xe
@@ -722,8 +726,8 @@ This chapter has focused on {\vz} and the non-active readings it yields. Crossli
 Reflexives straightforwardly allow agent-oriented adverbs and, since they are not homophonous with anticausatives, are incompatible with `by itself', (\nextx).
 \ex
 	\begingl
-		\gla josi hitgaleax ({\cmark} be-mejomanut / {\cmark} likrat ha-reaion / {\xmark} me-a{\texttslig}mo)//
-		\glb Yossi shaved.INTNS.MID {} in-skill {} {} towards the-interview {} {} from-himself//
+		\gla josi hitgaleax ({\cmark} be-mejomanut / {\cmark} likrat ha-reaion / {\xmark}~me-a{\texttslig}mo)//
+		\glb Yossi shaved.\gsc{INTNS}.\gsc{MID} {} in-skill {} {} towards the-interview {} {\phantom{\xmark}}~from-himself//
 		\glft `Yossi shaved (skillfully) (in preparation for his interview).'//
 	\endgl
 \xe
@@ -732,7 +736,7 @@ They also do not pass the unaccusativity diagnostics, (\nextx)--(\anextx).
 \ex \textit{VS order}\\
 	\begingl
 	\gla \ljudge{\#}\textbf{hitkalx-u} ʃloʃa xatulim be-arba ba-boker.//
-	\glb showered.\gsc{INTNS.MID}-\gsc{3PL} three cats in-four in.the-morning//
+	\glb showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three cats in-four in.the-morning//
 	\glft (int. `Three cats washed themselves at 4am.')//
 	\endgl
 \xe
@@ -740,7 +744,7 @@ They also do not pass the unaccusativity diagnostics, (\nextx)--(\anextx).
 \ex \textit{Possessive dative}\\
 	\begingl 
 	\gla \ljudge{\#}ʃloʃa xatulim \textbf{hitkalx-u} \glemph{l-i} be-arba ba-boker//
-	\glb three cats showered.\gsc{INTNS.MID}-\gsc{3PL} to-me in-four in.the-morning//
+	\glb three cats showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} to-me in-four in.the-morning//
 	\glft `Three cats washed themselves at 4am and I was adversely affected.'\\
 		(\# int. `My three cats washed themselves at 4am.')//
 	\endgl
@@ -755,7 +759,7 @@ The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) will flesh ou
 \ex \label{ex:vz:thit-refl}
 \begingl
 \gla dani \textbf{hitraxe\texttslig}.//
-\glb Danny washed.\gsc{INTNS.MID}//
+\glb Danny washed.\gsc{INTNS.\gsc{MID}}//
 \glft `Danny washed (himself).'//
 \endgl
 \xe
@@ -764,7 +768,7 @@ The argument DP, `Danny', starts off as the internal argument. No external argum
 
 \ex \label{tree:vz:thit-refl}
 \hspace{-7em}
-\scalebox{0.9}{
+\scalebox{0.8}{
 	\Tree
 	[.{TP\\λe.\emph{wash}(e) \& Theme(Danny,e) \& \underline{Agent(Danny,e}) \& Past(e)}
 		[.\tikz{\node (SpecTP) {DP};}\\\emph{Dani} ]
@@ -790,7 +794,7 @@ The argument DP, `Danny', starts off as the internal argument. No external argum
 	]
 
     \begin{tikzpicture}[overlay]
-   	\draw[thick,->] (Obj) .. controls +(south:8) and +(south west:8) .. (SpecTP);
+   	\draw[thick,->] (Obj) .. controls +(south:9) and +(south west:8) .. (SpecTP);
     \end{tikzpicture}
 }
 \xe
@@ -863,7 +867,7 @@ The second point is that this analysis calls into question any attempt to view t
 %\ex \textit{VS order}\label{ex:refl-vs}\\
 %\begingl
 %\gla \ljudge{\#}\textbf{hitkalx-u} ʃloʃa xatulim be-arba ba-boker.//
-%\glb showered.\gsc{INTNS.MID}-\gsc{3PL} three cats in-four in.the-morning//
+%\glb showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three cats in-four in.the-morning//
 %\glft (int. `Three cats washed themselves at 4am.')//
 %\endgl
 %\xe
@@ -871,7 +875,7 @@ The second point is that this analysis calls into question any attempt to view t
 %\ex \textit{Possessive dative}\label{ex:refl-pd}\\
 %\begingl 
 %\gla \ljudge{\#}ʃloʃa xatulim \textbf{hitkalx-u} \glemph{l-i} be-arba ba-boker//
-%\glb three cats showered.\gsc{INTNS.MID}-\gsc{3PL} to-me in-four in.the-morning//
+%\glb three cats showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} to-me in-four in.the-morning//
 %\glft `Three cats washed themselves at 4am and I was adversely affected.'\\
 %	(\# int. `My three cats washed themselves at 4am.')//
 %\endgl
@@ -994,7 +998,7 @@ The second point is that this analysis calls into question any attempt to view t
 %\ex \textit{Other-Oriented \root{p\texttslig \texttslig} in a reflexive context, licit}\\
 %\begingl
 %\gla le-marbe ha-mazal, ha-mexabel ha-mitabed \textbf{hitpo{\texttslig}e\texttslig} be-migraʃ rek.//
-%\glb to-much the-luck, the-terrorist the-suiciding exploded.\gsc{INTNS.MID} in-lot empty//
+%\glb to-much the-luck, the-terrorist the-suiciding exploded.\gsc{INTNS.\gsc{MID}} in-lot empty//
 %\glft `Luckily, the suicide bomber blew himself up in an empty lot.'//
 %\endgl
 %\xe
@@ -1003,7 +1007,7 @@ The second point is that this analysis calls into question any attempt to view t
 %`The king was still in his underwear minutes before the ceremony. His assistants rushed to dress him up in expensive clothes, a robe and a crown. \dots\\
 %\begingl
 %\gla\ljudge{*}lifnej ʃe-hu hevin ma kara hu kvar \textbf{hitlabeʃ}.//
-%\glb before \gsc{COMP}-he understood.\gsc{CAUS} what happened he already dressed.up.\gsc{INTNS.MID}//
+%\glb before \gsc{COMP}-he understood.\gsc{CAUS} what happened he already dressed.up.\gsc{INTNS.\gsc{MID}}//
 %\glft (\dots~`before he could understand what had happened, he had already dressed up.)'//
 %\endgl
 %\xe
@@ -1013,12 +1017,12 @@ The second point is that this analysis calls into question any attempt to view t
 %\pex
 %	\a \begingl
 %		\gla ha-oto \textbf{hitnaka} (me-a{\texttslig}mo).//
-%		\glb the-car cleaned.\gsc{INTNS.MID} \phantom{(}of-itself//
+%		\glb the-car cleaned.\gsc{INTNS.\gsc{MID}} \phantom{(}of-itself//
 %		\glft `The car became cleaned.'//
 %	\endgl
 %	\a \begingl
 %		\gla jaron \textbf{hitnaka} \textup{?}(maher kedej lehaspik lehagia la-mesiba ba-zman).//
-%		\glb Yaron cleaned.\gsc{INTNS.MID} \phantom{?(}quickly in.order to.make.it to.arrive to.the-party on.the-time//
+%		\glb Yaron cleaned.\gsc{INTNS.\gsc{MID}} \phantom{?(}quickly in.order to.make.it to.arrive to.the-party on.the-time//
 %		\glft `Yaron cleaned himself quickly in order to make it to the party on time.'//
 %	\endgl
 %\xe
@@ -1027,7 +1031,7 @@ The second point is that this analysis calls into question any attempt to view t
 %	Similarly, a reciprocal verb in this template must have symmetrical entailments. In other words, a Self-Oriented root like \root{lbʃ} `\textsc{dress}' cannot be coerced into a reciprocal.
 %		\ex[exno=i] \begingl
 %		\gla josi ve-dani \textbf{hitlabʃ-u}.//
-%		\glb Yossi and-Danny dressed.up.\gsc{INTNS.MID}-\gsc{3PL}//
+%		\glb Yossi and-Danny dressed.up.\gsc{INTNS.\gsc{MID}}-\gsc{3PL}//
 %		\glft `Yossi and Danny got dressed.' (not: `Yossi and Danny dressed each other')//
 %		\endgl
 %		\xe
@@ -1066,7 +1070,7 @@ That inchoatives like those in~(\ref{ex:vz:incho}) are nonactive as well can be 
 		
 		\a \ljudge{*} \begingl
 			\gla josi \underline{hit'alef} \emph{/} \underline{nirdam} \emph{\{} al-jedej ha-xom \emph{/} al-jedej ha-kosem \emph{/} be-xavana \emph{\}}//
-			\glb Yossi passed.out.\gsc{INTNS.MID} / fell.asleep.\gsc{MID} {} by the-heat {} by the-magician {} on-purpose {}//
+			\glb Yossi passed.out.\gsc{INTNS.\gsc{MID}} / fell.asleep.\gsc{MID} {} by the-heat {} by the-magician {} on-purpose {}//
 			\glft (int. `Yossi fainted/fell asleep due to the heat/due to the magician/on purpose')//
 		\endgl
 \xe
@@ -1074,7 +1078,7 @@ That inchoatives like those in~(\ref{ex:vz:incho}) are nonactive as well can be 
 %\pex 
 %	\a \label{ex:incho1} \begingl
 %	\gla dani \underline{hit'ateʃ} \emph{\{}me-ha-avak / ??be-xavana\emph{\}}//
-%	\glb Danny sneezed.\gsc{INTNS.MID} \phantom{\{}from-the-dust {} \phantom{??}on-purpose//
+%	\glb Danny sneezed.\gsc{INTNS.\gsc{MID}} \phantom{\{}from-the-dust {} \phantom{??}on-purpose//
 %	\glft `Danny sneezed because of the dust/??on purpose'//
 %	\endgl
 %\xe
@@ -1090,7 +1094,7 @@ That inchoatives like those in~(\ref{ex:vz:incho}) are nonactive as well can be 
 \ex VS order:\\
 	\begingl
 	\gla \underline{hit'alf-u} ʃloʃa xajalim ba-hafgana//
-	\glb fainted.\gsc{INTNS.MID}-\gsc{3PL} three soldiers in.the-protest//
+	\glb fainted.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three soldiers in.the-protest//
 	\glft `Three soldiers fainted during the protest.'\trailingcitation{\citep[397]{reinhartsiloni05}}//
 	\endgl
 \xe
@@ -1193,7 +1197,7 @@ On the empirical side more concretely, the morphosemantic theory did not engage 
 While each part of this problem could be overcome on its own, the system as a whole has little to say about the unaccusative (for anticausatives) and unergative (for reflexives) characteristics of verbs in {\thit}, since it is not based strictly in the syntax. I conclude, then, that ``templates'' are the by-product of functional heads combining in the syntax in systematic ways, in support of the general system developed in this book. Where we have made progress is by flipping one of the assumptions on its head: that the primitives have strict syntactic content and flexible semantic content, rather than strict semantic content and unclear syntactic content.
 
 	\subsection{Templates as morphemes} \label{vz:others:morph}
-In juxtaposition to an ``emergent'' view of templates from functional heads, the traditional approach to Semitic templates has been to treat them as independent atomic elements, i.e.~morphemes. Contemporary work in this vein spans highly divergent implementations but includes \cite{arad03,arad05}, who treated verbal templates as distinct spell-outs of Voice; \cite{borer13oup}, for whom different templates are different ``functors''; \cite{aronoff94,aronoff07}, who identifies templates with conjugation classes; and \cite{reinhartsiloni05} and \cite{laks11,laks14}, whose lexicalist account similarly grants morphemic status to verbal templates.
+In juxtaposition to an ``emergent'' view of templates from functional heads, the traditional approach to Semitic templates has been to treat them as independent atomic elements, i.e.~morphemes. Contemporary work in this vein spans highly divergent implementations but includes \cite{arad03,arad05}, who treated verbal templates as distinct spell-outs of Voice; \cite{borer13oup}, for whom different templates are different ``functors''; \cite{aronoff94,aronoff07}, who identifies templates with conjugation classes; and \cite{reinhartsiloni05}, \cite{schwarzwald08} and \cite{laks11,laks14}, whose lexicalist accounts similarly grant morphemic status to verbal templates.
 
 Syntactic and lexicalist accounts both need to stipulate that only a subset of roots (or stems) licenses reflexive derivations. What is at issue here is the status of the template. The general problem with morphemic approaches to templates is that a given template simply does not have a deterministic syntax or semantics, as already seen time and time again in the last two chapters. \citet[198]{arad05} and \citet[564]{borer13oup} actually speculate that a configurational approach (like in our theory) might be more viable than a feature-based or functor-based approach. As far as the treatment of reflexives is concerned, morphemic accounts can go no further than stipulating that {\thit} is the template for reflexive verbs.
 
