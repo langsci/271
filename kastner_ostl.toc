@@ -3,13 +3,13 @@
 \setcounter {tocdepth}{0}
 \contentsline {chapter}{\numberline {2}Underspecified Voice}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Voice}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Kratzerian Voice}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Underspecified Voice}{3}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.2}Voice}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Kratzerian Voice}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Underspecified Voice}{4}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Agentive modification}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Pluractionality}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Agentivity}{8}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Psych-verbs}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.1}Pluractionality}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Agentivity}{9}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Conclusion and outlook}{10}{section.2.4}
 \setcounter {tocdepth}{4}
 \contentsline {chapter}{\numberline {3}\text {Voice$_{\text {[--D]}}$}}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
