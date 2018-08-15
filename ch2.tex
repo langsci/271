@@ -58,11 +58,31 @@ As we have already seen briefly in the previous chapter, Hebrew has dedicated ac
 I look into these patterns in more depth in Section~\ref{voice:voice}, where I situate them within the current theory of Voice. I then show how this head can be constrained by introducing an agentive modifier which I call {\va} in Section~\ref{voice:va}. Section~\ref{voice:conc} summarizes and outlines how the rest of the chapters in the first part of this book develop the theory.
 
 \section{Voice} \label{voice:voice}
-	\subsection{Kratzerian Voice}
-	
-	
-Recent approaches to Voice are discussed in Chapter \label{chap:aas}.
+	\subsection{What is Voice?}
+In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the VP as the complement of V.\footnote{whether or not internal arguments end up in Spec,VP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the VP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
+\pex
+	\a Mittie fed the dog.
+	\a \Tree
+	[.VoiceP\\{λe.Agent(Mittie, e) \& feed(the dog, e)}\\{\textsf{(by Functional Application})}
+		[.DP\\\emph{Mittie} ]
+		[.{λxλe.Agent(x,e) \& feed(the dog, e)}\\{\textsf{(by Event Identification)}}
+			[.Voice\\{λxλe.Agent(x,e)} ]
+			[.vP\\{λe.feed(the dog, e)}\\{\textsf{(by Functional Application)}}
+				[.v\\{λxλe.feed(x,e)}
+					[.\root{\gsc{FEED}} ]
+					[.v ]
+				]
+				[.DP\\\emph{the dog} ]
+			]
+		]
+	]
+\xe
 
+I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two \citep{harleystone13}, I join the majority of work on argument structure in making no claims to that extent \cite{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This is we will see already in Section~\ref{voice:va}. I will try to be clear about 
+
+The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, or in other words, what other ``flavors'' of Voice exist. As recapped in the previous chapter, much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapter \label{chap:aas}, once the current theory is developed in depth. To begin, I will now explain what it means for Voice to be underspecified for this feature.
+
+@@@
 	\subsection{Underspecified Voice}
 
 
