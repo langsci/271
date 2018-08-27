@@ -82,19 +82,9 @@
 \contentsline {subsection}{\numberline {6.3.2}The trivalency of transitivity}{80}{subsection.6.3.2}
 \contentsline {section}{\numberline {6.4}Hebrew with Layering}{82}{section.6.4}
 \contentsline {section}{\numberline {6.5}Conclusion}{84}{section.6.5}
+\setcounter {tocdepth}{0}
 \contentsline {chapter}{\numberline {7}The features of Voice}{86}{chapter.7}
 \contentsline {section}{\numberline {7.1}i*}{86}{section.7.1}
-\contentsline {section}{\numberline {7.2}Japanese}{87}{section.7.2}
-\contentsline {subsubsection}{\numberline {7.2.0.1}Logical possibilities for combinations}{89}{subsubsection.7.2.0.1}
-\contentsline {section}{\numberline {7.3}Valuing features}{91}{section.7.3}
-\contentsline {section}{\numberline {7.4}Notes}{91}{section.7.4}
-\contentsline {chapter}{\numberline {8}Conclusion}{93}{chapter.8}
-\contentsline {section}{\numberline {8.1}Theories of Hebrew morphology}{94}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Root-based theories}{94}{subsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.1}Templates as morphemes \citep {arad05}}{94}{subsubsection.8.1.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.2}The Exo-Skeletal Model \citep {borer13oup,borer15roots}}{95}{subsubsection.8.1.1.2}
-\contentsline {subsection}{\numberline {8.1.2}Stem-based approaches}{96}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.1}Morphomes and conjugation classes \citep {aronoff94,aronoff07}}{96}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.2}The Theta System \citep {reinhartsiloni05,laks11}}{96}{subsubsection.8.1.2.2}
-\contentsline {subsubsection}{\numberline {8.1.2.3}Experimental arguments for ``frozen'' entries \citep {fadlon12}}{97}{subsubsection.8.1.2.3}
-\contentsline {chapter}{Bibliography}{98}{subsubsection.8.1.2.3}
+\contentsline {chapter}{\numberline {8}Conclusion}{87}{chapter.8}
+\setcounter {tocdepth}{4}
+\contentsline {chapter}{Bibliography}{88}{chapter.8}
