@@ -65,26 +65,37 @@
 \contentsline {subsection}{\numberline {4.5.3}Contextual allomorphy}{67}{subsection.4.5.3}
 \contentsline {subsection}{\numberline {4.5.4}Verbalizing affix}{68}{subsection.4.5.4}
 \contentsline {section}{\numberline {4.6}Conclusion}{72}{section.4.6}
-\setcounter {tocdepth}{0}
 \contentsline {chapter}{\numberline {5}Passives and nominalization}{73}{chapter.5}
 \contentsline {section}{\numberline {5.1}Passivization}{73}{section.5.1}
-\contentsline {section}{\numberline {5.2}Adjectival passives}{73}{section.5.2}
-\contentsline {section}{\numberline {5.3}Nominalization}{73}{section.5.3}
-\setcounter {tocdepth}{4}
-\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{74}{part.2}
-\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}Layering}{75}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Causative base}{76}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{77}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Comparison}{79}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{79}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}The trivalency of transitivity}{80}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Hebrew with Layering}{82}{section.6.4}
-\contentsline {section}{\numberline {6.5}Conclusion}{84}{section.6.5}
+\contentsline {subsection}{\numberline {5.1.1}The head Pass}{73}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Passives in Hebrew}{73}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Pass and Voice}{74}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Adjectival passives}{75}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}The adjectivizer a}{75}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Adjectival passives in Hebrew}{77}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Diagnostics in Hebrew}{82}{subsubsection.5.2.2.1}
+\contentsline {subsection}{\numberline {5.2.3}Adjectival passives and Voice}{86}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Breakdown by template}{88}{subsubsection.5.2.3.1}
+\contentsline {subsection}{\numberline {5.2.4}Summary}{90}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Nominalization}{91}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}The head n}{91}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Nominalizations in Hebrew}{93}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Voice and n}{95}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Denominal verbs}{95}{section.5.4}
+\contentsline {part}{II\hspace {1em}Crosslinguistic consequences}{96}{part.2}
+\contentsline {chapter}{\numberline {6}Syntactic vs semantic transitivity}{97}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{97}{section.6.1}
+\contentsline {section}{\numberline {6.2}Layering}{97}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Causative base}{98}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The transitivity of Voice}{99}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Comparison}{101}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Non-active layers}{101}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}The trivalency of transitivity}{102}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Hebrew with Layering}{104}{section.6.4}
+\contentsline {section}{\numberline {6.5}Conclusion}{106}{section.6.5}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {7}The features of Voice}{86}{chapter.7}
-\contentsline {section}{\numberline {7.1}i*}{86}{section.7.1}
-\contentsline {chapter}{\numberline {8}Conclusion}{87}{chapter.8}
+\contentsline {chapter}{\numberline {7}The features of Voice}{108}{chapter.7}
+\contentsline {section}{\numberline {7.1}i*}{108}{section.7.1}
+\contentsline {chapter}{\numberline {8}Conclusion}{109}{chapter.8}
 \setcounter {tocdepth}{4}
-\contentsline {chapter}{Bibliography}{88}{chapter.8}
+\contentsline {chapter}{Bibliography}{110}{chapter.8}
