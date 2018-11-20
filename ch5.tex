@@ -8,6 +8,7 @@ In the syntax, Pass is incompatible with merger of a DP in Spec,VoiceP immediate
 \ex \denote{Pass} = $\lambda$e$\exists$x.e \& Agent(x,e) \hfill (or see the proposal in \citealt{bruening13})
 \xe
 
+@@give trees and lambdas and stuff. Two options: either Pass introduces the EA with closure, or it takes a specific Voice. Give both options, clarify that you're just making things explicit.@
 	
 	
 	\subsection{Passives in Hebrew}
@@ -798,6 +799,15 @@ Here, as elsewhere in the language, only change of state roots can serve as inpu
 
 
 \section{Nominalization} \label{passn:n}
+Brief survey of the state of the art, three kinds of nominals
+
+Derive the Hebrew cases in general
+
+Combine with Voice heads, talk about result nominals.
+
+Combinations: give the \cite{ahdoutkastner18} explanation, then also give the {\vz} alternative analysis. Argue against it as an alternative, I guess.
+
+
 	\subsection{The head n}
 This section addresses the deverbal nominalization, also known as gerund, gerundive, action noun and \emph{masdar}. The overall claim will be similar to that made for adjectival passives in \S\ref{syn:templates:adjpass}: nominal forms can arise in two ways. One is by nominalization of an existing verbal form, in which case the nominalizer is little n and the result is a nominal with internal verbal structure. The other is by nominalizing a root using a nominalizer with specific morphophonological form, which may or may not be similar to that of eventive nominalizations.
 
@@ -818,12 +828,23 @@ I operate under the working assumption that Hebrew has the same three kinds of n
 %	\end{tabular}
 %\xe
 
+
 \textbf{Simple nominals} have no internal structure: there are no arguments to bookhood.
 \ex \ljudge{*} The enemy's book of the city.
 \xe	
 
 
-\textbf{AS-nominals} have internal structure, as discussed at length by various authors \citep{chomsky70,grimshaw90,marantz97,harley09n,alexiadou10b,borer13oup}. In~(\nextx b), Hebrew \emph{haʃmada} `destruction' is derived from the \thif~verb \emph{heʃmid} `destroyed'.
+\textbf{AS-nominals} have internal structure, as discussed at length by various authors \citep{chomsky70,grimshaw90,marantz97,harley09n,alexiadou10b,borer13oup}. 
+
+\textbf{R-nominals} and AS-nominals can be homophonous, but they differ in their argument structure. The R-nominal equivalent of~(\ref{ex:nom-destruct}a) fails the various diagnostics for events:
+\ex The destruction_{\text{R}} of the city (*in less than a day) was widespread.
+\xe
+Another difference between AS-nominals and R-nominals is that while the meaning of the AS-nominal is transparently related to that of the underlying verb, the R-nominal can have a special meaning. 
+
+
+	\subsection{Nominalizations in Hebrew}
+	
+In~(\nextx b), Hebrew \emph{haʃmada} `destruction' is derived from the \thif~verb \emph{heʃmid} `destroyed'.
 \pex\label{ex:nom-destruct}
 	\a The enemy's destruction_{\text{AS}} of the city (in less than a day).
 	\a \begingl
@@ -849,11 +870,8 @@ To derive an AS-nominal, simply nominalize an existing verbal structure by addin
 %	]
 \xe
 
-\textbf{R-nominals} and AS-nominals can be homophonous, but they differ in their argument structure. The R-nominal equivalent of~(\ref{ex:nom-destruct}a) fails the various diagnostics for events:
-\ex The destruction_{\text{R}} of the city (*in less than a day) was widespread.
-\xe
 
-Another difference between AS-nominals and R-nominals is that while the meaning of the AS-nominal is transparently related to that of the underlying verb, the R-nominal can have a special meaning. The pair in~(\nextx) exemplifies for Hebrew. The form \emph{kibuts} is ambiguous between an action nominalization (AS-nominal) of the verb \emph{kibets} `gathered' and an R-nominal derived directly from the root.
+The pair in~(\nextx) exemplifies for Hebrew. The form \emph{kibuts} is ambiguous between an action nominalization (AS-nominal) of the verb \emph{kibets} `gathered' and an R-nominal derived directly from the root.
 \pex
 	\a {[}n [Voice {\va} [v \root{\dgs{k}bts}~\!]]]\\
 	\begingl
@@ -901,7 +919,7 @@ The following table summarizes.
 \xe
 
 
-	\subsection{Nominalizations in Hebrew}
+	\subsection{Nominal patterns and verbal templates}
 In Hebrew various nominal patterns can be used to derive nouns, all of which are variants of nominalizing little n, just like in English.
 \ex
 	\begin{minipage}[t]{0.3\textwidth}
@@ -983,12 +1001,17 @@ I conclude (with \citealt{arad03}) that distinct nominal n heads are needed with
 
 Whether or not v and n are themselves phase boundaries is tangential to the current claims; it suffices that the derivation proceeds cyclically. As emphasized by \cite{arad03,arad05} and assumed in related work since, phonological words can be derived both from the root and from an existing word. Further discussion of the nominal system is beyond the scope of the current paper, but see for instance \cite{fausthever10} and \cite{laks15ws}.
 
+
+The architectural bottom line is that a VoiceP can serve as the input to further derivation. If Pass, little a or little n are merged above it, the result is entirely predictable: a passive verb, an adjectival passive or an AS-nominalization. Adjectives and nominalizations have forced us to make the theory slightly weaker in that there exist independent adjectivizers and nominalizers which look like the existing templates. We have just discussed a nominalizer n_{\gsc{INTNS}} which has the same output as nominalizing an existing verb, [n \tpie]. This result seems to be a necessary evil on the morphophonological side, leading to predictable results on the syntactic-semantic side. Nominalizations and adjectivizations of the root do not have internal structure and might carry different meaning than that of the homophonous complex form derived from the verb.
+
+		\subsubsection{Result nominal}
+@But \cite{ahdout19phd} has recently argued that...
+
 	
 	\subsection{Voice and n}
 
 
-
-The architectural bottom line is that a VoiceP can serve as the input to further derivation. If Pass, little a or little n are merged above it, the result is entirely predictable: a passive verb, an adjectival passive or an AS-nominalization. Adjectives and nominalizations have forced us to make the theory slightly weaker in that there exist independent adjectivizers and nominalizers which look like the existing templates. We have just discussed a nominalizer n_{\gsc{INTNS}} which has the same output as nominalizing an existing verb, [n \tpie]. This result seems to be a necessary evil on the morphophonological side, leading to predictable results on the syntactic-semantic side. Nominalizations and adjectivizations of the root do not have internal structure and might carry different meaning than that of the homophonous complex form derived from the verb.
+@\cite{ahdoutkastner18}
 
 %\citet[559]{borer13oup} same for adjectives (adjectival passives). But we've already reached the conclusion for adjectival passives that we need independent templatic adjectivizers for idiosyncratic meaning. And really for meSufSaf there's little to choose from between calling it an adjective and a nominal. I think the overall picture is good for me: different templatic a/n heads are possible, and they give R-nomials with idiosyncratic meaning. But you can also attach Pass/a/n above a VoiceP to easily derive the compositional verbal passive / AS-nominal of that template. Hint at experimental differences between template priming and pattern priming?
 
