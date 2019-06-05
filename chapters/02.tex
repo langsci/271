@@ -489,26 +489,119 @@ A comparable (although still distinct) phenomenon can be found in Tamil, were th
 
 As \citet[165]{sundaresanmcfadden17} put it, ``\emph{the end result of some event comes back to affect one of the arguments of that same event}'', where the relevant argument is the external argument if there is one, otherwise the internal one (as with unaccusatives). In any case, the semantics of -\emph{koɭ} are such that it forces some kind of agent-oriented reading at least in clauses with external arguments.
 
-Where does this cross-linguistic review leave us? The pretheoretical picture which emerges from these works is that natural language has a way of making a fine-grained distinction between different degrees of ``direct participation'' or agentivity. To the extent that this triggering of agentive semantics is the same phenomenon across languages---and this is an assumption I am making here---it seems highly unlikely that it has the same syntactic underpinnings in all of these cases. A more appropriate explanation would be given in semantic terms (that is, within the denotation of certain morphemes) or in pragmatic terms (world knowledge). As alluded to above, it seems clear that in at least some cases the effect is clearly grammatical, i.e.~should be encoded in the semantics of individual syntactic elements directly, as with agent exclusivity in nominalizations, the anti-assistive modifier in Greek and the affective modifier in Tamil.
+Where does this cross-linguistic review leave us? The pretheoretical picture which emerges from these works is that natural language has a way of making a fine-grained distinction between different degrees of ``direct participation'' or agentivity. To the extent that this triggering of agentive semantics is the same phenomenon across languages---and this is an assumption I am making here---it seems highly unlikely that it has the same syntactic underpinnings in all of these cases. A more appropriate explanation would be given in semantic terms (that is, within the denotation of certain morphemes) or in pragmatic terms (world knowledge). As alluded to above, it seems clear that in at least some cases the effect is clearly grammatical, i.e.~should be encoded in the semantics of individual morphemes directly, as with agent exclusivity in nominalizations, the anti-assistive modifier in Greek and the affective modifier in Tamil. Such a proposal for Hebrew follows.
 
-@@@
 \section{Agentive modification: \va} \label{voice:va}
-In this section I introduce another syntactic primitive, the agentive modifier {\va}. Strictly speaking, this modifier is not part of the theory of trivalent Voice. As I explain immediately below, we are formalizing an element similar to those which have either been assumed implicitly in other work or been given other names. The reason it is introduced so early on in this book is because it is necessary to capture the full empirical picture. Throughout this book and especially in the first part, we begin each chapter by explaining the theoretical proposal, verifying its immediate predictions, and then expanding the picture by looking at related phenomena in the language. Underspecified Voice and the template {\tkal} have already been addressed, but the behavior of the template {\tpie} indicates that the theory needs to be augmented as I do next. Section~\ref{voice:va:act} sketches the general crosslinguistic phenomenon and Section~\ref{voice:va:heb} formally characterizes the element {\va} in Hebrew.
+In this section I introduce another syntactic primitive, the agentive modifier {\va}. Strictly speaking, this modifier is not part of the theory of trivalent Voice. The reason it is introduced early on in this book is because it is necessary to capture the full empirical picture; specifically, it will return in the discussion of {\vz} in Chapter~\ref{chap:vz}. Unspecified Voice and the template {\tkal} have already been addressed, but the behavior of the template {\tpie} indicates that we need to account for additional forms.
 
-A similar phenomenon can be found in Hebrew. It is not part of the trivalent theory of Voice but does interact with it, so I provide a formalization here as the root {\va} which enforces agentive (or Agent-like) readings. Concretely, I assume that {\va} attaches to Voice and triggers its agentive alloseme (following \citealt{doron03,doron14adj}). In the morphophonology we get the templates {\tpie} and {\thit}, as I return to momentarily.
+In order to explain the behavior of verbs {\tpie} I propose to use a special root {\va}, which enforces agentive (or weakly agentive) readings.\footnote{\cite{doron03} uses a syntactic head $\iota$; see Chapter \ref{vz:others:ed} on some differences between the theories.} I assume that {\va} attaches to the verbal spine at the vP level, concretely to the verb, thereby triggering the agentive alloseme of Voice (following \citealt{doron03,doron14adj}). The morphophonology produces the templates {\tpie} and {\thit}, as I return to momentarily. Here is the basic proposal, followed by a deep dive into each part (syntax, semantics and phonology).
 \pex {\va}:
-	\a A modifier which attaches to Voice.
+	\a A modifier which attaches to vP.
 	\a \denote{Voice} = $\lambda$e$\lambda$x.e \& \text{Agent}(x,e) / \trace~\va
-	\a Voice {\lra} {\tpie} / {\va} {\trace}
-	\a {\vz} {\lra} {\thit} / {\va} {\trace}
+	\a Voice {\lra} {\tpie} / {\trace} {\va}
+	\a {\vz} {\lra} {\thit} / {\trace} {\va}
 \xe
 
-
+As a root, this element has phonological and semantic content but no syntactic features or requirements. Not much hinges on whether this element is a root or a functional head in this language; since it has no syntactic influence, but combines predictable phonology with semantics that can be difficult to characterize formally, it behaves like any other root.\footnote{For these reasons I do not consider it to be a ``flavor'' of v, for example.} The question of what other such ``underspecified'' roots might exist in natural language remains an open one for further crosslinguistic research.
 
 	\subsection{Syntax}
-Since this phenomenon appears to be semantic in nature, as discussed in the previous section (rather than demonstrably syntactic), I formalize it in Hebrew using {\va} (\citealt{doron03} uses a syntactic head $\iota$; see Chapter \ref{vz:others:ed} on some differences between the theories). As a root, this element has phonological and semantic content but no syntactic requirements. Not much hinges on whether this element is a root or a functional head in this language; I take the simple view that it has no syntactic influence, and so is root-like. The question of what other such ``underspecified'' roots might exist in natural language remains an open one for further crosslinguistic research.
+A transitive verb like \emph{pirek} `dismantled' has the basic structure in~(\nextx a), and an unergative verb like \emph{riked} `danced around' has the basic structure in~(\nextx b).
+\pex 
+	\a Transitive {\tpie}:\\
+	\Tree
+	[.VoiceP
+		[.DP ]
+		[.
+			[.Voice ]
+			[.vP
+				[.{\va} ]
+				[.vP
+					[.v
+						[.\root{pr\dgs{k}} ]
+						[.v ]
+					]
+					[.DP ]
+				]
+			]
+		]
+	]
 
-	
+	\a Unergative {\tpie}:\\
+	\Tree
+	[.VoiceP
+		[.DP ]
+		[.
+			[.Voice ]
+			[.vP
+				[.{\va} ]
+				[.vP
+					[.v
+						[.\root{r\dgs{k}d} ]
+						[.v ]
+					]
+				]
+			]
+		]
+	]
+\xe
+
+The agentive modifier forces an agentive reading, which necessarily requires either a transitive or unergative structure. This much captures the syntactic distribution of {\tpie}.
+
+Consider what this means in terms of alternations. Returning to the examples in~(\ref{ex:voice:piel-meanings}), we saw an ``intensive'' alternation between \emph{ʃavar} `broke' and \emph{ʃiber} `broke to pieces'. Assuming a layering view of argument structure \citep{layering15}, we first build up a minimal vP consisting of a breaking event:
+\ex \Tree
+[.vP
+	[.v
+		[.\root{ʃbr} ]
+		[.v ]
+	]
+	[.DP ]
+]
+\xe
+
+What happens next? The grammar has two options. It can either merge Voice (\nextx a), in which case we get the verb in {\tkal}, or it can merge {\va} and then Voice (\nextx b), in which case we get the verb in {\tpie}.
+
+\pex
+	\a \Tree
+	[.
+		[.Voice ]
+		[.vP
+			[.v
+				[.\root{ʃbr} ]
+				[.v ]
+			]
+			[.DP ]
+		]
+	]
+
+	\a \Tree
+	[.
+		[.Voice ]
+		[.vP
+			[.{\va} ]
+			[.vP
+				[.v
+					[.\root{ʃbr} ]
+					[.v ]
+				]
+				[.DP ]
+			]
+		]
+	]
+\xe
+
+To the extent that {\tkal} and {\tpie} alternate, this is how: if a given root is instantiated in both templates, then the {\tpie} version will always be an ``intensive'', agentive version of the {\tkal} verb. Again, what ``intensive'' means is still vague at this point. A few options are sketched next, after a brief aside about the height of attachment for {\va}.
+
+		\subsubsection{A technical aside}
+In principle, {\va} could be argued to adjoin either to v/vP or to Voice. The benefit of adjoining it to v is that the alternations between {\tpie} and {\thit} follow cleanly, something we will only see in the next chapter. To give an idea of what this looks like, both causative \emph{pirek} `dismantled' and anticausative \emph{hitparek} are built from the basic vP in~(\nextx a). If Voice is merged, we get causative \emph{pirek} in {\tpie}. If {\vz} is merged, we get anticausative \emph{hitparek} in {\thit}.
+\pex
+	\a @
+	\a
+	\a
+\xe
+
+In previous work \citep{kastner16phd,kastner17gjgl,kastner18nllt} I assumed that {\va} modifies Voice, and not v as it does here. There were three reasons for this. The first was that placing {\va} between Voice and a higher element such as T correctly derives certain allomorphic patterns under the strict linear adjacency hypothesis for contextual allomorphy \citep{embick10,marantz13}, as developed in \cite{kastner18nllt}. While I am fond of this argument, it appears that this restriction needs to be weakend (see e.g.~ \citealt{kastnermoskal18,choiharley19}). The second is that adjoining {\va} to Voice renders it similar to Greek \emph{afto}. But it is not necessary for the two elements to merge in exactly the same location. The third is that since {\va} influences the interpretation of the external argument, adjoining it to Voice seemed most appropriate. Yet it is clear that agentive semantics can be generated low: verbs like \emph{murder} and \emph{devour} are strongly agentive \citep{haspelmath93,unaccusativity95,marantz97,layering15}, a requirement which originates within the vP (at the root). For these reasons, I now think that {\va} adjoins to v, although there are no clinching arguments either way. I thank Odelia Ahdout for discussing this shift with me; see \cite{ahdout19phd} for additional benefits of adjoining {\va} to v, some of which I recap in Chapter~\ref{sec:npass:n}.
+
+@@@	
 	\subsection{Semantics}
 
 Let us now expand the empirical view a bit more: what readings does {\va} make available? The template {\tpie}---made up of a root, v, {\va} and Voice---is traditionally called the ``intensive'', but it can also house pluractional verbs, (\nextx d--f), and various others, (\nextx g--i):
