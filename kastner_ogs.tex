@@ -1,6 +1,14 @@
-\documentclass[12pt, oneside, openany]{book}
+\documentclass[11pt, oneside, openany]{book}
 %\usepackage[left=1.7in,top=1.1in,right=1.2in,bottom=1.8in,footskip=.7in]{geometry}
-\usepackage[left=1in,top=1in,right=1in,bottom=1.7in,footskip=.7in]{geometry}
+%\usepackage[left=1in,top=1in,right=1in,bottom=1.7in,footskip=.7in]{geometry}
+\usepackage[
+  papersize={170mm,240mm}
+  ,top=27.4mm % TODO nachgemessen, nach Vermassung eigentlich 30mm-16pt = 25.8mm
+  ,inner=20.5mm,
+  ,outer=24.5mm
+  %,showframe,pass
+  ,marginparwidth=50pt
+  ]{geometry}
  
 %\usepackage[Conny]{fncychap} %Sonny
 \usepackage{fncychap} %Sonny
@@ -465,27 +473,27 @@
     \mainmatter
     \pagestyle{plain}
 
-    \include{chapters/01}
+    \newchapter{ch1holder}{The trivalency of Voice}
 
 \part{Hebrew}
 
-    \include{chapters/02}
+    \newchapter{ch2}{Underspecified Voice}
 
-    \include{chapters/03}
+    \newchapter{ch3}{\vz}
 
-    \include{chapters/04}
+    \newchapter{ch4}{\vd}
 
-    \include{chapters/05}
+    \newchapter{ch5}{Passives and nominalization}
 
 \part{Crosslinguistic consequences}
 
-    \include{chapters/06}
+    \newchapter{ch6}{Syntactic vs semantic transitivity}
 
-%\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
-    \include{chapters/07}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \newchapter{ch7holder}{The features of Voice}
 
-    \include{chapters/08}
-%\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
+    \newchapter{ch8holder}{Conclusion}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
 %    \chapter*{Appendix: Some Data}
 %     \addcontentsline{toc}{chapter}{Appendix: Some Data Here}
 %    \input{f_appendixA}

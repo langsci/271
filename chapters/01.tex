@@ -27,7 +27,9 @@ The degree of variation both within and across languages is substantial. However
 
 This template usually appears in the literature as \emph{h\textbf{i}XYiZ}, with an /i/-/i/ vocalic pattern. Yet contemporary speakers use /ɛ/ \citep{trachtman16}, and so I transcribe ``e'' throughout. Conversely, the initial /h/ is usually dropped in speech but I retain it for two reasons. First, /h/ is still pronounced by some older speakers and certain sociolinguistic groups, often marginalized ones \citep[cf.~][]{schwarzwald81biu,gafter14phd}. And second, the initial \emph{h}- should help non-Semitist readers to distinguish this template from other ones.
 
-\section{Warm-up: Some data}
+\section{Basic descriptive generalizations}
+@@crib from the handbook chapter@@
+
 We will focus on three verbal forms in Hebrew (\emph{templates}): {\tkal}, {\tnif} and {\thif}.
 
 	\subsection{{\tkal} varies in its argument structure (underspecified)}
@@ -202,8 +204,38 @@ Finally, Modern Hebrew does not make a distinction between masculine and feminin
 When building on existing work I modify the original transcriptions for consistency. With this housekeeping out of the way, we return to the theoretical approach.
 
 
+\section{Architectural assumptions}
+dm
+Voice
+aas15
 
-\section{Sketch of the system}
+	\subsection{What is Voice?}
+In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the VP as the complement of V.\footnote{whether or not internal arguments end up in Spec,VP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the VP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
+\pex
+	\a Mittie fed the dog.
+	\a \Tree
+	[.VoiceP\\{λe.Agent(Mittie, e) \& feed(the dog, e)}\\{\textsf{(by Functional Application})}
+		[.DP\\\emph{Mittie} ]
+		[.{λxλe.Agent(x,e) \& feed(the dog, e)}\\{\textsf{(by Event Identification)}}
+			[.Voice\\{λxλe.Agent(x,e)} ]
+			[.vP\\{λe.feed(the dog, e)}\\{\textsf{(by Functional Application)}}
+				[.v\\{λxλe.feed(x,e)}
+					[.\root{\gsc{FEED}} ]
+					[.v ]
+				]
+				[.DP\\\emph{the dog} ]
+			]
+		]
+	]
+\xe
+
+I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two---at least for certain psychological predicates \citep{bellettirizzi88,harleystone13}---I join the majority of work on argument structure in making no claims to that extent \citep{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This is we will see already in Section~\ref{voice:va}. I will try to be clear about 
+
+The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. As recapped in the previous chapter, much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapters \ref{chap:aas} and \ref{i:nie}, once the current theory has been developed in depth. To begin, I will now explain what it means for Voice to be underspecified for this feature.
+
+
+
+\section{Sketch of the system} \label{intro:sketch}
 The current study takes as its empirical focus the verbal system of Modern Hebrew. This morphological system is an ideal testing ground for theories of argument for two reasons. The first is that triplets can be found in which a given root clearly has three different kinds of morphological marking, as with \root{axl} `\root{\gsc{EAT}}' in~(\nextx). As a consequence, we must move beyond binary distinctions (whether in the syntax or the morphology). I will refer to these morpho-phonological patterns as \emph{templates}. They are traditionally described by making reference to the vowels and affixes which combine with the root consonants X, Y and Z. Hebrew has seven such templates, three of which can be seen in~(\nextx).
 \ex\label{ex:alternations-heb}
 	\begin{tabular}{llllll}
@@ -327,6 +359,9 @@ Table~\ref{table:summary} summarizes the syntactic, semantic and morphophonologi
 
 
 \section{Traditional generative treatments of the system} \label{sec:jjmcc}
+
+@@mention jjmcc, doron, arad in general terms. I'll return to comparisons later on@@
+
 Before we get to the meat of the dissertation, I would like to acknowledge some of the earlier work on Semitic morphology in an attempt to illustrate what we do and do not know yet. I focus here on the seminal series of works by McCarthy \citep{jjmcc79,jjmcc81,jjmcc89li,jjmccprince90} in order to bring out the inadequacies of a purely phonological account of {Semitic morphology}. Comparisons with more recent analyses will be presented in the next two chapters, where appropriate.
 
 	\subsection{Tiers}
@@ -690,7 +725,6 @@ We will focus on three verbal forms in Hebrew (\emph{templates}): {\tkal}, {\tni
 	\endgl
 \xe
 
-\newpage
 	\subsection{That's all we need}
 \pex Importantly, we can find triplets:
 	\a Causative {\thif}\\

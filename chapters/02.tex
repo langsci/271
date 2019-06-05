@@ -1,12 +1,19 @@
 \chapter{Unspecified Voice}
 \label{chap:voice}
-\section{Overview} \label{voice:intro}
-This chapter introduces the first argument for a theory of Voice which makes room for an underspecified variant, one which neither requires nor prohibits a specifier. We will first consider morphological marking which is compatible with a variety of verbal forms, namely the template {\tkal}.
 
-As we have already seen briefly in the previous chapter, Hebrew has dedicated active and non-active morphology (a characterization we will refine in the following chapters). Nevertheless, while verbs in {\tnif} are non-active and those in {\thif} are active, verbs in {\tkal} are underspecified with regards to their argument structure. With some roots, the verb might be transitive, (\ref{ex:voice-intro-tr}), with others, unergative, (\ref{ex:voice-intro-unerg}), with others, ditransitive, (\ref{ex:voice-intro-ditr}), and with others still, unaccusative, (\ref{ex:voice-intro-unacc}).
+\section{Overview} \label{voice:intro}
+@tkal and tpie
+@Unspecified Voice and {\va}
+
+\section{\tkal: Descriptive generalizations} \label{voice:tkal}
+This chapter introduces the first part of a theory of Voice which makes room for an underspecified variant, one which neither requires nor prohibits a specifier. We will first consider morphological marking which is compatible with a variety of verbal forms, namely the template {\tkal}.
+
+As we have already seen briefly in the previous chapter, Hebrew has dedicated active and non-active morphology. For example, verbs in {\tnif} are usually non-active and those in {\thif} are active. Verbs in {\tkal} are unique within the verbal system in that they are underspecified with regards to their argument structure. Simply knowing the morphological form (the template) is not enough to indicate what kind of verb we are dealing with. Let us examine the different possibilities, using basic diagnostics.
+
+With some roots, the verb is transitive. The examples in~(\ref{ex:voice-intro-tr}) contain strongly transitive verbs, which require an internal argument, and assign accusative case.\footnote{There is a substantial literature on \emph{et} and what it tracks @siloni,borer,danon@. What is uncontroversial is that it occurs before specific accusative objects.}
 \pex\label{ex:voice-intro-tr}
 	\a \begingl
-		\gla teo \textbf{taraf} et ha-laxmanja//
+		\gla teo \textbf{taraf} *(et ha-laxmanja)//
 		\glb Theo devoured \gsc{ACC} the-bread.roll//
 		\glft `Theo devoured the bread roll.'//
 	\endgl
@@ -17,6 +24,7 @@ As we have already seen briefly in the previous chapter, Hebrew has dedicated ac
 	\endgl
 \xe
 
+With other roots, verbs in {\tkal} are unergative. The examples in (\ref{ex:voice-intro-unerg}) show activities which can be repeated or modified with atelic adverbials.
 \pex\label{ex:voice-intro-unerg}
 	\a \begingl
 		\gla teo \textbf{rakad} ve-rakad ve-rakad (kol ha-boker)//
@@ -30,6 +38,7 @@ As we have already seen briefly in the previous chapter, Hebrew has dedicated ac
 	\endgl
 \xe
 
+Other roots give rise to ditransitive verbs, including strong ditransitives in which the goal cannot be omitted (\ref{ex:voice-intro-ditr}).
 \pex\label{ex:voice-intro-ditr}
 	\a \begingl
 		\gla teo \textbf{natan} *(le-marsel) et ha-xatif//
@@ -43,6 +52,7 @@ As we have already seen briefly in the previous chapter, Hebrew has dedicated ac
 	\endgl
 \xe
 
+And finally, unaccusative verbs are also possible in this template (\ref{ex:voice-intro-unacc}). Here we can make use of Hebrew-internal diagnostics such as Verb-Subject order and the Possessor Dative~(\nextx a)---which I discuss in more depth later on, in Chapter~\ref{vz:nact:anticaus:unacc}---and typical change of state predicates~(\nextx b).
 \pex\label{ex:voice-intro-unacc}
 	\a \begingl
 		\gla \textbf{nafal} le-teo ha-bakbuk//
@@ -56,39 +66,16 @@ As we have already seen briefly in the previous chapter, Hebrew has dedicated ac
 	\endgl
 \xe
 
-I look into these patterns in more depth in Section~\ref{voice:voice}, where I situate them within the current theory of Voice. I then show how this head can be constrained by introducing an agentive modifier which I call {\va} in Section~\ref{voice:va}. Section~\ref{voice:conc} summarizes and outlines how the rest of the chapters in the first part of this book develop the theory.
+The generalization about verbs in {\tkal} is a negative one: there are no syntactic constraints on the kind of verb that appears in this template. For this reason, \cite{doron03} does not associate it with any specific functional heads and \cite{borer13oup,borer15roots} treats it as a verbalized root with no additional syntactic functors.
 
-\section{Voice} \label{voice:voice}
-	\subsection{What is Voice?}
-In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the VP as the complement of V.\footnote{whether or not internal arguments end up in Spec,VP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the VP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
-\pex
-	\a Mittie fed the dog.
-	\a \Tree
-	[.VoiceP\\{λe.Agent(Mittie, e) \& feed(the dog, e)}\\{\textsf{(by Functional Application})}
-		[.DP\\\emph{Mittie} ]
-		[.{λxλe.Agent(x,e) \& feed(the dog, e)}\\{\textsf{(by Event Identification)}}
-			[.Voice\\{λxλe.Agent(x,e)} ]
-			[.vP\\{λe.feed(the dog, e)}\\{\textsf{(by Functional Application)}}
-				[.v\\{λxλe.feed(x,e)}
-					[.\root{\gsc{FEED}} ]
-					[.v ]
-				]
-				[.DP\\\emph{the dog} ]
-			]
-		]
-	]
-\xe
+I look into these patterns in more depth in Section~\ref{voice:voice}, where I situate them within the current theory of Voice. I then move on to the template {\tpie} in Section~\ref{voice:tpie}, showing what it teaches us about an agentive modifier which I call {\va} in Section~\ref{voice:va}. Section~\ref{voice:conc} summarizes and outlines how the rest of the Hebrew system will inform the theory developed in the first part of this book.
 
-I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two---at least for certain psychological predicates \citep{bellettirizzi88,harleystone13}---I join the majority of work on argument structure in making no claims to that extent \citep{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This is we will see already in Section~\ref{voice:va}. I will try to be clear about 
+\section{Unspecified Voice} \label{voice:voice}
+This monograph promotes a theory of argument structure in which Voice can have one of three values: [+D], [--D] or unspecified for [$\pm$D]. As foreshadowed in the introductory chapter, the idea is that {\vd} requires an external argument and {\vz} prohibits one. We will focus on what it means for Voice not to have a preference on the matter, thereby accounting for the patterns in (\ref{ex:voice-intro-tr})--(\ref{ex:voice-intro-unacc}).
 
-The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. As recapped in the previous chapter, much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapters \ref{chap:aas} and \ref{i:nie}, once the current theory has been developed in depth. To begin, I will now explain what it means for Voice to be underspecified for this feature.
-
-	\subsection{Underspecified Voice}
-This monograph promotes a theory of argument structure in which Voice can have one of three values: [+D], [--D] or underspecified for [$\pm$D]. As foreshadowed in the introductory chapter, the idea is that {\vd} requires an external argument and {\vz} prohibits one. We will focus on what it means for Voice not to have a preference on the matter, thereby accounting for the patterns in (\ref{ex:voice-intro-tr})--(\ref{ex:voice-intro-unacc}).
-
-First, let me define underspecified Voice in (\nextx). All definitions of Voice heads in this chapter and the following ones will take the same form: (a) syntactic definition, (b) semantic denotation, and (c) informal spell-out rule. I give these here and expand upon them in turn.
+First, let me define unspecified Voice in (\nextx). All definitions of Voice heads in this book take the same form: (a) syntactic definition, (b) semantic denotation, and (c) basic spell-out rules. I give these here and expand upon them in turn.
 \pex \textbf{Voice}
-	\a A Voice head no specified for a [D] feature. It has no requirements regarding whether its specifier must be filled. In transitive verbs, Voice is the locus of accusative case assignment, either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
+	\a A Voice head with no specified for a [D] feature. It has no requirements regarding whether its specifier must be filled. In transitive verbs, Voice is the locus of accusative case assignment, either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
 	\a \denote{Voice} = $\begin{cases}
 		\lambda e.e & \text{/ \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} }\\
 		\lambda x \lambda e.Agent(x,e) & \\
@@ -102,12 +89,12 @@ First, let me define underspecified Voice in (\nextx). All definitions of Voice 
 	\a Voice \lra~{\tkal} \hfill  (with the allomorph {\tpie} to follow in Section \ref{voice:va})
 \xe
 
-		\subsubsection{Syntax}
+		\subsection{Syntax}
 In the current system, the lack of a feature on Voice means that the head is not specified for any syntactic feature constraining Spec,VoiceP. That position can be filled or left unprojected, as far as the Voice head is concerned. In this state of affairs, the expectation is that differences between verbs will result from the requirements of individual roots, rather than anything in the structure. In other words, some roots will give rise to transitive verbs, other roots to unaccusative verbs, and so on.
 
-This is exactly what we find in the template {\tkal}, which spells out Voice. There are no structural restrictions on argument structure in this template: verbs in {\tkal} might be transitive, unergative, ditransitive or unaccusative. Some of the examples in (\ref{ex:voice-intro-tr})--(\ref{ex:voice-intro-unacc} are repeated below with the relevant diagnostics.
+This is exactly what we have seen in the template {\tkal}. There are no structural restrictions on argument structure in this template: verbs in {\tkal} might be transitive, unergative, ditransitive or unaccusative. Some of the examples in (\ref{ex:voice-intro-tr})--(\ref{ex:voice-intro-unacc}) are repeated below with minimal syntactic structures (leaving out material above VoiceP, such as Tense).
 
-In~(\nextx) we see the core transitive verb \emph{taraf}, which requires an internal argument. The accusative/DOM marker \emph{et} must also appear, indicating that this is a transitive construction.\footnote{There is a substantial literature on \emph{et} and what it tracks. I assume for present purposes, rather uncontroversially, that it is only compatible with accusative objects.}
+In~(\nextx) we see the core transitive verb \emph{taraf}, which requires an internal argument. The accusative/DOM marker \emph{et} must also appear, indicating that this is a transitive construction.
 \pex\label{ex:voice-intro-tr2}
 	\a 
 	\begingl
@@ -208,32 +195,29 @@ Lastly, unaccusative verbs are also possible. The two traditional diagnostics ar
 	]
 \xe		
 
-The current analysis captures the underspecified nature of {\tkal} straightforwardly. Since there are no restrictions in the syntax, the root is free to require any interpretation from v and Voice (save for reflexive readings, which are discussed in Chapter~\ref{vz:va:refl}).
+This is how unspecified Voice captures the underspecified nature of the template {\tkal. Since there are no restrictions in the syntax, the root is free to require any interpretation from v and Voice (save for reflexive readings, which are discussed in Chapter~\ref{vz:va:refl}). The question does arise of what exactly the status of Merge is in such a system, a point of discussion I postpone till Chapter~\ref{chap:i}.
 
 %% check database for breakdown by type
 		
-		\subsubsection{Semantics}
-The underspecification of this head---and of the resulting template---can be implemented in the semantics using contextual allosemy of Voice, allowing different meanings to arise in different contexts.\footnote{Chapter~\ref{chap:aas} contains a brief comparison of contextual allosemy with one alternative, namely postulating homophonous heads. There is little to choose between the two options.} Assuming that the causative variant is the elsewhere case, certain roots will be said to require a non-active alloseme of Voice, (\nextx):
+		\subsection{Semantics}
+The underspecification of this head---and of the resulting template---can be implemented in the semantics using contextual allosemy of Voice. As explained in Chapter~\ref{intro:sketch:allosemy}@, the meaning of a functional head can depend on the syntactic and semantic context it appears in, a situation of conditioned allosemy. The formal mechanism allows us to state which meanings arise in which contexts.
+
+Assuming that the causative variant is the elsewhere case, certain roots will be said to require a non-active alloseme of Voice~(\nextx a) and others will be compatible with agentive verbs~(\nextx b):\footnote{Chapter~\ref{chap:aas} contains a brief comparison of contextual allosemy with one alternative, namely postulating homophonous heads. There is little to choose between the two options.}
 \pex \denote{Voice} = 
-	\a $\lambda$e.e \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \}
+	\a $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \}
 	\a $\lambda$x$\lambda$e.Agent(x,e)
 %		 & \text{/ \trace~\{ \root{trf} `\root{\gsc{DEVOUR}}', \root{ktb} `\root{\gsc{WRITE}}', \root{ntn} `\root{\gsc{GIVE}}',}\\
 %			& \text{\root{ʃal} `\root{\gsc{BORROW}}', \root{\gsc{r\dgs{k}d}} `\root{\gsc{dance}}', \root{\gsc{hlx}} `\root{\gsc{WALK}}', \dots\} }\\
 \xe
+
+Other allosemes are also possible, as when \cite{kratzer96}---and in the current formalism, \cite{woodmarantz17}---suggest that Voice can introduce either the Agent or Holder role, depending on the vP it combines with.
 		
-		
-		\subsubsection{Phonology}
-While this template is underspecified in the syntax and semantics, the lack of overt heads constraining the structure means that it can be \emph{more} marked in the phonology. The intuition is that if there are no overt affixes, the root will have free reign in the phonology. For example, verbal stems are normally longer than one syllable except for some roots in {\tkal}:
+		\subsection{Phonology}
+While this template is unspecified in the syntax and semantics, the lack of overt heads constraining the structure means that it can be \emph{more} marked in the phonology. The intuition is that if there are no overt affixes, the root will have free reign in the phonology. For example, verbal stems are normally longer than one syllable, except for some roots in {\tkal} which flout this restriction:
 \ex \emph{ba} `came', \emph{ʃav} `returned', \emph{tsats} `appeared'.
 \xe
 
-The phonological markedness of this template has been discussed in contemporary work by \cite{ussishkin05} in terms of Emergence of the Unmarked, with similar observations made by \cite{laks11} and \cite{borer13oup,borer15roots}. I will not have much to add on this point here. In Section~\ref{voice:va} below I introduce a modifier which constrains both the semantics and phonology of Voice. The relevant Vocabulary Items can be schematized in~(\nextx).
-\pex Voice {\lra}
-	\a {\tpie} / {\trace} {\va}
-	\a {\tkal}
-\xe
-
-The spell-out rules in~(\lastx) provide a crude approximation of how Voice is handled at PF, but it is important to keep in mind that there is no one ``suffix'' {\tkal} or {\tpie} which spells out this head. Rather, there is an intricate morphophonological system of inflectional variants which needs to be taken into account. The full paradigm of {\tpie}, for example, is given by \cite{kastner15nels} as~(\nextx).
+The phonological markedness of this template has been discussed in contemporary work by \cite{ussishkin05} in terms of Emergence of the Unmarked, with similar observations made by \cite{laks11} and \cite{borer13oup,borer15roots}. The basic paradigm looks as in~(\nextx); for more examples see \citep{schwarzwald08}, \cite{faust12} or \cite{kastner18nllt}.
 
 \ex
 \raisebox{-4.5em}{
@@ -241,24 +225,77 @@ The spell-out rules in~(\lastx) provide a crude approximation of how Voice is ha
 	\begin{tabular}{|l||l|l||l|l||l|l|} \hline
 		& \multicolumn{2}{c||}{Past} & \multicolumn{2}{c||}{Present} &  \multicolumn{2}{c|}{Future} \\\hline
 		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\\hline\hline
-		1\gsc{SG} & \multicolumn{2}{c||}{Xi\dgs{Y}aZ-ti} & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & \multicolumn{2}{c|}{a-Xa\dgs{Y}eZ/ye-Xa\dgs{Y}eZ}\\\hline
-		1\gsc{PL} & \multicolumn{2}{c||}{Xi\dgs{Y}aZ-nu} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{ne-Xa\dgs{Y}eZ}  \\\hline\hline
-		2\gsc{SG} & Xi\dgs{Y}aZ-ta & Xi\dgs{Y}aZ-t & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & te-Xa\dgs{Y}eZ & te-Xa\dgs{Y}Z-i\\\hline
-		2\gsc{PL} & Xi\dgs{Y}aZ-tem & Xi\dgs{Y}aZ-ten/m & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{te-Xa\dgs{Y}Z-u}\\\hline\hline
-		3\gsc{SG} & Xi\dgs{Y}eZ & Xi\dgs{Y}Z-a & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & ye-Xa\dgs{Y}eZ & te-Xa\dgs{Y}eZ\\\hline
-		3\gsc{PL} & \multicolumn{2}{c||}{Xi\dgs{Y}Z-u} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{ye-Xa\dgs{Y}Z-u}\\\hline
+		1\gsc{SG} & \multicolumn{2}{c||}{XaYaZ-ti} & XoYeZ & XoYeZ-et & \multicolumn{2}{c|}{e-XYoZ/je-XYoZ}\\\hline
+		1\gsc{PL} & \multicolumn{2}{c||}{XaYaZ-nu} & XoYZ-im & XoYZ-ot & \multicolumn{2}{c|}{ni-XYoZ}  \\\hline\hline
+		2\gsc{SG} & XaYaZ-ta & XaYaZ-t & XoYeZ & XoYeZ-et & ti-XYoZ & ti-XYeZ-i\\\hline
+		2\gsc{PL} & XaYaZ-tem & XaYaZ-ten/tem & XoYZ-im & XoYZ-ot & \multicolumn{2}{c|}{ti-XYeZ-u}\\\hline\hline
+		3\gsc{SG} & XaYaZ & XaYZ-a & XoYZ & XoYeZ-et & ji-XYoZ & ti-XYoZ\\\hline
+		3\gsc{PL} & \multicolumn{2}{c||}{XaYZ-u} & XoYZ-im & XoYZ-ot & \multicolumn{2}{c|}{ji-XYeZ-u}\\\hline
 	\end{tabular}
 \end{small}
 }
 \xe
 
-A more comprehensive elucidation of this part of the theory can be found in \cite{faust12} and \cite{kastner18nllt}.
+What I will assume throughout is that the stem vowels spell out Voice and that affixes spell out higher material (this can be seen as a Mirror Principle effect following directly from cyclic spell out; \citealt{baker85,muysken88,zukoff16nels,kastner18nllt}). The relevant Vocabulary Items for two verbs, \emph{taraf} `devoured' and \emph{katav} `wrote', are given in~(\nextx).
+\pex \emph{taraf} `devoured':
+	\a Voice \lra~\emph{a,a} / T[Past] \trace
+	\a v \lra~(covert)
+	\a \root{trf} \lra~\emph{trf}
+	\a \root{ktb} \lra~\emph{ktb}
+\xe
 
+The final /b/ of \emph{katav} spirantizes to [v], a productive process in the language \citep{temkinmartinzemuellner16,kastner17gjgl,kastner18nllt}. Various other processes might apply, too. Next we will see affixation of the \gsc{3SG.F} suffix -\emph{a} as well as a process of syncope, in which a vowel is deleted (annotated \del{\emph{a}}). Recall that spell-out proceeds cyclically, first within the VoiceP domain and then within the TP domain.
+\pex T[Past, 3\gsc{SG.F}]-Voice-\root{trf}, \emph{tarfa} `she wrote'
+	\a \root{trf} \lra~\emph{trf}
+	\a Voice \lra~\emph{a,a} / T[Past] \trace
+	\a \emph{a,a}-\emph{ktb}
+	\a At this point the phonology yields:\\
+		/taraf/ $\Rightarrow$ \emph{taraf}.
+	\a T[Past, \gsc{3SG.F}]-\emph{taraf}
+	\a \gsc{3SG.F} \lra~\emph{a} / Past \trace
+	\a \emph{a}-\emph{taraf}
+	\a The phonology yields:\\
+		/a-taraf/ $\Rightarrow$ /tar\del{a}f-a/ $\Rightarrow$ \emph{tarfa}.
+\xe
+
+\pex T[Past, 3\gsc{SG.F}]-Voice-\root{ktb}, \emph{katva} `she wrote'
+	\a \root{ktb} \lra~\emph{ktb}
+	\a Voice \lra~\emph{a,a} / T[Past] \trace
+	\a \emph{a,a}-\emph{ktb}
+	\a At this point the phonology yields:\\
+		/katab/ $\Rightarrow$ /katav/ $\Rightarrow$ \emph{katav}.
+	\a T[Past, \gsc{3SG.F}]-\emph{katav}
+	\a \gsc{3SG.F} \lra~\emph{a} / Past \trace
+	\a \emph{a}-\emph{katav}
+	\a The phonology yields:\\
+		/a-katav/ $\Rightarrow$ /kat\del{a}v-a/ $\Rightarrow$ \emph{katva}
+\xe
+
+How exactly these exponents are concatenated will not be derived here; in \cite{kastner18nllt} I give full derivations within an OT grammar. Importantly, the derivation proceeds modularly and cyclically: first the syntax builds up structure, then VI inserts exponents, then the phonology takes over and derives the most harmonic surface forms. But for future tense forms like \emph{ti-xtov} `she will write', we will require a different contextual allomorph for Voice such as that in~(\nextx b).
+\ex \label{vi:voice} Voice \lra $\begin{cases}
+		\text{a.~\emph{a},\emph{a}} & \text{/ T[Past] \trace}\\
+		\text{b.~\emph{o}} & \text{/ T[Fut] \trace}\\
+		\end{cases}$
+\xe
+
+Abstracting away from the spell-out of specific inflectional variants within a given template, a general schematic can be stated as in~(\nextx b). In Section~\ref{voice:va} below I introduce a modifier which constrains both the semantics and phonology of Voice, giving us the possibility of~(\nextx a).
+\pex Voice {\lra}
+	\a {\tpie} / {\trace} {\va}
+	\a {\tkal}
+\xe
+
+Again, the spell-out rules in~(\lastx) provide a crude approximation of how Voice is handled at PF, but it is important to keep in mind that there is no one ``suffix'' {\tkal} which spells out this head. Rather, there is an intricate morphophonological system of inflectional variants which needs to be taken into account. With that in mind, my focus in this book will be more in setting up basic schemas like those in~(\lastx), whereby different syntactic configurations---mostly reflecting different values of Voice---trigger different templatic shapes. The templates themselves, then, have no independent status in the theory and serve only as useful morphophonological mnemonics.
+
+@@@
 	\subsection{Interim summary}
+The template {\tkal} 
+
 In contrast to the traditional Voice head which introduces an external argument, the current Voice head is underspecified with regards to the EPP feature [D] and does not place any constraints on its specifier. As a result, there are no restrictions on the argument structure of verbs which have only this head. Since every Hebrew verb must be instantiated in one of the seven verbal templates, the appearance of Voice can be traced in the morphology as the template {\tkal}.
 
 In other frameworks, \cite{doron03} does not introduce any special heads in order to account for verbs in {\tkal}. \cite{borer13oup,borer15roots} takes {\tkal} to be a verbalized root, without functional material attaching to it. The two main reasons for this are the wide range of nominalizations possible in this template and the idiosyncratic phonology. I will return to nominalizations in Chapter~\ref{passn:n}, after covering the other variants of Voice, but all three frameworks are compatible in their treatment of the {\tkal}: all allow for {\tkal} to be as idiosyncratic as it needs to be, in the phonology as in the syntax.
 
+
+\section{\tpie: Descriptive generalizations} \label{voice:tpie}
 
 \section{Agentive modification} \label{voice:va}
 In this section I introduce another syntactic primitive, the agentive modifier {\va}. Strictly speaking, this modifier is not part of the theory of trivalent Voice. As I explain immediately below, we are formalizing an element similar to those which have either been assumed implicitly in other work or been given other names. The reason it is introduced so early on in this book is because it is necessary to capture the full empirical picture. Throughout this book and especially in the first part, we begin each chapter by explaining the theoretical proposal, verifying its immediate predictions, and then expanding the picture by looking at related phenomena in the language. Underspecified Voice and the template {\tkal} have already been addressed, but the behavior of the template {\tpie} indicates that the theory needs to be augmented as I do next. Section~\ref{voice:va:act} sketches the general crosslinguistic phenomenon and Section~\ref{voice:va:heb} formally characterizes the element {\va} in Hebrew.
@@ -441,6 +478,26 @@ Let us now expand the empirical view a bit more: what readings does {\va} make a
 \xe
 
 We will next touch on pluractional readings and underived verbs, before concluding.
+
+
+\ex
+\raisebox{-4.5em}{
+\begin{small}
+	\begin{tabular}{|l||l|l||l|l||l|l|} \hline
+		& \multicolumn{2}{c||}{Past} & \multicolumn{2}{c||}{Present} &  \multicolumn{2}{c|}{Future} \\\hline
+		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\\hline\hline
+		1\gsc{SG} & \multicolumn{2}{c||}{Xi\dgs{Y}aZ-ti} & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & \multicolumn{2}{c|}{a-Xa\dgs{Y}eZ/ye-Xa\dgs{Y}eZ}\\\hline
+		1\gsc{PL} & \multicolumn{2}{c||}{Xi\dgs{Y}aZ-nu} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{ne-Xa\dgs{Y}eZ}  \\\hline\hline
+		2\gsc{SG} & Xi\dgs{Y}aZ-ta & Xi\dgs{Y}aZ-t & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & te-Xa\dgs{Y}eZ & te-Xa\dgs{Y}Z-i\\\hline
+		2\gsc{PL} & Xi\dgs{Y}aZ-tem & Xi\dgs{Y}aZ-ten/m & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{te-Xa\dgs{Y}Z-u}\\\hline\hline
+		3\gsc{SG} & Xi\dgs{Y}eZ & Xi\dgs{Y}Z-a & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & ye-Xa\dgs{Y}eZ & te-Xa\dgs{Y}eZ\\\hline
+		3\gsc{PL} & \multicolumn{2}{c||}{Xi\dgs{Y}Z-u} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c|}{ye-Xa\dgs{Y}Z-u}\\\hline
+	\end{tabular}
+\end{small}
+}
+\xe
+
+
 
 		\subsubsection{Pluractionality} \label{voice:va:heb:plural}
 One possible way to describe the semantics of {\va} is by extended reference to pluractionality. The intuition as is follows. Assume that {\va} is a pluractional (and perhaps also agentive) affix. Building on recent work by \cite{henderson12phd,henderson17nllt}, pluractionality can be seen as a way of pluralizing an event. This pluralization can hold spatially as well as temporally. For the forms in~(\ref{ex:voice:piel-meanings}a--b), the underlying verb in {\tkal} has a direct object. The corresponding pluralized events in {\tpie} can be individuated with respect to the direct objects: many broken pieces in (\ref{ex:voice:piel-meanings}a), many different simultaneous corrosions of parts of the material's surface in (\ref{ex:voice:piel-meanings}c). This extension is admittedly less obvious for ``production'' in~(\ref{ex:voice:piel-meanings}b). \cite{greenberg10} makes a similar claim for verbs in {\tpie} that are derived from reduplicated roots.
