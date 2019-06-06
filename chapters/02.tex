@@ -546,7 +546,7 @@ In this section I introduce another syntactic primitive, the agentive modifier {
 In order to explain the behavior of verbs {\tpie} I propose to use a special root {\va}, which enforces agentive (or weakly agentive) readings.\footnote{\cite{doron03} uses a syntactic head $\iota$; see Chapter \ref{vz:others:ed} on some differences between the theories.} I assume that {\va} attaches to the verbal spine at the vP level, concretely to the verb, thereby triggering the agentive alloseme of Voice (following \citealt{doron03,doron14adj}). The morphophonology produces the templates {\tpie} and {\thit}, as I return to momentarily. Here is the basic proposal, followed by a deep dive into each part (syntax, semantics and phonology).
 \pex {\va}:
 	\a A modifier which attaches to vP.
-	\a \denote{Voice} = $\lambda$e$\lambda$x.e \& \text{Agent}(x,e) / \trace~\va
+	\a \denote{Voice} = $\lambda$x$\lambda$e.e \& \text{Agent}(x,e) / \trace~\va
 	\a Voice {\lra} {\tpie} / {\trace} {\va}
 	\a {\vz} {\lra} {\thit} / {\trace} {\va}
 \xe
@@ -696,8 +696,11 @@ In previous work \citep{kastner16phd,kastner17gjgl,kastner18nllt} I assumed that
 
 @@@	
 	\subsection{Semantics}
+Given that it is a root, it is difficult to assign a semantics to {\va} without a theory of root semantics. What we can do is see its effects on the external argument, formalized as follows:
+\ex \denote{Voice} = $\lambda$x$\lambda$e.e \& \text{Agent}(x,e) / \trace~\va
+\xe
 
-Let us now expand the empirical view a bit more: what readings does {\va} make available? The template {\tpie}---made up of a root, v, {\va} and Voice---is traditionally called the ``intensive'', but it can also house pluractional verbs, (\nextx d--f), and various others, (\nextx g--i):
+Let us expand the empirical view a bit more: what readings does {\va} make available? Some examples are given in~\ref{ex:voice:piel-meanings2}), repeated from~\ref{ex:voice:piel-meanings}. While {\tpie} is traditionally called the ``intensive'' template, it can also house pluractional verbs, (\nextx d--f), and various others which do not alternate with forms in {\tkal}, (\nextx g--i):
 \ex\label{ex:voice:piel-meanings2}Pretheoretical classification of some verbs in \tpie:\\
 	\begin{tabular}{lll|ll|ll}
 	& & & \multicolumn{2}{c|}{\tkal} &  \multicolumn{2}{c}{\tpie}\\\hline
@@ -715,16 +718,17 @@ Let us now expand the empirical view a bit more: what readings does {\va} make a
 	\end{tabular}
 \xe
 
-We will next touch on pluractional readings and underived verbs, before outlining the phonological contribution.
+The pluractional readings and underived verbs have potentially interesting theoretical consequences, which will be touched on here before moving on to the phonological contribution of {\va}.
 
 		\subsubsection{Pluractionality} \label{voice:va:heb:plural}
-One possible way to describe the semantics of {\va} is by extended reference to pluractionality. The intuition as is follows. Assume that {\va} is a pluractional (and perhaps also agentive) affix. Building on recent work by \cite{henderson12phd,henderson17nllt}, pluractionality can be seen as a way of pluralizing an event. This pluralization can hold spatially as well as temporally. For the forms in~(\ref{ex:voice:piel-meanings}a--b), the underlying verb in {\tkal} has a direct object. The corresponding pluralized events in {\tpie} can be individuated with respect to the direct objects: many broken pieces in (\ref{ex:voice:piel-meanings}a), many different simultaneous corrosions of parts of the material's surface in (\ref{ex:voice:piel-meanings}c). This extension is admittedly less obvious for ``production'' in~(\ref{ex:voice:piel-meanings}b). \cite{greenberg10} makes a similar claim for verbs in {\tpie} that are derived from reduplicated roots.
+One possible way to describe the semantics of {\va} is by extended reference to pluractionality. The intuition as is follows. Assume that {\va} is a pluractional (and perhaps also agentive) affix. Building on recent work by \cite{henderson12phd,henderson17nllt}, pluractionality can be seen as a way of pluralizing an event. This pluralization can hold spatially as well as temporally. For the ``intensive'' forms in~(\ref{ex:voice:piel-meanings}a--c), the underlying verb in {\tkal} has a direct object. The corresponding pluralized events in {\tpie} can be individuated with respect to the direct objects, e.g.~many broken pieces in (\ref{ex:voice:piel-meanings}a) or many different simultaneous corrosions of parts of the material's surface in (\ref{ex:voice:piel-meanings}c). This extension is admittedly less obvious for ``production'' in~(\ref{ex:voice:piel-meanings}b). \cite{greenberg10} makes a similar claim for verbs in {\tpie} that are derived from reduplicated roots.
 
-For the ``pluractional'' forms in (\ref{ex:voice:piel-meanings}d)--(\ref{ex:voice:piel-meanings}f), the underlying verbs in {\tkal} are unergative. The pluralizing operation has no direct object to operate on, and so it pluralizes the spatio-temporal event itself in {\tpie}.
+For the ``pluractional'' forms in (\ref{ex:voice:piel-meanings}d)--(\ref{ex:voice:piel-meanings}f), the underlying verbs in {\tkal} are unergative. The pluralizing operation has no direct object to operate on, and so I would suggest that it pluralizes the spatio-temporal event itself in {\tpie}.
 
-Lastly, in (\ref{ex:voice:piel-meanings}g)--(\ref{ex:voice:piel-meanings}i) there is no underlying form and hence nothing to pluralize.
+Lastly, in (\ref{ex:voice:piel-meanings}g)--(\ref{ex:voice:piel-meanings}i) there is no underlying form and hence nothing to pluralize. The resulting verbs are still agentive but not necessarily pluractional.
 
-The database of verbs we are employing contains over 900 forms in {\tpie}, so this line of inquiry faces a serious amount of empirical corroboration. A number of potential counterexamples can be conjured up fairly easily. These are cases where the alternation does not plausibly result in a plural event:
+%The database of verbs we are employing contains over 900 forms in {\tpie}, so this line of inquiry faces a serious amount of empirical corroboration.
+A number of potential counterexamples can be conjured up fairly easily. These are cases where the alternation does not plausibly result in a plural event:
 \pex
 	\a \emph{lamad} `learned' $\sim$ \emph{limed} `taught'
 	\a \emph{ratsa} `wanted' $\sim$ \emph{ritsa} `satisfied'
@@ -739,7 +743,7 @@ In the examples in~(\lastx) the event does not entail change of state, unlike wi
 
 Since our current focus is not on the lexical semantics of root classes and how they integrate into the syntax, I will leave proper testing of the hypothesis in~(\lastx) for future work. Evaluating this proposal will need to proceed along the lines laid out above, testing whether each root instantiated in this template does indeed fit into one of the three cases in~(\lastx).
 
-
+@@@
 		\subsubsection{Underived forms} \label{voice:va:heb:underived}
 A number of verbs in {\tpie} would presumably stretch the notion of ``agentivity'' to the point where such a definition is no longer tenable. In the examples in~(\nextx), the verb can hardly be described as agentive since the subject is inanimate, while in~(\anextx) the subject is animate but non-volitional. These verbs are compatible with agentive subjects as well, but clearly do not require them.
 \pex
