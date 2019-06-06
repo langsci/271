@@ -2,8 +2,7 @@
 \label{chap:voice}
 
 \section{Overview} \label{voice:intro}
-@tkal and tpie
-@Unspecified Voice and {\va}
+We begin by examining the ``simple'' template {\tkal} and the ``intensive'' template {\tpie}. Section~\ref{voice:tkal} reviews the empirical picture for {\tkal} and distills a number of generalizations, followed by a formal analysis using the unspecified Voice head in Section~\ref{voice:voice}. Sections~\ref{voice:tpie} and \ref{voice:va} then do the same for {\tpie} and {\va}. A brief summary and overview of the next few chapters are provided in Section~\ref{voice:conc}.
 
 \section{\tkal: Descriptive generalizations} \label{voice:tkal}
 This chapter introduces the first part of a theory of Voice which makes room for an underspecified variant, one which neither requires nor prohibits a specifier. We will first consider morphological marking which is compatible with a variety of verbal forms, namely the template {\tkal}.
@@ -96,7 +95,7 @@ First, let me define unspecified Voice in (\nextx). All definitions of Voice hea
 	\a Voice \lra~{\tkal} \hfill  (with the allomorph {\tpie} to follow in Section \ref{voice:va})
 \xe
 
-		\subsection{Syntax}
+		\subsection{Syntax} \label{voice:voice:syn}
 The view of argument and event structure adopted here (see Chapter~\ref{intro:sketch}) builds up the verbal domain in ``layers''. Taking the root \root{trf}, which has to do with devouring, we first build up a verb by adjoining the root to the verbal category head v, and then merge the DP required as an internal argument. This gives us a predicate over events of devouring that DP. Adding the traditional Voice head would do little to change the event but would add an agent role to the semantics. The current Voice head is slightly different.
 \ex
 \Tree
@@ -239,8 +238,8 @@ This is how unspecified Voice captures the underspecified nature of the template
 
 %% check database for breakdown by type
 		
-		\subsection{Semantics}
-The underspecification of this head---and of the resulting template---can be implemented in the semantics using contextual allosemy of Voice. As explained in Chapter~\ref{intro:sketch:allosemy}@, the meaning of a functional head can depend on the syntactic and semantic context it appears in, a situation of conditioned allosemy. The formal mechanism allows us to state which meanings arise in which contexts.
+		\subsection{Semantics} \label{voice:voice:sem}
+The underspecification of this head---and of the resulting template---can be implemented in the semantics using contextual allosemy of Voice. As explained in Chapter~\ref{intro:sketch:allosemy}, the meaning of a functional head can depend on the syntactic and semantic context it appears in, a situation of conditioned allosemy. The formal mechanism allows us to state which meanings arise in which contexts.
 
 Assuming that the causative variant is the elsewhere case, certain roots will be said to require a non-active alloseme of Voice~(\nextx a) and others will be compatible with agentive verbs~(\nextx b):\footnote{Chapter~\ref{chap:aas} contains a brief comparison of contextual allosemy with one alternative, namely postulating homophonous heads. There is little to choose between the two options.}
 \pex \denote{Voice} = 
@@ -252,7 +251,7 @@ Assuming that the causative variant is the elsewhere case, certain roots will be
 
 Other allosemes are also possible, as when \cite{kratzer96}---and in the current formalism, \cite{woodmarantz17}---suggest that Voice can introduce either the Agent or Holder role, depending on the vP it combines with.
 		
-		\subsection{Phonology}
+		\subsection{Phonology} \label{voice:voice:phono}
 While this template is unspecified in the syntax and semantics, the lack of overt heads constraining the structure means that it can be \emph{more} marked in the phonology. The intuition is that if there are no overt affixes, the root will have free reign in the phonology. For example, verbal stems are normally longer than one syllable, except for some roots in {\tkal} which flout this restriction:
 \ex \emph{ba} `came', \emph{ʃav} `returned', \emph{tsats} `appeared'.
 \xe
@@ -553,7 +552,7 @@ In order to explain the behavior of verbs {\tpie} I propose to use a special roo
 
 As a root, this element has phonological and semantic content but no syntactic features or requirements. Not much hinges on whether this element is a root or a functional head in this language; since it has no syntactic influence, but combines predictable phonology with semantics that can be difficult to characterize formally, it behaves like any other root.\footnote{For these reasons I do not consider it to be a ``flavor'' of v, for example.} The question of what other such ``underspecified'' roots might exist in natural language remains an open one for further crosslinguistic research.
 
-	\subsection{Syntax}
+	\subsection{Syntax} \label{voice:va:syn}
 A transitive verb like \emph{pirek} `dismantled' has the basic structure in~(\nextx a), and an unergative verb like \emph{riked} `danced around' has the basic structure in~(\nextx b).
 \pex 
 	\a Transitive {\tpie}:\\
@@ -638,9 +637,37 @@ What happens next? The grammar has two options. It can either merge Voice (\next
 	]
 \xe
 
-As noted in all of the major works on Hebrew morphology, alternations are not always the norm: there is no guarantee that a verb in {\tkal} will alternate with one in {\tpie}, as many verbs in {\tkal} have no counterpart in {\tkal}. This property is idiosyncratic and must be listed with every root. But when {\tkal} and {\tpie} do alternate, this is how: if a given root is instantiated in both templates, then the {\tpie} version will always be an ``intensive'', agentive version of the {\tkal} verb, since {\tpie} is the spell out of adding a {\va} layer to the basic event which otherwise would be spelled out as {\tkal}. Again, what ``intensive'' means is still vague at this point. A few options are sketched next, after a technical aside about the height of attachment for {\va}.
+As noted in all of the major works on Hebrew morphology, alternations are not always the norm: there is no guarantee that a verb in {\tkal} will alternate with one in {\tpie}, as many verbs in {\tkal} have no counterpart in {\tkal}. This property is idiosyncratic and must be listed with every root. But when {\tkal} and {\tpie} do alternate, this is how: if a given root is instantiated in both templates, then the {\tpie} version will always be an ``intensive'', agentive version of the {\tkal} verb, since {\tpie} is the spell out of adding a {\va} layer to the basic event which otherwise would be spelled out as {\tkal}. 
 
-		\subsubsection{Height of attachment}
+The derivation of verbs in {\tpie} which do not alternate with {\tkal} is identical. For (\nextx), we first build up the minimal vP, then attach {\va}, and then attach the external argument. The fact that the minimal vP cannot combine with Voice directly must be listed with the root, in whatever way regulates which functional heads can appear with which root. Now the meaning of the root is chosen by {\va}, rather than by v (since there is no verb in {\tkal}) or Voice (since {\va} is closer to the root, \citealt{arad03,marantz13,elenasamioti14}).
+\pex
+   \a \begingl
+    \gla \underline{ha-xom} \textbf{ʃibeʃ} et ha-medidot//
+    \glb the-heat disrupted.\gsc{INTNS} \gsc{ACC} the-measurements//
+    \glft `The heat messed up the measurements.//
+  \endgl
+	\a \Tree
+	[.VoiceP
+		[.DP\\{\emph{ha-xom}} ]
+		[.
+			[.Voice\\{\emph{i,e}} ]
+			[.vP
+				[.{\va} ]
+				[.vP
+					[.v
+						[.\root{ʃbʃ}\\{\emph{ʃbʃ}} ]
+						[.v ]
+					]
+					[.DP\\{\emph{et ha-medidot}} ]
+				]
+			]
+		]
+	]
+\xe
+
+Again, what ``intensive'' means is left intentionally vague. A few options are sketched next, after a technical aside about the height of attachment for {\va}.
+
+		\subsubsection{Height of attachment} \label{voice:va:syn:wonk}
 In principle, {\va} could be argued to adjoin either to v/vP or to Voice. The benefit of adjoining it to v is that the alternations between {\tkal} and {\tpie} follow cleanly, as do those between {\tpie} and {\thit}. Here is a preview of what this looks like, to be further explore in the next chapter. Both causative \emph{pirek} `dismantled' and anticausative \emph{hitparek} are built from the basic vP in~(\nextx a). If Voice is merged, we get causative \emph{pirek} in {\tpie} (\nextx b). If {\vz} is merged, we get anticausative \emph{hitparek} in {\thit} (\nextx c).
 \pex
 	\a \Tree
@@ -694,8 +721,7 @@ In principle, {\va} could be argued to adjoin either to v/vP or to Voice. The be
 
 In previous work \citep{kastner16phd,kastner17gjgl,kastner18nllt} I assumed that {\va} modifies Voice, and not v as it does here. There were three reasons for this. The first was that placing {\va} between Voice and a higher element such as T correctly derives certain allomorphic patterns under the strict linear adjacency hypothesis for contextual allomorphy \citep{embick10,marantz13}, as developed in \cite{kastner18nllt}. While I am fond of this argument, much current work argues that this restriction needs to be weakened (see e.g.~\citealt{kastnermoskal18,choiharley19}). The second is that adjoining {\va} to Voice renders it similar to Greek \emph{afto}. However, it is not crucial for the theory that these two elements merge in different locations in different languages. The third is that since {\va} influences the interpretation of the external argument, adjoining it to Voice seemed most appropriate. Yet it is clear that agentive semantics can be generated low: verbs like \emph{murder} and \emph{devour} are strongly agentive \citep{haspelmath93,unaccusativity95,marantz97,layering15}, a requirement which originates within the vP (at the root). For these reasons, I now think that {\va} adjoins to v, although there are no clinching arguments either way. I thank Odelia Ahdout for discussing this shift with me; see \cite{ahdout19phd} for additional benefits of adjoining {\va} to v in the domain of nominalization, some of which I recap in Chapter~\ref{passn:n}.
 
-@@@	
-	\subsection{Semantics}
+	\subsection{Semantics} \label{voice:va:sem}
 Given that it is a root, it is difficult to assign a semantics to {\va} without a theory of root semantics. What we can do is see its effects on the external argument, formalized as follows:
 \ex \denote{Voice} = $\lambda$x$\lambda$e.e \& \text{Agent}(x,e) / \trace~\va
 \xe
@@ -720,7 +746,7 @@ Let us expand the empirical view a bit more: what readings does {\va} make avail
 
 The pluractional readings and underived verbs have potentially interesting theoretical consequences, which will be touched on here before moving on to the phonological contribution of {\va}.
 
-		\subsubsection{Pluractionality} \label{voice:va:heb:plural}
+		\subsubsection{Pluractionality} \label{voice:va:sem:plural}
 One possible way to describe the semantics of {\va} is by extended reference to pluractionality. The intuition as is follows. Assume that {\va} is a pluractional (and perhaps also agentive) affix. Building on recent work by \cite{henderson12phd,henderson17nllt}, pluractionality can be seen as a way of pluralizing an event. This pluralization can hold spatially as well as temporally. For the ``intensive'' forms in~(\ref{ex:voice:piel-meanings}a--c), the underlying verb in {\tkal} has a direct object. The corresponding pluralized events in {\tpie} can be individuated with respect to the direct objects, e.g.~many broken pieces in (\ref{ex:voice:piel-meanings}a) or many different simultaneous corrosions of parts of the material's surface in (\ref{ex:voice:piel-meanings}c). This extension is admittedly less obvious for ``production'' in~(\ref{ex:voice:piel-meanings}b). \cite{greenberg10} makes a similar claim for verbs in {\tpie} that are derived from reduplicated roots.
 
 For the ``pluractional'' forms in (\ref{ex:voice:piel-meanings}d)--(\ref{ex:voice:piel-meanings}f), the underlying verbs in {\tkal} are unergative. The pluralizing operation has no direct object to operate on, and so I would suggest that it pluralizes the spatio-temporal event itself in {\tpie}.
@@ -728,7 +754,7 @@ For the ``pluractional'' forms in (\ref{ex:voice:piel-meanings}d)--(\ref{ex:voic
 Lastly, in (\ref{ex:voice:piel-meanings}g)--(\ref{ex:voice:piel-meanings}i) there is no underlying form and hence nothing to pluralize. The resulting verbs are still agentive but not necessarily pluractional.
 
 %The database of verbs we are employing contains over 900 forms in {\tpie}, so this line of inquiry faces a serious amount of empirical corroboration.
-A number of potential counterexamples can be conjured up fairly easily. These are cases where the alternation does not plausibly result in a plural event:
+This way of thinking about {\tpie} is speculative at this point. A number of potential counterexamples can be conjured up fairly easily. These are cases where the alternation does not plausibly result in a plural event:
 \pex
 	\a \emph{lamad} `learned' $\sim$ \emph{limed} `taught'
 	\a \emph{ratsa} `wanted' $\sim$ \emph{ritsa} `satisfied'
@@ -736,16 +762,15 @@ A number of potential counterexamples can be conjured up fairly easily. These ar
 
 In the examples in~(\lastx) the event does not entail change of state, unlike with breaking and eating/corroding. So perhaps there is a tripartite division of roots to be made, as follows:
 \pex
-	\a \textbf{Other-oriented roots (change of state):} pluralization of the object.
-	\a \textbf{Self-oriented roots:} pluralization of the spatio-temporal aspects of the event.
+	\a \textbf{Other-oriented roots (change of state)} such as \root{\gsc{BREAK}} and \root{\gsc{PRODUCE}}: pluralization of the object.
+	\a \textbf{Activity roots} or \textbf{self-oriented roots} such as \root{\gsc{RUN}} and \root{\gsc{JUMP}}: pluralization of the spatio-temporal aspects of the event.
 	\a \textbf{Other cases:} no pluralization.
 \xe
 
 Since our current focus is not on the lexical semantics of root classes and how they integrate into the syntax, I will leave proper testing of the hypothesis in~(\lastx) for future work. Evaluating this proposal will need to proceed along the lines laid out above, testing whether each root instantiated in this template does indeed fit into one of the three cases in~(\lastx).
 
-@@@
-		\subsubsection{Underived forms} \label{voice:va:heb:underived}
-A number of verbs in {\tpie} would presumably stretch the notion of ``agentivity'' to the point where such a definition is no longer tenable. In the examples in~(\nextx), the verb can hardly be described as agentive since the subject is inanimate, while in~(\anextx) the subject is animate but non-volitional. These verbs are compatible with agentive subjects as well, but clearly do not require them.
+		\subsubsection{Underived forms} \label{voice:va:sem:underived}
+A number of verbs in {\tpie} stretch the notion of ``agentivity'' to the point where even a weak definition is no longer tenable. In the examples in~(\nextx), the verb can hardly be described as agentive since the subject is inanimate, while in~(\anextx) the subject is animate but non-volitional. These verbs are compatible with agentive subjects as well, but clearly do not require them.
 \pex
   \a \begingl
     \gla \underline{ha-midgam} \textbf{ʃikef} et totsot ha-emet//
@@ -758,12 +783,6 @@ A number of verbs in {\tpie} would presumably stretch the notion of ``agentivity
     \glb in-run one the-watch of Garmin almost was.accurate.\gsc{INTNS} when showed deviation almost devoid.of meaning of percent and-little//
     \glft `In one run, the Garmin watch was precise as it showed an almost insignificant deviation of just over one percent.'\trailingcitation{\url{www.haaretz.co.il/sport/active/.premium-1.2309128}}//
   \endgl
-
-  \a \begingl
-    \gla \underline{ha-xom} \textbf{ʃibeʃ} l-i et ha-medidot//
-    \glb the-heat disrupted.\gsc{INTNS} to-me \gsc{ACC} the-measurements//
-    \glft `The heat messed up my measurements.//
-  \endgl
 \xe
 
 \ex \begingl
@@ -773,13 +792,10 @@ A number of verbs in {\tpie} would presumably stretch the notion of ``agentivity
   \endgl
 \xe
 
-In these examples an external argument is still required, regardless of whether it can felicitously be called an Agent or not. What these examples show is that a rigid denotation of {\va} is difficult to specify, beyond some general notion of a direct cause. I believe it is significant, though, that the verbs in~(\blastx)--(\lastx) do not have correspondents in {\tkal}. That is, they are not derived by adding {\va} to an existing VoiceP or via some process of causativization. They would fit with the underived group of~(\ref{ex:voice:piel-meanings}: \emph{ʃikef} $\nless$ *\emph{ʃakaf}, \emph{diek} $\nless$ *\emph{dajak}, \emph{ʃibeʃ} $\nless$ *\emph{ʃabaʃ}, and \emph{kibel} $\nless$ *\emph{kabal}. They are derived when {\va} selects the alloseme of the root directly without having to agentivize a verb in Voice/{\tkal}. If {\va} really is a root rather than a functional head, its partially unpredictable contributions to the meaning of the verb are not unexpected.
+In these examples an external argument is still required, regardless of whether it can felicitously be called an agent or not. What these examples show is that a rigid denotation of {\va} is difficult to specify, beyond some general notion of a direct cause. I believe it is significant, though, that the verbs in~(\blastx)--(\lastx) do not have correspondents in {\tkal}. That is, they are not derived by adding {\va} to an existing VoiceP or via some process of causativization: \emph{ʃikef} $\nless$ *\emph{ʃakaf}, \emph{diek} $\nless$ *\emph{dajak}, \emph{ʃibeʃ} $\nless$ *\emph{ʃabaʃ}, and \emph{kibel} $\nless$ *\emph{kabal}. They would fit with the underived group of~(\ref{ex:voice:piel-meanings2}: derived when {\va} selects the alloseme of the root directly without having to agentivize an event in vP/{\tkal}. If {\va} really is a root rather than a functional head, its partially unpredictable contributions to the meaning of the verb are not unexpected.
 
-
-	\subsection{Phonology}
-
-The phonological consequences of {\va} will not be explored here in depth. What is important to note is that it is phonologically overt: not only does it trigger a change in vowels, it also blocks a phonological process of spirantization whereby /p/, /b/ and /k/ spirantize to [f], [v] and [x] postvocalically \citep{adam02,temkinmartinez08wccfl,temkinmartinzemuellner16,gouskova12nllt}. An example of this process can be found directly above in~(\ref{ex:va-piel1})a--b), where /b/ spirantizes to [v] after a vowel except if {\va} is also in the structure. See \cite{kastner18nllt} for the details.
-
+	\subsection{Phonology} \label{voice:va:phono}
+The morphophology of {\tpie} consist of two parts that distinguish it from other templates: different stem vowels and the way it bleeds a regular phonological process of spirantization. In Modern Hebrew, /p/, /b/ and /k/ spirantize to [f], [v] and [x] postvocalically \citep{adam02,temkinmartinez08wccfl,gouskova12nllt}, a process that applies to nonce words as well \citep{temkinmartinzemuellner16}. An example of this process was seen above in~(\ref{ex:va-piel1}a--b), where /b/ spirantizes to [v] after a vowel except if {\va} is also in the structure. The inflectional paradigm for {\tpie} in three tenses is given in~(\nextx).
 
 \ex
 \raisebox{-4.5em}{
@@ -798,17 +814,31 @@ The phonological consequences of {\va} will not be explored here in depth. What 
 }
 \xe
 
+VIs can be assigned similarly to how this was done for Voice in Section~\ref{voice:voice:phono}. The non-spirantization can be analyzed as a floating feature docking onto the medial root consonant and preventing it from acquiring a [continuant] feature. Two examples are given in~(\nextx), where the floating feature still needs a constraint to dock it onto the right segment; see \cite{kastner18nllt} for the full implementation.
+\pex
+	\a\label{vi:voice2}	Voice \lra~\emph{i,e} / T[Past] \trace~\va
+			\a\label{vi:va}\va~\lra~[--cont]$_{\gsc{ACT}}$ / \trace~ \{ \root{XYZ} $|$ Y $\in$ p, b, k \}
+			
+\xe
 
+\section{Summary and outlook} \label{voice:conc}
+This chapter examined the two templates {\tkal} and {\tpie}, treating them not as morphemic atoms but as combinations of functional heads, specifically v, Voice, and (in the case of {\tpie}) {\va}. The following generalizations about the argument structure of both templates are repeated here from~(\ref{ex:gen-tkal}) and~(\ref{ex:gen-tpie}).
 
+\hammer{
+\pex \label{ex:gen-tkal2}\textbf{Generalizations about {\tkal}}
+	\a \textbf{Constructions:} Verbs appear in all possible argument structure configurations.
+	\a \textbf{Alternations:} Participates in alternations with the other templates, as will be reviewed throughout the book.
+\xe
+}
 
+\hammer{
+\pex \label{ex:gen-tpie2}\textbf{Generalizations about {\tkal}}
+	\a \textbf{Constructions:} Verbs appear in active (transitive unergative) configurations.\\
+		Readings are weakly agentive.
+	\a \textbf{Alternations:} When alternating with {\tkal}, provides a more ``intensive'' or agentive version.
+\xe
+}
 
+To account for these patterns, I began to unfold the proposed theory of trivalent Voice. This chapter concentrated on two elements: unspecified Voice does not impose any strict constraints in the syntax but is nevertheless traceable in the morphophonology. It is compatible with whatever argument structure the root allows. The modifier {\va} enforces certain agentive or agentive-like readings which, I have argued, can be found in various other languages as well.
 
-
-
-
-\section{Conclusion and outlook} \label{voice:conc}
-This chapter began to unfold the theory of trivalent Voice by examining the workings of underspecified Voice in Hebrew, as well as the agentive modifier {\va}. Underspecified Voice does not impose any strict constraints in the syntax but is nevertheless traceable in the morphophonology. It is compatible with whatever argument structure the root allows.
-
-The modifier {\va}, while not part of the theory of trivalent Voice, is a necessary part of any theory of Hebrew morphology. It enforces certain agentive or agentive-like readings which, I have argued, can be found in various other languages as well.
-
-The next chapters in Part I probe the different possible values of Voice. In Chapter~\ref{chap:vz} we will see what happens when Voice is endowed with a [--D] feature, prohibiting the merger of DPs in its specifier. The result will be a structure that allows anticausatives and, in some cases, reflexives of different kinds. In Chapter~\ref{chap:vd} we will see the consequences of a [+D] feature appearing on Voice, requiring its specifier to be filled. And in Chapter~\ref{chap:passn} we will see how these Voice heads interact with passiviziation, nominalization and adjectivization.
+The next chapters in Part I examine the other templates, motivating an analysis which uses different values of Voice. In Chapter~\ref{chap:vz} we will see what happens when Voice is endowed with a [--D] feature, prohibiting the merger of DPs in its specifier. The result will be a structure that allows anticausatives and, in some cases, reflexives of different kinds. In Chapter~\ref{chap:vd} we will see the consequences of a [+D] feature appearing on Voice, requiring its specifier to be filled. And in Chapter~\ref{chap:passn} we will see how these Voice heads interact with passiviziation, nominalization and adjectivization.
