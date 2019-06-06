@@ -97,6 +97,39 @@ First, let me define unspecified Voice in (\nextx). All definitions of Voice hea
 \xe
 
 		\subsection{Syntax}
+The view of argument and event structure adopted here (see Chapter~\ref{intro:sketch}) builds up the verbal domain in ``layers''. Taking the root \root{trf}, which has to do with devouring, we first build up a verb by adjoining the root to the verbal category head v, and then merge the DP required as an internal argument. This gives us a predicate over events of devouring that DP. Adding the traditional Voice head would do little to change the event but would add an agent role to the semantics. The current Voice head is slightly different.
+\ex
+\Tree
+[.v
+	[.\root{trf} ]
+	[.v ]
+]
+$\Rightarrow$
+\Tree
+[.vP
+	[.v
+		[.\root{trf} ]
+		[.v ]
+	]
+	[.DP ]
+]
+$\Rightarrow$
+\Tree
+[.VoiceP
+	[.DP ]
+	[.
+		[.Voice ]
+		[.vP
+			[.v
+				[.\root{trf} ]
+				[.v ]
+			]
+			[.DP ]
+		]
+	]
+]
+\xe
+
 In the current system, the lack of a feature on Voice means that the head is not specified for any syntactic feature constraining Spec,VoiceP. That position can be filled or left unprojected, as far as the Voice head is concerned. In this state of affairs, the expectation is that differences between verbs will result from the requirements of individual roots, rather than anything in the structure. In other words, some roots will give rise to transitive verbs, other roots to unaccusative verbs, and so on.
 
 This is exactly what we have seen in the template {\tkal}. There are no structural restrictions on argument structure in this template: verbs in {\tkal} might be transitive, unergative, ditransitive or unaccusative. Some of the examples in (\ref{ex:voice-intro-tr})--(\ref{ex:voice-intro-unacc}) are repeated below with minimal syntactic structures (leaving out material above VoiceP, such as Tense).
@@ -605,17 +638,61 @@ What happens next? The grammar has two options. It can either merge Voice (\next
 	]
 \xe
 
-To the extent that {\tkal} and {\tpie} alternate, this is how: if a given root is instantiated in both templates, then the {\tpie} version will always be an ``intensive'', agentive version of the {\tkal} verb. Again, what ``intensive'' means is still vague at this point. A few options are sketched next, after a brief aside about the height of attachment for {\va}.
+As noted in all of the major works on Hebrew morphology, alternations are not always the norm: there is no guarantee that a verb in {\tkal} will alternate with one in {\tpie}, as many verbs in {\tkal} have no counterpart in {\tkal}. This property is idiosyncratic and must be listed with every root. But when {\tkal} and {\tpie} do alternate, this is how: if a given root is instantiated in both templates, then the {\tpie} version will always be an ``intensive'', agentive version of the {\tkal} verb, since {\tpie} is the spell out of adding a {\va} layer to the basic event which otherwise would be spelled out as {\tkal}. Again, what ``intensive'' means is still vague at this point. A few options are sketched next, after a technical aside about the height of attachment for {\va}.
 
-		\subsubsection{A technical aside}
-In principle, {\va} could be argued to adjoin either to v/vP or to Voice. The benefit of adjoining it to v is that the alternations between {\tpie} and {\thit} follow cleanly, something we will only see in the next chapter. To give an idea of what this looks like, both causative \emph{pirek} `dismantled' and anticausative \emph{hitparek} are built from the basic vP in~(\nextx a). If Voice is merged, we get causative \emph{pirek} in {\tpie}. If {\vz} is merged, we get anticausative \emph{hitparek} in {\thit}.
+		\subsubsection{Height of attachment}
+In principle, {\va} could be argued to adjoin either to v/vP or to Voice. The benefit of adjoining it to v is that the alternations between {\tkal} and {\tpie} follow cleanly, as do those between {\tpie} and {\thit}. Here is a preview of what this looks like, to be further explore in the next chapter. Both causative \emph{pirek} `dismantled' and anticausative \emph{hitparek} are built from the basic vP in~(\nextx a). If Voice is merged, we get causative \emph{pirek} in {\tpie} (\nextx b). If {\vz} is merged, we get anticausative \emph{hitparek} in {\thit} (\nextx c).
 \pex
-	\a @
-	\a
-	\a
+	\a \Tree
+		[.vP
+			[.{\va} ]
+			[.vP
+				[.v
+					[.\root{pr\dgs{k}} ]
+					[.v ]
+				]
+				[.DP ]
+			]
+		]
+	\a \emph{pirek} `dismantled'\\
+		\Tree
+		[.VoiceP
+			[.DP ]
+			[.
+				[.{Voice\\\emph{i,e}} ]
+				[.vP
+					[.{\va} ]
+					[.vP
+						[.v
+							[.\root{pr\dgs{k}} ]
+							[.v ]
+						]
+						[.DP ]
+					]
+				]
+			]
+		]
+		\a \emph{hitparek} `fell apart'\\
+			\Tree
+			[.VoiceP
+				[.DP ]
+				[.
+					[.{\vz\\\emph{hit-,a,e}} ]
+					[.vP
+						[.{\va} ]
+						[.vP
+							[.v
+								[.\root{pr\dgs{k}} ]
+								[.v ]
+							]
+							[.DP ]
+						]
+					]
+				]
+			]
 \xe
 
-In previous work \citep{kastner16phd,kastner17gjgl,kastner18nllt} I assumed that {\va} modifies Voice, and not v as it does here. There were three reasons for this. The first was that placing {\va} between Voice and a higher element such as T correctly derives certain allomorphic patterns under the strict linear adjacency hypothesis for contextual allomorphy \citep{embick10,marantz13}, as developed in \cite{kastner18nllt}. While I am fond of this argument, it appears that this restriction needs to be weakend (see e.g.~ \citealt{kastnermoskal18,choiharley19}). The second is that adjoining {\va} to Voice renders it similar to Greek \emph{afto}. But it is not necessary for the two elements to merge in exactly the same location. The third is that since {\va} influences the interpretation of the external argument, adjoining it to Voice seemed most appropriate. Yet it is clear that agentive semantics can be generated low: verbs like \emph{murder} and \emph{devour} are strongly agentive \citep{haspelmath93,unaccusativity95,marantz97,layering15}, a requirement which originates within the vP (at the root). For these reasons, I now think that {\va} adjoins to v, although there are no clinching arguments either way. I thank Odelia Ahdout for discussing this shift with me; see \cite{ahdout19phd} for additional benefits of adjoining {\va} to v, some of which I recap in Chapter~\ref{sec:npass:n}.
+In previous work \citep{kastner16phd,kastner17gjgl,kastner18nllt} I assumed that {\va} modifies Voice, and not v as it does here. There were three reasons for this. The first was that placing {\va} between Voice and a higher element such as T correctly derives certain allomorphic patterns under the strict linear adjacency hypothesis for contextual allomorphy \citep{embick10,marantz13}, as developed in \cite{kastner18nllt}. While I am fond of this argument, much current work argues that this restriction needs to be weakened (see e.g.~\citealt{kastnermoskal18,choiharley19}). The second is that adjoining {\va} to Voice renders it similar to Greek \emph{afto}. However, it is not crucial for the theory that these two elements merge in different locations in different languages. The third is that since {\va} influences the interpretation of the external argument, adjoining it to Voice seemed most appropriate. Yet it is clear that agentive semantics can be generated low: verbs like \emph{murder} and \emph{devour} are strongly agentive \citep{haspelmath93,unaccusativity95,marantz97,layering15}, a requirement which originates within the vP (at the root). For these reasons, I now think that {\va} adjoins to v, although there are no clinching arguments either way. I thank Odelia Ahdout for discussing this shift with me; see \cite{ahdout19phd} for additional benefits of adjoining {\va} to v in the domain of nominalization, some of which I recap in Chapter~\ref{passn:n}.
 
 @@@	
 	\subsection{Semantics}
