@@ -59,7 +59,8 @@ Most verbs in {\tnif} have \textbf{passive} readings in that they are the passiv
 \begin{tabular}{c|>{\em}ll|>{\em}ll}
 Root & \multicolumn{2}{c|}{{\tkal} Causative} & \multicolumn{2}{c}{{\tnif} Anticausative} \\\hline
 \root{'mr} & amar & `said' & neemar & `was said' \\
-\root{mtx} & matax & `stretched' & nimtax  & 'was stretched' \\
+%\root{mtx} & matax & `stretched' & nimtax  & 'was stretched' \\
+\root{bxn} & baxan & `examined' & nivxan & `was examined' \\
 \root{rtsx} & ratsax & `murdered' & nirtsax & `was murdered' \\
 \root{\dgs{k}b'} & kava & `set, decided' & nikba & `was decided'\\
 \end{tabular}
@@ -134,9 +135,9 @@ Agent-oriented adverbs are incompatible with anticausatives but possible with pa
 		\endgl
 	\a
 		\begingl
-		\gla ha-gumi nimtax be-zehirut//
-		\glb the-rubber stretched.\gsc{MID} in-caution//
-		\glft `The rubber was stretched carefully.'//
+		\gla ha-hatsaa nivxen-a be-xaʃaʃ//
+		\glb the-suggestion.\gsc{F} examined.\gsc{MID}-\gsc{F} in-fear//
+		\glft `The suggestion was considered cautiously.'//
 		\endgl
 \xe
 
@@ -160,9 +161,9 @@ Anticausatives are also incompatible with \emph{by}-phrases, which would otherwi
 		\glft `The watch was dismantled by the jeweler.'//
 		\endgl
 	\a \begingl
-		\gla ha-xevel nimtax al-jedej ha-mitmodedim//
-		\glb the-rope stretched.\gsc{MID} by the-contestants//
-		\glft `The rope was stretched by the contestants.'//
+		\gla ha-mitmodedim nivxen-u al-jedej ha-ʃofetet//
+		\glb the-contestants examined.\gsc{MID}-\gsc{PL} by the-referee//
+		\glft `The contestants were judged by the referee.'//
 		\endgl
 \xe
 
@@ -194,10 +195,8 @@ The Hebrew equivalent of `by itself', \emph{me-a{\ts}mo} (lit.~`from himself/its
     
 The tests thus far indicate that anticausatives and inchoatives do not have an external argument, while passives do.
 
-@@@
-
 	\subsubsection{Unaccusativity diagnostics} \label{vz:tnif:nact:unacc}
-The syntactic literature on Hebrew has identified two unaccusativity diagnostics. These diagnostics are verb-subject order and the possessive dative, although it is important to acknowledge that their status as robust tests has been challenged in recent years \citep{gafter14li,linzen14pd,kastner17gjgl}.
+The syntactic literature on Hebrew has identified two main unaccusativity diagnostics. These diagnostics are verb-subject order (VS) and the possessive dative, although it is important to acknowledge that their status as robust tests has been challenged in recent years \citep{gafter14li,linzen14pd,kastner17gjgl}.
 
 \textbf{The first test} is the ordering of the subject and the verb. Modern Hebrew is typically SV(O), but promoted subjects may appear after the verb, resulting in VS order. This is true for both unaccusatives, (\nextx a), and passives, (\nextx b), presumably because the underlying object remains in its original VP-internal position. Unergatives do not allow VS, with the exception of a marked structure referred to as ''stylistic inversion'', (\anextx). For additional discussion see \cite{shlonsky87}, to whom the test is attributed, as well as \cite{shlonskydoron91}, \cite{borer95} and \cite{preminger10} for other aspects.
 
@@ -222,16 +221,27 @@ The syntactic literature on Hebrew has identified two unaccusativity diagnostics
 	\endgl
 \xe
 
-
-\ex VS order:\\
-	\begingl
-	\gla \underline{hit'alf-u} ʃloʃa xajalim ba-hafgana//
-	\glb fainted.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three soldiers in.the-protest//
-	\glft `Three soldiers fainted during the protest.'\trailingcitation{\citep[397]{reinhartsiloni05}}//
-	\endgl
+Anticausatives and inchoatives in {\tnif} allow VS order:
+\pex 
+	\a \begingl
+		\gla nigmer-a kol ha-bamba//
+		\glb ended.\gsc{MID}-\gsc{F} all the-bamba//
+		\glft `The bamba snack ran out.'//
+		\endgl
+	\a \begingl
+		\gla neelm-u me-ha-sifrija ʃloʃa kraxim ʃel britanika//
+		\glb disappeared.\gsc{MID}-\gsc{3PL} from-the-library three volumes of Britannica//
+		\glft `Three volumes of Encyclopedia Britannica disappeared from the library.' \trailingcitation{\citep[142]{shlonsky87}}//
+		\endgl
 \xe
 
-
+As noted by \cite[148]{shlonsky87}, VS order with passives is generally fine but less so when the agent is specified.
+\ex \begingl
+	\gla neexal le-ruti ha-kiwi (*al-jedej ha-xatul)//
+	\glb ate.\gsc{MID} to-Ruti the-kiwi by the-cat//
+	\glft `Ruti's kiwi was eaten.'//
+	\endgl
+\xe
 
 \textbf{The second unaccusativity diagnostic} is the possessive dative, a construction in which the possessor appears in a prepositional phrase in a separate constituent from the possessee (possessor raising). This construction is taken to be unique to internal arguments in the language \citep{borergrodzinsky86}.
 
@@ -245,9 +255,9 @@ A transitive construction is compatible with the possessive dative, (\nextx a), 
 	\endgl
 	
 	\a \begingl
-	\gla\rightcomment{\cmark~Internal Argument}niʃbar l-i ha-ʃaon//
-	\glb broke.\gsc{MID} to-me the-watch//
-	\glft `My watch broke.'//
+		\gla ha-maftexot naflu li//
+		\glb the-keys fell to.me//
+		\glft `My keys fell.'//
 	\endgl
 \xe
 
@@ -258,21 +268,23 @@ A transitive construction is compatible with the possessive dative, (\nextx a), 
 	\endgl
 \xe
   
-
-
-\ex Possessive datives:\\
-	\begingl
-	\gla \underline{nirdam} l-i ha-kelev al ha-regel, ma laasot?//
-	\glb fell.asleep.\gsc{MID} to-me the-dog on the-leg what to.do//
-	\glft `My dog fell asleep on my lap, what should I do?'//
-	\endgl
+Anticausative and inchoative verbs in {\tnif} are compatible with the possessive dative, again because it presumably targets the internal argument.
+\pex
+	\a 	\begingl
+		\gla\rightcomment{\cmark~Internal Argument}niʃbar l-i ha-ʃaon//
+		\glb broke.\gsc{MID} to-me the-watch//
+		\glft `My watch broke.'//
+		\endgl
+	\a 	\begingl
+		\gla nirdam l-i ha-kelev al ha-regel, ma laasot?//
+		\glb fell.asleep.\gsc{MID} to-me the-dog on the-leg what to.do//
+		\glft `My dog fell asleep on my lap, what should I do?'//
+		\endgl
 \xe
 
-Passives are irrelevant but do pass the diagnostics.
+Taken together, these tests establish that anticausatives and inchoatives are unaccusative but the passive verbs are not (since the latter disallow `by itself'). A common assumption in the Hebrew literature is that verbs in this template are all non-active, but we will next consider another class of verbs in {\tnif}, the figure reflexives, which behave differently with regard to these tests.
 
-Taken together, these tests confirm what the derivation using {\vz} led us to expect: that at least these verbs in {\tnif} are anticausative. A common assumption in the Hebrew literature is that verbs in this template are all non-active, but the next section proposes a different analysis for another class of verbs in {\tnif}, one which correlates their different syntax and semantics with the height in which the [--D] head attaches.
-
-	
+@@@
 	\subsection{Figure reflexives} \label{vz:tnif:figrefl}
 It has been commonly assumed that verbs in {\tnif} are medio-passive, but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. I call them figure reflexives, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. 
 
@@ -327,6 +339,12 @@ The \textbf{possessive dative} is likewise incompatible with figure reflexives; 
 	\glft (int. 'My cat keeps coming into into my room, what should I do?')//
 	\endgl
 \xe
+
+%\cite[133ff]{shlonsky87}: lehikanes is not unacc (Borer p.c.)
+%*be-emtsa ha-seret nixnesu li jeladim raaSanim
+%in the middle of the movie (there) entered noisy children and it aggravated me
+%be-emtsa ha-seret nikreu li ha-mixnasaim
+%in the middle of the movie my pants tore
 
 This brief comparison with non-actives shows that figure reflexives pattern differently. That is one main difference, namely the existence of an external argument. The second is the complement of these verbs, as I discuss next.
 
@@ -993,6 +1011,13 @@ Anticausatives in {\thit} are also compatible with the two unaccusativity diagno
 %	\endgl
 %\xe
 
+%	\a \begingl
+%	\gla \underline{hit'alf-u} ʃloʃa xajalim ba-hafgana//
+%	\glb fainted.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three soldiers in.the-protest//
+%	\glft `Three soldiers fainted during the protest.'\trailingcitation{\citep[397]{reinhartsiloni05}}//
+%	\endgl
+
+% ha-pgiSa hitaxra li
 
 In this context in is also worth mentioning that the view of anticausatives in {\thit} as alternants of a an agentive transitive verb in {\tpie} is unexpected under a conception which has proven popular in previous work on argument structure. The purported generalization is that decausativization can only occur if the external argument of the causative verb is not specified with respect to its thematic role, i.e.~can be a Cause \citep{unaccusativity95,reinhart02}. If verbs in {\tpie} are indeed agentive, but can nonetheless be decausativized into an anticausative in {\thit}, this generalization will need to be amended, but I will not do that here; see \citet[52]{layering15} for an overview of related work and ideas.
 
