@@ -479,53 +479,61 @@ In terms of structure, \textbf{inchoatives} are identical to anticausatives and 
 Two brief points should be mentioned here. First, the relevant feature on Voice has been characterized as [$\pm$D] throughout. This raises the immediate question of whether PPs are possible in Spec,{\vz}. Hebrew does not have PP subjects of the Slavic type, so the question is moot; if it turns out that a different EPP-like feature needs to be used, not much will change in the theory. The second point is that in a trivalent theory of Voice, {\vz} prohibits something from merging in its specifier. This is not the same as the bivalent theories mentioned above, in which Expletive Voice does not project a specifier. This conceptual difference, and the empirical differences it brings up, are addressed in Chapter~\ref{chap:aas}.
 
 	\subsection{Semantics} \label{vz:vz:sem}
-
-underspecification:
-\pex\label{sem-feat}Semantics (abstracting away from Agent $\neq$ Cause):
-	\a \denote{\vd} = $\lambda x \lambda e$.Agent($x,e$)
-	\a \denote{Voice}\phantom{.......} = $\begin{cases}
-		\lambda x \lambda e.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{eat}}, \dots\} }\\
-		\lambda e.e & \text{/ \trace \{\root{\gsc{fall}}, \dots\} }\\
-	\end{cases}$
-	\a \denote{\vz}\phantom{.} = $\begin{cases}
-		\lambda e \exists x.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{write}}, \dots\} }\\
-		\lambda e.e & \\
-	\end{cases}$
+The denotations of {\vz} are as follows:
+\ex \label{ex:vz-sem}\denote{\vz}\phantom{.} = $\begin{cases}
+		\text{a.} \lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
+%		\lambda e \exists x.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{write}}, \dots\} }\\
+		\text{b.} \lambda P$_{<s,t>}$.P & \\
+		\end{cases}$
 \xe
+Two issues need to be unpacked. The first is the difference between unaccusatives and passives. The second has to do with the composition of inchoatives.
 
-%= λPλe∃x.e \& Agent(x,e) \& Theme(...) / {√rcx ‘murder', √amr ‘say’ (...)}
-%= λP.P (elsewhere = unaccusative)
+The interpretation rules in~(\lastx) exhibit a case of contextual allosemy: a functional head has one interpretation in one context, and another in another context. Specifically, I assume that the default function of {\vz} is the identity function in~(\lastx b): it takes an event of breaking, for example, and does not modify it. Crucially, it does not add an Agent role.
 
-\pex
-	\a {[}T [{\vz} vP]]\\
-	Non-active verb in {\tnif} (anticausative or inchoative).
-	\a {[}T [{\vz} [{\va} vP]]]\\
-	Non-active verb in {\thit} (anticausative or inchoative).
-\xe
+Some roots (in fact many of them) derive passive verbs when combining with {\tnif}. This situation is similar to that of Greek, where verbs with the non-active suffix might be unaccusative or passive. In saying this I am simplifying the empirical picture considerably but the core point remains that a non-active head is underspecified with regards to passive and unaccusative readings. \cite{alexiadoudoron12} made this point explicit for Hebrew and Greek, and \cite{layering15} elaborated on it for Greek. The rules in~(\lastx) implement this intuition formally.\footnote{Although I do not have any formally insightful way of modeling the cases of ambiguity broached earlier. Perhaps both clauses of~\ref{ex:vz-sm} need to be contextualized to lists of roots.}
 
-The question is, given that {\vz} is supposed to be minimally different than Voice, what does it mean when Voice cannot combine with the vP but {\vz} can.
-
-
-Our theory of {\vz} has so far been silent as to the exact status of the vP with which it merges. In principle, we would expect the vP to describe an event which might then receive an Agent, as in the cases in Section~\ref{vz:nact:anticaus}. But Hebrew has another surprise up its sleeve: cases where the vP has no meaning when we attempt to Merge it with Voice, only when when merged with {\vz}. This section sharpens the empirical picture and draws conclusions for theories of locality in morphosemantics. The so-called ``Arad/Marantz Hypothesis'' claims that the first categorizing head merging with a root selects the exact meaning of the root. My tweak, based on the behavior of {\vz}, is that it is the first \emph{contentful} functional head merging with a root which selects the meaning of the latter, in a sense I make clear below.
-
+The second issue in the semantics of {\vz} has to do with composing inchoatives. In what follows I delve a bit deeper into inchoatives in an attempt to understand how a compositional syntax/semantics works in these cases, where there is no alternating active verb and no obvious vP for {\vz} to combine with. Readers who are not troubled by the compositional details may want to skip ahead to section~\ref{vz:vz:phono}, on the morphophonology of {\vz}.
 
   		\subsubsection{Null allosemy in inchoatives} \label{vz:inch:analysis}
-Theories of Voice like the current one or that of \cite{layering15} adopt the so-called \textbf{Arad/Marantz Hypothesis} \citep{elenasamioti14}, according to which the first categorizing head selects the meaning (or alloseme) of the root \citep{arad03,marantz13}. What I will assume next is that certain configurations allow for interpretations of the root conditioned by a high functional head (in this case {\vz}) over a lower functional head (v). The theory involved is one in which allosemy is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements only \citep{marantz13,kastner18nllt}.
+Recall the relevant semantics of {\vz}:
+\ex \denote{\vz} = $\lambda P$_{<s,t>}$.P$
+\xe
+This works well when the underlying vP is an event of breaking a glass, like in our running example. In principle, we expect the vP to describe an event which might then receive an Agent (with Voice) or not ({\vz}). But what if there is not [Voice vP] structure, i.e.~no active verb in {\tkal}, as in \emph{nirdam} `fell asleep'? It is not derived from a causative verb *\emph{radam} because there is no such verb (nor has there been in the history of the language, as far as I know).
 
-In~(\ref{ex:vz:allosemy-decaus}a), the combination of v and \root{sgr} results in a contentful combination, the predicate of closing events. The root can have various related meanings, but at this point in the derivation its meaning has been chosen. As a consequence, any higher material will in principle only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root (this point will be expanded in Chapter~\ref{vd:caus}). {\vz} has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:vz:allosemy-decaus}b). These were the anticausatives discussed earlier.
+Two solutions come to mind, though I will not adjudicate between them. The first assumes that the vP does exist with its own semantics but cannot combine with Voice for arbitrary reasons. The second assumes that {\vz} is what selects the meaning of the root (rather than v).
+
+\paragraph{No licensing of Voice.} One recurrent issue in the morphology of Semitic languages is that not every root can appear in every possible template. At some level a root must list which functional heads it can combine with; let us call this ``licensing'' in a way which does not commit to any specific implementation. For example, \root{ʃbr} licenses Voice (\emph{ʃavar} `broke'), {\va} (\emph{ʃiber} `broke to pieces') and {\vz} (\emph{niʃbar} `was broken'), but not {\vd} of Chapter~\ref{chap:vd} (*\emph{heʃbir}). Every root must list this kind of information; the morphological system is riddled with such arbitrary gaps.
+
+It could be, then, that the minimal vP in~(\nextx) is a valid syntactic object, awaiting some element at the Voice layer in order to satisfy some well-formedness condition (be it morphological or phonological; recall that the Voice layer introduces the stem vowels).
+\ex
+	\Tree
+	[.vP
+		[.v
+			[.\root{rdm} ]
+			[.v ]
+		]
+		[.DP ]
+	]
+\xe
+
+Then, \root{rdm} simply does not license unspecified Voice. But it can still combine with {\vz} if it does license it. The rule of interpretation above does not need to be changed. The cost is acknowledging the idiosyncrasy of the system to a greater degree than before: why is it that precisely these roots do not license Voice and do license {\vz}? Is there some lexical-semantic generalization to be made? Can we find cases of the core vP embedded under another category head? Can unspecified Voice be added in innovations? I set these questions aside.
+
+\paragraph{Weakening the Arad/Marantz Hypothesis.} Theories of Voice like the current one or that of \cite{layering15} usually adopt the so-called \textbf{Arad/Marantz Hypothesis} \citep{elenasamioti14}, according to which the first categorizing head merging with a root selects the meaning of the root \citep{arad03,marantz13}. For verbs, this is always v. What we could assume instead is that certain configurations allow for interpretations of the root conditioned by a high functional head (in this case {\vz}) over a lower functional head (v). The theory involved is one in which allosemy is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements (\citealt{embick10} et seq, but compare \cite{kastnermoskal18}).
+
+Consider anticausatives once more. In~(\ref{ex:vz:allosemy-decaus}a), the combination of v and \root{ʃbr} results in a contentful combination, the predicate of breaking events. The root can have various related meanings, but at this point in the derivation its meaning has been chosen. As a consequence, any higher material will in principle only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root (this point will be expanded in Chapter~\ref{vd:caus}). {\vz} has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:vz:allosemy-decaus}b).
 \pex Locality in interpretation: anticausatives.\label{ex:vz:allosemy-decaus}
-    \a \fbox{{[}v \root{sgr}~\!]} = $\lambda$x$\lambda$e.\emph{closing}(e) \& Theme(x,e)
-    \a {[} \fbox{\textbf{\vz}} \fbox{[\emph{close}]} ] = \emph{nisgar} `got closed'
+    \a {[}v \root{ʃbr}~\!] = $\lambda$x$\lambda$e.\emph{break}(e) \& Theme(x,e)
+    \a {[} \textbf{\vz} [\emph{break}] ] = \emph{niʃbar} `got broken'
 \xe
 
-If a given root combines with v to be verbalized, it is possible that v introduces an event variable but carries no additional semantic content when combined with this root. No verb results in this configuration,~(\ref{ex:vz:allosemy-incho}a). As a result, the next functional head will have a chance to select the interpretation of the root, as with \vz~in~(\ref{ex:vz:allosemy-incho}b). In a sense, the root selects for a specific additional functional head.
+If a given root combines with v to be verbalized, it is possible that v introduces an event variable but carries no additional semantic content when combined with this root. No verb results in this configuration,~(\ref{ex:vz:allosemy-incho}a). As a result, the next functional head will have a chance to select the interpretation of the root, as with {\vz} in~(\ref{ex:vz:allosemy-incho}b). In a sense, the root selects for a specific additional functional head.
 \pex Locality in interpretation: inchoatives.\label{ex:vz:allosemy-incho}
-    \a \dbox{{[}v \root{rdm}~\!]} -- undefined
-    \a {[} \fbox{\textbf{\vz}} \dbox{[(v) \root{rdm}~\!]} ] = `fell asleep'
+    \a {[}v \root{rdm}~\!] = undefined
+    \a {[} \textbf{\vz} [(v) \root{rdm}~\!] ] = `fell asleep'
 \xe
 
-	\subsubsection{Null allosemy crosslinguistically}
-These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). Glosses are his.
+\paragraph{Null allosemy crosslinguistically}
+These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). The glosses are his.
 \pex
 	\a \begingl
 		\gla Giovanni \textbf{si} sbaglia//
@@ -577,12 +585,19 @@ In fact, the part of the structure consisting of the root and verbalizer might n
 
 In a similar vein, \cite{marantz13} argues that an \emph{atomized individual} need not have undergone atomization, and analyzes a similar phenomenon in Japanese ``continuative'' forms that must be vacuously verbalized first{ before being nominalized} \citep{volpe05}. \cite{anagnostopoulou14thli} extends this idea of a semantically null exponent to cases like -\emph{ify}- in \emph{the class\underline{ifie}ds} (but see \citealt{borer14lingua} for a dissenting view).
 
-In sum, we have evidence that v can be active in the semantics without selecting an alloseme of the root, allowing a higher {\vz} head to derive nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable. This analysis leaves open the possibility of the forms such as *\emph{radam} or \emph{ilef} arising as an innovation. This does seem to be the case for the latter: although \emph{hitalef} `fainted' is not derived from active *\emph{ilef} in standard usage, for some younger speakers it is possible to say $^{\%}$\emph{ilef} to mean `amazed' figuratively \citep{laks14}.
-
-With the empirical picture for configurations with {\vz} (and {\pz}) wrapped up, I turn to a few alternative approaches.
+In sum, we have evidence that v can be active in the semantics without selecting an alloseme of the root, allowing a higher {\vz} head to derive nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable.
+%This analysis leaves open the possibility of the forms such as *\emph{radam} or \emph{ilef} arising as an innovation. This does seem to be the case for the latter: although \emph{hitalef} `fainted' is not derived from active *\emph{ilef} in standard usage, for some younger speakers it is possible to say $^{\%}$\emph{ilef} to mean `amazed' figuratively \citep{laks14}.
 
 	
 	\subsection{Phonology} \label{vz:vz:phono}
+I give the basic Vocabulary Item for {\vz} using shorthand:
+\ex {\vz} \lra~{\tnif}
+\xe
+
+More precisely, {\vz} consists of the prefix \emph{ni-} in the past tense, a person/number/gender-conditioned allomorph in the future (\emph{e-}/\emph{ti-}/\emph{ji-}/\emph{ni-}), and certain stem vowels. Full paradigms can be found elsewhere, e.g.~\cite{schwarzwald08}. Additional morphophonological details are given in~\cite{kastner18nllt}, although there are no full derivations of {\tnif} there.
+
+{\vz} has the allomorph {\thit} in the context of {\va}; see Section \ref{vz:va:vzva}.
+
 
 
 \section{\pz} \label{vz:pz}
