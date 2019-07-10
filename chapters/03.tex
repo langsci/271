@@ -402,7 +402,7 @@ Total per construction		& 196		&	275				& 74 & \multicolumn{3}{l}{} \\
 
 Before concluding the empirical exposition of {\tnif}, a few counterexamples should be noted. As far as I could find, these are the only verbs which do not fit cleanly into the classes surveyed above. There are two verbs of emission, \emph{neenax} and \emph{neenak}, both of which mean `sighed, groaned, moaned'. Verbs of emission are generally unergative in Hebrew \citep{siloni12,gafter14li} but these verbs do not take a PP complement. The two verbs \emph{nizak} and \emph{nexpaz} `rushed, hurried' take a clausal complement, probably a TP, rather than a PP. See \citet[126]{kastner16phd} for brief discussion and speculation. And the verb \emph{nexgar} `buckled up' seems to have a purely reflexive reading, rather than non-active or figure reflexive.
 
-These points for further research aside, the generalizations about {\tnif} are as follows:
+These points for further research aside, the generalizations about {\tnif} are as follows. In terms of the constructions we see associated with this template, we have found all manner of non-active verbs as well as figure reflexives. What we never find in this template is simple transitive constructions consisting of a subject, verb and direct object. There are also no purely reflexive verbs (this will contrast with {\thit} later in the chapter). In terms of alternations, many active (and stative) verbs in {\tkal} have a non-active alternation with {\tnif}. A summary of these points is presented in~(\nextx).
 
 \hammer{
 \pex \label{ex:gen-tnif}\textbf{Generalizations about {\tnif}}
@@ -413,25 +413,28 @@ These points for further research aside, the generalizations about {\tnif} are a
 
 The non-active verbs are analyzed next, in Section~\ref{vz:vz}. Figure reflexives are analyzed in Section~\ref{vz:pz}.
 
-@@@
+
 \section{\vz} \label{vz:vz}
-The non-active variant of Voice is {\vz}, defined in~(\nextx).
+To explain the behavior of non-active verbs in {\tnif} I propose the head {\vz}. This non-active variant of unspecified Voice is defined in brief in~(\nextx). The syntax of {\vz} is similar to that of ``middle Voice'', ``non-active Voice'' or Voice$_{\{\}}$ of much related work in that it does not license a specifier of Voice \citep{lidz01,schaefer08,alexiadoudoron12,layering15,bruening13,wood15springer,myler16mit,kastnerzu17}. Its semantics does not introduce an Agent, and the Vocabulary Item spelling it out manifests as the template {\tnif}, and not as {\tkal}. The rest of this section engages more directly with the syntax, semantics and phonology of this element. In Section \ref{vz:va:vzva} I will refine the picture slightly by explaining what happens when {\va} is added to the structure.
+
 \pex \textbf{\vz}
 	\a A Voice head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.\\
     As typically assumed for unaccusative little \emph{v} or unaccusative Voice, {\vz} does not assign accusative case either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
-	\a \denote{{\vz}} = λP$_{<s,t>}$.P
-	\a {\vz} \lra~{\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va})
+%	\a \denote{{\vz}} = λP$_{<s,t>}$.P
+	\a \denote{\vz}\phantom{.} = $\begin{cases}
+		\lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
+%		\lambda e \exists x.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{write}}, \dots\} }\\
+		\lambda P$_{<s,t>}$.P & \\
+		\end{cases}$
+	\a {\vz} \lra~{\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va:vzva})
 \xe
 
-
-
+This basic distinction between Voice and {\vz} in the syntax thus feeds differences across the interfaces: the spell-out is different, the semantics is different and the syntax of the resulting constructions is different. 
 
 	\subsection{Syntax} \label{vz:vz:syn}
-The syntax of {\vz} is similar to that of ``middle Voice'', ``non-active Voice'' or Voice$_{\{\}}$ \citep{lidz01,schaefer08,alexiadoudoron12,layering15,bruening13,wood15springer,myler16mit,kastnerzu17} in that it does not license a specifier of Voice. Its semantics does not introduce an Agent, and the Vocabulary Item spelling it out manifests as the template {\tnif}, and not as {\tkal}. The morphophonological details are fleshed out in \citep{kastner18nllt}; in Section \ref{vz:va} I will refine the picture slightly by explaining what happens when {\va} is added to the structure.
+Voice and {\vz} function in a way familiar from the work cited immediately above. Verb phrases (vPs) contain no reference to the external argument; the position they are merged in (Spec,VoiceP) is licensed by Voice in the syntax and their thematic role (Agent) is introduced by Voice in the semantics. What this means is that a vP is a predicate of events (potentially transitive ones) with no inherent reference to the thematic role of Agent stemming from the syntax.
 
-Voice and {\vz} function in a way familiar from the work cited immediately above. Verb phrases (vPs) contain no reference to the external argument, a position (Spec,VoiceP) which is licensed by Voice in the syntax and whose thematic role (Agent) is introduced by Voice in the semantics. What this means is that a vP is a predicate of events (potentially transitive ones).
-
-Continuing with an example from the previous chapter, we have seen that the verb \emph{ʃavar} `broke' in {\tkal} is made up of a vP, denoting a set of breaking events, and the head Voice that introduced an addition external argument, (\nextx).
+Continuing with an example from the previous chapter, we have seen that the verb \emph{ʃavar} `broke' in {\tkal} is made up of a vP, denoting a set of breaking events, and the head Voice that introduced an external argument, (\nextx).
 \ex \emph{XaYaZ}, \emph{ʃavar} 'broke' \\
 \Tree
 	[.VoiceP
@@ -449,8 +452,7 @@ Continuing with an example from the previous chapter, we have seen that the verb
 	]		
 \xe
 
-Merging {\vz} instead of Voice should give us the same basic breaking event with no external argument. I will refer to these verbs specifically as \emph{anticausatives}; anticausative verbs differ minimally from their causative alternants in that no external argument is introduced. The grammar might build a transitive vP as above (verbalizer, root and internal argument) and merge {\vz}. This configuration gives us \emph{niʃbar} `broke' in~(\nextx). Since no external argument can be merged in the specifier of {\vz}, the structure in~(\nextx) is unaccusative.
-
+Merging {\vz} instead of Voice should give us the same basic breaking event with no external argument. These are precisely the \textbf{anticausatives}: verbs which differ minimally from their active alternants in that no external argument is introduced. Continuing our example, the grammar can build a core vP as above (verbalizer, root and internal argument) and merge {\vz}. This configuration gives us \emph{niʃbar} `broke' in~(\nextx). Since no external argument can be merged in the specifier of {\vz}, the structure in~(\nextx) is unaccusative. The crossed out specifier position is used as notation to make this explicit.
 \ex {\tnif}, \emph{niʃbar} 'got broken' \\
 \Tree
 	[.VoiceP
@@ -468,22 +470,13 @@ Merging {\vz} instead of Voice should give us the same basic breaking event with
 	]		
 \xe
 
-This basic distinction between Voice and {\vz} in the syntax thus feeds differences across the interfaces: the spell-out is different, the semantics is different and the resulting constructions are different. This basic machinery is again familiar from languages such as Greek \citep{alexiadoudoron12,layering15} and allows us to derive some typical argument structure alternations in the language. The idea that verbs in this template are anticausative variants of those in {\tkal} is certainly not new. However, the explicit morphosyntactic implementation is (see also \citealt{kastner17gjgl} and \citealt{ahdoutkastner18}), providing a necessary backdrop for the analyses of figure reflexives and reflexives coming up.
+The idea that verbs in this template are anticausative variants of those in {\tkal} is certainly not new. However, the explicit morphosyntactic implementation is (see also \citealt{kastner17gjgl}), providing a necessary backdrop for the analyses of figure reflexives and reflexives coming up.
 
+The same structure derives passives in {\tnif}. I subscribe to the view according to which the implicit external argument of the passive is not projected in the syntax at all (\citealt{layering15}; see \citealt{bhattpancheva17} for discussion). The analysis of {\tnif} provides support for this view, since otherwise {\vz} would need to have two distinct syntactic specifications (no specifier or implicit agent) licensed by different roots.
 
+In terms of structure, \textbf{inchoatives} are identical to anticausatives and passives. A brief refresher is given in~(\nextx). The only difference is that the underlying vP does not have an interpretation with Voice, a matter of the semantic interpretation, discussed next.
 
-In terms of structure, inchoatives are identical to anticausatives. A brief refresher is given in~(\nextx).
-\pex
-	\a {[}T [{\vz} vP]]\\
-	Non-active verb in {\tnif} (anticausative or inchoative).
-	\a {[}T [{\vz} [{\va} vP]]]\\
-	Non-active verb in {\thit} (anticausative or inchoative).
-\xe
-
-The question is, given that {\vz} is supposed to be minimally different than Voice, what does it mean when Voice cannot combine with the vP but {\vz} can.
-
-
-
+@@@
 	\subsection{Semantics} \label{vz:vz:sem}
 
 underspecification:
@@ -499,8 +492,17 @@ underspecification:
 	\end{cases}$
 \xe
 
-= λPλe∃x.e \& Agent(x,e) \& Theme(...) / {√rcx ‘murder', √amr ‘say’ (...)}
-= λP.P (elsewhere = unaccusative)
+%= λPλe∃x.e \& Agent(x,e) \& Theme(...) / {√rcx ‘murder', √amr ‘say’ (...)}
+%= λP.P (elsewhere = unaccusative)
+
+\pex
+	\a {[}T [{\vz} vP]]\\
+	Non-active verb in {\tnif} (anticausative or inchoative).
+	\a {[}T [{\vz} [{\va} vP]]]\\
+	Non-active verb in {\thit} (anticausative or inchoative).
+\xe
+
+The question is, given that {\vz} is supposed to be minimally different than Voice, what does it mean when Voice cannot combine with the vP but {\vz} can.
 
 
 Our theory of {\vz} has so far been silent as to the exact status of the vP with which it merges. In principle, we would expect the vP to describe an event which might then receive an Agent, as in the cases in Section~\ref{vz:nact:anticaus}. But Hebrew has another surprise up its sleeve: cases where the vP has no meaning when we attempt to Merge it with Voice, only when when merged with {\vz}. This section sharpens the empirical picture and draws conclusions for theories of locality in morphosemantics. The so-called ``Arad/Marantz Hypothesis'' claims that the first categorizing head merging with a root selects the exact meaning of the root. My tweak, based on the behavior of {\vz}, is that it is the first \emph{contentful} functional head merging with a root which selects the meaning of the latter, in a sense I make clear below.
