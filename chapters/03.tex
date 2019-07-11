@@ -665,7 +665,7 @@ An ordinary prepositional phrase in Hebrew is given in~(\nextx), for a verb in {
 		]
 \xe
 
-			\subsubsection{Figure reflexives}
+			\subsubsection{Figure reflexives} \label{vz:pz:syn:figrefl}	
 The similarities between Voice and \emph{p} will play a crucial part in what follows. Both heads introduce external arguments within their extended projection and both are usually silent (though Voice can be argued to trigger the phonology of {\tkal}, as in Chapter~\ref{voice:voice:phono}). Continuing this reasoning, and following \cite{wood15springer}, I postulate a variant of \emph{p}, namely {\pz}, which prohibits the Merge of a DP in Spec,\emph{p}P, (\nextx).
 \pex
 	\a \textbf{\pz:}\\
@@ -1250,40 +1250,18 @@ To summarize the empirical overview of {\thit}, it is similar to {\tnif} in some
 \xe
 }
 
-@@@
+
 \section{Adding {\va} to [--D]} \label{vz:va}
+The data above highlights the puzzle of reflexive verbs: why are they possible in {\thit} and only in {\thit}? In this section I provide analyses of the phenomena above, all based on the idea that this template is morphosyntactically (and hence morphophonologically) the most complex. Reviewing the analysis in \cite{kastner17gjgl}, I will propose that reflexives and anticausatives share an unaccusative structure, but that the root constrains the derivation in a specific way. Reflexive verbs are argued to be the result of unaccusative syntax (\vz) with an agentive modifier (\va) and particular, self-oriented lexical semantics. The crucial point for our overall purposes is that the reflexive readings fall out naturally from the unique combinatorics of {\vz} and {\va}, a combination of elements which no other template can provide.
 
-
-In addition to providing further support for the analyses of anticausatives and figure reflexives, {\thit} poses its own puzzle: reflexive verbs appear only in this template, which also happens to be morphosyntactically (and hence morphophonologically) the most complex. Reviewing the analysis in \cite{kastner17gjgl}, I will propose that reflexives and anticausatives share an unaccusative structure, but that the lexical semantics of the root constrains the derivation. Reflexive verbs are argued to be the result of unaccusative syntax (\vz) with an agentive modifier (\va) and particular, self-oriented lexical semantics. The crucial point for our overall purposes is that reflexive readings fall out naturally from the combinatorics of {\vz} and {\va}.
-
-
+Section~\ref{vz:va:vzva} analyzes the combination of {\va} with {\vz}, yielding non-active verbs and reflexives. Section~\ref{vz:va:pzva} rounds off the picture with the derivation of figure reflexives.
 
 	\subsection{{\va} + {\vz}} \label{vz:va:vzva}
 		\subsubsection{Non-active verbs}
-
-The semantics relevant to {\va} is repeated in~(\nextx):
-\pex\label{ex:vz:denote-va}
-	\a \denote{Voice} \lra~$\lambda$e$\lambda$x.Agent(x,e) / \trace~\va
-	\a \denote{Voice} \lra~$\lambda$e$\lambda$x.\gsc{CAUS}e(x,e) or $\lambda$e$\lambda$x.Agent(x,e)
-\xe
-
-While this formalization aims to be explicit, I have taken a few shortcuts. First, as already argued for by \cite{layering15}, it is the vP which already provides the causative component, not Voice. The formalization in~(\lastx) is meant to indicate that both Causes and Agents are compatible with Voice, but that only Agents are possible once {\va} is in the structure. In this section we will see two allosemes of {\vz}, one the identity function we are familiar with and one the agentive version one would expect from {\va}, (\nextx). What we will see in Section~{\ref{vz:va:refl} is that even with {\va}, the non-active alloseme can still be triggered by specific roots.
-\pex 
-	\a \denote{\vz} \lra~$\lambda$e$\lambda$x.Agent(x,e) / \trace~\va
-	\a \denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P
-\xe
-
-This straightforward combination of {\va} and {\vz} predicts that an event expressed by [{\va} vP] can either receive an external argument, if we merge Voice, or not, if we merge {\vz}. This state of affairs is exactly what we find; much of the literature talks of {\tpie} and {\thit} alternating (\citealt{doron03}, \citealt{arad05}, as well as much previous work and the traditional grammars).
-
-The unprefixed base forms in {\tpie} is active, (\nextx), but the derived verb is not compatible with agent-oriented adverbs, (\anextx).
+Syntactic structure building proceeds as usual. We will see this by deriving the alternation between causative \emph{pirek} in {\tpie} and anticausative \emph{hiparek} in {\thit}. The combination of {\va} and vP predicts that an event expressed by [{\va} vP] can either receive an external argument, if we merge Voice, or not, if we merge {\vz}. This state of affairs is exactly what we find; much of the literature talks of {\tpie} and {\thit} alternating (\citealt{doron03}, \citealt{arad05}, as well as much previous work and the traditional grammars).
 
 \pex
-	\a \begingl
-	\gla ha-{ts}oref \textbf{pirek} et ha-{ts}amid (be-mejomanut).//
-	\glb the-jeweler dismantled.\gsc{INTNS} \gsc{ACC} the-bracelet in-skill//
-	\glft `The jeweler took the bracelet apart.'//
-	\endgl
-	\a 
+	\a \emph{pirek} `dismantled'\\
 	        \scalebox{1}{
 				\Tree
 		        [.VoiceP
@@ -1303,16 +1281,7 @@ The unprefixed base forms in {\tpie} is active, (\nextx), but the derived verb i
 		            ]
 		        ]
 		        }
-\xe
-
-\pex
-	\a \begingl
-	\gla ha-{ts}amid \textbf{hitparek} ({\cmark} me-a{ts}mo / {\xmark} be-mejomanut / {\xmark}~al-jedej ha-{ts}oref).//
-	\glb the-bracelet dismantled.\gsc{INTNS.\gsc{MID}} {} from-itself {} {} in-skill {} {\phantom{\xmark}}~by the-jeweler//
-	\glft `The bracelet fell apart of its own accord.'//
-	\endgl
-
-	\a {\thit}, \emph{hitparek} `fell apart'\\
+	\a \emph{hitparek} `fell apart'\\
      \scalebox{1}{
 			\Tree
       [.VoiceP
@@ -1332,24 +1301,47 @@ The unprefixed base forms in {\tpie} is active, (\nextx), but the derived verb i
           ]
       ]
       }
+	
 \xe
 
+The semantics relevant to {\va} is repeated in~(\nextx):
+\pex \denote{Voice} = 
+	\a $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \}
+	\a $\lambda$x$\lambda$e.Agent(x,e) or $\lambda$x$\lambda$e.Cause(x,e)
+	\a $\lambda$x$\lambda$e.e \& \text{Agent}(x,e) / \trace~\va
+%		 & \text{/ \trace~\{ \root{trf} `\root{\gsc{DEVOUR}}', \root{ktb} `\root{\gsc{WRITE}}', \root{ntn} `\root{\gsc{GIVE}}',}\\
+%			& \text{\root{ʃal} `\root{\gsc{BORROW}}', \root{\gsc{r\dgs{k}d}} `\root{\gsc{dance}}', \root{\gsc{hlx}} `\root{\gsc{WALK}}', \dots\} }\\
+\xe
 
-When we put the pieces together, however, we find that {\va} could not have effected agentive semantics. \cite{kastner17gjgl} proposes that the rule of allosemy in~(\ref{ex:vz:thit-impov}) removes the agentivity requirement of {\va}~for roots such as \root{pr\dgs{k}}. \cite{kastner16phd,kastner17gjgl} develops a view of roots according to which their lexical semantics determines, at least in part, whether they will trigger the rule in~(\ref{ex:vz:thit-impov}). This change renders the resulting verb \emph{hitparek} `fell apart' anticausative, rather than a potential reflexive such as `tore himself to pieces'. The process can be likened to impoverishment \citep{bonet91,noyer98} in the semantic component (cf.~\citealt{nevins15roots}.
+In this section we will see two allosemes of {\vz}, one the identity function we are familiar with (\nextx c) and one the agentive version one would expect from {\va} (\nextx a). The passive alloseme (\nextx b) is repeated for completeness, but there is no rule invoking it in the context of {\va}.
+\pex \label{ex:vz-denote}
+	\a \denote{\vz} \lra~$\lambda$x$\lambda$e.Agent(x,e) / \trace~\va
+	\a \denote{\vz} \lra~$\lambda$P$\lambda$e$\exists$x.Agent(x,e) \& P(e) / \trace~\{\root{rtsx} `murder', \root{'mr} `say’, \dots\}
+	\a \denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P
+	pass
+\xe
+
+When we put the pieces together, however, we find that we do not get \textbf{anticausative} (causative but non-agentive) semantics. The translations in~(\nextx) cannot be the whole story because (\lastx a) straightforwardly entails agentive semantics for verbs in {\thit}.
+
+\cite{kastner17gjgl} proposes that the rule of allosemy in~(\ref{ex:vz:thit-impov}) removes the agentivity requirement of {\va}~for roots such as \root{pr\dgs{k}} which give anticausatives. \cite{kastner16phd,kastner17gjgl} develops a view of roots according to which their lexical semantics determines, at least in part, whether they will trigger the rule in~(\ref{ex:vz:thit-impov}). This change renders the resulting verb \emph{hitparek} `fell apart' anticausative, rather than a potential reflexive such as `tore himself to pieces'. The process can be likened to impoverishment \citep{bonet91,noyer98} in the semantic component (cf.~\citealt{nevins15roots}).
 \ex\label{ex:vz:thit-impov}\denote{\va~\!} $\rightarrow$ {\zero} / {\vz} \trace~\{\root{XYZ} | 
  \root{XYZ} $\in$ 
  \\ \phantom{a} \hfill 
 	\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
 \xe
 
-@inchoatives are the same
+Another way of encoding this information would have been to build it right back into the denotations of Voice, as in~(\nextx):
+\ex Addition to~(\blastx), to be rejected:\\
+	\denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
+\xe
+The problem here is one of locality: the root is separated from {\vz} by {\va}. Existing theories of contextual allosemy maintain a strict linear adjacency requirement between trigger and alloseme \citep{marantz13,kastner16phd}. The kind of action-at-a-distance typical of roots licensing a head is more similar to impoverishment, which again happens at a distance.
 
-@passives??
+To summarize informally, {\va} brings in an agentive requirement, but it is also close enough to the root for certain roots to disable this requirement. It is probably no accident that these roots relate to events which are ``other-oriented'' like dismantling and cooking; see \cite{kastner17gjgl} for additional discussion of this point.
 
-
+With anticausatives explained, not much remains to be said about \textbf{inchoatives} beyond the discussion of those in {\tnif} from Section~\ref{vz:vz:sem}. And finally, \textbf{passives} do not arise either. This behavior is captured by the rules in~(\ref{ex:vz-denote}) but is not explained by them (we could just as well have written a rule generating the passive alloseme of {\vz} in the context of {\va}. I have no deeper explanation to propose at this point. Returning to a simple composition of {\vz} and {\va}, however, leads us to an understanding of reflexives.
 
 	\subsubsection{Reflexives}
-This section is concerned with the combination of {\va} and {\vz}. The intuition behind the analysis of reflexives is similar: reflexive verbs in {\thit} consist of an unaccusative structure with extra agentive semantics. This combination is only possible if the internal argument is allowed to saturate the semantic function of an external argument, in the way formalized here.
+The intuition behind the analysis of reflexives is as follows: reflexive verbs in {\thit} consist of an unaccusative structure with extra agentive semantics. This combination is only possible if the internal argument is allowed to saturate the semantic function of an external argument by delayed saturation, in the way formalized here.
 
 The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) will flesh out the derivation of the reflexive verb in~(\ref{ex:vz:thit-refl}).
 \ex \label{ex:vz:thit-refl}
@@ -1360,7 +1352,7 @@ The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) will flesh ou
 \endgl
 \xe
 
-The argument DP, `Danny', starts off as the internal argument. No external argument is merged in the specifier of {\vz}, but the specifier of T still needs to be filled. The internal argument raises directly to Spec,TP in order to satisfy the EPP, filling the Agent role of {\vz} in delayed saturation. The crucial points in this derivation are the VoiceP node and Spec,TP: after the internal argument raises to Spec,TP, the derivation can converge. The resulting picture is similar to that painted by \cite{spathasetal15} for certain reflexive verbs in Greek, where the agentive modifier mentioned in Chapter.~\ref{voice:va:act} combines with non-active Voice to derive a reflexive reading; see \cite{spathasetal15} or \cite{kastner17gjgl} for further details on the Greek.
+The argument DP, `Danny', starts off as the internal argument. No external argument is merged in the specifier of {\vz} and the structure is built up as usual. Nevertheless, the specifier of T needs to be filled because of a syntactic requirement, namely the EPP. The internal argument then raises directly to Spec,TP in order to satisfy the EPP, satisfying the syntactic requirement but also filling the Agent role of {\vz} in delayed saturation (Section~\ref{vz:pz:syn:figrefl}).
 
 \ex \label{tree:vz:thit-refl}
 \hspace{-7em}
@@ -1443,9 +1435,11 @@ The argument DP, `Danny', starts off as the internal argument. No external argum
 
 \vspace{2em}
 
-This analysis showcases how complex structure ({\vz} and {\va}~\!) correlates with complex meaning and complex morphology. On the meaning side of things, reflexives in Hebrew do not come from a dedicated functional or lexical item. There must be some conspiracy of factors in order to derive a reflexive reading. The complex structure is tracked by complex morphology: verbs in {\thit} have two distinguishing morphophonological properties, namely the prefix and the non-spirantized medial root consonant \dgs{Y}.
+The crucial points in this derivation are the VoiceP node and Spec,TP: after the internal argument raises to Spec,TP, the derivation can converge. The resulting picture is similar to that painted by \cite{spathasetal15} for certain reflexive verbs in Greek, where the agentive modifier \emph{afto} combines with non-active Voice to derive a reflexive reading; see \cite{spathasetal15} or \cite{kastner17gjgl} for further details on the Greek.
 
+Like with figure reflexives, one would be justified in wondering whether other material between vP and TP could intervene, raising to Spec,TP instead of the internal argument. Since Hebrew does not have high applicatives, this cannot be tested.
 
+Our analysis showcases how complex structure ({\vz} and {\va}~\!) correlates with complex meaning and complex morphology. On the meaning side of things, reflexives in Hebrew do not come from a dedicated functional or lexical item. There must be some conspiracy of factors in order to derive a reflexive reading. The complex structure is tracked by complex morphology: verbs in {\thit} have a number of distinguishing morphophonological properties, namely the prefix, the non-spirantized medial root consonant \dgs{Y}, and the stem vowels inherent to the template.
 
 	\subsection{{\vz} + {\pz}} \label{vz:va:pzva}
 
