@@ -41,7 +41,7 @@ Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
 \end{tabular}
 \xe
 
-These constructions are explored as follows. In Section~\ref{vz:tnif} I explore the left-hand side of the table, identifying the anticausatives, inchoatives and figure reflexives of {\tnif} (this last group underwriting a novel generalization). Section~\ref{vz:vz} analyzes the first two and Section~\ref{vz:pz} analyzes figure reflexives. Section~\ref{vz:interim} briefly summarizes the picture for {\tnif}. I then move to the right-hand side of the table, to {\thit}, in Section~\ref{vz:thit}, and its analysis in Section~\ref{vz:va}: anticausatives, inchoatives and reflexives are analyzed in Section~\ref{vz:va:vzva}; figure reflexives are discussed in Section~\ref{vz:va:pzva}. The empirical and analytical picture is recapped in Section~\ref{vz:sum}. Section~\ref{vz:others} then compares the current approaches with other treatments in the literature, at which point Section~\ref{vz:conc} takes stock and previews the next chapter.
+These constructions are explored as follows. In Section~\ref{vz:tnif} I explore the left-hand side of the table, identifying the anticausatives, inchoatives and figure reflexives of {\tnif} (this last group underwriting a novel generalization). Section~\ref{vz:vz} analyzes the first two and Section~\ref{vz:pz} analyzes figure reflexives. Section~\ref{vz:interim} briefly summarizes the picture for {\tnif}. I then move to the right-hand side of the table, to {\thit}, in Section~\ref{vz:thit}, and its analysis in Section~\ref{vz:va}: anticausatives, inchoatives and reflexives are analyzed in Section~\ref{vz:va:vzva}; figure reflexives are discussed in Section~\ref{vz:va:pzva}. The empirical and analytical picture is recapped in Section~\ref{vz:sum}. Section~\ref{vz:others} then compares the current approaches with other treatments in the literature, at which point I take stock and previews the next chapter.
 
 %Section~\ref{vz:nact} first sets up expectations for what {\vz} is supposed to do, and then tests them by means of various anticausativity diagnostics, thus deriving the alternation between {\tkal} and {\tnif} seen in~(\lastx a). Additional data is then brought up to supplement the picture. Section~\ref{vz:figrefl} presents a new generalization about \emph{active} verb forms in {\tnif} and show how their existence can be explained if {\vz} is merged lower in the structure, in a prepositional phrase. Section~\ref{vz:va} extends the system by reintroducing the agentive modifier {\va} of Chapter \ref{voice:va}; it correctly derives alternations such as those in~(\lastx b) and the active verbs of the preceding section but also a special type of verb, one that does not appear in any other template, i.e.~in no other morphosyntactic configuration: the reflexive. The analysis concludes in Section~\ref{vz:inch} by discussing what {\vz} does when there is no active Voice form with which it can alternate. This discussion includes denominal verbs, which have in the past been trumpeted as a major problem for root-based theories of morphology, especially Semitic morphology (and Hebrew in particular). That point leads naturally to the examination of alternatives in Section~\ref{vz:others}.
 
@@ -1441,9 +1441,46 @@ Like with figure reflexives, one would be justified in wondering whether other m
 
 Our analysis showcases how complex structure ({\vz} and {\va}~\!) correlates with complex meaning and complex morphology. On the meaning side of things, reflexives in Hebrew do not come from a dedicated functional or lexical item. There must be some conspiracy of factors in order to derive a reflexive reading. The complex structure is tracked by complex morphology: verbs in {\thit} have a number of distinguishing morphophonological properties, namely the prefix, the non-spirantized medial root consonant \dgs{Y}, and the stem vowels inherent to the template.
 
-	\subsection{{\vz} + {\pz}} \label{vz:va:pzva}
+	\subsection{{\va} + {\pz}} \label{vz:va:pzva}
+The final piece of the jigsaw is figure reflexives in {\thit}. At this point, it is easy to see exactly where this last piece fits. The semantics of a figure reflexive {\pz} is augmented by the agentive requirement of {\va}. Everything said about the semantics and phonology of these elements continues to hold; a representative derivation is given in~(\nextx).
 
-				
+\pex
+	\a  \begingl
+	\gla bjartur hiʃtaxel la-xeder//
+	\glb Bjartur squeezed.\gsc{INTNS.MID} to.the-room//
+	\glft `Bjartur squeezed his way into the room.'//
+	\endgl
+	\a
+\xe
+\hspace{-5em}
+\scalebox{0.8}{
+\Tree
+    [.{VoiceP\\ λe∃s.\underline{Agent(Bjartur,e)} \& \underline{Figure(Bjartur,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
+       [.{DP\\\emph{bjartur}} ]
+       [.{λxλe∃s.\underline{Agent(x,e)} \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)}
+           [.{Voice\\ λxλe.Agent(x,e)} ]
+			[.vP
+				[.{\va} ]
+	           [.{vP\\ λxλe∃s.\underline{Figure(x,s)} \& \underline{in(s,room)} \& enter(e) \& Cause(e,s)}
+	              [.{v\\ λPλe∃s.P(s) \& enter(e) \& Cause(e,s)}
+		             [.\root{ʃxl} ]
+		             [.v ]
+	              ]
+	              [.{\emph{p}P\\ λxλs.Figure(x,s) \& \underline{in(s,room)}}
+	                  [.{\pz\\ λxλs.Figure(x,s)\\ \emph{ni-}} ]
+	                  \qroof{λs.in(s,room)}.PP
+	%                  ]
+	              ]
+	          ]
+	        ]
+       ]
+    ]
+}
+\xe
+
+Having concluded the analytical part of this chapter, I summarize the findings in Section~\ref{vz:sum}. Some alternatives are mentioned in Section~\ref{vz:others}, followed by a bigger-picture view of where this fits within the monograph.
+
+
 \section{Summary of generalizations and claims} \label{vz:sum}
 
 TABLE!!
@@ -1632,11 +1669,7 @@ TABLE!!
 %We will now turn to alternative theories of reflexivity in Section \ref{sec:others-theory} and alternative theories of the Hebrew verb in Section \ref{sec:others-heb}.
 
 
-
-
-
-
-\section{Alternative accounts} \label{vz:others}
+\section{Discussion and outlook} \label{vz:others}
 The theory of Voice heads has been leading us towards an ``emergent'' view of templates, according to which they arise from the combination of functional heads. The traditional approach to Semitic templates approaches them as primitives, but has been shown to fall short of understanding the argument structure alternations in the system \citep{doron03,kastner16phd,kastner17gjgl,kastner18nllt}. The idea that templates are morphemes can be implemented in various ways, including distinct exo-skeletal functors \citep{borer13oup}, conjugation classes \citep{arad05,aronoff07}, and lexicalist morphemes \citep{reinhartsiloni05,laks11,laks14}.
 
 As far as morphemic analyses are concerned, an overarching problem is that a given template does not have a deterministic syntax nor does it have a deterministic semantics. The morphemic analysis would have to say that {\tnif} is ambiguous between a non-active and figure reflexive reading, or that {\thit} is three-way ambiguous between an anticausative, figure reflexive and canonical reflexive. Two crucial problems then arise. The first is that not all verbs in this template are ambiguous. The second is that the existing readings are an accident; the template could just as well have been ambiguous between a transitive and a reflexive reading, but no Hebrew template has this property. The emergent theories have principled explanations for what is and is not possible, as with {\tnif} where we have shown a morphological correlation between lack of Agent and lack of Figure. In contrast, a morphemic theory is unnecessarily powerful and must arbitrarily list what each template, and perhaps each verb, may do.
@@ -1657,7 +1690,7 @@ Syntactic and lexicalist accounts both need to stipulate that only a subset of r
 
 To repeat a point made earlier: stipulating that reflexives are formed using the morphophonological form {\thit} does not explain why it is precisely this template that is involved, nor why this template also allows for anticausativization. Certain correlations would then be missed out on: that this template is both morphophonologically and semantically complex, or that reflexives and anticausatives appear to have a shared base. The system developed here provides the answer to this question, based on functional heads required elsewhere in the grammar. In the next chapter I develop the system further.
 
-\section{Conclusion} \label{vz:conc}
+	\subsection{Conclusion} \label{vz:others:conc}
 
 Reflexive verbs appear only in the template {\thit}, a fact which had not previously received any formal analysis. In a system such as the one put forward in this book, combining the agentivity requirement of {\va} with the single-argumenthood of {\vz} derives this pattern. This analysis receives additional confirmation in the morphology, where the spell-out of both {\va} and {\vz} can be seen.
 
