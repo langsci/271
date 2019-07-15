@@ -1,4 +1,4 @@
-\chapter{Passives and nominalization}
+\chapter{Passives and nominalizations}
 \label{chap:passn}
 
 The three preceding chapters introduced a system of Voice heads which, at present, has only been proposed for argument structure alternations in Hebrew (the next two chapters consider whether other languages should be analyzed similarly). Recapping Chapters~\ref{chap:voice}--\ref{chap:vd}, there are seven distinct possibilities for verbal forms (five non-passive templates), summarized in~(\nextx). But argument structure exists beyond just the verbal domain: some nominals and adjectives have arguments too, and in Hebrew in particular, the morphological history of some derived forms is clearly verbal. The question to be examined here is, how well does the current theory predict behavior in derived forms?
@@ -22,14 +22,19 @@ In each case I begin with some general background on the state of the art. Then 
 
 @@@
 \section{Passivization} \label{passn:pass}
-
 	\subsection{Background}
-In the syntax, Pass is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the passive head. In the semantics, Pass likewise brings about existential closure over an implicit external argument, (\nextx):
-\ex \denote{Pass} = $\lambda$e$\exists$x.e \& Agent(x,e) \hfill (or see the proposal in \citealt{bruening13})
+My working definition of a passive verb is given in~(\nextx). It is not meant to be controversial in any way; see \cite{williams15} for an overview of various issues.
+\ex A passive verb an intransitive verb which does not have an overt external argument in the regular subject position but does have an external argument which either (a) implicit and existentially closed over or (b) made overt in a \emph{by}-phrase. Formally, there is no external argument in Spec,VoiceP (or Spec,TP, for that matter) but there is an Agent role in the semantics.
 \xe
 
-@@give trees and lambdas and stuff. Two options: either Pass introduces the EA with closure, or it takes a specific Voice. Give both options, clarify that you're just making things explicit.@
+I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the structure tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head \cite{lidz01,labelle08,schaefer17oup}. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
 
+Synthesizing the existing literature on passive heads \citep{bruening13,layering15}, I formalize Pass as follows. In the \textbf{syntax}, Pass is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the passive head.
+
+In the \textbf{semantics}, Pass likewise brings about existential closure over an implicit external argument, (\nextx). There are two ways of formalizing this idea. The one I adopt is that of \cite{bruening13}, where Pass takes the VoiceP as its argument and closes off the Agent role:
+\ex \denote{Pass} = $\lambda$P$\lambda$e$\exists$x.Agent(x,e) \& P(e)
+\xe
+This denotation is identical to what I suggested for the passive alloseme of {\vz} in Chapter~\ref{vz:vz:sem}, (\nextx).
 \ex \label{ex:pass-sem}\denote{\vz}\phantom{.} = $\begin{cases}
 		\text{a.} \lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
 %		\lambda e \exists x.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{write}}, \dots\} }\\
@@ -37,15 +42,16 @@ In the syntax, Pass is incompatible with merger of a DP in Spec,VoiceP immediate
 		\end{cases}$
 \xe
 
-In the syntax, Pass is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the passive head. In the semantics, Pass likewise brings about existential closure over an implicit external argument, (\nextx):
-\ex \denote{Pass} = $\lambda$e$\exists$x.e \& Agent(x,e) \hfill (or see the proposal in \citealt{bruening13})
-\xe
-if Voice has a contextual alloseme:
+An alternative semantics is to force Voice to choose an agent-less alloseme in the context of Pass, and then let Pass introduce an (existentially closed off) agent itself. I note this possibility for completeness.
 \ex \denote{Voice} = $\lambda$P.P / Pass \trace
 \xe
+\ex \denote{Pass} = $\lambda$P$\lambda$e$\exists$x.P(e) \& Agent(x,e)
+\xe
 
-important clarification: ``passive'' is not necessarily [Pass VoiceP] / [Voice_{pass} vP]. ``Passive'' in Romance and Greek is non-active. ``Passive'' in English is passive. \cite{alexiadoudoron12} and \citet[123]{layering15}, also \cite{kastnerzu17}.
+The \textbf{phonology} of Pass is language-specific. In English it spells out the auxiliary \emph{be}, in German it spells out \emph{werden}, and in Hebrew I will claim below than it overwrites the vowels of the stem VoiceP it merges with.
 
+
+@@@
 
 	\subsection{Descriptive generalizations} \label{passn:pass:tpua}
 
