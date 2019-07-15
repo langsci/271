@@ -20,14 +20,16 @@ In other words, I am taking the structures underlying the constructions of this 
 % I then briefly consider denominal verbs in Section~\ref{passn:denom}.
 In each case I begin with some general background on the state of the art. Then the Hebrew data is introduced, followed by the formal analysis (combining the general consensus with the Hebrew data). Importantly, the different templates interact with these embedding heads in different ways, so we will spend some time analyzing these interactions.
 
-@@@
+
 \section{Passivization} \label{passn:pass}
 	\subsection{Background}
-My working definition of a passive verb is given in~(\nextx). It is not meant to be controversial in any way; see \cite{williams15} for an overview of various issues.
-\ex A passive verb an intransitive verb which does not have an overt external argument in the regular subject position but does have an external argument which either (a) implicit and existentially closed over or (b) made overt in a \emph{by}-phrase. Formally, there is no external argument in Spec,VoiceP (or Spec,TP, for that matter) but there is an Agent role in the semantics.
+My definition of a passive verb is given in~(\nextx). It is not meant to be controversial in any way; see \cite{williams15} for an overview of various related issues.
+\pex
+	\a A passive verb is an intransitive verb which does not have an overt external argument in the regular subject position but does have an external argument which either (a) implicit and existentially closed over or (b) made overt in a \emph{by}-phrase.
+	\a Formally, there is no external argument in Spec,VoiceP (or Spec,TP, for that matter) but there is an Agent role in the semantics.
 \xe
 
-I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the structure tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head \cite{lidz01,labelle08,schaefer17oup}. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the structure tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head \cite{lidz01,labelle08,schaefer17oup}. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
 
 Synthesizing the existing literature on passive heads \citep{bruening13,layering15}, I formalize Pass as follows. In the \textbf{syntax}, Pass is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the passive head.
 
@@ -51,11 +53,8 @@ An alternative semantics is to force Voice to choose an agent-less alloseme in t
 The \textbf{phonology} of Pass is language-specific. In English it spells out the auxiliary \emph{be}, in German it spells out \emph{werden}, and in Hebrew I will claim below than it overwrites the vowels of the stem VoiceP it merges with.
 
 
-@@@
-
 	\subsection{Descriptive generalizations} \label{passn:pass:tpua}
-
-It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are the passivized version of an active verb in ``intensive'' {\tpie}, (\nextx a), and verbs in ``passive causative'' {\thuf} are the passivized version of an active verb in ``causative'' {\thif}, (\nextx b).
+There are two exclusively passive templates in Hebrew: {\tpua} and {\thuf}. We have not seen these templates yet. It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are always the passivized version of an active verb in ``intensive'' {\tpie}, (\nextx a), and verbs in ``passive causative'' {\thuf} are always the passivized version of an active verb in ``causative'' {\thif}, (\nextx b). An example pair is given in~(\anextx).
 \ex Predictable alternations in the passive templates:\\
 	\begin{tabular}{ll|ll|ll}
 	& & \multicolumn{2}{c|}{Active} & \multicolumn{2}{c}{Passive} \\\hline
@@ -63,52 +62,134 @@ It is generally accepted that verbal passives in Hebrew are derived from an acti
 	b. & {\thif} $\sim$ {\thuf} & \emph{heʃmid} & `destroyed' & \emph{huʃmad} & `was destroyed'\\
 	\end{tabular}
 \xe
-This derivational analysis accounts for two important facts about passives in Hebrew: first, that there do not exist any passive verbs (that is, verbs in {\tpua} and {\thuf}) without an active base from which they are derived; and second, that passive verbs cannot mean anything other than passivization of the active form, where ``passivization'' means suppression of the external argument via existential closure.
 
-In order to account for these patterns we adopt the proposal in \cite{doron03} and \cite{alexiadoudoron12}, working within Distributed Morphology, that passives are brought about by merger of a head Pass above VoiceP, the phrase in which the external argument would have otherwise been introduced.
-
-
-\cite{doron03} observes that in Hebrew, the external argument in a passive clause (whether implied or introduced using a \emph{by}-phrase) must be agentive and cannot be a cause. For example, \textit{heʃmid} `destroyed' can have a Cause subject (e.g., the environment, the fire, the scandal, etc.) but the implied external argument or overt \emph{by}-phrase subject for its passive counterpart \textit{huʃmad} `was destroyed' may only be a volitional or self-propelled actor (see also \citealt{folliharley08}). The agentivity requirement is likely brought about by the passive morpheme in Hebrew which is otherwise similar to the Pass head of \cite{bruening13}.
-
-Along with the literature cited above, we take passivization to happen after an active verb was derived. In our terms, this means that an existing VoiceP needs to be passivized (by Pass). Support for this claim has been recognized based on meaning as well as phonology: {\tpua} is always the passive of {\tpie}, and {\thuf} is always the passive of {\thif} (see \citealt{kastner16nllt} for a phonological derivation along the current lines).
-
-To make things precise, take~(\blastx b). \cite{doron03}, \cite{arad05} and \cite{kastner16phd} all analyze the template as arising through a dedicated Voice head, call it {\vd} as in~(\nextx):
-\ex
-	\Tree
-	[
-		[.{\vd}\\\emph{he-} ]
-		[
-			[.v
-				[.\root{ʃmd} ]
-				[.v ]
-			]
-			[.DP ]
-		]
-	]
+\pex
+	\a \begingl
+		\gla ha-jeled sider et ha-xeder//
+		\glb the-boy organized.\gsc{INTNS} \gsc{ACC} the-room//
+		\glft `The boy tidied up his room.'//
+	\endgl
+	\a \begingl
+		\gla ha-xeder sudar (al-jedej ha-jeled)//
+		\glb the-room organized.\gsc{INTNS.PASS} by the-boy//
+		\glft `The room was tidied up (by the boy).'//
+	\endgl
 \xe
 
-Here is why it is not possible to posit an additional, passive variant of Voice for Hebrew (cf.~\citealt{embick00}). If {\thif} is derived using \vd, as assumed, then a transparent passivization cannot be accomplished by changing the Voice head: we would end up with an entirely different construction, one that loses all connection (semantic and phonological) to \vd/{\thif}. So passive verbs are derived by use of a Pass head above Voice and below T.
+A derivational view ``in the syntax'', according to which an existing active verb is passivized into a passive verb, accounts for two important facts about passives in Hebrew: first, there do not exist any passive verbs (that is, verbs in {\tpua} and {\thuf}) without an active base from which they are derived; and second, that passive verbs cannot mean anything other than passivization of the active form, where ``passivization'' means suppression of the external argument as defined above.
+
+%\cite{doron03} observes that in Hebrew, the external argument in a passive clause (whether implied or introduced using a \emph{by}-phrase) must be agentive and cannot be a cause. For example, \textit{heʃmid} `destroyed' can have a Cause subject (e.g., the environment, the fire, the scandal, etc.) but the implied external argument or overt \emph{by}-phrase subject for its passive counterpart \textit{huʃmad} `was destroyed' may only be a volitional or self-propelled actor (see also \citealt{folliharley08}). The agentivity requirement is likely brought about by the passive morpheme in Hebrew which is otherwise similar to the Pass head of \cite{bruening13}.
+
+Morphophonologically, passive verbs have two important characteristics. The first, as mentioned above, is that they appear in only two templates. Verbs in {\tpua} are derived from active verbs in {\tpie}, while verbs in {\thuf} are derived from active verbs in {\thif}. The second characteristic had not been discussed explicitly before \cite{kastner18nllt}, although some aspects of it were noticed in a number of works \citep{ussishkin05,borer13oup}: the form of the stem uniformly has the vowels u-a, regardless of underlying active template, root, tense or any other variable. This can be seen in the full paradigms below and stands in stark contrast to the active forms seen throughout this book.
+\pex\label{table:pass-vowels}
+%\a Past tense for passive \emph{pukad} `was commanded' and \emph{hufkad} `was deposited':\\
+\a Past of passive \emph{gudal} `was raised' and \emph{hugdal} `was enlarged':\\
+\begin{tabular}{l||ll|ll}
+ & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
+ & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\hline
+1 & g\textbf{u}d\textbf{a}l-ti & g\textbf{u}d\textbf{a}l-nu		& h\textbf{u}gd\textbf{a}l-ti & h\textbf{u}gd\textbf{a}l-nu\\
+2M & g\textbf{u}d\textbf{a}l-ta & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-ta & h\textbf{u}gd\textbf{a}l-tem\\
+2F & g\textbf{u}d\textbf{a}l-t & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-t & h\textbf{u}gd\textbf{a}l-tem\\
+3M & g\textbf{u}d\textbf{a}l & g\textbf{u}d\del{\textbf{a}}l-{\'u}	& h\textbf{u}gd\textbf{a}l & h\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
+3F & g\textbf{u}d\del{\textbf{a}}l-{a} & g\textbf{u}d\del{\textbf{a}}l-{\'u}	& h\textbf{u}gd\del{\textbf{a}}el-{a} & h\textbf{u}gd\del{\textbf{a}}el-{\'u}
+\end{tabular}
+
+\a Future of passive \emph{jegudal} `will be raised' and \emph{jugdal} `will be enlarged':\\
+%\a Future tense for passive \emph{jefukad} `will be commanded' and \emph{jufkad} `will be deposited':\\
+\begin{tabular}{l||ll|ll}
+ & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
+ & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\hline
+1 & j-e-g\textbf{u}d\textbf{a}l & n-e-g\textbf{u}d\textbf{a}l		& j-\textbf{u}gd\textbf{a}l & n-\textbf{u}gd\textbf{a}l\\
+2M & t-e-g\textbf{u}d\textbf{a}l & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\textbf{a}l & t-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
+2F & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'i} & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\del{\textbf{a}}el-{\'i} & t-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
+3M & j-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& j-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
+3F & t-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{\'u}
+\end{tabular}
+\xe
 
 
-	\subsection{The head Pass} \label{passn:pass:pass}
+	\subsection{The head Pass in Hebrew} \label{passn:pass:pass}
+Following the argument for independent Pass in \cite{doron03} and \cite{alexiadoudoron12}, I have argued that Pass combines with VoiceP in fairly uninteresting ways in Hebrew, although the results are interesting \citep{kastnerzu17,kastner18nllt}. I summarize the findings here.
 
+An existing VoiceP can be passivized by Pass. To make things precise, the structure for active \emph{hegdil} `enlarged' is given in~(\nextx a) and for passive \emph{hugdal} `was enlarged' in~(\nextx b). The relevant Vocabulary Items are in~(\anextx).
+\pex
+	\a 
+	\Tree
+	[.TP
+		[.DP ]
+		[.
+			[.T ]
+			[.VoiceP
+				[.\sout{DP} ]
+				[.
+					[.{\vd}\\\emph{he-,i} ]
+					[
+						[.v
+							[.\root{gdl} ]
+							[.v ]
+						]
+						[.DP ]
+					]
+				]
+			]
+		]
+	]
+	\a 
+		\Tree
+		[.TP
+			[.DP ]
+			[.
+				[.T ]
+				[.PassP				
+					[.Pass\\{\emph{-u-}} ]
+					[.
+						[.{\vd}\\\emph{he-,a} ]
+						[
+							[.v
+								[.\root{gdl} ]
+								[.v ]
+							]
+							[.\sout{DP} ]
+						]
+					]
+				]
+			]
+		]
+\xe
+\pex\label{ex:pass-vi}
+	\a \root{gdl} \lra~\emph{gdl}
+	\a {\vd} \lra
+	$\begin{cases}
+	\text{\emph{he,a}} & / \text{Pass \trace}\\
+	\text{\emph{he, i}} & / \text{\trace}\\
+	\end{cases}$
+	\a Pass \lra~[+high +round]$_{\text{Pass}}$
+\xe
+\pex
+	\a Cycle 1 (VoiceP): /he,a/ + /gdl/ $\Rightarrow$ hegdal
+	\a Cycle 2 (PassP): /u/ + hegdal $\Rightarrow$ hugdal
+\xe
+
+\cite{kastner18nllt} shows in detail how this structural configuration predicts the right allomorphic interactions. For the example above, {\vd} is structurally adjacent to T and so its stem vowels can be conditioned by the value of Tense or the phi-features on T. Such contextual conditioning of {\vd} is not possible once intervenes, leading to the uniform \emph{u-a} pattern. The same holds for {\tpua}.
+
+Consider why it is not possible to posit an additional, passive variant of Voice for Hebrew (an additional non-active Voice head). If {\thif} is derived using \vd, as assumed, then a transparent passivization cannot be accomplished by changing the Voice head: we would end up with an entirely different construction, one that loses all connection (semantic and phonological) to \vd/{\thif}. I conclude that passive verbs really are derived by use of a Pass head above Voice and below T, and that combining the Pass analysis of passives with the system presented in the current book correctly predicts the syntactic, semantic and phonological behavior of passive verbs in Hebrew.
 	
-		\subsubsection{Syntax}
-		
-		\subsubsection{Semantics}
-		
-		\subsubsection{Phonology}	
+		\subsection{Templates}
+What remains to be discussed is the combinatorics of Pass with the different VoicePs. The following combinations should be considered:
+\ex \begin{tabular}{llllc}
+	& & & & Attested? \\\hline
+	a.& Pass	&	Voice	& 		& \xmark \\
+	b.& Pass	& Voice		& \va	& \cmark\\
+	c.& Pass	& {\vz}		& 		& \xmark\\
+	d.& Pass	& {\vz}		&	\va	& \xmark\\
+	e.& Pass	& {\vd}		&		& \cmark\\
+	\end{tabular}
+\xe
 
-	\subsection{Summary of passives}
-	
-Pass + {\vd}
+There is no overt morphological evidence for Pass combining with unspecified Voice. As far as I can tell, this is a historical accident: classical Hebrew had a template encoding ``the passive of {\tkal}'', i.e. [Pass VoiceP]. \citet[120]{kastner16phd} speculates that in Modern Hebrew, Pass can only combine with structures which ``guarantee'' an external argument; these are~(\lastx b) and~(\lastx e), but not the others.
 
-Pass + {\va}
+It could also be suggested that what I have called the passive alloseme of {\vz} is in fact the spell-out of [Pass Voice]. But \cite{ahdoutkastner19nels} marshal a number of arguments against this possibility.
 
-Pass + Voice = nope.
-	Not nifal passives b/c (a) morphology, (b) allows imperatives and infinitives.
-	See \cite{ahdoutkastner18}
-	
 
 \section{Adjectival passives} \label{passn:adjpass}
 
