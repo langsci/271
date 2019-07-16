@@ -230,10 +230,10 @@ What remains to be discussed is the combinatorics of Pass with the different Voi
 \ex \begin{tabular}{llllc}
 	& & & & Attested? \\\hline
 	a.& Pass	&	Voice	& 		& \xmark \\
-	b.& Pass	& Voice		& \va	& \cmark\\
+	b.& Pass	& Voice		& \va	& {\tpua} \\
 	c.& Pass	& {\vz}		& 		& \xmark\\
 	d.& Pass	& {\vz}		&	\va	& \xmark\\
-	e.& Pass	& {\vd}		&		& \cmark\\
+	e.& Pass	& {\vd}		&		& {\thuf} \\
 	\end{tabular}
 \xe
 
@@ -481,7 +481,8 @@ The picture for Hebrew is thus fairly similar to that in the Romance and Germani
 	\subsection{The adjectivizer a in Hebrew} \label{passn:adjpass:a}
 Within DM, it has become standard to assume that simple (stative) adjectives are derived by merging an adjectivizing \emph{a} head with the root. I assume that the same head derives all kinds of adjectives, be they stative or passive -- the only thing that matters is the structure embedded under this head. But this means that I need to first say a few words about the morphology of adjectives in Hebrew. What I will end up postulating is phonologically different \emph{a} heads for stative adjective, whereas adjectival passives are the result of merging the \emph{a} head with a VoiceP. The same kind of story will be proposed for nominalizations in Section~\ref{passn:n:n}.
 
-\textbf{Stative (ordinary) adjectives} have no event implications or internal structure. In the languages discussed above they are derived by merging an adjectivizing head with the root \citep{embick04li}:
+		\subsubsection{Stative adjactives}
+Stative (ordinary) adjectives have no event implications or internal structure. In Hebrew, like in most baseline analyses in other languages, adjectives are derived by merging an adjectivizing head (here little \textit{a}) with the root \citep{embick04li}:
 \ex\label{ex:adj-en}
 	\begin{minipage}[t]{0.3\textwidth}
 		a. \emph{open}\\
@@ -563,7 +564,7 @@ Two of these patterns are homopohonous with the present-tense (participle) verba
 			\Tree
 			[.$a_{\text{\gsc{CAUS}}}$
 				[.{\root{pr'}} ]
-				[.$a_{\text{\gsc{CAUS}}}$ ]
+				[.a$_{\text{\gsc{CAUS}}}$ ]
 			]
 	\end{minipage}
 \xe
@@ -576,118 +577,48 @@ An alternative would be to assume that even these stative adjectives have underl
 %\ex \label{ex:elena2b} \emph{fit-ef-tos} plant-\gsc{VBLZ}-\gsc{ADJ} `planted' \hfill \citep[97]{elenasamioti14}
 %\xe
 
-@@@
-Moving on to \textbf{resultatives (adjectival passives)}, the main difference between them and stative adjectives is that the former embed VoiceP. The internal argument of adjectival passives has been argued by \citet[386]{bruening14nllt} to be an Operator, bound by the noun interpreted as the argument.
-\pex\label{ex:heb-ana}
+		\subsubsection{Adjectival passives}
+The difference between stative adjectives and adjectival passives is that the latter embed VoiceP. The internal argument of adjectival passives has been argued by \citet[386]{bruening14nllt} to be an Operator, bound by the noun interpreted as the argument. Implementing this for Hebrew gives us structures like the following.
+\pex\label{ex:adjpass-heb1-tree} Adjectival passive in \emph{XaYuZ} (from {\tkal}):
     \a \begingl
-        \gla ha-sefer \underline{jihie} \textbf{katuv} be-et kaxol//
+        \gla ha-sefer jihie \textbf{katuv} be-et kaxol//
         \glb the-book will.be written in-pen blue//
         \glft `The book will be (will have been) written in blue ink.'//
     \endgl
     \a 
-%        [TP
-%            [{DP_i}\\\emph{ha-sefer}\\\emph{the book} ]
-%            [
-%                [T_{\textrm{[Fut]}}\\\emph{ji-} ]
-%                [vP
-%                    [v_{be}\\\emph{-hie} ]
-%                    [\textbf{aP}
-%                        [\phantom{xxxx}{Op_i}\phantom{xxxx} ]
-%                        [\textbf{aP}
-%                            [a\\\emph{-a-u-} ]
-%                            [VoiceP
-%	                            [VoiceP
-%	                                [Voice ]
-%	                                [vP
-%		                                [v
-%		                                    [v ]
-%		                                    [{\root{ktv}}\\\root{\gsc{WRITE}} ]
-%										]
-%	                                    [\sout{Op_i} ]
-%	                                ]
-%	                            ]
-%	                            [pP
-%		                            [\emph{be-et kaxol}\\\emph{in blue ink}, triangle ]
-%								]
-%	                        ]
-%                        ]
-%                    ]
-%                ]
-%            ]
-%        ]
-\xe
-
-Let us make sure that the combinatorial possibilities of our syntactic inventory predict the correct adjectival passives:
-
-\begin{itemize}
-\item \textbf{[a [Voice [v \root{root}~\!]]]} -- attested, as in~(\lastx).
-
-\item \textbf{[a [[Voice {\va}~\!] [v \root{root}~\!]]]} -- attested, adjectival passive in \mpua. Our account of {\va} predicts agentive entailments.
-
-\item \textbf{[a [{\vd} [v \root{root}~\!]]]} -- attested, adjectival passive in \mhuf. Our account of {\vd} requires a DP in Spec,VoiceP. On the other hand, external arguments are not represented in adjectival passives. Intuitively, the result should be an external argument which is not represented syntactically. This seems to be correct, as noted in connection with examples~(\ref{ex:sportaim}--\ref{ex:sportait}), where an implicit external argument is entailed.
-\ex
-%		[aP
-%			[DP_i\\\textsc{Internal Argument}]
-%			[aP
-%				[a\\\emph{m-} ]
-%				[VoiceP
-%					[{\vd}\\\emph{u-a} ]
-%					[vP
-%						[v
-%							[v ]
-%							[\root{root} ]
-%						]
-%						[Op_i ]
-%					]
-%				]
-%			]
-%		]
-\xe
-
-\item \textbf{\vz} -- incompatible with adjectival passives. Informally, adjectival passives denote the result of an event without explicitly naming the cause, though one is assumed; in this sense they are similar to verbal passives. \cite{alexiadouetal14} and \cite{bruening14nllt} implement this by allowing Adj (and Pass) to only select for Voice that needs to fill its specifier. \vz~is not such a Voice head (although \citealt{embick04li} does allow his \vz~to derive unaccusative adjectival passives in English): since there is no expectation of an external argument, there is no adjectival passive.
-%\citet[188]{doron14adj}: ``Resultative participles are derived from the root by the minimal non-active structure''. I guess it depends on the semantics of \vz. If it says ``no EA'' in the semantics as well as the syntax then it's ok.
-\end{itemize}
-
-These derivations are similar to the ones in \cite{doron14adj}, though I depart from her specific implementation for a number of reasons. First---and as I return to in \S\ref{syn:other-root:ed}---the functional heads used by \citeauthor{doron14adj} are syntactico-semantic primitives which drive the semantics but do not translate straightforwardly into the morphophonology as syntactic heads usually do. Additionally, and more specifically to adjectival passives, \citeauthor{doron14adj} utilizes an active Voice head introducing the EA-related head v, which in turn introduces the external argument. In order to produce a verb in active voice, then, her system needs a lower head that requires Active Voice -- this is CAUSE/$\gamma$ -- so that CAUSE introduces Active Voice, Active Voice introduces v, and v introduces the external argument. Some of these heads split up the semantic work that can be done by one head (Voice and v in particular), and not all of them have overt spell-out. There are consequently more syntactic elements than seems necessary. Finally, the agentive head INTNS/$\iota$ is diffused in certain cases, for example in stative \mpua~adjectives, but it is not explained how this head loses its agentive semantics in this context.
-
-
-
-Recent syntactic analyses of adjectival passives have motivated an embedded VoiceP layer \citep{mcintyre13,alexiadouetal14,bruening14nllt,doron14adj}.
-The main difference between verbal passives and adjectival passives is that VoiceP is embedded by a verbal passive head in the former and by an adjectival/aspectual head in the latter. Full structures are given next. For an account of how the nonconcatenative morphology itself is instantiated, i.e.~how the functional heads get mapped to vowels, see \cite{tucker15roots} or \cite{kastner16nllt}.
-\pex\label{ex:heb-synth}Synthetic, verbal passive:
-    \a \begingl
-        \gla dani jesorak//
-        \glb Danny combed.\gsc{INTNS.PASS}.Fut//
-        \glft `Danny will get combed.'//
-    \endgl
-    
-	\Tree
+    	\Tree
         [.TP
-            [.DP\\\emph{dani} ]
+            [.{DP_i}\\\emph{ha-sefer}\\\emph{the book} ]
             [
-                [.T$_{\textrm{[Fut]}}$\\\emph{je-} ]
-                [.PassP
-                    [.Pass\\\emph{-o-a-} ]
-                    [.VoiceP
-                        [.Voice ]
-                        [.vP
-                            [.v$_{intns}$
-                                [.v$_{intns}$ ]
-                                [.\root{srk} ]
-                            ]
-                            [.DP\\\sout{\emph{dani}} ]
+                [.T_{\textrm{[Fut]}}\\\emph{ji-} ]
+                [.vP
+                    [.v_{be}\\\emph{-hie} ]
+                    [.aP
+                        [.\phantom{xxxx}{Op_i}\phantom{xxxx} ]
+                        [.aP
+                            [.a\\\emph{-a-u-} ]
+                            [.VoiceP
+	                            [.VoiceP
+	                                [.Voice ]
+	                                [.vP
+		                                [.v
+		                                    [.v ]
+		                                    [.{\root{ktv}} ]
+										]
+	                                    [.\sout{Op_i} ]
+	                                ]
+	                            ]
+	                            [.{pP\\\emph{be-et kaxol}\\\emph{in blue ink}} ]
+	                        ]
                         ]
                     ]
                 ]
             ]
         ]
 \xe
-
-The internal argument of adjectival passives has been proposed by \citet[385]{bruening14nllt} to be an Operator, coreferential with the noun interpreted as the argument. We adopt this treatment of adjectival passives in our analysis of Hebrew.
-
-\pex\label{ex:heb-ana}Analytic, adjectival passive:
+\pex\label{ex:adjpass-heb2-tree} Adjectival passive in {\mpua} (from {\tpie}):
     \a \begingl
-        \gla dani \textbf{jihie} mesorak//
+        \gla dani jihie \textbf{mesorak}//
         \glb Danny will.be combed.\gsc{INTNS.PASS}.Pres//
         \glft `Danny will be combed (already).'//
     \endgl
@@ -722,45 +653,21 @@ The internal argument of adjectival passives has been proposed by \citet[385]{br
         ]
 \xe
 
-The derivation is similar for non-finite environments. The analytic passive form is not in violation of (\ref{selection}) as T$_{\textrm{[-Fin]}}$ selects a vP, not a PassP.
-\pex
-	\a \begingl
-		\gla {\dots} garam le-dani \textbf{lihiot} mesorak//
-		\glb {} caused to-Dani to.be combed.\gsc{INTNS.PASS}.Pres//
-		\glft `... caused Dani to be combed.'//
-	\endgl
-
-    \a \Tree
-        [.TP
-            [.{DP$_i$}\\\emph{dani} ]
-            [
-                [.T$_{\textrm{[-Fin]}}$\\\emph{li-} ]
-                [.vP
-                    [.v$_{be}$\\\emph{hiot} ]
-                    [.DP$_i$
-	                    [.D ]
-	                    [.NP
-		                    [.N\\\sout{\emph{dani}} ]
-	                        [.aP
-	                            [.a\\\emph{me-o-a-} ]
-	                            [.VoiceP
-	                                [.Voice ]
-	                                [.vP
-	                                    [.v$_{intns}$
-	                                        [.v$_{intns}$ ]
-	                                        [.{\root{srk}} ]
-	                                    ]
-	                                    [.{Op$_i$} ]
-	                                ]
-	                            ]
-	                        ]
-	                    ]
-                    ]
-                ]
-            ]
-        ]
+In terms of the combinatorics involved with different VoicePs in Hebrew, the picture is similar to that of verbal passives except that~(\nextx a) is possible.
+\ex \begin{tabular}{llllc}
+	& & & & Attested? \\\hline
+	a.& a	&	Voice	& 		& \emph{XaYuZ} \\
+	b.& a	& Voice		& \va	& {\mpua} \\
+	c.& a	& {\vz}		& 		& \xmark\\
+	d.& a	& {\vz}		&	\va	& \xmark\\
+	e.& a	& {\vd}		&		& {\mhuf} \\
+	\end{tabular}
 \xe
 
+\textbf{\vz} is incompatible with adjectival passives. Informally, adjectival passives denote the result of an event without explicitly naming the cause, though one is assumed; in this sense they are similar to verbal passives. \cite{alexiadouetal14} and \cite{bruening14nllt} implement this by allowing Adj (and Pass) to only select for Voice that needs to fill its specifier. {\vz} is not such a Voice head (although \citealt{embick04li} does allow his non-active Voice to derive unaccusative adjectival passives in English): since there is no expectation of an external argument, there is no adjectival passive.
+%\citet[188]{doron14adj}: ``Resultative participles are derived from the root by the minimal non-active structure''. I guess it depends on the semantics of \vz. If it says ``no EA'' in the semantics as well as the syntax then it's ok.
+
+The derivations in this section are similar to the ones in \cite{doron14adj}, though I depart from her specific implementation for a number of reasons. First---as already discussed in previous chapters---the functional heads used by \citeauthor{doron14adj} are semantic primitives which drive the semantics but do not translate straightforwardly into the morphophonology as syntactic heads usually do, nor is their exact syntactic job clear. Additionally, and more specifically to adjectival passives, \cite{doron14adj} utilizes an active Voice head introducing the EA-related head v, which in turn introduces the external argument. In order to produce a verb in active voice, then, her system needs a lower head that requires Active Voice -- this is \gsc{CAUSE} -- so that CAUSE introduces Active Voice, Active Voice introduces v, and v introduces the external argument. Some of these heads split up the semantic work that can be done by one head (Voice and v in particular), and not all of them have overt spell-out. There are consequently more syntactic elements than seems necessary. %Finally, the agentive head \gsc{INTNS} is diffused in certain cases, for example in stative {\mpua} adjectives, but it is not explained how this head loses its agentive semantics in this context.
 
 
 %\cite{doron14adj}
@@ -775,13 +682,7 @@ The derivation is similar for non-finite environments. The analytic passive form
 
 
 	    \subsubsection{Templates} \label{passn:adjpass:a:temp}
-I will now summarize the main generalizations noted by previous works. The overview proceeds by template and relies heavily on \cite{doron00,doron14adj} and \cite{meltzerasscher11}. Both authors attempted to predict whether a certain root can be instantiated as an adjective, an adjectival passive, or both, in each of the three relevant templates. In general, \cite{doron00} notes that change-of-state roots are better inputs to adjectival passives than atelic events.
-
-
-
-All three templatic forms are compatible with both stative adjectives and adjectival passives, as already mentioned. And while all three adjectival passive forms are compatible with external arguments (under the restrictions noted above), adjectival passives in \mhuf~\emph{require} an implied EA to be interpreted.
-
-\citet[170]{doron14adj} shows that \textbf{stative adjectives} are incompatible with event modifications or event readings. Some of them even have no corresponding underlying verb:
+What remains is to see what special interactions arise from the combination of different [D] values (or {\va}) with little a. First, recall the claim in \cite{doron00} that change-of-state roots are better inputs to adjectival passives than atelic events. All three templatic forms are compatible with both stative adjectives and adjectival passives, as already mentioned. \citet[170]{doron14adj} shows that \textbf{stative adjectives} are incompatible with event modifications or event readings. Some of them even have no corresponding underlying verb:
 \pex
 	\a \begingl
 		\gla ti'un \underline{barur} (*bekfida)//
@@ -802,7 +703,7 @@ All three templatic forms are compatible with both stative adjectives and adject
 	\endgl
 \xe
 
-\citet[175]{doron14adj} also observes that (resultative) \textbf{adjectival passives} in ``causative'' {\mhuf} obligatorily entail an EA, even if it is implicit and not overtly represented. While an adjectival passive in \mpua~does not entail the existence of EA, (\nextx a), every adjectival passive in \mhuf~does, (\nextx b). In a telling near-minimal pair, the athletes in~(\nextx a) might have trained on their own, but the athletes in~(\nextx b) must have been trained through some kind of organized program.
+And while all three \textbf{adjectival passive} forms are \emph{compatible} with external arguments, \citet[175]{doron14adj} observes that (resultative) adjectival passives in ``causative'' {\mhuf} \emph{require} an implied Cause to be interpreted, even if it is implicit and not overtly represented. So, while an adjectival passive in {\mpua} does not entail the existence of a Cause, (\nextx a), every adjectival passive in {\mhuf} does, (\nextx b). In a telling near-minimal pair, the athletes in~(\nextx a) might have trained on their own, but the athletes in~(\nextx b) must have been trained through some kind of organized program.
 \pex\label{ex:sportaim}
 	\a \begingl
 		\gla\rightcomment{(\mpua)}sportaim \underline{meuman-im} bekfida//
@@ -816,7 +717,8 @@ All three templatic forms are compatible with both stative adjectives and adject
 		\glft `Carefully trained athletes'//
 	\endgl
 \xe
-\cite{doron14adj} attributes this difference to the behavior of the causative head $\gamma$ which underlies \thif. My analysis, using \vd~(as in \S\ref{syn:templates:thif}), follows in the same vein. Note that the implied EA is not syntactically represented; it cannot, for example, create a new discourse referent.
+
+\cite{doron14adj} attributes this difference to the behavior of the causative head \gsc{CAUS} which for her underlies {\thif}. My analysis, using {\vd}, follows in the same vein. Note that the implied EA is not syntactically represented; it cannot, for example, create a new discourse referent.
 \ex\label{ex:sportait} \ljudge{*}
 	\begingl
 		\gla nadia komanetʃi hajta sportait \emph{(EA$_i$)} \underline{muxʃer-et} bekfida. \textbf{hu$_i$} asa avoda tova aval safag harbe bikoret//
@@ -825,9 +727,7 @@ All three templatic forms are compatible with both stative adjectives and adject
 	\endgl
 \xe
 
-
-
-
+I conclude with additional observations by template, collected here for completeness, and drawing heavily on \cite{doron00} as well as \cite{doron14adj} and \cite{meltzerasscher11}.
 % doron00: Some roots have only adjpass, some have only verbpass. COS, telos, inchoative aspect (beginning of event, raxuv vs *dahur, state that can be referred to). Some other factors as well: roots of motion (musa, muval) are only verbal. Roots of relation (sanu, ahuv, bazuy) or only adjectival and don't all have a corresponding verb.
 
 % Consistently, \tpua~and \thuf~allow an EA but \tkal~not always. Depends on the lexical semantics of the root.
@@ -836,29 +736,28 @@ All three templatic forms are compatible with both stative adjectives and adject
 %   1. Adjpass and/or verbpass? Depends on the template.
 %   2. EA in adjpass possible (Meltzer's ``true adjectival passive'' vs ``adjectival decausative'')? Depends on the root in \tpua, possible in \tpie~and \thif, in fact obligatory in \thif.
 
-\paragraph*{\tkal~(adjectival form \emph{XaYuZ})}
-No verbal passive exists for \tkal, but stative and resultative adjectives are both possible.
+\paragraph*{\tkal~(adjectival form \emph{XaYuZ}).} No verbal passive exists for {\tkal} but stative and resultative adjectives are both possible.
 
-Only change of state roots are possible input to adjectives in this template \citep{doron00}. For example, the form *\emph{karu} (int. `read') does not exist as a stative adjective or as an adjectival passive:
+\citep{doron00} proposes that only change of state roots are possible input to adjectives in this template. For example, the unattested form *\emph{karu}/*\emph{karuj} (int. `read') does not exist as a stative adjective or as an adjectival passive:
 \ex
   \begingl
-    \gla ha-mixtav \underline{katuv} \emph{/} *\underline{karu}//
+    \gla ha-mixtav \underline{katuv} \emph{/} *\underline{karuj}//
     \glb the-letter written {} read//
     \glft `The letter is written (*is read).'//
   \endgl
 \xe
 
-For those roots that can form adjectives, the main difference is between roots that derive intransitive verbs in \tkal~and those that derive transitive verbs. The former lead to stative adjectives and the latter to adjectival passives {(see }\citealt{meltzerasscher11}{ for a lexicalist account)}.
+For those roots that can form adjectives, the main difference is between roots that derive intransitive verbs in \tkal~and those that derive transitive verbs. The former lead to stative adjectives and the latter to adjectival passives (see \citealt{meltzerasscher11} for a lexicalist account).
 \pex 
-  \a Stative verbs from intransitives: \emph{kafu} `frozen' $<$ \emph{kafa} `froze'; \emph{davuk} `glued' $<$ \emph{davak} 'stuck to'. %ED has more on p56
+  \a Stative adjectives from intransitives: \emph{kafu} `frozen' $<$ \emph{kafa} `froze'; \emph{davuk} `glued' $<$ \emph{davak} 'stuck to'. %ED has more on p56
   \a Adjectival passives are possible with change of state roots: \emph{ʃavur} `broken' $<$ \emph{ʃavar} `broke'; \emph{sagur} `closed' $<$ \emph{sagar} `closed'; \emph{saruf} `burnt' $<$ \emph{saraf} `burned'. %ED has more on p53
-  \a No corresponding verb in \tkal, no telos: \emph{paʃut} `simple', \emph{savux} `complex', \emph{pazur} `scatterd', \emph{ʃaluv} `intertwined', \emph{akum} `crooked', \emph{tarud} `preoccupied'.
+  \a Stative adjectives with no corresponding verb in \tkal: \emph{paʃut} `simple', \emph{savux} `complex', \emph{pazur} `scatterd', \emph{ʃaluv} `intertwined', \emph{akum} `crooked', \emph{tarud} `preoccupied'.
   \xe
 The roots underlying~(\lastx c) do not appear as verbs in \tkal, meaning that they cannot combine with v and Voice. If this is the case, they cannot form the underlying VoiceP necessary for an adjectival passive and are only possible as input to stative adjectives. For the roots in~(\lastx a), their corresponding \tkal~verbs are intransitive. This means that the interpretation of [Voice [v \root{db\dgs{k}}~\!]], for example, is unaccusative. If this is the case, then an implicit EA cannot be licensed, since unaccusatives have no EA.
 
 
 \paragraph*{\tpie~(adjectival form \mpua)}
-Both verbal and adjectival passives are possible in this template. \cite{lakscohen16} provide evidence that the middle stem vowel might be pronounced slightly differently for verbs and adjectives, further supporting the split between the two.
+This template can serve as input to both verbal and adjectival passives. \cite{lakscohen16} argue (and provide experimental evidence for the claim) that the middle stem vowel might be pronounced differently for verbs and adjectives, further supporting the split between the two (one that can be encoded regardless of theoretical framework).
 
 Among the adjectives, there are two kinds of stative adjectives: those that do not have a corresponding verb, (\nextx a), and those that are homophonous with an adjectival passive like English \emph{closed} is, as it can be stative or resultative, (\nextx b).
 \pex
@@ -867,12 +766,12 @@ Among the adjectives, there are two kinds of stative adjectives: those that do n
 \xe
 % mefuSat, menupax - AMA:831 says these are necessarily EA but I don't think so
 
-The verbs underlying~(\lastx b), and any which do not fall under~(\lastx a), can form adjectival passives. For the forms in~(\lastx b), the stative reading is more salient and is often different than the compositional adjectival passive reading. For instance, the adjectival passive \emph{megune} literally means `that which has been censured'.
+The verbs underlying~(\lastx b), and any which do not fall under~(\lastx a), can form adjectival passives. For the forms in~(\lastx b), the stative reading is more salient and is often different than the compositional adjectival passive reading. For instance, the adjectival passive \emph{megune} `obscene' literally means `that which has been censured'.
 
 \paragraph*{\thif~(adjectival form \mhuf)}
-Both verbal and adjectival passives are possible in this template.
+This template can serve as input to both verbal and adjectival passives.
 
-Stative adjectives are only possible from roots that do not have a corresponding verb in \thif, (\nextx a). A form ambiguous with a resultative might also exist, in which case its meaning is different, (\nextx b). For example, \emph{muʃlam} `perfect (stative adj.)'/`that which has been completed (adj. pass)'.
+Stative adjectives are only possible from roots that do not have a corresponding verb in \thif, (\nextx a). A form ambiguous with a resultative might also exist, in which case its meaning is different, as with \emph{muʃlam} `perfect (stative adj.)'/`that which has been completed (adj. pass)'.
 \pex
   \a No corresponding verb: \emph{muda} `aware', \emph{muʃlag} `snowy', \emph{mugaz} `carbonated'.
   \a Ambiguous between resultative and stative: \emph{muʃlam} `perfect', \emph{mufʃat} `abstract'.
@@ -884,22 +783,49 @@ As an innovation, a verb might be back-formed based on adjectives like those in~
 Adjectival passives are available for all roots that have verbs in \thif. As discussed above, these constructions entail an implied EA.
 
 
+%\item \textbf{[a [[Voice {\va}~\!] [v \root{root}~\!]]]} -- attested, adjectival passive in \mpua. Our account of {\va} predicts agentive entailments.
+
+%\item \textbf{[a [{\vd} [v \root{root}~\!]]]} -- attested, adjectival passive in \mhuf. Our account of {\vd} requires a DP in Spec,VoiceP. On the other hand, external arguments are not represented in adjectival passives. Intuitively, the result should be an external argument which is not represented syntactically. This seems to be correct, as noted in connection with examples~(\ref{ex:sportaim}--\ref{ex:sportait}), where an implicit external argument is entailed.
+%\ex
+%		[aP
+%			[DP_i\\\textsc{Internal Argument}]
+%			[aP
+%				[a\\\emph{m-} ]
+%				[VoiceP
+%					[{\vd}\\\emph{u-a} ]
+%					[vP
+%						[v
+%							[v ]
+%							[\root{root} ]
+%						]
+%						[Op_i ]
+%					]
+%				]
+%			]
+%		]
+%\xe
+
+
 
 	\subsection{Summary of adjectival passives}
-In closing, we have now accounted for the existing generalizations regarding what kind of passive (verbal or adjectival) and what kind of adjective (stative or resultative) can appear with what kind of root in each of the templates. Table \ref{table:adjpass-heb} is repeated to conclude this section. The analysis of Hebrew provides further evidence for an eventive layer in adjectival passives. Hebrew also supports the claim that the same morphophonological form can spell out both stative and adjectival passives. This subsection provided an explicit syntax of how the various readings arise.
-\begin{table}[h!t] \centering \small
+We have now accounted for the existing generalizations regarding what kind of passive (verbal or adjectival) and what kind of adjective (stative or resultative) can appear with what kind of root in each of the templates. The summary in~(\nextx) concludes this section. The analysis of Hebrew provides further evidence for an eventive layer in adjectival passives. Hebrew also supports the claim that the same morphophonological form can spell out both stative and adjectival passives.
+\ex
+\xe
+\begin{small}
+%\begin{table}[h!t] \centering \small
 \begin{tabular}{|c|c|l|c|ll|} \hline
 	& Interpretation & Heads/structure & EA? & Form & (template) \\\hline\hline
-\multirow{3}{*}{Adjectives} & \multirow{3}{*}{stative} & \root{root} a$_{\text{\gsc{SMPL}}}$ & \xmark & \emph{XaYuZ} & (\tkal)\\\cline{3-6}
-& & \root{root} a$_{\text{\gsc{INTNS}}}$ & \xmark & \mpua & (\tpie) \\\cline{3-6}
-& & \root{root} a$_{\text{\gsc{CAUS}}}$ & \xmark & \mhuf & (\thif) \\\hline\hline
+\multirow{3}{*}{Adjectives} & \multirow{3}{*}{stative} & [\root{root} a$_{\text{\gsc{SMPL}}}$] & \xmark & \emph{XaYuZ} & (\tkal)\\\cline{3-6}
+& & [\root{root} a$_{\text{\gsc{INTNS}}}$] & \xmark & \mpua & (\tpie) \\\cline{3-6}
+& & [\root{root} a$_{\text{\gsc{CAUS}}}$] & \xmark & \mhuf & (\thif) \\\hline\hline
 %& & [\root{Root} \va] a & \xmark & \mpua & (\tpie) \\\hline\hline
-\multirow{3}{*}{Adjectival passives} & \multirow{3}{*}{resultative} & [Voice [v \root{root}]] a & \cmark/\xmark & \emph{XaYuZ} & (\tkal)\\\cline{3-6}
-& & [Voice {\va} [v \root{root}]] a & \cmark/\xmark & \mpua & (\tpie)\\\cline{3-6}
-& & [{\vd} [v \root{root}]] a & \cmark & \mhuf & (\thif)\\\hline
+\multirow{3}{*}{Adjectival passives} & \multirow{3}{*}{resultative} & [a [Voice [\root{root} v]]] & \cmark/\xmark & \emph{XaYuZ} & (\tkal)\\\cline{3-6}
+& & [a [Voice [{\va} [\root{root} v]]]] & \cmark/\xmark & \mpua & (\tpie)\\\cline{3-6}
+& & [a [{\vd} [\root{root} v]]] & \cmark & \mhuf & (\thif)\\\hline
 \end{tabular}
-\caption{Adjectival passives in Hebrew by template.}
-\end{table}
+\end{small}
+%\caption{Adjectival passives in Hebrew by template.}
+%\end{table}
 
 Finally, it is worth pointing out that {the adjectival passive} is still productive, especially since passives have been characterized as no longer productive in Hebrew, a claim that seems too strong given novel forms such as{ the adjectival passive} \emph{meturgat} `targeted':
 \ex ``For whatever reason, after years of complete openness with Google, and full access to all of the data and information that I produce, it looks like the only thing they know about [me] is that I'm a man. Enough already! I'm tired of ads for shaving, cars, insurance and cologne! \dots ''\\
@@ -912,7 +838,7 @@ Finally, it is worth pointing out that {the adjectival passive} is still product
 Here, as elsewhere in the language, only change of state roots can serve as input to adjectival passives.
 
 
-
+@@@
 \section{Nominalization} \label{passn:n}
 Brief survey of the state of the art, three kinds of nominals
 
