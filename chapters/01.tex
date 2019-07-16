@@ -213,12 +213,12 @@ Finally, Modern Hebrew does not make a distinction between masculine and feminin
 When building on existing work I modify the original transcriptions for consistency. With this housekeeping out of the way, we return to the theoretical approach.
 
 
-\section{Architectural assumptions}
+\section{Architectural assumptions} \label{intro:arch}
 dm
 Voice
 aas15
 
-	\subsection{What is Voice?}
+	\subsection{What is Voice?} \label{intro:arch:voice}
 In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the VP as the complement of V.\footnote{whether or not internal arguments end up in Spec,VP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the VP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
 \pex
 	\a Mittie fed the dog.
@@ -241,6 +241,45 @@ In the current neo-Davidsonian tradition, theories of argument structure have ad
 I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two---at least for certain psychological predicates \citep{bellettirizzi88,harleystone13}---I join the majority of work on argument structure in making no claims to that extent \citep{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This is we will see already in Section~\ref{voice:va}. I will try to be clear about 
 
 The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. As recapped in the previous chapter, much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapters \ref{chap:aas} and \ref{i:nie}, once the current theory has been developed in depth. To begin, I will now explain what it means for Voice to be underspecified for this feature.
+
+
+	\subsection{Layering} \label{intro:arch:layering}
+A recurring question in discussions of argument structure regards the direction of derivation in (anti-)causative alternations. For an alternation like~(\nextx), is the transitive version derived from the intransitive one via causativization or is the intransitive variant derived from the transitive one via anticausativization?
+\pex
+	\a John broke the vase.
+	\a The vase broke.
+\xe
+
+\cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP, (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material (Voice).
+\ex
+a. 
+\Tree
+		[.vP
+			[.\emph{broke} ]
+			[.\emph{the glass} ]
+		]
+b. \Tree
+[.VoiceP
+	[.\emph{John} ]
+	[.
+		[.Voice ]
+		[.vP
+			[.\emph{broke} ]
+			[.\emph{the glass} ]
+		]
+	]
+]
+\xe
+
+This view explains a range of facts about this alternation, chiefly that there is no dedicated direction of derivation which is marked by the morphology across languages. That is, while some languages mark the transitive variants, others mark the intransitive variants, and sometimes both variants are marked in the same language (as we have already seen for Hebrew). Even though there is much to say about which verbs or roots are marked in which way \citep{haspelmath93,unaccusativity95,arad05}, the grammar itself does not force derivation from one stem type to the other.
+
+In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core causative component of the vP is present even in the anticausative variants. For example, the underlined cause PPs in~(\nextx) are possible even with anticausatives, indicating that an event of causation can take place even without an external argument \citep{alexiadouetal06,alexiadouetal06nels}.
+\pex
+	\a The flowers wilted \underline{from the heat}.
+	\a The window cracked \underline{from the pressure}.
+\xe
+
+In sum, while there is a causative base, an actual causer can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent (abstracting away here from the distinction between agents and causers, on which see Chapter~\ref{chap:intro} and \citealt[7]{layering15}). The causative alternation in English can be easily explained in these terms.
 
 
 
