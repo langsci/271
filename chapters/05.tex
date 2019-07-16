@@ -29,7 +29,21 @@ My definition of a passive verb is given in~(\nextx). It is not meant to be cont
 	\a Formally, there is no external argument in Spec,VoiceP (or Spec,TP, for that matter) but there is an Agent role in the semantics.
 \xe
 
-I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the structure tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head \cite{lidz01,labelle08,schaefer17oup}. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the structure tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head \cite{lidz01,labelle08,schaefer17oup}. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+
+The large literature suggests a number of characteristics of passives which can be used as diagnostics \cite{bakeretal89,spathasetal15}, a few of which were already used in Chapter~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent~(\ref{ex:pass-by-en}), allow agent-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent and theme. Existential binding of the implicit agent means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
+\ex \label{ex:pass-by-en}The ship was sunk (by Bill).
+\xe
+\ex \label{ex:pass-adv-en}The ship was sunk deliberately.
+\xe
+\ex \label{ex:pass-pro-en}The EA$_i$ ship was sunk to PRO$_i$ collect the insurance.
+\xe 
+\ex \label{ex:pass-dre-en}The EA$_i$ child$_{*i/j}$ was combed.
+\xe
+\pex \label{ex:pass-bind-en}
+	\a John$_i$ wants Mary to be seen (*by John$_i$).
+	\a Every journalist$_i$ wants the President to be interviewed (by someone$_{*i/j}$).
+\xe
 
 Synthesizing the existing literature on passive heads \citep{bruening13,layering15}, I formalize Pass as follows. In the \textbf{syntax}, Pass is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the passive head.
 
@@ -54,15 +68,7 @@ The \textbf{phonology} of Pass is language-specific. In English it spells out th
 
 
 	\subsection{Descriptive generalizations} \label{passn:pass:tpua}
-There are two exclusively passive templates in Hebrew: {\tpua} and {\thuf}. We have not seen these templates yet. It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are always the passivized version of an active verb in ``intensive'' {\tpie}, (\nextx a), and verbs in ``passive causative'' {\thuf} are always the passivized version of an active verb in ``causative'' {\thif}, (\nextx b). An example pair is given in~(\anextx).
-\ex Predictable alternations in the passive templates:\\
-	\begin{tabular}{ll|ll|ll}
-	& & \multicolumn{2}{c|}{Active} & \multicolumn{2}{c}{Passive} \\\hline
-	a. & {\tpie} $\sim$ {\tpua} & \emph{biʃel} & `cooked' & \emph{buʃal} & `was cooked'\\
-	b. & {\thif} $\sim$ {\thuf} & \emph{heʃmid} & `destroyed' & \emph{huʃmad} & `was destroyed'\\
-	\end{tabular}
-\xe
-
+There are two exclusively passive templates in Hebrew: {\tpua} and {\thuf}. We have not seen these templates yet. An active-passive example pair with {\tpua} is given in~(\nextx).
 \pex
 	\a \begingl
 		\gla ha-jeled sider et ha-xeder//
@@ -74,6 +80,51 @@ There are two exclusively passive templates in Hebrew: {\tpua} and {\thuf}. We h
 		\glb the-room organized.\gsc{INTNS.PASS} by the-boy//
 		\glft `The room was tidied up (by the boy).'//
 	\endgl
+\xe
+
+I use {\tpua} and {\thuf} interchangeably here since there does not seem to be any difference between them, beyond the fact that they are derived from different templates.
+
+Hebrew passives pass the standard tests above. The \emph{by}-phrase can be seen in~(\lastx) and the rest are given below: agent-oriented adverbs~(\ref{ex:pass-adv-he}), control into adjunct clauses~(\ref{ex:pass-pro-he}), disjoint reference effects~(\ref{ex:pass-dre-he}) and existential binding of the implicit agent~(\ref{ex:pass-bind-he}).
+\ex \label{ex:pass-adv-he} \begingl
+	\gla ha-sfina hutbea be-jodin//
+	\glb the-ship sank.\gsc{CAUS.PASS} in-cognizance//
+	\glft `The ship was sunk deliberately.'//
+	\endgl
+\xe
+\ex \label{ex:pass-pro-he} \begingl
+	\gla EA$_i$ ha-sfina hutbea kedej PRO$_i$ lekabel et ha-bituax//
+	\glb {} the-ship sank.\gsc{CAUS.PASS} in.order.to {} to.receive \gsc{ACC} the-insurance//
+	\glft `The ship was sunk to collect the insurance.'//
+	\endgl
+\xe 
+\ex \label{ex:pass-dre-he}
+	\begingl
+	\gla EA$_i$ ha-jeled$_{*i/j}$ sorak//
+	\glb {} the-boy combed.\gsc{INTNS.PASS}//
+	\glft `The boy was combed.'//
+	\endgl
+\xe
+\pex \label{ex:pass-bind-he}
+	\a \begingl
+		\gla dana$_i$ ro{\ts}a ʃe-ha-jeled jesorak (*al-jedej dana$_i$)//
+		\glb Dana wants that-the-boy will.comb.\gsc{INTNS.PASS} by Dana//
+		\glft `Dana wants the boy to be combed (*by Dana$_i$)'.//
+		\endgl
+	\a \begingl
+		\gla kol hore$_i$ ro{\ts}e ʃe-roʃ ha-memʃala jesorak (al-jedej miʃeu$_{*i/j}$)//
+		\glb every parent wants that-head.of the-government will.comb.\gsc{INTNS.PASS} by someone//
+		\glft `Every parent wants the Prime Minister to be combed (by someone else).'//
+		\endgl
+\xe
+
+
+It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are always the passivized version of an active verb in ``intensive'' {\tpie}, (\nextx a), and verbs in ``passive causative'' {\thuf} are always the passivized version of an active verb in ``causative'' {\thif}, (\nextx b).
+\ex Predictable alternations in the passive templates:\\
+	\begin{tabular}{ll|ll|ll}
+	& & \multicolumn{2}{c|}{Active} & \multicolumn{2}{c}{Passive} \\\hline
+	a. & {\tpie} $\sim$ {\tpua} & \emph{biʃel} & `cooked' & \emph{buʃal} & `was cooked'\\
+	b. & {\thif} $\sim$ {\thuf} & \emph{heʃmid} & `destroyed' & \emph{huʃmad} & `was destroyed'\\
+	\end{tabular}
 \xe
 
 A derivational view ``in the syntax'', according to which an existing active verb is passivized into a passive verb, accounts for two important facts about passives in Hebrew: first, there do not exist any passive verbs (that is, verbs in {\tpua} and {\thuf}) without an active base from which they are derived; and second, that passive verbs cannot mean anything other than passivization of the active form, where ``passivization'' means suppression of the external argument as defined above.
@@ -90,8 +141,8 @@ Morphophonologically, passive verbs have two important characteristics. The firs
 1 & g\textbf{u}d\textbf{a}l-ti & g\textbf{u}d\textbf{a}l-nu		& h\textbf{u}gd\textbf{a}l-ti & h\textbf{u}gd\textbf{a}l-nu\\
 2M & g\textbf{u}d\textbf{a}l-ta & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-ta & h\textbf{u}gd\textbf{a}l-tem\\
 2F & g\textbf{u}d\textbf{a}l-t & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-t & h\textbf{u}gd\textbf{a}l-tem\\
-3M & g\textbf{u}d\textbf{a}l & g\textbf{u}d\del{\textbf{a}}l-{\'u}	& h\textbf{u}gd\textbf{a}l & h\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
-3F & g\textbf{u}d\del{\textbf{a}}l-{a} & g\textbf{u}d\del{\textbf{a}}l-{\'u}	& h\textbf{u}gd\del{\textbf{a}}el-{a} & h\textbf{u}gd\del{\textbf{a}}el-{\'u}
+3M & g\textbf{u}d\textbf{a}l & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\textbf{a}l & h\textbf{u}gd\del{\textbf{a}}el-{u}\\
+3F & g\textbf{u}d\del{\textbf{a}}l-{a} & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\del{\textbf{a}}el-{a} & h\textbf{u}gd\del{\textbf{a}}el-{u}
 \end{tabular}
 
 \a Future of passive \emph{jegudal} `will be raised' and \emph{jugdal} `will be enlarged':\\
@@ -100,10 +151,10 @@ Morphophonologically, passive verbs have two important characteristics. The firs
  & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
  & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\hline
 1 & j-e-g\textbf{u}d\textbf{a}l & n-e-g\textbf{u}d\textbf{a}l		& j-\textbf{u}gd\textbf{a}l & n-\textbf{u}gd\textbf{a}l\\
-2M & t-e-g\textbf{u}d\textbf{a}l & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\textbf{a}l & t-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
-2F & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'i} & t-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\del{\textbf{a}}el-{\'i} & t-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
-3M & j-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& j-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{\'u}\\
-3F & t-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{\'u}	& t-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{\'u}
+2M & t-e-g\textbf{u}d\textbf{a}l & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+2F & t-e-g\textbf{u}d\del{\textbf{a}}l-{i} & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\del{\textbf{a}}el-{i} & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+3M & j-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& j-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+3F & t-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u}
 \end{tabular}
 \xe
 
