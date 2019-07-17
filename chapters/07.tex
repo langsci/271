@@ -1,55 +1,125 @@
 \chapter{The features of Voice}
 \label{chap:i}
 
+This book presents a theory of argument structure and its relation to morphology which was developed with two opposing goals in mind: to remain as close as possible to existing analyses of non-Semitic languages (theoretical parsimony) and to explain the templatic system of verbs in Modern Hebrew (empirical adequacy). In the current chapter I summarize the generalizations drawn out here and the means used to explain them (Section~\ref{i:sum}). I then discuss some related issues in the theory of Voice, chiefly the identity of this head (Section~\ref{i:i}) and the identity of its features (Section~\ref{i:agree}). Section~\ref{i:conc} concludes the chapter, and with it the monograph, although it will surely not be the final word (or template) on Hebrew morphology.
+
+
 \section{Summary} \label{i:sum}
+The summary of this work is divided into two: the empirical generalizations which an adequate theory of Hebrew morphology ought to derive, and the formal system I have implemented to do so. Readers who have jumped directly to this section may want to consult Chapter~\ref{intro:arch} for some formal background.
 
 	\subsection{Summary of generalizations}
-		
-	\subsection{Summary of claims}
+Every description or discussion of Hebrew morphology begins with the templatic system. The current book was also organized this way, laying out the empirical landscape template by template. When we are careful about the date, we quickly find that some of the generalizations are quite unnatural. To take one example, {\tnif} has both unaccusative and unergative verbs, but no transitive verbs; what would one need to say in a formal analysis? Having acknowledged the unergative and unaccusative verbs have different structures (the Unaccusativity Hypothesis), contemporary theories can hardly refer to ``intransitivity'' as a theoretical primitive.
 
+The list below recaps the generalizations made about each template.
 
-Sections \S\S\ref{syn:middle}--\ref{syn:templates} attempted to account for a range of data by exploring the combinations of different heads in the structure. Table~\ref{table:summary-syn-rep} above provided a summary of how different heads combine in the structure. I will address two points here: what combinations are not attested within Hebrew and what combinations should be attested crosslinguistically.
+\pex \textbf{Generalizations about {\tkal}}
+	\a \textbf{Constructions:} Verbs appear in all possible argument structure configurations.
+	\a \textbf{Alternations:} Participates in alternations with the other templates, as will be reviewed throughout the book.
+\xe
 
-The unattested combinations are listed in Table~\ref{table:unattested-syn}. The final column notes whether the \emph{non-existence} of each form is predicted under our theory (check marks show a good match of theory to data).
-\begin{table}[hb] \centering
-\begin{tabular}{|lllll||c|c|c|}\hline
-	\multicolumn{5}{|c||}{Heads} & Syntax 	& Semantics & Predicted? \\\hline\hline
-	
-	a. & & \blue{\vd} &\red{\va}&	& \blue{EA}	& \red{Action} & \xmark \\
+\pex \textbf{Generalizations about {\tpie}}
+	\a \textbf{Constructions:} Verbs appear in active (transitive/unergative) configurations.\\
+		Readings are weakly agentive.
+	\a \textbf{Alternations:} When alternating with {\tkal}, provides a more ``intensive'' or agentive version.
+\xe
 
-	b. & & \blue{\vd} &\red{\va}& \blue{\pz}	& \blue{EA}, \blue{EA = Figure}	& \red{Action} & \xmark \\\hline
-			
-	c. & & \blue{\vd} & &\blue{\pz}	& \blue{EA}, \blue{EA = Figure} & (underspecified)  & \xmark \\\hline
-	
-	d.& \olive{Pass} & Voice& &		& \olive{Passive}	& (underspecified) & \cmark/\xmark \\
-		
-	e.& \olive{Pass} & Voice& &	\blue{\pz}	& \olive{Passive}, \blue{EA = Figure}	& (underspecified) & \cmark/\xmark \\
-	
-	f.& \olive{Pass} & \blue{\vz}& &		& \olive{Passive}, \blue{No EA}	& (underspecified) & \cmark \\\hline	
-	
-	g. & & \blue{\vz} & &\blue{\pz}	& \blue{No EA}, \blue{EA = Figure} & (underspecified) & \cmark \\\hline
+\pex \textbf{Generalizations about {\tnif}}
+	\a \textbf{Constructions:} Verbs appear in unaccusative, passive and figure reflexive constructions; but never in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
+\xe
+
+\pex \textbf{Generalizations about {\thit}}
+	\a \textbf{Constructions:} Verbs appear in unaccusative, figure reflexive and reflexive constructions; but not in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}.
+\xe
+
+\pex \textbf{Generalizations about {\thif}}
+	\a \textbf{Constructions:} Verbs appear in transitive and unergative configurations; a small class of verbs forms unaccusative degree achievements.
+	\a \textbf{Alternations:} Some verbs are causative or active versions of verbs in other templates, especially {\tkal}. A small class of verbs creates a labile alternation within {\thif}.
+\xe
+
+\pex \textbf{Generalizations about {\tpua} and {\thuf}}
+	\a \textbf{Constructions:} Verbs appear in passive configurations only.
+	\a \textbf{Alternations:} Verbs in {\tpua} are always the passive version of an active verb in {\tpie}. Verbs in {\thuf} are always the passive version of an active verb in {\thif}.
+\xe
+
+These generalizations are summarized in~(\nextx), where a na\"ive view of the templates defies economical description -- at least at first sight.\footnote{The table in~\ref{table:sum-naive} does not distinguish plain unergatives from figure reflexives, precisely because traditional views do not make this distinction.}
+\ex \label{table:sum-naive}
+\xe
+\begin{tabular}{ll|ccccc|l}
+& Template	& Unaccusative	& Unergative	& Transitive	& Reflexive	& Passive  & Alternations\\\hline
+a.& {\tkal}			& \cmark			& \cmark			& \cmark		& \xmark	& \xmark & b, c, e\\
+b.& {\tpie}			& \xmark			& \cmark			& \cmark		& \xmark	& \xmark & a, d, f\\
+c.& {\tnif}			& \cmark			& \cmark			& \xmark		& \xmark	& \cmark & a, e\\
+d.& {\thit}			& \cmark			& \cmark			& \xmark		& \cmark	& \xmark & b, g\\
+e.& {\thif}			& \cmark			& \cmark			& \cmark		& \xmark	& \xmark & a, c, e\\\hline
+f.& {\tpua}			& \xmark		& \xmark			& \xmark			& \xmark	& \cmark & b\\
+g.& {\thuf}			& \xmark		& \xmark			& \xmark			& \xmark	& \cmark & g\\
 \end{tabular}
-\caption{Unattested combinations of syntactic elements in Hebrew.\label{table:unattested-syn}}
-\end{table}
 
-The combinations in \textbf{(a)} and \textbf{(b)} predict a strongly agentive template: \vd~requires an external argument and \va~ensures that this argument has agentive semantics. But we have no evidence for such a template, which would have a prefix from \vd~and non-spirantization from \va. This gap has no principled explanation: perhaps both heads perform similar enough work functionally that such a template is not necessary. There already exists a head that requires an external argument (\vd), and there already exists a head that requires agentive semantics (\va~\!), so the system is in no need of a redundant combination of the two.
+The table in~(\lastx) clearly shows the many-to-many mapping problem that arises when trying to link morphology and syntax/semantics in Hebrew (with the exception of the two passive templates, perhaps the sole consensus in the morphosyntactic literature on Hebrew). What is the reading of a verb in {\thit}? The answer is not deterministic: sometimes unaccusative, sometimes unergative, sometimes reflexive. What morphology do you choose if you want to express an unaccusative verb? The answer is again not deterministic: sometimes {\tkal}, sometimes {\tnif}, sometimes {\thit} and sometimes {\thif}. So form cannot map directly to meaning, if by ``form'' we mean templates. My critique of \cite{arad05} in previous chapters hopefully showed just how important that work was in clearing up this point.
 
-It is also possible for (a) and (b), at least technically, that when \vd~and \va~combine a null allomorph of \va~is selected: thus when a verb in \thif~is agentive, there is a silent \va~in the structure. This proposal is unfalsifiable and I will not attempt to defend it.
+Some of these generalizations are novel; the entire formal conception of figure reflexives in Hebrew \citep{kastner16phd} and indeed in this general framework is recent \citep{wood12phd,wood14nllt}. The characterization of unaccusatives in {\thif} as degree achievements is recent, although not my own proposal \cite{lev16}. The observation that {\thif} is not a causative template but a general active one, which might also have lexical causatives, is novel as far as I can tell, at least when put in these terms. The idea that the distinction between anticausatives and reflexives in {\thit} reflects the lexical semantics of the roots is also very recent \cite{kastner17gjgl}. And the allomorphic interactions which I have mentioned have also only been noticed recently in a unified way \cite{kastner18nllt}. Even if the analysis ends up being inadequate, I believe that these generalizations are important and hope that future work can engage with them rigorously.
 
-The structure in \textbf{(c)} would consist of an external argument saturating the Figure role passed up by \pz. In effect, this is what happens in ordinary figure reflexives. Regular Voice carries out this role since if it did not, the derivation would not converge. But I do not think that the combination in (c) is blocked for any principled reason.
+	\subsection{D-composing the templates}
+Instead of talking about templates, I have proposed that we talk about syntactic structure and cyclic derivations. This was done using the head Voice and allowing it to take one of three values: [+D], [--D] or unspecified for [D]. Informal definitions are given in~(\nextx).
+\pex Overt Voice heads in Hebrew
+\a \textbf{{\vd}:} requires a DP in in its specifier.
+\a \textbf{{\vz}:} prohibits a DP in its specifier.
+\a \textbf{Unspecified Voice:} places no restrictions on its specifier.
+\xe
 
-It is worth noting at this point that the combinations in (a)--(c) all involve an overt variant of Voice and an overt variant of \emph{p}. Time will tell if this is a spurious correlation or whether this pattern indicates an issue with multiple overt argument-introducing heads.
+Acknowledging the existence of an overt agentive modifier whose semantics is difficult to pin down but which does not seem to be active in the syntax adds {\va} to our toolbox.
+\ex \textbf{{\va}:} an overt modifier adding ``action'' (agentive) semantics to an event. In practice, often creates a requirement for an Agent role to be saturated.
+\xe
 
-The combinations in \textbf{(d)--(f)} all pertain to the structures Pass can combine with. Pass can only merge with structures that have a guaranteed external argument: {\vd} and {\va} are fine, but as seen in the table, the other heads are not. The intuition is that Pass must ``know'' that it has an external argument to quantify over. This intuition is at least partly compatible with the structures in (d)--(f), and in fact Biblical Hebrew did have a passive counterpart to the ``simple'' (Voice+v) template. That template has since been lost.
+Assuming that prepositional phrases are derived similarly to verbs gives us the functional head \textit{p} and its [--D] variant {\pz} (more on this in the next section).
+\pex
+	\a \textbf{\textit{p}:} the prepositional equivalent of Voice; introduces the Figure role (the subject of a preposition).
+	\a \textbf{{\pz}:} prohibits a DP in its specifier.
+\xe
 
-The combination in (f) is correctly predicted not to be possible since Pass has no external argument to quantify over.
+The passive head Pass rounds off the picture.
+\ex \textbf{Pass:} prevents the projection of an argument in Spec,VoiceP and closes off the Agent role existentially in the semantics.
+\xe
 
-Finally, the combination in \textbf{(g)} is predicted not to exist, and correctly so. If \vz~and \pz~were to combine, the Figure role of \pz~would be passed up but no external argument would be able to saturate it. The derivation would crash at interpretation; this gap is predicted.
+When these elements are combined, the resulting picture is not the confusing one in~(\ref{table:sum-naive}) but the principled one in~(\nextx).
+\ex
+\xe
+\begin{center}
+\begin{small}
+%	\begin{table}[ht] \centering \small
+		\begin{tabular}{|llll||c|c|l||c|}\hline
+				\multicolumn{4}{|c||}{Heads} & Syntax 	& Semantics & Phonology & Chapter\\\hline\hline
+		
+				& Voice& &	& (underspecified) 	& (underspecified)	&  \emph{XaYaZ} & \ref{voice:voice} \\\hline
+		
+				& Voice&\red{\va}&	& (underspecified)	& \red{Action}	 & \emph{X{\red{i\dgs{Y}e}}Z}&  \ref{voice:va}	\\
+		
+				\olive{Pass} & Voice&\red{\va}&	& \olive{Passive}	& \red{Action}	 & \emph{X\olive{u}{\red{\dgs{Y}}}\olive{a}Z}&  \ref{passn:pass:pass}	\\\hline
+		
+				& \blue{\vd}& &		& \blue{EA}	& (underspecified)	 & \emph{{\blue{he}}-XY{\blue{i}}Z} & \ref{vd:vd} \\
+		
+				\olive{Pass} & \blue{\vd}& &		& \olive{Passive}, \blue{EA}	& (underspecified)	 & \emph{{\blue{h}}\olive{u}-XY\olive{a}Z} & \ref{passn:pass:pass} \\\hline
+				
+				& \blue{\vz}& &		& \blue{No EA}	& (underspecified)	 & \multirow{2}{*}{\emph{{\blue{ni}}-XY{\blue{a}}Z}} & \ref{vz:vz} \\
+				& Voice& &\blue{\pz}	& \blue{EA = Figure} & (underspecified)	 &  & \ref{vz:pz} \\\hline
+				& \blue{\vz}&\red{\va}&	& \blue{No EA}	& \red{Action}	 & \multirow{2}{*}{\emph{{\blue{hit}}-X{\red{a\dgs{Y}e}}Z} } &  \ref{vz:va:vzva} \\
+				& Voice&\red{\va}&\blue{\pz}	& \blue{EA = Figure} & \red{Action}	 & & \ref{vz:va:pzva} \\\hline
+			\end{tabular}
+%		\caption{The requirements of functional heads in the Hebrew verb.\label{table:summary-syn-rep}}
+%	\end{table}
+\end{small}
+\end{center}
 
-On the crosslinguistic angle now, the theory did predict that certain heads could combine. Since \va~is by definition a modifier of Voice, it may combine with Voice, yielding \tpie, or with \vz/\pz, yielding \thit. Because the individual elements all have their own syntax and semantics, the result of combining them is to a large extent predictable.
+The combinatorics of these heads---specifically unattested combinations---were addressed in the individual chapters. See \citet[Ch.~2.4.1.1]{kastner16phd} for a summary.
 
-The combination of \vz~and \va~has already been explored for Greek in \S\ref{syn:middle:refl}, where it was shown that the two bring about reflexive readings. This is exactly the kind of pattern that is predicted to arise when these heads are in the structure, though as discussed, the rest of the grammar (including the root) needs to be compatible with the construction. At some point along the line the theory should be able to predict how heads combine in a given language, depending on other aspects of the grammar.
+Let me reiterate the role of \textbf{roots} in this theory and in any theory of Semitic: at some level it must be listed what functional heads are licensed by what roots. I have not attempted to formalize this matter, since at present I do not see whether there are any generalizations to account for or predictions worth making. \cite{arad05} makes a strong case for the view under which the combination is almost entirely arbitrary, in that each combination of root and template must be listed. I do not know whether this is necessarily true, but currently have no better way of describing the system. As emphasized throughout the book, the same issue arises regardless of theoretical framework.
 
+In the next section I try to take a step back from Semitic, considering the conceptual and crosslinguistic inventory of syntactic heads.
+
+@@@
+\section{i*} \label{i:i}
 \cite{oseki16nyu} does suggest that the Japanese causative \emph{-sase} should be decomposed into an Applicative head \emph{-s-} and the \vd~morpheme -\emph{s}-{, in a system which allows for various combinations of Voice heads}. Other combinations thus do seem to be attested in one language where another cannot combine them; in Hebrew this {specific }combination cannot be examined because Hebrew does not have a ``morphological'' Appl affix; benefactive and malefactive arguments are introduced using the preposition \emph{le-} `to'.
 \ex \begingl
     \gla ha-arje biʃel ʃu'it (\underline{la}-jeladim)//
@@ -63,7 +133,7 @@ Standard Arabic and some Arabic dialects might be more informative. In these lan
 Applicatives bring up a more general point which relates to the kinds of argument-introducing heads in the syntax: the framework as a whole now allows for Voice heads, \emph{p} heads and Appl heads. All are empirically necessary, but recent work suggests that they need not be distinguished theoretically.
 
 
-\section{i*} \label{i:i}
+
 In a recent account of the way argument structure is derived and interpreted, \cite{woodmarantz15} propose to reduce the overall inventory of functional heads. Working within a similar framework, in which much of the burden of deriving properties of the event lies in the semantic component, \citeauthor{woodmarantz15} suggest that non-internal arguments (external and applied arguments introduced by Voice, Appl, \emph{p} and P) are in fact variants of the same predicational head. This head is called \emph{i*}.
 
 If \cite{woodmarantz15} are correct, the difference between \emph{p}, Appl and Voice is an illusion: they are all the same predicational head underlyingly, albeit in different contexts. Voice is but \emph{i*} that merges with a vP. Little \emph{p} is but \emph{i*} that merges with a PP. And P itself is \emph{i*} modified by a (prepositional) root.
@@ -90,6 +160,12 @@ Mithun on Iroquian
 
 	\subsection{Japanese} \label{i:i:jap}
 Oseki
+
+\cite{oseki16nyu} does suggest that the Japanese causative \emph{-sase} should be decomposed into an Applicative head \emph{-s-} and the \vd~morpheme -\emph{s}-{, in a system which allows for various combinations of Voice heads}. 
+
+
+
+
 The framework developed in \S\S\ref{syn:middle}--\ref{syn:templates} makes use of a number of different syntactic heads. In this section I show how these fit into a crosslinguistic theory of argument structure.
 
 Two questions ought to be distinguished when we ask about the crosslinguistic validity of this theory:
@@ -218,6 +294,8 @@ being honest about the data/generalizations - didn't check every single verb
 
 acquisition?
 
+
+No templates. Arad was explicit and unsatisfying. Doron wasn't connected to the syntax. So we need a modern morphophonemics of Hebrew, if you will.
 
 %\section{Notes}
 %Triplets.
