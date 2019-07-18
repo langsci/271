@@ -59,7 +59,17 @@ g.& {\thuf}			& \xmark		& \xmark			& \xmark			& \xmark	& \cmark & g\\
 
 The table in~(\lastx) clearly shows the many-to-many mapping problem that arises when trying to link morphology and syntax/semantics in Hebrew (with the exception of the two passive templates, perhaps the sole consensus in the morphosyntactic literature on Hebrew). What is the reading of a verb in {\thit}? The answer is not deterministic: sometimes unaccusative, sometimes unergative, sometimes reflexive. What morphology do you choose if you want to express an unaccusative verb? The answer is again not deterministic: sometimes {\tkal}, sometimes {\tnif}, sometimes {\thit} and sometimes {\thif}. So form cannot map directly to meaning, if by ``form'' we mean templates. My critique of \cite{arad05} in previous chapters hopefully showed just how important that work was in clearing up this point.
 
-Some of these generalizations are novel; the entire formal conception of figure reflexives in Hebrew \citep{kastner16phd} and indeed in this general framework is recent \citep{wood12phd,wood14nllt}. The characterization of unaccusatives in {\thif} as degree achievements is recent, although not my own proposal \cite{lev16}. The observation that {\thif} is not a causative template but a general active one, which might also have lexical causatives, is novel as far as I can tell, at least when put in these terms. The idea that the distinction between anticausatives and reflexives in {\thit} reflects the lexical semantics of the roots is also very recent \cite{kastner17gjgl}. And the allomorphic interactions which I have mentioned have also only been noticed recently in a unified way \cite{kastner18nllt}. Even if the analysis ends up being inadequate, I believe that these generalizations are important and hope that future work can engage with them rigorously.
+And once you have chosen a template, how do you know which template to derive an alternation in? Should you go from an anticausative in {\tnif} to {\tkal} or to {\thif}? We have seen that both are possible:
+\ex
+	\begin{tabular}{l|lcl|ccc}
+		&	&	&	&	{\tnif}	& {\tkal} & {\thif}\\\hline
+	\root{ʃbr} & broke & $\sim$ & broke	& \emph{niʃbar} & \emph{ʃavar} & --- \\
+	\root{xkd} & went extinct & $\sim$ & eradicated & \emph{nikxad} & --- & \emph{hekxid}\\
+	\end{tabular}
+\xe
+Again, some patterns exist but looking at the templates in terms of primitives makes it hard to understand why precisely these patterns arise, above and beyond the idiosyncrasy of individual roots.
+
+Some of the generalizations tallied above are novel. The entire formal conception of figure reflexives in Hebrew \citep{kastner16phd} and indeed in this general framework is recent \citep{wood12phd,wood14nllt}. The characterization of unaccusatives in {\thif} as degree achievements is recent, although not my own proposal \cite{lev16}. The observation that {\thif} is not a causative template but a general active one, which might also have lexical causatives, is novel as far as I can tell, at least when put in these terms. The idea that the distinction between anticausatives and reflexives in {\thit} reflects the lexical semantics of the roots is also very recent \cite{kastner17gjgl}. And the allomorphic interactions which I have mentioned have also only been noticed recently in a unified way \cite{kastner18nllt}. Even if the analysis ends up being inadequate, I believe that these generalizations are important and hope that future work can engage with them rigorously.
 
 	\subsection{D-composing the templates}
 Instead of talking about templates, I have proposed that we talk about syntactic structure and cyclic derivations. This was done using the head Voice and allowing it to take one of three values: [+D], [--D] or unspecified for [D]. Informal definitions are given in~(\nextx).
@@ -83,7 +93,7 @@ The passive head Pass rounds off the picture.
 \ex \textbf{Pass:} prevents the projection of an argument in Spec,VoiceP and closes off the Agent role existentially in the semantics.
 \xe
 
-When these elements are combined, the resulting picture is not the confusing one in~(\ref{table:sum-naive}) but the principled one in~(\nextx).
+When these elements are combined, the resulting picture is not the confusing one in~(\ref{table:sum-naive}) but the principled one in~(\nextx). These elements and the values of their features explain what structures give rise to what spell-outs, or in other words, what \textbf{constructions} a given template is possible in.
 \ex
 \xe
 \begin{center}
@@ -111,8 +121,9 @@ When these elements are combined, the resulting picture is not the confusing one
 %	\end{table}
 \end{small}
 \end{center}
-
 The combinatorics of these heads---specifically unattested combinations---were addressed in the individual chapters. See \citet[Ch.~2.4.1.1]{kastner16phd} for a summary.
+
+The hierarchical structure---that is to say, the layering of Voice above vP---explains what \textbf{alternations} are possible. Since Voice merges above a core vP, the three values of Voice can give rise to three templates in transitivity alternations ({\tkal}, {\tnif} and {\thif}). Because {\va} merges with the core vP, {\tpie} has a less transparent, but still fairly consistent, relationship with {\tkal}. And given that the core vP with {\va} can then combine with either unspecified Voice or {\vz}, we derive the alternation between {\tpie} and {\thit}. The final alternation, between active {\tpie} and {\thif} and the one side and passive {\tpua} and {\thuf} on the other side, follows from merging Pass with the active VoiceP. Alternations are therefore not listed extrinsically nor are they the property of templates. They are what we see if a given root is instantiated in a number of structures which share a core vP, just like \citeauthor{schaefer08}'s (\citeyear{schaefer08}) conclusion for the causative alternation in European languages.
 
 Let me reiterate the role of \textbf{roots} in this theory and in any theory of Semitic: at some level it must be listed what functional heads are licensed by what roots. I have not attempted to formalize this matter, since at present I do not see whether there are any generalizations to account for or predictions worth making. \cite{arad05} makes a strong case for the view under which the combination is almost entirely arbitrary, in that each combination of root and template must be listed. I do not know whether this is necessarily true, but currently have no better way of describing the system. As emphasized throughout the book, the same issue arises regardless of theoretical framework.
 
@@ -159,13 +170,81 @@ p. 64 onwards: http://www.conormquinn.com/CQuinn2006Referential-AccessDependency
 Mithun on Iroquian
 
 	\subsection{Japanese} \label{i:i:jap}
-Oseki
+The morphology of transitivity alternations in Japanese has received significant attention over the years \citep{suga80,jacobsen92,miyagawa98,nishiyama98,volpe05,harley08}. Recently, \cite{oseki17nyu} proposed an analysis of argument structure alternations and their expression in the morphology of Japanese which builds on the trivalent system. Here is an outline and quick evaluation.
 
-\cite{oseki16nyu} does suggest that the Japanese causative \emph{-sase} should be decomposed into an Applicative head \emph{-s-} and the \vd~morpheme -\emph{s}-{, in a system which allows for various combinations of Voice heads}. 
+Some verbs like \emph{hirak} `open' have the labile alternation:
+\pex
+	\a \begingl
+		\gla John-ga doa-o hirak-\zero-ta//
+		\glb John-\gsc{NOM} door-\gsc{ACC} open-\zero-Past//
+		\glft `John opened the door.'//
+	\endgl
+	\a \begingl
+		\gla Doa-ga hirak-\zero-ta//
+		\glb door-\gsc{NOM} open-\zero-Past//
+		\glft `The door opened.'//
+	\endgl
+\xe
+
+With many others, overt transitivity markers can be found, namely -\gsc{S}- (and allomorphs) for marked transitives and -\gsc{R}- (and allomorphs) for marked intransitives:
+\pex
+	\a \begingl
+		\gla John-ga posutaa-o hag-as-ta//
+		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\gsc{S}-Past//
+		\glft `John took down a poster.'//
+	\endgl
+	\a \begingl
+		\gla Syatsu-ga chijim-ar-ta//
+		\glb shirt-\gsc{NOM} shrink-\gsc{R}-Past//
+		\glft `A shirt shrank.'//
+	\endgl
+\xe
+
+\cite{oseki17nyu} reproduces data from \cite{suga80}, who observed minimal triplets in Japanese:
+\ex
+\begin{tabular}{lllll}
+	& & Marked intransitive & Unmarked intransitive & Marked transitive\\\hline
+	a.& \root{\gsc{PEEL}} & hag-er-u & hag-\zero-u & hag-as-u\\
+	b.& \root{\gsc{CUT}} & kur-er-u & kir-\zero-u & kir-as-u\\
+\end{tabular}
+\xe
+
+These patterns can be understood if we assume something like the following for Japanese:
+\pex
+	\a Voice \lra~\zero
+	\a {\vz} \lra~-\gsc{R}-
+	\a {\vd} \lra~-\gsc{S}-
+\xe
+
+\cite{oseki17nyu} then goes on to show how this system predicts the behavior of the causative \emph{-sase} applicatives as \emph{-s-} over \emph{-s-}---potentially {\vd} over {\vd}---and of the passive \emph{rare} \emph{-r} over \emph{-r-} (potentially {\vz} over {\vz}).
+
+Appealing as this analysis of Japanese may be, I must note two aspects in which it diverges from the current proposal for Hebrew. First, \gsc{S}-marked verbs are always transitive. Hebrew {\vd} does not enforce transitivity, only an external argument. In fact, \citet[26]{nie17} notes that the alternation between a marked and unmarked transitive seems like a Differential Object Marking pattern, correlating with the appearance of the object marker -\emph{o} (glossed \gsc{ACC}, just like Hebrew \emph{et}). Marked transitives are only possible with -\emph{o}, but zero-marking is possible regardless of whether the object marker appears.
+\pex
+	\a \begingl
+		\gla John-ga posutaa-\textbf{o} hag-\zero/as-ta//
+		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\zero/\gsc{S}-Past//
+		\glft `John took down (a specific) poster.'//
+	\endgl
+	\a \begingl
+		\gla John-ga posutaa hag-\zero/(*as)-ta//
+		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\zero/\gsc{S}-Past//
+		\glft `John took down a poster (some poster).'//
+	\endgl
+\xe
+
+Second, these patterns are not necessarily the entire story. \citeauthor{oseki17nyu} also gives the following patterns from \cite{suga80}, in which \emph{-er-} is now the transitivity marker and the marked intransitive -\gsc{R}- form is -\emph{ar}-.
+\ex
+\begin{tabular}{lllll}
+	& & Marked intransitive & Unmarked transitive & Marked transitive\\\hline
+	a.& \root{\gsc{SHRINK}} & chijim-ar-u & chijim-\zero-u & chijim-er-u\\
+	b.& \root{\gsc{MOVE}} & tsutaw-ar-u	& tsutaw-\zero-u & tsutaw-er-u\\
+\end{tabular}
+\xe
+
+To what extent these patterns are phonologically predictable and to what extent there is accidental syncretism are important questions. But they are tangential to my current reservation, which is simply that more work needs to be done in order to understand Japanese transitivity alternations. The trivalent system therefore provides a good starting point for investigating Japanese, especially if it can provide novel explanations for the morphology of applicatives and passives, and if it can explain DOM-like patterns (Section~\ref{i:agree:nie}).
 
 
-
-
+	\subsection{Crosslinguistic}
 The framework developed in \S\S\ref{syn:middle}--\ref{syn:templates} makes use of a number of different syntactic heads. In this section I show how these fit into a crosslinguistic theory of argument structure.
 
 Two questions ought to be distinguished when we ask about the crosslinguistic validity of this theory:
@@ -217,18 +296,6 @@ The second difference shows that even if we find similar classes of roots crossl
 %AM: We've been re-visiting the account of Japanese +D causative -s marking, with the possible correlation with obligatory -o marking (and thus no -o drop), precisely because Yining's use of +D on voice is designed to force obligatory phi agreement with the/an object (which is straightforward for ergative languages, in which the phi agreement goes along with the absolute, but less intuitive for nom/acc language, in which the spec of the +D voice will generally be able to provide phi features for T; nevertheless, the prediction is that +D voice should go along with object marking of the specific/definite/animate sort, and a type of transitivity that elevates the direct object to discourse representation status as a potential topic or focus).
 
 
-\pex 
-	\a Japanese transitivity alternations have also received significant attention over the years.\\
-		\phantom{a} \hfill \citep{suga80,jacobsen92,miyagawa98,nishiyama98,volpe05,harley08}
-	\a \cite{oseki17nyu}, drawing on much previous work:
-	\begin{center}
-		\begin{tabular}{lll}
-		\textbf{\vd} & \textbf{Voice} & \textbf{\vz}\\
-		\caus{transitive} & \mark{unmarked} & \anticaus{non-active}\\
-		\caus{-s-} & \unmark{$\varnothing$} & \anticaus{-r-} \\
-		\end{tabular}
-	\end{center}
-\xe		
 
 \pex\label{ex:puyuma}\cite{nie17} proposes trivalent Voice for Puyuma (Formosan); similarly for Niuean.
 	\a {\vd} is marked with an infix; obligatory external argument.\\
