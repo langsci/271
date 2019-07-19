@@ -133,7 +133,7 @@ The hierarchical structure---that is to say, the layering of Voice above vP---ex
 
 Let me reiterate the role of \textbf{roots} in this theory and in any theory of Semitic: at some level it must be listed what functional heads are licensed by what roots. I have not attempted to formalize this matter, since at present I do not see whether there are any generalizations to account for or predictions worth making. \cite{arad05} makes a strong case for the view under which the combination is almost entirely arbitrary, in that each combination of root and template must be listed. I do not know whether this is necessarily true, but currently have no better way of describing the system. As emphasized throughout the book, the same issue arises regardless of theoretical framework.
 
-In the next section I try to take a step back from Semitic, considering the conceptual and crosslinguistic inventory of syntactic heads.
+This analysis aims to be simple: the child only posits variants on basic elements if she has evidence for them. Hebrew has phonological (and of course syntactic and semantic) evidence for all and only the elements in~(\lastx), obviating the need for additional silent structure. In the next section I try to take a step back from Semitic, considering the conceptual and crosslinguistic inventory of syntactic heads.
 
 
 \section{Voice heads} \label{i:i}
@@ -312,86 +312,119 @@ It thus appears to be potentially useful to adopt this framework for additional 
 %The second difference shows that even if we find similar classes of roots crosslinguistically (in this case Other-Oriented roots such as \root{\gsc{BREAK}} or \root{\gsc{HIT}}), they might not interact with similar elements in the same way. Again, we can develop this theory now that we have a framework for roots of different semantic classes and the syntactic elements they combine with.
 
 
-\section{Valuing features on Voice} \label{i:agree}
+\section{Features on Voice} \label{i:agree}
 The second question opening this chapter had to do with the inventory of features which might exist on \textit{i*}/Voice. It is interesting to note that virtually all work on the features of Voice assumes the [D] feature and/or phi-features.
 
 In Hebrew, I have made the case that Voice can be [+D] as in {\vd}, [--D] as in {\vz} or not inherently valued as in unspecified Voice. In principle however, the architecture allows any syntactic feature to appear on Voice. Nothing in the theory prohibits Voice$_{\text{[wh]}}$, for instance, which would require a \emph{wh}-phrase in Spec,VoiceP. Now granted, any theory of syntax must stipulate in one way or another which features are possible on which functional elements. One way to restrict the theory is to require only \emph{uninterpretable} features \citep{chomsky95}, being purely syntactic features, to exist on Voice. The EPP feature [D] is one such feature. This kind of solution would rely on a certain view of which features are interpretable and which are not (the notion of uninterpretable features and whether they are necessary has itself been questioned in recent work, e.g.~\citealt{preminger14mit}).
 
 Ideally, our theory of features on argument-introducing heads would be part of a general theory of argument structure, feeding processes such as case assignment and specifying the triggers for A-movement. Some recent theories do exactly that by recourse to [D] and phi-features.
 
-@@@
-
-	\subsection{Other approaches to the content of Voice} \label{i:agree:other}
-\cite{schaefer08,schaefer12,schaefer17oup}: D for spec, phi for dependent case
-(case in Hebrew? no se/sich)
-
-
-Legate
-
-Wurmbrand
-
-\pex Invites comparison with \cite{wurmbrandshimamura17}.
-	\a Voice features on Voice: active/passive (and also Agent/Cause semantics). %This theory has Voice encode either Agent or Passive. Not sure what the motivation is. And Agent/Cause is a separate (allosemic) issue.
-	\a Phi-features on Voice: identify a DP.
-	\a Additional consideration/result: unvalued Voice is restructuring-Voice.
+%	\subsection{Other approaches to the content of Voice} \label{i:agree:other}
+	\subsection{Layering}
+Within the standard Layering approach \citep{schaefer08,schaefer12,schaefer17oup}, two sets of features have been associated with Voice. The first has to do with syntactic and semantic transitivity, as discussed in Chapter~\ref{chap:aas}. The second is a set of phi-features. These are used mainly to explain the behavior of reflexive/expletive pronouns such as French \emph{se} or German \emph{sich}, case assignment and agreement. Since Hebrew does not have expletives such as these, I have not invoked phi-features alongside [$\pm$D].
+\pex Features of Voice under Layering:
+	\a {[}D] regulating Spec,VoiceP.
+	\a $\lambda$x/$\exists$x/\zero~regulating the semantics of the external argument (if any).
+	\a Phi-features regulating case assignment (primarily with expletives).
 \xe
+In this theory, [D] is still the feature regulating most of the argument structure. The data come from Romance and Germanic.
 
-\pex To summarize:
-	\a Parts of the current approach are compatible with translation to phi-features, others (\vz) less so.
-	\a Right now the question of whether there's parametric variation or a unified account is open \citep[191ff12]{wurmbrandshimamura17}.
+	\subsection{Restriction}
+\cite{legate12lang,legate14} presents a different theory, one in which phi-features on Voice serve to Restrict the arguments with which they are associated. ``Restrict'' is meant in both an intuitive sense and in the formal sense of \cite{chungladusaw04}: a 3rd person specification means that a 2nd person argument will not be possible. The bundle of phi-features may appear either on Voice or in Spec,VoiceP (instead of a regular external argument). Object licensing features are generated on Voice and inherited by v.
+
+If the features are on Voice, they serve to restrict the Agent. This can be either the subject of an active clause (merged in Spec,VoiceP), or the agent of a passive clause, regardless of whether it is implied or overt in a \emph{by}-phrase.\footnote{The exact mechanics require existential closure to apply to the Agent role if no \emph{by}-phrase appears, but this issue arises for all mainstream analyses of the passive; see \citealt{williams15} for background.} Crosslinguistically, these features appear overtly as a prefix denoting person and familiarity on the verb (in Achenese), as a dedicated form of the passive prefix alternating according to number (in Chamorro), and as a specific suffix for passive verbs restricts 3sg (in Balinese).
+
+If the features are merged in Spec,VoiceP they can only restrict the DP in the \emph{by}-phrase of a passive and are covert (in Ukranian and the Icelandic New Passive). This is a kind of Weak Implicit Argument in the terminology of \citealt{landau10}.
+
+Impersonal constructions are analyzed as structures in which a silent pronoun in Spec,VoiceP has both a [D] feature and phi-features; this is essentially \textit{pro}, or the Strong Implicit Argument of \cite{landau10}.
+\pex Features of Voice under the phi-features theory inspired by Acehnese:
+	\a $\lambda$x for Agent semantics.
+	\a Phi-features restricting the Agent.
+	\a Phi-features can be merged either directly on Voice (overt) or in Spec,VoiceP (covert).
 \xe
+In this theory, phi-features regulate argument structure, at least in the relevant constructions. The data come from three Austronesian languages (features on Voice) and from Ukranian and Icelandic (features on Spec,VoiceP).
 
+	\subsection{Restructuring}
+Another kind of theory was proposed by \cite{wurmbrandshimamura17}. For them, Voice has two sets of features. ``Voice features'' regulate whether the clause is active or passive, and introduce Agent/Cause semantics. Voice also carries phi-features which may be inserted valued or unvalued. Object licensing features (\gsc{ACC}) are also generated on Voice.
 
-	\subsection{Trivalent Voice as feature valuation} \label{i:agree:nie}
+In an active clause, unvalued phi-features on Voice need to be valued by the external argument DP. Its merger is thus triggered by the phi-features and not by the Voice:\gsc{Agent} feature. In a passive clause, Voice carries valued phi-features as in \cite{legate14} and the \gsc{Pass} feature. Feature checking between Voice and v/V spells out the appropriate participial morphology on V (in English), and incorporation of v/V to Voice results in affixal morphology.
 
-%AM: We've been re-visiting the account of Japanese +D causative -s marking, with the possible correlation with obligatory -o marking (and thus no -o drop), precisely because Yining's use of +D on voice is designed to force obligatory phi agreement with the/an object (which is straightforward for ergative languages, in which the phi agreement goes along with the absolute, but less intuitive for nom/acc language, in which the spec of the +D voice will generally be able to provide phi features for T; nevertheless, the prediction is that +D voice should go along with object marking of the specific/definite/animate sort, and a type of transitivity that elevates the direct object to discourse representation status as a potential topic or focus).
+This is the basic architecture. Things get interesting when \cite{wurmbrandshimamura17} propose to incorporate restructuring into their theory. This happens if Voice is unvalued for the Voice feature, i.e.~gets merged without an \gsc{agent} or \gsc{pass} feature, in another sort of trivalent setup. The unvalued phi-features on Voice will then be valued by the higher agent/Voice. Importantly for this analysis, there is also a V feature on v which needs to be valued. There are two possibilities for how this is accomplished, each predicting a different kind of restructuring language (voice matching languages and default voice languages). Empirical details aside, the main contribution of this work to the general issue of Voice lies in bringing in considerations from long object movement and restructuring, motivating a series of agreement interactions between Voice, v, V and higher elements in the clause.
+\pex Features of Voice under the restructuring-inspired theory:
+	\a \gsc{agent/passive}/\zero~on Voice.
+	\a Valued or unvalued phi-features on Voice.
+	\a V feature on v.
+\xe
+Feature valuation regulates argument structure. Since the focus of this work was on accounting for restructuring patterns in languages as diverse as Acehnese, Chamorro, Japanese and  Mayrinax Atayal, the combinatorics of the theory were not investigated in full.
 
-
-
-\pex\label{ex:puyuma}\cite{nie17} proposes trivalent Voice for Puyuma (Formosan); similarly for Niuean.
+	\subsection{Vaulation} \label{i:agree:nie}
+The final theory to be mentioned here is the trivalent valuation theory being developed by \cite{nie17}. Taking cues from all this recent work, including the current proposal, \citeauthor{nie17} proposes that Voice carries a trivalent [D] feature and phi-features. Taking a page out of \citeauthor{wurmbrandshimamura17}'s playbook, she assumes that features may be ``lexical'' (inherent, merged as-is) or ``derived'', i.e.~valued in the course of the derivation. \citeauthor{nie17} then explores this idea in detail, making the case for a lexical [$\pm$D] feature, regulating the external argument, and derived phi-features, which are normally valued by the internal argument but which may remain unvalued. This combination allows her, first, to apply the trivalent approach to additional languages. For example, she analyzes Niuean and the Formosan language Puyuma as exhibiting the trivalent distinction:
+\pex\label{ex:puyuma}Trivalent Voice for Puyuma (Formosan)
 	\a {\vd} is marked with an infix; obligatory external argument.\\
 		\begingl
-		\gla s\caus{<em>}a-senay i baeli//
+		\gla s\textbf{<em>}a-senay i baeli//
 		\glb {<}AV>-sing \gsc{NOM.SG} my.elder.sibling//
 		\glft `My elder sister is/was singing.'\trailingcitation{\citep[68]{teng07}}//
 	\endgl
 	\a Unmarked Voice is spelled out by a prefix; external argument optional.\\
 		\begingl
-		\gla \unmark{mu}-atel la na ladru (dra balri)//
+		\gla \textbf{mu}-atel la na ladru (dra balri)//
 		\glb \gsc{MU}-fall \gsc{PERF} \gsc{NOM.DEF} mango \gsc{OBL.IND} wind//
 		\glft `The mango fell. / Wind made the mango fall.'\trailingcitation{\citep[5]{chenfukuda17}}//
 	\endgl
 	\a {\vz} is unmarked morphologically.\\
 		\begingl
-		\gla \anticaus{drua} nantu lalak//
+		\gla \textbf{drua} nantu lalak//
 		\glb came her.\gsc{NOM} child//
 		\glft `Her child came.'\trailingcitation{\citep[222]{teng07}}//
 	\endgl
 \xe
 
-
-\pex \cite{nie17}:
-	\a Voice{[}$\pm$D] for introduction of an external argument.
-	\a Phi-features on Voice which can be valued from below.
+Second, the Austronesian distinction between what are traditionally called Agent Voice and Patient Voice can be seen as a difference in transitivty, and hence is analyzed as a difference in phi-features. In these languages, the pivot receives privileged marking: nominative in Puyuma, as in~(\nextx), or \emph{ang} in Tagalog.
+\pex Puyuma \citep{nie17}
+	\a \begingl
+		\gla tr<em>akaw dra paisu i Isaw//
+		\glb {<}\gsc{AV}{>}steal \gsc{OBL.IND} money \gsc{NOM.SG} Isaw//
+		\glft `Isaw stole money.'//
+	\endgl
+	\a \begingl
+		\gla tu=trakaw-aw na paisu kan Isaw//
+		\glb 3.\gsc{GEN}=steal-\gsc{PV} \gsc{NOM.DEF} money \gsc{OBL.SG} Isaw//
+		\glft `Isaw stole the money.'//
+	\endgl
+%	\a \begingl
+%		\gla tu=trakaw-ay=ku dra paisu kan Isaw//
+%		\glb 3.GEN=steal-LV=1SG.NOM OBL.IND money OBL.SG Isaw//
+%		\glft `Isaw stole money from me.'//
+%	\endgl
+%	\a \begingl
+%		\gla tu=trakaw-anay i tinataw dra paisu kan Isaw//
+%		\glb 3.GEN=steal-CV NOM.SG his.mother OBL.IND money OBL.SG Isaw//
+%		\glft `Isaw stole money for his mother.'//
+%	\endgl
 \xe
 
-\pex This derives Puyuma~(\ref{ex:puyuma}) but also:
-	\a The traditional \textbf{``voices''} of Austronesian---Agent Voice and Patient Voice---are both {\vd}. The choice \emph{between} them depends on case and agreement of the internal argument.
-	\a Simliarly for Niuean and other languages, with additional technical details.
+Both Agent Voice and Patient Voice are assumed to be reflexes of {\vd} (see the manuscript for details on the other ``Voices''). However, the choice \emph{between} them depends on the case and agreement properties of the internal argument. If the internal argument values the phi-features on v, then it is marked as the pivot. These phi-features are then transferred from v to Voice, valuing Voice. This is ``Patient Voice''. If the internal argument does not agree with v, then v does not transfer phi-features to Voice. Voice has them valued by the external argument, instead, with predictable consequences: Voice gets ``Agent Voice'' and the subject is marked as pivot. \cite{nie17} equates this kind of interaction with patterns of case and agreement in ergative languages and with DOM effects in nominative languages. She argues, for example, that a similar difference in transitivity marking explains the distribution of the object marker -\emph{o} and transitive morphology in Japanese.
+\pex Features of Voice under the valuation theory:
+	\a {[}D] regulates the licensing of an external argument.
+	\a Phi-features on Voice can be valued from either below (internal argument) or above (external argument).
 \xe
+Broadly speaking, [D] regulates argument structure and the phi-features regulate case and agreement marking.
+
+%interplay of factors associated with ergativity, obligatory transitive verbs, and the featural EPP.
+
+	\subsection{Towards a uniform inventory}
+Where does this proliferation of recent theories leave us? When thinking whether the current proposal can be restated in terms of the approaches which do not assume trivalent Voice, the answer strikes me as negative. While many parts of the current approach are compatible with translation to phi-features, others are less so: the restriction enforced by {\vz} is not one that can be easily captured in terms of phi-features on Voice, unless it is specified that these features can only be valued by the \emph{internal} argument. Similarly, Unspecified Voice (or {\tkal} cannot be the deterministic spell-out of configurations which at times have phi-features valued by an external argument and at times are not valued (or are valued by the internal argument).
+
+Generally speaking, the question whether a unified account of all these Voice-related phenomena would be forthcoming is still open \citep[191ff12]{wurmbrandshimamura17}. The various approaches to the content of Voice have converged on [D] and phi-features being the most important pieces in the syntax, with various possible interactions with case and agreement. How much or how little of each is needed; what other possible values of Voice might be relevant; and what elements we expect to be overt are questions that will likely occupy syntacticians for some time to come.
+
+%	\subsection{Trivalent Voice as feature valuation} \label{i:agree:nie}
+
+%AM: We've been re-visiting the account of Japanese +D causative -s marking, with the possible correlation with obligatory -o marking (and thus no -o drop), precisely because Yining's use of +D on voice is designed to force obligatory phi agreement with the/an object (which is straightforward for ergative languages, in which the phi agreement goes along with the absolute, but less intuitive for nom/acc language, in which the spec of the +D voice will generally be able to provide phi features for T; nevertheless, the prediction is that +D voice should go along with object marking of the specific/definite/animate sort, and a type of transitivity that elevates the direct object to discourse representation status as a potential topic or focus).
 
 
 
-
-interplay of factors associated with ergativity, obligatory transitive verbs, and the featural EPP.
-
-
-\begin{itemize}
-	\item Various approaches to the content of Voice.
-	\item Trivalent Voice with overt spell-out: [+D], [--D], unspecified for D..
-	\item Ongoing: [D]? [phi]? More? Less?
-\end{itemize}
-
+@@@
 
 \section{Conclusion} \label{i:conc}
 
