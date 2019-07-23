@@ -114,6 +114,7 @@ This introductory chapter is structured as follows. I give a general overview of
 
 
 \section{Traditional descriptions and basic generalizations} \label{intro:basic}
+	\subsection{Hebrew morphology for beginners}
 The first thing to note about Hebrew is that not \emph{all} morphology is non-concatenative. Agreement, for example, may consist of prefixes and suffixes, alongside non-concatenative changes to the stem. The future tense paradigm for the verb \emph{katav} `wrote' in {\tkal} is given in~(\nextx). The stem vowel is either /o/ or /e/, depending on whether the verb is suffixed or not, but other than that all of the agreement information is affixal.
 \ex
 \begin{tabular}{lll}
@@ -174,7 +175,94 @@ The only cells of the table which are completely predictable are the two passive
 In Part I of the book we will see that the syntax and semantics of the system can nevertheless be analyzed within a constrained theory of morphosyntax. I will make precise what the unique contribution of each template is and how that contribution comes about in the syntax. We will then be able to identify the role of the root in selecting between different possible meanings for the verb in a given template.
 
 
-\subsection{Transliteration and notation} \label{sec:data:notation}
+	\subsection{Traditional generative treatments of the system} \label{intro:basic:jjmcc}
+Before we get to the meat of the book, I would like to acknowledge some of the earlier generative work on Semitic morphology. This will also help set the stage for direct comparison with alternative accounts later on. My aim is not to provide a history of ideas; for that see \cite{kastnertucker19cup}.
+
+In a groundbreaking series of works, John McCarthy presented a purely phonological account of Semitic morphology, focusing on Arabic \citep{jjmcc79,jjmcc81,jjmcc89li,jjmccprince90}. His original contribution lay in dividing the Semitic verb into three ``planes'' or ``tiers'': the CV skeleton (C and V slots), the root (consonants) and the melody (individual vowels).
+%For example, the verb \emph{takattab} `got written' was analyzed as follows, with a default verbal vowel -\emph{a}-.
+%\ex\label{ex:jjmcc-takattab}\emph{takattab} \citep[392]{jjmcc81}:\\
+%\xy
+%<0pt,1.5cm>*\asrnode{C}="C0",
+%<0.75em,1.5cm>*\asrnode{V}="V0",
+%<1.5em,1.5cm>*\asrnode{C}="C1",
+%<2.25em,1.5cm>*\asrnode{V}="V1",
+%<3em,1.5cm>*\asrnode{C}="C2",
+%<3.75em,1.5cm>*\asrnode{C}="C3",
+%<4.5em,1.5cm>*\asrnode{V}="V2",
+%<5.25em,1.5cm>*\asrnode{C}="C4",
+%<0pt,0cm>*\asrnode{t}="c0";
+%<0.75em,3cm>*\asrnode{a}="v0";
+%<1.5em,0cm>*\asrnode{k}="c1";
+%<2.25em,3cm>*\asrnode{a}="v1";
+%<3.5em,0cm>*\asrnode{t}="c2";
+%<4.5em,3cm>*\asrnode{a}="v2";
+%<5.25em,0cm>*\asrnode{b}="c4";
+%"C0"+D;"c0"+U**\dir{-};
+%"V0"+U;"v0"+D**\dir{-};
+%"C1"+D;"c1"+U**\dir{-};
+%"C2"+D;"c2"+U**\dir{-};
+%"C3"+D;"c2"+U**\dir{-};
+%"C4"+D;"c4"+U**\dir{-};
+%"V1"+U;"v1"+D**\dir{-};
+%"V2"+U;"v2"+D**\dir{-};
+%\endxy
+%%	\includegraphics[scale=0.4]{figs/jjmcc81-25}
+%\xe
+By including the vocalism on a separate tier, \citeauthor{jjmcc81}'s theory allowed vowels to be manipulated independently of the roots or the skeleton.
+
+%The melody \emph{u-a-i} is taken to derive the active participle, for {instance}:
+%\ex \emph{mutakaatib} \citep[401]{jjmcc81}\\
+%\xy
+%<0pt,1.5cm>*\asrnode{C}="C0a",
+%<0.75em,1.5cm>*\asrnode{V}="V0a",
+%<1.5em,1.5cm>*\asrnode{C}="C0b",
+%<2.25em,1.5cm>*\asrnode{V}="V0b",
+%<3em,1.5cm>*\asrnode{C}="C1",
+%<3.75em,1.5cm>*\asrnode{V}="V1",
+%<4.5em,1.5cm>*\asrnode{V}="V2",
+%<5.25em,1.5cm>*\asrnode{C}="C2",
+%<6em,1.5cm>*\asrnode{V}="V3",
+%<6.75em,1.5cm>*\asrnode{C}="C3",
+%<2.25em,0pt>*\asrnode{u}="u";
+%<3.5em,0pt>*\asrnode{a}="a";
+%<4.5em,0pt>*\asrnode{i}="i";
+%<3.5em,-1.5cm>*\asrnode{$\mu$}="mu";
+%"V0a"+D;"u"+U**\dir{-};
+%"V0b"+D;"a"+U**\dir{-};
+%"V1"+D;"a"+U**\dir{-};
+%"V2"+D;"a"+U**\dir{-};
+%"V3"+D;"i"+U**\dir{-};
+%"u"+D;"mu"+U**\dir{-};
+%"a"+D;"mu"+U**\dir{-};
+%"i"+D;"mu"+U**\dir{-};
+%\endxy
+%\xe
+%%	\includegraphics[scale=0.6]{figs/jjmcc81-42}
+
+The beauty of this theory is that it allowed for a separation of three morphological elements on three phonological tiers: the root (identity of the consonants), the template (the form of the CV skeleton) and additional inflectional or derivational information (the identity of the vowels).
+%Important extensions were proposed in \cite{jjmccprince90} to account for denominal forms, specifically plurals and diminutives.
+
+The current work shifts the focus to the nature of the CV skeleton and the melody. \citeauthor{jjmcc81}'s approach did not attempt to model the relationships between the semantics of the different templates -- the alternations in argument structure. 
+%Yet as we have seen in \S\ref{sec:tradition}, some templates are related to others in ways that remain to be explicated. \citeauthor{jjmcc81}'s work, as well as work inspired by it, leaves us in prime position to ask the following interrelated questions:
+%\pex \textbf{Questions on the nature of Semitic addressed in this study}
+%	\a What is the syntax behind the CV skeleton?
+%	\a What is the syntax behind the melody?
+%	\a What is the relationship between different templates, that is, how are argument structure alternations derived?
+%\xe
+%My answers to these questions lead us to make different assumptions than \citeauthor{jjmcc81}.
+Taking these relationships into account requires a slight change in perspective. Like \cite{jjmcc81}, I believe that the consonantal root lies at the core of the lexicon. Unlike in that theory, I do not postulate independent CV skeletons and do not accord the prosody morphemic status. The skeletons will be a by-product of how functional heads are pronounced and regulated by the general phonology of the language. There is no skeleton CVCVCCVC giving \emph{takattab} `got written', for example: there would be a prefix \emph{ta}-, a number of vowels spelling out Voice, gemination spelling out an additional head, and the organization of these different segments will proceed in a way that satisfies the phonology without making reference to prosodic primitives like skeletons. Furthermore, each morpheme will have an explicit syntax and semantics associated with it.
+
+A few more pieces of research that capture generalizations important to this dissertation deserve mention. The seminal work by \cite{berman78} underscored the semi-predictable nature of the templates. \citet[Ch.~3]{berman78}, in particular, made the point that the combination of root and template is neither fully regular nor completely idiosyncratic. Instead, \citeauthor{berman78} proposed a principle of \emph{lexical redundancy} to regulate the system. According to this theory, each root has a ``basic form'' in some template from which other forms are derived. Yet this theory did not formalize the relations between the templates, arbitrarily selecting one as the ``basic form'' and the others as derived from it, for each root. Nevertheless, \citeauthor{berman78}'s clear description of the regularities and irregularities in the morphology of Hebrew laid the groundwork for later works such as \cite{doron03}, \cite{arad05}, \cite{borer13oup} and the current contribution.
+
+Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. The syntactic-semantic aspects of this view were developed by \cite{reinhartsiloni05} and \cite{laks11,laks13morpho,laks14,laks18}. I refer to this idea as the ``stem-based approach'' and critique briefly it when relevant; if there is no consistent way of thinking about templates as morphemes then this view has few legs to stand on. See \cite{kastner17gjgl,kastner18nllt} for more pointed objections, and \cite{kastnertucker19cup} for a broader perspective.
+
+Even before the stem-based approach took form, other Semitists explored the idea of a Semitic system which diverged from the traditional descriptions. \cite{schwarzwald73} doubted the productivity of both the root and the templates, making an early argument for frequency effects in the interpretation of different templates. On that view, it is only the high frequency verbs of the language that show reliable alternations between templates. These verbs lead us as analysts to postulate relationships between templates, though when one looks at less frequent verbs, transparent alternations are less likely to hold. Unlike the stem-based hypothesis, which eschewed roots and relied on the template as a morphological primitive, the proposal in \cite{schwarzwald73} kept the root but relegated the template to morphophonological limbo: salient in the grammar but not operative in the syntax. While this early formulation of a template-less idea is intriguing, it cannot be maintained in the face of wug studies in which speakers generate argument structure alternations between templates using nonce words \citep{berman93jcl,moorecantwell13}.
+
+A special place in the literature has been carved out by \cite{doron03,doron13voice} and \cite{arad03,arad05}. I have already mentioned some features of these theories and we will return to them in more depth as the discussion proceeds.
+
+Finally, to pick out a few studies on Arabic (as gleaned from the helpful overview in \citealt{ussishkin00phd}), \cite{darden92} offered an analysis of Egyptian Arabic that attempted to do without verbal templates; \cite{mcomber95} developed an infixation-based system similar to that of \cite{jjmcc81} which makes crucial reference to morpheme edges; and \cite{ratcliffe97,ratcliffe98} attempted to improve on \cite{jjmccprince90} by restricting the CV skeleton and treating more phenomena as cases of infixation. But let us return to the current study.
+
+	\subsection{Transliteration and notation} \label{sec:data:notation}
 I use the variables X, Y and Z for the tri-consonantal root: \root{XYZ}. This monograph contains little discussion of roots with more than three consonants, but nothing in the notation hinges on it. The list in of roots extracted from the database of \cite{ehrenfeld12} contains 311 quadrilateral roots and three quintilateral roots\footnote{\root{xntrʃ} `bullshit', \root{snxrn} `synchronize' and \root{flrtt} `flirt'.} out of 1876 roots in total.
 
 In the Hebrew glosses, \gsc{ACC} is used for the direct object marker \emph{et} and \gsc{CS} for the head of a Construct State nominal.
@@ -198,7 +286,7 @@ The template {\thif} usually appears in the literature as \emph{h\textbf{i}XYiZ}
 
 Glottal stops are often dropped in speech \citep{enguehardfaust18}. I usually omit them, but at times retain an apostrophe in order to distinguish between otherwise homophonous forms, for example \emph{hefria} `he disturbed' $\sim$ \emph{hefri\underline{'}a} `she disturbed'.
 
-When presenting verbal paradigms I include two substandard forms. The first person singular future is normally prefixed with a low vowel, e.g.~\emph{a-daber} `I will talk' (in \root{dbr}). Contemporary usage, however, syncretizes the first person singular future with the third person masculine singular future: \emph{je-daber} `I/he will talk'. I include both forms when giving paradigms. And finally, contemporary usage does not distinguish between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
+When presenting verbal paradigms I include two substandard forms. The \gsc{1SG} future form is normally prefixed with \emph{a-} or \emph{e-}, e.g.~\emph{e-xtov} `I will write'. Contemporary usage, however, syncretizes \gsc{1SG} future with \gsc{3SG.M} future: \emph{je-daber} `I/he will talk'. I include both forms when giving paradigms. And finally, contemporary usage does not distinguish between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
 
 When reproducing examples from the literature I have modified the original transcriptions for consistency. With this housekeeping out of the way, we return to the theoretical approach.
 
@@ -791,92 +879,6 @@ Taking the verbal system as the main object of inquiry, the following chapters a
 
 
 
-
-
-\section{Traditional generative treatments of the system} \label{sec:jjmcc}
-
-@@mention jjmcc, doron, arad in general terms. I'll return to comparisons later on@@
-
-Before we get to the meat of the dissertation, I would like to acknowledge some of the earlier work on Semitic morphology in an attempt to illustrate what we do and do not know yet. I focus here on the seminal series of works by McCarthy \citep{jjmcc79,jjmcc81,jjmcc89li,jjmccprince90} in order to bring out the inadequacies of a purely phonological account of {Semitic morphology}. Comparisons with more recent analyses will be presented in the next two chapters, where appropriate.
-
-	\subsection{Tiers}
-McCarthy's original contribution lay in dividing the Semitic (Arabic) verb into three ``planes'' or ``tiers'': the CV skeleton (C and V slots), the root (consonants) and the melody (individual vowels). For example, the verb \emph{takattab} `got written' was analyzed as follows, with a default verbal vowel -\emph{a}-.
-\ex\label{ex:jjmcc-takattab}\emph{takattab} \citep[392]{jjmcc81}:\\
-\xy
-<0pt,1.5cm>*\asrnode{C}="C0",
-<0.75em,1.5cm>*\asrnode{V}="V0",
-<1.5em,1.5cm>*\asrnode{C}="C1",
-<2.25em,1.5cm>*\asrnode{V}="V1",
-<3em,1.5cm>*\asrnode{C}="C2",
-<3.75em,1.5cm>*\asrnode{C}="C3",
-<4.5em,1.5cm>*\asrnode{V}="V2",
-<5.25em,1.5cm>*\asrnode{C}="C4",
-<0pt,0cm>*\asrnode{t}="c0";
-<0.75em,3cm>*\asrnode{a}="v0";
-<1.5em,0cm>*\asrnode{k}="c1";
-<2.25em,3cm>*\asrnode{a}="v1";
-<3.5em,0cm>*\asrnode{t}="c2";
-<4.5em,3cm>*\asrnode{a}="v2";
-<5.25em,0cm>*\asrnode{b}="c4";
-"C0"+D;"c0"+U**\dir{-};
-"V0"+U;"v0"+D**\dir{-};
-"C1"+D;"c1"+U**\dir{-};
-"C2"+D;"c2"+U**\dir{-};
-"C3"+D;"c2"+U**\dir{-};
-"C4"+D;"c4"+U**\dir{-};
-"V1"+U;"v1"+D**\dir{-};
-"V2"+U;"v2"+D**\dir{-};
-\endxy
-%	\includegraphics[scale=0.4]{figs/jjmcc81-25}
-\xe
-
-By including the vocalism on a separate tier, \citeauthor{jjmcc81}'s theory allowed vowels to be manipulated independently of the roots or the skeleton. The melody \emph{u-a-i} is taken to derive the active participle, for {instance}:
-\ex \emph{mutakaatib} \citep[401]{jjmcc81}\\
-\xy
-<0pt,1.5cm>*\asrnode{C}="C0a",
-<0.75em,1.5cm>*\asrnode{V}="V0a",
-<1.5em,1.5cm>*\asrnode{C}="C0b",
-<2.25em,1.5cm>*\asrnode{V}="V0b",
-<3em,1.5cm>*\asrnode{C}="C1",
-<3.75em,1.5cm>*\asrnode{V}="V1",
-<4.5em,1.5cm>*\asrnode{V}="V2",
-<5.25em,1.5cm>*\asrnode{C}="C2",
-<6em,1.5cm>*\asrnode{V}="V3",
-<6.75em,1.5cm>*\asrnode{C}="C3",
-<2.25em,0pt>*\asrnode{u}="u";
-<3.5em,0pt>*\asrnode{a}="a";
-<4.5em,0pt>*\asrnode{i}="i";
-<3.5em,-1.5cm>*\asrnode{$\mu$}="mu";
-"V0a"+D;"u"+U**\dir{-};
-"V0b"+D;"a"+U**\dir{-};
-"V1"+D;"a"+U**\dir{-};
-"V2"+D;"a"+U**\dir{-};
-"V3"+D;"i"+U**\dir{-};
-"u"+D;"mu"+U**\dir{-};
-"a"+D;"mu"+U**\dir{-};
-"i"+D;"mu"+U**\dir{-};
-\endxy
-\xe
-%	\includegraphics[scale=0.6]{figs/jjmcc81-42}
-
-The beauty of this theory is that it allowed for a separation of three morphological elements on three phonological tiers: the root (identity of the consonants), the template (the form of the CV skeleton) and additional inflectional or derivational information (the identity of the vowels). Important extensions were proposed in \cite{jjmccprince90} to account for denominal forms, specifically plurals and diminutives.
-
-The current work shifts the focus to the nature of the CV skeleton and the melody. \citeauthor{jjmcc81}'s approach did not attempt to model the relationships between the semantics of the different templates -- the alternations in argument structure. Yet as we have seen in \S\ref{sec:tradition}, some templates are related to others in ways that remain to be explicated. \citeauthor{jjmcc81}'s work{,} as well as work inspired by {it,} leaves us in prime position to ask the following interrelated questions:
-\pex \textbf{Questions on the nature of Semitic addressed in this study}
-	\a What is the syntax behind the CV skeleton?
-	\a What is the syntax behind the melody?
-	\a What is the relationship between different templates, that is, how are argument structure alternations derived?
-\xe
-My answers to these questions lead us to make different assumptions than \citeauthor{jjmcc81}. Like him, I believe that the consonantal root lies at the core of the lexicon. Unlike his theory, I do not postulate independent CV skeletons and do not accord the prosody morphemic status. The skeletons will be a by-product of how functional heads are pronounced and regulated by the general phonology of the language. There is no skeleton CVCVCCVC as in~(\ref{ex:jjmcc-takattab}) giving \emph{takattab}, for example: there would be a prefix \emph{ta}-, a number of vowels spelling out Voice, gemination spelling out an additional head, and the organization of these different segments will proceed in a way that satisfies the phonology without making reference to prosodic primitives like skeletons. Furthermore, each morpheme will have an explicit syntax and semantics associated with it. Chapter 2 develops the morphosyntactic system and Chapter 3 returns to the morphophonological side of the morphology, making a number of additional contributions to our understanding of how the syntax and the phonology interact.
-	
-	\subsection{Related work}
-A few more pieces of research that capture generalizations important to this dissertation deserve mention. The seminal work by \cite{berman78} underscored the semi-predictable nature of the templates. \citet[Ch.~3]{berman78} made the point that the combination of root and template is neither fully regular nor completely idiosyncratic. Instead, \citeauthor{berman78} proposed a principle of \emph{lexical redundancy} to regulate the system. According to this theory, each root has a ``basic form'' in some template from which other forms are derived. Yet this theory did not formalize the relations between the templates, arbitrarily selecting one as the ``basic form'' and the others as derived from it, for each root. Nevertheless, \citeauthor{berman78}'s clear description of the regularities and irregularities in the morphology of Hebrew laid the groundwork for later works such as \cite{doron03}, \cite{arad05}, \cite{borer13oup} and the current contribution.
-
-Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. I refer to this idea as the ``stem-based approach''. We return to it in \S\ref{sec:others-diff}, discussing it more in depth there.
-
-Even before the stem-based approach took form, other Semitists explored the idea of a Semitic system which diverged from the traditional descriptions. \cite{schwarzwald73} doubted the productivity of both the root and the templates, making an early argument for frequency effects in the interpretation of different templates. On that view, it is only the high frequency verbs of the language that show reliable alternations between templates. These verbs lead us as analysts to postulate relationships between templates, though when one looks at less frequent verbs, transparent alternations are less likely to hold. Unlike the stem-based hypothesis, which eschewed roots and relied on the template as a morphological primitive, the proposal in \cite{schwarzwald73} kept the root but relegated the template to morphophonological limbo: salient in the grammar but not operative in the syntax. While this early formulation of a template-less idea is intriguing, it cannot hold up to wug studies in which speakers generate argument structure alternations between templates using nonce words \citep{berman93jcl,moorecantwell13}.
-
-To pick out a few studies on Arabic (as gleaned from the helpful overview in \citealt{ussishkin00phd}), \cite{darden92} offered an analysis of Egyptian Arabic that attempted to do without verbal templates; \cite{mcomber95} developed an infixation-based system similar to that of \cite{jjmcc81} which makes crucial reference to morpheme edges; and \cite{ratcliffe97,ratcliffe98} attempted to improve on \cite{jjmccprince90} by restricting the CV skeleton and treating more phenomena as cases of infixation. But let us return to the current study.
 
 
 
