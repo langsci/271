@@ -1,19 +1,75 @@
 \chapter{The valence of Voice}
 \label{chap:intro}
-schäfer: alternations aren't alternations
-me: even in hebrew!
-intuition: alternations
-	arad: conjugation classes
-	doron: stepping away from that in the semantics. semantic alternations, sure
-	me: getting semantic alternations from contemporary syntax. and the phonology works out too
 
-\section{Introduction}
-The aim of this monograph is to present a new theory of argument structure alternations, one which is anchored in the syntax but has systematic interfaces with the phonology and the semantics. Virtually every theory of argument structure takes as its starting point alternations such as those in~(\nextx)--(\anextx). In English~(\nextx) the causative and anticausative variants do not differ in their morphology. In German the predominant situation is one in which a reflexive pronoun appears in the anticausative variant, (\anextx).
+The aim of this monograph is to present a new theory of argument structure alternations, one which is anchored in the syntax but has systematic interfaces with the phonology and the semantics. Conceptually, my goal is to argue for a specific formal system. Empirically, my goal is to provide the most comprehensive description and analysis of Hebrew verbal morphology to date, one whose formal assumptions are as similar as possible to those made in work on non-Semitic languages. Let's first see why Hebrew is interesting.
+
+\section{Identifying the puzzles}
+	\subsection{The two problems of Semitic morphology}
+In the verbal system of Modern Hebrew, verbs appear in one of seven templates. These templates are the main object of study in this book. The most important thing to know about them is that they are easy to identify based on morphophonological form (although I provide glosses just in case), and that they often carry some kind of meaning. Pinning down the essence of ``often'' and ``some kind'' is my main analytical task.
+
+Because our main theoretical interest is in argument structure alternations, we can start with that. The following examples demonstrate three different verbs, all sharing the same root which I notate \root{ktb}. In general, it can be seen that all verbs have to do with writing in some sense. The first is a simple transitive in the template {\tkal}:
+\ex	\label{ex:intro-tkal}Transitive {\tkal}\\
+		\begingl
+		\gla ha-talmidim \textbf{katv-u} et ha-nosim//
+		\glb the-students wrote-\gsc{PL} \gsc{ACC} the-topics//
+		\glft `The students wrote the topics down.'//
+	\endgl
+\xe
+
+The second is a non-active variant in {\tnif}; this is how we would express the anticausative or passive version of~(\lastx).
+\ex \label{ex:intro-tnif}Non-active (mediopassive) {\tnif}\\
+		\begingl
+		\gla ha-xiburim \textbf{nixtev-u} (al-jedej ha-talmidim)//
+		\glb the-essays were.written-\gsc{PL} by the-students//
+		\glft `The essays were written (by the students)'.//
+	\endgl
+\xe
+
+The third is a causative version in~{\thif}.
+\ex \label{ex:intro-thif}Causative {\thif}\\
+		\begingl
+		\gla ha-mora \textbf{hextiv-a} (la-talmidim) et reʃimat ha-nosim//
+		\glb the-teacher dictated-\gsc{3SG.F} to.the-students \gsc{ACC} list.of the-topics//
+		\glft `The teacher dictated the list of topics (to the students).'//
+	\endgl
+\xe
+
+If this is what the language looked like, the system would be far less puzzling. The analytical issues begin to mount when we understand that verbs in~{\tkal} are not always transitive like in~(\ref{ex:intro-tkal}). Verbs in {\tnif} are not always non-active like those in~(\ref{ex:intro-tnif}). And verbs in {\thif} are not always causative like those in~(\ref{ex:intro-thif}).
 \pex
+	\a Unaccusative in {\tkal}:\\
+		\begingl
+		\gla ha-bakbuk \textbf{kafa} ba-makpi//
+		\glb the-bottle froze in.the-freezer//
+		\glft `The bottle froze in the freezer.'//
+	\endgl	
+	\a Unergative in {\tnif}:\\
+		\begingl
+		\gla josi \textbf{nixnas} la-xeder be-bitaxon//
+		\glb Yossi entered to.the-room in-security//
+		\glft `Yossi confidently entered the room.'//
+	\endgl
+	\a Unergative in {\thif}:\\
+		\begingl
+		\gla marsel \textbf{heezin} be-savlanut//
+		\glb Marcel listened in-patience//
+		\glft `Marcel listened patiently.'//
+	\endgl
+\xe
+
+On the other hand, it is crucial that there is some method to the madness. It is not the case that any template can be associated with any syntactic or semantic construction. Certain configurations---unaccusative, transitive, reflexive, etc.---are only possible with certain templates. This is \textbf{the first problem} of Semitic morphology: what syntactic structures and semantic readings is a given template associated with, and why?
+
+Additionally, sometimes we can find alternations like in~(\ref{ex:intro-tkal})--(\ref{ex:intro-thif}). Certain templates alternate with some but not with others. \textbf{The second problem} of Semitic morphology is thus: what templates does a given template alternate with, and why?
+
+I believe the answers to these questions can be found once we abandon the notion of a ``template'' as some kind of morphological primitive. I propose here a decomposition of the template into functional heads in the syntax, one that is able to address both problems above. What this means is that we need to engage with what alternations are and how argument structure comes about.
+
+	\subsection{Argument structure}
+Contemporary theories of argument often take as a starting point the ``anticausative alternation'', whereby a transitive verb (\textbf{causative}) and its intransitive equivalent (\textbf{anticausative}) stand in some morphologically mediated relationship. In some languages, such as English in~(\ref{ex:intro1}), the two verbs do not differ in their morphological marking. In other languages the predominant situation is one in which a reflexive pronoun appears in the anticausative variant, as in German, (\ref{ex:intro2}). And in other languages, the anticausative variant has specific non-active morphological marking. Some verbs in Greek are like this, (\ref{ex:intro3}). Other languages fall into one or more of these typological categories.
+\pex\label{ex:intro1}
 	\a Meg opened the door. \hfill (causative)
  	\a The door opened.			\hfill (anticausative)
 \xe
-\pex
+
+\pex\label{ex:intro2}
 	\a \begingl
 		\gla\rightcomment{(causative)}Florian \"offnete die T\"ur.//
 		\glb Florian opened the door//
@@ -26,127 +82,79 @@ The aim of this monograph is to present a new theory of argument structure alter
 	\endgl
 \xe	
 
-Various questions arise in connection with these seemingly simply patterns, many of which have been explored in much recent work \cite[e.g.][]{unaccusativity95,schaefer08,layering15}: what kind of morphological marking appears on the different variants? Is there a sense in which one is derived from the other, or do the two share a common base? Which predicates are marked as causative and which as unaccusative crosslinguistically?
-
-The degree of variation both within and across languages is substantial. However, most studies on argument structure have analyzed this aspect of the syntax-semantics interface through the lens of a language with relatively impoverished morphology. Each of these languages has contributed much to our understanding of argument structure, to be sure: the English labile alternation shines light on which predicates are likely to be marked in which way \citep{haspelmath93,unaccusativity95,koontzgarboden09}; the French, German and Spanish alternations bring in many aspects of cliticization, binding and agreement \citep{labelle08,schaefer08,cuervo14}; the Greek alternation shows consistent morphological marking for at least one class of predicates \citep{alexiadoudoron12,layering15}; and more recent work on Icelandic has identified ways in which argument structure alternations can be correlated with morphological processes and \cite{wood14nllt,wood15roots,wood15springer}. Yet this line of work has the drawback that these languages usually show only binary morphological distinctions, if any: either the causative variant is marked, or the anticausative one is marked (or neither is, as in the labile alternation). This problem also persists with some larger-scale typological surveys \citep{haspelmath93,arad05}.
-
-
-
-This template usually appears in the literature as \emph{h\textbf{i}XYiZ}, with an /i/-/i/ vocalic pattern. Yet contemporary speakers use /ɛ/ \citep{trachtman16}, and so I transcribe ``e'' throughout. Conversely, the initial /h/ is usually dropped in speech but I retain it for two reasons. First, /h/ is still pronounced by some older speakers and certain sociolinguistic groups, often marginalized ones \citep[cf.~][]{schwarzwald81biu,gafter14phd}. And second, the initial \emph{h}- should help non-Semitist readers to distinguish this template from other ones.
-
-\section{Basic descriptive generalizations}
-@@crib from the handbook chapter@@
-
-@@all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in. The first is mainly accomplished using the features on Voice. The second is accomplished using hierarchical syntactic structure@@
-
-We will focus on three verbal forms in Hebrew (\emph{templates}): {\tkal}, {\tnif} and {\thif}.
-
-	\subsection{{\tkal} varies in its argument structure (underspecified)}
-\pex Transitive:
+\pex\label{ex:intro3}
 	\a \begingl
-		\gla teo \textbf{axal} et ha-laxmania//
-		\glb Theo ate \gsc{ACC} the-bread.roll//
-		\glft `Theo are the bread roll.'//
+		\gla\rightcomment{(causative)}o Giorgos ekapse ti supa//
+		\glb the Giorgos burned the soup//
+		\glft `Giorgos burned the soup.'//
 	\endgl
 	\a \begingl
-		\gla ha-balʃan \textbf{katav} et ha-maamar ha-arox//
-		\glb the-linguist wrote \gsc{ACC} the-article the-long//
-		\glft `The linguist wrote the long article.'//
+		\gla\rightcomment{(anticausative)}i supa \textbf{kaike}//
+		\glb the soup burned.\gsc{NACT}//
+		\glft `The soup burned.'//
 	\endgl
 \xe
 
-\pex Unergative:
-	\a \begingl
-		\gla teo \textbf{rakad} ve-rakad ve-rakad//
-		\glb Theo danced and-danced and-danced//
-		\glft `Theo danced and danced and danced.'//
-	\endgl
-	\a \begingl
-		\gla teo \textbf{halax} kol ha-boker//
-		\glb Theo walked all the-morning//
-		\glft `Theo walked all morning long.'//
-	\endgl
+Various syntactic and semantic questions arise in connection with these seemingly simple patterns, many of which have been explored in influential studies such as \cite{haspelmath93}, \cite{unaccusativity95}, \cite{schaefer08}, \cite{koontzgarboden09} and \cite{layering15}: what kind of morphological marking appears on the different variants? Is there a sense in which one is derived from the other, or do the two share a common base? Which predicates are marked as anticausative crosslinguistically? 
+
+The degree of variation both within and across languages is substantial. However, most studies on argument structure have analyzed this aspect of the syntax-semantics interface through the lens of a language with relatively impoverished morphology. Each of these languages has contributed much to our understanding of argument structure, to be sure: the English labile alternation shines light on which predicates are likely to be marked in which way \citep{haspelmath93,unaccusativity95,koontzgarboden09}; the French, German and Spanish alternations bring in many aspects of cliticization, binding and agreement \citep{labelle08,schaefer08,cuervo14}; the Greek alternation shows consistent morphological marking for at least one class of predicates \citep{alexiadoudoron12,layering15}; and more recent work on Icelandic has identified ways in which argument structure alternations can be correlated with morphological processes and \cite{wood14nllt,wood15springer}. Yet this line of work has the drawback that these languages usually show only binary morphological distinctions, if any: either the causative variant is marked, or the anticausative one is marked (or neither is, as in the labile alternation). This problem also persists with some larger-scale typological surveys \citep{haspelmath93,arad05}.
+
+	\subsection{Solving the two problems}
+The intuition guiding my analysis is that of \cite{schaefer08}, \cite{layering15} and related work: the alternations are not alternations at all. The grammar does not derive causative forms form inchoative ones, or anticausative forms from transitive ones. Rather, what happens is that both readings are derived from one basic structure (technically a vP) with a causative component in the semantics. If we add an external argument, we get a transitive/causative verb; if we do not, we simply retain the basic event and have an anticausative verb on our hands.
+
+This book provides a way of implementing the same idea in Hebrew. Now, I am by no means not the first to suggest that the templates be decomposed. Maya Arad and Edit Doron have both made seminal contributions to our understanding of these issues. But \cite{arad05} was torn between the need to acknowledge the idiosyncrasies of the system, on the one hand, and the need to encode the alternations, on the other hand. As a result, that theory had to implement conjugation classes in order to adequately describe which alternations exist. \cite{doron03} sidestepped the issue by providing a compositional semantics for the components making up the templates, but the result was that alternations could only be discussed in terms of their semantics, and not their morphology or syntax. What I propose is a way to get the alternations from contemporary syntactic assumptions.
+
+The two problems are addressed as follows. By building up specific syntactic structures we are able to easily explain what syntactic configurations and semantic interpretations arise for a given structure, as well as how this structure is spelled out; that spell-out is what we call the template. Instead of figuring out the many-to-many mapping between form and meaning, I map one structure deterministically to form and to meaning, thereby solving the first problem. And by adopting the idea that a core vP carries the basic meaning of a verb, we can then layer additional heads above it, regulating the introduction of an external argument. The majority of work is carried out by the head Voice, which introduces external argument. This solves the second problem. A technical innovation lies with the syntactic feature [$\pm$D] that Voice might carry, hence the valence of Voice. But we will get to that soon enough.
+
+Granted, there is also a third problem: how can we tell which meaning is licensed by which root? That question deserves a monograph of its own, though I will try to flag ways in which it can be approached throughout the book.
+
+Part I of this book is comprised of case studies of the different templates, which together come to form the theory of trivalent Voice. Part II consists of two chapters situating this theory within contemporary theoretical debates.
+
+This introductory chapter is structured as follows. I give a general overview of Hebrew morphology in Section~\ref{intro:basic}, including a brief account of what the traditional view is. Section~\ref{intro:arch} introduces the formal assumptions of my theory, which itself is outlined in Section~\ref{intro:sketch}.
+
+
+\section{Traditional descriptions and basic generalizations} \label{intro:basic}
+	\subsection{Hebrew morphology for beginners}
+The first thing to note about Hebrew is that not \emph{all} morphology is non-concatenative. Agreement, for example, may consist of prefixes and suffixes, alongside non-concatenative changes to the stem. The future tense paradigm for the verb \emph{katav} `wrote' in {\tkal} is given in~(\nextx). The stem vowel is either /o/ or /e/, depending on whether the verb is suffixed or not, but other than that all of the agreement information is affixal.
+\ex
+\begin{tabular}{lll}
+Person/Gender	& \gsc{SG}	& \gsc{PL}\\\hline
+1				&\textbf{e-}xtov				&\textbf{ni-}xtov\\
+2\gsc{M}		&\textbf{ti-}xtov				&\textbf{ti-}xtev\textbf{-u}\\
+2\gsc{F}		&\textbf{ti-}xtev\textbf{-i}	&\textbf{ti-}xtev\textbf{-u}\\
+3\gsc{M}		&\textbf{ji-}xtov				&\textbf{ji-}xtev\textbf{-u}\\
+3\gsc{F}		&\textbf{ti-}xtov				&\textbf{ji-}xtev\textbf{-u}\\
+\end{tabular}
+\xe
+I do not concern myself here with this distinction directly since my main interest is within the thematic domain, i.e.~VoiceP. In general, it is not surprising that syntactic material from a certain height and ``upwards'' in the tree is spelled out affixally rather than non-concatenatively; see \cite{harbour08} and \cite{kastnertucker19cup} for further discussion of this cross-Semitic point.
+
+Nevertheless, linguists and non-specialists alike often find themselves scratching their heads in an attempt to come to terms with Semitic's distinctive morphological system, built around ``roots'' and ``patterns''. Many early speakers of Modern Hebrew were such head-scratchers themselves: the language was revived in the late 19th century by individuals who, for the most part, were not native speakers of Semitic languages. The language nevertheless retained the Semitic morphology of its classical predecessor.
+%On the surface, Hebrew is very different from European languages, or perhaps from any non-Semitic language. The question of how languages differ from one another is a familiar one from work in the generative tradition which often turns the question on its head, asking how languages are fundamentally similar.
+Given that this book is a study of the verbal system of Hebrew, I will make repeated reference to ``roots'' and ``templates'' (the latter also called ``patterns'', ``measures'', ``forms'' and \emph{binyanim}) as the two main components of the verb. I reserve the terms ``templates'' for the seven systematic verbal forms and ``patterns'' for the nominal and adjectival forms. These traditional terms have been used, as far as I know, for as long as the verbal systems of Hebrew and other Semitic languages have been documented. \cite{ussishkin00phd} mentions a number of works on Hebrew which use roots and templates as integral parts of the system, including \cite{gesenius}---perhaps the best-regarded grammar of Biblical Hebrew---as well as \cite{bopp1824}, \cite{ewald1827}, \cite{harris41} and \cite{chomsky51}. For Arabic, he mentions \cite{desacy1810} as one example among many of older works which make direct reference to roots and templates.
+
+The nature of the root was already debated by the traditional Arabic grammarians of Basra and Kufa in the 8th Century, according to \citet[563ff]{borer13oup} who herself cites \cite{owens88}. Turning to more recent works, we can add foundational contributions by \cite{rosen77}, \cite{berman78}, \cite{bolozky78,bolozky99} and \cite{ravid90}, all relying on the root and the template as descriptive notions. I cannot hope to do justice here to the vast modern-day literature on Modern Hebrew, much of which has been published in Hebrew. The interested reader may want to consult the works of Yehoshua Blau, Reuven Mirkin, Uzzi Ornan and Haim Ros\'en, among others.
+%; the latter two, in particular, have authored work that may be more accessible to generative linguists.
+%In \S\ref{sec:jjmcc} I discuss contemporary work on Semitic morphology in the generative tradition; for now, we simply establish that roots and patterns have been invoked throughout the ages in descriptions of the Semitic system. One goal of this dissertation is to evaluate the theoretical status of these notions for Semitic and for natural language in general.
+
+To see how the system is traditionally conceived of, let us consider first form, then meaning. The verbs in~(\lastx) are all given in the 3rd person masculine singular past tense -- the citation form. The actual conjugation of a given form across tenses and person/number/gender features is completely predictable, as~(\nextx) exemplifies for the {\tpie} template (barring the kind of lexical idiosyncrasies investigated in \citealt{kastner18nllt}). That is to say, even though the meaning of a given verb cannot be immediately guessed in its entirety, the morphophonological form is predictable. Note again how agreement material is mostly affixal.
+\ex \label{table:piel}Tense and agreement marking in \tpie.\\
+%\begin{small}
+	\begin{tabular}{|l||l|l||l|l||l|l|} \hline
+		& \multicolumn{2}{c||}{Past} & \multicolumn{2}{c||}{Present} &  \multicolumn{2}{c|}{Future} \\
+		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\\hline\hline
+		1\gsc{SG} & \multicolumn{2}{c||}{XiY̯aZ-ti} & me-XaY̯eZ & me-XaY̯eZ-et & \multicolumn{2}{c|}{je-XaY̯eZ}\\\hline
+		1\gsc{PL} & \multicolumn{2}{c||}{XiY̯aZ-nu} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{c|}{ne-XaY̯eZ}  \\\hline\hline
+		2\gsc{SG} & XiY̯aZ-ta & XiY̯aZ-t & me-XaY̯eZ & me-XaY̯eZ-et & te-XaY̯eZ & te-XaY̯Z-i\\\hline
+%		2\gsc{PL} & XiY̯aZ-tem & XiY̯aZ-ten/m & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{l|}{te-XaY̯Z-u}\\\hline\hline
+		2\gsc{PL} & \multicolumn{2}{c||}{XiY̯aZ-tem} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{c|}{te-XaY̯Z-u}\\\hline\hline
+		3\gsc{SG} & XiY̯eZ & XiY̯Z-a & me-XaY̯eZ & me-XaY̯eZ-et & je-XaY̯eZ & te-XaY̯eZ\\\hline
+		3\gsc{PL} & \multicolumn{2}{c||}{XiY̯Z-u} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{c|}{je-XaY̯Z-u}\\\hline
+	\end{tabular}
+%\end{small}
 \xe
 
-\pex Unaccusative:
-	\a \begingl
-		\gla \textbf{nafal} le-teo ha-bakbuk//
-		\glb fell to-Theo the-bottle//
-		\glft `Theo's bottle fell.'//
-	\endgl
-	
-	\a \begingl
-		\gla ha-bakbuk \textbf{kafa} ba-makpi//
-		\glb the-bottle froze in.the-freezer//
-		\glft `The bottle froze in the freezer.'//
-	\endgl
-\xe
-
-
-	\subsection{{\tnif} is non-active}
-\pex
-	\a \begingl
-		\gla \textbf{niʃbar} l-i ha-ʃaon//
-		\glb broke to-me the-watch//
-		\glft `My watch broke.//
-	\endgl
-	\a \begingl
-		\gla \textbf{neelam} l-i ha-tamsir//
-		\glb disappeared to-me the-handout//
-		\glft `My handout disappeared.'//
-	\endgl
-\xe
-
-	\subsection{{\thif} is active}
-\pex
-	\a \begingl
-		\gla kevin \textbf{heexil} et ema (duvdevanim)//
-		\glb Kevin fed \gsc{ACC} Emma blueberries.//
-		\glft `Kevin fed Emma (blueberries).'//
-	\endgl %Emma is a dog
-		
-	\a \begingl
-		\gla ha-zamar \textbf{herkid} et ha-orxim//
-		\glb the-singer made.dance \gsc{ACC} the-guests//
-		\glft `The singer made the guests dance.'//
-	\endgl
-\xe
-
-\newpage
-	\subsection{That's all we need}
-\pex Importantly, we can find triplets:
-	\a Causative {\thif}\\
-		\begingl
-		\gla ha-more hextiv (la-talmidim) et reʃimat ha-nosim//
-		\glb the-teacher dictated to.the-students \gsc{ACC} list.of the-topics//
-		\glft `The teacher dictated the list of topics (to the students).'//
-	\endgl
-	
-	\a Transitive {\tkal}\\
-		\begingl
-		\gla ha-talmidim \textbf{katv-u} et ha-nosim//
-		\glb the-students wrote-\gsc{PL} \gsc{ACC} the-topics//
-		\glft `The students wrote the topics down.'//
-	\endgl
-	
-	\a Non-active (mediopassive) {\tnif}\\
-		\begingl
-		\gla ha-xiburim nixtev-u (al-jedej ha-talmidim)//
-		\glb the-essays were.written-\gsc{PL} by the-students//
-		\glft `The essays were written (by the students)'.//
-	\endgl
-\xe
-
-
-
-	\subsection{Traditional descriptions of the Hebrew verbal system} \label{sec:tradition}
-Linguists and non-specialists who encounter a Semitic language like Hebrew for the first time often find themselves scratching their heads in an attempt to come to terms with the language's distinctive morphological system, built around ``roots'' and ``patterns''. Many early speakers of Modern Hebrew were such head-scratchers themselves: the language was revived in the late 19th century by individuals who, for the most part, were not native speakers of Semitic languages. The language nevertheless retained the Semitic morphology of its classical predecessor. On the surface, Hebrew is very different from European languages, or perhaps from any non-Semitic language. The question of how languages differ from one another is a familiar one from work in the generative tradition which often turns the question on its head, asking how languages are fundamentally similar.
-
-As this dissertation is a study of the verbal system of Hebrew, I will make repeated reference to ``roots'' and ``templates'' (the latter also called ``patterns'', ``measures'', ``forms'' and \emph{binyanim}) as the two main components of the verb. I reserve the terms ``templates'' for the systematic verbal forms and ``patterns'' for the systematic nominal and adjectival forms. These traditional terms have been used, as far as I know, for as long as the verbal systems of Hebrew and other Semitic languages have been documented. \cite{ussishkin00phd} mentions a number of works on Hebrew which use roots and templates as integral parts of the system, including \cite{gesenius}---perhaps the best-regarded grammar of Biblical Hebrew---as well as \cite{bopp1824}, \cite{ewald1827}, \cite{harris41} and \cite{chomsky51}. For Arabic, he mentions \cite{desacy1810} as one example among many of older works which make direct reference to roots and templates.
-
-The nature of the root was already debated by the traditional Arabic grammarians of Basra and Kufa in the 8th Century, according to \citet[563ff]{borer13oup} who herself cites \cite{owens88}. Turning to more recent works, \cite{borer13oup} also cites foundational contributions by \cite{berman78}, \cite{bolozky78,bolozky99} and \cite{ravid90}, all relying on the root and the template as at least descriptive notions. To this list I hasten to add \cite{rosen77}. I cannot hope to do justice here to the vast modern-day literature on Modern Hebrew, much of which has been published in Hebrew. The interested reader may want to consult the works of Yehoshua Blau, Reuven Mirkin, Uzzi Ornan and Haim Ros\'en, among many others; the latter two, in particular, have authored work that may be more accessible to generative linguists. In \S\ref{sec:jjmcc} I discuss contemporary work on Semitic morphology in the generative tradition; for now, we simply establish that roots and patterns have been invoked throughout the ages in descriptions of the Semitic system. One goal of this dissertation is to evaluate the theoretical status of these notions for Semitic and for natural language in general.
-
-To see how the system is traditionally conceived of, let us take as a starting point the essay by \cite{schwarzwald81} which begins with ``the traditional classification'' of template meanings. I have added examples of the alternations to this classification. {``\dgs{Y}'' marks a non-spirantized consonant, \S\ref{sec:data:notation}.}
+For meaning, we may take as a starting point the essay by \cite{schwarzwald81} and the traditional classification of the seven templates.\footnote{Seven is the canonical number, but cf.~\cite{schwarzwald16} for reasons to posit novel templates.} I have added examples of alternations to this classification.
+%{``\dgs{Y}'' marks a non-spirantized consonant, \S\ref{sec:data:notation}.}
 \ex A na\"ive classification of Hebrew templates \citep[131]{schwarzwald81}:\\
 	\begin{tabular}{lccp{0.0cm}llll}
 		& \textbf{Active} & \textbf{Passive} & && & & \\
@@ -156,35 +164,110 @@ To see how the system is traditionally conceived of, let us take as a starting p
 	\textbf{Reflexive or reciprocal} & \multicolumn{2}{c}{\thit} & & \root{xb\dgs{k}} & \multicolumn{2}{c}{\emph{hitxabek}} & `hugged' \\
 	\end{tabular}	
 \xe
-As \citeauthor{schwarzwald81} immediately points out herself, this classification is misleading. The relationships between the templates (the argument structure alternations) are not always predictable and most templates have additional meanings beyond those listed in~(\lastx). For example, there is little way to predict what the root \root{rʃm}, which has to do with writing down, will mean when it is instantiated in a given template. In the ``simple'' template {\tkal} we substitute the consonants in \root{rʃm} for X, Y and Z and derive \emph{raʃam} `wrote down'. In the ``middle'' template \tnif, \emph{nirʃam le-} means `signed up for', against the characterization of \tnif~as ``simple passive'' in~(\lastx). In the ``intensive middle'' \thit, \emph{hitraʃem me-} means `was impressed by', challenging the characterization of \thit~as ``reflexive or reciprocal'' in~(\lastx).
+As \citeauthor{schwarzwald81} immediately points out herself, this classification is misleading. The relationships between the templates (the argument structure alternations) are not always predictable and most templates have additional meanings beyond those listed in~(\lastx). For example, there is little way to predict what the root \root{rʃm}, which has to do with writing down, will mean when it is instantiated in a given template. In the ``simple'' template {\tkal} we substitute the consonants in \root{rʃm} for X, Y and Z and derive \emph{raʃam} `wrote down'. In the ``middle'' template \tnif, \emph{nirʃam le-} means `signed up for', against the characterization of \tnif~as ``simple passive'' in~(\lastx). In the ``intensive middle'' \thit, \emph{hitraʃem me-} means `was impressed by', challenging the characterization of \thit~as ``reflexive or reciprocal'' in~(\lastx). 
 
-The only cells of the table which are completely predictable are the two passive templates {\tpua} (``intensive passive'') and {\thuf} (``causative passive''). The other templates constrain the possible meaning in ways that have eluded precise specification. For example, while it is clear that many verbs in \tnif~are passive-like, not all verbs in that template are. In Chapter 2 we will see that the syntax and semantics of the system can nevertheless be analyzed within a constrained theory of morphosyntax. I will make precise what the unique contribution of each template is and how that contribution comes about in the syntax. We will then be able to identify the {}role of the root in selecting between different possible meanings for the verb in a given template.
+The only cells of the table which are completely predictable are the two passive templates {\tpua} (``intensive passive'') and {\thuf} (``causative passive''). The other templates constrain the possible meaning in ways that have eluded precise specification. For example, while it is clear that many verbs in {\tnif} are passive-like, not all verbs in that template are. This gives us the two basic questions that need to be addressed, mentioned at the outset:
+\begin{itemize*}
+	\item What are the possible readings associated with a given template (and why)?
+	\item What other templates does a given template alternate with (and why)?
+\end{itemize*}
 
-The verbs in~(\lastx) are all given in the 3rd person masculine singular past tense -- the citation form. Pending minor complications that will be addressed in Chapter 3, the actual conjugation of a given form across tenses and person/number/gender features is completely predictable, as~(\nextx) exemplifies for the \tpie~template. That is to say, even though the meaning of a given verb cannot be immediately guessed in its entirety, the morphophonological form is predictable.
-\ex \label{table:piel}Tense and agreement marking in \tpie.\\
-%\begin{small}
-	\begin{tabular}{|l||l|l||l|l||l|l|} \hline
-		& \multicolumn{2}{c||}{Past} & \multicolumn{2}{c||}{Present} &  \multicolumn{2}{c|}{Future} \\
-		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\\hline\hline
-		1\gsc{SG} & \multicolumn{2}{l||}{XiY̯aZ-ti} & me-XaY̯eZ & me-XaY̯eZ-et & \multicolumn{2}{l|}{je-XaY̯eZ}\\\hline
-		1\gsc{PL} & \multicolumn{2}{l||}{XiY̯aZ-nu} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{l|}{ne-XaY̯eZ}  \\\hline\hline
-		2\gsc{SG} & XiY̯aZ-ta & XiY̯aZ-t & me-XaY̯eZ & me-XaY̯eZ-et & te-XaY̯eZ & te-XaY̯Z-i\\\hline
-%		2\gsc{PL} & XiY̯aZ-tem & XiY̯aZ-ten/m & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{l|}{te-XaY̯Z-u}\\\hline\hline
-		2\gsc{PL} & \multicolumn{2}{l|}{XiY̯aZ-tem} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{l|}{te-XaY̯Z-u}\\\hline\hline
-		3\gsc{SG} & XiY̯eZ & XiY̯Z-a & me-XaY̯eZ & me-XaY̯eZ-et & je-XaY̯eZ & te-XaY̯eZ\\\hline
-		3\gsc{PL} & \multicolumn{2}{l||}{XiY̯Z-u} & me-XaY̯Z-im & me-XaY̯Z-ot & \multicolumn{2}{l|}{je-XaY̯Z-u}\\\hline
-	\end{tabular}
-%\end{small}
-\xe
-The system appears to be at once very regular and riddled with idiosyncrasies. Is there a method to the madness? In \S\ref{intro:problems} I present three research questions that guide our investigation. These questions are crosscut by three themes introduced in \S\ref{intro:themes}. Section \S\ref{sec:data} moves on to discuss the sources of data, \S\ref{sec:theory} provides a brief rundown of the theoretical assumptions and \S\ref{sec:jjmcc} touches on a number of prominent analyses from the past. Section \S\ref{intro:summary} provides an overview of each of the following chapters.
+In Part I of the book we will see that the syntax and semantics of the system can nevertheless be analyzed within a constrained theory of morphosyntax. I will make precise what the unique contribution of each template is and how that contribution comes about in the syntax. We will then be able to identify the role of the root in selecting between different possible meanings for the verb in a given template.
 
+
+	\subsection{Traditional generative treatments of the system} \label{intro:basic:jjmcc}
+Before we get to the meat of the book, I would like to acknowledge some of the earlier generative work on Semitic morphology. This will also help set the stage for direct comparison with alternative accounts later on. My aim is not to provide a history of ideas; for that see \cite{kastnertucker19cup}.
+
+In a groundbreaking series of works, John McCarthy presented a purely phonological account of Semitic morphology, focusing on Arabic \citep{jjmcc79,jjmcc81,jjmcc89li,jjmccprince90}. His original contribution lay in dividing the Semitic verb into three ``planes'' or ``tiers'': the CV skeleton (C and V slots), the root (consonants) and the melody (individual vowels).
+%For example, the verb \emph{takattab} `got written' was analyzed as follows, with a default verbal vowel -\emph{a}-.
+%\ex\label{ex:jjmcc-takattab}\emph{takattab} \citep[392]{jjmcc81}:\\
+%\xy
+%<0pt,1.5cm>*\asrnode{C}="C0",
+%<0.75em,1.5cm>*\asrnode{V}="V0",
+%<1.5em,1.5cm>*\asrnode{C}="C1",
+%<2.25em,1.5cm>*\asrnode{V}="V1",
+%<3em,1.5cm>*\asrnode{C}="C2",
+%<3.75em,1.5cm>*\asrnode{C}="C3",
+%<4.5em,1.5cm>*\asrnode{V}="V2",
+%<5.25em,1.5cm>*\asrnode{C}="C4",
+%<0pt,0cm>*\asrnode{t}="c0";
+%<0.75em,3cm>*\asrnode{a}="v0";
+%<1.5em,0cm>*\asrnode{k}="c1";
+%<2.25em,3cm>*\asrnode{a}="v1";
+%<3.5em,0cm>*\asrnode{t}="c2";
+%<4.5em,3cm>*\asrnode{a}="v2";
+%<5.25em,0cm>*\asrnode{b}="c4";
+%"C0"+D;"c0"+U**\dir{-};
+%"V0"+U;"v0"+D**\dir{-};
+%"C1"+D;"c1"+U**\dir{-};
+%"C2"+D;"c2"+U**\dir{-};
+%"C3"+D;"c2"+U**\dir{-};
+%"C4"+D;"c4"+U**\dir{-};
+%"V1"+U;"v1"+D**\dir{-};
+%"V2"+U;"v2"+D**\dir{-};
+%\endxy
+%%	\includegraphics[scale=0.4]{figs/jjmcc81-25}
+%\xe
+By including the vocalism on a separate tier, \citeauthor{jjmcc81}'s theory allowed vowels to be manipulated independently of the roots or the skeleton.
+
+%The melody \emph{u-a-i} is taken to derive the active participle, for {instance}:
+%\ex \emph{mutakaatib} \citep[401]{jjmcc81}\\
+%\xy
+%<0pt,1.5cm>*\asrnode{C}="C0a",
+%<0.75em,1.5cm>*\asrnode{V}="V0a",
+%<1.5em,1.5cm>*\asrnode{C}="C0b",
+%<2.25em,1.5cm>*\asrnode{V}="V0b",
+%<3em,1.5cm>*\asrnode{C}="C1",
+%<3.75em,1.5cm>*\asrnode{V}="V1",
+%<4.5em,1.5cm>*\asrnode{V}="V2",
+%<5.25em,1.5cm>*\asrnode{C}="C2",
+%<6em,1.5cm>*\asrnode{V}="V3",
+%<6.75em,1.5cm>*\asrnode{C}="C3",
+%<2.25em,0pt>*\asrnode{u}="u";
+%<3.5em,0pt>*\asrnode{a}="a";
+%<4.5em,0pt>*\asrnode{i}="i";
+%<3.5em,-1.5cm>*\asrnode{$\mu$}="mu";
+%"V0a"+D;"u"+U**\dir{-};
+%"V0b"+D;"a"+U**\dir{-};
+%"V1"+D;"a"+U**\dir{-};
+%"V2"+D;"a"+U**\dir{-};
+%"V3"+D;"i"+U**\dir{-};
+%"u"+D;"mu"+U**\dir{-};
+%"a"+D;"mu"+U**\dir{-};
+%"i"+D;"mu"+U**\dir{-};
+%\endxy
+%\xe
+%%	\includegraphics[scale=0.6]{figs/jjmcc81-42}
+
+The beauty of this theory is that it allowed for a separation of three morphological elements on three phonological tiers: the root (identity of the consonants), the template (the form of the CV skeleton) and additional inflectional or derivational information (the identity of the vowels).
+%Important extensions were proposed in \cite{jjmccprince90} to account for denominal forms, specifically plurals and diminutives.
+
+The current work shifts the focus to the nature of the CV skeleton and the melody. \citeauthor{jjmcc81}'s approach did not attempt to model the relationships between the semantics of the different templates -- the alternations in argument structure. 
+%Yet as we have seen in \S\ref{sec:tradition}, some templates are related to others in ways that remain to be explicated. \citeauthor{jjmcc81}'s work, as well as work inspired by it, leaves us in prime position to ask the following interrelated questions:
+%\pex \textbf{Questions on the nature of Semitic addressed in this study}
+%	\a What is the syntax behind the CV skeleton?
+%	\a What is the syntax behind the melody?
+%	\a What is the relationship between different templates, that is, how are argument structure alternations derived?
+%\xe
+%My answers to these questions lead us to make different assumptions than \citeauthor{jjmcc81}.
+Taking these relationships into account requires a slight change in perspective. Like \cite{jjmcc81}, I believe that the consonantal root lies at the core of the lexicon. Unlike in that theory, I do not postulate independent CV skeletons and do not accord the prosody morphemic status. The skeletons will be a by-product of how functional heads are pronounced and regulated by the general phonology of the language. There is no skeleton CVCVCCVC giving \emph{takattab} `got written', for example: there would be a prefix \emph{ta}-, a number of vowels spelling out Voice, gemination spelling out an additional head, and the organization of these different segments will proceed in a way that satisfies the phonology without making reference to prosodic primitives like skeletons. Furthermore, each morpheme will have an explicit syntax and semantics associated with it.
+
+A few more pieces of research that capture generalizations important to this dissertation deserve mention. The seminal work by \cite{berman78} underscored the semi-predictable nature of the templates. \citet[Ch.~3]{berman78}, in particular, made the point that the combination of root and template is neither fully regular nor completely idiosyncratic. Instead, \citeauthor{berman78} proposed a principle of \emph{lexical redundancy} to regulate the system. According to this theory, each root has a ``basic form'' in some template from which other forms are derived. Yet this theory did not formalize the relations between the templates, arbitrarily selecting one as the ``basic form'' and the others as derived from it, for each root. Nevertheless, \citeauthor{berman78}'s clear description of the regularities and irregularities in the morphology of Hebrew laid the groundwork for later works such as \cite{doron03}, \cite{arad05}, \cite{borer13oup} and the current contribution.
+
+Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. The syntactic-semantic aspects of this view were developed by \cite{reinhartsiloni05} and \cite{laks11,laks13morpho,laks14,laks18}. I refer to this idea as the ``stem-based approach'' and critique briefly it when relevant; if there is no consistent way of thinking about templates as morphemes then this view has few legs to stand on. See \cite{kastner17gjgl,kastner18nllt} for more pointed objections, and \cite{kastnertucker19cup} for a broader perspective.
+
+Even before the stem-based approach took form, other Semitists explored the idea of a Semitic system which diverged from the traditional descriptions. \cite{schwarzwald73} doubted the productivity of both the root and the templates, making an early argument for frequency effects in the interpretation of different templates. On that view, it is only the high frequency verbs of the language that show reliable alternations between templates. These verbs lead us as analysts to postulate relationships between templates, though when one looks at less frequent verbs, transparent alternations are less likely to hold. Unlike the stem-based hypothesis, which eschewed roots and relied on the template as a morphological primitive, the proposal in \cite{schwarzwald73} kept the root but relegated the template to morphophonological limbo: salient in the grammar but not operative in the syntax. While this early formulation of a template-less idea is intriguing, it cannot be maintained in the face of wug studies in which speakers generate argument structure alternations between templates using nonce words \citep{berman93jcl,moorecantwell13}.
+
+A special place in the literature has been carved out by \cite{doron03,doron13voice} and \cite{arad03,arad05}. I have already mentioned some features of these theories and we will return to them in more depth as the discussion proceeds.
+
+Finally, to pick out a few studies on Arabic (as gleaned from the helpful overview in \citealt{ussishkin00phd}), \cite{darden92} offered an analysis of Egyptian Arabic that attempted to do without verbal templates; \cite{mcomber95} developed an infixation-based system similar to that of \cite{jjmcc81} which makes crucial reference to morpheme edges; and \cite{ratcliffe97,ratcliffe98} attempted to improve on \cite{jjmccprince90} by restricting the CV skeleton and treating more phenomena as cases of infixation. But let us return to the current study.
 
 	\subsection{Transliteration and notation} \label{sec:data:notation}
-I use the variables X, Y and Z for the tri-consonantal root: \root{XYZ}. This dissertation contains little discussion of roots with more than three consonants, but nothing in the notation hinges on it. The list in \cite{ehrenfeld12} contains 311 quadrilateral roots and three quintilateral roots\footnote{\root{xntrʃ} `bullshit', \root{snxrn} `synchronize' and \root{flrtt} `flirt'.} out of 1876 roots in total.
+I use the variables X, Y and Z for the tri-consonantal root: \root{XYZ}. This monograph contains little discussion of roots with more than three consonants, but nothing in the notation hinges on it. The list in of roots extracted from the database of \cite{ehrenfeld12} contains 311 quadrilateral roots and three quintilateral roots\footnote{\root{xntrʃ} `bullshit', \root{snxrn} `synchronize' and \root{flrtt} `flirt'.} out of 1876 roots in total.
 
 In the Hebrew glosses, \gsc{ACC} is used for the direct object marker \emph{et} and \gsc{CS} for the head of a Construct State nominal.
 
-As will be discussed in Chapter 3, Hebrew has a fairly productive process of postvocalic spirantization applying to /b/, /k/ and /p/, turning them into [v], [x] and [f] respectively. This process is blocked in certain verbal templates; to note this blocking I borrow the non-syllabicity diacritic and place it under the medial root consonant: ``\dgs{Y}''. This notation can be found in the templates \tpie~and \thit, in which this blocking holds. The same notation is used for segments which never spirantize: ``\dgs{k}''. Again, see Chapter 3.
+As will be discussed in Chapter~\ref{voice:tpie}, Hebrew has a fairly productive process of postvocalic spirantization applying to /b/, /k/ and /p/, turning them into [v], [x] and [f] respectively. This process is blocked in certain verbal templates; to note this blocking I borrow the non-syllabicity diacritic and place it under the medial root consonant: ``\dgs{Y}''. This notation can be found in the templates \tpie~and \thit, in which this blocking holds. The same notation is used for segments which never spirantize: ``\dgs{k}''.
 
 Transcriptions are given using the International Phonetic Alphabet with the following modifications:
 \begin{itemize}
@@ -193,33 +276,49 @@ Transcriptions are given using the International Phonetic Alphabet with the foll
 	\item ``o'' stands for /ɔ/.
 	\item ``r'' stands for /ʁ/.
 	\item ``x'' stands for /χ/.
-	\item The apostrophe ' stands for the glottal stop /ʔ/ in the example sentences in Chapter 2.
+	\item The apostrophe ' stands for the glottal stop. %, although I usually leave it out omitted since the glottal stop is often dropped in contemporary speech.
 \end{itemize}
-These changes were made purely for reasons of convenience. The syntactic literature has often used ``\v{s}'' or ``S'' for /ʃ/ and ``c'' for /ts/. In both cases I preferred to retain the IPA transcription, ``ʃ'' and ``ts''. Stress is marked with an acute accent, ``\'a''. Deleted vowels are enclosed in angle brackets, ``$<>$''.
+These changes were made purely for reasons of convenience. The syntactic literature has often used ``\v{s}'' or ``S'' for /ʃ/ and ``c'' for /ts/. In both cases I preferred to retain the IPA transcription, ``ʃ'' and ``{\ts}''. Stress is marked with an acute accent when necessary, ``\'a''. Deleted vowels are enclosed in angle brackets, ``$<>$''. \underline{Underlining} and \textbf{boldface} are used only for emphasis, never as diacritics or notation.
 
-\underline{Underlining} and \textbf{boldface} are used only for emphasis, never as diacritics or notation.
+My notation contains various deviations from standard forms; these will probably only be of interest to readers already familiar with the language.
 
-  \subsection{Deviations from the standard forms}
-The template \thif~usually appears in the literature as \emph{h\underline{i}XYiZ}, with the first vowel an /i/. In my experience, speakers of my generation and at least one generation older use the /e/ form, and so I use /e/ throughout.
+The template {\thif} usually appears in the literature as \emph{h\textbf{i}XYiZ}, with an /i/-/i/ vocalic pattern. Yet contemporary speakers use /ɛ/ \citep{trachtman16}, and so I transcribe ``e'' throughout. Conversely, the initial /h/ is usually dropped in speech but I retain it for two reasons. First, /h/ is still pronounced by some older speakers and certain sociolinguistic groups, often marginalized ones \citep[cf.~][]{schwarzwald81biu,gafter14phd}. And second, the initial \emph{h}- should help non-Semitist readers to distinguish this template from other ones.
 
-In contrast, the initial /h/ in \emph{\underline{h}iXYiZ}~is usually dropped in speech. Nevertheless, I retain the segment in my transcription for two reasons. First, the /h/ is still pronounced by some older speakers and certain sociolinguistic groups, especially marginalized ones (\citealt{schwarzwald81biu}; see \citealt{gafter14phd} for related discussion). Second, the initial \emph{h}- should help the non-Semitist reader distinguish this template from others.
+Glottal stops are often dropped in speech \citep{enguehardfaust18}. I usually omit them, but at times retain an apostrophe in order to distinguish between otherwise homophonous forms, for example \emph{hefria} `he disturbed' $\sim$ \emph{hefri\underline{'}a} `she disturbed'.
 
-Glottal stops are often dropped in speech \citep{faust05,faust15iatl}. I usually omit them, but at times retain an apostrophe in order to distinguish between otherwise homophonous forms, for example \emph{hefria} `he disturbed' $\sim$ \emph{hefri\underline{'}a} `she disturbed'.
+When presenting verbal paradigms I include two substandard forms. The \gsc{1SG} future form is normally prefixed with \emph{a-} or \emph{e-}, e.g.~\emph{e-xtov} `I will write'. Contemporary usage, however, syncretizes \gsc{1SG} future with \gsc{3SG.M} future: \emph{je-daber} `I/he will talk'. I include both forms when giving paradigms. And finally, contemporary usage does not distinguish between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
 
-When presenting verbal paradigms I use two substandard forms. The first person singular future is normally prefixed with a low vowel, e.g.~\emph{a-daber} `I will talk' (in \root{dbr}). Contemporary usage, however, syncretizes the first person singular future with the third person masculine singular future: \emph{je-daber} `I/he will talk'. As far as I can tell, nothing important in the analysis depends on this distinction (or lack thereof). I do not use a dedicated \gsc{1SG} form in my transcription.
-
-Finally, Modern Hebrew does not make a distinction between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
-
-When building on existing work I modify the original transcriptions for consistency. With this housekeeping out of the way, we return to the theoretical approach.
+When reproducing examples from the literature I have modified the original transcriptions for consistency. With this housekeeping out of the way, we return to the theoretical approach.
 
 
 \section{Architectural assumptions} \label{intro:arch}
-dm
-Voice
-aas15
+Since my aim is to account for the syntactic, semantic and phonological behavior of the system, I must be explicit about my assumptions in all three cases. But since the focus is on the syntax and how it feeds interpretation at Logical Form (LF) and Phonological Form (PF), I divide the overview here into syntax and the interfaces.
 
-	\subsection{What is Voice?} \label{intro:arch:voice}
-In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the VP as the complement of V.\footnote{whether or not internal arguments end up in Spec,VP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the VP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
+	\subsection{The syntax}
+I assume a mainstream variety of Distributed Morphology \citep{dm} within the Minimalist framework \citep{chomsky95}. This means that all syntactic and morphological objects are built in the syntax; there is no separate grammatical module for word-building. The traditional work of the lexicon is distributed between the syntax, the semantics and the phonology: the syntax builds up binary structures via Merge of morphemes according to syntactic constraints, features, mechanism and so on. Words are composed minimally of an abstract root, lacking syntactic category, and one of the three functional heads a (for adjectives), n (for nouns) and v (for verbs).
+
+The core of a verb phrase therefore looks as follows, where the root modifies v and the internal argument is the complement of v.
+\ex
+	\Tree
+	[.vP
+		[.v
+			[.\root{root} ]
+			[.v ]
+		]
+		[.DP ]
+	]
+\xe
+
+The syntactic structure is transferred to the interfaces at Spell-Out, where it is interpreted by each of the two components. LF calculates meaning and PF calculates (morpho-)phonology. Spell-Out proceeds cyclically, that is, after a structure of certain size has been built up. The three categorizing heads are one such domain for Spell-Out \citep{arad03,embick10,marantz13,elenasamioti14}. The head Voice (see below) demarcates another domain.
+
+Lexical information is stored in what is often called the Encyclopedia, a vaguely-defined warehouse of idiosyncratic information. To the extent that we understand the Encyclopedia, we assume that it is organized by root \citep{harley14thlia}.
+
+This architecture means that there are no stems (as such), no paradigms (as such) and no words (as such). None of these are primitives of the system. Some are epiphenomenal (like paradigms) and some can be more accurately specified as phonological/prosodic words or morphological words, depending on the definition \citep{embicknoyer01,gouskova20}; either way, this definition will be in terms of syntax or phonology, not in independent terms of morphology.
+
+I will not argue for any of these assumptions in this book, but to the extent that the results are convincing, they provide natural support for these assumptions and against stem-based (word-based) theories. Some finer details now follow.
+
+		\subsubsection{What is Voice?} \label{intro:arch:voice}
+In the current neo-Davidsonian tradition, theories of argument structure have adopted a specific way of thinking about internal and external arguments in the syntax, based in large part on the interpretation asymmetries observed by \cite{marantz84} and discussed by \cite{kratzer96}. The theme or patient of the predicate is generated within the vP as the complement of v.\footnote{The current theory does not have a ``big-V'' lexical verb, V, nor does it have lexical adjectives A and nouns N. In addition, whether or not internal arguments end up in Spec,VP/Spec,vP as in various approaches is immaterial here \citep{johnson91,alexiadouschaefer11wccfl}.} The agent is introduced in the specifier of a higher functional head, which takes the vP as its own complement. Since \cite{kratzer96} it has become common to call this head Voice and to associate it with accusative case licensing, thereby identifying it with causative ``little v'' of \cite{chomsky95}. The basics are given in~(\nextx), slightly modifying \citet[121]{kratzer96}. The relevant compositional functions invoked here are Functional Application and Event Identification. We will also make use of Predicate Modification later on in this book; see \cite{wood15springer} for an accessible introduction. I leave out the semantic types of the arguments.
 \pex
 	\a Mittie fed the dog.
 	\a \Tree
@@ -238,19 +337,18 @@ In the current neo-Davidsonian tradition, theories of argument structure have ad
 	]
 \xe
 
-I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two---at least for certain psychological predicates \citep{bellettirizzi88,harleystone13}---I join the majority of work on argument structure in making no claims to that extent \citep{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This is we will see already in Section~\ref{voice:va}. I will try to be clear about 
+I would like to focus on two important points as a segue into the current theory. First, this original formulation does not make any claims regarding a structural difference between agents and causers (e.g.~circumstances, inanimate objects or natural forces). While there have been some attempts to draw a structural difference between the two---at least for certain psychological predicates \citep{bellettirizzi88,harleystone13}---I join the majority of work on argument structure in making no claims to that extent \citep[7]{layering15}. For me, agents are a subset of causers, but this difference is semantic, not syntactic. What this means is that an external argument position (Spec,VoiceP) should be compatible with both agents and causers, but some additional element could force only a narrower, agentive reading. This we will see already in Chapter~\ref{voice:va}. When the difference between agents and causers matters, I will be clear about it.
 
-The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. As recapped in the previous chapter, much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapters \ref{chap:aas} and \ref{i:nie}, once the current theory has been developed in depth. To begin, I will now explain what it means for Voice to be underspecified for this feature.
+The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the EPP feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. Much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice; recent approaches are discussed directly in Chapters \ref{chap:aas} and \ref{i:agree}, once the current theory has been developed in depth. One recent approach is of particular importance so I introduce it next.
 
-
-	\subsection{Layering} \label{intro:arch:layering}
+		\subsubsection{Layering} \label{intro:arch:layering}
 A recurring question in discussions of argument structure regards the direction of derivation in (anti-)causative alternations. For an alternation like~(\nextx), is the transitive version derived from the intransitive one via causativization or is the intransitive variant derived from the transitive one via anticausativization?
 \pex
 	\a John broke the vase.
 	\a The vase broke.
 \xe
 
-\cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP, (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material (Voice).
+In their ``layering'' approach to transitivity alternations, \cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP, (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material (Voice).
 \ex
 a. 
 \Tree
@@ -279,11 +377,180 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 	\a The window cracked \underline{from the pressure}.
 \xe
 
-In sum, while there is a causative base, an actual causer can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent (abstracting away here from the distinction between agents and causers, on which see Chapter~\ref{chap:intro} and \citealt[7]{layering15}). The causative alternation in English can be easily explained in these terms.
+In sum, while there is a causative base, an actual causer can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent (abstracting away here from the distinction between agents and causers, on which see immediately above). The causative alternation in English can be easily explained in these terms.
 
+@@@
+	\subsection{Interfaces}
+		\subsubsection{Roots}		
+		
+		\subsubsection{Contextual allomorphy}
+
+		\subsubsection{Contextual allosemy}
+
+
+		
 
 
 \section{Sketch of the system} \label{intro:sketch}
+@@all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in. The first is mainly accomplished using the features on Voice. The second is accomplished using hierarchical syntactic structure@@
+
+
+
+	\subsection{Hebrew verbal morphology}
+In this book, I examine a \textbf{three-way distinction} in the marking of argument structure alternations. The empirical focus here is on the verbal system of Modern Hebrew. This morphological system is an ideal testing ground for theories of argument structure for two reasons. The first is that verb ``triplets'' can be found in which a given root clearly has three different kinds of morphological marking, as with \root{ktb} `\root{\gsc{WRITE}}' in~(\nextx). These morphological classes or \emph{templates} are traditionally described by making reference to the vowels and affixes which combine with the root consonants X, Y and Z. Hebrew has seven such templates in total, three of which can be seen in~(\nextx). In this work, ``template'' is meant purely as a descriptive term.
+\pex\label{ex:general}
+	\a Anticausative/mediopassive verb in {\tnif}:\\
+		\begingl
+		\gla ha-xiburim \anticaus{nixtev-u} (al-jedej ha-talmidim)//
+		\glb the-essays were.written-\gsc{PL} by the-students//
+		\glft `The essays were written (by the students)'.//
+	\endgl
+	
+	\a Transitive verb in {\tkal}:\\
+		\begingl
+		\gla ha-talmidim \textbf{katv-u} et ha-nosim//
+		\glb the-students wrote-\gsc{PL} \gsc{ACC} the-topics//
+		\glft `The students wrote the topics down.'//
+	\endgl
+
+	\a Causative verb in {\thif}:\\
+		\begingl
+		\gla fabien \caus{hextiv-a} (la-talmidim) et reʃimat ha-nosim//
+		\glb Fabienne dictated-\gsc{F} to.the-students \gsc{ACC} list.of the-topics//
+		\glft `Fabienne dictated the list of topics (to the students).'//
+	\endgl	
+\xe
+
+Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\thif} like~(\lastx c) are active (barring exceptions I return to below), verbs in {\tkal} are underspecified with regards to their argument structure, (\lastx b): with some roots, the verb might be transitive; with others, unergative; and with others still, unaccusative, (\nextx).
+\pex\label{ex:kal}
+	\a Transitive {\tkal}:\\
+	\begingl
+		\gla teo \textbf{axal} et ha-laxmanja//
+		\glb Theo ate \gsc{ACC} the-bread.roll//
+		\glft `Theo ate the bread roll.'//
+	\endgl
+%	\a \begingl
+%		\gla ha-balʃan \textbf{katav} et ha-maamar ha-arox//
+%		\glb the-linguist wrote \gsc{ACC} the-article the-long//
+%		\glft `The linguist wrote the long article.'//
+%	\endgl
+
+	\a Unergative {\tkal}:\\
+	\begingl
+		\gla teo \textbf{rakad} ve-rakad ve-rakad (kol ha-boker)//
+		\glb Theo danced and-danced and-danced all the-morning//
+		\glft `Theo danced and danced and danced (all morning long).'//
+	\endgl
+%	\a \begingl
+%		\gla teo \textbf{halax} kol ha-boker//
+%		\glb Theo walked all the-morning//
+%		\glft `Theo walked all morning long.'//
+%	\endgl
+
+	\a Unaccusative {\tkal}:\\
+	\begingl
+		\gla \textbf{nafal} le-teo ha-bakbuk//
+		\glb fell to-Theo the-bottle//
+		\glft `Theo's bottle fell.'//
+	\endgl
+	
+%	\a \begingl
+%		\gla ha-bakbuk \textbf{kafa} ba-makpi//
+%		\glb the-bottle froze in.the-freezer//
+%		\glft `The bottle froze in the freezer.'//
+%	\endgl
+\xe
+
+%\ex\label{ex:alternations-heb}
+%	\begin{tabular}{llllll}
+%	\multicolumn{2}{c}{anticausative}	&	\multicolumn{2}{c}{transitive}	& \multicolumn{2}{c}{causative}\\
+%	\multicolumn{2}{c}{\tnif}	&	\multicolumn{2}{c}{\tkal}	& \multicolumn{2}{c}{\thif}\\
+%	\emph{neexal}	& `was eaten'	&	\emph{axal}	& `ate'	&	\emph{heexil}	& `fed'\\
+%	\end{tabular}
+%\xe
+
+What these patterns show is that Hebrew has active marking, non-active marking and underspecified (non-)marking. As a consequence, we must move beyond purely binary distinctions of the ``causative/anticausative'' kind. The book develops the necessary trivalent system.
+
+The second reason for investigating Hebrew is that this three-way distinction is instructive but not deterministic. A given syntactic configuration does not always entail a given template, and a given template does not always entail a given syntactic configuration. Work on Hebrew morphology, be it traditional or contemporary, has consistently found itself faced with two issues:
+\begin{itemize*}
+	\item What are the possible readings associated with a given template (and why)?
+	\item What other templates does a given template alternate with (and why)?
+\end{itemize*}
+
+I aim to provide the most complete answers to these questions to date. We have already seen that transitive verbs exist both in {\tkal} and {\thif}, and that unaccusatives exist both in {\tkal} and in {\tnif}. Transitive verbs also exist in {\tpie}, (\nextx a), and anticausatives also exist in {\thit}, (\nextx b).
+\ex\label{ex:counter1}
+\raisebox{-0.6em}{
+	\begin{tabular}{lllllll}
+	a.& Transitive in & \tpie & \emph{biʃel} & `cooked'	& (not \tkal 		 & *\emph{baʃal})\\
+%	b.& Anticausative in & \tkal & instead of \tnif	& \emph{nafal}	& `fell'		& * \emph{ninfal}\\
+	b.& Anticausative in & \thit & \emph{hitparek} & `fell apart' & (not \tnif & *\emph{nifrak})\\
+	\end{tabular}
+}
+\xe
+
+But conversely,  a given template does not always entail a given syntactic configuration. Even {\tnif} appears on some unergatives, (\nextx a), and {\thit} instantiates not only anticausatives as in~(\lastx b) but also reflexives as in~(\nextx b).
+\ex\label{ex:counter2}
+\raisebox{-0.6em}{
+	\begin{tabular}{llllll}
+	a.& Unergative in & \tnif & \emph{nilxam} & `fought' & (not anticausative) \\
+	b.&	Reflexive in & \thit & \emph{hitgaleax} & `shaved' & (not anticausative) \\
+	\end{tabular}
+}
+\xe
+
+These ``irregularities'' have occupied Semitist grammarians \citep[e.g.][]{gesenius} as well as modern-day authors \citep[e.g.][]{rosen77,schwarzwald81,bolozky82,doron03,arad05,aronoff07,borer13oup,kastner16phd} for as long as the language has been studied. On the one hand, it has long been acknowledged that roots show idiosyncratic behavior: broadly speaking, some roots prefer to form transitive verbs in {\tkal} and others in {\tpie}, as seen in~(\ref{ex:counter1}a). But on the other hand, it has proven much harder to accurately delimit the degree to which the templates are associated with distinct syntactic structures and semantic interpretations. When the language is viewed as a whole, the patterns in~(\ref{ex:general}) are clearly visible, but so are the exceptions.
+
+
+	\subsection{The proposal}
+The proposal put forward in this book showcases a novel analysis of the Hebrew patterns which captures existing work on European languages equally well. Working within Minimalist syntax \citep{chomsky95} and Distributed Morphology \citep{dm}, I rely on the idea that the external argument is introduced by the functional head Voice \citep{kratzer96,pylkkanen08,woodmarantz17}. This head might itself be endowed with syntactic features \citep{schaefer08,wood15springer}, leading me to defend the following claim:
+\pex \textbf{The trivalency of Voice}
+	\a Voice is associated with a [$\pm$D] feature, meaning it can be valued as [+D], [--D] or unspecified with regards to [D].\footnote{A similar view of binary features as trivalent is espoused by \cite{harbour11}.}
+	\a This feature indicates whether the specifier of Voice must be filled by a DP ([+D]), cannot be filled by a DP ([--D]), or is agnostic as to whether it is filled by a DP (unspecified).
+\xe
+
+Importantly, these Voice differ in their phonological form. At its simplest, the system straightforwardly derives the alternations seen in~(\ref{ex:general})--(\ref{ex:kal}) as follows, where rows~(\nextx a--b) give examples of transitive verbs in {\tkal} and row~(\nextx c) shows an unaccusative in {\tkal}.
+\ex\label{ex:alternations-heb2}
+\raisebox{-3em}{
+	\begin{tabular}{ll|ll|ll|ll}
+	 & & \multicolumn{2}{P{4.7cm}|}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}|}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\
+%	\phantom{Semantics} & \multicolumn{2}{c|}{causative} &	\multicolumn{2}{c|}{transitive}	& \multicolumn{2}{c}{anticausative}\\\cline{2-7}
+	& & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\\hline
+	a.& \root{ktb} & \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
+	b.& \root{'xl} & \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\\hdashline
+	c.& \root{nfl} & \emph{hepil} & `dropped' & \emph{nafal}	& `fell' & \multicolumn{2}{c}{---}\\
+	\end{tabular}
+}
+%	\begin{tabular}{llllll}
+%	\multicolumn{2}{c}{anticausative}	&	\multicolumn{2}{c}{transitive}	& \multicolumn{2}{c}{causative}\\
+%	\multicolumn{2}{c}{\tnif}	&	\multicolumn{2}{c}{\tkal}	& \multicolumn{2}{c}{\thif}\\
+%	\multicolumn{2}{c}{\textbf{\vz}}	&	\multicolumn{2}{c}{\textbf{Voice}}	& \multicolumn{2}{c}{\textbf{\vd}}\\
+%	\emph{neexal}	& `was eaten'	&	\emph{axal}	& `ate'	&	\emph{heexil}	& `fed'\\
+%	\end{tabular}
+\xe
+
+On this analysis, verbs in {\thif} are expected to be transitive or unergative because they require an external argument, verbs in {\tnif} are expected to be mediopassive (anticausative or passive) because they lack an external argument syntactically, and verbs in {\tkal} could go either way, depending on the idiosyncratic requirements of the root. The three values of Voice correspond to different morphological markings, but there is more than one way to get e.g.~an anticausative verb (namely with Voice or {\vz}). This way of looking at things dissolves the puzzle posed by examples like those in~(\ref{ex:counter1}) above: there is no reason to expect ``transitive'' to map onto specific morphology deterministically.\footnote{The two templates {\tpie} and {\thit} are derived by using an additional adverbial modifier, {\va} \citep{doron03,kastner17gjgl,sundaresanmcfadden17}, which is discussed in detail in Chapters 2 and 3.} Rather, syntax is autonomous in being able to build up structures which have different building blocks but may end up being interpreted similarly \citep{wood15springer,woodmarantz17,myler16mit}.
+
+What still remains to be explained is the alternations. These can be shown to follow from the architectural assumptions: following \cite{kratzer96} and \cite{layering15}, it has become fairly common to assume that a core vP contains a causative component which is semantically available even in anticausatives. Voice can then add an external argument (an agent), but otherwise the vP already has a basic meaning. Accordingly, we can combine the root \root{ktb}, the verbalizer v and an internal argument. This vP gives us a basic event of writing something:
+\ex
+\Tree
+	[.vP
+		[.v
+			[.\root{ktb} ]
+			[.v ]
+		]
+		[.DP ]
+	]
+\xe
+
+The combinatorics are now simple. If we merge {\vz}, no external argument is added and we have a simple anticausative. If we merge Voice, an external argument is added and we get the causative variant: an event of writing something with an agent doing the writing. And if we merge {\vd}, we will need to specify a different kind of external argument (how this happens is explored in Chapter 4).
+
+Looking at things this way means we can abandon the notion of a ``template'' as a morphological template, and no longer need to explain why e.g.~{\tnif} alternates with {\tkal} in some cases but with {\thif} in others. Rather, it is simply a question of what the syntax can build, together with some idiosyncratic licensing properties of individual roots. This analysis is shown to be superior to that of the other major contributions in the literature \citep{doron03,arad05}.
+
+The first part of the book (Chapters 2--5) develops this analysis based on Hebrew, with special attention to the functional heads and the features they may have. The second part of the book (Chapters 6--7) revisits existing work on argument structure alternations in light of the current system, drawing parallels and sketching the boundaries of crosslinguistic variation.
+
+
+
+
 The current study takes as its empirical focus the verbal system of Modern Hebrew. This morphological system is an ideal testing ground for theories of argument for two reasons. The first is that triplets can be found in which a given root clearly has three different kinds of morphological marking, as with \root{axl} `\root{\gsc{EAT}}' in~(\nextx). As a consequence, we must move beyond binary distinctions (whether in the syntax or the morphology). I will refer to these morpho-phonological patterns as \emph{templates}. They are traditionally described by making reference to the vowels and affixes which combine with the root consonants X, Y and Z. Hebrew has seven such templates, three of which can be seen in~(\nextx).
 \ex\label{ex:alternations-heb}
 	\begin{tabular}{llllll}
@@ -332,6 +599,107 @@ On this analysis, verbs in {\tnif} are expected to be anticausative/unaccusative
 
 The first part of the book (Chapters 2--5) will develop this analysis based on Hebrew, with special attention to the functional heads and the features they may have. The second part of the book (Chapters 6--7) will revisit existing work on argument structure alternations in light of the current system, drawing parallels and sketching the boundaries of crosslinguistic variation. I will now illustrate some of the relevant questions arising in each of these parts.
 
+
+
+We will focus on three verbal forms in Hebrew (\emph{templates}): {\tkal}, {\tnif} and {\thif}.
+
+
+{\tkal} varies in its argument structure (underspecified)
+
+\pex Transitive:
+	\a \begingl
+		\gla teo \textbf{axal} et ha-laxmania//
+		\glb Theo ate \gsc{ACC} the-bread.roll//
+		\glft `Theo are the bread roll.'//
+	\endgl
+	\a \begingl
+		\gla ha-balʃan \textbf{katav} et ha-maamar ha-arox//
+		\glb the-linguist wrote \gsc{ACC} the-article the-long//
+		\glft `The linguist wrote the long article.'//
+	\endgl
+\xe
+
+\pex Unergative:
+	\a \begingl
+		\gla teo \textbf{rakad} ve-rakad ve-rakad//
+		\glb Theo danced and-danced and-danced//
+		\glft `Theo danced and danced and danced.'//
+	\endgl
+	\a \begingl
+		\gla teo \textbf{halax} kol ha-boker//
+		\glb Theo walked all the-morning//
+		\glft `Theo walked all morning long.'//
+	\endgl
+\xe
+
+\pex Unaccusative:
+	\a \begingl
+		\gla \textbf{nafal} le-teo ha-bakbuk//
+		\glb fell to-Theo the-bottle//
+		\glft `Theo's bottle fell.'//
+	\endgl
+	
+	\a \begingl
+		\gla ha-bakbuk \textbf{kafa} ba-makpi//
+		\glb the-bottle froze in.the-freezer//
+		\glft `The bottle froze in the freezer.'//
+	\endgl
+\xe
+
+
+{\tnif} is non-active
+\pex
+	\a \begingl
+		\gla \textbf{niʃbar} l-i ha-ʃaon//
+		\glb broke to-me the-watch//
+		\glft `My watch broke.//
+	\endgl
+	\a \begingl
+		\gla \textbf{neelam} l-i ha-tamsir//
+		\glb disappeared to-me the-handout//
+		\glft `My handout disappeared.'//
+	\endgl
+\xe
+
+{\thif} is active
+\pex
+	\a \begingl
+		\gla kevin \textbf{heexil} et ema (duvdevanim)//
+		\glb Kevin fed \gsc{ACC} Emma blueberries.//
+		\glft `Kevin fed Emma (blueberries).'//
+	\endgl %Emma is a dog
+		
+	\a \begingl
+		\gla ha-zamar \textbf{herkid} et ha-orxim//
+		\glb the-singer made.dance \gsc{ACC} the-guests//
+		\glft `The singer made the guests dance.'//
+	\endgl
+\xe
+
+
+That's all we need
+\pex Importantly, we can find triplets:
+	\a Causative {\thif}\\
+		\begingl
+		\gla ha-more hextiv (la-talmidim) et reʃimat ha-nosim//
+		\glb the-teacher dictated to.the-students \gsc{ACC} list.of the-topics//
+		\glft `The teacher dictated the list of topics (to the students).'//
+	\endgl
+	
+	\a Transitive {\tkal}\\
+		\begingl
+		\gla ha-talmidim \textbf{katv-u} et ha-nosim//
+		\glb the-students wrote-\gsc{PL} \gsc{ACC} the-topics//
+		\glft `The students wrote the topics down.'//
+	\endgl
+	
+	\a Non-active (mediopassive) {\tnif}\\
+		\begingl
+		\gla ha-xiburim nixtev-u (al-jedej ha-talmidim)//
+		\glb the-essays were.written-\gsc{PL} by the-students//
+		\glft `The essays were written (by the students)'.//
+	\endgl
+\xe
 
 
 
@@ -406,8 +774,7 @@ Table~\ref{table:summary} summarizes the syntactic, semantic and morphophonologi
 
 
 
-
-\section{Templates as functional heads}
+	\subsection{Templates as functional heads}
 Modern Hebrew makes use of seven distinct morphophonological verbal forms in which a given root may or may not be instantiated. The root \root{ktb} which has a general meaning associated with writing can give rise to the verb \emph{katav} `wrote' in the \tkal~template and \emph{hextiv} `dictated' in the \thif~template. ``Causative'' \emph{hextiv} can then be passivized to yield \emph{huxtav} `was dictated' in the passive template \thuf. We can also get a passive reading of `was written' using the \tnif~template, \emph{nixtav}. So far, the argument structure alternations seem easy enough to pin down, as the first approximation in~(\nextx) shows. We begin with a subset of four verbal templates out of the seven.
 \pex\label{ex:naive-ktb} A na\"{\i}ve view of argument structure alternations, based on \root{ktb}.
   \a \tkal: unmarked/transitive.
@@ -497,90 +864,39 @@ Table~\ref{table:root-summary-syn} summarizes the requirements of root classes i
 
 
 
-\section{Traditional generative treatments of the system} \label{sec:jjmcc}
-
-@@mention jjmcc, doron, arad in general terms. I'll return to comparisons later on@@
-
-Before we get to the meat of the dissertation, I would like to acknowledge some of the earlier work on Semitic morphology in an attempt to illustrate what we do and do not know yet. I focus here on the seminal series of works by McCarthy \citep{jjmcc79,jjmcc81,jjmcc89li,jjmccprince90} in order to bring out the inadequacies of a purely phonological account of {Semitic morphology}. Comparisons with more recent analyses will be presented in the next two chapters, where appropriate.
-
-	\subsection{Tiers}
-McCarthy's original contribution lay in dividing the Semitic (Arabic) verb into three ``planes'' or ``tiers'': the CV skeleton (C and V slots), the root (consonants) and the melody (individual vowels). For example, the verb \emph{takattab} `got written' was analyzed as follows, with a default verbal vowel -\emph{a}-.
-\ex\label{ex:jjmcc-takattab}\emph{takattab} \citep[392]{jjmcc81}:\\
-\xy
-<0pt,1.5cm>*\asrnode{C}="C0",
-<0.75em,1.5cm>*\asrnode{V}="V0",
-<1.5em,1.5cm>*\asrnode{C}="C1",
-<2.25em,1.5cm>*\asrnode{V}="V1",
-<3em,1.5cm>*\asrnode{C}="C2",
-<3.75em,1.5cm>*\asrnode{C}="C3",
-<4.5em,1.5cm>*\asrnode{V}="V2",
-<5.25em,1.5cm>*\asrnode{C}="C4",
-<0pt,0cm>*\asrnode{t}="c0";
-<0.75em,3cm>*\asrnode{a}="v0";
-<1.5em,0cm>*\asrnode{k}="c1";
-<2.25em,3cm>*\asrnode{a}="v1";
-<3.5em,0cm>*\asrnode{t}="c2";
-<4.5em,3cm>*\asrnode{a}="v2";
-<5.25em,0cm>*\asrnode{b}="c4";
-"C0"+D;"c0"+U**\dir{-};
-"V0"+U;"v0"+D**\dir{-};
-"C1"+D;"c1"+U**\dir{-};
-"C2"+D;"c2"+U**\dir{-};
-"C3"+D;"c2"+U**\dir{-};
-"C4"+D;"c4"+U**\dir{-};
-"V1"+U;"v1"+D**\dir{-};
-"V2"+U;"v2"+D**\dir{-};
-\endxy
-%	\includegraphics[scale=0.4]{figs/jjmcc81-25}
+The discussion in this paper highlights how roots place requirements on the syntactic derivation. In English, for instance, it has been suggested in different ways that there is a difference between the semantics of \root{\gsc{DESTROY}}, \root{\gsc{GROW}} and \root{\gsc{BREAK}} which goes beyond pure meaning. This difference leads to an inability to take complements in nominalized form \citep{chomsky70,marantz97}.
+\pex \root{\gsc{DESTROY}}: change of state, externally caused
+\a The enemy's destruction of the city.
+\a The city's destruction (by the enemy).
 \xe
 
-By including the vocalism on a separate tier, \citeauthor{jjmcc81}'s theory allowed vowels to be manipulated independently of the roots or the skeleton. The melody \emph{u-a-i} is taken to derive the active participle, for {instance}:
-\ex \emph{mutakaatib} \citep[401]{jjmcc81}\\
-\xy
-<0pt,1.5cm>*\asrnode{C}="C0a",
-<0.75em,1.5cm>*\asrnode{V}="V0a",
-<1.5em,1.5cm>*\asrnode{C}="C0b",
-<2.25em,1.5cm>*\asrnode{V}="V0b",
-<3em,1.5cm>*\asrnode{C}="C1",
-<3.75em,1.5cm>*\asrnode{V}="V1",
-<4.5em,1.5cm>*\asrnode{V}="V2",
-<5.25em,1.5cm>*\asrnode{C}="C2",
-<6em,1.5cm>*\asrnode{V}="V3",
-<6.75em,1.5cm>*\asrnode{C}="C3",
-<2.25em,0pt>*\asrnode{u}="u";
-<3.5em,0pt>*\asrnode{a}="a";
-<4.5em,0pt>*\asrnode{i}="i";
-<3.5em,-1.5cm>*\asrnode{$\mu$}="mu";
-"V0a"+D;"u"+U**\dir{-};
-"V0b"+D;"a"+U**\dir{-};
-"V1"+D;"a"+U**\dir{-};
-"V2"+D;"a"+U**\dir{-};
-"V3"+D;"i"+U**\dir{-};
-"u"+D;"mu"+U**\dir{-};
-"a"+D;"mu"+U**\dir{-};
-"i"+D;"mu"+U**\dir{-};
-\endxy
+\pex \root{\gsc{GROW}}: change of state, internally caused
+\a \ljudge{*} John's growth of tomatoes.
+\a The tomatoes' growth (*by John).
 \xe
-%	\includegraphics[scale=0.6]{figs/jjmcc81-42}
 
-The beauty of this theory is that it allowed for a separation of three morphological elements on three phonological tiers: the root (identity of the consonants), the template (the form of the CV skeleton) and additional inflectional or derivational information (the identity of the vowels). Important extensions were proposed in \cite{jjmccprince90} to account for denominal forms, specifically plurals and diminutives.
-
-The current work shifts the focus to the nature of the CV skeleton and the melody. \citeauthor{jjmcc81}'s approach did not attempt to model the relationships between the semantics of the different templates -- the alternations in argument structure. Yet as we have seen in \S\ref{sec:tradition}, some templates are related to others in ways that remain to be explicated. \citeauthor{jjmcc81}'s work{,} as well as work inspired by {it,} leaves us in prime position to ask the following interrelated questions:
-\pex \textbf{Questions on the nature of Semitic addressed in this study}
-	\a What is the syntax behind the CV skeleton?
-	\a What is the syntax behind the melody?
-	\a What is the relationship between different templates, that is, how are argument structure alternations derived?
+\pex \root{\gsc{BREAK}}: result
+\a \ljudge{*} John's break of the glass.
+\a \ljudge{*} The glass' break.
 \xe
-My answers to these questions lead us to make different assumptions than \citeauthor{jjmcc81}. Like him, I believe that the consonantal root lies at the core of the lexicon. Unlike his theory, I do not postulate independent CV skeletons and do not accord the prosody morphemic status. The skeletons will be a by-product of how functional heads are pronounced and regulated by the general phonology of the language. There is no skeleton CVCVCCVC as in~(\ref{ex:jjmcc-takattab}) giving \emph{takattab}, for example: there would be a prefix \emph{ta}-, a number of vowels spelling out Voice, gemination spelling out an additional head, and the organization of these different segments will proceed in a way that satisfies the phonology without making reference to prosodic primitives like skeletons. Furthermore, each morpheme will have an explicit syntax and semantics associated with it. Chapter 2 develops the morphosyntactic system and Chapter 3 returns to the morphophonological side of the morphology, making a number of additional contributions to our understanding of how the syntax and the phonology interact.
-	
-	\subsection{Related work}
-A few more pieces of research that capture generalizations important to this dissertation deserve mention. The seminal work by \cite{berman78} underscored the semi-predictable nature of the templates. \citet[Ch.~3]{berman78} made the point that the combination of root and template is neither fully regular nor completely idiosyncratic. Instead, \citeauthor{berman78} proposed a principle of \emph{lexical redundancy} to regulate the system. According to this theory, each root has a ``basic form'' in some template from which other forms are derived. Yet this theory did not formalize the relations between the templates, arbitrarily selecting one as the ``basic form'' and the others as derived from it, for each root. Nevertheless, \citeauthor{berman78}'s clear description of the regularities and irregularities in the morphology of Hebrew laid the groundwork for later works such as \cite{doron03}, \cite{arad05}, \cite{borer13oup} and the current contribution.
+Similar observations have been made more recently for a variety of phenomena in different languages \citep{haspelmath93,unaccusativity95,schaefer08}. The details are less important right now than the intuition that something about the lexical semantics of the root constrains what should otherwise be an identical syntactic derivation. In these cases, the underlying assumption is that the morphosyntax of the verbs \emph{destroy}, \emph{grow} and \emph{break} is identical in that they are all made up of a root and a verbalizer, with no extra syntactic material determining their argument structure.
 
-Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. I refer to this idea as the ``stem-based approach''. We return to it in \S\ref{sec:others-diff}, discussing it more in depth there.
+Nevertheless, argument structure alternations can be conditioned by additional syntactic material. For instance, markers such as German \emph{sich} and Romance \gsc{SE} famously reduce the total arity of the verb, descriptively speaking \citep[e.g.][]{labelle08,schaefer08,cuervo14}. In order to account for the Hebrew facts, I will take the connection highlighted in the previous section---that between argument structure and the template---and cash it out in terms of the syntactic head Voice.
 
-Even before the stem-based approach took form, other Semitists explored the idea of a Semitic system which diverged from the traditional descriptions. \cite{schwarzwald73} doubted the productivity of both the root and the templates, making an early argument for frequency effects in the interpretation of different templates. On that view, it is only the high frequency verbs of the language that show reliable alternations between templates. These verbs lead us as analysts to postulate relationships between templates, though when one looks at less frequent verbs, transparent alternations are less likely to hold. Unlike the stem-based hypothesis, which eschewed roots and relied on the template as a morphological primitive, the proposal in \cite{schwarzwald73} kept the root but relegated the template to morphophonological limbo: salient in the grammar but not operative in the syntax. While this early formulation of a template-less idea is intriguing, it cannot hold up to wug studies in which speakers generate argument structure alternations between templates using nonce words \citep{berman93jcl,moorecantwell13}.
+Throughout the paper I assume that morphological structure is built up in the syntax \citep{dm}, with late insertion of phonological material proceeding from the most deeply embedded element outwards \citep{bobaljik00,embick10}. The external argument is introduced by the functional head Voice \citep{kratzer96,pylkkanen08}. Acategorial roots modify one of the ``categorizing'' heads v, n and a \citep{marantz97,arad03,harley14thlia}. To see how roots affect argument structure, we begin with anticausatives.
 
-To pick out a few studies on Arabic (as gleaned from the helpful overview in \citealt{ussishkin00phd}), \cite{darden92} offered an analysis of Egyptian Arabic that attempted to do without verbal templates; \cite{mcomber95} developed an infixation-based system similar to that of \cite{jjmcc81} which makes crucial reference to morpheme edges; and \cite{ratcliffe97,ratcliffe98} attempted to improve on \cite{jjmccprince90} by restricting the CV skeleton and treating more phenomena as cases of infixation. But let us return to the current study.
+
+%%%%%%%
+The present study examines the division of labor between syntax, semantics, phonology and the lexicon. Generative approaches to linguistic theorizing have so far resulted in a wealth of knowledge about how an abstract syntax generates structure which is then interpreted by the semantics and by the phonology. We also have a basic vocabulary allowing us to describe how individual lexical items might have their own idiosyncrasies in the syntax (different features), in the semantics (different meanings) and in the phonology (lexical exceptionality). What this dissertation tests is the hypothesis that the syntax feeds both interfaces in the same way.
+
+The core idea has two parts. The first is that there is a universal set of syntactic elements which can be arranged in a hierarchical way. Once the syntax generates a chunk of structure (be it a phase or an entire utterance), it must be interpreted compositionally at the interface with the semantics and linearized in order to be interpreted at the interface with the phonology. In both cases, I argue that the same kind of locality constraints hold on interpretation. The second part has to do with how individual lexical items muddy the waters. The grammar is rigid, but lexical material can influence how functional material is interpreted. The important point here is that lexical material is separated from the syntax proper: its idiosyncrasies only kick in at the two interfaces. As such, lexical material (a root) has no syntactic features, only properties which are directly related either to meaning or to pronunciation.
+
+In support of this claim I approach a notorious empirical landscape: the non-concatenative morphology of Modern Hebrew. In Semitic languages like Hebrew, words are famously made up of various grammatical and lexical elements interleaved in a single, short (often disyllabic or trisyllabic) phonological word. Two syllables might convey a lexical root, tense information, derivational information and agreement information all at once. It is therefore not immediately obvious that hierarchical structure is there to be found. Yet that is exactly the claim put forward here. By demonstrating that the hypothesis outlined above is a valid one for Hebrew, this dissertation entails that it is valid for natural language as a whole. Functional material (in the form of structure) and lexical material (in the form of roots) can be seen to combine in systematic, predictable ways.
+
+Taking the verbal system as the main object of inquiry, the following chapters analyze its syntactic, semantic and phonological properties in order to address a number of Hebrew-specific, Semitic-specific and language-general questions. At its analytical core, this work asks how we might apply the theories that have been developed for other languages to Semitic: how these theories might be tested and how they should be modified to accommodate a broader range of data. I frame this question in terms of the abstract syntactic structure and the way it feeds into semantic and phonological interpretation. The resulting discussion addresses three main questions: the proper description of Hebrew morphology, the proper description of the syntax and its relation to the interfaces with the semantics and the phonology, and ultimately the way such a system is learned by the child. Let us first see what the system looks like.
+
+
+
 
 
 
@@ -665,43 +981,6 @@ Semantics	 & 		d.		& &			e.	& &	f. & \\
 	& \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
 	\end{tabular}
 \xe
-
-
-
-
-%
-%
-%The discussion in this paper highlights how roots place requirements on the syntactic derivation. In English, for instance, it has been suggested in different ways that there is a difference between the semantics of \root{\gsc{DESTROY}}, \root{\gsc{GROW}} and \root{\gsc{BREAK}} which goes beyond pure meaning. This difference leads to an inability to take complements in nominalized form \citep{chomsky70,marantz97}.
-%\pex \root{\gsc{DESTROY}}: change of state, externally caused
-%\a The enemy's destruction of the city.
-%\a The city's destruction (by the enemy).
-%\xe
-%
-%\pex \root{\gsc{GROW}}: change of state, internally caused
-%\a \ljudge{*} John's growth of tomatoes.
-%\a The tomatoes' growth (*by John).
-%\xe
-%
-%\pex \root{\gsc{BREAK}}: result
-%\a \ljudge{*} John's break of the glass.
-%\a \ljudge{*} The glass' break.
-%\xe
-%Similar observations have been made more recently for a variety of phenomena in different languages \citep{haspelmath93,unaccusativity95,schaefer08}. The details are less important right now than the intuition that something about the lexical semantics of the root constrains what should otherwise be an identical syntactic derivation. In these cases, the underlying assumption is that the morphosyntax of the verbs \emph{destroy}, \emph{grow} and \emph{break} is identical in that they are all made up of a root and a verbalizer, with no extra syntactic material determining their argument structure.
-%
-%Nevertheless, argument structure alternations can be conditioned by additional syntactic material. For instance, markers such as German \emph{sich} and Romance \gsc{SE} famously reduce the total arity of the verb, descriptively speaking \citep[e.g.][]{labelle08,schaefer08,cuervo14}. In order to account for the Hebrew facts, I will take the connection highlighted in the previous section---that between argument structure and the template---and cash it out in terms of the syntactic head Voice.
-%
-%Throughout the paper I assume that morphological structure is built up in the syntax \citep{dm}, with late insertion of phonological material proceeding from the most deeply embedded element outwards \citep{bobaljik00,embick10}. The external argument is introduced by the functional head Voice \citep{kratzer96,pylkkanen08}. Acategorial roots modify one of the ``categorizing'' heads v, n and a \citep{marantz97,arad03,harley14thlia}. To see how roots affect argument structure, we begin with anticausatives.
-%
-%
-%%%%%%%%
-%The present study examines the division of labor between syntax, semantics, phonology and the lexicon. Generative approaches to linguistic theorizing have so far resulted in a wealth of knowledge about how an abstract syntax generates structure which is then interpreted by the semantics and by the phonology. We also have a basic vocabulary allowing us to describe how individual lexical items might have their own idiosyncrasies in the syntax (different features), in the semantics (different meanings) and in the phonology (lexical exceptionality). What this dissertation tests is the hypothesis that the syntax feeds both interfaces in the same way.
-%
-%The core idea has two parts. The first is that there is a universal set of syntactic elements which can be arranged in a hierarchical way. Once the syntax generates a chunk of structure (be it a phase or an entire utterance), it must be interpreted compositionally at the interface with the semantics and linearized in order to be interpreted at the interface with the phonology. In both cases, I argue that the same kind of locality constraints hold on interpretation. The second part has to do with how individual lexical items muddy the waters. The grammar is rigid, but lexical material can influence how functional material is interpreted. The important point here is that lexical material is separated from the syntax proper: its idiosyncrasies only kick in at the two interfaces. As such, lexical material (a root) has no syntactic features, only properties which are directly related either to meaning or to pronunciation.
-%
-%In support of this claim I approach a notorious empirical landscape: the non-concatenative morphology of Modern Hebrew. In Semitic languages like Hebrew, words are famously made up of various grammatical and lexical elements interleaved in a single, short (often disyllabic or trisyllabic) phonological word. Two syllables might convey a lexical root, tense information, derivational information and agreement information all at once. It is therefore not immediately obvious that hierarchical structure is there to be found. Yet that is exactly the claim put forward here. By demonstrating that the hypothesis outlined above is a valid one for Hebrew, this dissertation entails that it is valid for natural language as a whole. Functional material (in the form of structure) and lexical material (in the form of roots) can be seen to combine in systematic, predictable ways.
-%
-%Taking the verbal system as the main object of inquiry, the following chapters analyze its syntactic, semantic and phonological properties in order to address a number of Hebrew-specific, Semitic-specific and language-general questions. At its analytical core, this work asks how we might apply the theories that have been developed for other languages to Semitic: how these theories might be tested and how they should be modified to accommodate a broader range of data. I frame this question in terms of the abstract syntactic structure and the way it feeds into semantic and phonological interpretation. The resulting discussion addresses three main questions: the proper description of Hebrew morphology, the proper description of the syntax and its relation to the interfaces with the semantics and the phonology, and ultimately the way such a system is learned by the child. Let us first see what the system looks like.
-%
 
 
 
