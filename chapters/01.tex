@@ -379,18 +379,99 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 
 In sum, while there is a causative base, an actual causer can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent (abstracting away here from the distinction between agents and causers, on which see immediately above). The causative alternation in English can be easily explained in these terms.
 
-@@@
 	\subsection{Interfaces}
-		\subsubsection{Roots}		
+When syntactic structure is spelled-out, it is interpreted at LF (semantics) and at PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
+
+		\subsubsection{Roots}
+I individuate roots based on their phonology (e.g.~\root{ktb} and \root{\gsc{arrive}}), but it is more accurate to think of them as pointers to phonological and semantic information \citep{harley14thlia,faust16,kastner18nllt}. Nevertheless, I will use the phonological shorthand.
+
+Despite the crucial role of roots in determining the reading of a word, I cannot provide a theory of root meaning here. Not every root can appear in every template, meaning that a root has to license the functional heads it combines with somehow \citep{harleynoyer00}. Exactly how this happens is left vague. Presumably, this licensing should be similar to the way that a root like \root{\gsc{assassinate}} requires Voice in English, but a root like \root{\gsc{arrive}} does not license Voice.
+
+The idea that roots pick out meanings which are shared across forms will likewise not be formalized. I will be relatively comfortable talking about shared meaning in cases of alternations. In Chapter~\ref{voice:tpie} and in Chapter~\ref{vd:caus} I will discuss cases where the shared meaning is slightly less easy to pin down. Neither of these points is particular to Hebrew within root-based approaches like DM (and both require engaging more seriously with the lexical semantics literature), but they do appear more prominent because of the nature of the morphological system.
 		
 		\subsubsection{Contextual allomorphy}
+A morpheme is an abstract element, comprised of a bundle of syntactic features (or, in the case of roots, comprised of a pointer to lexical information). In DM, a morpheme is matched up with its exponent, or Vocabulary Item, in a postsyntactic process of Vocabulary Insertion. Which exponent is chosen depends on the phonological and syntactic environment the morpheme is in (see~\cite{bonetharbour12} and~\citealt{gouskovabobaljik19cup} for recent overviews).
+
+It may be the case that a morpheme has a number of contextual variants or \emph{allomorphs}. For example, the English past tense marker has a number of possible exponents, depending on the phonological environment it is inserted in.
+\pex
+	\a \emph{grade}[əd]
+	\a \emph{jam}[d]
+	\a \emph{jump}[t]
+\xe
+This can be formalized as follows:
+\ex T[Past] \lra $\begin{cases}
+	\emph{\text{əd}} & \trace ~ \text{[+cor --cont --son]} \\
+	d & \trace~ \text{[+voice]} \\
+	t & \\
+	\end{cases}$
+\xe
+
+The English definite article also has two contextual allomorphs conditioned by the phonological environment (but cf.~\citealt{gouskovaetal15,pak16}).
+\pex
+	\a \emph{a dog}		
+	\a \emph{an apple}
+\xe
+Similarly:
+\ex D[--def] \lra $\begin{cases}
+	\emph{\text{ə}} & \trace~ \#\text{C} \\
+	\emph{\text{ən}} & \trace ~ \#\text{V} \\
+	\end{cases}$ 
+\xe
+
+Some roots also supplete based on their environment. Here the context for allomorphy is not the phonological features of the local trigger but the syntactic features.
+\pex
+	\a \emph{one person}		
+	\a \emph{many people}
+\xe
+
+\ex  \gsc{PERSON}\footnote{Strictly speaking, the element to be spelled out should be something like \root{\gsc{PERSON}} in the context of the nominalizer n carrying a \gsc{SG}/\gsc{PL} feature.} \lra $\begin{cases}
+	person & \trace~ \text{[\gsc{SG}]} \\
+	people & \trace ~ \text{[\gsc{PL}]} \\
+	\end{cases}$
+\xe
+
+Similarly for adjectives:
+\pex
+	\a \emph{good}		
+	\a \emph{better}
+	\a \emph{best}
+\xe
+\ex \gsc{GOOD} \lra $\begin{cases}
+	good & \trace~ \text{[\gsc{NORM}]} \\
+	better & \trace ~ \text{[\gsc{CMPR}]} \\
+	best & \trace ~ \text{[\gsc{SPRL}]} \\
+	\end{cases}$
+\xe
+
+The question occupying many theorists is the moment is what exactly the nature of ``\trace'' is: is it linear adjacency, syntactic adjacency, or something else? In previous work I have adopted the idea that allomorphy can only be triggered under linear adjacency of overt elements \citep{embick10,marantz13}. This hypothesis helps explain a range of allomorphic interactions in Hebrew, as I argued for in \cite{kastner18nllt}. Some of these points will be mentioned in the following chapters---in particular because I think the current analysis makes the right predictions---but the discussion does not revolve around them.
 
 		\subsubsection{Contextual allosemy}
+The phenomenology of contextual allomorphy is fairly well understood, even if the exact mechanisms are under debate. A similar concept that has only recently gained currency is contextual \emph{allosemy}. The idea is the same. One morpheme may have a number of interpretations competing for insertion at PF; this is allomorphy. One morpheme may also have a number of interpretations competing for insertion at LF; this is allosemy. Recent discussions can be found in \cite{woodmarantz17} and \cite{mylermarantz19cup}.
+
+\cite{kratzer96} proposed that Voice introduces the Agent role for eventualities~(\nextx) and that Holder introduces the Holder role for states~(\anextx).
+\pex \emph{feed the dog}:
+	\a \denote{feed the dog} = $\lambda$e.feed(the dog, e)
+	\a \denote{Voice} = $\lambda$x$\lambda$e.Agent(x,e)
+	\a \denote{Voice feed the dog} = $\lambda$x$\lambda$e.Agent(x,e) \& feed(the dog, e)
+\xe
+\pex \emph{own the dog}:
+	\a \denote{own the dog} = $\lambda$s.own(the dog, e)
+	\a \denote{Holder} = $\lambda$x$\lambda$s.Holder(x,s)
+	\a \denote{Holder own the dog} = $\lambda$x$\lambda$s.Holder(x,s) \& own(the dog,e)
+\xe
+
+Yet nothing forces Voice and Holder to be separate heads; in fact, this would be surprising given that their syntax and morphology are identical. As explained by \cite{wood15springer}, we could just as well posit that Voice has two contextual allosemes: one when it combines with a dynamic event and when it combines with a stative event.
+\ex \denote{Voice} \lra~ $\begin{cases}
+	\lambda\text{x}\lambda\text{e.Agent(x,e)} & \trace~ \text{(eventuality)} \\
+	\lambda\text{x}\lambda\text{s.Holder(x,s)} & \trace~ \text{(state)} \\
+	\end{cases}$ 
+\xe
+Here the contexts are purely semantic, as they should be, given that we are now in LF.
+
+I make extensive use of this formalism in order to formalize the semantics of functional heads in this book. An alternative could also be considered, whereby there is a proliferation of homophonous heads similar to Voice and Holder. I see no reason to adopt this perspective, especially considering how naturally contextual allosemy fits into the current framework. We can now overview what this framework does for the puzzles of Hebrew.
 
 
-		
-
-
+@@@
 \section{Sketch of the system} \label{intro:sketch}
 @@all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in. The first is mainly accomplished using the features on Voice. The second is accomplished using hierarchical syntactic structure@@
 
