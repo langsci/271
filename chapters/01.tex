@@ -295,7 +295,7 @@ When reproducing examples from the literature I have modified the original trans
 Since my aim is to account for the syntactic, semantic and phonological behavior of the system, I must be explicit about my assumptions in all three cases. But since the focus is on the syntax and how it feeds interpretation at Logical Form (LF) and Phonological Form (PF), I divide the overview here into syntax and the interfaces.
 
 	\subsection{The syntax}
-I assume a mainstream variety of Distributed Morphology \citep{dm} within the Minimalist framework \citep{chomsky95}. This means that all syntactic and morphological objects are built in the syntax; there is no separate grammatical module for word-building. The traditional work of the lexicon is distributed between the syntax, the semantics and the phonology: the syntax builds up binary structures via Merge of morphemes according to syntactic constraints, features, mechanism and so on. Words are composed minimally of an abstract root, lacking syntactic category, and one of the three functional heads a (for adjectives), n (for nouns) and v (for verbs).
+I assume a mainstream variety of Distributed Morphology \citep{dm} within the Minimalist framework \citep{chomsky95}. This means that all syntactic and morphological objects are built in the syntax; there is no separate grammatical module for word-building. The traditional work of the lexicon is distributed between the syntax, the semantics and the phonology: the syntax builds up binary structures via Merge of morphemes according to syntactic constraints, features, mechanism and so on. Words are composed minimally of an abstract root, lacking syntactic category, and one of the three functional heads: a for adjectives, n for nouns and v for verbs \citep{marantz01,arad05}.
 
 The core of a verb phrase therefore looks as follows, where the root modifies v and the internal argument is the complement of v.
 \ex
@@ -380,7 +380,7 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 In sum, while there is a causative base, an actual causer can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent (abstracting away here from the distinction between agents and causers, on which see immediately above). The causative alternation in English can be easily explained in these terms.
 
 	\subsection{Interfaces}
-When syntactic structure is spelled-out, it is interpreted at LF (semantics) and at PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
+When syntactic structure is spelled-out, it is interpreted at LF (semantics) and at PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. While I make repeated reference to semantic roles such as Agent, I do not assume that theta-roles are a primitive of the system. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
 
 		\subsubsection{Roots}
 I individuate roots based on their phonology (e.g.~\root{ktb} and \root{\gsc{arrive}}), but it is more accurate to think of them as pointers to phonological and semantic information \citep{harley14thlia,faust16,kastner18nllt}. Nevertheless, I will use the phonological shorthand.
@@ -484,9 +484,9 @@ I make extensive use of this formalism in order to formalize the semantics of fu
 
 
 \section{Sketch of the system} \label{intro:sketch}
-To review the facts that require explanation, all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in.
+Reviewing the facts that require explanation, all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in.
 
-We have already seen that transitive verbs exist both in {\tkal} and {\thif}, and that unaccusatives exist both in {\tkal} and in {\tnif}. Transitive verbs also exist in {\tpie}, (\nextx a), and anticausatives also exist in {\thit}, (\nextx b).
+We have already seen that transitive verbs exist both in {\tkal} and {\thif}, and that unaccusatives exist in in {\tnif}. Yet transitive verbs also exist in {\tpie} (\nextx a) and anticausatives also exist in {\thit} (\nextx b). So the syntactic configuration does not entail a given template.
 \ex\label{ex:counter1}
 \raisebox{-0.6em}{
 	\begin{tabular}{lllllll}
@@ -497,7 +497,7 @@ We have already seen that transitive verbs exist both in {\tkal} and {\thif}, an
 }
 \xe
 
-But conversely, a given template does not always entail a given syntactic configuration. Even {\tnif} appears on some unergatives, (\nextx a), and {\thit} instantiates not only anticausatives as in~(\lastx b) but also reflexives as in~(\nextx b).
+Conversely, a given template does not always entail a given syntactic configuration. Even {\tnif} appears on some unergatives, (\nextx a), and {\thit} instantiates not only anticausatives as in~(\lastx b) but also reflexives as in~(\nextx b).
 \ex\label{ex:counter2}
 \raisebox{-0.6em}{
 	\begin{tabular}{llllll}
@@ -507,7 +507,7 @@ But conversely, a given template does not always entail a given syntactic config
 }
 \xe
 
-This section concludes the introduction by presenting a simplified overview of how this system can be understood is done. The first aspect of the analysis (what readings a given template has) is mainly accomplished using the features on Voice. The second aspect (which templates form alternations) is accomplished using hierarchical syntactic structure.
+This section concludes the introduction by presenting a simplified overview of how the entire system can be understood. The first aspect of the analysis (what readings a given template has) is mainly accomplished using the features on Voice. The second aspect (which templates form alternations) is accomplished using hierarchical syntactic structure.
 
 	\subsection{Simple alternations}
 We can start from an alternation that works fairly intuitively, the one we saw back in~(\ref{ex:intro-tkal})--(\ref{ex:intro-thif}). In this near-minimal triplet, three verbs are found in which a given root (\root{ktb}) clearly has three different kinds of morphological marking, or templates. Again, ``template'' is a descriptive term in this book, not a formal one.
@@ -515,7 +515,7 @@ We can start from an alternation that works fairly intuitively, the one we saw b
 \pex\label{ex:general}
 	\a Causative verb in {\thif}:\\
 		\begingl
-		\gla fabien \textbf{hextiv-a} (la-talmidim) et reʃimat ha-nosim//
+		\gla fabjen \textbf{hextiv-a} (la-talmidim) et reʃimat ha-nosim//
 		\glb Fabienne dictated-\gsc{F} to.the-students \gsc{ACC} list.of the-topics//
 		\glft `Fabienne dictated the list of topics (to the students).'//
 	\endgl	
@@ -539,23 +539,21 @@ Relying on the idea that the external argument is introduced by the functional h
 	\a This feature indicates whether the specifier of Voice must be filled by a DP ([+D]), cannot be filled by a DP ([--D]), or is agnostic as to whether it is filled by a DP (unspecified).
 \xe
 
-A verb with {\vd} requires an external argument; a verb with {\vz} prohibits an external argument; and if unspecified Voice is merged, the syntax itself does not place a restriction, although the root will (lexical idiosyncrasy contained within a rigid syntax).
-
-Importantly, these Voice heads differ in their phonological form. Assuming that {\vd} spells out as {\thif}, {\vz} as {\tnif} and unspecified Voice as {\tkal}, the theory derives the alternations seen in~(\ref{ex:general}) as follows.
+A verb with {\vd} requires an external argument; a verb with {\vz} prohibits an external argument; and if unspecified Voice is merged, the syntax itself does not place a restriction, although the root will (lexical idiosyncrasy contained within a rigid syntax). Importantly, these Voice heads differ in their phonological form. Assuming that {\vd} spells out as {\thif}, {\vz} as {\tnif} and unspecified Voice as {\tkal}, the theory derives the alternations seen in~(\ref{ex:general}) as follows.
 
 \ex\label{ex:alternations-heb}
 \raisebox{-3em}{
 	\begin{tabular}{ll|ll|ll|ll}
-	 & & \multicolumn{2}{P{4.7cm}|}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}|}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\
-%	\phantom{Semantics} & \multicolumn{2}{c|}{causative} &	\multicolumn{2}{c|}{transitive}	& \multicolumn{2}{c}{anticausative}\\\cline{2-7}
-	& & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\\hline
+	 & & \multicolumn{2}{c|}{\textbf{\vd}}	&	\multicolumn{2}{c|}{\textbf{Voice}}	& \multicolumn{2}{c}{\textbf{\vz}}\\
+	 & & \multicolumn{2}{c|}{Causative}		& \multicolumn{2}{c|}{Transitive}		& \multicolumn{2}{c}{Anticausative}\\\hline
+	& & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
 	a.& \root{ktb} & \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
 	b.& \root{'xl} & \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
 	\end{tabular}
 }
 \xe
 
-Let us be clear about how the alternations arise. Following \cite{kratzer96} and \cite{layering15}, it has become fairly common to assume that a core vP contains a causative component which is semantically available even in anticausatives. Voice can then add an external argument (an agent), but otherwise the vP already has a basic meaning. Accordingly, we can combine the root \root{ktb}, the verbalizer v and an internal argument. This vP gives us a basic event of writing something:
+To finish this initial overview we will walk through the alternations. Following \cite{kratzer96} and \cite{layering15}, it has become fairly common to assume that a core vP contains a causative component which is semantically available even in anticausatives (Section~\ref{intro:arch:layering}). Voice can then add an external argument (an agent), but otherwise the vP already has a basic meaning. Accordingly, we can combine the root \root{ktb}, the verbalizer v and an internal argument. This vP gives us a basic event of writing something:
 \ex
 \Tree
 	[.vP
@@ -624,10 +622,9 @@ And if we merge {\vd}, we will need to specify a different kind of external argu
 There is no direct alternation between templates, only compositional interpretation of syntactic structure.
 
 	\subsection{Beyond simple alternations}
+The three-way distinction analyzed above is instructive but not deterministic, since a given syntactic configuration does not always entail a given template, and a given template does not always entail a given syntactic configuration.
 
-Importantly, this three-way distinction is instructive but not deterministic. A given syntactic configuration does not always entail a given template, and a given template does not always entail a given syntactic configuration.
-
-Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\thif} like~(\lastx c) are active (barring exceptions I return to below), verbs in {\tkal} are underspecified with regards to their argument structure, (\lastx b): with some roots, the verb might be transitive; with others, unergative; and with others still, unaccusative, (\nextx).
+Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\thif} like~(\lastx c) are generally active, verbs in {\tkal} are underspecified with regards to their argument structure, (\lastx b): with some roots, the verb might be transitive; with others, unergative; and with others still, unaccusative, (\nextx).
 \pex\label{ex:kal}
 	\a Transitive {\tkal}:\\
 	\begingl
@@ -675,17 +672,18 @@ Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\t
 %	\end{tabular}
 %\xe
 
-
-, where rows~(\nextx a--b) give examples of transitive verbs in {\tkal} and row~(\nextx c) shows an unaccusative in {\tkal}.
+This ``flexibility'' of {\tkal} can be explained if unspecified Voice does not impose any restrictions of its own on the argument structure. Then some roots like \root{axl} in~(\lastx a) do require an external argument, some like \root{r\dgs{k}d} in~(\lastx b) require an external argument but no internal argument (save for cognate objects), and other still like \root{npl} in~(\lastx c) disallow an external argument. The summary in~(\ref{ex:alternations-heb}) is augmented in~(\ref{ex:alternations-heb2}).
 \ex\label{ex:alternations-heb2}
 \raisebox{-3em}{
 	\begin{tabular}{ll|ll|ll|ll}
-	 & & \multicolumn{2}{P{4.7cm}|}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}|}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\
-%	\phantom{Semantics} & \multicolumn{2}{c|}{causative} &	\multicolumn{2}{c|}{transitive}	& \multicolumn{2}{c}{anticausative}\\\cline{2-7}
-	& & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\\hline
+	 & & \multicolumn{2}{c|}{\textbf{\vd}}	&	\multicolumn{2}{c|}{\textbf{Voice}}	& \multicolumn{2}{c}{\textbf{\vz}}\\
+	 & & \multicolumn{2}{c|}{Active}		& \multicolumn{2}{c|}{Unmarked}		& \multicolumn{2}{c}{Non-active}\\\hline
+	& & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
 	a.& \root{ktb} & \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\
 	b.& \root{'xl} & \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\\hdashline
-	c.& \root{nfl} & \emph{hepil} & `dropped' & \emph{nafal}	& `fell' & \multicolumn{2}{c}{---}\\
+	c.& \root{r\dgs{k}d} & \emph{herkid} & `made dance' & \emph{rakad} & `danced' & \multicolumn{2}{c}{---}\\
+	d.& \root{nfl} & \emph{hepil} & `dropped' & \emph{nafal}	& `fell' & \multicolumn{2}{c}{---}\\
+	e.& \root{ʃbr} & \multicolumn{2}{c|}{---} & \emph{ʃavar} & `broke' & \emph{niʃbar} & `was broken'\\
 	\end{tabular}
 }
 %	\begin{tabular}{llllll}
@@ -696,69 +694,79 @@ Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\t
 %	\end{tabular}
 \xe
 
-On this analysis, verbs in {\thif} are expected to be transitive or unergative because they require an external argument, verbs in {\tnif} are expected to be mediopassive (anticausative or passive) because they lack an external argument syntactically, and verbs in {\tkal} could go either way, depending on the idiosyncratic requirements of the root. The three values of Voice correspond to different morphological markings, but there is more than one way to get e.g.~an anticausative verb (namely with Voice or {\vz}). This way of looking at things dissolves the puzzle posed by examples like those in~(\ref{ex:counter1}) above: there is no reason to expect ``transitive'' to map onto specific morphology deterministically.
+On this account, verbs in {\thif} are expected to be transitive or unergative because they require an external argument (Chapter~\ref{chap:vd}), verbs in {\tnif} are expected to be mediopassive (anticausative or passive) because they lack an external argument syntactically (Chapter~\ref{chap:vz}), and verbs in {\tkal} could go either way, depending on the idiosyncratic requirements of the root (Chapter~\ref{chap:voice}). The three values of Voice correspond to different morphological markings, but there is more than one way to get e.g.~an anticausative verb (namely with unspecified Voice or with {\vz}). This way of looking at things dissolves the puzzle posed by examples like those above: there is no reason to expect ``transitive'' to map onto specific morphology deterministically. Any alternations that arise are a by-product of the differences between the heads, or more concretely, between prohibiting an agent, requiring one and allowing one.
 
-
-
-
-What these patterns show is that Hebrew has active marking, non-active marking and underspecified (non-)marking. As a consequence, we must move beyond purely binary distinctions of the ``causative/anticausative'' kind. The book develops the necessary trivalent system.
-
-
-
-
-
-
-
-
-	\subsection{Some more specifics}
-Let us flesh out a few of the functional heads relevant to the analysis. We are interested in the difference between roots and functional morphemes as a way of getting at the loci of idiosyncrasy and systematicity in the grammar. A root is an acategorial morpheme: the verb \emph{walk}, for example, consists under my assumptions of a root \root{\gsc{WALK}} and a verbalizing categorizer, little v. There are three such categorizers: a, n, and v, which serve to categorize roots as adjectives, nouns or verbs \citep{marantz01,arad05,woodmarantz15}.
-
-The functional head v introduces an event variable and categorizes a root as a verb. A higher functional head, Voice, introduces the external argument \citep{kratzer96,pylkkanen08,marantz13lingua}. The functional head \emph{p} introduces the external argument of a preposition, also called its Figure \citep{svenonius03,svenonius07,wood14nllt}. To derive the full range of verbs in Hebrew, I use a number of overt variants of these heads. The breakdown is as follows.
-
-\textbf{Voice and \emph{p} heads} introduce a DP in their specifier. In a regular, unmarked active clause, default (silent) Voice introduces the external argument. The head \emph{p} was proposed by \cite{svenonius03,svenonius07} to act in similar fashion to Voice or Chomskyan little \textit{v}: it merges above the PP, introducing the Figure (subject) of the \textbf{p}reposition. I will not attempt to motivate this structure but will simply assume it; it is meant to capture the predicative relationship between the two DPs, similarly to the PredP of \cite{bowers93,bowers01} and \emph{ann}-XP of \cite{mccloskey14}. In~(\ref{ex:pP}), the Figure is the DP \emph{book} and \emph{p} is circled for ease of reference.
-\ex \label{ex:pP}
-%\Tree
-%		[\emph{p}P, qtree
-%		[DP\\\emph{book}\\\gsc{figure} ]
-%		[
-%		[\emph{p},circle,draw ]
-%		[PP
-%			[P\\\emph{on} ]
-%			[DP
-%				[\emph{the table}\\\gsc{ground},triangle ]
-%			]
-%		]
-%		]
-%		]
+This much takes care of three of out of seven templates. Two additional templates are easy to explain: the two passive templates {\tpua} and {\thuf} are always derived from existing active verbs and can be analyzed as spelling out an additional passive head Pass merging above VoiceP \citep{doron03,alexiadoudoron12}. For example, take \emph{huxtav} `was dictated':
+\ex
+	\Tree
+	[.PassP
+		[.Pass ]
+		[.VoiceP
+			[.{\vd} ]
+			[.vP
+				[.v
+					[.\root{ktb} ]
+					[.v ]
+				]
+				[.DP ]
+			]
+		]
+	]
 \xe
+This analysis is uncontroversial, as I discuss in Chapter~\ref{passn:pass}.
 
-To these heads I add nonactive counterparts, namely \textbf{\vz} and \textbf{\pz}. These two heads dictate that nothing may be merged in their specifiers. \vz~blocks the introduction of an external argument \citep{doron03,alexiadoudoron12,bruening13,wood15springer,spathasetal15} and \pz~blocks merger of a DP in the specifier of pP \citep{wood15springer}. The different kinds of Voice/\emph{p} only manipulate the syntax: they dictate whether a DP may or may not be merged in their specifier. As mentioned above, default Voice and \emph{p} are silent. But \vz~and \pz~are spelled out by the placeholder Vocabulary Item \gsc{MID}, which adds a prefix and triggers insertion of certain vowels.
+We are left with two more templates, namely {\tpie} and {\thit}. Here I propose that an agentive modifier {\va} combines with the vP to create a new core vP. This [{\va} vP] can then merge with unspecified Voice, yielding {\tpie}, or with {\vz}, yielding {\thit}, with the predicted alternation between active and anticausative. How this works is the focus of Chapter~\ref{vz:va:vzva}.
 
-Voice also has the strongly active counterpart \textbf{\vd}. This head requires that a DP be merged in its specifier, behaving the opposite of \vz. This definition will be refined in \S\ref{syn:templates:thif}.
+	\subsection{From templates to functional heads}
+%Let us flesh out a few of the functional heads relevant to the analysis. We are interested in the difference between roots and functional morphemes as a way of getting at the loci of idiosyncrasy and systematicity in the grammar. A root is an acategorial morpheme: the verb \emph{walk}, for example, consists under my assumptions of a root \root{\gsc{WALK}} and a verbalizing categorizer, little v. There are three such categorizers: a, n, and v, which serve to categorize roots as adjectives, nouns or verbs \citep{marantz01,arad05,woodmarantz15}.
+Before delving into the data we should take stock of the syntactic machinery. The functional head v introduces an event variable and categorizes a root as a verb. A higher functional head, Voice, introduces the external argument. The agentive modifier {\va} overtly introduces agentive semantics whose characterization is set aside until Chapter~\ref{voice:tpie}. I further assume that the functional head \emph{p} introduces the external argument of a preposition, also called its Figure \citep{svenonius03,svenonius07,wood14nllt}. 
 
-Alongside these functional heads and standard lexical roots I posit \textbf{\va}. In the semantics, this {element} types the event as an Action \citep{doron03} or ``self-propelled'' \citep{folliharley08}. In the phonology, \va~is spelled out as a predictable set of vowels slotting between the root consonants. \va~also blocks intervocalic spirantization of the middle consonant as mentioned above. I assume {for now} that \va~is spelled out by the Vocabulary Item \gsc{INTNS}, which is used as a placeholder for the phonological output. The semantics of this element emerge again in \S\S\ref{syn:middle:refl}, \ref{syn:middle:recip}, \ref{syn:templates:tpie}, its phonology in \S\ref{sec:t-phi}, and its crosslinguistic equivalents in \S\ref{syn:crosslx:heads}.
-
-\textbf{The spell-out} of these heads produces templates as an epiphenomenon and is as follows: 
-
-Voice and v are underspecified, but when combining they result in the \tkal~template as explained in Chapter 3.
-
-\vd~provides the prefix \emph{he}-. Recall that templates differ from each other also in the vowels that appear between the root consonants, so I assume that each of the overt functional heads used in this theory inserts the right vowels, with the full implementation as in Chapter 3. For the time being, one may think of these vocalic changes as readjustment rules \citep{embickhalle05}. These are rules that ``fix'' the phonology of a form. Informally, for English, irregular past tense verbs do not take a suffix but undergo readjustment of the stem:
-\ex \emph{sang} = \emph{sing} + T[Past]
-\xe
-The exact processes giving rise to vowel alternations are explored in Chapter 3.
-
-\vz~provides the prefix \emph{ni}- or its allomorph \emph{hit}- in the environment of \va:
+Voice and \emph{p} heads introduce a DP in their specifier. In a regular, unmarked active clause, default (silent) Voice introduces the external argument. The head \emph{p} was proposed by \cite{svenonius03,svenonius07} to act in similar fashion to Voice or Chomskyan little \textit{v}: it merges above the PP, introducing the Figure (subject) of the \textbf{p}reposition. I will not attempt to motivate this structure but will simply assume it; it is meant to capture the predicative relationship between the two DPs, similarly to the PredP of \cite{bowers93,bowers01} and \emph{ann}-XP of \cite{mccloskey14}. In~(\nextx) the Figure is the DP \emph{the book} and the Ground, the object of the preposition, is \emph{the table}. See Chapter~\ref{vz:pz}.
 \pex
-\a \vz~\lra~ \emph{hit}- + \gsc{READJUSTMENT} / \trace~\va
-\a \vz~\lra~ \emph{ni}- + \gsc{READJUSTMENT}
+	\a 
+ \Tree
+	 [.\emph{p}P
+	 	[.DP\\\emph{the book}\\{\tikz{\node (Fig) {\textbf{\textsc{figure}}};}} ]
+	 	[
+	 		[.{\tikz{\node (p) {\emph{p}};}} ]
+	 		[.PP
+	 			[.P\\{\tikz{\node (P) {\emph{on}};}} ]
+	 			[.DP\\\emph{the table}\\{\tikz{\node (Ground) {\textbf{\textsc{ground}}};}} ]
+	 		]
+	 	]
+	 ]
+	\begin{tikzpicture}[overlay]
+	\draw[dotted,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
+	\draw[dotted,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	\end{tikzpicture}
+%	\a     \denote{Voice}  =  λxλe.Agent(x,e) 
+	\a     \denote{\emph{p}}  =  λxλs.Figure(x,s) 
 \xe
 
-The root \va~triggers readjustment rules and blocks postvocalic spirantization of the medial root consonant. This phonological effect is formalized as a floating feature [--continuant] docking onto a particular consonant. See \cite{katie13} for an analysis of gemination in Akkadian and Arabic using a similar mechanism.
-\ex \va~\lra~[--cont]$_{\gsc{ACT}}$ / \trace~ \{ \root{XYZ} | Y $\in$ p, b, k \}
-\xe
+To these heads I add nonactive counterparts, namely \textbf{\vz} and \textbf{\pz}. These two heads dictate that nothing may be merged in their specifiers. {\vz} blocks the introduction of an external argument and {\pz} blocks merger of a DP in the specifier of \textit{p}P. The different kinds of Voice/\emph{p} only manipulate the syntax: they dictate whether a DP may or may not be merged in their specifier. Both {\vz} and {\pz} are spelled out by the placeholder Vocabulary Item \gsc{MID} (shorthand for the morphophonology of {\tnif}), which adds a prefix and triggers insertion of certain vowels. Voice also has the strongly active counterpart \textbf{\vd}. In its simplest definition, this head requires that a DP be merged in its specifier, behaving the opposite of {\vz}.
 
-Table~\ref{table:summary} summarizes the syntactic, semantic and morphophonological effects of these heads, deriving a subset of the verbal system of Modern Hebrew. Special Voice/\emph{p} heads affect their specifier; see for the external argument (EA) under ``Syntax'' and as a prefix under ``Phonology.'' The effects of the special root {\va} can be seen under ``Semantics'' and as de-spirantization under ``Phonology.'' Note in particular that the \thit~template is morphologically complex. It is prefixed, indicating the existence of an overt Voice/\emph{p} head, and de-spirantized, indicating the existence of \va. Each of these elements is motivated in Chapter 2, and the table expanded on there.
+Alongside lexical roots and these functional heads I posit \textbf{\va}. In the semantics, this {element} types the event as an Agent, an Action \citep{doron03} or ``self-propelled'' \citep{folliharley08}. In the phonology, {\va} is spelled out as a predictable set of vowels slotting between the root consonants. It also blocks a process of spirantization which would otherwise apply to the middle consonant of the root.
 
+\textbf{The spell-out} of these heads produces templates as an epiphenomenon. Details are provided in the relevant chapters.
+
+% and is as follows:  Unspecified Voice and result in the {\tkal} template as explained in Chapter 3.
+%
+%\vd~provides the prefix \emph{he}-. Recall that templates differ from each other also in the vowels that appear between the root consonants, so I assume that each of the overt functional heads used in this theory inserts the right vowels, with the full implementation as in Chapter 3. For the time being, one may think of these vocalic changes as readjustment rules \citep{embickhalle05}. These are rules that ``fix'' the phonology of a form. Informally, for English, irregular past tense verbs do not take a suffix but undergo readjustment of the stem:
+%\ex \emph{sang} = \emph{sing} + T[Past]
+%\xe
+%The exact processes giving rise to vowel alternations are explored in Chapter 3.
+%
+%\vz~provides the prefix \emph{ni}- or its allomorph \emph{hit}- in the environment of \va:
+%\pex
+%\a \vz~\lra~ \emph{hit}- + \gsc{READJUSTMENT} / \trace~\va
+%\a \vz~\lra~ \emph{ni}- + \gsc{READJUSTMENT}
+%\xe
+%
+%The root \va~triggers readjustment rules and blocks postvocalic spirantization of the medial root consonant. This phonological effect is formalized as a floating feature [--continuant] docking onto a particular consonant. See \cite{katie13} for an analysis of gemination in Akkadian and Arabic using a similar mechanism.
+%\ex \va~\lra~[--cont]$_{\gsc{ACT}}$ / \trace~ \{ \root{XYZ} | Y $\in$ p, b, k \}
+%\xe
+
+The table in~(\nextx) summarizes the syntactic, semantic and morphophonological effects of these heads, as well as the chapters and sections in which these fantastic beasts can be found. Special Voice/\emph{p} heads affect their specifier; see for the external argument (EA) under ``Syntax'' and as a prefix under ``Phonology.'' The effects of the special root {\va} can be seen under ``Semantics'' and as de-spirantization under ``Phonology.'' Note in particular that the {\thit} template is morphologically complex. It is prefixed (overt {\vz}/{\pz}) and de-spirantized ({\va}).
 \ex
 \xe
 \begin{center}
@@ -787,8 +795,11 @@ Table~\ref{table:summary} summarizes the syntactic, semantic and morphophonologi
 \end{small}
 \end{center}
 
-	\subsection{Summary}
-Part I of the book is organized as follows...
+If this last part of the overview went by too quickly, the following chapters will guide us more smoothly through the empirical and theoretical landscape.
+
+Part I of the book is organized as follows. I discuss the template {\tkal}, unspecified Voice, the template {\tpie} and {\va} in Chapter~\ref{chap:voice}. The templates {\tnif} and {\thit} and their particular head {\vz} are the topic of Chapter~\ref{chap:vz}. Chapter~\ref{chap:vd} discusses {\thif} and {\vd}. With this trivalent system established, Chapter~\ref{chap:passn} embeds these structures under passivizing, adjectivizing and nominalizing head, providing some cross-categorial context.
+
+Part II provides a detailed comparison of the current theory with the ``layering'' theory in Chapter~\ref{chap:aas}. Chapter~\ref{chap:i} then summarizes with general considerations for the valence of Voice.
 
 
 %	\subsection{Templates as functional heads}
