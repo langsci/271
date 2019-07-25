@@ -275,7 +275,30 @@ The phonological markedness of this template has been discussed in contemporary 
 }
 \xe
 
-What I will assume throughout is that the stem vowels spell out Voice and that affixes spell out higher material (this can be seen as a Mirror Principle effect following directly from cyclic spell out; \citealt{baker85,muysken88,zukoff16nels,kastner18nllt}). The relevant Vocabulary Items for two verbs, \emph{taraf} `devoured' and \emph{katav} `wrote', are given in~(\nextx). The verbalizer v is silent by hypothesis.
+What I will assume throughout is that the stem vowels spell out Voice and that affixes spell out higher material (this can be seen as a Mirror Principle effect following directly from cyclic spell out; \citealt{baker85,muysken88,katie13,zukoff16nels,kastner18nllt}).\footnote{Alternatively, we may assume that a dissociated Theme node is projected (``sprouted'') from Voice postsyntactically \citep{oltramassuet99,embick10}. The same holds for Agr, be it on T or sprouted from T.} Vowels are treated here as the spell-out of Voice. Since Voice is local to T+Agr, T+Agr can condition allomorphy on the vowels, symbolized by the dotted arrow in~(\ref{tree:locality1}). As a result, different phi-feature values condition different stem vowels as in~(\lastx). This aspect of the theory is based on \cite{katie13} and explored more fully in \cite{kastner18nllt}.
+\pex \label{tree:locality1}
+\Tree
+    [.TP
+        [.\tikz{\node (TAgr) {T+Agr};} ]
+        [
+            [.\tikz{\node (Voice) {Voice};} ]
+            [.vP ]
+         ]
+     ]
+%                [.v\\(covert) ]
+%                [.\tikz{\node (Root) {\root{root}};} ]
+%            ]
+%        ]
+%    ]
+    \begin{tikzpicture}[overlay]
+    %\draw[semithick,->] (TAgr) to[out=south west,in=south west] (Voice);
+%    \draw[dotted,thick,->] (Root) .. controls +(south:1) and +(south:2) .. (Voice);
+    %\draw[dotted,thick,->] (TAgr) to[out=225,in=270] (Voice);
+    \draw[dotted,thick,->] (TAgr) .. controls +(south west:1) and +(south west:1) .. (Voice);
+    \end{tikzpicture}
+\xe \vskip 1em
+
+The relevant Vocabulary Items for two verbs, \emph{taraf} `devoured' and \emph{katav} `wrote', are given in~(\nextx). The verbalizer v is silent by hypothesis.
 \pex \emph{taraf} `devoured':
 	\a Voice \lra~\emph{a,a} / T[Past] \trace
 	\a v \lra~(covert)
@@ -822,7 +845,39 @@ The morphophology of {\tpie} consist of two parts that distinguish it from other
 }
 \xe
 
-VIs can be assigned similarly to how this was done for Voice in Section~\ref{voice:voice:phono}. The non-spirantization can be analyzed as a floating feature docking onto the medial root consonant and preventing it from acquiring a [continuant] feature. Two examples are given in~(\nextx), where the floating feature still needs a constraint to dock it onto the right segment; see \cite{kastner18nllt} for the full implementation.
+VIs can be assigned similarly to how this was done for Voice in Section~\ref{voice:voice:phono}. The difference is that since {\va} is adjacent to Voice, it can condition allomorphy of the vowels; this is what we see in~(\lastx), where the stem vowels are different for {\tpie} than for {\tkal}. However, {\tpie} is separated from T by overt Voice (the vowels), so the agreement affixes are correctly predicted to be identical across the templates.
+
+\pex \label{tree:locality-tpie}
+\Tree
+    [.TP
+        [.\tikz{\node (TAgr) {T+Agr};} ]
+        [
+            [.\tikz{\node (Voice) {Voice};} ]
+            [.vP
+            	[.\tikz{\node (va) {\va};} ]
+            	[.vP
+            		[.\root{XYZ} ]
+            		[.{\dots} ]
+            	]
+         	]
+         ]
+     ]
+%                [.v\\(covert) ]
+%                [.\tikz{\node (Root) {\root{root}};} ]
+%            ]
+%        ]
+%    ]
+    \begin{tikzpicture}[overlay]
+    %\draw[semithick,->] (TAgr) to[out=south west,in=south west] (Voice);
+%    \draw[dotted,thick,->] (Root) .. controls +(south:1) and +(south:2) .. (Voice);
+    %\draw[dotted,thick,->] (TAgr) to[out=225,in=270] (Voice);
+    \draw[dotted,thick,->] (TAgr) .. controls +(south:1) and +(south west:1) .. (Voice);
+    \draw[dotted,thick,->] (va) .. controls +(south:1) and +(south:1) .. (Voice);
+    \draw[dotted,thick,->] (va) .. controls +(south:2) and +(south west:2) .. node{\LARGE $\times$}(TAgr);
+    \end{tikzpicture}
+\xe \vskip 1em
+
+The non-spirantization can be analyzed as a floating feature docking onto the medial root consonant and preventing it from acquiring a [continuant] feature. Two examples are given in~(\nextx), where the floating feature still needs a constraint to dock it onto the right segment; see \cite{kastner18nllt} for the full implementation.
 \pex
 	\a\label{vi:voice2}	Voice \lra~\emph{i,e} / T[Past] \trace~\va
 			\a\label{vi:va}\va~\lra~[--cont]$_{\gsc{ACT}}$ / \trace~ \{ \root{XYZ} $|$ Y $\in$ p, b, k \}

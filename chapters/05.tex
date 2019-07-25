@@ -170,7 +170,7 @@ These are the last two verbal templates we will address as such, so here is a su
 	\subsection{The head Pass in Hebrew} \label{passn:pass:pass}
 Following the argument for independent Pass in \cite{doron03} and \cite{alexiadoudoron12}, I have argued that Pass combines with VoiceP in fairly uninteresting ways in Hebrew, although the results are interesting \citep{kastnerzu17,kastner18nllt}. I summarize the findings here.
 
-An existing VoiceP can be passivized by Pass. To make things precise, the structure for active \emph{hegdil} `enlarged' is given in~(\nextx a) and for passive \emph{hugdal} `was enlarged' in~(\nextx b). The relevant Vocabulary Items are in~(\anextx).
+An existing VoiceP can be passivized by Pass. To make things precise, the structure for active \emph{hegdil} `enlarged' is given in~(\nextx a) and for passive \emph{hugdal} `was enlarged' in~(\nextx b). %The relevant Vocabulary Items are in~(\anextx).
 \pex
 	\a 
 	\Tree
@@ -215,6 +215,57 @@ An existing VoiceP can be passivized by Pass. To make things precise, the struct
 			]
 		]
 \xe
+
+\cite{kastner18nllt} shows in detail how this structural configuration predicts the right allomorphic interactions. For the example above, {\vd} is structurally adjacent to T and so its stem vowels can be conditioned by the value of Tense or the phi-features on T. Such contextual conditioning of {\vd} is not possible once intervenes, leading to the uniform \emph{u-a} pattern. The same holds for {\tpua}.
+\ex\label{tree:locality3}
+\Tree
+    [.TP
+        [.\tikz{\node (TAgr) {T+Agr};} ]
+        [
+	        [.\textbf{Pass}\\{\tikz{\node (Pass) {\textbf{\emph{u}}};}} ]
+	        [
+	            [.{\vd}\\{\tikz{\node (Voice) {\emph{he,a}};}} ]
+	            [.vP ]
+	         ]
+	     ]
+	 ]
+%	                [.v\\{(covert)} ]
+%	                [.\tikz{\node (Root) {\root{root}};} ]
+%	            ]
+%	        ]
+%        ]
+%    ]
+    \begin{tikzpicture}[overlay]
+%    \draw[dotted,thick,->] (TAgr) .. controls +(north west:2) and +(north east:2) .. (TAgr);
+    \draw[dotted,thick,->] (Pass) .. controls +(south:1) and +(west:1) .. (Voice);
+    \draw[dotted,thick,->] (TAgr) .. controls +(south west:3) and +(south west:2) .. node{\LARGE $\times$}(Voice);
+    \draw[dotted,thick,->] (Voice) .. controls +(south:1) and +(south:2) .. node{\LARGE $\times$}(TAgr);
+%    \draw[dotted,thick,->] (Root) .. controls +(south:2) and +(south west:3) .. node{\LARGE $\times$}(TAgr);
+    \end{tikzpicture}
+%    \begin{forest} qtree
+%    [TP
+%        [T+Agr,name=TAgr ]
+%        [
+%	        [\textbf{Pass}\\\textbf{\emph{u}},name=Pass ]
+%	        [
+%	            [{Voice\\\emph{\textcolor{red}{e,{\'a}}}},name=Voice ]
+%	            [
+%	                [{v\\(covert)} ]
+%	                [\root{\gsc{root}},name=Root]
+%	            ]
+%	        ]
+%        ]
+%    ]
+%    %\draw[semithick,->] (TAgr) to[out=south west,in=south west] (Voice);
+%    \draw[dotted,thick,->] (TAgr) .. controls +(north west:2) and +(north east:2) .. (TAgr);
+%    \draw[dotted,thick,->,red] (TAgr) .. controls +(south west:3) and +(south west:4) .. node{\LARGE $\times$}(Voice);
+%    \draw[dotted,thick,->] (Voice) .. controls +(south:2) and +(south:2) .. node{\LARGE $\times$}(TAgr);
+%    \draw[dotted,thick,->] (Root) .. controls +(south:3) and +(south west:3) .. node{\LARGE $\times$}(TAgr);
+%    % \draw[semithick,->] ([xshift=-1em, yshift=-1.4em] hiSubj.east) to [out=270,in=270] node[xshift=2em]{\LARGE $\times$} (spec);
+%    \end{forest}
+\xe
+\vskip 2em
+
 \pex\label{ex:pass-vi}
 	\a \root{gdl} \lra~\emph{gdl}
 	\a {\vd} \lra
@@ -229,9 +280,7 @@ An existing VoiceP can be passivized by Pass. To make things precise, the struct
 	\a Cycle 2 (PassP): /u/ + hegdal $\Rightarrow$ hugdal
 \xe
 
-\cite{kastner18nllt} shows in detail how this structural configuration predicts the right allomorphic interactions. For the example above, {\vd} is structurally adjacent to T and so its stem vowels can be conditioned by the value of Tense or the phi-features on T. Such contextual conditioning of {\vd} is not possible once intervenes, leading to the uniform \emph{u-a} pattern. The same holds for {\tpua}.
-
-Consider why it is not possible to posit an additional, passive variant of Voice for Hebrew (an additional non-active Voice head). If {\thif} is derived using \vd, as assumed, then a transparent passivization cannot be accomplished by changing the Voice head: we would end up with an entirely different construction, one that loses all connection (semantic and phonological) to \vd/{\thif}. I conclude that passive verbs really are derived by use of a Pass head above Voice and below T, and that combining the Pass analysis of passives with the system presented in the current book correctly predicts the syntactic, semantic and phonological behavior of passive verbs in Hebrew.
+Consider next why it is not possible to posit an additional, passive variant of Voice for Hebrew (an additional non-active Voice head). If {\thif} is derived using \vd, as assumed, then a transparent passivization cannot be accomplished by changing the Voice head: we would end up with an entirely different construction, one that loses all connection (semantic and phonological) to \vd/{\thif}. I conclude that passive verbs really are derived by use of a Pass head above Voice and below T, and that combining the Pass analysis of passives with the system presented in the current book correctly predicts the syntactic, semantic and phonological behavior of passive verbs in Hebrew.
 	
 		\subsubsection{Templates}
 What remains to be discussed is the combinatorics of Pass with the different VoicePs. The following combinations should be considered:
