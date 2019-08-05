@@ -386,8 +386,8 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 
 In sum, while there is a causative core, an actual Cause argument can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate Agent. The causative alternation in English can be easily explained in these terms.
 
-	\subsection{Interfaces}
-When syntactic structure is spelled-out, it is interpreted at LF (semantics) and at PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. While I make repeated reference to semantic roles such as Agent, I do not assume that theta-roles are a primitive of the system. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
+	\subsection{Interfaces} \label{intro:arch:inter}
+When syntactic structure is spelled-out, it is interpreted at LF (semantics) and PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. While I make repeated reference to semantic roles such as Agent, I do not assume that theta-roles are a primitive of the system. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
 
 		\subsubsection{Roots}
 I individuate roots based on their phonology (e.g.~\root{ktb} and \root{\gsc{arrive}}), but it is more accurate to think of them as pointers to phonological and semantic information \citep{harley14thlia,faust16,kastner18nllt}. Nevertheless, I will use the phonological shorthand for convenience.
@@ -409,7 +409,7 @@ The problem is exacerbated when considering nominal forms as well: \emph{pakid} 
 So the question is whether verbs such as those in~(\ref{ex:naive-pkd}) do in fact share the same root. For example, it could be argued that (\lastx a,b,c,e) as well as the noun `headquarters' share one root that has to do with military concepts, and that (\lastx d) as well as the nouns `clerk' and `deposit' stem from a homophonous root that has to do with financial concepts. There are a number of reasons to reject this claim. First, there are no ``doublets''; if we were dealing with two roots, call them \root{pkd$_1$} and \root{pkd$_2$}, then each should be able to instantiate any of the templates. But \emph{hefkid} can only mean `deposited', never something like `installed into command'. The choice of verb for that root in that template has already been made. Second, experimental studies have found roots to behave uniformly across their different meanings \citep{deutsch16,deutschetal16,deutschkuperman18,kastneretal18}, although this is not a consensus yet \citep{fmdpmetal05jml,hellerbendavid15}.
 		
 		\subsubsection{Contextual allomorphy}
-A morpheme is an abstract element, comprised of a bundle of syntactic features (or, in the case of roots, comprised of a pointer to lexical information). In DM, a morpheme is matched up with its exponent, or Vocabulary Item, in a postsyntactic process of Vocabulary Insertion. Which exponent is chosen depends on the phonological and syntactic environment the morpheme is in (see~\cite{bonetharbour12} and~\citealt{gouskovabobaljik19cup} for overviews).
+A morpheme is an abstract element, comprised of a bundle of syntactic features (or, in the case of roots, comprised of a pointer to lexical information). In DM, a morpheme is matched up with its exponent, or Vocabulary Item, in a postsyntactic process of Vocabulary Insertion. Which exponent is chosen depends on the phonological and syntactic environment the morpheme is in (see~\citealt{bonetharbour12} and~\citealt{gouskovabobaljik19cup} for overviews).
 
 It may be the case that a morpheme has a number of contextual variants or \emph{allomorphs}. For example, the English past tense marker has a number of possible exponents, depending on the phonological environment it is inserted in.
 \pex
@@ -463,7 +463,8 @@ Similarly for adjectives:
 \xe
 
 The question occupying many theorists is the moment is what exactly the nature of ``\trace'' is: is it linear adjacency, syntactic adjacency, or something else? In previous work I have adopted the idea that allomorphy can only be triggered under linear adjacency of overt elements \citep{embick10,marantz13}. This hypothesis helps explain a range of allomorphic interactions in Hebrew, as I argued for in \cite{kastner18nllt}. Some of these points will be mentioned in the following chapters---in particular because I think the current analysis makes the right predictions---but the discussion does not revolve around them.
-@@@
+
+In my formal analysis I will assume that the stem vowels spell out Voice and that affixes spell out higher material (this can be seen as a Mirror Principle effect following directly from cyclic spell out; \citealt{baker85,muysken88,katie13,zukoff16nels,kastner18nllt}). Alternatively, we may assume that a dissociated Theme node is projected (``sprouted'') from Voice postsyntactically \citep{oltramassuet99,embick10}; the same holds for Agr (agreement suffixes based on phi-features), be it on T or sprouted from T. But for simplicity I will represent the stem vowels as the overt spell-out of Voice and agreement as the spell out of a joint T+Agr head.
 
 		\subsubsection{Contextual allosemy}
 The phenomenology of contextual allomorphy is fairly well understood, even if the exact mechanisms are under debate. A similar concept that has only recently gained currency is contextual \emph{allosemy}. The idea is the same. One morpheme may have a number of interpretations competing for insertion at PF; this is allomorphy. One morpheme may also have a number of interpretations competing for insertion at LF; this is allosemy. Recent discussions can be found in \cite{woodmarantz17} and \cite{mylermarantz19cup}.
@@ -547,7 +548,9 @@ Relying on the idea that the external argument is introduced by the functional h
 	\a This feature indicates whether the specifier of Voice must be filled by a DP ([+D]), cannot be filled by a DP ([--D]), or is agnostic as to whether it is filled by a DP (unspecified).
 \xe
 
-A verb with {\vd} requires an external argument; a verb with {\vz} prohibits an external argument; and if unspecified Voice is merged, the syntax itself does not place a restriction, although the root will (lexical idiosyncrasy contained within a rigid syntax). Importantly, these Voice heads differ in their phonological form. Assuming that {\vd} spells out as {\thif}, {\vz} as {\tnif} and unspecified Voice as {\tkal}, the theory derives the alternations seen in~(\ref{ex:general}) as follows.
+A verb with {\vd} requires an external argument; a verb with {\vz} prohibits an external argument; and if Unspecified Voice is merged, the syntax itself does not place a restriction, although the root will (lexical idiosyncrasy contained within a rigid syntax).
+
+Importantly, these Voice heads differ in their phonological form. Assuming that {\vd} spells out as {\thif}, {\vz} as {\tnif} and Unspecified Voice as {\tkal}, the theory derives the alternations seen in~(\ref{ex:general}) as follows.
 
 \ex\label{ex:alternations-heb}
 \raisebox{-3em}{
@@ -632,7 +635,7 @@ There is no direct alternation between templates, only compositional interpretat
 	\subsection{Beyond simple alternations}
 The three-way distinction analyzed above is instructive but not deterministic, since a given syntactic configuration does not always entail a given template, and a given template does not always entail a given syntactic configuration.
 
-Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\thif} like~(\lastx c) are generally active, verbs in {\tkal} are underspecified with regards to their argument structure, (\lastx b): with some roots, the verb might be transitive; with others, unergative; and with others still, unaccusative, (\nextx).
+Importantly, while verbs in {\thif} are generally active~(\ref{ex:general}a) and those in {\tnif} generally non-active~(\ref{ex:general}c), verbs in {\tkal} are underspecified with regards to their argument structure, cf.~(\ref{ex:general}b): with some roots, the verb might be transitive; with others, unergative; and with others still, unaccusative, (\nextx).
 \pex\label{ex:kal}
 	\a Transitive {\tkal}:\\
 	\begingl
@@ -680,7 +683,7 @@ Importantly, while verbs in {\tnif} are non-active, (\lastx a), and those in {\t
 %	\end{tabular}
 %\xe
 
-This ``flexibility'' of {\tkal} can be explained if unspecified Voice does not impose any restrictions of its own on the argument structure. Then some roots like \root{axl} in~(\lastx a) do require an external argument, some like \root{r\dgs{k}d} in~(\lastx b) require an external argument but no internal argument (save for cognate objects), and other still like \root{npl} in~(\lastx c) disallow an external argument. The summary in~(\ref{ex:alternations-heb}) is augmented in~(\ref{ex:alternations-heb2}).
+This ``flexibility'' of {\tkal} can be explained if Unspecified Voice does not impose any restrictions of its own on argument structure. Then some roots like \root{axl} in~(\lastx a) do require an external argument, some like \root{r\dgs{k}d} in~(\lastx b) require an external argument but no internal argument (save for cognate objects), and other still like \root{npl} in~(\lastx c) disallow an external argument. The summary in~(\ref{ex:alternations-heb}) is augmented in~(\ref{ex:alternations-heb2}).
 \ex\label{ex:alternations-heb2}
 \raisebox{-3em}{
 	\begin{tabular}{ll|ll|ll|ll}
@@ -702,9 +705,9 @@ This ``flexibility'' of {\tkal} can be explained if unspecified Voice does not i
 %	\end{tabular}
 \xe
 
-On this account, verbs in {\thif} are expected to be transitive or unergative because they require an external argument (Chapter~\ref{chap:vd}), verbs in {\tnif} are expected to be mediopassive (anticausative or passive) because they lack an external argument syntactically (Chapter~\ref{chap:vz}), and verbs in {\tkal} could go either way, depending on the idiosyncratic requirements of the root (Chapter~\ref{chap:voice}). The three values of Voice correspond to different morphological markings, but there is more than one way to get e.g.~an anticausative verb (namely with unspecified Voice or with {\vz}). This way of looking at things dissolves the puzzle posed by examples like those above: there is no reason to expect ``transitive'' to map onto specific morphology deterministically. Any alternations that arise are a by-product of the differences between the heads, or more concretely, between prohibiting an agent, requiring one and allowing one.
+On this account, verbs in {\thif} are expected to be transitive or unergative because they require an external argument (Chapter~\ref{chap:vd}), verbs in {\tnif} are expected to be mediopassive (anticausative or passive) because they lack an external argument syntactically (Chapter~\ref{chap:vz}), and verbs in {\tkal} could go either way, depending on the idiosyncratic requirements of the root (Chapter~\ref{chap:voice}). The three values of Voice correspond to different morphological markings, but there is more than one way to get e.g.~an anticausative verb (namely with Unspecified Voice or with {\vz}). This way of looking at things dissolves the puzzle posed by examples like those above: there is no reason to expect ``transitive'' to map onto specific morphology deterministically. Any alternations that arise are a by-product of the differences between the heads, or more concretely, between prohibiting an agent, requiring one and allowing one.
 
-This much takes care of three of out of seven templates. Two additional templates are easy to explain: the two passive templates {\tpua} and {\thuf} are always derived from existing active verbs and can be analyzed as spelling out an additional passive head Pass merging above VoiceP \citep{doron03,alexiadoudoron12}. For example, take \emph{huxtav} `was dictated':
+This much takes care of three out of seven templates. Two additional templates are easy to explain: the two passive templates {\tpua} and {\thuf} are always derived from existing active verbs and can be analyzed as spelling out an additional passive head Pass merging above VoiceP \citep{doron03,alexiadoudoron12}. This analysis is uncontroversial, as I discuss in Chapter~\ref{passn:pass}. For example, take \emph{huxtav} `was dictated':
 \ex
 	\Tree
 	[.PassP
@@ -721,9 +724,8 @@ This much takes care of three of out of seven templates. Two additional template
 		]
 	]
 \xe
-This analysis is uncontroversial, as I discuss in Chapter~\ref{passn:pass}.
 
-We are left with two more templates, namely {\tpie} and {\thit}. Here I propose that an agentive modifier {\va} combines with the vP to create a new core vP. This [{\va} vP] can then merge with unspecified Voice, yielding {\tpie}, or with {\vz}, yielding {\thit}, with the predicted alternation between active and anticausative. How this works is the focus of Chapter~\ref{vz:va:vzva}.
+We are left with two more templates, namely {\tpie} and {\thit}. Here I propose that an agentive modifier {\va} combines with the vP to create a new core vP. This [{\va} vP] can then merge with Unspecified Voice, yielding {\tpie}, or with {\vz}, yielding {\thit}, with the predicted alternation between active and anticausative. How this works is the focus of Chapter~\ref{vz:va:vzva}.
 
 	\subsection{From templates to functional heads}
 %Let us flesh out a few of the functional heads relevant to the analysis. We are interested in the difference between roots and functional morphemes as a way of getting at the loci of idiosyncrasy and systematicity in the grammar. A root is an acategorial morpheme: the verb \emph{walk}, for example, consists under my assumptions of a root \root{\gsc{WALK}} and a verbalizing categorizer, little v. There are three such categorizers: a, n, and v, which serve to categorize roots as adjectives, nouns or verbs \citep{marantz01,arad05,woodmarantz15}.
@@ -751,7 +753,7 @@ Voice and \emph{p} heads introduce a DP in their specifier. In a regular, unmark
 	\a     \denote{\emph{p}}  =  λxλs.Figure(x,s) 
 \xe
 
-To these heads I add nonactive counterparts, namely \textbf{\vz} and \textbf{\pz}. These two heads dictate that nothing may be merged in their specifiers. {\vz} blocks the introduction of an external argument and {\pz} blocks merger of a DP in the specifier of \textit{p}P. The different kinds of Voice/\emph{p} only manipulate the syntax: they dictate whether a DP may or may not be merged in their specifier. Both {\vz} and {\pz} are spelled out by the placeholder Vocabulary Item \gsc{MID} (shorthand for the morphophonology of {\tnif}), which adds a prefix and triggers insertion of certain vowels. Voice also has the strongly active counterpart \textbf{\vd}. In its simplest definition, this head requires that a DP be merged in its specifier, behaving the opposite of {\vz}.
+To these heads I add nonactive counterparts, namely \textbf{\vz} and \textbf{\pz}. These two heads dictate that nothing may be merged in their specifiers. {\vz} blocks the introduction of an external argument and {\pz} blocks merger of a DP in the specifier of \textit{p}P. The different kinds of Voice/\emph{p} only manipulate the syntax: they dictate whether a DP may or may not be merged in their specifier. Both {\vz} and {\pz} are spelled out by the morphophonology of {\tnif}, which adds a prefix and triggers insertion of certain vowels. Voice also has the strongly active counterpart \textbf{\vd}. In its simplest definition, this head requires that a DP be merged in its specifier, behaving the opposite of {\vz}.
 
 Alongside lexical roots and these functional heads I posit \textbf{\va}. In the semantics, this {element} types the event as an Agent, an Action \citep{doron03} or ``self-propelled'' \citep{folliharley08}. In the phonology, {\va} is spelled out as a predictable set of vowels slotting between the root consonants. It also blocks a process of spirantization which would otherwise apply to the middle consonant of the root.
 
@@ -805,7 +807,7 @@ The table in~(\nextx) summarizes the syntactic, semantic and morphophonological 
 
 If this last part of the overview went by too quickly, the following chapters will guide us more smoothly through the empirical and theoretical landscape.
 
-Part I of the book is organized as follows. I discuss the template {\tkal}, unspecified Voice, the template {\tpie} and {\va} in Chapter~\ref{chap:voice}. The templates {\tnif} and {\thit} and their particular head {\vz} are the topic of Chapter~\ref{chap:vz}. Chapter~\ref{chap:vd} discusses {\thif} and {\vd}. With this trivalent system established, Chapter~\ref{chap:passn} embeds these structures under passivizing, adjectivizing and nominalizing head, providing some cross-categorial context.
+Part I of the book is organized as follows. I discuss the template {\tkal}, Unspecified Voice, the template {\tpie} and {\va} in Chapter~\ref{chap:voice}. The templates {\tnif} and {\thit} and their particular head {\vz} are the topic of Chapter~\ref{chap:vz}. Chapter~\ref{chap:vd} discusses {\thif} and {\vd}. With this trivalent system established, Chapter~\ref{chap:passn} embeds these structures under passivizing, adjectivizing and nominalizing head, providing some cross-categorial context.
 
 Part II provides a detailed comparison of the current theory with the ``layering'' theory in Chapter~\ref{chap:aas}. Chapter~\ref{chap:i} then summarizes with general considerations for the valence of Voice.
 
