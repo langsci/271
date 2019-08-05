@@ -2,16 +2,15 @@
 \label{chap:vz}
 
 \section{Introduction} \label{vz:intro}
-In the previous chapter we saw how one morphological form in Hebrew is associated with various argument structure configurations: verbs in {\tkal} might be unaccusative, unergative, transitive or ditransitive, all depending on the root. The theory developed in this book attributes this freedom to the behavior of Voice, which at least in Hebrew is not specified with regards to the existence of an external argument or lack of one. In this chapter and in the next we will consider cases in which a different value of Voice is merged in the structure, leading to specific consequences for the syntax, semantics and phonology of the resulting verb. In terms of the morphology, we will see alternations in which the same root is instantiated in different templates, which can be thought of as akin to distinct suffixes in European languages.
+In the previous chapter we saw how one morphological form in Hebrew is associated with various argument structure configurations: verbs in {\tkal} might be unaccusative, unergative, transitive or ditransitive, all depending on the root. The theory developed in this book attributes this freedom to the behavior of (Unspecified) Voice, which at least in Hebrew is not specified with regards to the existence of an external argument or lack of one. And we have also seen how an agentive modifier can influence possible readings of the verb. In this chapter and in the next we will consider cases in which a different value of Voice is merged, leading to specific consequences for the syntax, semantics and phonology of the resulting verb. In terms of the morphology, we will see alternations in which the same root is instantiated in different templates.
 
-
-The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules out the addition of an external argument. In the simplest case, this configuration leads to argument structure alternations as in~(\nextx), where the anticausative variants are essentially marked with non-active morphology.
+The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules out the addition of an external argument. In the simplest case, this configuration leads to argument structure alternations as in~(\nextx), where the anticausative variants are essentially marked with non-active morphology. The two templates explored in this chapter are {\tnif} and {\thit}, on the right-hand side of each row in the table.
 \ex\label{ex:anticaus}
 \raisebox{-4em}{
 \begin{tabular}{ll|c|ll|ll}
 \multicolumn{2}{c|}{Templates} & Root & \multicolumn{2}{c|}{Causative} & \multicolumn{2}{c}{Anticausative} \\\hline
 \multirow{3}{*}{a.} & \multirow{3}{*}{\tkal~$\sim$ \tnif} & \root{ʃbr}& ʃavar & `broke' & niʃbar & `got broken'\\
-	& & \root{\dgs{k}ra}& kara & `tore' & nikra & `got torn'\\
+	& & \root{\dgs{k}r}& kara & `tore' & nikra & `got torn'\\
 	& & \root{mtx}& matax & `stretched' & nimtax & `got stretched'\\\hline
 \multirow{3}{*}{b.} & \multirow{3}{*}{\tpie~$\sim$ \thit} & \root{pr\dgs{k}}& pirek & `dismantled' & hitparek & `fell apart' \\
 	& & \root{p{\ts}{\ts}}& po{\ts}e{\ts} & `detonated' & hitpo{\ts}e{\ts} & `exploded'\\
@@ -20,7 +19,7 @@ The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules
 }
 \xe
 
-The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (or ``middle'') Voice, and I will return to a direct comparison with that theory in Chapter~\ref{chap:aas}. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to motivate the benefits of adopting this specific technical implementation, to provide a detailed analysis of the Hebrew data. and to highlight points of divergence from existing work in preparation for the more in-depth discussion in the second part of this book.
+The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (``expletive'' or ``middle'') Voice, and I will return to a direct comparison with that theory in Chapter~\ref{chap:aas}. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to provide a thorough description of the facts, to motivate a particular analysis, and to highlight points of divergence from existing work in preparation for the discussion in the second part of this book.
 
 This chapter is the longest in the book, encompassing three different syntactic configurations and at least four semantic interpretation possibilities across two morphophonological templates. The names I have given these constructions are intended to be transparent and easy to compare with work on other languages. With that in mind, the richness of the system could also be confusing. What is important in terms of the big picture is that the two kinds of vPs discussed so far (one with {\va} and one without it) can merge with the non-active head {\vz}, and not just with regular Voice as in the previous chapter. In addition, there is a prepositional counterpart to this head, namely {\pz}, which derives another kind of construction -- the figure reflexive. And finally, pure reflexives are only possible when {\va} is in the structure. The table in~(\nextx) provides a preview.
 %\ex \begin{tabular}{c|cc}
@@ -41,14 +40,14 @@ Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
 \end{tabular}
 \xe
 
-These constructions are explored as follows. In Section~\ref{vz:tnif} I explore the left-hand side of the table, identifying the anticausatives, inchoatives and figure reflexives of {\tnif} (this last group underwriting a novel generalization). Section~\ref{vz:vz} analyzes the first two and Section~\ref{vz:pz} analyzes figure reflexives. Section~\ref{vz:interim} briefly summarizes the picture for {\tnif}. I then move to the right-hand side of the table, to {\thit}, in Section~\ref{vz:thit}, and its analysis in Section~\ref{vz:va}: anticausatives, inchoatives and reflexives are analyzed in Section~\ref{vz:va:vzva}; figure reflexives are discussed in Section~\ref{vz:va:pzva}. The empirical and analytical picture is recapped in Section~\ref{vz:sum}. Section~\ref{vz:others} then compares the current approaches with other treatments in the literature, at which point I take stock and preview the next chapter.
+These constructions are explored as follows. In Section~\ref{vz:tnif} I identify the anticausatives, inchoatives and figure reflexives of {\tnif} (this last group underwriting a novel generalization). Section~\ref{vz:vz} analyzes the first two and Section~\ref{vz:pz} analyzes figure reflexives. Section~\ref{vz:interim} briefly summarizes the picture for {\tnif}. I then move to the right-hand side of the table, {\thit}, in Section~\ref{vz:thit}, and its analysis in Section~\ref{vz:va}: anticausatives, inchoatives and reflexives are analyzed in Section~\ref{vz:va:vzva}; figure reflexives are discussed in Section~\ref{vz:va:pzva}. The empirical and analytical picture is recapped in Section~\ref{vz:sum}. Section~\ref{vz:others} then compares the current approaches with other treatments in the literature, at which point I take stock and preview the next chapter.
 
 %Section~\ref{vz:nact} first sets up expectations for what {\vz} is supposed to do, and then tests them by means of various anticausativity diagnostics, thus deriving the alternation between {\tkal} and {\tnif} seen in~(\lastx a). Additional data is then brought up to supplement the picture. Section~\ref{vz:figrefl} presents a new generalization about \emph{active} verb forms in {\tnif} and show how their existence can be explained if {\vz} is merged lower in the structure, in a prepositional phrase. Section~\ref{vz:va} extends the system by reintroducing the agentive modifier {\va} of Chapter \ref{voice:va}; it correctly derives alternations such as those in~(\lastx b) and the active verbs of the preceding section but also a special type of verb, one that does not appear in any other template, i.e.~in no other morphosyntactic configuration: the reflexive. The analysis concludes in Section~\ref{vz:inch} by discussing what {\vz} does when there is no active Voice form with which it can alternate. This discussion includes denominal verbs, which have in the past been trumpeted as a major problem for root-based theories of morphology, especially Semitic morphology (and Hebrew in particular). That point leads naturally to the examination of alternatives in Section~\ref{vz:others}.
 
 %In Section~\ref{vz:tnif} I lay out the empirical landscape for the ``middle'' template {\tnif}, showing what configurations are possible in it and how it alternates with verbs in~{\tkal}. I go on to analyze these patterns using the non-active head {\vz} in Section~\ref{vz:vz} and the non-active prepositional head {\pz} in Section~\ref{vz:pz}. The picture is recapped in Section~{\ref{vz:interim}, which shifts our view to the template {\thit}.
 
 \section{\tnif: Descriptive generalizations} \label{vz:tnif}
-The so-called ``middle'' template {\tnif} is traditionally viewed as a passive one. This is a mischaracterization. While it is true that many verbs in {\tnif} have passive readings, these verbs are almost always mediopassive, compatible with a passive or anticausative reading. Yet in addition, a large group of verbs in {\tnif} have decidedly different syntactic and semantic behavior: they are active verbs, ``figure reflexives'' in the terminology of \cite{wood14nllt}. I lay out both classes of verbs and the diagnostics used to classify them. Their uniform morphology will receive a non-uniform syntactic analysis in Sections~\ref{vz:vz} and~\ref{vz:pz}.
+The so-called ``middle'' template {\tnif} is traditionally viewed as a passive one. This is a mischaracterization. While it is true that many verbs in {\tnif} have passive readings, these verbs are often mediopassive, compatible with a passive or anticausative reading. Furthermore, a large group of verbs in {\tnif} have decidedly different syntactic and semantic behavior: they are active verbs, ``figure reflexives'' in the terminology of \cite{wood14nllt}. I lay out both classes of verbs and the diagnostics used to classify them. Their uniform morphology will receive a non-uniform syntactic analysis in Sections~\ref{vz:vz} and~\ref{vz:pz}.
 
 	\subsection{Non-active verbs} \label{vz:tnif:nact}
 Most verbs in {\tnif} have \textbf{passive} readings in that they are the passive variant of an active verb in~{\tkal}. This is the majority group of verbs in {\tnif} and probably the reason why the template is traditionally viewed as passive. A few examples are given on the right-hand side of~(\nextx).
@@ -63,7 +62,7 @@ Root & \multicolumn{2}{c|}{{\tkal} Causative} & \multicolumn{2}{c}{{\tnif} Antic
 \end{tabular}
 \xe
 
-This section also concerns verbs like those on the right-hand side of~(\nextx), which I call \textbf{anticausative}. Intuitively, these are verbs which convey the non-active (anticausative or passive) variant of an existing active or stative verb in {\tkal}.
+This section also concerns verbs like those on the right-hand side of~(\nextx), which I call \textbf{anticausative}. Intuitively, these are verbs which convey the unaccusative variant of an existing active or stative verb in {\tkal}.
 \ex\label{ex:vz:tnif-anticaus}Examples of anticausatives in {\tnif}:\\
 \begin{tabular}{c|>{\em}ll|>{\em}ll}
 Root & \multicolumn{2}{c|}{{\tkal} verb} & \multicolumn{2}{c}{{\tnif} Anticausative} \\\hline
@@ -97,10 +96,12 @@ Root & \multicolumn{2}{c|}{{\tkal} Causative} & \multicolumn{2}{c}{{\tnif} Incho
 
 %Unlike with anticausative verbs, it is not always the case that an active version of a middle verb exists in another template. Some middle verbs could not have been derived from a counterpart in {\tkal}or {\tpie} because the root was never instantiated in the active template in the first place. For example, \emph{hitalef} is not derived from active *\emph{ilef}.
 
-Out of 415 verbs in {\tnif} classified by \cite{ahdoutkastner19nels}, 275 have only passive readings, 196 have only anticasuative or inchoative readings, and 88 are ambiguous (leading to totals above 415). I will return to the quantitative summary in Section~\ref{vz:tnif:sum}. All of the tests are consistent with the claim that the verbs classified as anticausative and inchoative have no Agent, hence are unaccusative, and that the verbs classified as passive verbs have an implicit or explicit Agent. The diagnostics were introduced in Chapter~\ref{voice:tkal:nact}.
+Out of 415 verbs in {\tnif} classified by \cite{ahdoutkastner19nels}, 275 have only passive readings, 196 have only anticasuative or inchoative readings, and 88 are ambiguous (leading to totals above 415). I will return to the quantitative summary in Section~\ref{vz:tnif:sum}.
+
+In what follows I apply the diagnostics introduced in Chapter~\ref{voice:tkal:nact}: compatibility with Agent-oriented adverbs (Section~\ref{vz:tnif:nact:adv}) and the two unaccusativity tests, VS order and the possessive dative (Section~\ref{vz:tnif:nact:unacc}). I also make use of diagnostics particular to passive configurations. All of the tests are consistent with the claim that the verbs classified as anticausative and inchoative have no Agent, hence are unaccusative, and that the verbs classified as passives have an implicit Agent (or an explicit \emph{by}-phrase Agent).
 
 	\subsubsection{Adverbial modifiers} \label{vz:tnif:nact:adv}
-Agent-oriented adverbs are incompatible with anticausatives but possible with passives in the passive templates and in {\tnif}.
+Agent-oriented adverbs are incompatible with anticausatives~(\nextx) but possible with passives in the passive templates~(\anextx a) and in {\tnif}~(\anextx b).
 \pex 
 	\a	\ljudge{*} \begingl
 		\gla ha-{\ts}amid \textbf{niʃbar} be-mejomanut//
@@ -127,7 +128,7 @@ Agent-oriented adverbs are incompatible with anticausatives but possible with pa
 		\endgl
 \xe
 
-Anticausatives are also incompatible with \emph{by}-phrases, which would otherwise refer to an Agent. These are naturally possible with passives.
+Anticausatives are also incompatible with \emph{by}-phrases, which would otherwise refer to an Agent~(\nextx). These are naturally possible with passives~(\anextx).
 \pex
 	\a \ljudge{*} \begingl
 		\gla ha-{\ts}amid \textbf{niʃbar} al-jedej ha-{\ts}oref//
@@ -179,7 +180,7 @@ The `by itself' test can be assumed to diagnose the non-existence of an external
    \endgl
 \xe
     
-And naturally, passives allow control by the implied external argument (see \citealt{williams15} and \cite{bhattpancheva17} for qualifications to this test):
+And as expected, passives allow control by the implied external argument (see \citealt{williams15} and \citealt{bhattpancheva17} for qualifications to this test):
 \ex \begingl
 	\gla ha-delet \textbf{nisger-a} kedej limnoa me-ha-xatul lehikanes la-xeder//
 	\glb the-door closed.\gsc{MID}-\gsc{F.SG} in.order to.prevent from-the-cat to.enter.\gsc{MID} to.the-room//
@@ -187,7 +188,7 @@ And naturally, passives allow control by the implied external argument (see \cit
 	\endgl
 \xe
     
-The tests thus far indicate that anticausatives and inchoatives do not have an external argument, while passives do.
+The tests thus far indicate that anticausatives and inchoatives in {\tnif} do not have an external argument, while passives do.
 
 	\subsubsection{Unaccusativity diagnostics} \label{vz:tnif:nact:unacc}
 Anticausatives and inchoatives in {\tnif} allow VS order:
@@ -204,7 +205,7 @@ Anticausatives and inchoatives in {\tnif} allow VS order:
 		\endgl
 \xe
 
-As noted by \cite[148]{shlonsky87}, VS order with passives is generally fine but less so when the Agent is specified.
+As noted by \citet[148]{shlonsky87}, VS order with passives is generally fine but less so when the Agent is specified.
 \ex \begingl
 	\gla \textbf{neexal} le-ruti ha-kiwi (*al-jedej ha-xatul)//
 	\glb ate.\gsc{MID} to-Ruti the-kiwi by the-cat//
@@ -229,7 +230,7 @@ Anticausative and inchoative verbs in {\tnif} are compatible with the possessive
 Taken together, these tests establish that anticausatives and inchoatives are unaccusative but the passive verbs are not (since the latter disallow `by itself'). A common assumption in the Hebrew literature is that verbs in this template are all non-active, but we will next consider another class of verbs in {\tnif}, the figure reflexives, which behave differently with regard to these tests.
 
 	\subsection{Figure reflexives} \label{vz:tnif:figrefl}
-It has been commonly assumed that verbs in {\tnif} are medio-passive (non-active), but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. I call them figure reflexives, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. 
+It has been commonly assumed that verbs in {\tnif} are medio-passive (non-active), but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. I call them \emph{figure reflexives}, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs. 
 
 Figure reflexives in {\tnif} include verbs such as those in (\nextx); all require a PP complement. Based on the diagnostics discussed here, \cite{ahdoutkastner19nels} have found that 74 of the 415 verbs in {\tnif} are figure reflexive, or ambiguous between a non-active and a figure reflexive reading. Some of these verbs are fairly recent (e.g.~\emph{nirʃam le-} `signed up for'), indicating that we are not dealing simply with a long list of lexicalized exceptions. Nevertheless, this class of verbs was not recognized prior to \cite{kastner16phd}, as far as I can tell.
 %\ex \begin{tabular}{l>{\em}l@{*(}>{\em}l@{)}l}
@@ -247,24 +248,25 @@ I will repeat the diagnostics from Sections~\ref{vz:tnif:nact:adv}--\ref{vz:tnif
 		\subsubsection{Adverbial modifiers} \label{vz:tnif:figrefl:adv}
 Agent-oriented adverbs are possible with figure reflexives:
 \ex\label{ex:vz:nixnesa}\begingl
-	\gla dana nixnes-a la-kita be-bitaxon//
+	\gla dana \textbf{nixnes-a} la-kita be-bitaxon//
 	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom in-confidence//
 	\glft `Dana confidently entered the classroom.'//
 	\endgl
 \xe
-\emph{By}-phrases are an irrelevant diagnostic when the external argument is explicit.
 
 `By itself' is not possible with figure reflexives:
 \ex \begingl
-	\gla\ljudge{*}dana nixnes-a la-xeder me-a{\ts}ma/me-a{\ts}mo//
+	\gla\ljudge{*}dana \textbf{nixnes-a} la-xeder me-a{\ts}ma/me-a{\ts}mo//
 	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-room from-herself/itself//
 	\endgl
 \xe
 
+\emph{By}-phrases are an irrelevant diagnostic when the external argument is explicit.
+
 		\subsubsection{Unaccusativity diagnostics} \label{vz:tnif:figrefl:unacc}
 Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-active verbs in {\tnif}. \textbf{VS order} is unavailable, again being grammatical but resulting in ``stylistic inversion'':
 \ex \begingl
-	\gla\ljudge{\#}nixnes-u ʃaloʃ xajal-ot la-kita//
+	\gla\ljudge{\#}\textbf{nixnes-u} ʃaloʃ xajal-ot la-kita//
 	\glb entered.\gsc{MID}-\gsc{3PL} three soldiers-\gsc{F.PL} to.the-classroom//
 	\glft (int. 'Three soldiers entered the classroom.')//
 	\endgl
@@ -272,21 +274,21 @@ Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-activ
 
 The \textbf{possessive dative} is likewise incompatible with figure reflexives; example~(\nextx) is infelicitous on a reading where the cat is the speaker's.
 \ex \begingl
-	\gla\ljudge{\#}ha-xatul nixnas l-i la-xeder (kol ha-zman), ma laasot?//
+	\gla\ljudge{\#}ha-xatul \textbf{nixnas} l-i la-xeder (kol ha-zman), ma laasot?//
 	\glb the-cat enters.\gsc{MID} to-me to.the-room (all the-time) what to.do//
 	\glft (int. 'My cat keeps coming into into my room, what should I do?')//
 	\endgl
 \xe
 
-\cite[134]{shlonsky87} provided the pair in~(\nextx), noting in a footnote that \emph{lehikans} `to enter' is not unaccusative (an observation he credited Hagit Borer with), but he did not pursue the matter further.
+\citet[134]{shlonsky87} provided the pair in~(\nextx), noting in a footnote that \emph{lehikans} `to enter' is not unaccusative (an observation he credited Hagit Borer with), but he did not pursue the matter further.
 \pex
 	\a \ljudge{*} \begingl
-		\gla be-emtsa ha-seret nixnes-u li jeladim raaʃanim//
+		\gla be-emtsa ha-seret \textbf{nixnes-u} li jeladim raaʃanim//
 		\glb in-middle.of the-movie entered.\gsc{MID}-\gsc{F} to.me children noisy//
 		\glft (int.~`In the middle of the movie (there) entered noisy children and it aggravated me')//
 		\endgl
 	\a \begingl
-		\gla be-emtsa ha-seret nikre-u li ha-mixnasaim//
+		\gla be-emtsa ha-seret \textbf{nikre-u} li ha-mixnasaim//
 		\glb in.middle.of the-movie tore.\gsc{MID}-\gsc{F} to.me the-pants.\gsc{PL}//
 		\glft `In the middle of the movie my pants tore.'//
 		\endgl
@@ -307,23 +309,23 @@ The novel observation is that figure reflexives take an obligatory prepositional
 
 \pex Prepositional phrase complements (indirect objects) to figure reflexives are obligatory:
 	\a \begingl
-		\gla dana nixnesa *(la-kita)//
+		\gla dana \textbf{nixnes-a} *(la-kita)//
 		\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom//
 		\glft `Dana confidently entered the classroom.'//
 	\endgl
 	\a \begingl
-		\gla ahed nilxema *(be-avlot)//
+		\gla ahed \textbf{nilxem-a} *(be-avlot)//
 		\glb Ahed fought.\gsc{MID}-\gsc{F} in-wrongs//
 		\glft `Ahed fought wrondgoings.'//
 	\endgl
 \xe
 
-This claim has not been made before in either the traditional grammars or contemporary work, as far as I know (the closest are \citealt[87]{berman78}, who stated that some verbs show ''ingression'', and \citealt{schwarzwald08}, who noted that some verbs in this template are active). The resulting generalization is that external arguments in {\tnif} are possible if and only if a prepositional phrase is required. In Section~\ref{vz:pz} I show how this generalization can be derived from the structure.
+This claim has not been made before in either the traditional grammars or contemporary work, as far as I know (the closest are \citealt[87]{berman78}, who stated that some verbs show ''ingression'', and \citealt{schwarzwald08}, who noted that some verbs in this template are active).\footnote{See \cite{neeleman97} for PP complements in Dutch and English.} The resulting generalization is that external arguments in {\tnif} are possible if and only if a prepositional phrase is required. In Section~\ref{vz:pz} I show how this generalization can be derived from the structure.
 
 	\subsection{Interim summary: \tnif} \label{vz:tnif:sum}
-Verbs in {\tnif} can be classified according to their syntactic behavior and derivational relationship to other verbs. Anticausatives, inchoatives and passives are non-active; figure reflexives are active. Passives have an implied or explicit external argument, while anticausatives and inchoatives do not. And of these two, only anticausatives stand in an alternation with a verb in {\tkal}. Looking at things structurally, anticausatives and inchoatives are unaccusative (no external argument); passives are passive (implied external argument); and figure reflexives are unergative (require an external argument).
+Verbs in {\tnif} can be classified according to their syntactic behavior and derivational relationship to other verbs. Anticausatives, inchoatives and passives are non-active; figure reflexives are active. Passives have an implied external argument, while anticausatives and inchoatives do not. And of these two, only anticausatives stand in an alternation with a verb in {\tkal}. Looking at things structurally, anticausatives and inchoatives are unaccusative (no external argument); passives are passive (implied external argument); and figure reflexives are unergative (require an external argument).
 
-Based on the diagnostics discussed above, \cite{ahdoutkastner19nels} were able to classify 415 verbs with a high degree of certainty (out of 462 in total), with the breakdown in~(\nextx).\footnote{While these findings are attributed to both authors of that work \citep{ahdoutkastner19nels}, they are entirely the result of careful work by Odelia Ahdout as part of \citep{ahdout19phd}.} It can be seen from the first row, for example, that 91 verbs in {\tnif} have only unaccusative readings, like those in~(\ref{ex:vz:tnif-anticaus}). Since some verbs are ambiguous between a number of readings like those in~(\ref{ex:vz:tnif-passanticaus}), the total number of verbs with an unaccusative reading is 196 (first column). These numbers are not given here as part of any quantitative claim, only to demonstrate that all classes are well-attested in the language (but again without factoring anything like token frequency into the equation). Additional examples can be found in \cite{ahdoutkastner19nels}.
+Based on the diagnostics above, \cite{ahdoutkastner19nels} were able to classify 415 verbs with a high degree of certainty (out of 462 in total), with the breakdown in~(\nextx).\footnote{These findings the result of work by Odelia Ahdout as part of \citet{ahdout19phd}.} It can be seen from the first row, for example, that 91 verbs in {\tnif} have only unaccusative readings, like those in~(\ref{ex:vz:tnif-anticaus}). Since some verbs are ambiguous between a number of readings like those in~(\ref{ex:vz:tnif-passanticaus}), the total number of verbs with an unaccusative reading is 196 (first column). These numbers are not given here as part of any quantitative claim, only to demonstrate that all classes are well-attested in the language (but without factoring anything like token frequency into the equation). Additional examples can be found in \cite{ahdoutkastner19nels}.
 
 \ex
 \begin{tabular}{l|ccc|r|r@{.}l}
@@ -343,11 +345,11 @@ Total per construction		& 196		&	275				& 74 & \multicolumn{3}{l}{} \\
 
 Before concluding the empirical exposition of {\tnif}, a few counterexamples should be noted. As far as I could find, these are the only verbs which do not fit cleanly into the classes surveyed above. There are two verbs of emission, \emph{neenax} and \emph{neenak}, both of which mean `sighed, groaned, moaned'. Verbs of emission are generally unergative in Hebrew \citep{siloni12,gafter14li} but these verbs do not take a PP complement. The two verbs \emph{nizak} and \emph{nexpaz} `rushed, hurried' take a clausal complement, probably a TP, rather than a PP. See \citet[126]{kastner16phd} for brief discussion and speculation. And the verb \emph{nexgar} `buckled up' seems to have a purely reflexive reading, rather than non-active or figure reflexive.
 
-These points for further research aside, the generalizations about {\tnif} are as follows. In terms of the constructions we see associated with this template, we have found all manner of non-active verbs as well as figure reflexives. What we never find in this template is simple transitive constructions consisting of a subject, verb and direct object. There are also no purely reflexive verbs (this will contrast with {\thit} later in the chapter). In terms of alternations, many active (and stative) verbs in {\tkal} have a non-active alternation with {\tnif}. A summary of these points is presented in~(\nextx).
+These points for further research aside, the generalizations about {\tnif} are as follows. In terms of the constructions we see associated with this template, we have found all manner of non-active verbs as well as figure reflexives. What we never find in this template is simple transitive structures consisting of a subject, verb and direct object. There are also no purely reflexive verbs (this will contrast with {\thit} later in the chapter). In terms of alternations, many active (and stative) verbs in {\tkal} have a non-active alternation with {\tnif}. A summary of these points is presented in~(\nextx).
 
 \hammer{
 \pex \label{ex:gen-tnif}\textbf{Generalizations about {\tnif}}
-	\a \textbf{Constructions:} Verbs appear in unaccusative, passive and figure reflexive constructions; but never in a simple transitive configuration.
+	\a \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration.
 	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
 \xe
 }
