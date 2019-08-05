@@ -731,7 +731,7 @@ We are left with two more templates, namely {\tpie} and {\thit}. Here I propose 
 %Let us flesh out a few of the functional heads relevant to the analysis. We are interested in the difference between roots and functional morphemes as a way of getting at the loci of idiosyncrasy and systematicity in the grammar. A root is an acategorial morpheme: the verb \emph{walk}, for example, consists under my assumptions of a root \root{\gsc{WALK}} and a verbalizing categorizer, little v. There are three such categorizers: a, n, and v, which serve to categorize roots as adjectives, nouns or verbs \citep{marantz01,arad05,woodmarantz15}.
 Before delving into the data we should take stock of the syntactic machinery. The functional head v introduces an event variable and categorizes a root as a verb. A higher functional head, Voice, introduces the external argument. The agentive modifier {\va} overtly introduces agentive semantics whose characterization is set aside until Chapter~\ref{voice:tpie}. I further assume that the functional head \emph{p} introduces the external argument of a preposition, also called its Figure \citep{svenonius03,svenonius07,wood14nllt}. 
 
-Voice and \emph{p} heads introduce a DP in their specifier. In a regular, unmarked active clause, default (silent) Voice introduces the external argument. The head \emph{p} was proposed by \cite{svenonius03,svenonius07} to act in similar fashion to Voice or Chomskyan little \textit{v}: it merges above the PP, introducing the Figure (subject) of the \textbf{p}reposition. I will not attempt to motivate this structure but will simply assume it; it is meant to capture the predicative relationship between the two DPs, similarly to the PredP of \cite{bowers93,bowers01} and \emph{ann}-XP of \cite{mccloskey14}. In~(\nextx) the Figure is the DP \emph{the book} and the Ground, the object of the preposition, is \emph{the table}. See Chapter~\ref{vz:pz}.
+Voice and \emph{p} heads introduce a DP in their specifier. In a regular, unmarked active clause, default (silent) Voice introduces the external argument. The head \emph{p} was proposed by \cite{svenonius03,svenonius07} to act in similar fashion to Voice or Chomskyan little \textit{v}: it merges above the PP, introducing the Figure (subject) of the \textbf{p}reposition. I will not attempt to motivate this structure but will simply assume it; it is meant to capture the predicative relationship between the two DPs, similarly to the PredP of \cite{bowers93,bowers01} and \emph{ann}-XP of \cite{mccloskey14}. In~(\nextx) the Figure is the DP \emph{the book} and the Ground, the object of the preposition, is \emph{the table}. Dashed arrows represent assignment of semantic roles; see Chapter~\ref{vz:pz}.
 \pex
 	\a 
  \Tree
@@ -746,8 +746,8 @@ Voice and \emph{p} heads introduce a DP in their specifier. In a regular, unmark
 	 	]
 	 ]
 	\begin{tikzpicture}[overlay]
-	\draw[dotted,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
-	\draw[dotted,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	\draw[dashed,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
+	\draw[dashed,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
 	\end{tikzpicture}
 %	\a     \denote{Voice}  =  λxλe.Agent(x,e) 
 	\a     \denote{\emph{p}}  =  λxλs.Figure(x,s) 
