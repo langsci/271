@@ -7,49 +7,53 @@ This book presents a theory of argument structure and its relation to morphology
 	\item Does every language have the kinds of features on these heads that Hebrew does, i.e. {\vd}, \pz, etc.?
 \end{enumerate}
 
-In the current chapter I summarize the generalizations drawn out here and the means used to explain them (Section~\ref{i:sum}). I then discuss some related issues in the theory of Voice, chiefly the identity of this head (Section~\ref{i:i}, addressing the first question) and the identity of its features (Section~\ref{i:agree}, addressing the second feature). Section~\ref{i:conc} concludes the chapter, and with it the monograph, although it will surely not be the final word (or template) on Hebrew morphology.
+In the current chapter I summarize the generalizations pointed out throughout the monograph and the means used to explain them (Section~\ref{i:sum}). I then discuss some related issues in the theory of Voice, chiefly the identity of this head (Section~\ref{i:i}, addressing the first question) and the identity of its features (Section~\ref{i:agree}, addressing the second feature). Section~\ref{i:conc} concludes the chapter, and with it the book, although it will surely not be the final word (or template) on Hebrew morphology.
 
 
 \section{Summary of the current approach} \label{i:sum}
-The summary of this work is divided into two: the empirical generalizations which an adequate theory of Hebrew morphology ought to derive, and the formal system I have implemented to do so. Readers who have jumped directly to this section may want to consult Chapter~\ref{intro:arch} for some formal background.
+The two questions I posed regarding verbal templates were as follows:
+\begin{itemize}
+	\item What are the possible readings associated with a given template (and why)?
+	\item What templates does a given template alternate with (and why)?
+\end{itemize}
+
+The summary of this work is divided into the empirical generalizations which an adequate theory of Hebrew morphology ought to derive, and the formal system I have implemented to do so. Readers who have jumped directly to this section may want to consult Chapter~\ref{intro:arch} for some formal background.
 
 	\subsection{Summary of generalizations}
-Every description or discussion of Hebrew morphology begins with the templatic system. The current book was also organized this way, laying out the empirical landscape template by template. When we are careful about the date, we quickly find that some of the generalizations are quite unnatural. To take one example, {\tnif} has both unaccusative and unergative verbs, but no transitive verbs; what would one need to say in a formal analysis? Having acknowledged the unergative and unaccusative verbs have different structures (the Unaccusativity Hypothesis), contemporary theories can hardly refer to ``intransitivity'' as a theoretical primitive.
-
-The list below recaps the generalizations made about each template.
+Every description or discussion of Hebrew morphology begins with the templatic system. The current book was also organized this way, laying out the empirical landscape template by template. The list below recaps the generalizations made about each template.
 
 \pex \textbf{Generalizations about {\tkal}}
-	\a \textbf{Constructions:} Verbs appear in all possible argument structure configurations.
+	\a \textbf{Configurations:} Verbs appear in all possible argument structure configurations.
 	\a \textbf{Alternations:} Participates in alternations with the other templates, as will be reviewed throughout the book.
 \xe
 
 \pex \textbf{Generalizations about {\tpie}}
-	\a \textbf{Constructions:} Verbs appear in active (transitive/unergative) configurations.\\
+	\a \textbf{Configurations:} Verbs appear in active (transitive/unergative) configurations.\\
 		Readings are weakly agentive.
 	\a \textbf{Alternations:} When alternating with {\tkal}, provides a more ``intensive'' or agentive version.
 \xe
 
 \pex \textbf{Generalizations about {\tnif}}
-	\a \textbf{Constructions:} Verbs appear in unaccusative, passive and figure reflexive constructions; but never in a simple transitive configuration.
+	\a \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration.
 	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
 \xe
 
 \pex \textbf{Generalizations about {\thit}}
-	\a \textbf{Constructions:} Verbs appear in unaccusative, figure reflexive and reflexive constructions; but not in a simple transitive configuration.
+	\a \textbf{Configurations:} Verbs appear in unaccusative, figure reflexive and reflexive structures; but not in a simple transitive configuration.
 	\a \textbf{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}.
 \xe
 
 \pex \textbf{Generalizations about {\thif}}
-	\a \textbf{Constructions:} Verbs appear in transitive and unergative configurations; a small class of verbs forms unaccusative degree achievements.
+	\a \textbf{Configurations:} Verbs appear in transitive and unergative configurations; a small class of verbs forms unaccusative degree achievements.
 	\a \textbf{Alternations:} Some verbs are causative or active versions of verbs in other templates, especially {\tkal}. A small class of verbs creates a labile alternation within {\thif}.
 \xe
 
 \pex \textbf{Generalizations about {\tpua} and {\thuf}}
-	\a \textbf{Constructions:} Verbs appear in passive configurations only.
+	\a \textbf{Configurations:} Verbs appear in passive configurations only.
 	\a \textbf{Alternations:} Verbs in {\tpua} are always the passive version of an active verb in {\tpie}. Verbs in {\thuf} are always the passive version of an active verb in {\thif}.
 \xe
 
-These generalizations are summarized in~(\nextx), where a na\"ive view of the templates defies economical description -- at least at first sight.\footnote{The table in~\ref{table:sum-naive} does not distinguish plain unergatives from figure reflexives, precisely because traditional views do not make this distinction.}
+Some of these generalizations are quite unnatural. To take one example, {\tnif} has both unaccusative and unergative verbs, but no transitive verbs; what would one need to say in a formal analysis? Having acknowledged the unergative and unaccusative verbs have different structures (the Unaccusativity Hypothesis), contemporary theories can hardly refer to ``intransitivity'' as a theoretical primitive. These generalizations are summarized in~(\nextx), where a na\"ive view of the templates defies economical description -- at least at first sight.\footnote{The table in~(\ref{table:sum-naive}) does not distinguish plain unergatives from figure reflexives, precisely because traditional views do not make this distinction.}
 \ex \label{table:sum-naive}
 \xe
 \begin{tabular}{ll|ccccc|l}
@@ -67,18 +71,19 @@ The table in~(\lastx) clearly shows the many-to-many mapping problem that arises
 
 And once you have chosen a template, how do you know which template to derive an alternation in? Should you go from an anticausative in {\tnif} to {\tkal} or to {\thif}? We have seen that both are possible:
 \ex
-	\begin{tabular}{l|lcl|ccc}
+	\begin{tabular}{l|lcl|c|cc}
+		&	&	&	&	Anticausative & \multicolumn{2}{c}{Causative}\\
 		&	&	&	&	{\tnif}	& {\tkal} & {\thif}\\\hline
 	\root{ʃbr} & broke & $\sim$ & broke	& \emph{niʃbar} & \emph{ʃavar} & --- \\
-	\root{xkd} & went extinct & $\sim$ & eradicated & \emph{nikxad} & --- & \emph{hekxid}\\
+	\root{kxd} & went extinct & $\sim$ & eradicated & \emph{nikxad} & --- & \emph{hekxid}\\
 	\end{tabular}
 \xe
 Again, some patterns exist but looking at the templates in terms of primitives makes it hard to understand why precisely these patterns arise, above and beyond the idiosyncrasy of individual roots.
 
-Some of the generalizations tallied above are novel. The entire formal conception of figure reflexives in Hebrew \citep{kastner16phd} and indeed in this general framework is recent \citep{wood12phd,wood14nllt}. The characterization of unaccusatives in {\thif} as degree achievements is recent, although not my own proposal \cite{lev16}. The observation that {\thif} is not a causative template but a general active one, which might also have lexical causatives, is novel as far as I can tell, at least when put in these terms. The idea that the distinction between anticausatives and reflexives in {\thit} reflects the lexical semantics of the roots is also very recent \cite{kastner17gjgl}. And the allomorphic interactions which I have mentioned have also only been noticed recently in a unified way \cite{kastner18nllt}. Even if the analysis ends up being inadequate, I believe that these generalizations are important and hope that future work can engage with them rigorously.
+Some of the generalizations tallied above are novel. The entire formal conception of figure reflexives in Hebrew \citep{kastner16phd} and indeed in this general framework is recent \citep{wood12phd,wood14nllt}. The characterization of unaccusatives in {\thif} as degree achievements is recent, although not my own \citep{lev16}. The observation that {\thif} is not a causative template but a general active one, which might also have lexical causatives, is novel as far as I can tell, at least when put in these terms. The idea that the distinction between anticausatives and reflexives in {\thit} reflects the lexical semantics of the roots is also very recent \citep{kastner17gjgl}. And the allomorphic interactions which I have identified have also only been noticed recently in a unified way \citep{kastner18nllt}. Even if the analysis ends up being inadequate, I believe that these generalizations are important and hope that future work can engage with them rigorously.
 
 	\subsection{D-composing the templates}
-Instead of talking about templates, I have proposed that we talk about syntactic structure and cyclic derivations. This was done using the head Voice and allowing it to take one of three values: [+D], [--D] or unspecified for [D]. Informal definitions are given in~(\nextx).
+Instead of talking about templates, I have proposed that we talk about syntactic structure and cyclic derivations. This was done using the head Voice and allowing it to take one of three values: [\!+\!D], [--D] or unspecified for [D]. Informal definitions are given in~(\nextx).
 \pex Overt Voice heads in Hebrew
 \a \textbf{{\vd}:} requires a DP in in its specifier.
 \a \textbf{{\vz}:} prohibits a DP in its specifier.
@@ -89,7 +94,7 @@ Acknowledging the existence of an overt agentive modifier whose semantics is dif
 \ex \textbf{{\va}:} an overt modifier adding ``action'' (agentive) semantics to an event. In practice, often creates a requirement for an Agent role to be saturated.
 \xe
 
-Assuming that prepositional phrases are derived similarly to verbs gives us the functional head \textit{p} and its [--D] variant {\pz} (more on this in the next section).
+Assuming that prepositional phrases are derived similarly to verbs gives us the functional head \textit{p} and its [--D] variant {\pz} (more on this in Section~\ref{i:i:i}).
 \pex
 	\a \textbf{\textit{p}:} the prepositional equivalent of Voice; introduces the Figure role (the subject of a preposition).
 	\a \textbf{{\pz}:} prohibits a DP in its specifier.
@@ -99,7 +104,7 @@ The passive head Pass rounds off the picture.
 \ex \textbf{Pass:} prevents the projection of an argument in Spec,VoiceP and closes off the Agent role existentially in the semantics.
 \xe
 
-When these elements are combined, the resulting picture is not the confusing one in~(\ref{table:sum-naive}) but the principled one in~(\nextx). These elements and the values of their features explain what structures give rise to what spell-outs, or in other words, what \textbf{constructions} a given template is possible in.
+When these elements are combined, the resulting picture is not the confusing one in~(\ref{table:sum-naive}) but the principled one in~(\nextx). These elements and the values of their features explain what structures give rise to what spell-outs, or in other words, what \textbf{configurations} a given template is possible in.
 \ex
 \xe
 \begin{center}
@@ -129,15 +134,15 @@ When these elements are combined, the resulting picture is not the confusing one
 \end{center}
 The combinatorics of these heads---specifically unattested combinations---were addressed in the individual chapters. See \citet[Ch.~2.4.1.1]{kastner16phd} for a summary.
 
-The hierarchical structure---that is to say, the layering of Voice above vP---explains what \textbf{alternations} are possible. Since Voice merges above a core vP, the three values of Voice can give rise to three templates in transitivity alternations ({\tkal}, {\tnif} and {\thif}). Because {\va} merges with the core vP, {\tpie} has a less transparent, but still fairly consistent, relationship with {\tkal}. And given that the core vP with {\va} can then combine with either unspecified Voice or {\vz}, we derive the alternation between {\tpie} and {\thit}. The final alternation, between active {\tpie} and {\thif} and the one side and passive {\tpua} and {\thuf} on the other side, follows from merging Pass with the active VoiceP. Alternations are therefore not listed extrinsically nor are they the property of templates. They are what we see if a given root is instantiated in a number of structures which share a core vP, just like \citeauthor{schaefer08}'s (\citeyear{schaefer08}) conclusion for the causative alternation in European languages.
+The hierarchical structure---that is to say, the layering of Voice above vP---explains what \textbf{alternations} are possible. Since Voice merges above a core vP, the three values of Voice can give rise to three templates in transitivity alternations ({\tkal}, {\tnif} and {\thif}). Because {\va} merges with the core vP, {\tpie} has a less transparent, but still fairly consistent, relationship with {\tkal}. And given that the core vP with {\va} can then combine with either unspecified Voice or {\vz}, we derive the alternation between {\tpie} and {\thit}. The final alternation, between active {\tpie} and {\thif} on one side and passive {\tpua} and {\thuf} on the other, follows from merging Pass with the active VoiceP. Alternations are therefore not listed extrinsically nor are they the property of templates. They are what we see if a given root is instantiated in a number of structures which share a core vP, just like \citeauthor{schaefer08}'s (\citeyear{schaefer08}) conclusion for the causative alternation in European languages.
 
-Let me reiterate the role of \textbf{roots} in this theory and in any theory of Semitic: at some level it must be listed what functional heads are licensed by what roots. I have not attempted to formalize this matter, since at present I do not see whether there are any generalizations to account for or predictions worth making. \cite{arad05} makes a strong case for the view under which the combination is almost entirely arbitrary, in that each combination of root and template must be listed. I do not know whether this is necessarily true, but currently have no better way of describing the system. As emphasized throughout the book, the same issue arises regardless of theoretical framework.
+Let me reiterate the role of \textbf{roots} in this theory and in any theory of Semitic: at some level it must be listed what functional heads are licensed by what roots. I have not attempted to formalize this matter. \cite{arad05} makes a strong case for the view under which the combination is almost entirely arbitrary, in that each combination of root and template must be listed. I do not know whether this is necessarily true, but currently have no better way of describing the system. As emphasized throughout the book, the same issue arises regardless of language or theoretical framework.
 
-This analysis aims to be simple: the child only posits variants on basic elements if she has evidence for them. Hebrew has phonological (and of course syntactic and semantic) evidence for all and only the elements in~(\lastx), obviating the need for additional silent structure. In the next section I try to take a step back from Semitic, considering the conceptual and crosslinguistic inventory of syntactic heads.
+This analysis aims to be simple: the child only posits variants of basic elements if she has evidence for them. Hebrew has phonological (and of course syntactic and semantic) evidence for all and only the elements in~(\lastx), obviating the need for additional silent structure. In the next section I try to take a step back from Semitic, considering the conceptual and crosslinguistic inventory of syntactic heads.
 
 
 \section{Voice heads} \label{i:i}
-The framework as a whole allows for Voice heads and \emph{p} heads, alongside verbalizers (little v, n and a). I also assume that applicatives are introduced using the head Appl, although I make no claims about applicatives in Hebrew. These heads all appear to be empirically necessary, but recent work suggests that they need not be distinguished theoretically. In what comes next I review how the current proposal can be applied to an unrelated language, Japanese (Section~\ref{i:i:jap}); a recent theoretical proposal which dovetails nicely with the current proposal (Section~\ref{i:i:i}; and crosslinguistic prospects for the trivalent approach to Voice (Section~\ref{i:i:ay}).
+The framework as a whole allows for Voice heads and \emph{p} heads, alongside verbalizers (little v, n and a). I also assume that applicatives are introduced using the head Appl, although I made no claims about applicatives in Hebrew. These heads all appear to be empirically necessary, but recent work suggests that they need not be distinguished theoretically. In what comes next I review how the current proposal can be applied to an unrelated language, Japanese (Section~\ref{i:i:jap}); a recent theoretical proposal which dovetails nicely with the current proposal (Section~\ref{i:i:i}); and crosslinguistic prospects for the trivalent approach to Voice (Section~\ref{i:i:ay}).
 
 	\subsection{Japanese} \label{i:i:jap}
 The morphology of transitivity alternations in Japanese has received significant attention over the years \citep{suga80,jacobsen92,miyagawa98,nishiyama98,volpe05,harley08}. Recently, \cite{oseki17nyu} proposed an analysis of argument structure alternations and their expression in the morphology of Japanese which builds on the trivalent system. Here is an outline and quick evaluation.
@@ -145,12 +150,12 @@ The morphology of transitivity alternations in Japanese has received significant
 Some verbs like \emph{hirak} `open' have the labile alternation:
 \pex
 	\a \begingl
-		\gla John-ga doa-o hirak-\zero-ta//
+		\gla John-ga doa-o \textbf{hirak-\zero-ta}//
 		\glb John-\gsc{NOM} door-\gsc{ACC} open-\zero-Past//
 		\glft `John opened the door.'//
 	\endgl
 	\a \begingl
-		\gla Doa-ga hirak-\zero-ta//
+		\gla Doa-ga \textbf{hirak-\zero-ta}//
 		\glb door-\gsc{NOM} open-\zero-Past//
 		\glft `The door opened.'//
 	\endgl
@@ -159,12 +164,12 @@ Some verbs like \emph{hirak} `open' have the labile alternation:
 With many others, overt transitivity markers can be found, namely -\gsc{S}- (and allomorphs) for marked transitives and -\gsc{R}- (and allomorphs) for marked intransitives:
 \pex
 	\a \begingl
-		\gla John-ga posutaa-o hag-as-ta//
+		\gla John-ga posutaa-o \textbf{hag-as-ta}//
 		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\gsc{S}-Past//
 		\glft `John took down a poster.'//
 	\endgl
 	\a \begingl
-		\gla Syatsu-ga chijim-ar-ta//
+		\gla Syatsu-ga \textbf{chijim-ar-ta}//
 		\glb shirt-\gsc{NOM} shrink-\gsc{R}-Past//
 		\glft `A shirt shrank.'//
 	\endgl
@@ -186,7 +191,7 @@ These patterns can be understood if we assume something like the following for J
 	\a {\vd} \lra~-\gsc{S}-
 \xe
 
-\cite{oseki17nyu} then goes on to show how this system predicts the behavior of the causative \emph{-sase} applicatives as \emph{-s-} over \emph{-s-}---potentially {\vd} over {\vd}---and of the passive \emph{rare} \emph{-r} over \emph{-r-} (potentially {\vz} over {\vz}).\footnote{In Hebrew this specific combination cannot be examined because Hebrew does not have a ``morphological'' Appl affix; benefactive and malefactive arguments are introduced using the preposition \emph{le-} `to'. 
+\cite{oseki17nyu} then goes on to show how this system predicts the behavior of the causative \emph{-sase} applicatives as \emph{-s-} over \emph{-s-} (potentially {\vd} over {\vd}) and of the passive \emph{rare} as \emph{-r-} over \emph{-r-} (potentially {\vz} over {\vz}).\footnote{In Hebrew this specific combination cannot be examined because Hebrew does not have a ``morphological'' Appl affix; benefactive and malefactive arguments are introduced using the preposition \emph{le-} `to'. 
 \ex \begingl
     \gla ha-arje biʃel ʃu'it (\underline{la}-jeladim)//
     \glb the-lion cooked beans (\underline{to.the}-children)//
@@ -195,15 +200,15 @@ These patterns can be understood if we assume something like the following for J
 \xe
 }
 
-Appealing as this analysis of Japanese may be, I must note two aspects in which it diverges from the current proposal for Hebrew. First, \gsc{S}-marked verbs are always transitive. Hebrew {\vd} does not enforce transitivity, only an external argument. In fact, \citet[26]{nie17} notes that the alternation between a marked and unmarked transitive seems like a Differential Object Marking pattern, correlating with the appearance of the object marker -\emph{o} (glossed \gsc{ACC}, just like Hebrew \emph{et}). Marked transitives are only possible with -\emph{o}, but zero-marking is possible regardless of whether the object marker appears.
+Appealing as this analysis of Japanese may be, I must note two aspects in which it diverges from the current proposal for Hebrew. First, \gsc{S}-marked verbs are always transitive. In fact, \citet[26]{nie17} notes that the alternation between a marked and unmarked transitive seems like a Differential Object Marking pattern, correlating with the appearance of the object marker -\emph{o} (glossed \gsc{ACC}). Marked transitives are only possible with -\emph{o}, but zero-marking is possible regardless of whether the object marker appears. Yet Hebrew {\vd} does not enforce transitivity, only an external argument.
 \pex
 	\a \begingl
-		\gla John-ga posutaa-\textbf{o} hag-\zero/as-ta//
+		\gla John-ga posutaa-\underline{o} \textbf{hag-\zero/as-ta}//
 		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\zero/\gsc{S}-Past//
 		\glft `John took down (a specific) poster.'//
 	\endgl
 	\a \begingl
-		\gla John-ga posutaa hag-\zero/(*as)-ta//
+		\gla John-ga posutaa \textbf{hag-\zero/(*as)-ta}//
 		\glb John-\gsc{NOM} poster-\gsc{ACC} peel-\zero/\gsc{S}-Past//
 		\glft `John took down a poster (some poster).'//
 	\endgl
@@ -256,10 +261,10 @@ My goal here is not to evaluate this proposal, which is supported by conceptual 
 	]
 \xe
 
-To be clear, I do not believe that the \emph{i*} hypothesis must be true for the current account to go through. But if this hypothesis is on the right track, a strong version can be formulated under which all exponents of \emph{i*} (as well as its variants \emph{i*}$_{\text{[--D]}}$ and \emph{i*}$_{\text{[+D]}}$) should be identical to each other. Such a hypothesis would immediately predict the similarity between Voice and \emph{p}---both default and silent---and that between {\vz} and {\pz}.
+To be clear, I do not believe that the \emph{i*} hypothesis must be true for the current account to go through. But if this hypothesis is on the right track, a strong version can be formulated under which all exponents of \emph{i*} (as well as its variants \emph{i*}$_{\text{[--D]}}$ and \emph{i*}$_{\text{[\!+\!D]}}$) should be identical to each other. Such a hypothesis would immediately predict the similarity between Voice and \emph{p}---both default and silent---and that between {\vz} and {\pz}.
 
 	\subsection{Prospects for trivalent Voice/\textit{i*}} \label{i:i:ay}
-This chapter began asking whether the syntactic inventory of every language always contain the heads Voice, v, \textit{p} and potentially Appl? My working hypothesis is that the answer is yes. I assume that Voice, v and \emph{p} are an inherent part of the syntactic system of every language. I am less certain about the applicative head Appl, although under the \textit{i*} hypothesis there is no difference between Appl and Voice or \textit{p}. 
+This chapter began asking whether the syntactic inventory of every language always contain the heads Voice, v, \textit{p} and potentially Appl. My working hypothesis is that the answer is yes. I assume that Voice, v and \emph{p} are an inherent part of the syntactic system of every language. I am less certain about the applicative head Appl, although under the \textit{i*} hypothesis there is no difference between Appl and Voice or \textit{p}. 
 
 In Kinyarwanda, the causative and instrumental applicative suffixes are spelled out identically \citep{jerro17} and in the Algonquian language Penobscot, many ``relational predicates'' have similar if not identical morphology for causatives and applicatives \citep[Ch.~2.3.7.1]{quinn06phd}. The \emph{i*} hypothesis would lead us to expect similar correlations between different heads crosslinguistically. Combining the outlined analysis of Japanese above with the basics of \emph{i*}, we arrive at the picture in~(\nextx).
 
@@ -290,12 +295,12 @@ In Kinyarwanda, the causative and instrumental applicative suffixes are spelled 
 	Head 		& Hebrew 	  		& Japanese\\\hline
 	\emph{i*}   	& \tkal          & -\emph{e}-\\
 	\emph{i*}$_{\text{[--D]}}$ 	& \tnif 		& -\emph{r}-\\
-	\emph{i*}$_{\text{[+D]}}$	& \thif		& -\emph{s}-\\
+	\emph{i*}$_{\text{[\!+\!D]}}$	& \thif		& -\emph{s}-\\
 %	{\va}	& \tpie		& \emph{afto-}	& -\emph{ak}-?\\
 	\end{tabular}
 \xe
 
-How far can this idea extend? Within Semitic, Standard Arabic and some Arabic dialects might be informative. In these languages an ``applicative template'' can introduce an applied argument without need for a preposition \citep{alkaabi15phd}. Other templates do not seem to have syntactic and semantic requirements which are as stringent as those in Hebrew, indicating that perhaps an \citeauthor{arad05}-style analysis might be more appropriate, that additional semi-lexical roots similar to {\va} need to be invoked, or that ``flavors'' of v might be necessary after all \citep{katie13}. It remains to be seen how the current framework can accommodate patterns in other Semitic languages. Similarly, a strong view restricting structure-building of verbs to v, Voice/\textit{i*} and Pass means there is no room for specialized heads such as Reflexive (\citealt{ahn15phd}, cf.~\citealt{spathas17camvoice,spathas17debrecen}) or Reciprocal \citep{bruening04}. I believe that exploring this strong claim will lead to new discoveries and refute the dedicated-heads approaches (although tough talk comes cheap). There is also the question of languages with dedicated ``slots'' for different argument structure affixes, like the CARP template of Bantu and similar phenomena \citep{hyman03,paster05}. Yet I am optimistic, since data which had received analysis in terms of affix slots was also shown to be analyzable in more derivational terms; here I have in mind the Nimboran debate between \cite{inkelas93} and \cite{noyer98}.
+How far can this idea extend? Within Semitic, Standard Arabic and some Arabic dialects might be informative. In these languages an ``applicative template'' can introduce an applied argument without need for a preposition \citep{alkaabi15phd}. Other templates do not seem to have syntactic and semantic requirements which are as stringent as those in Hebrew, indicating that perhaps an \citeauthor{arad05}-style analysis might be more appropriate, that additional semi-lexical roots similar to {\va} need to be invoked, or that ``flavors'' of v might be necessary after all \citep{katie13}. It remains to be seen how the current framework can accommodate patterns in other Semitic languages. Similarly, a strong view restricting structure-building of verbs to v, Voice/\textit{i*} and Pass means there is no room for specialized heads such as Reflexive (\citealt{ahn15phd}, cf.~\citealt{spathas17camvoice,spathas17debrecen}) or Reciprocal \citep{bruening04}. There is also the question of languages with dedicated ``slots'' for different argument structure affixes, like the CARP template of Bantu and similar phenomena \citep{hyman03,paster05}. I believe that exploring this strong claim will lead to new discoveries and refute the dedicated-heads approaches (although tough talk comes cheap). One reason for my optimism is that data which had received analysis in terms of lexicalist affix slots was also shown to be analyzable in more decompositional terms; here I have in mind the Nimboran debate between \cite{inkelas93} and \cite{noyer98}.
 
 It thus appears to be potentially useful to adopt this framework for additional languages and map out which heads and features are instantiated in which language. The heads were discussed in this section; features are the topic of the next section, which is also the last one of this book before concluding.
 
@@ -315,9 +320,9 @@ It thus appears to be potentially useful to adopt this framework for additional 
 \section{Features on Voice} \label{i:agree}
 The second question opening this chapter had to do with the inventory of features which might exist on \textit{i*}/Voice. It is interesting to note that virtually all work on the features of Voice assumes the [D] feature and/or phi-features.
 
-In Hebrew, I have made the case that Voice can be [+D] as in {\vd}, [--D] as in {\vz} or not inherently valued as in unspecified Voice. In principle however, the architecture allows any syntactic feature to appear on Voice. Nothing in the theory prohibits Voice$_{\text{[wh]}}$, for instance, which would require a \emph{wh}-phrase in Spec,VoiceP. Now granted, any theory of syntax must stipulate in one way or another which features are possible on which functional elements. One way to restrict the theory is to require only \emph{uninterpretable} features \citep{chomsky95}, being purely syntactic features, to exist on Voice. The EPP feature [D] is one such feature. This kind of solution would rely on a certain view of which features are interpretable and which are not (the notion of uninterpretable features and whether they are necessary has itself been questioned in recent work, e.g.~\citealt{preminger14mit}).
+In Hebrew, I have made the case that Voice can be [\!+\!D] as in {\vd}, [--D] as in {\vz} or not inherently valued as in unspecified Voice. In principle however, the architecture allows any syntactic feature to appear on Voice. Nothing in the theory prohibits Voice$_{\text{[wh]}}$, for instance, which would require a \emph{wh}-phrase in Spec,VoiceP. Now granted, any theory of syntax must stipulate in one way or another which features are possible on which functional elements. One way to restrict the theory is to require only \emph{uninterpretable} features \citep{chomsky95}, being purely syntactic features, to exist on Voice. The EPP feature [D] is one such feature. This kind of solution would rely on a certain view of which features are interpretable and which are not (the notion of uninterpretable features and whether they are necessary has itself been questioned in recent work, e.g.~\citealt{preminger14mit}).
 
-Ideally, our theory of features on argument-introducing heads would be part of a general theory of argument structure, feeding processes such as case assignment and specifying the triggers for A-movement. Some recent theories do exactly that by recourse to [D] and phi-features.
+Ideally, a theory of features on argument-introducing heads would be part of a general theory of argument structure, feeding processes such as case assignment and specifying the triggers for A-movement. Some recent theories do exactly that by recourse to [D] and phi-features.
 
 %	\subsection{Other approaches to the content of Voice} \label{i:agree:other}
 	\subsection{Layering}
@@ -330,14 +335,14 @@ Within the standard Layering approach \citep{schaefer08,schaefer12,schaefer17oup
 In this theory, [D] is still the feature regulating most of the argument structure. The data come from Romance and Germanic.
 
 	\subsection{Restriction}
-\cite{legate12lang,legate14} presents a different theory, one in which phi-features on Voice serve to Restrict the arguments with which they are associated. ``Restrict'' is meant in both an intuitive sense and in the formal sense of \cite{chungladusaw04}: a 3rd person specification means that a 2nd person argument will not be possible. The bundle of phi-features may appear either on Voice or in Spec,VoiceP (instead of a regular external argument). Object licensing features are generated on Voice and inherited by v.
+\cite{legate12lang,legate14} presents a different theory, one in which phi-features on Voice serve to Restrict the arguments with which they are associated. ``Restrict'' is meant in both an intuitive sense and in the formal sense of \cite{chungladusaw04}: a 3rd person specification on Voice means that a 2nd person argument will not be possible. The bundle of phi-features may appear either on Voice or in Spec,VoiceP (instead of a regular external argument). Object licensing features are generated on Voice and inherited by v.
 
-If the features are on Voice, they serve to restrict the Agent. This can be either the subject of an active clause (merged in Spec,VoiceP), or the agent of a passive clause, regardless of whether it is implied or overt in a \emph{by}-phrase.\footnote{The exact mechanics require existential closure to apply to the Agent role if no \emph{by}-phrase appears, but this issue arises for all mainstream analyses of the passive; see \citealt{williams15} for background.} Crosslinguistically, these features appear overtly as a prefix denoting person and familiarity on the verb (in Achenese), as a dedicated form of the passive prefix alternating according to number (in Chamorro), and as a specific suffix for passive verbs restricts 3sg (in Balinese).
+If the features are on Voice, they serve to restrict the Agent. This can be either the subject of an active clause (merged in Spec,VoiceP), or the agent of a passive clause, regardless of whether it is implied or overt in a \emph{by}-phrase.\footnote{The exact mechanics require existential closure to apply to the Agent role if no \emph{by}-phrase appears, but this issue arises for all mainstream analyses of the passive; see \cite{williams15} for background.} Crosslinguistically, these features appear overtly as a prefix denoting person and familiarity on the verb (in Achenese), as a dedicated form of the passive prefix alternating according to number (in Chamorro), and as a specific suffix for \gsc{3SG} passive verbs (in Balinese).
 
-If the features are merged in Spec,VoiceP they can only restrict the DP in the \emph{by}-phrase of a passive and are covert (in Ukranian and the Icelandic New Passive). This is a kind of Weak Implicit Argument in the terminology of \citealt{landau10}.
+If the features are merged in Spec,VoiceP they can only restrict the DP in the \emph{by}-phrase of a passive and are covert (in Ukranian and the Icelandic New Passive). This is a kind of Weak Implicit Argument in the terminology of \cite{landau10}.
 
 Impersonal constructions are analyzed as structures in which a silent pronoun in Spec,VoiceP has both a [D] feature and phi-features; this is essentially \textit{pro}, or the Strong Implicit Argument of \cite{landau10}.
-\pex Features of Voice under the phi-features theory inspired by Acehnese:
+\pex Features of Voice under the restriction theory inspired by Acehnese:
 	\a $\lambda$x for Agent semantics.
 	\a Phi-features restricting the Agent.
 	\a Phi-features can be merged either directly on Voice (overt) or in Spec,VoiceP (covert).
@@ -347,7 +352,7 @@ In this theory, phi-features regulate argument structure, at least in the releva
 	\subsection{Restructuring}
 Another kind of theory was proposed by \cite{wurmbrandshimamura17}. For them, Voice has two sets of features. ``Voice features'' regulate whether the clause is active or passive, and introduce Agent/Cause semantics. Voice also carries phi-features which may be inserted valued or unvalued. Object licensing features (\gsc{ACC}) are also generated on Voice.
 
-In an active clause, unvalued phi-features on Voice need to be valued by the external argument DP. Its merger is thus triggered by the phi-features and not by the Voice:\gsc{Agent} feature. In a passive clause, Voice carries valued phi-features as in \cite{legate14} and the \gsc{Pass} feature. Feature checking between Voice and v/V spells out the appropriate participial morphology on V (in English), and incorporation of v/V to Voice results in affixal morphology.
+In an active clause, unvalued phi-features on Voice need to be valued by the external argument DP. Its merger is thus triggered by the phi-features and not by the feature Voice[\gsc{Agent}]. In a passive clause, Voice carries valued phi-features as in \cite{legate14} and the \gsc{Pass} feature. Feature checking between Voice and v/V spells out the appropriate participial morphology on V (in English), and incorporation of v/V to Voice results in affixal morphology.
 
 This is the basic architecture. Things get interesting when \cite{wurmbrandshimamura17} propose to incorporate restructuring into their theory. This happens if Voice is unvalued for the Voice feature, i.e.~gets merged without an \gsc{agent} or \gsc{pass} feature, in another sort of trivalent setup. The unvalued phi-features on Voice will then be valued by the higher agent/Voice. Importantly for this analysis, there is also a V feature on v which needs to be valued. There are two possibilities for how this is accomplished, each predicting a different kind of restructuring language (voice matching languages and default voice languages). Empirical details aside, the main contribution of this work to the general issue of Voice lies in bringing in considerations from long object movement and restructuring, motivating a series of agreement interactions between Voice, v, V and higher elements in the clause.
 \pex Features of Voice under the restructuring-inspired theory:
@@ -414,7 +419,7 @@ Broadly speaking, [D] regulates argument structure and the phi-features regulate
 %interplay of factors associated with ergativity, obligatory transitive verbs, and the featural EPP.
 
 	\subsection{Towards a uniform inventory}
-Where does this proliferation of recent theories leave us? When thinking whether the current proposal can be restated in terms of the approaches which do not assume trivalent Voice, the answer strikes me as negative. While many parts of the current approach are compatible with translation to phi-features, others are less so: the restriction enforced by {\vz} is not one that can be easily captured in terms of phi-features on Voice, unless it is specified that these features can only be valued by the \emph{internal} argument. Similarly, Unspecified Voice (or {\tkal} cannot be the deterministic spell-out of configurations which at times have phi-features valued by an external argument and at times are not valued (or are valued by the internal argument).
+Where does this proliferation of recent theories leave us? When thinking whether the current proposal can be restated in terms of the approaches which do not assume trivalent Voice, the answer strikes me as negative. While many parts of the current approach are compatible with translation to phi-features, others are less so: the restriction enforced by {\vz} is not one that can be easily captured in terms of phi-features on Voice, unless it is specified that these features can only be valued by the \emph{internal} argument. Similarly, Unspecified Voice (or {\tkal}) cannot be the deterministic spell-out of configurations which at times have phi-features valued by an external argument and at times are not valued (or are valued by the internal argument).
 
 Generally speaking, the question whether a unified account of all these Voice-related phenomena would be forthcoming is still open \citep[191ff12]{wurmbrandshimamura17}. The various approaches to the content of Voice have converged on [D] and phi-features being the most important pieces in the syntax, with various possible interactions with case and agreement. How much or how little of each is needed; what other possible values of Voice might be relevant; and what elements we expect to be overt are questions that will likely occupy syntacticians for some time to come.
 
@@ -424,9 +429,9 @@ Generally speaking, the question whether a unified account of all these Voice-re
 
 
 \section{Conclusion} \label{i:conc}
-This book set out to analyze the verbal system in Hebrew in a way that is formally explicit, internally consistent, and easily translatable to accounts implemented for other languages and phenomena. The basic idea was that a core vP can be modified by an agentive modifier (or not) and combined with a Voice head specified as [+D], specified [--D], or unspecified for [D]. As a result, what looks like templates and alternations between templates in Hebrew can be reduced to the interpretation of well-understood syntactic structures by the semantics and the phonology (fed by some idiosyncrasy associated with lexical roots). The templates have been decomposed.
+This book set out to analyze the verbal system in Hebrew in a way that is formally explicit, internally consistent, and easily translatable to accounts implemented for other languages and phenomena. The basic idea was that a core vP can be modified by an agentive modifier (or not) and combined with a Voice head specified as [\!+\!D], specified as [--D], or unspecified for [D]. As a result, what looks like templates and alternations between templates in Hebrew can be reduced to the interpretation of well-understood syntactic structures by the semantics and the phonology (fed by some idiosyncrasy associated with lexical roots). The templates have been decomposed.
 
-In my inherently biased view these goals have been reached; the generalizations, analyses and predictions of Part I were already summarized at the outset of this chapter. Where possible, the connection to the phonology was also elaborated on. And Part II laid out how I see this theory's place in the current landscape of theories investigating argument structure. I will conclude with some open questions for research mostly on Semitic, followed by a few final words.
+In my inherently biased view these goals have been reached; the generalizations, analyses and predictions of Part I were already summarized at the outset of this chapter. Where possible, the connection to the phonology was also elaborated on. And Part II laid out how I see this theory's place in the current landscape of theories investigating argument structure. I will conclude with some open questions for research, followed by a few final words.
 
 	\subsection{Open questions}
 The study of Hebrew does not conclude with this book, of course; even if everything I proposed were correct---which it is surely not---there would still remain many open questions for the study of this language and Semitic as a whole, not to mention argument structure in general. Here are a few of these.
@@ -434,17 +439,18 @@ The study of Hebrew does not conclude with this book, of course; even if everyth
 First, the data and generalizations. Even though I have tried to base my generalizations on as much data as possible, I was not always able to quantitatively examine the entire verbal lexicon of Hebrew. When this was possible, as with {\tnif} in Chapter~\ref{vz:tnif} or {\thif} in Chapter~\ref{vd:thif}, I have provided exact figures. But it is important to keep in mind that even these numbers cannot be considered authoritative, since the way I classify a given verb might be different than another analyst's. The trailblazing works of \cite{doron03} and \cite{arad05} make it clear just how much variation one can find between different roots; so when I suggest that verbs in {\thit} are unambiguous between readings whereas those in {\tnif} might be associated with different readings, the door is always open for counterexamples.
 
 This is particularly the case given that a few such observations are not predicted by the current system. I have no reason to offer for this difference between {\thit} and {\tnif}. Furthermore, {\tnif} verbs allow for passive readings but those in {\thit} do not. While I can encode this difference in the rules of semantic interpretations, I have not offered an explanation.
+%And in general, I have tried to be honest about those cases where the proposed analyses have obvious weaknesses or require extreme leaps of faith. 
 
-Zooming out even more, one major component of this system which has been relegated to arbitrary listing in this theory is the role of roots. Even though authors through the ages have emphasized that roots are simply idiosyncratic, a number of possible avenues for further exploration remain. Here and there I have noted places where the lexical semantics of the root seems to influence its place in a formal ontology. These include the pluractional events of {\tpie}, the divide between anticausatives and reflexives in {\thit}, the degree achievements of {\thif}, the change-of-state adjectival passives of Chapter~\ref{passn:adjpass} \citep[114]{kastner16phd}. It remains to be seen whether other cases can be attributed to the lexical semantics of the underlying event.
+Zooming out even more, one major component of this system which has been relegated to arbitrary listing in the current theory is the role of roots. Even though authors through the ages have emphasized that roots are simply idiosyncratic, a number of possible avenues for further exploration remain. Here and there I have noted places where the lexical semantics of the root seems to influence its place in a formal ontology. These include the pluractional events of {\tpie}, the divide between anticausatives and reflexives in {\thit}, the degree achievements of {\thif}, the change-of-state adjectival passives of Chapter~\ref{passn:adjpass}, and quite clearly the passives in {\tnif}. It remains to be seen whether other cases can be attributed to the lexical semantics of the underlying event  \citep[114]{kastner16phd}.
 
 Similarly, the question of root meaning in general is one we are only beginning to scratch the surface of. I will not belabor the point here, as it has recently come back to the fore; see \cite{harley14thlia} for a good starting point.
 %, recapping Aronoff's argument about the presumed futility of `road' and `to pickle' having the same root in Hebrew.
 \cite{kastnertucker19cup} outline the current state of affairs, concluding that beyond formal work, computational modeling might provide new insights into how roots cluster in an abstract n-dimensional space.
 
-Finally, looking beyond theoretical analyses, we would ideally like to know how well our formal accounts allow us to understand processing, neurophysiological behavior and acquisition. In all cases the level of formal analyses has been far more detailed than the level of granularity currently tracked in these allied fields. Nevertheless, \cite{kastneretal18} have attempted to generate predictions from this kind of decompositional approach in a neurolinguistic experiment on Hebrew, and the work of \cite{frostetal97}, \cite{fmdpmetal05jml}, \cite{deutschkuperman18}, and colleagues can facilitate further work probing more specific theories of roots. Hebrew is also no stranger to the developmental literature either (\citealt{berman82,berman93jcl,ashkenazietal16,ravidetaltilar,havronarnon17jcl}, a.m.o), but even there discussion based on contemporary theories has relied on formal specifics \citep{borer04,kastneradriaans17}. Yet.
+Finally, looking beyond theoretical analyses, we would ideally like to know how well our formal accounts allow us to understand processing, neurophysiological behavior and acquisition. In all cases the level of formal analyses has been far more detailed than the level of granularity currently tracked in these allied fields. Nevertheless, \cite{kastneretal18} have attempted to generate predictions from this kind of decompositional approach in a neurolinguistic experiment on Hebrew, and the work of \cite{frostetal97}, \cite{fmdpmetal05jml}, \cite{deutschkuperman18}, and colleagues can facilitate further work probing more specific theories of roots. Hebrew is no stranger to the developmental literature either (\citealt{berman82,berman93jcl,ashkenazietal16,ravidetaltilar,havronarnon17jcl}, a.m.o), but even there discussion based on contemporary theories has not relied on formal specifics \citep{borer04,kastneradriaans17}. Yet.
 
 	\subsection{Epilogue: From templates to heads}
-Morphological systems like the templatic system of Hebrew pose an immediate puzzle for formal analyses: the mapping between form and meaning is not one-to-one, with phonology, morphology, syntax and semantic intertwining in ways which seem to defy explanation. It has traditionally been assumed that each template is simply its own construction, and that relations hold -- sometimes -- between specific templates. This view, in which each template is in effect its own morpheme, is unsatisfactory, leaving more questions than answers. Why does a given template have the meanings it has, and not others? Why do two (or three, or four) templates stand in an ``alternation''? What does the morphology actually track?
+Morphological systems like the templatic system of Hebrew pose an immediate puzzle for formal analyses: the mapping between form and meaning is not one-to-one, with phonology, morphology, syntax and semantics intertwining in ways which seem to defy explanation. It has traditionally been assumed that each template is simply its own construction, and that relations hold -- sometimes -- between specific templates. This view, in which each template is in effect its own morpheme, is unsatisfactory, leaving more questions than answers. Why does a given template have the meanings it has, and not others? Why do two (or three, or four) templates stand in an ``alternation''? What does the morphology actually track?
 
 And so a new wave of analyses came, which in my mind were no less than visionary. These accounts attempted to decompose the templates and see what made them tick. Maya Arad's theory of Hebrew was explicit about how this can be done, but ultimately lacking because it had to rely on extrinsically listing alternations between semantic atoms which had no grounding in the morphology. Edit Doron's theory was explicit about how the semantic primitives might combine but lacked clear syntactic underpinnings, and furthermore was not fully committed to mapping these elements to the morphology. So we needed a modern morphophonemics of Hebrew, if you will.
 
