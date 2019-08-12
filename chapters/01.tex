@@ -71,6 +71,8 @@ Be that as it may, it is crucial that there is also some method to the madness. 
 
 Additionally, sometimes we can find alternations like in~(\ref{ex:intro-tkal})--(\ref{ex:intro-thif}). Certain templates alternate with some but not with others. \textbf{The second problem} of Semitic morphology is thus: what templates does a given template alternate with, and why?
 
+Granted, there is also a third problem: how can we tell which meaning is licensed by which root? That question deserves a monograph of its own, though I will try to flag ways in which it can be approached throughout the book.
+
 I believe the answers to these questions can be found once we abandon the notion of a ``template'' as some kind of morphological primitive. I propose here a decomposition of the template into functional heads in the syntax, one that is able to address both problems above. What this means is that we need to engage with what alternations are and how argument structure comes about.
 
 	\subsection{Argument structure}
@@ -106,6 +108,20 @@ Contemporary theories of argument structure often take as a starting point the `
 	\endgl
 \xe
 
+In other languages a ``causative alternation'' can be observed, where the causative variant is marked. The Japanese example in~(\nextx) exemplifies \citep[3]{oseki17nyu}.
+\pex
+	\a \begingl
+		\gla\rightcomment{(causative)}John-ga ringo-o koor-\textbf{as}-ta//
+		\glb John-\gsc{NOM} apple-\gsc{ACC} freeze-\gsc{CAUS}-\gsc{Past}//
+		\glft `John froze an apple.'//
+	\endgl
+	\a \begingl
+		\gla\rightcomment{(anticausative)}Ringo-ga koor-ta//
+		\glb apple-\gsc{NOM} freeze-\gsc{Past}//
+		\glft `An apple became frozen.'//
+	\endgl
+\xe
+
 Various syntactic and semantic questions arise in connection with these seemingly simple patterns, many of which have been explored in influential studies such as \cite{haspelmath93}, \cite{unaccusativity95}, \cite{schaefer08}, \cite{koontzgarboden09} and \cite{layering15}: what kind of morphological marking appears on the different variants? Is there a sense in which one is derived from the other, or do the two share a common base? Which predicates are marked as causative or anticausative crosslinguistically? 
 
 The degree of variation both within and across languages is substantial. However, most studies on argument structure have analyzed this aspect of the syntax-semantics interface through the lens of languages with relatively simple concatenative morphology. Each of these languages has contributed much to our understanding of argument structure, to be sure: the English labile alternation shines light on which predicates are likely to be marked in which way \citep{haspelmath93,unaccusativity95,koontzgarboden09}; the French, German and Spanish alternations bring in many aspects of cliticization, binding and agreement \citep{labelle08,schaefer08,cuervo14}; the Greek alternation shows consistent morphological marking for at least one class of predicates \citep{alexiadoudoron12,layering15}; and more recent work on Icelandic has further identified ways in which argument structure alternations can be correlated with morphological processes \citep{wood14nllt,wood15springer,wood16roots}. Yet this line of work has the drawback that these languages usually show only binary morphological distinctions, if any: either the causative variant is marked, or the anticausative one is marked (or neither is, as in the labile alternation). Three-way marking is a challenge which persists with some larger-scale typological surveys as well \citep{haspelmath93,arad05}.
@@ -116,8 +132,6 @@ The intuition guiding my analysis is that of \cite{schaefer08}, \cite{layering15
 This book provides a way of implementing the same idea in Hebrew. Now, I am by no means not the first to suggest that the templates be decomposed. Maya Arad and Edit Doron have both made seminal contributions to our understanding of these issues. But \cite{arad05} was torn between the need to acknowledge the idiosyncrasies of the system, on the one hand, and the need to encode the alternations, on the other hand. As a result, that theory had to implement conjugation classes in order to adequately describe which alternations exist. \cite{doron03} sidestepped the issue by providing a compositional semantics for the components making up the templates, but the result was that alternations could only be discussed in terms of their semantics, and not their morphology or syntax. What I propose is a way to get the alternations from contemporary syntactic assumptions.
 
 The two problems are addressed as follows. By building up specific syntactic structures we are able to easily explain what syntactic configurations and semantic interpretations arise for a given structure, as well as how this structure is spelled out; that spell-out is what we call the template. Instead of figuring out the many-to-many mapping between form and meaning, I map one structure deterministically to form and to meaning, thereby solving the first problem. And by adopting the idea that a core vP carries the basic meaning of a verb, we can then layer additional heads above it, regulating the introduction of an external argument. The majority of work is carried out by the head Voice, which introduces the external argument. This solves the second problem. A technical innovation lies with the syntactic feature [$\pm$D] that Voice might carry, hence the valence of Voice. But we will get to that soon enough.
-
-Granted, there is also a third problem: how can we tell which meaning is licensed by which root? That question deserves a monograph of its own, though I will try to flag ways in which it can be approached throughout the book.
 
 Part I of this book is comprised of case studies of the different templates, which together come to form the theory of trivalent Voice. Part II consists of two chapters situating this theory within contemporary theoretical debates.
 
@@ -355,7 +369,7 @@ A recurring question in discussions of argument structure regards the direction 
 	\a The vase broke.
 \xe
 
-In their ``layering'' approach to transitivity alternations, \cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP, (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material (Voice).
+In their ``layering'' approach to transitivity alternations, \cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material (Voice).\footnote{Marked anticausatives contain their own Voice layer but still have anticausative syntax and semantics, again because the core vP is the locus of the event. We will get to this in Chapter~\ref{chap:vz} and recap the specific implementation of the Layering approach in Chapter~\ref{chap:aas}.}
 \ex
 a. 
 \Tree
@@ -378,10 +392,10 @@ b. \Tree
 
 This view explains a range of facts about this alternation, chiefly that there is no dedicated direction of derivation which is marked by the morphology across languages. That is, while some languages mark the transitive variants, others mark the intransitive variants, and sometimes both variants are marked in the same language (as we have already seen for Hebrew). Even though there is much to say about which verbs or roots are marked in which way \citep{haspelmath93,unaccusativity95,arad05}, the grammar itself does not force derivation from one stem type to the other.
 
-In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core causative component of the vP is present even in the anticausative variants. For example, the underlined cause PPs in~(\nextx) are possible even with anticausatives, indicating that causation can take place even without an external argument \citep{alexiadouetal06,alexiadouetal06nels}.
+In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core causative component of the vP is present even in the anticausative variants. For example, there is no difference in event structure between causatives and anticausatives, indicating that Agents and Causes are not introduced in a separate event to the change of state. Furthermore, the Cause PPs in~(\nextx) are possible with anticausatives but Agents are not possible, indicating that causation can take place even without an external argument. Importantly, the causative component is not simply introduced by the preposition \emph{from} \citep[30]{alexiadouetal06,alexiadouetal06nels,layering15}.
 \pex
-	\a The flowers wilted \underline{from the heat}.
-	\a The window cracked \underline{from the pressure}.
+	\a The flowers wilted \{from the heat / *from the gardener\}.
+	\a The window cracked \{from the pressure / *from the worker\}.
 \xe
 
 In sum, while there is a causative core, an actual Cause argument can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate Agent. The causative alternation in English can be easily explained in these terms.
