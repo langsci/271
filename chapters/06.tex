@@ -409,7 +409,7 @@ a.& \root{axl} & axal 	& ate 	& neexal 	& was eaten 	& heexil 	& fed\\
 b.& \root{xʃb} & xaʃav 	& thought 	& nixʃav 	& was considered 	& hexʃiv 	& considered\\
 c.& \root{jda} & jada 	& knew 	& noda 	& was known 	& hodia 	&announced\\
 d.& \root{ktb} & katav 	& wrote 	& nixtav 	& was written 	& hextiv 	& dictated\\
-e.& \root{m{\ts}a} & matsa 	& found 	& nimtsa 	& was found 	& hemtsi 	& invented/disclosed\\
+e.& \root{m{\ts}a} & matsa 	& found 	& nimtsa 	& was found 	& hemtsi 	& invented\\
 f.& \root{sgr} & sagar 	& closed 	& nisgar 	& was closed 	& hesgir 	& extradited\\
 g.& \root{ark} & arax 	& edited 	& neerax 	& was edited 	& heerix 	& estimated\\
 h.& \root{pnj} & pana 	& faced 	& nifna 	& turned towards 	& hifna 	& directed towards\\
@@ -428,64 +428,65 @@ The most basic spell-out rules, to be revised immediately, are in~(\nextx). The 
 	\a {\vzs} \lra~{\tnif}
 \xe
 
-@@also Root1, Root2?@@
+We also know that some roots simply need to appear in a certain templates. In particular, some agentive verbs do not appear in {\thif} but in {\tkal} (Chapter~\ref{chap:vd}), and some unaccusative verbs do not appear in {\tnif} but in {\tkal} (Chapter~\ref{chap:vz}). Calling these simply \root{Root1}, \root{Root2} and so on for time being, we have the revised VIs in~(\nextx).\footnote{The listed roots could appear under either the marked or unmarked template in each case; I give them in the marked cases here.}
+
+\pex Revised VIs (to be revised further)
+	\a {\vds} \lra~$\begin{cases}
+		\text{\thif} & \text{/ \trace~\root{Root1}, \root{Root2}, \dots}\\
+		\text{\tkal} & \\
+		\end{cases}$
+	\a {\vzs} \lra~$\begin{cases}
+		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
+		\text{\tkal} & \\
+		\end{cases}$
+\xe
+
 
 		\subsubsection{Appl}
-The challenge posed by triplets is now clear: what about {\tkal}? Here the theory makes use of the applicative head Appl. The intuition is that when an alternation holds between {\tkal} and {\thif}, the latter form can be derived by using an Appl head.
+It is now that the challenge posed by triplets can be re-introduced. Here the theory makes use of the applicative head Appl. The intuition is that when an alternation holds between {\tkal} and {\thif}, the latter form can be derived by using an Appl head.
 
 Since I have spent some time discussing the relationship between {\tkal} and {\thif} in Chapter~\ref{chap:vd}, I will not repeat the details here; see the list in~(\ref{vd:ex:triplets-caus}) for some examples. This idea does receive empirical support from pairs like those in~(\ref{aas:ex:triplets}a) and~(\ref{aas:ex:triplets}d), where `feed' and `dictate' arguably take an additional argument when compared to `eat' and `write'. But it is a bit more of a stretch with cases like~(\ref{vd:ex:triplets-caus}e), \emph{daxak} `shoved' $\sim$ \emph{hedxik} `suppressed (emotions)'. In this case, the latter would have to involve some kind of low Appl-\gsc{INTO}, and it would be far less clear what it means to be an applied argument.
 
 In any case, if we were to accept this premise, we would have the revised VIs in~(\nextx), again not a final proposal.
 
-\pex Revisd VIs (pre-final version)
+\pex Revised VIs (pre-final version)
 	\a {\vds} \lra~$\begin{cases}
-		\text{\thif} & \text{/ \trace~Appl}\\
+		\text{\thif} & \text{/ \trace~\textbf{Appl}, \root{Root1}, \root{Root2}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
-	\a {\vzs} \lra~{\tnif}
+	\a {\vzs} \lra~$\begin{cases}
+		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
+		\text{\tkal} & \\
+		\end{cases}$
 \xe
 
+		\subsubsection{Additional diacritic}
+Finally, we need to account for the triplets that cannot be handled with Appl. Consider a triplet like~(\ref{aas:ex:triplets}e), where it is highly doubtful whether `invent' is an applicative version of `find'. Since this root appears with both templates, they cannot be differentiated by listing a \root{Root5} in both cases for {\vds}. Some additional diacritic (or feature) would be necessary, call it simply F like in~(\nextx).
 
-		\subsubsection{Roots and F}
+\pex \label{aas:ex:jim-vis}VIs in the Impoverishment alternative (final version)
+	\a {\vds} \lra~$\begin{cases}
+		\text{\thif} & \text{/ \trace~\textbf{F}, Appl, \root{Root1}, \root{Root2}, \dots}\\
+		\text{\tkal} & \\
+		\end{cases}$
+	\a {\vzs} \lra~$\begin{cases}
+		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
+		\text{\tkal} & \\
+		\end{cases}$
+\xe
 
-Not Appl: F/Triplets.
-Alternative, where F fills in the triplets that cannot be accounted for with Appl:
-Voice{D} \lra CAUS / \trace {root1, root2, Appl, F}
-				\lra SMPL / elsewhere
-Voice{} \lra MID / \trace {root1, root2}
-				\lra SMPL / elsewhere
-
-
-Impoverishment.
-	So for Jim it would need to be triggered by particular roots.
-	And only some of the time.
-	And it would have semantic effects.
-	So you'd need to say that it happens in the syntax-syntax, and not early in spell-out (before linearization etc) as Jim would want to continue assuming. And this is what people usually assume, e.g. Harbour (2003).
-	
 	
 	\subsection{Discussion} \label{aas:jim:cons}
-Impoverishment in the syntax proper and not early in Spell-Out where it would not have semantic effects (commonly assumed, e.g.~\citealt{harbour03}.
+I have tried to lay out this alternative as explicitly as possible so that its strengths and weaknesses may be evaluated. The main gain would be a theory-internal one: as mentioned at the outset, a theory with only {\vds} and {\vzs} preserves a specific conceptualization of Merge, one which is no longer available once Unspecified Voice enters the picture in a trivalent system. An additional benefit is a closer connection with extant theories insofar as Appl can be used in similar fashion.
 
+These strengths are outweighed by the weaknesses, in my eyes, and these are of conceptual as well as empirical nature. Starting with the use of Impoverishment, the following points arise. First, since the choice of template for a given root has syntactic an semantic effects, this means that Impoverishment would have to apply in the syntax proper and not early in Spell-Out, as commonly assumed, where it does not have semantic effects (e.g.~\citealt{harbour03}). Second, Impoverishment would need to be triggered by particular roots and not by marked features or feature combinations. Third, this would only happen some of the time, because many roots can appear in more than one template, e.g.~in both {\thif} and {\tkal}. This last point could be discounted due to the use of Appl, which is the next point of discussion.
 
-Appl
-Me: Which brings us back to heXYiZ, where either we need to really stretch the semantics of Appl heads to the point where in my view it becomes vacuous. And besides, you'd need to explain how come in many of these verbs the goal/benefactive is optional.
-	Jim: But this optionality is generally characteristic of Appl... cross-linguistically, it's actually hard to find cases where an indirect object is obligatory, and every language with IOs seems to more robustly have them optionally, English included. So what you are pointing at is that the template doesn't reflect the presence/absence of the argument; but this could be like clitic doubling in Spanish (where the clitic is there regardless of whether the argument is), at least formally. 
-	Me: Though if your theory allows for a very flexible semantic denotation and syntactic projection/licensing behavior of Appl, I'll need to see what other arguments remain (by which I mean I'm sure that literature is there, I just never looked at it properly).
-Jim: So maybe there's at least an expletive Appl some of the time, and a contentful Appl some of the time.
+As already mentioned, the definition of semantics of Appl might be stretched fairly thin, depending on which specific cases it should be applied to. In addition, even in the cases in which an applicative \emph{semantics} is easier to motivate, an applicative \emph{syntax} is only optional. That is to say, even in~(\ref{aas:ex:triplets}i) \emph{hekri} `read out', a Goal argument does not have to be expressed. This issue could be addressed by assuming that an expletive Appl$_{\text{\{\}}}$ is possible (\citealt{wood15springer}, p.c.) with no argument introduced in its specifier.
 
+As a last conceptual point, the system as a whole makes reference to an additional mechanism sorting out triplets, namely the diacritic/feature [F]. Taken together, this approach is increasingly reminiscent of \cite{arad05}, where the grammar lists conjugation classes a given root participates in. It is also noteworthy that Appl and [F] form a natural class somehow. 
 
-F/Triplets
-	Me: 1. I think you've covered most of your bases through this judicious use of [F]! But I worry we're teetering dangerously close to Arad-land now, where list the conjugation classes and templates that a given root participates in. I mean, why would Appl and F form a natural class?
-		Jim: True, but it sort of depends at least in part on what F turns out to be. (So, I'd have to understand the exceptions better to have a proposal here.) 
-		Jim: Deponents take a certain form of Voice without the semantics of that form. So you could have something systematic and then a diacritic for exceptions. However, if the exceptions are systematic then this shouldn't be the right way.
-			Me: Interestingly innovations are hardly ever in XaYaZ, but then not in heXYiZ either.
-		(Jim and I differ on how systematic deponents are, and this also depends on the language. Could be that they're fairly uniform in Icelandic but less so in Latin and Greek.)
-	Me: 2. Also, you can accidentally derive a labile alternation in XaYaZ. Say Root3 is not on either of the two lists. Then with Voice{D} it's XaYaZ and with Voice{} it's also XaYaZ.
+Finally, there is also one important empirical point: this alternative is able to derive labile alternations in {\tkal} as a general rule. Imagine a root \root{Root5} which is not on either of the lists for {\vds} and {\vzs} in~(\ref{aas:ex:jim-vis}). Then it would be spelled out as {\tkal} for {\vds}, but also as {\tkal} for {\vzs}. As noted in Chapter~\ref{vd:thif:inch}, this is not the case with any verb except for perhaps \emph{a{\ts}ar} `stopped'.
 
-
-
-
-Even though I have identified various reasons to doubt a Layering approach to Hebrew (whether implemented as in this section or Section~\ref{aas:hebrew}), it is important to acknowledge that not all of the explanations given here are particularly deep. For instance, I have implicitly assumed that all Hebrew verbs need Voice, in contrast to existing assumptions for certain verbs in English, German and Greek. This assumption raises the question of whether Voice should be obligatory for all verbs in all languages, a point leading us to the concluding remarks for this comparison.
+In conclusion, even though I have identified various reasons to doubt a Layering approach to Hebrew (whether implemented as in this section or as in Section~\ref{aas:hebrew}), it is important to acknowledge that not all of the explanations given here are particularly deep. For instance, I have implicitly assumed that all Hebrew verbs need Voice, in contrast to existing assumptions for certain verbs in English, German and Greek. This assumption raises the question of whether Voice should be obligatory for all verbs in all languages, a point leading us to the concluding remarks for this comparison.
 
 
 \section{Conclusion} \label{aas:conc}
