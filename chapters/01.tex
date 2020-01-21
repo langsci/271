@@ -129,7 +129,7 @@ The degree of variation both within and across languages is substantial. However
 	\subsection{Solving the two problems}
 The intuition guiding my analysis is that of \cite{schaefer08}, \cite{layering15} and related work: the alternations are not alternations at all. The grammar does not derive causative forms form inchoative ones, or anticausative forms from transitive ones. Rather, what happens is that both readings are derived from one core structure (technically a vP) with a causative component in the semantics. If we add an external argument, we get a transitive/causative verb; if we do not, we simply retain the basic event and have an anticausative verb on our hands.
 
-This book provides a way of implementing the same idea in Hebrew. Now, I am by no means not the first to suggest that the templates be decomposed. Maya Arad and Edit Doron have both made seminal contributions to our understanding of these issues. But \cite{arad05} was torn between the need to acknowledge the idiosyncrasies of the system, on the one hand, and the need to encode the alternations, on the other hand. As a result, that theory had to implement conjugation classes in order to adequately describe which alternations exist. \cite{doron03} sidestepped the issue by providing a compositional semantics for the components making up the templates, but the result was that alternations could only be discussed in terms of their semantics, and not their morphology or syntax. What I propose is a way to get the alternations from contemporary syntactic assumptions.
+This book provides a way of implementing the same idea in Hebrew. Now, I am by no means the first to suggest that the templates be decomposed. Maya Arad and Edit Doron have both made seminal contributions to our understanding of these issues. But \cite{arad05} was torn between the need to acknowledge the idiosyncrasies of the system, on the one hand, and the need to encode the alternations, on the other hand. As a result, that theory had to implement conjugation classes in order to adequately describe which alternations exist. \cite{doron03} sidestepped the issue by providing a compositional semantics for the components making up the templates, but the result was that alternations could only be discussed in terms of their semantics, and not their morphology or syntax. What I propose is a way to get the alternations from contemporary syntactic assumptions.
 
 The two problems are addressed as follows. By building up specific syntactic structures we are able to easily explain what syntactic configurations and semantic interpretations arise for a given structure, as well as how this structure is spelled out; that spell-out is what we call the template. Instead of figuring out the many-to-many mapping between form and meaning, I map one structure deterministically to form and to meaning, thereby solving the first problem. And by adopting the idea that a core vP carries the basic meaning of a verb, we can then layer additional heads above it, regulating the introduction of an external argument. The majority of work is carried out by the head Voice, which introduces the external argument. This solves the second problem. A technical innovation lies with the syntactic feature [$\pm$D] that Voice might carry, hence the valence of Voice. But we will get to that soon enough.
 
@@ -277,7 +277,7 @@ Taking these relationships into account requires a slight change in perspective.
 
 A few more pieces of research that capture generalizations important to this book deserve mention. The seminal work by \cite{berman78} underscored the semi-predictable nature of the templates. \citet[Ch.~3]{berman78}, in particular, made the point that the combination of root and template is neither fully regular nor completely idiosyncratic. Instead, she proposed a principle of ``lexical redundancy'' to regulate the system. According to this theory, each root has a ``basic form'' in some template from which other forms are derived. Yet this theory did not formalize the relations between the templates, arbitrarily selecting one as the ``basic form'' and the others as derived from it, for each root. Nevertheless, \citeauthor{berman78}'s clear description of the regularities and irregularities in the morphology of Hebrew laid the groundwork for later works such as \cite{doron03}, \cite{arad05}, \cite{borer13oup} and the current contribution.
 
-Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin99,ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. The syntactic-semantic aspects of this view were developed by \cite{reinhartsiloni05} and \cite{laks11,laks13morpho,laks14,laks18}. I refer to this idea as the ``stem-based approach'' and critique briefly it when relevant; if there is no consistent way of thinking about templates as morphemes then this view has few legs to stand on. See \cite{kastner17gjgl,kastner18nllt} for more pointed objections, and \cite{kastnertucker19cup} for a broader perspective.
+Alongside work that analyzed the syntactic and semantic features of roots and templates, other researchers have focused on the morphophonological properties of the system. The research program developed in a series of works by \cite{batel89,batel94} and \cite{ussishkin99,ussishkin00phd,ussishkin05}---credited by \cite{ussishkin00phd} at least in part to \cite{horvath81}---denies the existence of the root as an independent morpheme. Instead, all verbs are derived via phonological manipulation of surface forms from each other, rather than from an underlying root. The syntactic-semantic aspects of this view were developed by \cite{reinhartsiloni05} and \cite{laks11,laks13morpho,laks14,laks18}. I refer to this idea as the ``stem-based approach'' and critique it briefly when relevant; if there is no consistent way of thinking about templates as morphosyntactic primitives then this view has few legs to stand on. See \cite{kastner17gjgl,kastner18nllt} for more pointed objections, and \cite{kastnertucker19cup} for a broader perspective.
 
 Even before the stem-based approach took form, other Semitists explored the idea of a Semitic system which diverged from the traditional descriptions. \cite{schwarzwald73} doubted the productivity of both the root and the templates, making an early argument for frequency effects in the interpretation of different templates. On that view, it is only the high frequency verbs of the language that show reliable alternations between templates. These verbs lead us as analysts to postulate relationships between templates, though when one looks at less frequent verbs, transparent alternations are less likely to hold. Unlike the stem-based hypothesis, which eschewed roots and relied on the template as a morphological primitive, the proposal in \cite{schwarzwald73} kept the root but relegated the template to morphophonological limbo: salient in the grammar but not operative in the syntax. While this early formulation of a template-less idea is intriguing, it cannot be maintained in the face of wug studies in which speakers generate argument structure alternations between templates using nonce words \citep{berman93jcl,moorecantwell13}.
 
@@ -406,7 +406,7 @@ When syntactic structure is spelled-out, it is interpreted at LF (semantics) and
 		\subsubsection{Roots}
 I individuate roots based on their phonology (e.g.~\root{ktb} and \root{\gsc{arrive}}), but it is more accurate to think of them as pointers to phonological and semantic information \citep{harley14thlia,faust16,kastner18nllt}. Nevertheless, I will use the phonological shorthand for convenience.
 
-Despite the crucial role of roots in determining the reading of a word, I cannot provide a theory of root meaning here. Not every root can appear in every template, meaning that a root has to license the functional heads it combines with somehow \citep{harleynoyer00}. Exactly how this happens is left vague. Presumably, this licensing should be similar to the way that a root like \root{\gsc{assassinate}} requires Voice in English, but a root like \root{\gsc{arrive}} does not license Voice.
+Despite the crucial role of roots in determining the reading of a word, I cannot provide a theory of root meaning here. Not every root can appear in every template, meaning that a root has to license the functional heads it combines with somehow \citep{harleynoyer00}. Exactly how this happens is left vague. Presumably, this licensing should be similar to the way that a root like \root{\gsc{murder}} requires Voice in English, but a root like \root{\gsc{arrive}} does not license Voice.
 
 The idea that roots pick out meanings which are shared across forms will likewise not be formalized. I will be relatively comfortable talking about shared meaning in cases of alternations. In Chapter~\ref{voice:tpie} and in Chapter~\ref{vd:caus} I will discuss cases where the shared meaning is slightly less easy to pin down. Neither of these points is particular to Hebrew within root-based approaches like DM (and both require engaging more seriously with the lexical semantics literature), but they do appear more prominent because of the nature of the morphological system.
 
@@ -434,8 +434,8 @@ It may be the case that a morpheme has a number of contextual variants or \emph{
 This can be formalized as follows:
 \ex T[Past] \lra $\begin{cases}
 	\emph{\text{əd}} & / \trace ~ \text{[+cor --cont --son]} \\
-	d & / \trace~ \text{[+voice]} \\
-	t & \\
+	\text{\emph{d}} & / \trace~ \text{[+voice]} \\
+	\text{\emph{t}} & \\
 	\end{cases}$
 \xe
 
@@ -452,14 +452,23 @@ Similarly:
 \xe
 
 Some roots also supplete based on their environment. Here the context for allomorphy is not the phonological features of the local trigger but the syntactic features.
+%\pex
+%	\a \emph{one person}		
+%	\a \emph{many people}
+%\xe
 \pex
-	\a \emph{one person}		
-	\a \emph{many people}
+	\a \emph{go} (today)
+	\a \emph{went} (yesterday)
 \xe
 
-\ex  \gsc{PERSON}\footnote{Strictly speaking, the element to be spelled out should be something like \root{\gsc{PERSON}} in the context of the nominalizer n carrying a \gsc{SG}/\gsc{PL} feature.} \lra $\begin{cases}
-	person & / \trace~ \text{[\gsc{SG}]} \\
-	people & / \trace ~ \text{[\gsc{PL}]} \\
+%\ex  \gsc{PERSON}\footnote{Strictly speaking, the element to be spelled out should be something like \root{\gsc{PERSON}} in the context of the nominalizer n carrying a \gsc{SG}/\gsc{PL} feature.} \lra $\begin{cases}
+%	person & / \trace~ \text{[\gsc{SG}]} \\
+%	people & / \trace ~ \text{[\gsc{PL}]} \\
+%	\end{cases}$
+%\xe
+\ex  \gsc{go}\footnote{This is a simplified version for expository purposes. The element to be spelled out should be something like \root{\gsc{go}} in the context of the verbalizer v, in addition to phi-features.} \lra $\begin{cases}
+	\text{\emph{go}} & / \trace~ \text{[\gsc{PRES}]} \\
+	\text{\emph{went}} & / \trace ~ \text{[\gsc{PAST}]} \\
 	\end{cases}$
 \xe
 
@@ -470,9 +479,9 @@ Similarly for adjectives:
 	\a \emph{best}
 \xe
 \ex \gsc{GOOD} \lra $\begin{cases}
-	good & / \trace~ \text{[\gsc{NORM}]} \\
-	better & / \trace ~ \text{[\gsc{CMPR}]} \\
-	best & / \trace ~ \text{[\gsc{SPRL}]} \\
+	\text{\emph{good}} & / \trace~ \text{[\gsc{NORM}]} \\
+	\text{\emph{better}} & / \trace ~ \text{[\gsc{CMPR}]} \\
+	\text{\emph{best}} & / \trace ~ \text{[\gsc{SPRL}]} \\
 	\end{cases}$
 \xe
 
@@ -821,7 +830,7 @@ The table in~(\nextx) summarizes the syntactic, semantic and morphophonological 
 
 If this last part of the overview went by too quickly, the following chapters will guide us more smoothly through the empirical and theoretical landscape.
 
-Part I of the book is organized as follows. I discuss the template {\tkal}, Unspecified Voice, the template {\tpie} and {\va} in Chapter~\ref{chap:voice}. The templates {\tnif} and {\thit} and their particular head {\vz} are the topic of Chapter~\ref{chap:vz}. Chapter~\ref{chap:vd} discusses {\thif} and {\vd}. With this trivalent system established, Chapter~\ref{chap:passn} embeds these structures under passivizing, adjectivizing and nominalizing head, providing some cross-categorial context.
+Part I of the book is organized as follows. I discuss the template {\tkal}, Unspecified Voice, the template {\tpie} and {\va} in Chapter~\ref{chap:voice}. The templates {\tnif} and {\thit} and their particular head {\vz} are the topic of Chapter~\ref{chap:vz}. Chapter~\ref{chap:vd} discusses {\thif} and {\vd}. With this trivalent system established, Chapter~\ref{chap:passn} embeds these structures under passivizing, adjectivizing and nominalizing heads, providing some cross-categorial context.
 
 Part II provides a detailed comparison of the current theory with the ``layering'' theory in Chapter~\ref{chap:aas}. Chapter~\ref{chap:i} then summarizes with general considerations for the valence of Voice.
 
