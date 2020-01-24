@@ -334,7 +334,7 @@ The syntactic structure is transferred to the interfaces at Spell-Out, where it 
 
 Lexical information is stored in what is often called the Encyclopedia, a vaguely-defined warehouse of idiosyncratic information. To the extent that we understand the Encyclopedia, we assume that it is organized by root \citep{harley14thlia}.
 
-This architecture means that there are no stems (as such), no paradigms (as such) and no words (as such). None of these are primitives of the system. Some are epiphenomenal (like paradigms) and some can be more accurately specified as phonological/prosodic words or morphological words, depending on the definition \citep{embicknoyer01,gouskova20}; either way, this definition will be in terms of syntax or phonology, not in independent terms of morphology.
+This architecture means that there are no stems (as such), no paradigms (as such) and no words (as such). None of these are primitives of the system. Some are epiphenomenal (like paradigms) and some can be more accurately specified as phonological/prosodic words or morphological words, depending on the definition \citep{embicknoyer01,gouskova19jsl}; either way, this definition will be in terms of syntax or phonology, not in independent terms of morphology.
 
 I will not argue for any of these assumptions in this book, but to the extent that the results are convincing, they provide natural support for these assumptions and against stem-based (word-based) theories. Some finer details now follow.
 
@@ -401,7 +401,9 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 In sum, while there is a causative core, an actual Cause argument can only be introduced by additional structure; either in a cause-PP, or as an external argument in a higher projection; an additional layer, so to speak. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate Agent. The causative alternation in English can be easily explained in these terms.
 
 	\subsection{Interfaces} \label{intro:arch:inter}
-When syntactic structure is spelled-out, it is interpreted at LF (semantics) and PF (phonology). In general, compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. While I make repeated reference to semantic roles such as Agent, I do not assume that theta-roles are a primitive of the system. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
+When syntactic structure is spelled-out, it is interpreted at LF (semantics) and PF (phonology). The Trivalent approach shares with other current work a certain view of the so-called autonomy of syntax \citep{marantz13,wood15springer,woodmarantz17,myler17oup}. Essentially, the grammar (the syntax) is free to generate different syntactic structures, so long as these satisfy inherently syntactic requirements (for example Case licensing or feature valuation). The syntactic object must then still be interpreted by the interfaces at Spell-Out, at which point they can be said to interpret but also ``filter'' the output. At LF the semantic composition may or may not converge, and at PF the phonological calculation may or may not yield an optimal candidate. In both cases we may expect certain kinds of crosslinguistic variation.
+
+\label{r1:2:3a}Compositional semantics proceeds straightforwardly (the main operations are Functional Application and Event Identification, as mentioned above), as does linearization, prosodification and phonological evaluation. See the introductory chapters of \cite{wood15springer} or \cite{myler16mit} for additional details on the semantic composition. While I make repeated reference to semantic roles such as Agent, I do not assume that theta-roles are a primitive of the system. The phonological calculation may be implemented using Optimality Theory \citep{ot} as done in \cite{kastner18nllt}. Here are the other points that might require further elaboration.
 
 		\subsubsection{Roots}
 I individuate roots based on their phonology (e.g.~\root{ktb} and \root{\gsc{arrive}}), but it is more accurate to think of them as pointers to phonological and semantic information \citep{harley14thlia,faust16,kastner18nllt}. Nevertheless, I will use the phonological shorthand for convenience.
@@ -470,7 +472,7 @@ Some roots also supplete based on their environment. Here the context for allomo
 	\text{\emph{go}} & / \trace~ \text{[\gsc{PRES}]} \\
 	\text{\emph{went}} & / \trace ~ \text{[\gsc{PAST}]} \\
 	\end{cases}$
-\xe
+\xe\label{r1:1:4}
 
 Similarly for adjectives:
 \pex
