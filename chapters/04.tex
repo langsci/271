@@ -81,7 +81,7 @@ A few more alternations between an active verb in {\tkal} (transitive or non-cor
 	}
 \xe
 
-The most common way of characterizing these alternations informally is by saying that {\thif} is a causative version of {\tkal}. Yet what we see in actuality is that verbs in {\thif} are active, regardless of whether they alternate with an unaccusative verb in {\tkal}, a transitive verb in {\tkal}, or nothing in {\tkal}. A few examples of a the causative alternation in this template are given in~(\nextx a). Many verbs are also causative without alternating, as in~(\nextx b), and others are unergative,~(\nextx c).
+The most common way of characterizing these alternations informally is by saying that {\thif} is a causative version of {\tkal}. Yet what we see in actuality is that verbs in {\thif} are active, regardless of whether they alternate with an unaccusative verb in {\tkal}, a transitive verb in {\tkal}, or nothing in {\tkal}. A few examples of the causative alternation in this template are given in~(\nextx a). Many verbs are also causative without alternating, as in~(\nextx b), and others are unergative,~(\nextx c).
 \ex\label{vd:ex:alternations-heb-long}
 	\begin{tabular}{l|ll|ll|ll}
 	& \multicolumn{4}{c|}{anticausative/inchoative} & \multicolumn{2}{c}{active}\\
@@ -314,7 +314,7 @@ As a first step, I will assume that inchoatives in {\thif} are never derived dir
 \xe
 
 The structure is as in~(\nextx), covering both unergatives and unaccusatives.
-\ex
+\ex \label{ex:tree:vd-inch}
 	\scalebox{0.9}{
 	\Tree
  [.VoiceP
@@ -403,6 +403,8 @@ The full semantics for {\vd} then looks as in~(\nextx), without introducing a ca
 	\a \denote{\vd} = $\lambda$P.P / \trace~(v) n \hfill (v does not select the meaning)
 	\a \denote{\vd} = $\lambda$x$\lambda$e.Cause(x,e) or $\lambda$x$\lambda$e.Agent(x,e)
 \xe
+
+This formulation still suffers from a few potential problems, which I address in Section~\ref{vd:caus:pred}.
 
 		\subsubsection{Inchoatives: Derivation}
 Merging a DP in Spec,{\vd} will not do for the inchoatives since they are unaccusative. Allowing the internal argument to raise to the specifier and check the [D] feature there must also be ruled out because of the results of the VS diagnostic: it shows us that at least in some cases the internal argument must be allowed to remain low, (\ref{ex:vd:vs}).
@@ -493,10 +495,10 @@ Using {\thif} as the Vocabulary Item spelling out {\vd} is shorthand for a more 
 The relevant Vocabulary Items:
 \pex
 	\a \root{bʃl} \lra~\emph{bʃl}
-	\a 	\vd~\lra~\emph{he}, $\begin{cases}
-			\emph{i}\\
-			\emph{a} & \text{/ T[1st] \trace}
-			\end{cases}$
+	\a 	\vd~\lra~ $\begin{cases}
+			\text{\emph{he,a}} & \text{/ T[1st] \trace}\\
+			\text{\emph{he,i}}
+			\end{cases}$\label{r1:4:4}
 	\a 1\gsc{SG} \lra~\emph{ti} / \trace~Past
 	\a \gsc{3SG} \lra~{\zero} / \trace~Past
 \xe
@@ -941,7 +943,9 @@ According to the Pred alternative, denominal and de-adjectival verbs in this tem
 
 If we assume this analysis, we can then replace {\predd} with the generalized \emph{i*}$_{\text{[\!+\!D]}}$, which should have the same spell-out as {\vd}; again, see Chapter~\ref{i:i}.
 
-I do not have any strong reason to adopt or reject this proposal, although a main cause for concern would be the increased combinatorics associated with an additional head, in this case Pred: what about Unspecified Pred and {\predz}? Evidence for {\predz} is hard to establish, although Jim Wood (p.c.) suggests that constructions such as \emph{The wizard turned invisible to avoid being detected} or \emph{The fish turned red to impress its mate} could be the adjectival counterparts of figure reflexives (Chapter~\ref{vz:tnif:figrefl}), at least in English.
+Are there strong reasons to adopt or reject this proposal? On the one hand, we now have an explanation for why both embedded \emph{n} and embedded \emph{a} give {\thif} non-active semantics; the formulation in~(\ref{ex:vd:sem}) and~(\ref{ex:vd:sem-full}) makes this seem like an accident. The Pred analysis would also mean that {\vd} no longer needs to see both v and the embedded a/n in~(\ref{ex:tree:vd-inch}), a problematic situation in terms of locality constraints.
+
+On the other hand, a main cause for concern would be the increased combinatorics associated with an additional head, in this case Pred: what about Unspecified Pred and {\predz}? Evidence for {\predz} is hard to establish, although Jim Wood (p.c.) suggests that constructions such as \emph{The wizard turned invisible to avoid being detected} or \emph{The fish turned red to impress its mate} could be the adjectival counterparts of figure reflexives (Chapter~\ref{vz:tnif:figrefl}), at least in English.
 
 In addition, {\predd} would need to be morphologically conditioned by T over the intervening Voice head. But this issue does already arise for {\pz}, as discussed in Chapter~\ref{vz:pz:phono}.
 
@@ -1011,7 +1015,7 @@ In the current theory none of this machinery is required. Alternations are an in
 
 Importantly, I am not claiming that the current theory does away with all of the idiosyncratic listing that \citeauthor{arad05}'s had. As emphasized throughout this book, all theories need to list at some level which roots can combine with which functional heads/templates. But I hope it is clear why the current theory is to be preferred: beyond the empirical arguments I adduce, the overall view of the grammar is more streamlined, less stipulative, and much more in line with our theories of non-Semitic languages.
 
-A theory using conjugation classes needs to make reference to silent flavors of v (whereas the elements I have proposed are all overt). It can also encode virtually any alternation. That may well be too powerful but it does absolves the theory of the need to worry about the combinatorics of individual heads, which is a potential advantage over the current theory insofar as the behavior of {\vd} is concerned. Concretely, my account does not contain a principled answer to the question why {\vd} cannot attach to a [{\va} vP] -- this is possible, but I am not claiming that any template instantiates this combination. One possible answer is that a structure such as [{\vd} [{\va} vP]] would just entail an agentive reading, something that {\vd} is already compatible with, or a specific causative reading from among the kinds in~(\ref{vd:ex:triplets-caus}). Furthermore, the phonology of {\va} could in principle be impoverished under {\vd}. Under a functionalist view, {\va} and {\vd} do similar work. This kind of issue, however, is much more pressing when pointed right back at the conjugation class and morphemic accounts: why are these specifically the conjugation classes that exist and the templates that exist?
+A theory using conjugation classes needs to make reference to silent flavors of v (whereas the elements I have proposed are all overt). It can also encode virtually any alternation. That may well be too powerful but it does absolve the theory of the need to worry about the combinatorics of individual heads, which is a potential advantage over the current theory insofar as the behavior of {\vd} is concerned. Concretely, my account does not contain a principled answer to the question why {\vd} cannot attach to a [{\va} vP] -- this is possible, but I am not claiming that any template instantiates this combination. One possible answer is that a structure such as [{\vd} [{\va} vP]] would just entail an agentive reading, something that {\vd} is already compatible with, or a specific causative reading from among the kinds in~(\ref{vd:ex:triplets-caus}). Furthermore, the phonology of {\va} could in principle be impoverished under {\vd}. Under a functionalist view, {\va} and {\vd} do similar work. This kind of issue, however, is much more pressing when pointed right back at the conjugation class and morphemic accounts: why are these specifically the conjugation classes that exist and the templates that exist?
 
 	\subsection{Added structure} \label{vd:others:struct}
 A different alternative view might counter that {\vd} does not exist. On this view, verbs in {\thif} are not derived using {\vd} but by additional structure atop of regular, active Voice.
@@ -1055,7 +1059,7 @@ Another possible analysis of inchoatives is strictly morphological in nature. Un
   \a \vz~\lra~{\tnif}
 \xe
 
-One question which arises is whether we would like to postulate this rule for a list of just over 30 roots. Furthermore, the mystery would remain of why it is specifically {\thif} that houses inchoatives: why doesn't the rule in~(\lastx a) insert the form of any other template, such as {\tkal}, {\tnif} or {\tpie}? This solution is technically possible but conceptually unenlightening.
+One question which arises is whether we would like to postulate this rule for a list of just over 30 roots. Furthermore, the mystery would remain of why it is specifically {\thif} that houses inchoatives: why doesn't the rule in~(\lastx a) insert the form of any other template, such as {\tkal}, {\tnif} or {\tpie}? This solution is technically possible but conceptually unenlightening, and it postulates two homophonous VIs {\thif} (one spelling out {\vd} and one spelling out {\vz}).
 
 That being said, it does correctly predict that the roots to which this rule applies cannot surface in {\tnif}, only in {\thit}. The reason is that forms in {\tnif} are generated using {\vz}, but {\vz} is pronounced as {\thif}.
 \ex\label{ex:vd:allo-pred}
@@ -1149,7 +1153,7 @@ Taking the adjective \emph{ʃmen-a} `fat-\gsc{F.SG}', it is claimed to license c
   \a Inchoative:\\ \begingl
     \gla \underline{ha-xatula} \textbf{heʃmina} \emph{\{}kmo xazir / joter mi-xazir\emph{\}}//
     \glb the-cat fattened like pig {} more than-pig//
-    \glft `The cat grew as fast as a pig / fatter than a pig.'//
+    \glft `The cat grew as fat as a pig / fatter than a pig.'//
   \endgl
 
   \a Causative:\\ \begingl
