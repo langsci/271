@@ -28,16 +28,16 @@ My definition of a passive verb is given in~(\nextx). It is not meant to be cont
 	\a Formally, there is no external argument in Spec,VoiceP (or Spec,TP, for that matter) but there is an Agent role in the semantics.
 \xe
 
-I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicate passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicated passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
 
 The large literature suggests a number of characteristics of passives which can be used as diagnostics \citep{bakeretal89,sichel09,spathasetal15}, a few of which were already used in Chapter~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent~(\ref{ex:pass-by-en}), allow agent-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent and theme. Existential binding of the implicit agent means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
 \ex \label{ex:pass-by-en}The ship was sunk (by Bill).
 \xe
 \ex \label{ex:pass-adv-en}The ship was sunk deliberately.
 \xe
-\ex \label{ex:pass-pro-en}The EA$_i$ ship was sunk to PRO$_i$ collect the insurance.
+\ex \label{ex:pass-pro-en}EA$_i$ The ship was sunk to PRO$_i$ collect the insurance.
 \xe 
-\ex \label{ex:pass-dre-en}The EA$_i$ child$_{*i/j}$ was combed.
+\ex \label{ex:pass-dre-en}EA$_i$ The child$_{*i/j}$ was combed.
 \xe
 \pex \label{ex:pass-bind-en}
 	\a John$_i$ wants Mary to be seen (*by John$_i$).
@@ -272,7 +272,7 @@ These structures derive the syntactic and semantic generalizations, in that the 
 	\a {\vd} \lra
 	$\begin{cases}
 	\text{\emph{he,a}} & / \text{Pass \trace}\\
-	\text{\emph{he, i}} & / \text{\trace}\\
+	\text{\emph{he,i}} & / \text{\trace}\\
 	\end{cases}$
 	\a Pass \lra~[+high +round]$_{\text{Pass}}$
 \xe
@@ -297,7 +297,7 @@ What remains to be discussed is the combinatorics of Pass with the different Voi
 
 There is no overt morphological evidence for Pass combining with Unspecified Voice. As far as I can tell, this is a historical accident: classical Hebrew had a template encoding ``the passive of {\tkal}'', i.e. [Pass VoiceP]. \citet[120]{kastner16phd} speculates that in Modern Hebrew, Pass can only combine with structures which ``guarantee'' an external argument; these are~(\lastx b) and~(\lastx e), but not the others.
 
-It could also be suggested that what I have called the passive alloseme of {\vz} is in fact the spell-out of [Pass Voice]. But \cite{ahdoutkastner19nels} marshal a number of arguments against this possibility.
+It could also be suggested that what I have called the passive alloseme of {\vz} is in fact the spell-out of [Pass Voice]. But \cite{ahdoutkastner19nels} marshal a number of arguments against this possibility. First, Pass-passives (in {\tpua} and {\thif}) cannot ever undergo nominalization or form infinitives and imperatives \citep{kastnerzu17}, but {\vz}-passives can. And second, Pass has the predictable morphological properties mentioned above, while {\vz} is morphologically unrelated to other forms.\label{r1:5:4}
 
 
 \section{Adjectival passives} \label{passn:adjpass}
@@ -329,7 +329,7 @@ Adjectives can be distinguished according to whether they describe a stative cha
 
 In some cases the morphology indicates whether a certain form is stative or resultative: \emph{open} and \emph{molten} are stative, whereas \emph{opened} and \emph{melted} are resultative. In many cases, however, the form is ambiguous: \emph{closed}, \emph{fractured} and so on. The tests above distinguish ``simple'' adjectives from adjectives embedding an event. In \citeauthor{embick04li}'s analysis, the former are derived by adjectivizing a root, and the latter by adjectivizing an event (vP/VoiceP). \citeauthor{embick04li}'s resultatives thus fold in both ``target state'' and ``result state'' adjectival passives, a semantic distinction which can diagnosed by whether the adjectival passive can be modified by `still' \citep{kratzer00bls,alexiadouetal14}.
 
-Work since has investigated the kind of modifiers that can be attached to an adjectival passive \citep{meltzerasscher11,mcintyre13,alexiadouetal14,bruening14nllt,gehrkemarco14}. At least the following constructions are available for (resultative) adjectival passives in English, German, Hebrew and Spanish{. Agent implication is possible:}
+Work since has investigated the kind of modifiers that can be attached to an adjectival passive \citep{meltzerasscher11,mcintyre13,alexiadouetal14,bruening14nllt,gehrkemarco14}. At least the following constructions are available for (resultative) adjectival passives in English, German, Hebrew and Spanish{. Agent implication is not possible:}
 \pex
 	\a \ljudge{*} \emph{The door is \textbf{opened}, but no one has opened it}.
 	\a \ljudge{*} \begingl
@@ -338,7 +338,8 @@ Work since has investigated the kind of modifiers that can be attached to an adj
 		\glft `The coin has been sunk for a while, but nobody has sunk it.' \trailingcitation{(German, \citealt[124]{alexiadouetal14})}//
 	\endgl
 \xe
-{\emph{By}-phrases are possible only if their modification of the agent, and therefore of the event, is discernible by examining the end state. One can tell that an editor did good work but not that the editor was bored:}
+
+\emph{By}-phrases are possible only if their modification of the agent, and therefore of the event, is discernible by examining the end state. One can tell that an editor did good work but not that the editor was bored:
 \ex
 	\begingl
 		\gla ha-sefer \textbf{arux} {al jedej} orex {\cmark}metsujan / {\xmark}meʃoamam//
@@ -346,7 +347,8 @@ Work since has investigated the kind of modifiers that can be attached to an adj
 		\glft `The book was edited by an excellent/*bored editor.' \trailingcitation{(Hebrew, \citealt[823]{meltzerasscher11})}//
 	\endgl
 \xe
-{Similarly, instruments are possible only if their modification of the event can be discerned by examining the end state. The writing of a blue pencil is distinguished from that of other pencils but the writing of a pretty pencil is not} (though cf.~\citealt{mcintyre13} and \citealt{bruening14nllt}):
+
+Similarly, instruments are possible only if their modification of the event can be discerned by examining the end state. The writing of a blue pencil is distinguished from that of other pencils but the writing of a pretty pencil is not (though cf.~\citealt{mcintyre13} and \citealt{bruening14nllt}):
 \ex
 	\begingl
 		\gla ha-mixtav \textbf{katuv} be-iparon {\cmark}kaxol / {\xmark}jafe//
@@ -996,7 +998,7 @@ Simple nouns exist in various patterns in Hebrew. I assume that these patterns s
 	\end{minipage}
 \xe	
 
-To derive a CEN, in Hebrew as in other languages, we simply add little n above an existing VoiceP structure \citep{hazout95,engelhardt00}. Since my main interest is in the morphology and how it reflects the syntax and semantics, I do not engage with questions such as where the arguments are generated (as full DPs within vP, or base-generated as an operator with the full DP adjoined to the noun, like for internal arguments of adjectival passives).
+To derive a CEN, in Hebrew as in other languages, we simply add little n above an existing VoiceP structure \citep{hazout95,engelhardt00}. Since my main interest is in the morphology and how it reflects the syntax and semantics, I do not engage with questions such as where the arguments are generated (as full DPs within vP, or base-generated as an operator with the full DP adjoined to the noun, like for internal arguments of adjectival passives).\footnote{The nominalizer n might attach even higher for some constructions e.g.~[n TP] \citep{alexiadou17}. I do not explore larger structures like that one here; see \cite{wood20oup} for a recent review and synthesis of the question, \cite{kastner15lingua} on nominalization of entire clauses in Hebrew, and~\cite{kastnerzu17} on the incompability of n with Pass in Hebrew.}\label{r1:5:6}
 \ex {\emph{haʃmada} `destruction'}\\
 	\Tree
 	[.n
@@ -1150,9 +1152,9 @@ Few differences between templates have been noticed, having to do with variation
 
 
 \section{Conclusion} \label{passn:conc}
-This chapter analyzed cases in which the existing structures presented in the previous three chapters are embedded under the passive, adjectival and nominal heads that have been proposed elsewhere in the literature. The architectural bottom line is that a VoiceP can serve as the input to further derivation. If Pass, little a or little n are merged above it, the result is entirely predictable: a passive verb, an adjectival passive or a CEN. Adjectives and nominalizations have forced us to make the theory slightly weaker in that there exist independent adjectivizers and nominalizers which look like the existing templates. For example, there is evidence for a nominalizer n$_{\gsc{INTNS}}$ which has the same output as nominalizing an existing verb, [n \tpie]. This result seems to be a necessary evil on the morphophonological side, leading to predictable results on the syntactic-semantic side. But nominalizations and adjectivizations of the root do not have internal structure and might carry different meaning than that of the homophonous complex form derived from the verb.
+This chapter analyzed cases in which the existing structures presented in the previous three chapters are embedded under the passive, adjectival and nominal heads that have been proposed elsewhere in the literature. The architectural bottom line is that a VoiceP can serve as the input to further derivation. If Pass, little a or little n are merged above it, the result is entirely predictable: a passive verb, an adjectival passive or a CEN. Adjectives and nominalizations have forced us to make the theory slightly weaker in that there exist independent adjectivizers and nominalizers which look like the existing templates. For example, we have seen evidence for a nominalizer n$_{\gsc{INTNS}}$ which has the same output as nominalizing an existing verb, [n \tpie]. All templates have such analogous simple nominalizations. This result seems to be a necessary evil on the morphophonological side, leading to predictable results on the syntactic-semantic side. But nominalizations and adjectivizations of the root do not have internal verbal structure (contra \citealt{borer13oup,borer14lingua}) and might carry different meaning than that of the homophonous complex form derived from the verb.
 
-This all seems like a welcome result, since we would not expect Hebrew to be radically different in terms of architecture than any other language. The fact that different functional heads can be merged with predictable results once the basic verb has been built, and that these derivational processes appear to be essentially identical in Hebrew and in other languages, is a strong argument in favor of the general approach.
+This all seems like a welcome result, since we would not expect Hebrew to be radically different in terms of architecture than any other language. The fact that different functional heads can be merged with predictable results once the basic verb has been built, and that these derivational processes appear to be essentially identical in Hebrew and in other languages, is a strong argument in favor of the general approach.  See \citealt{ahdout19phd} for related explorations of the nominal system.\label{r1:5:7}
 
 Before concluding, one last word ought to be said about \emph{denominal verbs}, i.e.~verbs derived from underlying nouns. In these cases a verb seems to be derived from another word instead of the root \citep{batel94,ussishkin99,ussishkin05,arad03}. In Hebrew, this phenomenon is evident in that the verb carries along affixal material that was attached to the ``base'' noun before it was verbalized, as in~(\ref{ex:denominal-verbs-intro}). The boldfaced affixes arguably attach only to nouns, making their appearance in the corresponding verb inexplicable unless the verb is itself denominal.
 \pex \label{ex:denominal-verbs-intro}Denominal verbs contain nominal affixes:
@@ -1166,7 +1168,7 @@ As \cite{arad03} points out, these denominal verbs have compositional semantics 
 	\a \emph{ixles} `populated' $<$ \emph{uxlusija} `population', \emph{ifjen} `charactrized' $<$ \emph{ofen} `facet', \emph{irgen} `organized' $<$ \emph{irgun} `organization'
 	\a \emph{iʃpez} `hospitalized' $\overset{?}{>}$ \emph{iʃpuz} `hospitalization', \emph{iʃrer} `ratified' $\overset{?}{>}$ \emph{iʃrur} `ratification', \emph{itxel} `rebooted' $\overset{?}{>}$ \emph{itxul} `reboot'.
 \xe
-In all of these cases except for \emph{izker} the \citeauthor{arad03}-style generalization holds. Whether these \emph{a}-nouns and \emph{i}-verbs have different structure than in the original \emph{m}-nouns and regular verbs discussed by \cite{arad03} is a potentially potentially interesting question. See also \cite{ouhalla16} for a different line of argumentation and \cite{brice16} for experimental evidence supporting root embedding.}
+In all of these cases except for \emph{izker} the \citeauthor{arad03}-style generalization holds. Whether these \emph{a}-nouns and \emph{i}-verbs have different structure than in the original \emph{m}-nouns and regular verbs discussed by \cite{arad03} is an interesting question for future work. See also \cite{ouhalla16} for a different line of argumentation and \cite{brice16} for experimental evidence supporting root embedding.}
 
 A substantial body of work considers denominal verbs to pose a problem for root-centric views of Semitic morphology such as the current one. \cite{batel94,batel03,batel17} suggests a denominal derivation for these verbs, one which is not possible in theories in which verbs can only be derived from roots. The argument is that some word-formation processes in Hebrew need to be analyzed in terms which allow word-like inputs to subsequent word formation, and hence all word formation is based on words (or stems) and not roots. Yet there are two problems with this view. First, no word-based analysis has shown that a root-based analysis is unable to capture the same patterns when allowing word-based derivation as well, whereas root-based analyses have been able to show the inadequacy of word-based analyses \citep{kastner18nllt}. The second issue is even more general. As much work \citep{arad03,arad05,doron03} has already argued, and as we have just seen in this chapter, this kind of objection is fundamentally misdirected. The syntactic approach inherent in DM accounts of Hebrew (not just the current one) obviates much of the debate on whether word-formation in the language is ``root-based'' or ``word-based'' because DM accounts have as a matter of theoretical hypothesis the notion that word-formation takes as input whatever the syntax can generate \citep{kastnertucker19cup}. We have seen in this chapter that the syntax can passivize, nominalize or adjectivize complex constituents regardless of the language. Taking this as a given, it is not surprising that denominal verbs show morphophonological and morphosyntactic properties that suggest that they are derived from an underlying verb -- these are precisely the sorts of effects that one would expect in a syntactic approach to word-building.
 
