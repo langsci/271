@@ -28,10 +28,14 @@
 
 %emphasis in glosses (boldface or italics?)
 \newcommand\glemph[1]{\textit{#1}}
+\newcommand\glemphu[1]{\underline{#1}}
+%emphasis in summaries
+\newcommand\hammer[1]{\begin{center}\fbox{\parbox{0.9\linewidth}{\centering \textsf{#1}}}\end{center}}
 
 % pifont
 \newcommand{\cmark}{\ding{51}}% 52
 \newcommand{\xmark}{\ding{55}}%
+\newcommand{\hand}{\ding{43}}
 
 \newcommand\trace{\rule[-0.5ex]{0.5cm}{.4pt}}
 \newcommand\zero{\O{}}
