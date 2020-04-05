@@ -1378,8 +1378,7 @@ Syntactic structure building proceeds as usual. We will see this by deriving the
  \begin{exe}
  \ex  
  \begin{xlist} 
- 	\ex  Core vP 
-      \scalebox{1}{
+ 	\ex  Core vP \\
 			\Tree
    	     [.vP
                 [.{\va} ]
@@ -1391,12 +1390,9 @@ Syntactic structure building proceeds as usual. We will see this by deriving the
                     [.DP ]
                 ]
              ]
-       }
 
 	
-	
- 	\ex  \emph{pirek} `dismantled' 
-	        \scalebox{1}{
+ 	\ex  \emph{pirek} `dismantled' \\
 				\Tree
 		        [.VoiceP
 		            [.DP ]
@@ -1414,9 +1410,8 @@ Syntactic structure building proceeds as usual. We will see this by deriving the
 			             ]
 		            ]
 		        ]
-		        }
- 	\ex  \emph{hitparek} `fell apart' 
-     \scalebox{1}{
+
+ 	\ex  \emph{hitparek} `fell apart' \\
 			\Tree
       [.VoiceP
           [.{---} ]
@@ -1433,9 +1428,7 @@ Syntactic structure building proceeds as usual. We will see this by deriving the
 	              ]
 	           ]
           ]
-      ]
-      }
-	
+      ]	
  \z
 \z 
 
@@ -1466,14 +1459,14 @@ When we put the pieces together, however, we find that we do not get \textbf{ant
 \ex \label{ex:vz:thit-impov}\denote{\va~\!} $\rightarrow$ {\zero} / {\vz} \trace~\{\root{XYZ} |  
  \root{XYZ} $\in$ 
  \\ \phantom{a} \hfill 
-	\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
+	\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{ptsts} `\gsc{EXPLODE}', \dots\}
  \z 
 The process can be likened to impoverishment \citep{bonet91,noyer98} in the semantic component (cf.~\citealt{nevins15roots}).
 
 Another way of encoding this information would have been to build it right back into the denotations of Voice, as in~(\nextx):
  \begin{exe}
-\ex  Addition to~(\blastx), to be rejected: 
-	\denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
+\ex  Addition to~(\blastx), to be rejected: \\
+	\denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{ptsts} `\gsc{EXPLODE}', \dots\}
  \z 
 The problem here is one of locality: the root is separated from {\vz} by {\va}. Existing theories of contextual allosemy maintain a strict linear adjacency requirement between trigger and alloseme \citep{marantz13,kastner16phd}. The kind of action-at-a-distance typical of roots licensing a head is more similar to impoverishment, which again happens at a distance.
 
@@ -1487,8 +1480,7 @@ The intuition behind the analysis of reflexives is as follows: reflexive verbs i
 The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) fleshes out the derivation of the reflexive verb in~(\ref{ex:vz:thit-refl}).
  \begin{exe}
 \ex  \label{ex:vz:thit-refl} 
-
-[] { \gll dani \glemph{hitraxets}.\\
+{ \gll dani \glemph{hitraxets}.\\
    Danny washed.\gsc{INTNS.\gsc{MID}}\\
  \glt `Danny washed (himself).' } 
 
@@ -1498,7 +1490,8 @@ The argument DP, `Danny', starts off as the internal argument. No external argum
 
  \begin{exe}
 \ex  \label{tree:vz:thit-refl} 
-\hspace{-7em}
+%\hspace{-7em}
+\fittable{
 \scalebox{0.8}{
 	\Tree
 	[.{TP\\λe.\emph{wash}(e) \& Theme(Danny,e) \& \underline{Agent(Danny,e}) \& Past(e)}
@@ -1528,6 +1521,7 @@ The argument DP, `Danny', starts off as the internal argument. No external argum
    	\draw[thick,->] (Obj) .. controls +(south:9) and +(south west:8) .. (SpecTP);
     \end{tikzpicture}
 }
+}
  \z 
 \footnotetext{The exact denotation of T is immaterial here.}
 
@@ -1540,7 +1534,6 @@ Like with figure reflexives, one would be justified in wondering whether other m
 What about clauses smaller than TP? Embedded clauses in Hebrew are either full CPs with an overt complementizer such as \emph{ʃe-} `that' or infinitival clauses. Hebrew verbs have an infinitival prefix, \emph{le-}, which presumably spells out T, indicating that the TP layer is intact.
  \begin{exe}
 \ex  
-	
 [] 	{ \gll josi ra{\ts}a \glemph{le-hitkaleax}\\
  	  Yossi wanted to-shower.\gsc{INTNS.MID}\\
  	\glt `Yossi wanted to take a shower.' } 
@@ -1559,7 +1552,7 @@ I can imagine two scenarios here, both promising but neither more convincing tha
  		\glt (int.~`Danny's shaving for ten minutes annoyed us') } 
 	
  	\ex    
-[\%] 		{ \gll \glemph{ha-histarkut} / \textbf{ha-hitaprut} he-mejumenet ʃel ha-jeled\\
+[\%] 		{ \gll \glemph{ha-histarkut} / \glemph{ha-hitaprut} he-mejumenet ʃel ha-jeled\\
  		  the-comb.\gsc{INTNS.MID.NMLZ} {} the-makeup.\gsc{INTNS.MID.NMLZ} the-skilled of the-boy\\
  		\glt (int.~`the boy's skilled combing / application of makeup') } 
 	
@@ -1600,9 +1593,7 @@ A verb like \emph{titnadev} `she will volunteer' is derived as follows (see \cit
         		]
         	]
         	]
- \z 
 
- \begin{exe}
  \ex \label{ex:titpane2}Vocabulary Items: 
  \begin{xlist} 
      \ex  \root{ndv} \lra~\emph{ndv} 
@@ -1610,9 +1601,7 @@ A verb like \emph{titnadev} `she will volunteer' is derived as follows (see \cit
      \ex  \vz~\lra~\emph{it},\emph{a,e} / T[Fut,\gsc{3SG.F}] {\trace} \va 
      \ex  3\gsc{SG.F} \lra~ \emph{t} / {\trace} T[Fut] 
  \z
-\z 
 
- \begin{exe}
 \ex  Phonology: 
  	t + /it-a,e-ndv/ $\rightarrow$ t + [it.na.dev] $\rightarrow$ [tit.na.dev]
  \z 
@@ -1624,14 +1613,14 @@ The final piece of the jigsaw is figure reflexives in {\thit}. At this point, it
  \ex  
  \begin{xlist} 
  	\ex    
-[] 	{ \gll bjartur hiʃtaxel la-xeder\\
+[] 	{ \gll bjartur \glemph{hiʃtaxel} la-xeder\\
  	  Bjartur squeezed.\gsc{INTNS.MID} to.the-room\\
  	\glt `Bjartur squeezed his way into the room.' } 
 	
  	\ex  
  \z
 \z 
-\hspace{-5em}
+\fittable{
 \scalebox{0.8}{
 \Tree
     [.{VoiceP\\ λe∃s.\underline{Agent(Bjartur,e)} \& \underline{Figure(Bjartur,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
@@ -1654,7 +1643,8 @@ The final piece of the jigsaw is figure reflexives in {\thit}. At this point, it
        ]
     ]
 }
- \z 
+}
+
 
 Having concluded the analytical part of this chapter, I summarize the findings in Section~\ref{vz:sum}. Some alternatives are mentioned in Section~\ref{vz:others}, followed by a bigger-picture view of where this fits within the monograph.
 
@@ -1663,20 +1653,20 @@ Having concluded the analytical part of this chapter, I summarize the findings i
 The generalizations about each of {\tnif} and {\thit} are repeated in~(\nextx)--(\anextx).
 \hammer{
  \begin{exe}
- \ex  \label{ex:gen-tnif-sum}\glemph{Generalizations about {\tnif}} 
+ \ex  \label{ex:gen-tnif-sum}\textbf{Generalizations about {\tnif}} 
  \begin{xlist} 
- 	\ex  \glemph{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration. 
- 	\ex  \glemph{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}. 
+ 	\ex  \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration. 
+ 	\ex  \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}. 
  \z
 \z 
 }
 
 \hammer{
  \begin{exe}
- \ex  \label{ex:gen-thit-sum}\glemph{Generalizations about {\thit}} 
+ \ex  \label{ex:gen-thit-sum}\textbf{Generalizations about {\thit}} 
  \begin{xlist} 
- 	\ex  \glemph{Configurations:} Verbs appear in unaccusative, figure reflexive and reflexive structures; but not in a simple transitive configuration. 
- 	\ex  \glemph{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}. 
+ 	\ex  \textbf{Configurations:} Verbs appear in unaccusative, figure reflexive and reflexive structures; but not in a simple transitive configuration. 
+ 	\ex  \textbf{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}. 
  \z
 \z 
 }
@@ -1684,18 +1674,20 @@ The generalizations about each of {\tnif} and {\thit} are repeated in~(\nextx)--
 Remember, however, that ``template'' is a descriptive term for certain morphophonological forms. The traditional view is that a template is a morphological primitive with its own uniform phonology, syntax and semantics. The assumptions in this book are different: verbs are built up syntactically, and it could be that some structures end up with similar or even identical morphology. But the real distinction is between syntactic structures (and their interpretation). The anticausatives and figure reflexives that share the template {\tnif} are no more related syntactically than the English past tense verb and past participle sharing the suffix -\emph{ed}; perhaps there is an underlying similarity there, but it would need to be argued for.
 
 The summary table from the introductory section recaps:
- \begin{exe}
-\ex  \begin{tabularx}{\textwidth}{llcc} 
- \lsptoprule
-	\multicolumn{2}{c}{Construction}	& {\tnif}	& {\thit} \\\midrule
-\multirow{3}{*}{Non-active} & Anticausative	& {\vz}	& {\va}, {\vz}\\
-	& Inchoative & {\vz}	& {\va}, {\vz}\\
-	& Passive &	{\vz}	&	---\\\midrule
-Active & Figure reflexive	& {\pz}	& {\va}, {\pz}\\\midrule
-Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
-\lspbottomrule
- \end{tabularx}
- \z 
+\begin{table}
+	\begin{tabularx}{\textwidth}{llcc} 
+		\lsptoprule
+		\multicolumn{2}{c}{Construction}	& {\tnif}	& {\thit} \\\midrule
+		\multirow{3}{*}{Non-active} & Anticausative	& {\vz}	& {\va}, {\vz}\\
+		& Inchoative & {\vz}	& {\va}, {\vz}\\
+		& Passive &	{\vz}	&	---\\\tablevspace
+		Active & Figure reflexive	& {\pz}	& {\va}, {\pz}\\\tablevspace
+		Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Verbs with [--D].}
+	\label{tab:1-8:tnif}
+\end{table}
 
 It is not accurate to call {\tnif} a ``passive'' template, nor is {\thit} the ``reflexive'' template. These constructions are possible, but what is more important is the structures giving rise to them. In addition, the existence of figure reflexives has been documented and analyzed, providing support for a non-uniform analysis of superficially similar intransitive forms.
 
@@ -1717,17 +1709,17 @@ These two alternative theories are exemplified below using the three-way alterna
  \begin{xlist} 
  \ex   
 [] 	{ \gll ha-mar{\ts}a \glemph{kav'}-a et moed ha-bxina\\
- 	  the-lecturer.\gsc{F} \textbf{set.\gsc{SMPL}}-\gsc{F} \gsc{ACC} date.of the-exam\\
+ 	  the-lecturer.\gsc{F} set.\gsc{SMPL}-\gsc{F} \gsc{ACC} date.of the-exam\\
  	\glt `The lecturer set the exam date.' } 
 	
  \ex   
-[] 	{ \gll e\textesh{}et ro\textesh{} ha-mem\textesh{}ala \glemph{kib'}-a et maamad-a ba-xevra\\
- 	  wife.of head.of the-government \textbf{set.\gsc{INTNS}}-\gsc{F} \gsc{ACC} standing-hers in.the-society\\
+[] 	{ \gll eʃet roʃ ha-memʃala \glemph{kib'}-a et maamad-a ba-xevra\\
+ 	  wife.of head.of the-government set.\gsc{INTNS}-\gsc{F} \gsc{ACC} standing-hers in.the-society\\
  	\glt `The Prime Minister's wife cemented her place in society.' } 
 	
  \ex   
-[] 	{ \gll maamad e\textesh{}et ro\textesh{} ha-mem\textesh{}ala \glemph{hitkabea} ba-xevra\\
- 	  standing.of wife.of head.of the-government \textbf{set.\gsc{INTNS.MID}} in.the-society\\
+[] 	{ \gll maamad eʃet roʃ ha-memʃala \glemph{hitkabea} ba-xevra\\
+ 	  standing.of wife.of head.of the-government set.\gsc{INTNS.MID} in.the-society\\
  	\glt `The Prime Minister's wife status in society was established.' } 
 	
  \z
@@ -1753,7 +1745,7 @@ In the Trivalent theory, this three-way alternation is built on the core vP. Mer
 						]
 					]
 				]			
- 		\ex  \emph{kibea} `cemented': 
+ 		\ex  \emph{kibea} `cemented': \\
 				\Tree
 				[.VoiceP
 					[.EA ]
@@ -1771,7 +1763,7 @@ In the Trivalent theory, this three-way alternation is built on the core vP. Mer
 						]
 					]
 				]
- 		\ex  \emph{hitkabea} `was cemented': 
+ 		\ex  \emph{hitkabea} `was cemented': \\
 				\Tree
 				[.VoiceP
 					[.EA ]
@@ -1800,7 +1792,7 @@ Let us see how the alternations in~(\ref{ex:to-derive}) are derived. In this the
  \begin{exe}
  \ex  \label{tree:to-derive-doron} 
  \begin{xlist} 
- 	\ex  \emph{kava} `set': 
+ 	\ex  \emph{kava} `set': \\
 		\Tree
 		[.
 			[.EA ]
@@ -1812,7 +1804,7 @@ Let us see how the alternations in~(\ref{ex:to-derive}) are derived. In this the
 				]
 			]
 		]
- 	\ex 	\emph{kibea} `cemented': 
+ 	\ex 	\emph{kibea} `cemented': \\
 		\Tree
 		[.
 			[.EA ]
@@ -1851,7 +1843,7 @@ On the empirical side more concretely, the morphosemantic theory did not engage 
 A similar problem arises when \citet[60]{doron03} derives reflexives in {\thit} by assuming that a head \gsc{MID} assigns the Agent role for this root. This explains why \emph{histager} `secluded himself' is agentive, hence reflexive. However, if the only relevant elements are {\vz} and the root, then a verb in the same root in {\tnif} (where I have {\vz} and \citealt{doron03} has \gsc{MID}) is also predicted to be agentive. This expectation is incorrect: \emph{nisgar} `closed' is unaccusative. That analysis is almost a mirror image of the one presented here: while I let {\va} add agentivity to a structure with \vz, thereby deriving reflexives, the morphosemantic account invokes added agentivity for certain roots, bypassing the syntax in ways that lead to false predictions.
 
 While each part of this problem could be overcome on its own, the system as a whole has little to say about the unaccusative (for anticausatives) and unergative (for reflexives) characteristics of verbs in {\thit}, since it is not based strictly in the syntax. I conclude, then, that ``templates'' are the by-product of functional heads combining in the syntax in systematic ways, in support of the general system developed in this book. Where we have made progress is by flipping one of the assumptions on its head: that the primitives have strict syntactic content and flexible semantic content, rather than strict semantic content and unclear syntactic content.
-
+%%%
 	\subsection{Templates as morphemic elements} \label{vz:others:morph}
 The most explicit analysis other than \citeauthor{doron03}'s with which the Trivalent proposal can be contrasted is the foundational work by \cite{arad03,arad05}. Unlike \citeauthor{doron03}'s work and the current proposal, \cite{arad05}'s work attempted to scale back some of the structural commitments about alternations.
 
