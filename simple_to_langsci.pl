@@ -13,6 +13,7 @@ open(my $fh, "<", $filename) or die "Cannot open file $filename";
 open(my $outfh, ">", $outfile) or die "Cannot open file $outfile";
 
 my $openExample = 0;
+my $judgeMark = "";
 my $rightComm = "";
 
 #my $TABULARSTART = '\t\\begin\{tabularx\}';
@@ -29,7 +30,7 @@ while (my $line = <$fh>) {
 		}
 		elsif ($line =~ /(\s*?)\Q\a\E/) {
 			$line =~ s/(\s*?)\Q\a\E(.*?)(\\\\)?$/ $1\\ex $2 /;
-			$line =~ s/(\s*?)\Q\a\E(.*?)(\\\\)?$/ $1\\ex \{ $2 /; #open bracket for judgement
+			# $line =~ s/(\s*?)\Q\a\E(.*?)(\\\\)?$/ $1\\ex \{ $2 /; #open bracket for judgement
 		}
 	}
 	elsif ($line =~ /\Q\pex\E/) {
@@ -40,7 +41,7 @@ while (my $line = <$fh>) {
 	elsif ($line =~ /\Q\ex\E/) {
 		#$line =~ s/(\s*?)\Q\ex\E/ $1\\ea /;
 		$line =~ s/(\s*?)\Q\ex\E(.*?)(\\\\)?$/ $1\\begin\{exe\}\n\\ex $2 /;
-#		$line =~ s/(\s*?)\Q\ex\E(.*?)(\\\\)?$/ $1\\begin\{exe\}\n\\ex \{ $2 /; #open bracket for judgement
+		# $line =~ s/(\s*?)\Q\ex\E(.*?)(\\\\)?$/ $1\\begin\{exe\}\n\\ex \{ $2 /; #open bracket for judgement
 	}
 	
 	$line =~ s/(\s*?)\Q\xe\E/ $1\\z /; 
@@ -62,21 +63,26 @@ while (my $line = <$fh>) {
 		$rightComm = "";
 	}
 	#$line =~ s/^(.*?)\\rightcomment\{(.*?)\}(.*)$/$1$3 \\jambox\{$2\}/;
-		
+
+	# judgments
+	if ($line =~ /\\ljudge\{(.*?)\}/) {
+		$judgeMark = $1;
+		$line =~ s/\\ljudge\{(.*?)\}//;
+	}
+	if ($line =~ /(\s*)\Q\gla\E(.*)/) {
+		$line = "[".$judgeMark."] ".$1."{ \\gll".$2."\n";
+		$judgeMark = "";
+	}
+	
 	# clean up
-	$line =~ s/(\s*?)\Q\gla\E/ $1\\gll /;
+	# $line =~ s/(\s*?)\Q\gla\E/ $1\\gll /;	
 	$line =~ s/(\s*?)\Q\glb\E/ $1 /;
 	$line =~ s/(\s*?)\Q\glft\E(.*)\/\// $1\\glt$2 \} /; # close judgment bracket
 	#$line =~ sm= // = \\ =;
 	$line =~ s/\/\//\\\\/;
 	$line =~ s/\Q\begingl\E//;
 	$line =~ s/\Q\endgl\E//;
-	
-	# judgments
-	if ($line =~ /\\ljudge/) {
-		$line =~ s/\{(\s*)\\ljudge\s*?\{(.*?)\}/$1\[$2\]\{/;
-	}
-	
+		
 	# trailingcitation
 	$line =~ s/(.*?)\\trailingcitation\{(.*?)\}(.*)/$1 \\hfill $2$3/;
 	
