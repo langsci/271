@@ -1,9 +1,8 @@
 \chapter{Passives and nominalizations}
 \label{chap:passn}
 
-The three preceding chapters introduced a system of Voice heads which, at present, has only been proposed for argument structure alternations in Hebrew (the next two chapters consider whether other languages should be analyzed similarly). Recapping Chapters~\ref{chap:voice}--\ref{chap:vd}, there are seven distinct possibilities for verbal forms (five non-passive templates), summarized in~(\nextx).
- \begin{exe}
-\ex  
+The three preceding chapters introduced a system of Voice heads which, at present, has only been proposed for argument structure alternations in Hebrew (the next two chapters consider whether other languages should be analyzed similarly). Recapping Chapters~\ref{chap:voice}--\ref{chap:vd}, there are seven distinct possibilities for verbal forms (five non-passive templates), summarized in Table~\ref{tab:5-1:overview}.
+\begin{table}
 \begin{tabularx}{\textwidth}{llll}
  \lsptoprule
 Voice	&		&	&	\tkal\\
@@ -15,7 +14,10 @@ Voice	&		&	{\pz} & \tnif\\
 Voice	&	\va	&	\pz	& \thit\\
 \lspbottomrule
  \end{tabularx}
- \z 
+	\caption{Seven combinations of functional heads so far.}
+	\label{tab:5-1:overview}
+\end{table}
+
 But argument structure exists beyond just the verbal domain: some nominals and adjectives have arguments too, and in Hebrew in particular, the morphological history of some derived forms is clearly verbal. The question to be examined here is, how well does the Trivalent theory predict behavior in derived forms?
 
 In this chapter I look into three constructions whose behavior is generally well understood: verbal passives, adjectival passives and nominalizations. I say ``well understood'' but of course implementations differ, as do some theoretical views. The scope of the current chapter is limited: I take the theory developed thus far and essentially see what happens when the different VoicePs are embedded in additional structure. Where I believe the results do bear on current debates, I highlight this, but otherwise the focus is on showing how, once the ``exotic'' VoiceP of a non-concatenative language has been built up, higher material combines in a fairly transparent fashion syntactically, semantically and phonologically.
@@ -39,17 +41,13 @@ I would like to clarify right off the bat that what is often descriptively calle
 The large literature suggests a number of characteristics of passives which can be used as diagnostics \citep{bakeretal89,sichel09,spathasetal15}, a few of which were already used in Chapter~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent~(\ref{ex:pass-by-en}), allow agent-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent and theme. Existential binding of the implicit agent means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
  \begin{exe}
 \ex  \label{ex:pass-by-en}The ship was sunk (by Bill). 
- \z 
- \begin{exe}
+
 \ex  \label{ex:pass-adv-en}The ship was sunk deliberately. 
- \z 
- \begin{exe}
+
 \ex  \label{ex:pass-pro-en}EA$_i$ The ship was sunk to PRO$_i$ collect the insurance. 
- \z  
- \begin{exe}
+
 \ex  \label{ex:pass-dre-en}EA$_i$ The child$_{*i/j}$ was combed. 
- \z 
- \begin{exe}
+
  \ex  \label{ex:pass-bind-en} 
  \begin{xlist} 
  	\ex  Mary$_i$ wants John to be seen (*by Mary$_i$). 
@@ -66,17 +64,15 @@ In the \textbf{semantics}, Pass likewise brings about existential closure over a
 This denotation is identical to what I suggested for the passive alloseme of {\vz} in Chapter~\ref{vz:vz:sem}, (\nextx).
  \begin{exe}
 \ex  \label{ex:pass-sem}\denote{\vz}\phantom{.} = $\begin{cases} 
-		\text{a.} \lambda P \lambda e  \begin{exe}
-\ex ists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}} 
-		\text{b.} \lambda P$_{<s,t>}$.P & \\
+		\text{a.} \lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}} \\
+		\text{b.} \lambda P_{<s,t>}.P & \\
 		\end{cases}$
  \z 
 
 An alternative semantics is to force Voice to choose an agent-less alloseme in the context of Pass, and then let Pass introduce an (existentially closed off) agent itself. I note this possibility for completeness.
  \begin{exe}
 \ex  \denote{Voice} = $\lambda$P.P / Pass \trace 
- \z 
- \begin{exe}
+
 \ex  \denote{Pass} = $\lambda$P$\lambda$e$\exists$x.P(e) \& Agent(x,e) 
  \z 
 
@@ -106,36 +102,29 @@ I use {\tpua} and {\thuf} interchangeably here since there does not seem to be a
 Hebrew passives pass the standard tests above. The \emph{by}-phrase can be seen in~(\lastx) and the rest are given below: agent-oriented adverbs~(\ref{ex:pass-adv-he}), control into adjunct clauses~(\ref{ex:pass-pro-he}), disjoint reference effects~(\ref{ex:pass-dre-he}) and existential binding of the implicit agent~(\ref{ex:pass-bind-he}).
  \begin{exe}
 \ex  \label{ex:pass-adv-he}  
-[] 	{ \gll ha-sfina \glemph{hutbea} \glemphu{be-jodin}\\
+	{ \gll ha-sfina \glemph{hutbea} \glemphu{be-jodin}\\
  	  the-ship sank.\gsc{CAUS.PASS} in-cognizance\\
  	\glt `The ship was sunk deliberately.' } 
 	
- \z 
- \begin{exe}
 \ex  \label{ex:pass-pro-he}  
-[] 	{ \gll EA$_i$ ha-sfina \glemph{hutbea} kedej PRO$_i$ lekabel et ha-bituax\\
+ 	{ \gll EA$_i$ ha-sfina \glemph{hutbea} kedej PRO$_i$ lekabel et ha-bituax\\
  	  {} the-ship sank.\gsc{CAUS.PASS} in.order.to {} to.receive \gsc{ACC} the-insurance\\
  	\glt `The ship was sunk to collect the insurance.' } 
 	
- \z  
- \begin{exe}
 \ex  \label{ex:pass-dre-he} 
-	
-[] 	{ \gll EA$_i$ ha-jeled$_{*i/j}$ \glemph{sorak}\\
+		{ \gll EA$_i$ ha-jeled$_{*i/j}$ \glemph{sorak}\\
  	  {} the-boy combed.\gsc{INTNS.PASS}\\
  	\glt `The boy was combed.' } 
 	
- \z 
- \begin{exe}
  \ex  \label{ex:pass-bind-he} 
  \begin{xlist} 
  	\ex   
-[] 		{ \gll dana$_i$ ro{\ts}a ʃe-ha-jeled \glemph{jesorak} (*al-jedej dana$_i$)\\
+		{ \gll dana$_i$ ro{\ts}a ʃe-ha-jeled \glemph{jesorak} (*al-jedej dana$_i$)\\
  		  Dana wants that-the-boy will.comb.\gsc{INTNS.PASS} by Dana\\
  		\glt `Dana wants the boy to be combed (*by Dana$_i$)'. } 
 		
  	\ex   
-[] 		{ \gll kol hore$_i$ ro{\ts}e ʃe-roʃ ha-memʃala \glemph{jesorak} (al-jedej miʃeu$_{*i/j}$)\\
+		{ \gll kol hore$_i$ ro{\ts}e ʃe-roʃ ha-memʃala \glemph{jesorak} (al-jedej miʃeu$_{*i/j}$)\\
  		  every parent wants that-head.of the-government will.comb.\gsc{INTNS.PASS} by someone\\
  		\glt `Every parent wants the Prime Minister to be combed (by someone else).' } 
 		
@@ -143,9 +132,9 @@ Hebrew passives pass the standard tests above. The \emph{by}-phrase can be seen 
 \z 
 
 
-It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are always the passivized version of an active verb in ``intensive'' {\tpie}, (\nextx a), and verbs in ``passive causative'' {\thuf} are always the passivized version of an active verb in ``causative'' {\thif}, (\nextx b).
- \begin{exe}
-\ex  Predictable alternations in the passive templates: 
+It is generally accepted that verbal passives in Hebrew are derived from an active counterpart via some operation of passivization in the syntax, be the framework syntactic \citep{doron03,alexiadoudoron12,borer13oup} or lexicalist \citep{reinhartsiloni05,ussishkin05,laks11}. The meaning of a verb in the passive is compositional and transparent in a way that non-passive templates are not. For example, verbs in the ``passive intensive'' {\tpua} are always the passivized version of an active verb in ``intensive'' {\tpie}, Table~\ref{tab:5-1:alt}a, and verbs in ``passive causative'' {\thuf} are always the passivized version of an active verb in ``causative'' {\thif}, row~b.
+
+\begin{table}
 	\begin{tabularx}{\textwidth}{llllll}
  \lsptoprule
 	& & \multicolumn{2}{c}{Active} & \multicolumn{2}{c}{Passive} \\\midrule
@@ -153,49 +142,52 @@ It is generally accepted that verbal passives in Hebrew are derived from an acti
 	b. & {\thif} $\sim$ {\thuf} & \emph{heʃmid} & `destroyed' & \emph{huʃmad} & `was destroyed'\\
 \lspbottomrule
  	\end{tabularx}
- \z 
+	\caption{Predictable alternations in the passive templates.}
+	\label{tab:5-1:alt}
+\end{table}
 
 A derivational view ``in the syntax'', according to which an existing active verb is passivized into a passive verb, accounts for two important facts about passives in Hebrew: first, there do not exist any passive verbs (that is, verbs in {\tpua} and {\thuf}) without an active base from which they are derived; and second, that passive verbs cannot mean anything other than passivization of the active form, where ``passivization'' means suppression of the external argument as defined above.
 
-Morphophonologically, verbs in the two passive templates have two important characteristics. The first, as mentioned above, is that they form predictable alternations. Verbs in {\tpua} are derived from active verbs in {\tpie}, while verbs in {\thuf} are derived from active verbs in {\thif}. The second characteristic had not been discussed explicitly before \cite{kastner18nllt}, although some aspects of it were noticed in a number of works \citep{ussishkin05,borer13oup}: the form of the stem uniformly has the vowels \emph{u-a}, regardless of underlying active template, root, tense or any other variable. This can be seen in the full paradigms below and stands in stark contrast to the active forms seen throughout this book.
- \begin{exe}
- \ex \label{table:pass-vowels} 
- \begin{xlist} 
- \ex  Past of passive \emph{gudal} `was raised' and \emph{hugdal} `was enlarged': 
-\begin{tabularx}{\textwidth}{lllll}
- \lsptoprule
- & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
- & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\midrule
-1 & g\textbf{u}d\textbf{a}l-ti & g\textbf{u}d\textbf{a}l-nu		& h\textbf{u}gd\textbf{a}l-ti & h\textbf{u}gd\textbf{a}l-nu\\
-2M & g\textbf{u}d\textbf{a}l-ta & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-ta & h\textbf{u}gd\textbf{a}l-tem\\
-2F & g\textbf{u}d\textbf{a}l-t & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-t & h\textbf{u}gd\textbf{a}l-tem\\
-3M & g\textbf{u}d\textbf{a}l & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\textbf{a}l & h\textbf{u}gd\del{\textbf{a}}el-{u}\\
-3F & g\textbf{u}d\del{\textbf{a}}l-{a} & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\del{\textbf{a}}el-{a} & h\textbf{u}gd\del{\textbf{a}}el-{u}
-\lspbottomrule
- \end{tabularx}
+Morphophonologically, verbs in the two passive templates have two important characteristics. The first, as mentioned above, is that they form predictable alternations. Verbs in {\tpua} are derived from active verbs in {\tpie}, while verbs in {\thuf} are derived from active verbs in {\thif}. The second characteristic had not been discussed explicitly before \cite{kastner18nllt}, although some aspects of it were noticed in a number of works \citep{ussishkin05,borer13oup}: the form of the stem uniformly has the vowels \emph{u-a}, regardless of underlying active template, root, tense or any other variable. This can be seen in the full paradigms in Tables~\ref{table:pass-vowels-past}--\ref{table:pass-vowels-fut} and stands in stark contrast to the active forms seen throughout this book.
+\begin{table}
+	\begin{tabularx}{\textwidth}{lllll}
+	 \lsptoprule
+	 & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
+	 & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\midrule
+	1 & g\textbf{u}d\textbf{a}l-ti & g\textbf{u}d\textbf{a}l-nu		& h\textbf{u}gd\textbf{a}l-ti & h\textbf{u}gd\textbf{a}l-nu\\
+	2M & g\textbf{u}d\textbf{a}l-ta & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-ta & h\textbf{u}gd\textbf{a}l-tem\\
+	2F & g\textbf{u}d\textbf{a}l-t & g\textbf{u}d\textbf{a}l-tem	& h\textbf{u}gd\textbf{a}l-t & h\textbf{u}gd\textbf{a}l-tem\\
+	3M & g\textbf{u}d\textbf{a}l & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\textbf{a}l & h\textbf{u}gd\del{\textbf{a}}el-{u}\\
+	3F & g\textbf{u}d\del{\textbf{a}}l-{a} & g\textbf{u}d\del{\textbf{a}}l-{u}	& h\textbf{u}gd\del{\textbf{a}}el-{a} & h\textbf{u}gd\del{\textbf{a}}el-{u} \\
+	\lspbottomrule
+	 \end{tabularx}
+	\caption{Past of passive \emph{gudal} `was raised' and \emph{hugdal} `was enlarged'.}
+	\label{table:pass-vowels-past} 
+\end{table}
 
- \ex  Future of passive \emph{jegudal} `will be raised' and \emph{jugdal} `will be enlarged': 
-\begin{tabularx}{\textwidth}{lllll}
- \lsptoprule
- & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
- & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\midrule
-1 & j-e-g\textbf{u}d\textbf{a}l & n-e-g\textbf{u}d\textbf{a}l		& j-\textbf{u}gd\textbf{a}l & n-\textbf{u}gd\textbf{a}l\\
-2M & t-e-g\textbf{u}d\textbf{a}l & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
-2F & t-e-g\textbf{u}d\del{\textbf{a}}l-{i} & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\del{\textbf{a}}el-{i} & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
-3M & j-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& j-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u}\\
-3F & t-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u}
-\lspbottomrule
- \end{tabularx}
- \z
-\z 
+\begin{table}
+	\begin{tabularx}{\textwidth}{lllll}
+	 \lsptoprule
+	 & \multicolumn{2}{c}{\tpua~\root{gdl}}	& \multicolumn{2}{c}{\thuf~\root{gdl}}\\
+	 & \gsc{SG} & \gsc{PL}	& \gsc{SG} & \gsc{PL}\\\midrule
+	1 & j-e-g\textbf{u}d\textbf{a}l & n-e-g\textbf{u}d\textbf{a}l		& j-\textbf{u}gd\textbf{a}l & n-\textbf{u}gd\textbf{a}l\\
+	2M & t-e-g\textbf{u}d\textbf{a}l & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+	2F & t-e-g\textbf{u}d\del{\textbf{a}}l-{i} & t-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\del{\textbf{a}}el-{i} & t-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+	3M & j-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& j-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u}\\
+	3F & t-e-g\textbf{u}d\textbf{a}l & j-e-g\textbf{u}d\del{\textbf{a}}l-{u}	& t-\textbf{u}gd\textbf{a}l & j-\textbf{u}gd\del{\textbf{a}}el-{u} \\
+	\lspbottomrule
+	 \end{tabularx}
+	\caption{Future of passive \emph{jegudal} `will be raised' and \emph{jugdal} `will be enlarged'.}
+	\label{table:pass-vowels-fut}
+\end{table}
 
 These are the last two verbal templates we will address as such, so here is a summary of their (identical) behavior.
 \hammer{
  \begin{exe}
- \ex  \label{ex:gen-pass}\glemph{Generalizations about {\tpua} and {\thuf}} 
+ \ex  \label{ex:gen-pass}\textbf{Generalizations about {\tpua} and {\thuf}} 
  \begin{xlist} 
- 	\ex  \glemph{Configurations:} Verbs appear in passive configurations only. 
- 	\ex  \glemph{Alternations:} Verbs in {\tpua} are always the passive version of an active verb in {\tpie}. Verbs in {\thuf} are always the passive version of an active verb in {\thif}. 
+ 	\ex  \textbf{Configurations:} Verbs appear in passive configurations only. 
+ 	\ex  \textbf{Alternations:} Verbs in {\tpua} are always the passive version of an active verb in {\tpie}. Verbs in {\thuf} are always the passive version of an active verb in {\thif}. 
  \z
 \z 
 }
@@ -274,10 +266,8 @@ These structures derive the syntactic and semantic generalizations, in that the 
     \draw[dotted,thick,->] (TAgr) .. controls +(south west:3) and +(south west:2) .. node{\LARGE $\times$}(Voice);
     \draw[dotted,thick,->] (Voice) .. controls +(south:1) and +(south:2) .. node{\LARGE $\times$}(TAgr);
     \end{tikzpicture}
- \z 
-\vskip 2em
-
- \begin{exe}
+\bigskip
+%%%
  \ex \label{ex:pass-vi} 
  \begin{xlist} 
  	\ex  \root{gdl} \lra~\emph{gdl} 
@@ -288,8 +278,7 @@ These structures derive the syntactic and semantic generalizations, in that the 
 	\end{cases}$
  	\ex  Pass \lra~[+high +round]$_{\text{Pass}}$ 
  \z
-\z 
- \begin{exe}
+
  \ex  
  \begin{xlist} 
  	\ex  Cycle 1 (VoiceP): /he,a/ + /gdl/ $\Rightarrow$ hegdal 
