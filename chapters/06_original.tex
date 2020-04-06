@@ -14,17 +14,13 @@ Many recent syntax-based theories of argument structure adopt two core assumptio
 This component is crucial for the current approach and was reviewed in Chapter~\ref{intro:arch:layering}. Its main parts are summarized here.
 
 In argument structure alternations such as~(\nextx), it is not accurate to think that the transitive variant is derived from the intransitive one, nor is it accurate to think that the intransitive variant is derived from the transitive one. 
- \begin{exe}
- \ex  
- \begin{xlist} 
- 	\ex  Mary broke the vase. 
- 	\ex  The vase broke. 
- \z
-\z 
+\pex
+	\a Mary broke the vase.
+	\a The vase broke.
+\xe
 
 \cite{layering15} propose that both variants have the same base: a core vP~(\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the transitive one, (\nextx b), then has the external argument added by additional functional material, namely Voice.
- \begin{exe}
-\ex  
+\ex
 a. 
 \Tree
 		[.vP
@@ -42,40 +38,37 @@ b. \Tree
 		]
 	]
 ]
- \z 
+\xe
 
 There is therefore no dedicated direction of derivation which is marked by the morphology across languages: some languages mark the transitive variants, others mark the intransitive variants, and sometimes both variants are marked in the same language (as we have already seen for Hebrew).
 
 In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core causative component of the vP is present even in the anticausative variants, like the anticausative examples in~(\nextx) which nevertheless have cause PPs.
- \begin{exe}
- \ex  
- \begin{xlist} 
- 	\ex  The flowers wilted \{from the heat / *from the gardener\}. 
- 	\ex  The window cracked \{from the pressure / *from the worker\}. 
- \z
-\z 
+\pex
+	\a The flowers wilted \{from the heat / *from the gardener\}.
+	\a The window cracked \{from the pressure / *from the worker\}.
+\xe
 
 The causative component is thereby dissociated from the external argument, the latter being introduced in an additional structural layer. Voice is the functional head enabling this layer, both in terms of licensing Spec,VoiceP in the syntax and in opening the thematic predicate agent. This much suffices to account for the English alternation.
 
 	\subsection{The transitivity of Voice} \label{aas:layering:features}
 The second tenet of Layering is informed by alternations in additional languages. The existence of marked anticausatives as in~(\nextx) raises the question of what their morphology is tracking in the syntax.
- \begin{exe}
-\ex   
-[] 	{ \gll Die T\"ur hat \glemphu{sich} ge\"offnet.\\
- 	  the door has \gsc{SICH} opened\\
- 	\glt `The door opened.' \hfill (German) } 
-	
- \z 
+\ex \begingl
+	\gla Die T\"ur hat \underline{sich} ge\"offnet.//
+	\glb the door has \gsc{SICH} opened//
+	\glft `The door opened.'\trailingcitation{(German)}//
+	\endgl
+\xe
 
 \cite{layering15} propose a system in which Voice can be ``transitive'' both in syntactic and semantic terms. In the syntax, Voice might be either associated with a specifier or not; in the semantics, it might introduce a thematic agent role or not. This conceptual innovation is implemented by using a syntactic feature [D], an EPP feature on Voice.\footnote{Unlike the Trivalent system---in which [D] is a feature that must simply be checked, or intuitively some kind of filter---the [D] feature in Layering is inherent to Voice and is structure-building, being the only thing that can license/project the specifier position; see Section~\ref{aas:jim}.}
 
 The important consequence is that there are five possible configurations. Four are derived using Voice, depending on whether it is syntactically active and whether it is semantically thematic. The fifth is the complete lack of Voice, as suggested for unmarked anticausatives. With this basic assumption, Layering is able to handle cases in which syntactic elements like expletives do not involve thematic roles as well as cases in which the anticausative variant is marked morphologically, as we will see below. Taken together, these two components combine to provide substantial empirical coverage and theoretical insight.
 
-Let us get to the details. Assuming that Voice may or may not have a [D] feature, and that it may or may not introduce an agent, the four-celled typology of \citet[109]{layering15} emerges in Table~\ref{table:typo-layer}.
-\begin{table}
-\begin{tabularx}{\textwidth}{cllll}
- \lsptoprule
-	& \multicolumn{2}{c}{Syntax D}	& 	\multicolumn{2}{c}{Syntax {\zero}} \\\midrule
+Let us get to the details. Assuming that Voice may or may not have a [D] feature, and that it may or may not introduce an agent, the four-celled typology of \citet[109]{layering15} emerges in~(\nextx):
+\ex\label{ex:typo-layer}
+\raisebox{-9em}{
+\begin{tabular}{c|ll|ll}
+	& \multicolumn{2}{c|}{Syntax D}	& 	\multicolumn{2}{c}{Syntax {\zero}} \\\hline
+%&&&&\\
 Semantics & 	a.&	Thematic active 	&	b.&	Thematic non-active\\
 $\lambda$x 	 & &
 \Tree
@@ -93,7 +86,9 @@ $\lambda$x 	 & &
 		[.{\dots~vP \dots} ]
 ]
 \\
-&&&&\\\tablevspace
+%&&&&\\
+%& & \ding{228} Transitive verb.	& & \ding{228} Passives in Greek.\\
+&&&&\\\hline
 Semantics & 	c.&	Expletive active 	&	d.&	Expletive non-active\\
 {\zero}	 & &
 \Tree
@@ -111,17 +106,17 @@ Semantics & 	c.&	Expletive active 	&	d.&	Expletive non-active\\
 		[.{\dots~vP \dots} ]
 ]
 \\
-\lspbottomrule
- \end{tabularx}
-	\caption{The typology of the Layering approach.}
-	\label{table:typo-layer} 
-\end{table}
+%&&&&\\
+%& & \ding{228} Marked anticausatives (German).	& & \ding{228} Anticausatives in Greek.\\
+\end{tabular}
+}
+\xe
 
-This typology can be augmented by including the Voiceless unmarked anticausative, vP, giving us the full table in Table~\ref{table:typo-layer-all}.
-\begin{table}
-\begin{tabularx}{\textwidth}{cllllll}
- \lsptoprule
-	& \multicolumn{2}{L{4cm}}{Syntax D}	&  \multicolumn{2}{L{1.5cm}}{vP}	& \multicolumn{2}{L{4cm}}{Syntax {\zero}} \\\midrule
+This typology can be augmented by including the Voiceless unmarked anticausative, vP, giving us the full table in~(\nextx).
+\ex\label{typo-layer-all}The typology of Voice under Layering:\\
+\begin{tabular}{c|ll|ll|ll}
+	& \multicolumn{2}{P{4cm}|}{Syntax D}	&  \multicolumn{2}{P{4cm}|}{vP}	& \multicolumn{2}{P{4cm}}{Syntax {\zero}} \\\hline
+%&&&&\\
 Semantics	 & 		a.	&	&			b.	&& 	c. & \\
 $\lambda$x 	 & 
 &\Tree
@@ -133,13 +128,13 @@ $\lambda$x 	 &
 	]
 ]
 & 
-& --- %\phantom{Undefined.}
+& \phantom{Undefined.}
 && \Tree
 [.VoiceP 
 		[.{Voice\{$\lambda$x, \zero\}\\\gsc{NACT}} ]
 		[.vP ]
 ]
-\\\tablevspace
+\\\hline
 Semantics	 & 		d.		& &			e.	& &	f. & \\
 \zero	 &
 & \Tree
@@ -160,104 +155,98 @@ Semantics	 & 		d.		& &			e.	& &	f. & \\
 		[.vP ]
 ]
 \\
-\lspbottomrule
- \end{tabularx}
-	\caption{The typology of Voice under Layering.}
-	\label{table:typo-layer-all} 
-\end{table}
+\end{tabular}
+\xe
 
-I examine the cells one by one. The structure in cell~a is a straightforward transitive derivation, at least since \cite{kratzer96} and \citep{pylkkanen08}. The [D] feature on Voice licenses a DP in its specifier, and the agent role is introduced in the semantics (notated here simply as $\lambda$x).
 
-The structure in cell~f of Table~\ref{table:typo-layer-all} derives a marked anticausative, similar to {\tnif} from Chapter \ref{vz:vz}. There is no [D] feature, so no DP can be merged in Spec,Voice. The lack of a specifier is spelled out as non-active morphology, \gsc{NACT} in short, via a rule we return to in~(\ref{ex:aas:vi-nact}). No agent is introduced in the semantics. The result is a marked anticausative (unaccusative) construction. The unmarked anticausative is derived in cell~e, by not merging any Voice head at all. Since no Voice head exists in the structure, there is no agentive semantics either, so cell~b is undefined.
 
-The particularly interesting cases are those in which we find ``mismatches'' between the values of the syntactic feature and semantic specification, namely cells~c--d. Starting with row~d, we have a situation in which no agentive semantics is introduced but Voice still requires a specifier. The Layering analysis proposes that this is the situation for the Romance expletive \gsc{SE} and the German \emph{sich}, which appear in marked anticausatives but contribute nothing to the semantics. Similar analyses have been proposed for Icelandic by \cite{wood14nllt,wood15springer} and for various phenomena in English and Quechua by \cite{myler16mit}.
+I examine the cells one by one. The structure in~(\lastx a) is a straightforward transitive derivation, at least since \cite{kratzer96} and \citep{pylkkanen08}. The [D] feature on Voice licenses a DP in its specifier, and the agent role is introduced in the semantics (notated here simply as $\lambda$x).
 
-Finally, the configuration in cell~c is also possible. Here, Voice does not have a [D] feature and does not project a specifier. However, it does introduce a thematic role. \cite{layering15} propose that this is the correct analysis of passive verbs in Greek, which are identical morphologically to anticausatives; the analysis captures the fact that the morphology of cells~c and~f is identical, since in neither case is a specifier projected. The open predicate must presumably be closed off by existential closure later in the derivation. It is worth keeping in mind that regardless of combination with thematic non-active Voice, every root must still need to state whether the \gsc{NACT} variant will be anticausative, passive, or compatible with both \citep[88]{alexiadouanagnostopoulou04,layering15}.
+The structure in~(\lastx f) derives a marked anticausative, similar to {\tnif} from Chapter \ref{vz:vz}. There is no [D] feature, so no DP can be merged in Spec,Voice. The lack of a specifier is spelled out as non-active morphology, \gsc{NACT} in short, via a rule we return to in~(\ref{ex:aas:vi-nact}). No agent is introduced in the semantics. The result is a marked anticausative (unaccusative) construction. The unmarked anticausative is derived in~(\lastx e), by not merging any Voice head at all. Since no Voice head exists in the structure, there is no agentive semantics either, so~(\lastx b) is undefined.
+
+The particularly interesting cases are those in which we find ``mismatches'' between the values of the syntactic feature and semantic specification, namely~(\lastx c) and~(\lastx d). Starting with~(\lastx d), we have a situation in which no agentive semantics is introduced but Voice still requires a specifier. The Layering analysis proposes that this is the situation for the Romance expletive \gsc{SE} and the German \emph{sich}, which appear in marked anticausatives but contribute nothing to the semantics. Similar analyses have been proposed for Icelandic by \cite{wood14nllt,wood15springer} and for various phenomena in English and Quechua by \cite{myler16mit}.
+
+Finally, the configuration in~(\lastx c) is also possible. Here, Voice does not have a [D] feature and does not project a specifier. However, it does introduce a thematic role. \cite{layering15} propose that this is the correct analysis of passive verbs in Greek, which are identical morphologically to anticausatives; the analysis captures the fact that the morphology of~(\lastx c) and~(\lastx f) is identical, since in neither case is a specifier projected. The open predicate must presumably be closed off by existential closure later in the derivation. It is worth keeping in mind that regardless of combination with thematic non-active Voice, every root must still need to state whether the \gsc{NACT} variant will be anticausative, passive, or compatible with both \citep[88]{alexiadouanagnostopoulou04,layering15}.
 
 
 \section{Comparison} \label{aas:compare}
 The Trivalent theory differs from Layering in two concrete ways. First, Layering assumes that no Voice layer is projected for unmarked non-active constructions. I assume that a VoiceP is always projected, except that its specifier might not be filled. We have seen this in the difference between active and non-active verbs in {\tkal} (Chapter \ref{chap:voice}), and in the difference between {\vz} and {\vd} (Chapters \ref{chap:vz}--\ref{chap:vd}). The morphological reflexes of this difference are briefly highlighted in Section~\ref{aas:compare:vi-nact}. The second difference  is more substantial, building on the first: there are three possible values of the [D] features, closely associated with semantic interpretation (Section~\ref{aas:compare:features}).
 
 	\subsection{Non-active layers} \label{aas:compare:vi-nact}
-Marked anticausatives show consistent morphological marking on the anticausative member of an alternation. The Latin example in~(\nextx) is adapted from sources cited in~\cite{kastnerzu17}:
- \begin{exe}
-\ex   \langinfo{Latin}{}{\citealt[662]{kastnerzu17}}\\
-  \gll vulnus \glemph{claudi-t-ur}\\
- 	  wound.\gsc{NOM} close-\gsc{3SG}-\gsc{NACT}\\
- 	\glt `The wound heals.' 
-	
- \z 
+Marked anticausatives show consistent morphological marking on the anticausative member of an alternation. The Latin example in~(\nextx) is from \citet[662]{kastnerzu17}:
+\ex \begingl
+	\gla vulnus \textbf{claudi-t-ur}//
+	\glb wound.\gsc{NOM} close-\gsc{3SG}-\gsc{NACT}//
+	\glft `The wound heals.'//
+	\endgl
+\xe
 
 To account for the appearance of non-active morphology in marked anticausatives, Layering proposes the rule in~(\nextx), following \cite{embick04}:
- \begin{exe}
-\ex \label{ex:aas:vi-nact}Voice \lra~\gsc{NACT} / \trace~No Spec 
- \z 
+\ex\label{ex:aas:vi-nact}Voice \lra~\gsc{NACT} / \trace~No Spec
+\xe
+%What if the verb moves to T and then there's a specifier?
 
 A theory of Vocabulary Insertion which allows~(\ref{ex:aas:vi-nact}) must then able to make reference to syntactic contexts such as ``lack of a specifier''. While this is not impossible, it does complicate the theory somewhat.\label{r1:6:1}
 
 I make a different claim: non-active morphology such as \gsc{NACT} and {\tnif} is the spell-out of {\vz}. In other words, it is the flavor of Voice which is spelled out as non-active morphology, not Voice when it has no specifier. Recall the reason for this preference: Unspecified Voice in Hebrew is spelled out as {\tkal} regardless of whether it has a specifier or not. The spell-out rule in~(\nextx) is thus more consistent crosslinguistically; the cases in~(\ref{typo-layer-all}c) and~(\ref{typo-layer-all}f) can both be accounted for using the rule in~(\lastx), if we assume that {\vz} is in fact the Voice head in those structures.
- \begin{exe}
-\ex  {\vz} \lra~\gsc{NACT} \hfill (always No Spec) 
- \z 
+\ex {\vz} \lra~\gsc{NACT} \hfill (always No Spec)
+\xe
 
 This technical difference aside, In what follows I address more substantive differences between the theories.
 
 	
 	\subsection{The trivalency of transitivity} \label{aas:compare:features}
-The two systems ended up looking as in Tables~\ref{table:typo-layer-all2} and~\ref{table:typo-feat}.
-\begin{table}
-	\begin{tabularx}{\textwidth}{cllllll}
-		\lsptoprule
-		& \multicolumn{2}{L{4cm}}{Syntax D}	&  \multicolumn{2}{L{1.5cm}}{vP}	& \multicolumn{2}{L{4cm}}{Syntax {\zero}} \\\midrule
-		Sem	 & 		a.	&	&			b.	&& 	c. & \\
-		$\lambda$x 	 & 
-		&\Tree
-		[.VoiceP 
-		[.DP ]
-		[.
+The two systems ended up looking as follows:
+\ex\label{ex:aas:typo-layer-all2}The typology of Voice heads in Layering:\\
+\begin{tabular}{c|ll|ll|ll}
+	& \multicolumn{2}{P{5.05cm}|}{Syntax D}	&  \multicolumn{2}{P{4cm}|}{vP}	& \multicolumn{2}{P{4cm}}{Syntax {\zero}} \\\hline
+%&&&&\\
+Semantics	 & 		a.	&	&			b.	&& 	c. & \\
+$\lambda$x 	 & 
+&\Tree
+[.VoiceP 
+	[.DP ]
+	[.
 		[.{Voice\{$\lambda$x, D\}} ]
 		[.vP ]
-		]
-		]
-		& 
-		& --- %\phantom{Undefined.}
-		&& \Tree
-		[.VoiceP 
+	]
+]
+& 
+& \phantom{Undefined.}
+&& \Tree
+[.VoiceP 
 		[.{Voice\{$\lambda$x, \zero\}\\\gsc{NACT}} ]
 		[.vP ]
-		]
-		\\\tablevspace
-		Sem	 & 		d.		& &			e.	& &	f. & \\
-		\zero	 &
-		& \Tree
-		[.VoiceP 
-		[.DP\\\gsc{SE} ]
-		[.VoiceP
+]
+\\\hline
+Semantics	 & 		d.		& &			e.	& &	f. & \\
+\zero	 &
+& \Tree
+[.VoiceP 
+	[.DP\\\gsc{SE} ]
+	[.VoiceP
 		[.{Voice\{\zero, D\}} ]
 		[.vP ]
-		]
-		]
-		&
-		&\Tree
+	]
+]
+&
+&\Tree
 		[.vP ]
-		&
-		&\Tree
-		[.VoiceP 
+&
+&\Tree
+[.VoiceP 
 		[.{Voice\{\zero, \zero\}\\\gsc{NACT}} ]
 		[.vP ]
-		]
-		\\
-		\lspbottomrule
-	\end{tabularx}
-	\caption{The typology of Voice under Layering.}
-	\label{table:typo-layer-all2} 
-\end{table}
+]
+\\
+\end{tabular}
+\xe
 
-\begin{table}
-\begin{tabularx}{\textwidth}{clL{3cm}lllL{3cm}}
- \lsptoprule
-	& \multicolumn{2}{L{3cm}}{\vd}	&  \multicolumn{2}{L{3cm}}{Voice}	& \multicolumn{2}{L{3cm}}{\vz} \\\midrule
-Sem	 & 		a.	&	&			b.	&& 	c. & \\
+\ex\label{ex:aas:typo-feat}The Trivalent typology:\\
+\begin{tabular}{c|ll|ll|ll}
+	& \multicolumn{2}{P{5.05cm}|}{\vd}	&  \multicolumn{2}{P{4cm}|}{Voice}	& \multicolumn{2}{P{4cm}}{\vz} \\\hline
+%&&&&\\
+Semantics	 & 		a.	&	&			b.	&& 	c. & \\
 $\lambda$x 	 & 
 &\Tree
 [.VoiceP 
@@ -276,11 +265,11 @@ $\lambda$x 	 &
 		[.vP ]
 	]
 ]
-&& (Figure reflexives) 
-\\\tablevspace
-Sem	 & 		d.		& &			e.	& &	f. & \\
-\zero/$\exists$x	 & 
-& ({\vd} inchoatives) 
+&& (Figure reflexives) %\phantom{A-ha!}
+\\\hline
+Semantics	 & 		d.		& &			e.	& &	f. & \\
+\zero/$\exists$x	 &
+& ({\vd} inchoatives) %\phantom{A-ha!}
 &
 &\Tree
 [.VoiceP
@@ -297,90 +286,100 @@ Sem	 & 		d.		& &			e.	& &	f. & \\
 		[.vP ]
 	]
 \\
-\lspbottomrule
- \end{tabularx}
-	\caption{The Trivalent typology.}
-	\label{table:typo-feat}
-\end{table}
+%\hline
+%Semantics	 & 		g.		& &			h.	& &	i. & \\
+%$\exists$x	 &
+%& 
+%&
+%&
+%&
+%&\Tree
+%	[.VoiceP
+%		[.{\vz} ]
+%		[.vP ]
+%	]\\
+%
+\end{tabular}
+\xe
 
 While the semantics of the cells in Layering is deterministic (modulo existential closure), the Trivalent theory relies on contextual allosemy of the Voice head.\footnote{Layering can also be formalized using allosemy, as in~\cite{schaefer17oup}.} Its semantics looks broadly as in~(\nextx), summarizing what we have seen in previous chapters:
- \begin{exe}
- \ex  Semantics (abstracting away from Agent $\neq$ Cause): 
- \begin{xlist} 
- 	\ex  \denote{\vd} = $\lambda x \lambda e$.Agent($x,e$) 
- 	\ex  \denote{Voice}\phantom{.......} = $\begin{cases} 
+\pex Semantics (abstracting away from Agent $\neq$ Cause):
+	\a \denote{\vd} = $\lambda x \lambda e$.Agent($x,e$)
+	\a \denote{Voice}\phantom{.......} = $\begin{cases}
 		\lambda x \lambda e.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{eat}}, \dots\} }\\
 		\lambda e.e & \text{/ \trace \{\root{\gsc{fall}}, \dots\} }\\
 	\end{cases}$
- 	\ex  \denote{\vz}\phantom{.} = $\begin{cases} 
+	\a \denote{\vz}\phantom{.} = $\begin{cases}
 		\lambda e \exists x.\text{Agent}(x,e) & \text{/ \trace \{\root{\gsc{write}}, \dots\} }\\
 		\lambda e.e & \\
 	\end{cases}$
- \z
-\z 
+\xe
 
-There are two points to be made about how powerful the current approach is: first, that it has all the empirical coverage necessary for the Layering patterns. Very little has to be said in order to maintain the coverage of Layering as applied to English, German and Greek. For instance, expletive constructions in Germanic and Romance are derived by simply adding the expletive in Spec,VoiceP, \ref{table:typo-feat}e.
+There are two points to be made about how powerful the current approach is: first, that it has all the empirical coverage necessary for the Layering patterns. Very little has to be said in order to maintain the coverage of Layering as applied to English, German and Greek. For instance, expletive constructions in Germanic and Romance are derived by simply adding the expletive in Spec,VoiceP, (\ref{ex:aas:typo-feat}e).
 
 \label{r1:6:2}The second is that this power actually comes from a system that is just as constrained as Layering. While in Layering all features may combine freely, in the Trivalent theory semantic interpretation tracks the syntactic feature on the functional head: barring exceptional cases, the active head {\vd} has an agentive reading and the non-active head {\vz} has either a non-active reading or a passive reading. So {\vd} does not have a straightforward non-active alloseme, and {\vz} is the only one with a passive alloseme. In this sense, at least, the interpretation of these heads is natural.
 
-I take this correlation to be a welcome result, though I will not attempt to derive how the syntax feeds the semantics in this way. With that in mind, however, one might still wonder whether cells~c and~e in Table~\ref{table:typo-feat} could be possible. In fact, we have already seen that these configurations are possible, but only when additional \emph{syntactic} constraints are at play.
+I take this correlation to be a welcome result, though I will not attempt to derive how the syntax feeds the semantics in this way. With that in mind, however, one might still wonder whether~(\ref{ex:aas:typo-feat}c) and~(\ref{ex:aas:typo-feat}d) could be possible. In fact, we have already seen that these configurations are possible, but only when additional \emph{syntactic} constraints are at play.
 
-Chapter \ref{vz:pz} analyzed figure reflexives in {\tnif}. This was a situation in which a [--D] head introduced an external argument, specifically the Figure role of {\pz}. As noted in Chapter~\ref{vz:interim}, {\pz} and {\vz} may be considered contextual variants of each other and of the generalized head \emph{i*} (I return to this point in Chapter~\ref{chap:i}). Still, why can {\pz} introduce a thematic role? One answer can be found in the work of \cite{wood15springer}. He suggests that the allosemic sensitivity of a head depends on its place in the extended projection of the verb. Metaphorically speaking, since {\pz} ``knows'' that it is not the last head in the VoiceP, it can introduce a Figure role knowing that this role can be saturated later on. Importantly, this is not a case of lookahead: the derivation will crash if no DP is merged to saturate that role. So a generalized version of cells~c is possible after all, if the syntactic configuration is just right (as expected).\footnote{As mentioned earlier, \cite{legate14} and \cite{akkus19jl} suggest that the Agent role can be introduced and then closed off. Perhaps deponent verbs can also be treated in similar fashion.}
-%%%
+Chapter \ref{vz:pz} analyzed figure reflexives in {\tnif}. This was a situation in which a [--D] head introduced an external argument, specifically the Figure role of {\pz}. As noted in Chapter~\ref{vz:interim}, {\pz} and {\vz} may be considered contextual variants of each other and of the generalized head \emph{i*} (I return to this point in Chapter~\ref{chap:i}). Still, why can {\pz} introduce a thematic role? One answer can be found in the work of \cite{wood15springer}. He suggests that the allosemic sensitivity of a head depends on its place in the extended projection of the verb. Metaphorically speaking, since {\pz} ``knows'' that it is not the last head in the VoiceP, it can introduce a Figure role knowing that this role can be saturated later on. Importantly, this is not a case of lookahead: the derivation will crash if no DP is merged to saturate that role. So a generalized version of~(\ref{ex:aas:typo-feat}c) is possible after all, if the syntactic configuration is just right (as expected).\footnote{As mentioned earlier, \cite{legate14} and \cite{akkus19jl} suggest that the Agent role can be introduced and then closed off. Perhaps deponent verbs can also be treated in similar fashion.}
+
 The second case is the cell in~(\ref{ex:aas:typo-feat}d): a situation in which a causative-marked verb turns out to be inchoative. As have seen in Chapter \ref{vd:vd}, this is no hypothetical. Inchoatives do exist in {\thif}, but only in specific syntactic configurations (when the verb is de-adjectival or de-nominal). The allosemic rule in~(\ref{ex:vd:sem-full}) stated this explicitly.\footnote{One crosslinguistic correlate might be the ``adversity causative'' of Japanese \citep{pylkkanen08,woodmarantz17}, where the Voice head itself is potentially {\vd} (see Chapter \ref{i:i:jap}) but does not have its own agentive semantics, instead taking a possessor role passed up from lower in the tree.}
 
-As a final point of comparison before returning to Hebrew, it is important to consider how Layering allows languages to pick and choose between features to be combined. For example, Greek passives are derived as in~(\ref{ex:aas:typo-layer-all2}), where existential closure applies to the open Agent role. \cite{schaefer17oup} later adopts a position similar to the one here, whereby $ \begin{exe}
-\ex ists$x is another possible semantic value for Voice heads, thus removing the need for existential closure of $\lambda$x. 
+As a final point of comparison before returning to Hebrew, it is important to consider how Layering allows languages to pick and choose between features to be combined. For example, Greek passives are derived as in~(\ref{ex:aas:typo-layer-all2}), where existential closure applies to the open Agent role. \cite{schaefer17oup} later adopts a position similar to the one here, whereby $\exists$x is another possible semantic value for Voice heads, thus removing the need for existential closure of $\lambda$x.
 
 Either way, given that existential closure can apply at some level as in Greek, the question arises of why it does not apply in situations where an overt DP appears. Specifically, there is nothing to prevent an expletive such as German \emph{sich} from being the DP in~(\ref{ex:aas:typo-layer-all2}a). The expletive would not have a semantic role to saturate, but an Agent would still be entailed. The result should be a construction with an expletive whose reading is not anticausative but passive. Yet this is impossible in German:
- \begin{exe}
-\ex   
-[] 	{ \gll Die T\"ur hat sich (*absichtlich) ge\"offnet (*um das Zimmer zu l\"uften)\\
- 	  the door has \gsc{SICH} on.purpose opened in.order the room to air.out\\
- 	\glt (int. `The door opened on purpose and/or in order to air out the room') } 
-	
- \z 
+\ex \begingl
+	\gla Die T\"ur hat sich (*absichtlich) ge\"offnet (*um das Zimmer zu l\"uften)//
+	\glb the door has \gsc{SICH} on.purpose opened in.order the room to air.out//
+	\glft (int. `The door opened on purpose and/or in order to air out the room')//
+	\endgl
+\xe
 
-What is relevant in this regard is that Greek and German might avail themselves of different cells of the typology. Specifically, German can be argued not to have $ \begin{exe}
-\ex ists$x Voice heads (passivization applies above the VoiceP in German; cf.~Chapter~\ref{passn:pass}). \cite{schaefer17oup} discusses similar cases of passivization in depth, concluding that $\exists$x is a necessary semantic possibility for Voice heads (as already mentioned above) and providing an analysis explaining why French and other languages do allow passives as in~(\lastx), albeit without \emph{by}-phrases. 
+What is relevant in this regard is that Greek and German might avail themselves of different cells of the typology. Specifically, German can be argued not to have $\exists$x Voice heads (passivization applies above the VoiceP in German; cf.~Chapter~\ref{passn:pass}). \cite{schaefer17oup} discusses similar cases of passivization in depth, concluding that $\exists$x is a necessary semantic possibility for Voice heads (as already mentioned above) and providing an analysis explaining why French and other languages do allow passives as in~(\lastx), albeit without \emph{by}-phrases.
 
-The problem is, then, that e.g.~French might have Voice\{$ \begin{exe}
-\ex ists$x, D\} for these passives but does not have Voice\{$\exists$x, \zero\}; the selection of features from the universal pool appears arbitrary. A similar problem arises for Layering when turning to causative marking: we would expect that a language with causative marking could combine it with an expletive. This does not seem to be correct, although I have not conducted enough crosslinguistic work to make this assertion conclusively. 
+The problem is, then, that e.g.~French might have Voice\{$\exists$x, D\} for these passives but does not have Voice\{$\exists$x, \zero\}; the selection of features from the universal pool appears arbitrary. A similar problem arises for Layering when turning to causative marking: we would expect that a language with causative marking could combine it with an expletive. This does not seem to be correct, although I have not conducted enough crosslinguistic work to make this assertion conclusively.
 
 In the Trivalent theory, these issues do not arise because the dichotomy of thematic/expletive Voice is abandoned, as is the idea that languages pick only a subset of features to instantiate across cells. Instead, Voice is allosemic in ways which are constrained both by the root and by the feature [D].
+
+
+%Passives with anticausative marking in Hebrew and Greek do not belong in the $\lambda$x row on my theory, but arise when the passive alloseme of {\vd} is invoked, (\ref{typo-layer-all2}c)--(\ref{typo-feat}f). The semantics is thus constrained by the syntax: {\vz} cannot have an agentive alloseme, unlike {\vd} and Voice, but the latter two cannot have a passive (existential) alloseme, unlike {\vz}. %While the number of cells in~(\lastx) is larger, this is only because I have placed the existential alloseme of Voice in its own row. The exact same thing could be done for~(\ref{typo-layer-all2}).
 
 
 \section{Hebrew with Layering} \label{aas:hebrew}
 The last issue to be tackled here is whether the Trivalent theory is a necessary development. Could we tweak Layering to account for the patterns analyzed in this book?
 
 Recall that Hebrew has trivalent morphological marking, and crucially that verbs in {\tkal} might be unaccusative or transitive (Chapter~\ref{chap:voice}).
+%\ex\label{ex:alternations-heb}
+%	\begin{tabular}{cll|ll|ll}
+%	& \multicolumn{2}{P{4.2cm}|}{causative} &	\multicolumn{2}{P{4cm}|}{underspecified}	& \multicolumn{2}{P{4.2cm}}{anticausative}\\\cline{2-7}
+%	\phantom{Semantics} & \multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
+%	& \emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
+%	& \emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\\cdashline{4-5}
+%	& \emph{\textbf{he}p\textbf{i}l} & `dropped' & \emph{nafal}	& `fell' & \multicolumn{2}{c}{---}\\
+%	\end{tabular}
+%\xe
 
- \begin{exe}
-\ex \label{ex:aas:alternations-heb2}Basic analysis of the templates as proposed in this book: 
-	\begin{tabularx}{\textwidth}{llllll}
- \lsptoprule
-	 \multicolumn{2}{P{4.7cm}}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\\midrule
-	\multicolumn{2}{c}{\thif}	&	\multicolumn{2}{c}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
+\ex\label{ex:aas:alternations-heb2}Basic analysis of the templates as proposed in this book:\\
+	\begin{tabular}{ll|ll|ll}
+	 \multicolumn{2}{P{4.7cm}|}{\textbf{\vd}}	&	\multicolumn{2}{P{4cm}|}{\textbf{Voice}}	& \multicolumn{2}{P{4cm}}{\textbf{\vz}}\\\hline
+%	\phantom{Semantics} & \multicolumn{2}{c|}{causative} &	\multicolumn{2}{c|}{transitive}	& \multicolumn{2}{c}{anticausative}\\\cline{2-7}
+	\multicolumn{2}{c|}{\thif}	&	\multicolumn{2}{c|}{\tkal}	& \multicolumn{2}{c}{\tnif}\\
 	\emph{heexil}	& `fed' &	\emph{axal}	& `ate'	&	\emph{neexal}	& `was eaten' \\
-	\emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\ 
+	\emph{hextiv}	& `dictated' &	\emph{katav}	& `wrote'	&	\emph{nixtav}	& `was written' \\ %\cdashline{4-5}
 	\emph{hepil} & `dropped' & \emph{nafal}	& `fell' & \multicolumn{2}{c}{---}\\
-\lspbottomrule
- 	\end{tabularx}
- \z 
+	\end{tabular}
+\xe
 
 Trying to analyze Hebrew using the machinery of Layering will require us to take {\tkal} as the spell out of v, not Voice as in Chapter~\ref{chap:voice}. Then, the distinction between active and non-active Voice would derive the distinction between active verbs in {\tkal} and verbs in {\tnif}. To derive the active verbs in {\thif}, additional functional structure would be necessary (since there are only two Voice heads under Layering, regular/transitive and non-active). This alternative approach to Hebrew is summarized in~(\nextx).
 
- \begin{exe}
-\ex  Layering-style analysis of Hebrew (to be rejected): 
- \z 
+\ex Layering-style analysis of Hebrew (to be rejected):
+\xe
 \begin{small}
-\hspace{-2em}\begin{tabularx}{\textwidth}{lcccc}
- \lsptoprule
-			&	unmarked anticausative	&	unmarked transitive &	marked anticausative	& marked transitive\\\midrule
+\hspace{-2em}\begin{tabular}{l||c|c|c|c}
+			&	unmarked anticausative	&	unmarked transitive &	marked anticausative	& marked transitive\\\hline
 		Derivation					& \Tree [.vP ] 		&	\Tree [.VoiceP [.DP ] [ [.Voice ] [.vP ] ] ]	&	\Tree [.VoiceP [.{Voice\{\zero, \zero\}} ] [.vP ] ] 	& \Tree [.\gsc{CAUS}P [.\gsc{CAUS} ] [. [.DP ] [ [.Voice ] [.vP ] ] ] ] \\
 		Spell-out					& \multicolumn{1}{c}{\tkal}	&	{\tkal}					& {\tnif}	& \thif\\
-\lspbottomrule
- 	\end{tabularx}
+	\end{tabular}
 \end{small}
 
 I can identify a number of problems with this approach.
@@ -397,16 +396,17 @@ We could also imagine a mixed view, under which what I have called {\vz} is not 
 
 One final alternative would maintain the basics of Layering while placing an emphasis on processes of Impoverishment. This possibility is discussed next.
 
+%\paragraph*{Non-active nominalizations.} Greek nominalizations cannot have a marked anticausative as their base. In other words, there is no morphological sequence *\root{root}-\gsc{ACT}-\gsc{NMLZ} in Greek. One could assume that this is because nominalizations are incompatible with Voice, but this cannot be true from a crosslinguistic perspective (see Chapter @ on non-active marking in Hebrew). It is however predicted if specifically {\vz} cannot be nominalized, as in Chapter @.
+
+
 \section{An alternative with Impoverishment} \label{aas:jim}
 
 \label{r1:g:2c2}As mentioned already, in the Trivalent system [D] acts a feature that needs to be checked or a sort of ``filter'', rather than a structure-building feature. Work in the Layering tradition---most explicitly that of \cite{schaefer08} and \cite{wood15springer}---differentiates between Voice with \{D\}, which necessarily projects a specifier, and Voice with empty \{\}, which does not. Recent discussions with Jim Wood (p.c.~Sep-Nov 2019) help clarify how this specific view of [D] and Merge could be maintained in the face of the Hebrew data. I present this alternative first in Section~\ref{aas:jim:pros}, and then list my reasons for rejecting it in Section~\ref{aas:jim:cons}.
 
 Since much of the discussion will have to do with ``triplets'', let me recall the empirical picture. The most complicated cases are those where a given root occurs in the three templates {\tkal}, {\tnif} and {\thif}. These are the ones I take to be simplest structurally, as they do not involve {\va} or Pass. As far as I know, there is no curated list of all such triplets in Hebrew. Searching the database of \cite{ehrenfeld12}, I found 147 roots that are instantiated in all three templates out of 1,875 roots in total. Not all of these make for clear triplets, and so I searched for good examples by hand. The table in~(\nextx) lists the ten clearest cases I have found, in which a semantic relationship holds between all three forms and at least two of these are transparently related.
- \begin{exe}
-\ex  \label{aas:ex:triplets} 
-	\begin{tabularx}{\textwidth}{ll>{\em}ll>{\em}ll>{\em}ll}
- \lsptoprule
-& Root & \multicolumn{2}{c}{\tkal} &	\multicolumn{2}{c}{\tnif} & \multicolumn{2}{c}{\thif}\\\midrule
+\ex \label{aas:ex:triplets}
+	\begin{tabular}{ll|>{\em}ll|>{\em}ll|>{\em}ll}
+& Root & \multicolumn{2}{c|}{\tkal} &	\multicolumn{2}{c|}{\tnif} & \multicolumn{2}{c}{\thif}\\\hline
 a.& \root{axl} & axal 	& ate 	& neexal 	& was eaten 	& heexil 	& fed\\
 b.& \root{xʃb} & xaʃav 	& thought 	& nixʃav 	& was considered 	& hexʃiv 	& considered\\
 c.& \root{jda} & jada 	& knew 	& noda 	& was known 	& hodia 	&announced\\
@@ -417,38 +417,31 @@ g.& \root{ark} & arax 	& edited 	& neerax 	& was edited 	& heerix 	& estimated\\
 h.& \root{pnj} & pana 	& faced 	& nifna 	& turned towards 	& hifna 	& directed towards\\
 i.& \root{krj} & kara 	& read 	& nikra 	& was read 	& hekri 	& read out\\
 j.& \root{raj} & raa 	& saw 	& nira 	& was seen 	& hera 	&showed\\
-\lspbottomrule
- 	\end{tabularx}
- \z 
+	\end{tabular}
+\xe
 
 	\subsection{An Impoverished Layering theory of Hebrew} \label{aas:jim:pros}
 		\subsubsection{Basics}
 This alternative attempts to maintain the structure-building view of [D], whereby there is no Unspecified Voice, only {\vds} which projects a specifier and {\vzs} which does not. The [D] feature, like any other feature, can undergo Impoverishment.
 
 The most basic spell-out rules, to be revised immediately, are in~(\nextx). The transitive Voice head is spelled out as the ``causative'' template {\thif}, and the non-active Voice head as the non-active template (\tnif).
- \begin{exe}
- \ex  Initial VIs (to be revised) 
- \begin{xlist} 
- 	\ex  {\vds} \lra~{\thif} 
- 	\ex  {\vzs} \lra~{\tnif} 
- \z
-\z 
+\pex Initial VIs (to be revised)
+	\a {\vds} \lra~{\thif}
+	\a {\vzs} \lra~{\tnif}
+\xe
 
 We also know that some roots simply need to appear in a certain templates. In particular, some agentive verbs do not appear in {\thif} but in {\tkal} (Chapter~\ref{chap:vd}), and some unaccusative verbs do not appear in {\tnif} but in {\tkal} (Chapter~\ref{chap:vz}). Calling these simply \root{Root1}, \root{Root2} and so on for time being, we have the revised VIs in~(\nextx).\footnote{The listed roots could appear under either the marked or unmarked template in each case; I give them in the marked cases here.}
 
- \begin{exe}
- \ex  Revised VIs (to be revised further) 
- \begin{xlist} 
- 	\ex  {\vds} \lra~$\begin{cases} 
+\pex Revised VIs (to be revised further)
+	\a {\vds} \lra~$\begin{cases}
 		\text{\thif} & \text{/ \trace~\root{Root1}, \root{Root2}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- 	\ex  {\vzs} \lra~$\begin{cases} 
+	\a {\vzs} \lra~$\begin{cases}
 		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- \z
-\z 
+\xe
 
 
 		\subsubsection{Appl}
@@ -458,36 +451,30 @@ Since I have spent some time discussing the relationship between {\tkal} and {\t
 
 In any case, if we were to accept this premise, we would have the revised VIs in~(\nextx), again not a final proposal.
 
- \begin{exe}
- \ex  Revised VIs (pre-final version) 
- \begin{xlist} 
- 	\ex  {\vds} \lra~$\begin{cases} 
+\pex Revised VIs (pre-final version)
+	\a {\vds} \lra~$\begin{cases}
 		\text{\thif} & \text{/ \trace~\textbf{Appl}, \root{Root1}, \root{Root2}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- 	\ex  {\vzs} \lra~$\begin{cases} 
+	\a {\vzs} \lra~$\begin{cases}
 		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- \z
-\z 
+\xe
 
 		\subsubsection{Additional diacritic}
 Finally, we need to account for the triplets that cannot be handled with Appl. Consider a triplet like~(\ref{aas:ex:triplets}e), where it is highly doubtful whether `invent' is an applicative version of `find'. Since this root appears with both templates, they cannot be differentiated by listing a \root{Root5} in both cases for {\vds}. Some additional diacritic (or feature) would be necessary, call it simply F like in~(\nextx).
 
- \begin{exe}
- \ex  \label{aas:ex:jim-vis}VIs in the Impoverishment alternative (final version) 
- \begin{xlist} 
- 	\ex  {\vds} \lra~$\begin{cases} 
+\pex \label{aas:ex:jim-vis}VIs in the Impoverishment alternative (final version)
+	\a {\vds} \lra~$\begin{cases}
 		\text{\thif} & \text{/ \trace~\textbf{F}, Appl, \root{Root1}, \root{Root2}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- 	\ex  {\vzs} \lra~$\begin{cases} 
+	\a {\vzs} \lra~$\begin{cases}
 		\text{\tnif} & \text{/ \trace~\root{Root3}, \root{Root4}, \dots}\\
 		\text{\tkal} & \\
 		\end{cases}$
- \z
-\z 
+\xe
 
 	
 	\subsection{Discussion} \label{aas:jim:cons}
@@ -511,8 +498,52 @@ Aside from the specific weaknesses discussed here, the main empirical difference
 
 The theory developed here on the basis of Hebrew makes explicit room to accommodate causative marking. The trivalent view of Voice is most useful when considering languages that show reflexes of this marking, including recent work on Japanese \citep{oseki17nyu} as well as a number of Austronesian and Polynesian languages \citep{nie17}. In other words, it becomes clear that causative marking has much to tell us about argument structure alternations, alongside anticausative marking and ideally in a joint theory as the one presented thus far.
 
+%In \citet[99--100]{layering15}, the authors give three reasons motivating the analytical distinction between unmarked causatives (just vP) and marked causatives (vP and expletive Voice). These three can be applied directly to the study of marked causatives.
+%
+%\paragraph*{Morphology.} In the languages under consideration, all non-active constructions share the same morphology (anticausatives, passives and reflexives all have \gsc{NACT}/\gsc{SE}). The Layering analysis provides a useful way for all non-active constructions share morphology related to Voice (anticausatives, passives and reflexives all have \gsc{NACT}/\gsc{SE}).\\
+%	The current way of looking at things overlaps with this claim to a large extent. In this book, all transitivity-related morphology is related to Voice, including umarked anticausatives and causatives (Chapter \ref{chap:voice}). Marked anticausatives still share the same morphology with other marked non-active structures, but marked causatives are added to the mix.
+%
+%\paragraph*{Transitive syntax.} Marked anticausatives in German and Romance have transitive syntax, so the expletive can be generated in Spec,VoiceP.\\
+%	This conclusion is also shared by the current approach.
+%	
+%\paragraph*{Markedness.} Marked anticausatives appear on verbs ``which express changes which are conceived of as occurring less likely spontaneously''. Since unmarked anticausatives do not contain Voice, they are less marked.\\
+%	This point relates to a topic which has come up throughout the book but cannot receive in-depth treatment, that of the interaction of individual roots with the functional material. But in any case, for this generalization to hold, all that is necessary is a difference in \emph{markedness} between marked and unmarked anticausatives. This much can be achieved by assuming that {\vz} is more marked than Voice. If this third reason is on track, we also predict a similar difference to arise between marked and unmarked causatives. It is too early to tell whether this is the case, but barring more extensive crosslinguistic work, the initial treatment in Chapter \ref{vd:caus} certainly points in this direction.
+
 To conclude, let us put the pieces together and speculate on what the Voice inventory of a given language might be. I see three possibilities.
 
 On the one hand, it is possible that all languages have the trivalent system of~(\ref{ex:aas:typo-feat}). We would then assume that in English, German and so on {\vd} and Voice are syncretic. On the other hand, it might be the case that only Voice heads that are morphophonologically distinct can be argued to exist in a given language. This is essentially the view of \cite{layering15}. That work proposed that learners of English do not hypothesize the existence of expletive Voice because there is no morphological evidence for it. If this is the case, then languages with marked anticausatives and marked causatives are trivalent languages, whereas languages with only marked anticausatives are Layering languages. Finally, one could also come up with a hybrid view, in which all languages are at least active/non-active Layering languages, even when there is no morphological evidence (as in English), following from the basic active/non-active distinction that came up in the context of causative marking (Chapter \ref{vd:caus}).
 
 I will not argue for any of these views explicitly, although I do maintain that the trivalent theory is the most flexible and most constrained simultaneously (whether this flexibility means that trivalent Voice should be hard-coded into the grammar is debatable). In addition, treating transitivity alternations in terms of various features on Voice---extending the original Layering view---paves the way for a more nuanced view of what these features might be. In Chapter~\ref{vd:caus:markvoice} I speculated that French could be treated as a trivalent language, if certain prefixes spell out {\vd}. I do not know if that view can be maintained (it probably cannot) but it does highlight what new perspectives can be gained by looking at different argument structure phenomena in terms of layering with a certain feature set. In the next chapter I consider recent proposals extending the coverage of feature-based approaches beyond transitivity marking, as they interact with case and agreement.
+
+
+
+%		\subsection{Specific advantages of the Featural approach}
+%What do you do with unmarked anticausatives in Greek?
+%\pex
+%	\a \begingl
+%		\gla ta ruxa \textbf{stegnosan} apo/me ton ilio//
+%		\glb the clothes dried.\gsc{ACT} from/with the sun//
+%		\glft `The clothes dried from the sun.'\trailingcitation{\citet[34]{layering15}}//
+%	\endgl
+%	\a \begingl
+%		\gla i porta \textbf{anikse} apo moni tis//
+%		\glb the door opened.\gsc{ACT} by alone hers//
+%		\glft `The door opened by itself.'\trailingcitation{\citet[35]{layering15}}//
+%	\endgl
+%	\a \begingl
+%		\gla i sakula adiase//
+%		\glb the bag.\gsc{NOM} emptied.\gsc{ACT}//
+%		\glft `The bag emptied.'\trailingcitation{\citet[64]{layering15}}//
+%	\endgl
+%\xe
+%
+%\gsc{NACT} marking allows a passive (e.g.~a by-phrase to be added), just like in Hebrew:
+%\ex \begingl
+%	\gla o tixod aspristike/*asprise apo ton petro.//
+%	\glb the wall whitened.\gsc{ACT}/\gsc{NACT} by the Peter//
+%	\glft `The wall was whitened by Peter.'\trailingcitation{\citet[37]{layering15}}//
+%	\endgl
+%\xe
+%
+
+%Next: if I understand correctly, Greek by-phrases are only possible with marked anticausatives, not with unmarked anticausatives. Where does this difference come from? Sounds like it comes from the semantics \cite[88]{alexiadouanagnostopoulou04,layering15}. It's an extra bit of lambda that expletive Voice can have.
