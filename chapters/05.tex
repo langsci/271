@@ -36,7 +36,7 @@ My definition of a passive verb is given in~(\nextx). It is not meant to be cont
  \z
 \z 
 
-I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in French), in Greek or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the Kannada non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicated passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of Classical Greek, some Semitic languages and Fula. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+I would like to clarify right off the bat that what is often descriptively called ``the passive'' is not necessarily what I mean by my formal definition. One often reads about the ``passive'' in Romance languages (as with \emph{se} in \ili{French}), in \ili{Greek} or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the \ili{Kannada} non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to passive \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we get when we use a dedicated passive head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting in addition of \ili{Classical Greek}, some Semitic languages and \ili{Fula}. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
 
 The large literature suggests a number of characteristics of passives which can be used as diagnostics \citep{bakeretal89,sichel09,spathasetal15}, a few of which were already used in Chapter~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent~(\ref{ex:pass-by-en}), allow agent-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent and theme. Existential binding of the implicit agent means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
  \begin{exe}
@@ -59,24 +59,25 @@ Synthesizing the existing literature on passive heads \citep{bruening13,layering
 
 In the \textbf{semantics}, Pass likewise brings about existential closure over an implicit external argument, (\nextx). There are two ways of formalizing this idea. The one I adopt is that of \cite{bruening13}, where Pass takes the VoiceP as its argument and closes off the Agent role:
  \begin{exe}
-\ex  \denote{Pass} = $\lambda$P$\lambda$e$\exists$x.Agent(x,e) \& P(e) 
+\ex  \denote{Pass} = λPλe∃x.Agent(x,e) \& P(e) 
  \z 
 This denotation is identical to what I suggested for the passive alloseme of {\vz} in Chapter~\ref{vz:vz:sem}, (\nextx).
  \begin{exe}
-\ex  \label{ex:pass-sem}\denote{\vz}\phantom{.} = $\begin{cases} 
-		\text{a.} \lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}} \\
-		\text{b.} \lambda P_{<s,t>}.P & \\
-		\end{cases}$
- \z 
+	\ex  \label{ex:pass-sem}\denote{\vz} = 
+	\begin{xlist}
+		\ex λPλe∃x.Agent(x,e) \& P(e) / \{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\} 
+		\ex λP$_{<s,t>}$.P
+		\z
+	\z 
 
 An alternative semantics is to force Voice to choose an agent-less alloseme in the context of Pass, and then let Pass introduce an (existentially closed off) agent itself. I note this possibility for completeness.
  \begin{exe}
-\ex  \denote{Voice} = $\lambda$P.P / Pass \trace 
+\ex  \denote{Voice} = λP.P / Pass \trace 
 
-\ex  \denote{Pass} = $\lambda$P$\lambda$e$\exists$x.P(e) \& Agent(x,e) 
+\ex  \denote{Pass} = λPλe∃x.P(e) \& Agent(x,e) 
  \z 
 
-The \textbf{phonology} of Pass is language-specific. In English it spells out the auxiliary \emph{be}, in German it spells out \emph{werden}, and in Hebrew I will claim below than it overwrites the vowels of the stem VoiceP it merges with.
+The \textbf{phonology} of Pass is language-specific. In English it spells out the auxiliary \emph{be}, in \ili{German} it spells out \emph{werden}, and in Hebrew I will claim below than it overwrites the vowels of the stem VoiceP it merges with.
 
 
 	\subsection{Descriptive generalizations} \label{passn:pass:tpua}
@@ -338,16 +339,15 @@ Adjectives can be distinguished according to whether they describe a stative cha
 
 In some cases the morphology indicates whether a certain form is stative or resultative: \emph{open} and \emph{molten} are stative, whereas \emph{opened} and \emph{melted} are resultative. In many cases, however, the form is ambiguous: \emph{closed}, \emph{fractured} and so on. The tests above distinguish ``simple'' adjectives from adjectives embedding an event. In \citeauthor{embick04li}'s analysis, the former are derived by adjectivizing a root, and the latter by adjectivizing an event (vP/VoiceP). \citeauthor{embick04li}'s resultatives thus fold in both ``target state'' and ``result state'' adjectival passives, a semantic distinction which can diagnosed by whether the adjectival passive can be modified by `still' \citep{kratzer00bls,alexiadouetal14}.
 
-Work since has investigated the kind of modifiers that can be attached to an adjectival passive \citep{meltzerasscher11,mcintyre13,alexiadouetal14,bruening14nllt,gehrkemarco14}. At least the following constructions are available for (resultative) adjectival passives in English, German, Hebrew and Spanish{. Agent implication is not possible:}
+Work since has investigated the kind of modifiers that can be attached to an adjectival passive \citep{meltzerasscher11,mcintyre13,alexiadouetal14,bruening14nllt,gehrkemarco14}. At least the following constructions are available for (resultative) adjectival passives in English, \ili{German}, Hebrew and \ili{Spanish}. Agent implication is not possible:
  \begin{exe}
  \ex  
  \begin{xlist} 
  	\ex[]{ \emph{The door is \glemph{opened}, but no one has opened it}. }
- 	\ex    
-[*] 		{ \gll Die M\"unze ist schon lange \glemph{versunken} aber keiner hat sie je versenkt\\
+ 	\ex[*] { \langinfo{German}{}{\citealt[124]{alexiadouetal14}}\\    
+	\gll Die M\"unze ist schon lange \glemph{versunken} *aber keiner hat sie je versenkt\\
  		  the coin is already long sunk.Adj but nobody has she ever sunk.\gsc{PASSPTCP}\\
- 		\glt `The coin has been sunk for a while, but nobody has sunk it.'  \hfill (German, \citealt[124]{alexiadouetal14)} } 
-	
+ 		\glt `The coin has been sunk for a while, but nobody has sunk it.'  } 	
  \z
 \z 
 
@@ -380,7 +380,7 @@ The exact syntactic structure is a matter discussed from a crosslinguistic persp
 
 I will not commit to a specific semantics for adjectives or adjectival passives, on any reading, but one could begin from the semantics of a resultant state adjective proposed by \cite{kratzer00bls}:
  \begin{exe}
-\ex  \denote{Adj} = $\lambda$R$\lambda$t$\exists$e,y.R(e)(y) \& $\tau$(e) $\le$ t 
+\ex  \denote{Adj} = λRλt∃e,y.R(e)(y) \& $\tau$(e) $\le$ t 
  \z 
 
 	\subsection{Descriptive generalizations} \label{passn:adjpass:mpua}
@@ -641,7 +641,7 @@ Two of these patterns are homopohonous with the present-tense (participle) verba
 	\end{minipage}
  \z 
 
-An alternative would be to assume that even these stative adjectives have underlying verbal structure, except that this structure is not interpreted. This approach is reminiscent of the inchoatives and Greek facts mentioned in \ref{vz:vz:sem}. Perhaps in the Hebrew cases above there is only one adjectivizing head \emph{a}, which takes a verbal structure that is not interpreted. I do not have particular reason to support one view or the other, and so I stick to the analyses in~(\ref{ex:adj-tpie})--(\ref{ex:adj-thif}) simply because they involve less structure. The same point can be made for complex event nominals in the next section. Note, however, that this alternative should then extend to English cases such as (\ref{ex:adj-en}b): what is to stop us from assuming underlying verbal structure in \emph{closed} which is simply not interpreted before being adjectivized by -\emph{ed}?
+An alternative would be to assume that even these stative adjectives have underlying verbal structure, except that this structure is not interpreted. This approach is reminiscent of the inchoatives and the Greek facts mentioned in \ref{vz:vz:sem}. Perhaps in the Hebrew cases above there is only one adjectivizing head \emph{a}, which takes a verbal structure that is not interpreted. I do not have particular reason to support one view or the other, and so I stick to the analyses in~(\ref{ex:adj-tpie})--(\ref{ex:adj-thif}) simply because they involve less structure. The same point can be made for complex event nominals in the next section. Note, however, that this alternative should then extend to English cases such as (\ref{ex:adj-en}b): what is to stop us from assuming underlying verbal structure in \emph{closed} which is simply not interpreted before being adjectivized by -\emph{ed}?
 
 		\subsubsection{Adjectival passives}
 The difference between stative adjectives and adjectival passives is that the latter embed VoiceP. The internal argument of adjectival passives has been argued by \citet[386]{bruening14nllt} to be an Operator, bound by the noun interpreted as the argument. Implementing this for Hebrew gives us structures like the following (where the exact nature of the copula is irrelevant). Like with stem vowels in verbs, I assume that the stem vowels originate on Voice and are conditioned by the embedding a head.
@@ -805,7 +805,7 @@ And while all three \textbf{adjectival passive} forms are \emph{compatible} with
 \cite{doron14adj} attributes this difference to the behavior of the causative head \gsc{CAUS} which for her underlies {\thif}. My analysis, using {\vd}, follows in the same vein. Note that the implied EA is not syntactically represented; it cannot, for example, create a new discourse referent.
  \begin{exe}
 \ex[*] { \label{ex:sportait}  
-	 \gll nadia komanetʃi \glemph{haj-ta} sportait \emph{(EA$_i$)} \glemphu{muxʃer-et} bekfida. \underline{hu$_i$} \textbf{asa} avoda tova aval \textbf{safag} harbe bikoret\\
+	 \gll nadia komanetʃi \glemph{haj-ta} sportait \glemphu{(EA$_i$)} \glemphu{muxʃer-et} bekfida. \underline{hu$_i$} \textbf{asa} avoda tova aval \textbf{safag} harbe bikoret\\
  		  Nadia Com\u{a}neci was.\gsc{SMPL}-\gsc{F} athlete.\gsc{F} {} prepared.\gsc{CAUS.PASS}-\gsc{F} carefully he did.\gsc{SMPL} job good but absorbed.\gsc{SMPL} much criticism\\
  		\glt (int. `Nadia Com\u{a}neci was a carefully trained athlete. He (=B\'ela K\'arolyi) did a good job but was heavily criticized.') } 
  \z 
@@ -817,7 +817,6 @@ I conclude with additional observations by template, collected here for complete
 \cite{doron00} argues that only change of state roots are possible input to adjectives in this template. For example, the unattested form *\emph{karu}/*\emph{karuj} (int. `read') does not exist as a stative adjective or as an adjectival passive:
  \begin{exe}
 \ex  
-
 []     { \gll ha-mixtav \glemphu{katuv} \emph{/} *\underline{karuj}\\
        the-letter written {} read\\
      \glt `The letter is written (*is read).' } 
@@ -1018,7 +1017,7 @@ It is well-known that some forms are ambiguous between a simple and a CEN readin
  \ex  
  \begin{xlist} 
  	\ex 
-[] 		{ \gll medina-t israel \glemph{tihie} ptuxa le-alia jehudit ve-le-\textbf{kibuts} galujot\\
+[] 		{ \gll medina-t israel \glemph{tihie} ptuxa le-alia jehudit ve-le-\glemphu{kibuts} galujot\\
  		  state-of Israel will.be.\gsc{SMPL} open to-immigration Jewish and-to-gathering.\gsc{INTNS}.of diasporas\\
  		\glt `The State of Israel will be open for Jewish immigration and for the Ingathering of the Exiles.' \hfill (Israeli Declaration of Independence) } 
 	
@@ -1043,7 +1042,7 @@ It is well-known that some forms are ambiguous between a simple and a CEN readin
 
  	\ex   
 		``According to his testimony, in the early 60s, before he began his political career in the USA, \dots\\
-		 \gll \glemph{ʃaha} sanderz kama xodaʃim be-israel ve-\textbf{hitnadev} be-\glemphu{kibuts}\\
+		 \gll \glemph{ʃaha} sanderz kama xodaʃim be-israel ve-\glemph{hitnadev} be-\glemphu{kibuts}\\
  		  stayed.\gsc{SMPL} Sanders a.few months in-Israel and-volunteered.\gsc{INTNS.MID} in-kibbutz\\
  		\glt \dots Sanders stayed in Israel for a few months and volunteered in a Kibbutz.''\footnotemark 
 	
@@ -1064,7 +1063,7 @@ Another consideration points towards this conclusion \citep{kastner18nllt}: a si
  \ex  
  \begin{xlist} 
  	\ex   
-[] 		{ \gll daj la-kibuʃ\\
+[] 		{ \gll daj la-\glemph{kibuʃ}\\
  		  enough to.the-occupation\\
  		\glt `Down with the occupation!' } 
 		

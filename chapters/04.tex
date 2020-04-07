@@ -290,9 +290,9 @@ To account for this set of data I propose {\vd}, a variant of Voice which requir
  \begin{xlist} 
  	\ex  A Voice head with a [\!+\!D] feature, requiring that some element check the [D] feature in its specifier (usually via Merge). 
  	\ex  \label{ex:vd:sem}\denote{\vd} = $\begin{cases} 
-	\lambda P.P & / \text{\trace~(v) a} \\
-	\lambda P.P & / \text{\trace~(v) n} \\
-	\lambda x \lambda e.\text{Agent(x,e) or }\lambda x \lambda e.\text{Cause(x,e)}\\
+	\text{λP.P} & / \text{\trace~(v) a} \\
+	\text{λP.P} & / \text{\trace~(v) n} \\
+	\text{λxλe.Agent(x,e) or λxλe.Cause(x,e)}\\
 	\end{cases}$
  	\ex  {\vd} {\lra} {\thif} 
  \z
@@ -321,14 +321,14 @@ The syntax of {\vd} is as in~(\nextx), where this head obligatorily introduces a
 
 The relevant clause in the semantics is the Elsewhere case of~(\ref{ex:vd-basics}b). Since the spell-out of {\vd} is {\thif} (by hypothesis), we predict that all verbs in this template will have an external argument in the syntax and semantics.
  \begin{exe}
-\ex  \denote{\vd} = 	$\lambda$x$\lambda$e.Agent(x,e) or $\lambda$x$\lambda$e.\text{Cause(x,e)} 
+\ex  \denote{\vd} = λxλe.Agent(x,e) or λxλe.\text{Cause(x,e)} 
  \z 
 
 As we have seen, this proposal is enough to describe most of the empirical landscape. It also treats causatives in {\thif} as monoclausal, ``lexical'' causatives, as expected.
 
 But it is not enough to explain the inchoatives, where two questions in fact arise. First, how must we change our definition of {\vd}? And second, why is it this head alone that leads to labile alternations in the language?
 
-The remainder of this section concerns itself with the first question of the two. I propose next that causatives have different structure than inchoatives, echoing claims made by \cite{borer91}. Causatives are argued to be derived from the root, whereas inchoatives are argued to be derived from an existing adjective or noun.\footnote{From a cross-Semitic perspective, Arabic ``Form 9'' \emph{iXYaZZ} verbs show some parallels with {\thif}, though the Arabic forms are exclusively nonactive.} The more general question about labile alternations in {\thif} alone will wait until Section~\ref{vd:caus:labile}.
+The remainder of this section concerns itself with the first question of the two. I propose next that causatives have different structure than inchoatives, echoing claims made by \cite{borer91}. Causatives are argued to be derived from the root, whereas inchoatives are argued to be derived from an existing adjective or noun.\footnote{From a cross-Semitic perspective, \ili{Arabic} ``Form 9'' \emph{iXYaZZ} verbs show some parallels with {\thif}, though the Arabic forms are exclusively nonactive.} The more general question about labile alternations in {\thif} alone will wait until Section~\ref{vd:caus:labile}.
 
 		\subsubsection{Inchoatives: Structure}
 As a first step, I will assume that inchoatives in {\thif} are never derived directly from the root but from an underlying adjective or noun. A similar claim was already made by \cite{borer91}, who argued that causatives are derived directly from the root while these inchoatives are derived from an underlying adjective. As I point out here, inchoatives can also be derived from an underlying noun:
@@ -415,11 +415,11 @@ My theory of morphosemantics assumes the so-called Arad/Marantz hypothesis, acco
 
 The full semantics for {\vd} then looks as in~(\nextx), without introducing a causer for inchoative events in~(\nextx a--b).
  \begin{exe}
- \ex \label{ex:vd:sem-full} 
+ \ex \label{ex:vd:sem-full} \denote{\vd} =
  \begin{xlist} 
- 	\ex  \denote{\vd} = $\lambda$P.P / \trace~(v) a \hfill (v does not select the meaning) 
- 	\ex  \denote{\vd} = $\lambda$P.P / \trace~(v) n \hfill (v does not select the meaning) 
- 	\ex  \denote{\vd} = $\lambda$x$\lambda$e.Cause(x,e) or $\lambda$x$\lambda$e.Agent(x,e) 
+ 	\ex  λP.P / \trace~(v) a \hfill (v does not select the meaning) 
+ 	\ex  λP.P / \trace~(v) n \hfill (v does not select the meaning) 
+ 	\ex  λxλe.Cause(x,e) or λxλe.Agent(x,e) 
  \z
 \z 
 
@@ -527,10 +527,10 @@ The cyclic derivation:
  \begin{exe}
  \ex  
  \begin{xlist} 
- 	\ex  \emph{hevʃil} `he ripened': [T[Past,\gsc{3SG.M}] [{\vd} [v \root{bʃl}~\!]]] 
+ 	\ex  \emph{hevʃil} `he ripened': [T[Past,\gsc{3SG.M}] [{\vd} [v \root{bʃl}~\!]]] \\
 	Cycle 1 (VoiceP): he-vʃil\\
 	Cycle 2 (TP): {\zero}-hevʃil $\Rightarrow$ hevʃil
- 	\ex  \emph{hevʃ\glemph{a}l\textbf{ti}} `I ripened': [T[Past,\gsc{1SG}] [{\vd} [v \root{bʃl}~\!]]]  
+ 	\ex  \emph{hevʃ\glemph{a}l\textbf{ti}} `I ripened': [T[Past,\gsc{1SG}] [{\vd} [v \root{bʃl}~\!]]]  \\
 	Cycle 1 (VoiceP): he-vʃ\textbf{a}l\\
 	Cycle 2 (TP): \textbf{ti}-hevʃal $\Rightarrow$ hevʃalti
  \z
@@ -738,7 +738,7 @@ The observations made so far bring us to the proposed generalization for causati
  \z
 \z 
 
-I would not be surprised if closer examination of other languages reveals similar patterns. In French, for instance, the prefixes \emph{a-} and \emph{en-} are often described as having a general ``transitivizing'' or ``causative'' function \citep{junker87}. In some cases, especially denominal and de-adjectival ones, the causative alternation between an unprefixed anticausative verb and a prefixed causative verb is transparent (\nextx a). But this is not always the case: in (\nextx b) the unprefixed verb is an activity and the prefixed verb is transitive (it has the obligatory reflexive marker) but does not strictly speaking mean `make yourself fly' or `fly yourself'. Even more strikingly---and certainly reminiscent of the Hebrew datapoints---is~(\nextx c), where the prefixed version has different meaning than the unprefixed one.
+I would not be surprised if closer examination of other languages reveals similar patterns. In \ili{French}, for instance, the prefixes \emph{a-} and \emph{en-} are often described as having a general ``transitivizing'' or ``causative'' function \citep{junker87}. In some cases, especially denominal and de-adjectival ones, the causative alternation between an unprefixed anticausative verb and a prefixed causative verb is transparent (\nextx a). But this is not always the case: in (\nextx b) the unprefixed verb is an activity and the prefixed verb is transitive (it has the obligatory reflexive marker) but does not strictly speaking mean `make yourself fly' or `fly yourself'. Even more strikingly---and certainly reminiscent of the Hebrew datapoints---is~(\nextx c), where the prefixed version has different meaning than the unprefixed one.
  \begin{exe}
 \ex  \langinfo{French}{}{\citealt{junker87}}
 	\begin{xlist}
@@ -835,7 +835,7 @@ We have already seen examples of triplets such as those predicted by~(\lastx a) 
 
 In both cases the {\tkal} form is archaic and exists in contemporary speech only in a few set idioms, if at all. Speakers seem to prefer the {\tnif} form for the anticausative, in accordance with~(\lastx).
 
-Outside of Hebrew, Acehnese has been reported to have an unmarked anticausative and an additional marked anticausative \citep{ko09afla}. Interestingly, this latter marked anticausative looks like it is derived from the marked causative. I therefore submit the generalization in~(\ref{ex:vd:causgen}) and the prediction in~(\ref{ex:vd:causpred}) as claims to be tested in more careful crosslinguistic work.
+Outside of Hebrew, \ili{Acehnese} has been reported to have an unmarked anticausative and an additional marked anticausative \citep{ko09afla}. Interestingly, this latter marked anticausative looks like it is derived from the marked causative. I therefore submit the generalization in~(\ref{ex:vd:causgen}) and the prediction in~(\ref{ex:vd:causpred}) as claims to be tested in more careful crosslinguistic work.
 
 	\subsection{Productivity} \label{vd:caus:product}
 Another point about the semantic flexibility of {\vd} concerns its productivity. The template {\thif} is a productive causative template in which speakers may innovate new forms on the fly \citep{lev16}. The verb \emph{taka} `stuck', for instance, is an ordinary transitive verb in {\tkal}, but the online comment in~(\nextx) innovates \emph{hetkia} in {\thif} (presumably for literary or comic effect). The article concerns a roller coaster which became stuck mid-ride on a Saturday, the prescribed day of rest, stranding those riding it for the better part of an hour.
