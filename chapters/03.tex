@@ -398,14 +398,14 @@ The resulting generalization is that external arguments in {\tnif} are possible 
 	\subsection{Interim summary: \tnif} \label{vz:tnif:sum}
 Verbs in {\tnif} can be classified according to their syntactic behavior and derivational relationship to other verbs. Anticausatives, inchoatives and passives are non-active; figure reflexives are active. Passives have an implied external argument, while anticausatives and inchoatives do not. And of these two, only anticausatives stand in an alternation with a verb in {\tkal}. Looking at things structurally, anticausatives and inchoatives are unaccusative (no external argument); passives are passive (implied external argument); and figure reflexives are unergative (require an external argument).
 
-Based on the diagnostics above, \cite{ahdoutkastner19nels} were able to classify 415 verbs with a high degree of certainty (out of 462 in total), with the breakdown in Table~\ref{tab:3-2:tnif}.\footnote{These findings the result of work by Odelia Ahdout as part of \citet{ahdout19phd}.} It can be seen from the first row, for example, that 91 verbs in {\tnif} have only unaccusative readings, like those in~(\ref{ex:vz:tnif-anticaus}). Since some verbs are ambiguous between a number of readings like those in~(\ref{ex:vz:tnif-passanticaus}), the total number of verbs with an unaccusative reading is 196 (first column). These numbers are not given here as part of any quantitative claim, only to demonstrate that all classes are well-attested in the language (but without factoring anything like token frequency into the equation). Additional examples can be found in \cite{ahdoutkastner19nels}.
+Based on the diagnostics above, \cite{ahdoutkastner19nels} were able to classify 415 verbs with a high degree of certainty (out of 462 in total), with the breakdown in Table~\ref{tab:3-2:tnif}.\footnote{These findings the result of work by Odelia Ahdout as part of \citet{ahdout19phd}.} It can be seen from the first row, for example, that 91 verbs in {\tnif} have only unaccusative readings, like those in Table~\ref{table:vz:tnif-anticaus}. Since some verbs are ambiguous between a number of readings like those in Table~\ref{table:vz:tnif-passanticaus}, the total number of verbs with an unaccusative reading is 196 (first column). These numbers are not given here as part of any quantitative claim, only to demonstrate that all classes are well-attested in the language (but without factoring anything like token frequency into the equation). Additional examples can be found in \cite{ahdoutkastner19nels}.
 
 \begin{table}
 \fittable{
 \begin{tabularx}{\textwidth}{lcccrr@{.}l}
  \lsptoprule
 				& \multicolumn{3}{c}{Construction}	& N	& \multicolumn{2}{c}{\%} \\
-				 	& Unaccusative	& Passive & Figure reflexive & & \multicolumn{2}{c}{} \\\midrule\hline
+				 	& Unacc	& Passive & Figure reflexive & & \multicolumn{2}{c}{} \\\midrule\hline
 Only unaccusative			&	+			& ---			&	---		&	91	&	21&9\% \\
 Only mediopassive			&	+			& +				& ---		&	78	&	18&8\% \\
 Only passive					&	---			& +				&	---		&	172	& 41&4\% \\\tablevspace
@@ -448,8 +448,8 @@ In order to explain the behavior of non-active verbs in {\tnif} I propose the he
  	\ex  A Voice head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier. 
     As typically assumed for unaccusative little \emph{v} or unaccusative Voice, {\vz} does not assign accusative case either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
  	\ex  \denote{\vz}\phantom{.} = $\begin{cases} 
-		\lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
-		\lambda P_{<s,t>}.P & \\
+		\text{λPλe∃x.Agent(x,e) \& P(e)} & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
+		\text{λP}_{<s,t>}\text{.P} & \\
 		\end{cases}$
  	\ex  {\vz} \lra~{\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va:vzva}) 
  \z
@@ -509,10 +509,11 @@ Two brief points should be mentioned here. First, the relevant feature on Voice 
 	\subsection{Semantics} \label{vz:vz:sem}
 The denotations of {\vz} are as follows:
  \begin{exe}
-\ex  \label{ex:vz-sem}\denote{\vz}\phantom{.} = $\begin{cases} 
-		\text{a.} \lambda P \lambda e  \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}} \\
-		\text{b.} \lambda P_{<s,t>}.P & \\
-		\end{cases}$
+\ex  \label{ex:vz-sem}\denote{\vz} = 
+	\begin{xlist}
+		\ex λPλe∃x.Agent(x,e) \& P(e) / \{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\} 
+		\ex λP$_{<s,t>}$.P
+	\z
  \z 
 Two issues need to be unpacked. The first is the difference between unaccusatives and passives. The second has to do with the composition of inchoatives.
 
@@ -525,7 +526,7 @@ The second issue in the semantics of {\vz} has to do with composing inchoatives.
   		\subsubsection{Null allosemy in inchoatives} \label{vz:inch:analysis}
 Recall the relevant semantics of {\vz}:
  \begin{exe}
-\ex  \denote{\vz} = $\lambda P_{<s,t>}.P$ 
+\ex  \denote{\vz} = λP$_{<s,t>}$.P
  \z 
 This works well when the underlying vP is an event of breaking a glass, like in our running example. In principle, we expect the vP to describe an event which might then receive an Agent (with Voice) or not ({\vz}). But what if there is no [Voice vP] structure, i.e.~no active verb in {\tkal}, as in \emph{nirdam} `fell asleep'? It is not derived from a causative verb *\emph{radam} because there is no such verb (nor has there been in the history of the language, as far as I know).
 
@@ -554,7 +555,7 @@ Consider anticausatives once more. In~(\ref{ex:vz:allosemy-decaus}a), the combin
  \begin{exe}
  \ex  Locality in interpretation: anticausatives.\label{ex:vz:allosemy-decaus} 
  \begin{xlist} 
-     \ex  {[}v \root{ʃbr}~\!] = $\lambda$x$\lambda$e.\emph{break}(e) \& Theme(x,e) 
+     \ex  {[}v \root{ʃbr}~\!] = λxλe.\emph{break}(e) \& Theme(x,e) 
      \ex  {[}\textbf{\vz} [\emph{break}] ] = \emph{niʃbar} `got broken' 
  \z
 \z 
@@ -569,7 +570,7 @@ If a given root combines with v to be verbalized, it is possible that v introduc
 \z 
 
 \subsubsection{Null allosemy crosslinguistically}
-These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). The glosses are his.
+These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (\ili{Italian} \gsc{SE}). The glosses are his.
  \begin{exe}
  \ex  \langinfo{Italian}{}{\citealt[39]{burzio86}}
  \begin{xlist} 
@@ -598,7 +599,7 @@ These are the inchoatives treated here, but similar constructions can be found i
 
 The forms *\emph{sbaglia} and *\emph{pentir\'a} are not possible without \gsc{SE}; some verbs simply require \gsc{SE} or the equivalent nonactive marker in their language, however encoded.\footnote{The facts are slightly more complicated: \emph{sbaglia} `mistake' is possible in certain contexts but I believe that the generalization about \emph{pentirsi} `repent' is robust \citep[40]{burzio86}.}
 
-The famous case of deponents in Latin is similar: as discussed by various authors (e.g.~\citealt{xuetal07}), deponents are verbs with nonactive morphology but active syntax. Although they appear with a nonactive suffix, the verbs themselves are unergative or transitive. The deponent verb \emph{sequor} `to follow' is syntactically transitive but has no morphologically active forms:
+The famous case of deponents in \ili{Latin} is similar: as discussed by various authors (e.g.~\citealt{xuetal07}), deponents are verbs with nonactive morphology but active syntax. Although they appear with a nonactive suffix, the verbs themselves are unergative or transitive. The deponent verb \emph{sequor} `to follow' is syntactically transitive but has no morphologically active forms:
  \begin{exe}
  \ex  
  \begin{xlist} 
@@ -611,7 +612,7 @@ The famous case of deponents in Latin is similar: as discussed by various author
 
 Similar patterns have been discussed for various Indo-European languages by \cite{aronoff94}, \cite{embick04}, \cite{kallulli13}, \cite{wood15springer}, \cite{kastnerzu17} and \cite{grestenberger18}, among many others. While the analyses differ, what these cases all have in common is that individual roots require nonactive morphology.
 
-Turning to another possible crosslinguistic parallel with inchoatives, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
+Turning to another possible crosslinguistic parallel with inchoatives, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in \ili{Greek} in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
  \begin{exe}
 \ex  \label{ex:elena1} \emph{if-an-tos} weave-\gsc{VBLZ}-\gsc{ADJ} `woven' 
 \ex  \label{ex:elena2} \emph{fit-ef-tos} plant-\gsc{VBLZ}-\gsc{ADJ} `planted' \hfill \citep[97]{elenasamioti14} 
@@ -788,9 +789,9 @@ Following \cite{wood15springer}, I postulate a variant of \emph{p}, namely {\pz}
  \z
 \z 
 
-In the current system, a given head might impose a semantic requirement which is usually fulfilled immediately if the parallel syntactic requirement is met. For example, Voice might introduce an Agent role and license Spec,VoiceP, such that the argument in the latter saturates the former. But it is also possible for a semantic predicate to be satisfied later on in the derivation, in \emph{delayed saturation}. Such cases have been recently identified (sometimes as ``delayed gratification'') in work on French \citep{schaefer12}, Icelandic \citep{wood14nllt,wood15springer}, English, Quechua \citep{myler16mit}, Japanese \citep{woodmarantz17} and Choctaw \citep{tyler19}, although the idea that a predicate may be saturated in delayed fashion is not new in and of itself \citep{higginbotham85}.
+In the current system, a given head might impose a semantic requirement which is usually fulfilled immediately if the parallel syntactic requirement is met. For example, Voice might introduce an Agent role and license Spec,VoiceP, such that the argument in the latter saturates the former. But it is also possible for a semantic predicate to be satisfied later on in the derivation, in \emph{delayed saturation}. Such cases have been recently identified (sometimes as ``delayed gratification'') in work on \ili{French} \citep{schaefer12}, \ili{Icelandic} \citep{wood14nllt,wood15springer}, English, \ili{Quechua} \citep{myler16mit}, \ili{Japanese} \citep{woodmarantz17} and \ili{Choctaw} \citep{tyler19}, although the idea that a predicate may be saturated in delayed fashion is not new in and of itself \citep{higginbotham85}.
 
-Consider first the existing analysis of Icelandic. Figure reflexives in this language can appear in two configurations, one with a clitic -\emph{st} which does not concern us here \citep{wood14nllt}, and the other without it, as in~(\nextx):
+Consider first the existing analysis of \ili{Icelandic}. Figure reflexives in this language can appear in two configurations, one with a clitic -\emph{st} which does not concern us here \citep{wood14nllt}, and the other without it, as in~(\nextx):
 \begin{exe}
 \ex  \langinfo{Icelandic}{}{\citealt[168]{wood15springer}} \label{ex:vz:is-figrefl} \\
  \gll Hann labbaði inn í herbergið\\
@@ -1284,7 +1285,7 @@ While some languages, like English, do not differentiate morphologically between
 
 Crosslinguistically, templates like {\tnif} and {\thit} from this chapter are reminiscent of non-active markers such as Romance \gsc{SE}, German \emph{sich}, Russian \emph{-sja} and the Greek non-active suffix \gsc{NACT}. Crosslinguistic work shows that this kind of marking is often syncretic between anticausatives, inchoatives, passives, middles, reciprocals and reflexives \citep{geniusiene87,klaiman91,alexiadoudoron12,kastnerzu17}. Yet unlike languages like French, for instance, where \gsc{se} might be ambiguous between a number of readings (reflexive, reciprocal and anticausative), {\thit} is never ambiguous in Hebrew for a given root.\footnote{See \cite{kastner17gjgl} for one possible counterexample, the verb \emph{hitnaka} `cleaned up'.} For while French \emph{se} can be used in reflexive, reciprocal and non-active contexts with a variety of predicates~(\nextx), Hebrew {\thit} is unambiguous in that a verb like \emph{hitlabeʃ} `got dressed' is only reflexive~(\anextx). It cannot be used in an anticausative context, as shown by its incompatibility with `by itself'.
  \begin{exe}
- \ex French reflexives and reciprocals, after \citet[839]{labelle08}:\\
+ \ex \ili{French} reflexives and reciprocals, after \citet[839]{labelle08}:
  	\begin{xlist}
  	\ex 
 { \gll Les enfants \glemph{se} sont tous soigneusement \glemph{lav\'es}.\\
@@ -1436,9 +1437,9 @@ The semantics relevant to {\va} is repeated in~(\nextx):
  \begin{exe}
  \ex  \denote{Voice} =  
  \begin{xlist} 
- 	\ex  $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
- 	\ex  $\lambda$x$\lambda$e.Agent(x,e) or $\lambda$x$\lambda$e.Cause(x,e) 
- 	\ex  $\lambda$x$\lambda$e.\text{Agent}(x,e) / \trace~\va 
+ 	\ex  λP.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
+ 	\ex  λxλe.Agent(x,e) or λxλe.Cause(x,e) 
+ 	\ex  λxλe.\text{Agent}(x,e) / \trace~\va 
  \z
 \z 
 
@@ -1446,9 +1447,9 @@ In this section we will see two allosemes of {\vz}, one the identity function we
  \begin{exe}
  \ex  \label{ex:vz-denote} 
  \begin{xlist} 
- 	\ex  \denote{\vz} \lra~$\lambda$x$\lambda$e.Agent(x,e) / \trace~\va 
- 	\ex  \denote{\vz} \lra~$\lambda$P$\lambda$e$\exists$x.Agent(x,e) \& P(e) / \trace~\{\root{rtsx} `murder', \root{'mr} `say’, \dots\} 
- 	\ex  \denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P 
+ 	\ex  \denote{\vz} \lra~λxλe.Agent(x,e) / \trace~\va 
+ 	\ex  \denote{\vz} \lra~λPλe∃x.Agent(x,e) \& P(e) / \trace~\{\root{rtsx} `murder', \root{'mr} `say’, \dots\} 
+ 	\ex  \denote{\vz} \lra~λP$_{<s,t>}$.P 
  \z
 \z 
 
@@ -1466,7 +1467,7 @@ The process can be likened to impoverishment \citep{bonet91,noyer98} in the sema
 Another way of encoding this information would have been to build it right back into the denotations of Voice, as in~(\nextx):
  \begin{exe}
 \ex  Addition to~(\blastx), to be rejected: \\
-	\denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{ptsts} `\gsc{EXPLODE}', \dots\}
+	\denote{\vz} = λP$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{ptsts} `\gsc{EXPLODE}', \dots\}
  \z 
 The problem here is one of locality: the root is separated from {\vz} by {\va}. Existing theories of contextual allosemy maintain a strict linear adjacency requirement between trigger and alloseme \citep{marantz13,kastner16phd}. The kind of action-at-a-distance typical of roots licensing a head is more similar to impoverishment, which again happens at a distance.
 
@@ -1480,7 +1481,7 @@ The intuition behind the analysis of reflexives is as follows: reflexive verbs i
 The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) fleshes out the derivation of the reflexive verb in~(\ref{ex:vz:thit-refl}).
  \begin{exe}
 \ex  \label{ex:vz:thit-refl} 
-{ \gll dani \glemph{hitraxets}.\\
+{ \gll dani \glemph{hitraxets}\\
    Danny washed.\gsc{INTNS.\gsc{MID}}\\
  \glt `Danny washed (himself).' } 
 
@@ -1673,7 +1674,7 @@ The generalizations about each of {\tnif} and {\thit} are repeated in~(\nextx)--
 
 Remember, however, that ``template'' is a descriptive term for certain morphophonological forms. The traditional view is that a template is a morphological primitive with its own uniform phonology, syntax and semantics. The assumptions in this book are different: verbs are built up syntactically, and it could be that some structures end up with similar or even identical morphology. But the real distinction is between syntactic structures (and their interpretation). The anticausatives and figure reflexives that share the template {\tnif} are no more related syntactically than the English past tense verb and past participle sharing the suffix -\emph{ed}; perhaps there is an underlying similarity there, but it would need to be argued for.
 
-The summary table from the introductory section recaps:
+Summary Table~\ref{tab:1-8:tnif}, repeated from the introductory section, recaps:
 \begin{table}
 	\begin{tabularx}{\textwidth}{llcc} 
 		\lsptoprule

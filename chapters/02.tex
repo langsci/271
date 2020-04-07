@@ -333,12 +333,12 @@ This monograph promotes a theory of argument structure in which Voice can have o
 
 First, let me define Unspecified Voice in (\nextx). All definitions of Voice heads in this book take the same form: (a) syntactic definition, (b) semantic denotation, and (c) basic spell-out rules. I give these here and expand upon them in turn.
  \begin{exe}
- \ex  \glemph{Unspecified Voice} 
+ \ex  \textbf{Unspecified Voice} 
  \begin{xlist} 
  	\ex   A Voice head with no specification for a [D] feature. It has no requirements regarding whether its specifier must be filled. In transitive verbs, Voice is the locus of accusative case assignment, either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}. 
  	\ex   \denote{Voice} = $\begin{cases} 
-		\lambda P.P & \text{/ \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} }\\
-		\lambda x \lambda e.Agent(x,e) & \\
+		\text{λP.P} & \text{/ \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} }\\
+		\text{λxλe.Agent(x,e)} & \\
 		\end{cases}$
 
  	\ex   Voice \lra~{\tkal} \hfill  (with the allomorph {\tpie} to follow in Section \ref{voice:va}) 
@@ -350,14 +350,14 @@ The view of argument and event structure adopted here (see Chapter~\ref{intro:sk
  \begin{exe}
 \ex {  
 \Tree
-[.{v\\$\lambda$x$\lambda$e.devour(e) \& Theme(x,e)}
+[.{v\\λxλe.devour(e) \& Theme(x,e)}
 	[.\root{trf} ]
 	[.v ]
 ]
 $\Rightarrow$
 \Tree
-[.{vP\\$\lambda$e.devour(e) \& Theme(x,DP_{1})}
-	[.{v\\$\lambda$x$\lambda$e.devour(e) \& Theme(x,e)}
+[.{vP\\λe.devour(e) \& Theme(x,DP_{1})}
+	[.{v\\λxλe.devour(e) \& Theme(x,e)}
 		[.\root{trf} ]
 		[.v ]
 	]
@@ -366,12 +366,12 @@ $\Rightarrow$
 $\Rightarrow$
 
 \Tree
-[.{VoiceP\\$\lambda$e.devour(e) \& Theme(DP_{1},e) \& Agent(DP_{2},e)}
+[.{VoiceP\\λe.devour(e) \& Theme(DP_{1},e) \& Agent(DP_{2},e)}
 	[.DP_{2} ]
 	[.
-		[.{Voice\\$\lambda$x$\lambda$e.Agent(x,e)} ]
-		[.{vP\\$\lambda$e.devour(e) \& Theme(x,DP)}
-			[.{v\\$\lambda$x$\lambda$e.devour(e) \& Theme(x,e)}
+		[.{Voice\\λxλe.Agent(x,e)} ]
+		[.{vP\\λe.devour(e) \& Theme(x,DP)}
+			[.{v\\λxλe.devour(e) \& Theme(x,e)}
 				[.\root{trf} ]
 				[.v ]
 			]
@@ -508,8 +508,8 @@ Assuming that the active variant is the elsewhere case, certain roots will be sa
  \begin{exe}
  \ex  \denote{Voice} =  
  \begin{xlist} 
- 	\ex  $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
- 	\ex  $\lambda$x$\lambda$e.Agent(x,e) 
+ 	\ex  λP.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
+ 	\ex  λxλe.Agent(x,e) 
  \z
 \z 
 
@@ -769,7 +769,7 @@ Making reference to ``weak agentivity'' and ``intensive'' readings is a fine sem
 	\subsection{Agentive modifiers crosslinguistically} \label{voice:tpiel:act}
 
 		\subsubsection{Agentivity ≠ animacy}
-A number of recent works on argument and event structure have identified a component of meaning that can be broadly described as agentive, volitional, or a ``direct cause''. The most straightforward view of agentivity equates it with animacy. For example, Italian \emph{fare}-causatives require the causee to be animate, as in~(\nextx). Similar considerations are familiar from control phenomena as discussed in a range of work from \cite{farkas88} to \cite{zu18phd}.
+A number of recent works on argument and event structure have identified a component of meaning that can be broadly described as agentive, volitional, or a ``direct cause''. The most straightforward view of agentivity equates it with animacy. For example, \ili{Italian} \emph{fare}-causatives require the causee to be animate, as in~(\nextx). Similar considerations are familiar from control phenomena as discussed in a range of work from \cite{farkas88} to \cite{zu18phd}.
  \begin{exe}
  \ex  \langinfo{Italian}{}{\citealt[196]{folliharley08}}
  \begin{xlist} 
@@ -845,7 +845,7 @@ What I would like to highlight next is that these kinds of readings can also be 
 		\subsubsection{Agentive morphemes}
 Syntactic environments other than nominalization can give rise to similar effects. There are cases where a specific, overt morpheme can be identified as triggering these agentivity-like effects. In Hebrew itself, the external arguments of passive verbs can only be Agents, not Causes \citep{doron03}. I mention two more cases from other langauges here, before we return to a similar phenomenon in Hebrew which I attribute to the element {\va}.
 
-In their studies of the prefix \emph{afto-} in Greek, \cite{alexiadouafto} and \cite{spathasetal15} identified it as an \emph{anti-assistive} modifier, triggering agentive readings regardless of syntactic category, (\nextx).
+In their studies of the prefix \emph{afto-} in \ili{Greek}, \cite{alexiadouafto} and \cite{spathasetal15} identified it as an \emph{anti-assistive} modifier, triggering agentive readings regardless of syntactic category, (\nextx).
  \begin{exe}
  \ex  Agentive readings of \emph{afto-} \citep[61]{alexiadouafto}: 
  \begin{xlist} 
@@ -875,12 +875,12 @@ Given its meaning and its similarity to an analytic paraphrase, (\nextx), \cite{
  		\glt `John accuses himself.'  } 
 	
  \z
-\ex   \denote{\emph{afto}$_{\text{anti-assistive}}$} = $\lambda$f$\lambda$y$\lambda$e.f(y,e) \& $\forall$e'$\forall$x.(e'$\le$e \& Agent(x,e')) $\rightarrow$ x=y  \hfill \citep[1335]{spathasetal15} 
+\ex   \denote{\emph{afto}$_{\text{anti-assistive}}$} = λfλyλe.f(y,e) \& $\forall$e'$\forall$x.(e'$\le$e \& Agent(x,e')) $\rightarrow$ x=y  \hfill \citep[1335]{spathasetal15} 
  \z 
 
 Additional elaboration on these complex constructions can be found in these works and the previous works they cite. The technical conclusion is that \emph{afto-} is an adjunct which attaches to Voice, triggering agentive meaning.
 
-A comparable (although still distinct) phenomenon can be found in Tamil, where the suffix -\emph{koɭ} adds ``affective semantics'' which are otherwise hard to pin down. \cite{sundaresanmcfadden17} discuss the difference in meaning between verbs with and without -\emph{koɭ} as one of ``affectedness'' in a way that can be exemplified using the data in~(\nextx). With -\emph{koɭ}, the event affects the agent.
+A comparable (although still distinct) phenomenon can be found in \ili{Tamil}, where the suffix -\emph{koɭ} adds ``affective semantics'' which are otherwise hard to pin down. \cite{sundaresanmcfadden17} discuss the difference in meaning between verbs with and without -\emph{koɭ} as one of ``affectedness'' in a way that can be exemplified using the data in~(\nextx). With -\emph{koɭ}, the event affects the agent.
  \begin{exe}
  \ex  \langinfo{Tamil}{}{\citealt{sundaresanmcfadden17}}
  \begin{xlist} 
@@ -911,7 +911,7 @@ In order to explain the behavior of verbs in {\tpie} I propose to use a special 
  \ex  {\va}: 
  \begin{xlist} 
  	\ex   A modifier which attaches to vP. 
- 	\ex   \denote{Voice} = $\lambda$x$\lambda$e.Agent(x,e) / \trace~\va 
+ 	\ex   \denote{Voice} = λxλe.Agent(x,e) / \trace~\va 
  	\ex   Voice {\lra} {\tpie} / {\trace} {\va} 
  	\ex   {\vz} {\lra} {\thit} / {\trace} {\va} 
  \z
@@ -1061,7 +1061,7 @@ In principle, {\va} could be argued to adjoin to v/vP, Voice or even to the root
 				[.DP ]
 			]
 		]
- 	\ex   \emph{pirek} `dismantled' 
+ 	\ex   \emph{pirek} `dismantled' \\
 		\Tree
 		[.VoiceP
 			[.DP ]
@@ -1079,7 +1079,7 @@ In principle, {\va} could be argued to adjoin to v/vP, Voice or even to the root
 				]
 			]
 		]
- 		\ex   \emph{hitparek} `fell apart' 
+ 		\ex   \emph{hitparek} `fell apart' \\
 			\Tree
 			[.VoiceP
 				[.DP ]
@@ -1107,9 +1107,9 @@ Given that {\va} has been just argued to be a root, assigning a semantics to it 
  \begin{exe}
  \ex  \denote{Voice} =  
  \begin{xlist} 
- 	\ex   $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
- 	\ex   $\lambda$x$\lambda$e.Agent(x,e) or $\lambda$x$\lambda$e.Cause(x,e) 
- 	\ex   $\lambda$x$\lambda$e.Agent(x,e) / \trace~\va 
+ 	\ex   λP.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \} 
+ 	\ex   λxλe.Agent(x,e) or λxλe.Cause(x,e) 
+ 	\ex   λxλe.Agent(x,e) / \trace~\va 
  \z
 \z 
 While this formalization aims to be explicit, I have taken a few shortcuts. As already argued for by \cite{layering15}, it is the vP which provides the causative component, not Voice. The formalization in~(\lastx) is meant to indicate that both Causes and Agents are compatible with Voice, but that only Agents are possible once {\va} is in the structure. 
