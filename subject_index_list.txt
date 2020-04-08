@@ -15,7 +15,8 @@ deponents
 ditransitives,ditransitive
 epenethesis,epenethetic
 EPP
-Figure/Ground,Figure,Ground
+Figure
+Ground
 figure reflexives,figure reflexive
 head movement
 i\*

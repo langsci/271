@@ -28,21 +28,29 @@ close($subjfh);
 
 ### Insert indexation commands
 
-my $entire_document = read_file($filename, encoding => 'utf8') or die "Cannot open file $filename";
+my @entire_document = read_file($filename, encoding => 'utf8') or die "Cannot open file $filename";
+my @new_document = "";
+my $counter = 0;
 
 # probably not a very efficient method
-while ((my $key, my $value) = each (%subjects)) {
-	my $indTerm = $value;
-	my $textTerm = $key;
-	
-	if ($textTerm eq $indTerm) {
-		$entire_document =~ s/(^begin\{)$textTerm/\\isi\{$indTerm\}/g;
+for my $ln (@entire_document) {
+	$counter++;
+	if ($ln =~ /^(\s*)\W/) {
+		push (@new_document, $ln);
 	}
 	else {
-		$entire_document =~ s/(^begin\{)$textTerm/$textTerm\\is\{$indTerm\}/g;
+		while ((my $key, my $value) = each (%subjects)) {
+			my $indTerm = $value;
+			my $textTerm = $key;
+			if ($textTerm eq $indTerm) {
+				$ln =~ s/$textTerm/\\isi\{$indTerm\}/g;
+			}
+			else {
+				$ln =~ s/$textTerm/$textTerm\\is\{$indTerm\}/g;
+			}
+		}
+		push (@new_document, $ln);
 	}
-	
-	
 	#open(my $fh, "<", $filename) or die "Cannot open file $filename";
 	#open(my $outfh, ">", $outfile) or die "Cannot open file $outfile";
 		#print $outfh $line;
@@ -53,6 +61,6 @@ while ((my $key, my $value) = each (%subjects)) {
 }
 
 open(my $outfh, ">", $outfile) or die "Cannot open file $outfile";
-print $outfh $entire_document;
+print $outfh @new_document;
 close($outfh);
-
+print "Processed $counter lines.";
