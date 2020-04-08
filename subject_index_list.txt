@@ -1,4 +1,4 @@
-Agent
+Agent,agent
 agentivity,adverbial modifiers,by itself
 Agree,valued
 allomorphy
@@ -18,7 +18,7 @@ EPP
 Figure/Ground,Figure,Ground
 figure reflexives,figure reflexive
 head movement
-\textit{i*},\emph{i*}
+i\*
 Impoverishment
 Layering
 licensing,licensed,license
@@ -33,7 +33,7 @@ passive
 prepositional phrases,PP,pP,prepositional phrase
 productivity,productive
 Spell-out
-spirantization,de-spirantization
+spirantization
 Theme
 transitive
 unaccusativity tests,VS order,possessive dative,episodic plural
