@@ -5,19 +5,20 @@ use 5.010;
 use strict;
 use utf8;
 use open ':std', ':encoding(utf8)';
-use File::Slurp::Unicode;
+#use File::Slurp::Unicode;
 
 my $filename = "main.sdx";
-my $outfile = "$filename.fix";
-
-### Read in a dictionary of subject index terms
+my $outfile = shift or die "Output file (could be the same)?";
+my @entire_document;
 
 open(my $fh, "<", $filename) or die "Cannot open main.sdx";
-open(my $outfh, ">", $outfile) or die "Cannot open file $outfile";
-
 while (my $line = <$fh>) {
 	$line =~ s/\\isi \{(.*?)\}/$1/;
-	print $outfh $line;
+	push (@entire_document, $line);
+	#print $outfh $line;
 }
 close($fh);
+
+open(my $outfh, ">", $outfile) or die "Cannot open $outfile for writing";
+print $outfh join ('', @entire_document);
 close($outfh);
