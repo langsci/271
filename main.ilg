@@ -1,24 +1,63 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file main.sdx....done (391 entries accepted, 0 rejected).
-Sorting entries......done (3609 comparisons).
+Scanning input file main.sdx.....done (1150 entries accepted, 0 rejected).
+Sorting entries............done (13039 comparisons).
 Generating output file main.snd....
-## Warning (input = main.sdx, line = 311; output = main.snd, line = 31):
+## Warning (input = main.sdx, line = 118; output = main.snd, line = 11):
    -- Conflicting entries: multiple encaps for the same page under same key.
 
-## Warning (input = main.sdx, line = 141; output = main.snd, line = 43):
+## Warning (input = main.sdx, line = 657; output = main.snd, line = 27):
    -- Conflicting entries: multiple encaps for the same page under same key.
 
-## Warning (input = main.sdx, line = 92; output = main.snd, line = 78):
+## Warning (input = main.sdx, line = 859; output = main.snd, line = 35):
    -- Conflicting entries: multiple encaps for the same page under same key.
 
-## Warning (input = main.sdx, line = 314; output = main.snd, line = 106):
+## Warning (input = main.sdx, line = 328; output = main.snd, line = 39):
    -- Conflicting entries: multiple encaps for the same page under same key.
 
-## Warning (input = main.sdx, line = 258; output = main.snd, line = 113):
+## Warning (input = main.sdx, line = 130; output = main.snd, line = 54):
    -- Conflicting entries: multiple encaps for the same page under same key.
 
-## Warning (input = main.sdx, line = 98; output = main.snd, line = 120):
+## Warning (input = main.sdx, line = 506; output = main.snd, line = 60):
    -- Conflicting entries: multiple encaps for the same page under same key.
-done (143 lines written, 6 warnings).
+
+## Warning (input = main.sdx, line = 932; output = main.snd, line = 64):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 1077; output = main.snd, line = 65):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 132; output = main.snd, line = 68):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 184; output = main.snd, line = 79):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 917; output = main.snd, line = 81):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 722; output = main.snd, line = 113):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 928; output = main.snd, line = 117):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 319; output = main.snd, line = 159):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 916; output = main.snd, line = 186):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 512; output = main.snd, line = 215):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 465; output = main.snd, line = 225):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 1081; output = main.snd, line = 233):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 317; output = main.snd, line = 270):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+done (287 lines written, 19 warnings).
 Output written in main.snd.
 Transcript written in main.ilg.

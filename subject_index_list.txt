@@ -1,4 +1,4 @@
-Agent,agent
+Agent
 agentivity,adverbial modifiers,by itself
 Agree,valued
 allomorphy
