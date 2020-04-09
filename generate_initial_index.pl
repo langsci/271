@@ -43,12 +43,15 @@ for my $ln (@entire_document) {
 			my $indTerm = $value;
 			my $textTerm = $key;
 			if ($textTerm eq $indTerm) {
-				$ln =~ s/$textTerm/\\isi\{$indTerm\}/g;
+				$ln =~ s/\b$textTerm\b/\\isi\{$indTerm\}/g;
 			}
 			else {
-				$ln =~ s/$textTerm/$textTerm\\is\{$indTerm\}/g;
+				$ln =~ s/\b$textTerm\b/$textTerm\\is\{$indTerm\}/g;
 			}
 		}
+		# still breaks at: \ref{tree:\isi{locality}}
+		#$ln =~ s/\\ref\{(.*?)\\is(i?)\{.*?\}\}.*?\}/\\ref\{$1\}/g;
+		$ln =~ s/\Qi*\E/\\isi\{i\*\}/g;
 		push (@new_document, $ln);
 	}
 	#open(my $fh, "<", $filename) or die "Cannot open file $filename";

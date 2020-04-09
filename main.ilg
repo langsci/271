@@ -1,4 +1,24 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file main.idx...done (0 entries accepted, 0 rejected).
-Nothing written in main.ind.
+Scanning input file main.sdx....done (391 entries accepted, 0 rejected).
+Sorting entries......done (3609 comparisons).
+Generating output file main.snd....
+## Warning (input = main.sdx, line = 311; output = main.snd, line = 31):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 141; output = main.snd, line = 43):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 92; output = main.snd, line = 78):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 314; output = main.snd, line = 106):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 258; output = main.snd, line = 113):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+
+## Warning (input = main.sdx, line = 98; output = main.snd, line = 120):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+done (143 lines written, 6 warnings).
+Output written in main.snd.
 Transcript written in main.ilg.

@@ -1,34 +1,143 @@
 \begin{theindex}
 
-  \item \emph {by itself}, \hyperindexformat{\see {agentivity}}{237}
+  \item \emph {by itself}, \hyperindexformat{\see {agentivity}}{61}
+  \item \isi {Agent}, \hyperpage{11}, \hyperpage{32, 33}, 
+		\hyperpage{35, 36}, \hyperpage{38}
+  \item \isi {agentivity}, \hyperpage{7}, \hyperpage{9}, 
+		\hyperpage{34, 35}, \hyperpage{39, 40}
+  \item \isi {applicative}, \hyperpage{32}
+  \item \isi {figure reflexives}, \hyperpage{4}, \hyperpage{9}, 
+		\hyperpage{14}, \hyperpage{28}, \hyperpage{48}, 
+		\hyperpage{50}, \hyperpage{54}
+  \item \isi {licensing}, \hyperpage{14, 15}, \hyperpage{18}, 
+		\hyperpage{23}, \hyperpage{25}, \hyperpage{33}
+  \item \isi {linearization}, \hyperpage{30}
+  \item \isi {markedness}, \hyperpage{3}, \hyperpage{38}, 
+		\hyperpage{55}
+  \item \isi {nominalizations}, \hyperpage{46}
+  \item \isi {prepositional phrases}, \hyperpage{9}, \hyperpage{11, 12}, 
+		\hyperpage{23}, \hyperpage{25}, \hyperpage{28}, 
+		\hyperpage{54}
+  \item \isi {unaccusativity tests}, \hyperpage{6}, \hyperpage{8--10}, 
+		\hyperindexformat{\infn {1}}{11}, \hyperpage{34}, 
+		\hyperpage{47}
 
   \indexspace
 
-  \item adverbial modifiers, \hyperindexformat{\see {agentivity}}{237}
+  \item adverbial modifiers, \hyperindexformat{\see {agentivity}}{61}
+  \item Agent, \hyperpage{6, 7}, \hyperpage{9, 10}, \hyperpage{14--18}, 
+		\hyperpage{24--26}, \hyperpage{28}, \hyperpage{32}, 
+		\hyperpage{39}, \hyperpage{44}, 
+		\hyperindexformat{\infn {15}}{46}, \hyperpage{46, 47}, 
+		\hyperpage{51}, \hyperpage{53, 54}
+  \item agentivity, \hyperpage{39}, \hyperpage{47}, \hyperpage{49}, 
+		\hyperpage{54}
+  \item Agree, \hyperpage{30}
+  \item allomorphy, \hyperpage{22}
+  \item allosemy, \hyperpage{17}, \hyperpage{43}
+  \item applicative, \hyperpage{28}, \hyperpage{45, 46}
 
   \indexspace
 
-  \item contextual allomorphy, 
-		\hyperindexformat{\see {allomorphy}}{237}
-  \item contextual allosemy, \hyperindexformat{\see {allosemy}}{237}
+  \item case, \hyperpage{3, 4}, \hyperpage{6}, \hyperpage{9}, 
+		\hyperpage{11}, \hyperindexformat{\infn {4}}{17}, 
+		\hyperpage{17, 18}, \hyperpage{20, 21}, \hyperpage{25}, 
+		\hyperpage{28, 29}, \hyperpage{34}, \hyperpage{38}, 
+		\hyperpage{45--47}
+  \item causative, \hyperpage{3--9}, \hyperpage{12, 13}, 
+		\hyperpage{15, 16}, \hyperpage{18, 19}, 
+		\hyperpage{32--35}, \hyperpage{38--41}, 
+		\hyperpage{43, 44}, \hyperpage{49--51}, 
+		\hyperpage{54--57}
+  \item Cause, \hyperpage{35}
+  \item conjugation class, \hyperpage{50}, \hyperpage{55, 56}, 
+		\hyperpage{85}
+  \item conjugation\is {conjugation class} class, \hyperpage{50}, 
+		\hyperpage{55, 56}
+  \item contextual allomorphy, \hyperindexformat{\see {allomorphy}}{61}
+  \item contextual allosemy, \hyperindexformat{\see {allosemy}}{61}
 
   \indexspace
 
-  \item de-spirantization, 
-		\hyperindexformat{\see {spirantization}}{237}
+  \item de-spirantization, \hyperindexformat{\see {spirantization}}{61}
+  \item deponents, \hyperpage{20}
+  \item ditransitives, \hyperpage{3}
 
   \indexspace
 
   \item episodic plural, 
-		\hyperindexformat{\see {unaccusativity tests}}{237}
+		\hyperindexformat{\see {unaccusativity tests}}{61}
+  \item EPP, \hyperpage{16}, \hyperpage{31}, \hyperpage{44}
 
   \indexspace
 
+  \item Figure, \hyperpage{4}, \hyperpage{9, 10}, \hyperpage{13, 14}, 
+		\hyperpage{23, 24}, \hyperpage{26--28}, \hyperpage{32}, 
+		\hyperpage{36}, \hyperpage{51}
+  \item figure reflexives, \hyperpage{4, 5}, \hyperpage{9, 10}, 
+		\hyperindexformat{\infn {1}}{11}, \hyperpage{11}, 
+		\hyperpage{13, 14}, \hyperpage{16}, \hyperpage{23}, 
+		\hyperpage{26}, \hyperpage{28}, \hyperpage{32, 33}, 
+		\hyperpage{37}, \hyperpage{40, 41}, \hyperpage{45}, 
+		\hyperpage{48, 49}, \hyperpage{54}
+
+  \indexspace
+
+  \item Ground, \hyperpage{9}, \hyperpage{23, 24}
+
+  \indexspace
+
+  \item head \isi {movement}, \hyperpage{28--31}
+
+  \indexspace
+
+  \item licensing, \hyperpage{44}, \hyperpage{53}
+  \item linearization, \hyperpage{28, 29}
+  \item locality, \hyperpage{43}
+
+  \indexspace
+
+  \item markedness, \hyperpage{85}
+  \item Merge, \hyperpage{25}
+  \item movement, \hyperpage{28--31}
+
+  \indexspace
+
+  \item nominalizations, \hyperindexformat{\infn {15}}{46}, 
+		\hyperpage{46}
+
+  \indexspace
+
+  \item passive, \hyperpage{5--9}, \hyperpage{12, 13}, 
+		\hyperpage{16, 17}, \hyperpage{33}, 
+		\hyperindexformat{\infn {9}}{36}, \hyperpage{36}, 
+		\hyperpage{39, 40}, \hyperpage{43, 44}, 
+		\hyperindexformat{\infn {14}}{45}, \hyperpage{47}, 
+		\hyperpage{49}, \hyperpage{85}
   \item possessive dative, 
-		\hyperindexformat{\see {unaccusativity tests}}{237}
+		\hyperindexformat{\see {unaccusativity tests}}{61}
+  \item prepositional phrases, \hyperpage{9}, \hyperpage{11}, 
+		\hyperindexformat{\infn {2}}{12}, \hyperpage{12}, 
+		\hyperpage{14}, \hyperpage{16}, \hyperpage{24}, 
+		\hyperpage{31, 32}, \hyperindexformat{\infn {10}}{37}, 
+		\hyperpage{46}
 
   \indexspace
 
-  \item VS order, \hyperindexformat{\see {unaccusativity tests}}{237}
+  \item Theme, \hyperpage{24}
+  \item transitive, \hyperpage{85}
+
+  \indexspace
+
+  \item unaccusativity tests, \hyperpage{6}, \hyperpage{9}, 
+		\hyperpage{11}, \hyperpage{28}, \hyperpage{34}, 
+		\hyperpage{47}
+  \item Unspecified Voice, \hyperpage{14}, \hyperpage{18}, 
+		\hyperpage{25}, \hyperindexformat{\infn {14}}{45}, 
+		\hyperpage{57}
+
+  \indexspace
+
+  \item VS order, \hyperindexformat{\see {unaccusativity tests}}{61}
 
 \end{theindex}

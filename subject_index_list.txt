@@ -12,14 +12,13 @@ clitics
 conjugation class,conjugation
 degree achievements,degree achievement
 deponents
-ditransitives,ditransitive
+ditransitives,ditransitive,ditransitivity
 epenethesis,epenethetic
 EPP
 Figure
 Ground
 figure reflexives,figure reflexive
 head movement
-i\*
 Impoverishment
 Layering
 licensing,licensed,license
@@ -36,6 +35,6 @@ productivity,productive
 Spell-out
 spirantization
 Theme
-transitive
+transitive,transitivity
 unaccusativity tests,VS order,possessive dative,episodic plural
 Unspecified Voice
