@@ -13,7 +13,13 @@ my @entire_document;
 
 open(my $fh, "<", $filename) or die "Cannot open main.sdx";
 while (my $line = <$fh>) {
-	$line =~ s/\\isi \{(.*?)\}/$1/;
+	if ($line =~ /\\emph/) { # \indexentry {\emph {by itself}|hyperindexformat{\see {agentivity}}}{237}
+	#\indexentry {Agree|hyperpage}{233}
+		$line =~ s/^(.*?)\\emph \{(.*?)\}(.*)$/$1$2\@\\textit\{$2\}$3/;
+	}
+	else {
+		$line =~ s/\\isi \{(.*?)\}/$1/;
+	}
 	push (@entire_document, $line);
 	#print $outfh $line;
 }
