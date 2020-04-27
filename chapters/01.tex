@@ -1,12 +1,12 @@
 \chapter{The valence of Voice}
 \label{chap:intro}
 
-The aim of this monograph is to present a new theory of argument structure alternations, one which is anchored in the syntax but has systematic interfaces with the phonology and the semantics. Conceptually, my goal is to argue for a specific formal system. Empirically, my goal is to provide the most comprehensive description and analysis of Hebrew verbal morphology to date, one whose formal assumptions are as similar as possible to those made in work on non-Semitic languages. Let's first see why Hebrew is interesting (Section~\ref{intro:puzzles}) and then why it continues to challenge existing accounts (Section~\ref{intro:basic}, before outlining the current proposal, Trivalent Voice (Sections~\ref{intro:arch}--\ref{intro:sketch}).
+The aim of this monograph is to present a new theory of argument structure alternations, one which is anchored in the syntax but has systematic interfaces with the phonology and the semantics. Conceptually, my goal is to argue for a specific formal system. Empirically, my goal is to provide the most comprehensive description and analysis of Hebrew verbal morphology to date, one whose formal assumptions are as similar as possible to those made in work on non-Semitic languages. Let's first see why Hebrew is interesting (Section~\ref{intro:puzzles}) and then why it continues to challenge existing accounts (Section~\ref{intro:basic}), before outlining the current proposal, Trivalent Voice (Sections~\ref{intro:arch}--\ref{intro:sketch}).
 
 \section{Identifying the puzzles} \label{intro:puzzles}
-In the verbal system of Modern Hebrew, verbs appear in one of seven morphological \emph{templates}. These templates, listed in~(\nextx), are the main object of study in this book. I will go into exact notational matters and how to understand these forms momentarily; for now, all that matters is that the \emph{root consonants} can be substituted for the placeholders X, Y and Z. Templates are traditionally given in the citation form, third person masculine singular past tense.
+In the verbal system of Modern Hebrew, verbs appear in one of seven morphological \emph{templates}. These templates, listed in~(\ref{ex:n1}), are the main object of study in this book. I will go into exact notational matters and how to understand these forms momentarily; for now, all that matters is that the \emph{root consonants} can be substituted for the placeholders X, Y and Z. Templates are traditionally given in the citation form, third person masculine singular past tense.
  \begin{exe}
- \ex  
+ \ex  \label{ex:n1}
  \begin{xlist} 
  	\ex  {\tkal} 
  	\ex  {\tnif} 
@@ -122,9 +122,9 @@ Contemporary theories of argument structure often take as a starting point the `
  \z
 \z 
 
-In other languages a ``\isi{causative} alternation'' can be observed, where the \isi{causative} variant is marked\is{\isi{markedness}}. The \ili{Japanese} example in~(\nextx) exemplifies \citep[3]{oseki17nyu}.
+In other languages a ``\isi{causative} alternation'' can be observed, where the \isi{causative} variant is marked\is{\isi{markedness}}. The \ili{Japanese} example in~(\ref{ex:1n2}) exemplifies \citep[3]{oseki17nyu}.
  \begin{exe}
- \ex  \ili{Japanese}
+ \ex  \ili{Japanese} \label{ex:1n2}
  \begin{xlist} 
  	\ex   
  		\gll John-ga ringo-o koor-\glemph{as}-ta.\\
@@ -150,7 +150,7 @@ This book provides a way of implementing the same idea in Hebrew. Now, I am by n
 
 The two problems are addressed as follows. By building up specific syntactic structures we are able to easily explain what syntactic configurations and semantic interpretations arise for a given structure, as well as how this structure is spelled out; that spell-out is what we call the template. Instead of figuring out the many-to-many mapping between form and meaning, I map one structure deterministically to form and to meaning, thereby solving the first problem. And by adopting the idea that a core vP carries the basic meaning of a verb, we can then layer additional heads above it, regulating the introduction of an external argument. The majority of work is carried out by the head Voice, which introduces the external argument. This solves the second problem. A technical innovation lies with the syntactic feature [$\pm$D] that Voice might carry, hence the valence of Voice. But we will get to that soon enough.
 
-Part I of this book is comprised of case studies of the different templates, which together come to form the theory of trivalent Voice. Part II consists of two chapters situating this theory within contemporary theoretical debates.
+Part~\ref{part:1} of this book is comprised of case studies of the different templates, which together come to form the theory of trivalent Voice. Part~\ref{part:2} consists of two chapters situating this theory within contemporary theoretical debates.
 
 The rest of this introductory chapter is structured as follows. I give a general overview of Hebrew morphology in Section~\ref{intro:basic}, including a brief account of what the traditional view is. Section~\ref{intro:arch} introduces the formal assumptions of my theory, which itself is outlined in Section~\ref{intro:sketch}.
 
@@ -174,10 +174,10 @@ Person/Gender	& \gsc{SG}	& \gsc{PL}\\\midrule
 \end{table} 
 I do not concern myself here with this distinction directly since my main interest is within the thematic domain, i.e.~VoiceP. In general, it is not surprising that syntactic material from a certain height and ``upwards'' in the tree is spelled out affixally rather than non-concatenatively; see \cite{harbour08} and \cite{kastnertucker19cup} for further discussion of this cross-Semitic point.
 
-Nevertheless, linguists and non-specialists alike often find themselves scratching their heads in an attempt to come to terms with Semitic's distinctive morphological system, built around ``roots'' and ``patterns''. Many early speakers of Modern Hebrew were such head-scratchers themselves: the language was revived in the late 19th century by individuals who, for the most part, were not native speakers of Semitic languages. The language nevertheless retained the Semitic morphology of its classical predecessor.
+Nevertheless, linguists and non-specialists alike often find themselves scratching their heads in an attempt to come to terms with the distinctive morphological system of Semitic languages, built around ``roots'' and ``patterns''. Many early speakers of Modern Hebrew were such head-scratchers themselves: the language was revived in the late 19th century by individuals who, for the most part, were not native speakers of Semitic languages. The language nevertheless retained the Semitic morphology of its classical predecessor.
 Given that this book is a study of the verbal system of Hebrew, I will make repeated reference to ``roots'' and ``templates'' (the latter also called ``patterns'', ``measures'', ``forms'' and \emph{binyanim}) as the two main components of the verb. I reserve the terms ``templates'' for the seven systematic verbal forms and ``patterns'' for the nominal and adjectival forms. These traditional terms have been used, as far as I know, for as long as the verbal systems of Hebrew and other Semitic languages have been documented. \cite{ussishkin00phd} mentions a number of works on Hebrew which use roots and templates as integral parts of the system, including \cite{gesenius} -- perhaps the best-regarded grammar of Biblical Hebrew -- as well as \cite{bopp1824}, \cite{ewald1827}, \cite{harris41} and \cite{chomsky51}. For Arabic, he mentions \cite{desacy1810} as one example among many of older works which make direct reference to roots and templates.
 
-The nature of the root was already debated by the traditional Arabic grammarians of Basra and Kufa in the 8th Century, according to \citet[563ff]{borer13oup} who herself cites \cite{owens88}. Turning to more recent works, we can add foundational contributions by \cite{rosen77}, \cite{berman78}, \cite{bolozky78,bolozky99} and \cite{ravid90}, all relying on the root and the template as descriptive notions. I cannot hope to do justice here to the vast modern-day literature on Hebrew, much of which has been published in Hebrew. The interested reader may want to consult the works of Yehoshua Blau, Reuven Mirkin, Uzzi Ornan and Haim Ros\'en, among others.
+According to \citet[563ff]{borer13oup}, who herself cites \cite{owens88}, the nature of the root was already debated by the traditional Arabic grammarians of Basra and Kufa in the 8th Century. Turning to more recent works, we can add foundational contributions by \cite{rosen77}, \cite{berman78}, \cite{bolozky78,bolozky99} and \cite{ravid90}, all relying on the root and the template as descriptive notions. I cannot hope to do justice here to the vast modern-day literature on Hebrew, much of which has been published in Hebrew. The interested reader may want to consult the works of Yehoshua Blau, Reuven Mirkin, Uzzi Ornan and Haim Ros\'en, among others.
 
 To see how the system is traditionally conceived of, let us consider first form, then meaning. The verbs in~(\ref{ex:intro-heb-3}) were all given in the 3rd person masculine singular past tense -- the citation form. The actual conjugation\is{conjugation class} of a given form across tenses and person/number/gender features is completely predictable, as Table~\ref{table:piel} exemplifies for the {\tpie} template (barring certain lexical idiosyncrasies investigated in \citealt{kastner18nllt}). That is to say, even though the meaning of a given verb cannot be immediately guessed in its entirety, the morphophonological form is predictable. Note again how agreement material is mostly affixal.
 
@@ -268,9 +268,9 @@ The template {\thif} usually appears in the literature as \emph{h\textbf{i}XYiZ}
 
 Glottal stops are often dropped in speech \citep{enguehardfaust18}. I usually omit them, but at times retain an apostrophe in order to distinguish between otherwise homophonous forms, for example \emph{hefria} `he disturbed' $\sim$ \emph{hefri\underline{'}a} `she disturbed'.
 
-When presenting verbal paradigms I include two substandard forms. The \gsc{1SG} future form is normally prefixed with \emph{a-} or \emph{e-}, e.g.~\emph{e-xtov} `I will write'. Contemporary usage, however, syncretizes \gsc{1SG} future with \gsc{3SG.M} future: \emph{je-daber} `I/he will talk'. I include both forms when giving paradigms. And finally, contemporary usage does not distinguish between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
+When presenting verbal paradigms I include two substandard forms. The \gsc{1SG} future form is normally prefixed with \emph{a-} or \emph{e-}, e.g.~\emph{e-xtov} `I will write'. Contemporary usage, however, syncretizes `\gsc{1SG} future' with `\gsc{3SG.M} future': \emph{je-daber} `I/he will talk'. I include both forms when giving paradigms. And finally, contemporary usage does not distinguish between masculine and feminine plural forms in past and future tense verbs. The traditional feminine plural endings have been discarded, syncretizing instead with the masculine plural forms.
 
-In the Hebrew glosses, \gsc{ACC} is used for the direct object marker \emph{et} and `of' for the head of a Construct State nominal, in the interest of readability. When reproducing examples from the literature I have modified the original transcriptions for consistency.
+In the Hebrew glosses, `\gsc{ACC}' is used for the direct object marker \emph{et} and `of' for the head of a Construct State nominal, in the interest of readability. When reproducing examples from the literature I have modified the original transcriptions for consistency.
 
 Finally, I am careful to use \emph{construction} as a term which is meant to be informal, descriptive or pre-theoretical. For example, a ``\isi{causative} construction'' does not entail any specific analysis but is merely a convenient label. In contrast, I use \emph{structure} or \emph{configuration} to mean the underlying syntax, for example an unaccusative configuration. With this housekeeping out of the way, we return to the theoretical approach.
 
@@ -328,18 +328,18 @@ I would like to focus on two important points here as a segue into the Trivalent
 The second point is that as a functional head, Voice might be endowed with different features. In principle, since it licenses a DP in its specifier, it should have the \isi{EPP} feature [D] \citep{chomsky95}. Once we accept that it has that feature, we can begin to ask what other features it can have, and might these features get checked in the course of the derivation. Much recent work in argument structure has explored the possible values of the [$\pm$D] feature on Voice, as well as the theoretical characterization of [$\pm$D]; these issues are discussed directly in Chapters \ref{chap:aas} and \ref{i:agree}, after the current theory has been developed in depth. One recent approach is of particular importance so I introduce it next.\label{r1:g:2a1}
 
 		\subsubsection{Layering} \label{intro:arch:layering}
-A recurring question in discussions of argument structure regards the direction of derivation in (anti-)\isi{causative} alternations. For an alternation like~(\nextx), is the \isi{transitive} version derived from the intransitive one via causativization or is the intransitive variant derived from the \isi{transitive} one via anticausativization?
+A recurring question in discussions of argument structure regards the direction of derivation in (anti-)\isi{causative} alternations. For an alternation like~(\ref{ex:1n12}), is the \isi{transitive} version derived from the intransitive one via causativization or is the intransitive variant derived from the \isi{transitive} one via anticausativization?
  \begin{exe}
- \ex  
+ \ex  \label{ex:1n12}
  \begin{xlist} 
  	\ex  Mary broke the vase. 
  	\ex  The vase broke. 
  \z
 \z 
 
-In their ``layering'' approach to transitivity\is{transitive} alternations, \cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP (\nextx a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the \isi{transitive} one, (\nextx b), then has the external argument added by additional functional material (Voice).\footnote{Marked anticausatives contain their own Voice layer but still have anticausative syntax and semantics, again because the core vP is the locus of the event. We will get to this in Chapter~\ref{chap:vz} and recap the specific implementation of the \isi{Layering} approach in Chapter~\ref{chap:aas}.}
+In their ``layering'' approach to transitivity\is{transitive} alternations, \cite{layering15} summarize a number of reasons for thinking that neither answer is strictly speaking true. They propose that both variants have the same base: a minimal vP (\ref{ex:1n13}a) containing the verb (a verbalized root) and the internal argument. The difference between the two variants is that the \isi{transitive} one, (\ref{ex:1n13}b), then has the external argument added by additional functional material (Voice).\footnote{Marked anticausatives contain their own Voice layer but still have anticausative syntax and semantics, again because the core vP is the locus of the event. We will get to this in Chapter~\ref{chap:vz} and recap the specific implementation of the \isi{Layering} approach in Chapter~\ref{chap:aas}.}
  \begin{exe}
-\ex  
+\ex  \label{ex:1n13}
 a. 
 \Tree
 		[.vP
@@ -361,9 +361,9 @@ b. \Tree
 
 This view explains a range of facts about this alternation, chiefly that there is no dedicated direction of derivation which is marked\is{\isi{markedness}} by the morphology across languages. That is, while some languages mark the \isi{transitive} variants, others mark the intransitive variants, and sometimes both variants are marked\is{\isi{markedness}} in the same language (as we have already seen for Hebrew). Even though there is much to say about which verbs or roots are marked\is{\isi{markedness}} in which way \citep{haspelmath93,unaccusativity95,arad05}, the grammar itself does not force derivation from one stem type to the other.
 
-In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core \isi{causative} component of the vP is present even in the anticausative variants. For example, there is no difference in event structure between causatives and anticausatives, indicating that Agents and Causes are not introduced in a separate event to the change of state. Furthermore, the \isi{Cause} PPs in~(\nextx) are possible with anticausatives but Agents are not possible, indicating that causation\is{\isi{causative}} can take place even without an external argument. Importantly, the \isi{causative} component is not simply introduced by the preposition \emph{from} \citep[30]{alexiadouetal06,alexiadouetal06nels,layering15}.
+In addition to the morphological reasoning, \cite{layering15} provide a series of arguments showing that the core \isi{causative} component of the vP is present even in the anticausative variants. For example, there is no difference in event structure between causatives and anticausatives, indicating that Agents and Causes are not introduced in a separate event to the change of state. Furthermore, the \isi{Cause} PPs in~(\ref{ex:1n14}) are possible with anticausatives but Agents are not possible, indicating that causation\is{\isi{causative}} can take place even without an external argument. Importantly, the \isi{causative} component is not simply introduced by the preposition \emph{from} \citep[30]{alexiadouetal06,alexiadouetal06nels,layering15}.
  \begin{exe}
- \ex  
+ \ex  \label{ex:1n14}
  \begin{xlist} 
  	\ex  The flowers wilted \{from the heat / *from the gardener\}. 
  	\ex  The window cracked \{from the pressure / *from the worker\}. 
@@ -384,7 +384,7 @@ Despite the crucial role of roots in determining the reading of a word, I cannot
 
 The idea that roots pick out meanings which are shared across forms will likewise not be formalized. I will be relatively comfortable talking about shared meaning in cases of alternations. In Chapter~\ref{voice:tpie} and in Chapter~\ref{vd:caus} I will discuss cases where the shared meaning is slightly less easy to pin down. Neither of these points is particular to Hebrew within root-based approaches like DM (and both require engaging more seriously with the lexical semantics literature), but they do appear more prominent because of the nature of the morphological system.
 
-It is important to delve a bit deeper into the idea of one root across a few templates. Consider \root{p\dgs{k}d} in~(\nextx).  One could find a general semantic notion of ``counting'' or ``surveying'' running through the use of this root but the alternations are in no way obvious. 
+It is important to delve a bit deeper into the idea of one root across a few templates. Consider \root{p\dgs{k}d} in~(\ref{ex:naive-pkd}).  One could find a general semantic notion of ``counting'' or ``surveying'' running through the use of this root but the alternations are in no way obvious. 
  \begin{exe}
  \ex \label{ex:naive-pkd} 
  \begin{xlist} 
@@ -397,7 +397,7 @@ It is important to delve a bit deeper into the idea of one root across a few tem
 \z 
 The problem is exacerbated when considering nominal forms as well: \emph{pakid} `clerk', \emph{mifkada} `headquarters', \emph{pikadon} `deposit'. Templates, then, do not provide us with deterministic mappings from phonological form (the template) to semantics (interpretation of a root), again with the exception of the \isi{passive} templates.
 
-So the question is whether verbs such as those in~(\ref{ex:naive-pkd}) do in fact share the same root. For example, it could be argued that (\lastx a,b,c,e) as well as the noun `headquarters' share one root that has to do with military concepts, and that (\lastx d) as well as the nouns `clerk' and `deposit' stem from a homophonous root that has to do with financial concepts. There are a number of reasons to reject this claim. First, there are no ``doublets''; if we were dealing with two roots, call them \root{pkd$_1$} and \root{pkd$_2$}, then each should be able to instantiate any of the templates. But \emph{hefkid} can only mean `deposited', never something like `installed into command'. The choice of verb for that root in that template has already been made. Second, experimental studies have found roots to behave uniformly across their different meanings \citep{deutsch16,deutschetal16,deutschkuperman18,kastneretal18}, although this is not a consensus yet \citep{fmdpmetal05jml,hellerbendavid15}.
+So the question is whether verbs such as those in~(\ref{ex:naive-pkd}) do in fact share the same root. For example, it could be argued that (\ref{ex:naive-pkd}a,b,c,e) as well as the noun `headquarters' share one root that has to do with military concepts, and that (\ref{ex:naive-pkd}d) as well as the nouns `clerk' and `deposit' stem from a homophonous root that has to do with financial concepts. There are a number of reasons to reject this claim. First, there are no ``doublets''; if we were dealing with two roots, call them \root{pkd$_1$} and \root{pkd$_2$}, then each should be able to instantiate any of the templates. But \emph{hefkid} can only mean `deposited', never something like `installed into command'. The choice of verb for that root in that template has already been made. Second, experimental studies have found roots to behave uniformly across their different meanings \citep{deutsch16,deutschetal16,deutschkuperman18,kastneretal18}, although this is not a consensus yet \citep{fmdpmetal05jml,hellerbendavid15}.
 		
 		\subsubsection{Contextual allomorphy}
 A morpheme is an abstract element, comprised of a bundle of syntactic features (or, in the case of roots, comprised of a pointer to lexical information). In DM, a morpheme is matched up with its exponent, or Vocabulary Item, in a postsyntactic process of Vocabulary Insertion. Which exponent is chosen depends on the phonological and syntactic environment the morpheme is in (see~\citealt{bonetharbour12} and~\citealt{gouskovabobaljik20cup} for overviews).
@@ -466,23 +466,23 @@ Similarly for adjectives:
 	\end{cases}$
  \z 
 
-The question occupying many theorists is the moment is what exactly the nature of ``\trace'' is: is it linear adjacency, syntactic adjacency, or something else? In previous work I have adopted the idea that \isi{allomorphy} can only be triggered under linear adjacency of overt elements \citep{embick10,marantz13}. This hypothesis helps explain a range of allomorphic interactions in Hebrew, as I argued for in \cite{kastner18nllt}. Some of these points will be mentioned in the following chapters -- in particular because I think the current analysis makes the right predictions -- but the discussion does not revolve around them.
+The question occupying many theorists at the moment regards the exact nature of ``\trace'': is it linear adjacency, syntactic adjacency, or something else? In previous work I have adopted the idea that \isi{allomorphy} can only be triggered under linear adjacency of overt elements \citep{embick10,marantz13}. This hypothesis helps explain a range of allomorphic interactions in Hebrew, as I argued for in \cite{kastner18nllt}. Some of these points will be mentioned in the following chapters -- in particular because I think the current analysis makes the right predictions -- but the discussion does not revolve around them.
 
 In my formal analysis I will assume that the stem vowels spell out Voice and that affixes spell out higher material (this can be seen as a Mirror Principle effect following directly from cyclic spell out; \citealt{baker85,muysken88,katie13,zukoff16nels,kastner18nllt}). Alternatively, we may assume that a dissociated \isi{Theme} node is projected (``sprouted'') from Voice postsyntactically \citep{oltramassuet99,embick10}; the same holds for Agr (agreement suffixes based on phi-features), be it on T or sprouted from T. But for simplicity I will represent the stem vowels as the overt spell-out of Voice and agreement as the spell out of a joint T+Agr head.
 
 		\subsubsection{Contextual allosemy}
 The phenomenology of contextual \isi{allomorphy} is fairly well understood, even if the exact mechanisms are under debate. A similar concept that has only recently gained currency is contextual \emph{\isi{allosemy}}. The idea is the same. One morpheme may have a number of interpretations competing for insertion at PF; this is \isi{allomorphy}. One morpheme may also have a number of interpretations competing for insertion at LF; this is \isi{allosemy}. Recent discussions can be found in \cite{woodmarantz17} and \cite{mylermarantz19cup}.
 
-\cite{kratzer96} proposed that Voice introduces the Agent role for eventualities~(\nextx) and that Holder introduces the Holder role for states~(\anextx).
+\cite{kratzer96} proposed that Voice introduces the Agent role for eventualities~(\ref{ex:1n24}) and that Holder introduces the Holder role for states~(\ref{ex:1n25}).
  \begin{exe}
- \ex  \emph{feed the dog}: 
+ \ex  \emph{feed the dog}: \label{ex:1n24}
  \begin{xlist} 
  	\ex  \denote{feed the dog} = λe.feed(the dog,e) 
  	\ex  \denote{Voice} = λxλe.Agent(x,e) 
  	\ex  \denote{Voice feed the dog} = λxλe.Agent(x,e) \& feed(the dog,e) 
  \z
 
- \ex  \emph{own the dog}: 
+ \ex  \emph{own the dog}: \label{ex:1n25}
  \begin{xlist} 
  	\ex  \denote{own the dog} = λs.own(the dog, e) 
  	\ex  \denote{Holder} = λxλs.Holder(x,s) 
@@ -490,9 +490,9 @@ The phenomenology of contextual \isi{allomorphy} is fairly well understood, even
  \z
 \z 
 
-Yet nothing forces Voice and Holder to be separate heads; in fact, this would be surprising given that their syntax and morphology are identical. As explained by \cite{wood15springer}, we could just as well posit that Voice has two contextual allosemes: one when it combines with a dynamic event and when it combines with a stative event.
+Yet nothing forces Voice and Holder to be separate heads; in fact, this would be surprising given that their syntax and morphology are identical. As explained by \cite{wood15springer}, we could just as well posit that Voice has two contextual allosemes: one when it combines with a dynamic event and when it combines with a stative event, (\ref{ex:1n26}).
  \begin{exe}
-\ex  \denote{Voice} \lra~ $\begin{cases} 
+\ex \label{ex:1n26}\denote{Voice} \lra~ $\begin{cases} 
 	\text{λxλe.Agent(x,e)} & / \trace~ \text{(eventuality)} \\
 	\text{λxλs.Holder(x,s)} & / \trace~ \text{(state)} \\
 	\end{cases}$ 
@@ -505,7 +505,7 @@ I make extensive use of this formalism in order to formalize the semantics of fu
 \section{Sketch of the system} \label{intro:sketch}
 Reviewing the facts that require explanation, all templates can be described along two axes: the range of interpretations they are compatible with, and the canonical alternations they participate in.
 
-We have already seen that \isi{transitive} verbs exist both in {\tkal} and {\thif}, and that unaccusatives exist in in {\tnif}. Yet \isi{transitive} verbs also exist in {\tpie} (\nextx a) and anticausatives also exist in {\thit} (\nextx b). So the syntactic configuration does not entail a given template.
+We have already seen that \isi{transitive} verbs exist both in {\tkal} and {\thif}, and that unaccusatives exist in in {\tnif}. Yet \isi{transitive} verbs also exist in {\tpie} (\ref{ex:counter1}a) and anticausatives also exist in {\thit} (\ref{ex:counter1}b). So the syntactic configuration does not entail a given template.
  \begin{exe}
  	\ex \label{ex:counter1}
  	\begin{xlist}
@@ -514,7 +514,7 @@ We have already seen that \isi{transitive} verbs exist both in {\tkal} and {\thi
  \z 
  \z
 
-Conversely, a given template does not always entail a given syntactic configuration. Even {\tnif} appears on some unergatives, (\nextx a), and {\thit} instantiates not only anticausatives as in~(\lastx b) but also reflexives as in~(\nextx b).
+Conversely, a given template does not always entail a given syntactic configuration. Even {\tnif} appears on some unergatives, (\ref{ex:counter2}a), and {\thit} instantiates not only anticausatives as in~(\ref{ex:counter1}b) but also reflexives as in~(\ref{ex:counter2}b).
 \begin{exe}
 	\ex \label{ex:counter2}
 	\begin{xlist}
@@ -654,7 +654,7 @@ There is no direct alternation between templates, only compositional interpretat
 	\subsection{Beyond simple alternations}
 The three-way distinction analyzed above is instructive but not deterministic, since a given syntactic configuration does not always entail a given template, and a given template does not always entail a given syntactic configuration.
 
-Importantly, while verbs in {\thif} are generally active~(\ref{ex:general}a) and those in {\tnif} generally non-active~(\ref{ex:general}c), verbs in {\tkal} are underspecified with regards to their argument structure, cf.~(\ref{ex:general}b): with some roots, the verb might be \isi{transitive}; with others, unergative; and with others still, unaccusative, (\nextx).
+Importantly, while verbs in {\thif} are generally active~(\ref{ex:general}a) and those in {\tnif} generally non-active~(\ref{ex:general}c), verbs in {\tkal} are underspecified with regards to their argument structure, cf.~(\ref{ex:general}b): with some roots, the verb might be \isi{transitive}; with others, unergative; and with others still, unaccusative, (\ref{ex:kal}).
  \begin{exe}
  \ex \label{ex:kal} 
  \begin{xlist} 
@@ -682,7 +682,7 @@ Importantly, while verbs in {\thif} are generally active~(\ref{ex:general}a) and
  \z
 \z 
 
-This ``flexibility'' of {\tkal} can be explained if \isi{Unspecified Voice} does not impose any restrictions of its own on argument structure. Then some roots like \root{'xl} in~(\lastx a) do require an external argument, some like \root{r\dgs{k}d} in~(\lastx b) require an external argument but no internal argument (save for cognate objects), and other still like \root{npl} in~(\lastx c) disallow an external argument. The summary in Table~\ref{table:alternations-heb} is augmented in Table~(\ref{table:alternations-heb2}).
+This ``flexibility'' of {\tkal} can be explained if \isi{Unspecified Voice} does not impose any restrictions of its own on argument structure. Then some roots like \root{'xl} in~(\ref{ex:kal}a) do require an external argument, some like \root{r\dgs{k}d} in~(\ref{ex:kal}b) require an external argument but no internal argument (save for cognate objects), and other still like \root{npl} in~(\ref{ex:kal}c) disallow an external argument. The summary in Table~\ref{table:alternations-heb} is augmented in Table~\ref{table:alternations-heb2}.
 \begin{table}
 	\begin{tabularx}{\textwidth}{llllllll}
  \lsptoprule
