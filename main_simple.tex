@@ -1,0 +1,526 @@
+\documentclass[12pt, oneside, openany]{book}
+%\usepackage[left=1.7in,top=1.1in,right=1.2in,bottom=1.8in,footskip=.7in]{geometry}
+\usepackage[left=1in,top=1in,right=1in,bottom=1.7in,footskip=.7in]{geometry}
+ 
+%\usepackage[Conny]{fncychap} %Sonny
+\usepackage{fncychap} %Sonny
+%\makeatletter
+%	\ChNumVar{\Huge}
+%	\ChNameVar{\centering\LARGE}
+%%	\ChNameUpperCase
+%	\ChTitleVar{\centering\LARGE\bfseries}
+%	\ChTitleUpperCase
+%%	\ChRuleWidth{1pt}
+%\makeatother
+
+% penalize widows and orphans
+\widowpenalty=100000
+\clubpenalty=1000000
+
+% for section headings (e.g. 5.2.3.1)
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{4}
+
+\usepackage{fontspec,xunicode} %,xltxtra}
+ \defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Renderer=ICU]{Charis SIL}
+%\setmainfont[Renderer=ICU]{Brill}
+
+%%  special font packages
+%\usepackage{tipa} % load before linguex--I don't know why
+%\usepackage[T1]{fontenc}
+
+% load this early to avoid an options with pstricks (why?)
+\usepackage[dvipsnames,table]{xcolor} %[usenames]
+
+\usepackage{amsmath,amssymb}
+
+% page format things
+%\setlength{\parindent}{.5in} % geometry command - indent 1/2 inch
+\usepackage{setspace} % for \doublespacing
+\usepackage{fancyhdr} % though I don't actually use this
+\usepackage{pstricks} % for commands like \uput
+% \usepackage{pstricks-add}  % consider changing to this, but read doc first
+\usepackage{comment} % to comment out big chunks
+
+%\usepackage{xypic}
+\usepackage[titletoc]{appendix}
+\usepackage[titles]{tocloft}
+
+% citations
+\usepackage{natbib}
+\bibpunct[:]{(}{)}{;}{a}{}{,}
+%\bibpunct[:]{(}{)}{;}{a}{,}{,}
+
+% linguistic examples
+%\usepackage{linguex}
+%\renewcommand{\firstrefdash}{} % refer to examples as (1a) rather than (1-a)
+\usepackage{expex} %Linguistics examples
+	\lingset{aboveexskip=0.5ex,belowexskip=0.5ex,aboveglftskip=0.1ex,interpartskip=0.1em,labelwidth=!6pt,belowpreambleskip=0.1ex} %, *=*?}
+	\usepackage{epltxfn}
+
+% trees
+\usepackage[nocenter]{qtree}
+\usepackage{tikz}
+\tikzstyle{every picture}+=[remember picture]
+
+%\usepackage{forest}
+%\forestset{% 
+%  % imitate qtree style
+%  qtree/.style={%
+%    baseline,
+%    for tree={%
+%      parent anchor=south,
+%      child anchor=north,
+%      align=center,
+%      base=top,
+%      inner sep=1pt,
+%      % l-=4ex,
+%      l=0pt,
+%      before typesetting nodes={%
+%        if content={}{%
+%          for parent={%
+%            for children={anchor=north},
+%            calign=fixed edge angles,
+%            calign angle=61,              
+%          },
+%          inner sep=0pt,
+%          outer ysep=-0.55pt, %originally -0.49 individual chapters -.5
+%          calign=fixed edge angles,
+%          calign angle=61,       
+%        }{},
+%      },
+%    },
+%  },
+%  % imitate squared tikz-qtree style
+%  squared/.style={%
+%    for tree={%
+%      edge path={%
+%        \noexpand\path[\forestoption{edge}]
+%        (!u.parent anchor) -|
+%        (.child anchor);
+%        \forestoption{edge label};
+%      },
+%      parent anchor=south,
+%      child anchor=north,
+%      align=center,
+%      base=top,
+%      inner sep=1pt,
+%      l sep=0.5em,
+%      l=0pt,
+%      before typesetting nodes={%
+%        if content={}{%
+%          before computing xy={l=1.5em},
+%          inner sep=0pt,
+%          outer ysep=-0.49pt,
+%        }{},
+%      },
+%    },
+%  },
+%}
+
+
+\usepackage{xytree}
+\usepackage{stmaryrd}
+\usepackage{wasysym} %checkbox, pointer
+\usepackage{array} %tabular column formatting
+	\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+	
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{dashrule} %\hdashrule
+\usepackage{arydshln}
+\usepackage{dashbox} %\dbox
+\usepackage{mdwlist}     %  compact lists: \begin{itemize*}
+
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}% 52
+\newcommand{\xmark}{\ding{55}}%
+ \newcommand{\hand}{\ding{43}}
+
+% for inserting graphics; the second one allows us to insert .png files etc.
+%\usepackage{graphics}
+\usepackage{graphicx}
+
+% tables
+\usepackage{rotating} % rotate tables sideways: \begin{sidewaystable}...
+
+% fonts and special characters
+%\usepackage{times} % or \usepackage{palatino}
+%\usepackage{fixltx2e} % for text subscripts
+%\usepackage{marvosym} % MVRightarrow
+%\usepackage{amssymb}
+
+
+%\usepackage{textcomp} % low tilde
+%\usepackage{upgreek} %  upphi
+%\usepackage{verbatim} % for code
+
+%%ITK
+\usepackage{subcaption}
+%\usepackage{xr}
+%	\externaldocument[I-]{ch2}
+%	\externaldocument[II-]{ch2}
+%	\externaldocument[III-]{ch3}
+%	\externaldocument[IV-]{ch4}
+%	\externaldocument[V-]{ch5a}
+%	\externaldocument[VV-]{ch5b}
+
+
+\newcommand\trace{\rule[-0.5ex]{0.5cm}{.4pt}}
+\newcommand\zero{\O{}}
+%\newcommand\itp[1]{\textit{\textipa{#1}}}
+\newcommand\gsc[1]{\textsc{\lowercase{#1}}} %for glossing in small caps - comment out to return to caps
+\renewcommand\root[1]{$\sqrt{\text{#1}}$}
+	\newcommand\olive[1]{\textcolor{olive}{#1}}
+%%	\newcommand\green[1]{\textcolor{ForestGreen}{#1}}
+%%	\newcommand\cyan[1]{\textcolor{cyan}{#1}}
+%%	\newcommand\brown[1]{\textcolor{brown}{#1}}
+%	\newcommand\gray[1]{\textcolor{gray}{#1}}
+\newcommand\denote[1]{$\llbracket$#1$\rrbracket$}
+\newcommand\lra{$\leftrightarrow$}
+
+\newcommand\glemph[1]{\textbf{#1}}
+ \newcommand\hammer[1]{\begin{center}\fbox{\parbox{0.9\linewidth}{\centering \textsf{#1}}}\end{center}}
+ 
+%Color macros
+%\newcommand\red[1]{\textcolor{red}{#1}}
+%\newcommand\blue[1]{\textcolor{blue}{#1}}
+%Voice heads
+\newcommand\dgs[1]{\textsubarch{#1}}
+	\newcommand\vz{\text{Voice$_{\text{[--D]}}$}}
+	\newcommand\vd{\text{Voice$_{\text{[\!+\!D]}}$}}
+	\newcommand\vzs{\text{Voice$_{\text{\{\}}}$}}
+	\newcommand\vds{\text{Voice$_{\text{\{D\}}}$}}
+	\newcommand\pz{\text{$p_{\text{[--D]}}$}}
+	\newcommand\pd{\text{$p_{\text{[\!+\!D]}}$}}
+	\newcommand\predd{\text{Pred$_{\text{[\!+\!D]}}$}}
+	\newcommand\predz{\text{Pred$_{\text{[\!--\!D]}}$}}
+	\newcommand\va{\root{\gsc{ACTION}}}
+	\newcommand{\tkal}{\emph{XaYaZ}}
+	\newcommand{\tpie}{\emph{Xi\dgs{Y}eZ}}
+	\newcommand{\tpua}{\emph{Xu\dgs{Y}aZ}}
+	\newcommand{\mpua}{\emph{meXu\dgs{Y}aZ}}
+	\newcommand{\thif}{\emph{heXYiZ}}
+	\newcommand{\thuf}{\emph{huXYaZ}}
+	\newcommand{\mhuf}{\emph{muXYaZ}}
+	\newcommand{\thit}{\emph{hitXa\dgs{Y}eZ}}
+	\newcommand{\tnif}{\emph{niXYaZ}}
+\newcommand{\ts}{\texttslig}
+\newcommand\del[1]{$<$#1$>$}
+%Morphological marking
+\newcommand\unmark[1]{\textbf{#1}}
+%\newcommand\caus[1]{\red{#1}}
+\newcommand\caus[1]{\fbox{\unmark{#1}}}
+%\newcommand\anticaus[1]{\blue{#1}}
+\newcommand\anticaus[1]{\dbox{\unmark{#1}}}
+
+\definecolor{nyu}{RGB}{87,6,140}
+\definecolor{hu}{RGB}{0,51,102}
+\newcommand\ruler{{\centering \color{hu} \rule[1ex]{0.6\columnwidth}{0.4pt}\par}}
+
+% lists
+\usepackage{mdwlist}     %  compact lists: \begin{itemize*}
+% make second-level bullets into little circles (or \diamond)
+\AtBeginDocument{
+  \def\labelitemii{\(\circ\)}
+  \def\labelitemiii{\(\cdot\)}
+}
+
+% for PDF markup and links
+\usepackage[normalem]{ulem} % required by changebar
+
+% ----- for revisions! comment out if not needed-----%
+
+%\usepackage{mdframed}
+%\newmdenv[leftmargin=\dimexpr-0.5em-3pt, innerleftmargin=0.5em,
+%          rightmargin=\dimexpr-0.5em-3pt, innerrightmargin=0.5em,
+%          linewidth=3pt,linecolor=red, topline=false, bottomline=false,
+%          innertopmargin=0pt,innerbottommargin=0pt,skipbelow=0pt,skipabove=0pt,
+%         ]{notex}
+%\newenvironment{revisions}
+% {\par\vskip\dimexpr\dp\strutbox-\prevdepth\relax\notex\strut\ignorespaces}
+% {\par\xdef\notetpd{\the\prevdepth}\endnotex\vskip-\notetpd\relax}
+%\newcommand{\edit}[1]{\begin{revisions}\dotuline{\textcolor{red}{#1}}\end{revisions}}
+
+%\newcommand\mrgn[1]{\-\marginpar[\textcolor{red}{$\|$}]{$\|$}\dotuline{\textcolor{red}{#1}}}
+
+
+%% Comment out for final version
+%\newcommand\edit[2][]{\-\marginpar[\textcolor{red}{$\|$}]{$\|$}\sout{\textcolor{red}{#1}}\dotuline{\textcolor{red}{#2}}}
+%\newcommand\edittxt[1]{\dotuline{\textcolor{red}{#1}}}
+
+%% Comment out for tracking changes
+%\newcommand\edit[2][]{#2}
+%\newcommand\edittxt[1]{#1}
+
+
+%\newcommand\delete[1]{\-\marginpar[\textcolor{red}{$\|$}]{}\sout{\textcolor{red}{#1}}}
+%\newcommand\replace[2]{\-\marginpar[\textcolor{red}{$\|$}]{}\sout{\textcolor{red}{#1}}\dotuline{\textcolor{red}{#2}}}
+% track changes: \cbstart {changed text goes here} \cbend
+%\usepackage[outerbars,color]{changebar}
+%\cbcolor{red}
+
+% FINAL VERSION: comment out the next two lines and uncomment the indicated ones further below
+%\newcommand{\revision}[1]{\cbstart\textcolor{red}{#1} \cbend}
+%\newcommand{\edit}[1]{\cbcolor{lightgray} \cbstart{\dotuline{#1}} \cbend}
+
+% FINAL VERSION: now uncomment the next three lines so the change-bars and the colored text disappear
+%\nochangebars
+%\newcommand{\revision}[1]{\cbstart{#1} \cbend}
+%\newcommand{\edit}[1]{\cbstart{#1} \cbend}
+
+% ----- end of stuff for revisions! -----%
+
+
+%\usepackage{pdfcomment}
+%\newcommand{\question}[1]{\pdfmargincomment[icon=Help,color={red},author=Tricia:,open=true]{#1}}
+%\newcommand{\mynote}[1]{\pdfmargincomment[color={yellow},author=Tricia:,open=true]{#1}}
+
+
+\usepackage{url} % links in PDF
+%--------------- code from web to make URLs smaller -----------------------%
+%
+%% Define a new 'leo' style for the package that will use a smaller font.
+% use either ttfamily or rmfamly
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\rmfamily}}}
+\makeatother
+\urlstyle{leo}
+%% Now use the newly defined style.
+%-------------------------------------------------------------------------------%
+%\usepackage[linkcolor=BlueViolet,citecolor=BlueViolet,colorlinks=true,urlcolor=gray,pagebackref=false]{hyperref}
+\usepackage{hyperref}
+
+% now give some commands to hyperref set up our PDF bookmarks etc.
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=true,          % non-Latin characters in Acrobats bookmarks
+    pdftoolbar=true,        % show Acrobats toolbar?
+    pdfmenubar=true,        % show Acrobats menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={The Valence of Voice},    % title
+    pdfauthor={Itamar Kastner},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={}, % producer of the document
+    pdfkeywords={}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=BlueViolet,          % color of internal links; I changed from red to blue to black
+    citecolor=BlueViolet,        % color of links to bibliography; I changed from green to blue, and then to black
+    filecolor=blue,      % color of file links; ; I changed from magenta to blue
+    urlcolor=blue           % color of external links - I go back and forth between black and blue
+}
+
+
+
+% now's when we say \doublespacing
+% for revisions, put the  \doublespacing command in the "pre" file (e.g., chapter1_pre) instead!!!
+%\doublespacing
+
+% If you have a little file with your own custom shortcuts in it, include here
+% \include{my_shortcuts}
+
+%-------end of all the packages -----------%
+
+% this must be changed at some point
+% Make sure the subsubsections are numbered and included in the TOC
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{4}
+
+% Command for use with chapters; ensures example number persistent across chapters
+%\newcounter{lastex}
+%\newcommand{\newchapter}[2]{\setcounter{lastex}{\value{ExNo}}%
+\newcommand{\newchapter}[2]{%\setcounter{lastex}{\value{ExNo}}%
+                            \chapter{#2}%
+                            \label{Chapter#1}%
+%                            \setcounter{ExNo}{\value{lastex}}%
+                            \input{#1}} 
+%                            \input{c_#1}} %TI
+
+%\newcommand{\appendixchapter}[2]{%
+%   \chapter{#2}
+%   \label{Appendix#1}%
+%    \input{a_#1}}
+%
+%\newcommand{\appendixsection}[1]{%
+%    \refstepcounter{section}%
+%    \section*{\protect{\thesection}\hspace{2.6ex}#1}}
+
+% From Jen's main
+ %Create list of appendices, and don't include appendices in the table of contents
+%\newlistof{appendixchapter}{apx}{List of Appendices}
+%\newcommand{\appendixchapter}[2]{%
+%    \refstepcounter{appendixchapter}%
+%    \refstepcounter{chapter}%
+%    \renewcommand{\DOTIS}[1]{\DOCH \DOTI{#2}}
+%    \chapter*{#2}
+%    \label{Appendix#1}%
+%    \addcontentsline{apx}{appendixchapter}{Appendix \protect\numberline{\theappendixchapter}#2}\par%
+%    \vspace {-1.47cm}
+%    \input{a_#1}}
+%\renewcommand{\theappendixchapter}{\Alph{appendixchapter}}
+%\newcommand{\appendixsection}[1]{%
+%    \refstepcounter{section}%
+%    \section*{\protect{\thesection}\hspace{2.6ex}#1}}
+%\newcommand{\appendixsubsection}[1]{%
+%    \refstepcounter{subsection}%
+%    \subsection*{\protect{\thesubsection}\hspace{2.5ex}#1}}
+% End from Jen's main
+
+%\setlength{\parindent}{.5in} % to indent paragraphs (doesn't do it on the first one after heading)
+% \setlength{\parskip}{0.125in} % to skip a line between paragraphs, for blocks of text
+
+%===============
+% this crazy code removes a bit of the spacing before and after chapter headings
+\makeatletter
+\renewcommand*{\@makechapterhead}[1]{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter%%%%% Fix for frontmatter, mainmatter, and backmatter 040920
+        \DOCH
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \if@mainmatter%%%%% Fix for frontmatter, mainmatter, and backmatter 060424
+      \DOTI{#1}%
+    \else%
+      \DOTIS{#1}%
+    \fi
+  }}
+% For the case \chapter*:
+\renewcommand*{\@makeschapterhead}[1]{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \DOTIS{#1}
+    \vskip 10\p@
+  }}
+\makeatother
+
+
+%%ITK
+\makeatletter %Allow superscript ^ and subscript _
+\catcode`_=\active%
+\gdef_#1{\ensuremath{{}\sb{#1}}}%
+\catcode`^=\active%
+\gdef^#1{\ensuremath{{}\sp{#1}}}%
+
+\renewcommand*\l@section{\ifnum\c@tocdepth>\z@\vskip 1pt plus 1pt minus 1pt \fi
+                         \@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother
+
+
+
+%\newfontfamily{\H}[Scale=1,Script=Hebrew]{David CLM} %{Frank Ruehl CLM}%{Ezra SIL}
+%====================
+
+\begin{document}
+
+    \frontmatter
+
+    \pagestyle{empty}
+
+     \singlespacing
+
+    \include{f-titlepage} % include title page
+    \pagestyle{plain}
+
+\doublespacing
+
+    \chapter*{Dedication}
+    \addcontentsline{toc}{chapter}{Dedication}
+%    \input{f-thanks}
+	\input{f-dedication}
+	
+	
+	\include{chapters/acknowledgments}
+	
+	
+\singlespacing	
+
+%
+%    \chapter*{Acknowledgments}
+%    \addcontentsline{toc}{chapter}{Acknowledgments}
+%	\input{acknowledgments}
+%
+%    \chapter*{Abstract}
+%    \addcontentsline{toc}{chapter}{Abstract}
+%    \input{f-abstract}
+
+    \tableofcontents
+
+% added and taken from Jen's main
+%    \newpage
+%\phantomsection \label{listoffig}
+%     \addcontentsline{toc}{chapter}{List of Figures}
+%    \listoffigures
+%
+%       \newpage
+%\phantomsection \label{listoftab}
+%    \addcontentsline{toc}{chapter}{List of Tables}
+%    \listoftables
+
+% Only 1 appendix so no need to have a List of Appendices
+%      \newpage
+%\phantomsection \label{listofapp}
+% \addcontentsline{toc}{chapter}{List of Appendices}
+%  \listofappendixchapter
+
+% end of added stuff from Jen's main
+
+    \mainmatter
+    \pagestyle{plain}
+
+    \include{chapters/01}
+
+\part{Hebrew Argument Structure}
+
+    \include{chapters/02}
+
+    \include{chapters/03}
+
+    \include{chapters/04}
+
+    \include{chapters/05}
+
+\part{Crosslinguistic Consequences}
+
+    \include{chapters/06}
+
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \include{chapters/07}
+
+%    \include{chapters/08}
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{4}}
+%    \chapter*{Appendix: Some Data}
+%     \addcontentsline{toc}{chapter}{Appendix: Some Data Here}
+%    \input{f_appendixA}
+
+
+%    \begin{appendices}
+
+    % The following commands redefine example numbering for appendices.
+    % Warning - once these commands are given, examples in footnotes will no longer work properly, and need to be given
+    % labels manually.
+%    \renewcommand{\NormalEx}{\refstepcounter{ExNo}\Exformat[(\thechapter\arabic{ExNo})]}
+%    \renewcommand{\theExNo}{(\thechapter\arabic{ExNo})}
+%    \setcounter{tocdepth}{2}
+
+%    \appendixchapter{appendixA}{Corpus Experiment Data}
+
+%    \end{appendices}
+
+    \backmatter
+
+    \addcontentsline{toc}{chapter}{References}
+    \bibliographystyle{linquiry2}
+    \bibliography{lingxbib}  % put the name of your bibliography here; make sure LaTeX can find it!
+
+\end{document}

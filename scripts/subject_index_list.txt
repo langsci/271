@@ -1,0 +1,40 @@
+Agent
+agentivity,adverbial modifiers,by itself
+Agree,valued
+allomorphy
+allosemy
+animacy
+applicative,Appl
+case,accusative,dative,nominative,genitive
+causative,causation
+Cause
+clitics
+conjugation class,conjugation
+degree achievements,degree achievement
+deponents
+ditransitives,ditransitive,ditransitivity
+epenethesis,epenethetic
+EPP
+Figure
+Ground
+figure reflexives,figure reflexive
+head movement
+Impoverishment
+Layering
+licensing,licensed,license
+linearization,linearize,linearized,linearizing,local dislocation
+locality
+markedness,marked,unmarked
+mediopassive
+Merge
+movement
+nominalizations,CEN,Complex Event Nominal,nominalization
+passive
+prepositional phrases,PP,pP,prepositional phrase
+productivity,productive
+Spell-out
+spirantization
+Theme
+transitive,transitivity
+unaccusativity tests,VS order,possessive dative,episodic plural
+Unspecified Voice

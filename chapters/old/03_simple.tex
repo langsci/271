@@ -1,0 +1,1716 @@
+\chapter{\vz}
+\label{chap:vz}
+
+\section{Introduction} \label{vz:intro}
+In the previous chapter we saw how one morphological form in Hebrew is associated with various argument structure configurations: verbs in {\tkal} might be unaccusative, unergative, transitive or ditransitive, all depending on the root. The theory developed in this book attributes this freedom to the behavior of (Unspecified) Voice, which at least in Hebrew is not specified with regards to the existence of an external argument or lack of one. And we have also seen how an agentive modifier can influence possible readings of the verb. In this chapter and in the next we will consider cases in which a different value of Voice is merged, leading to specific consequences for the syntax, semantics and phonology of the resulting verb. In terms of the morphology, we will see alternations in which the same root is instantiated in different templates.
+
+The current chapter motivates the non-active head {\vz}. Informally, {\vz} rules out the addition of an external argument. In the simplest case, this configuration leads to argument structure alternations as in~(\nextx), where the anticausative variants are essentially marked with non-active morphology. The two templates explored in this chapter are {\tnif} and {\thit}, on the right-hand side of each row in the table.
+\ex\label{ex:anticaus}
+\raisebox{-4em}{
+\begin{tabular}{ll|c|ll|ll}
+\multicolumn{2}{c|}{Templates} & Root & \multicolumn{2}{c|}{Causative} & \multicolumn{2}{c}{Anticausative} \\\hline
+\multirow{3}{*}{a.} & \multirow{3}{*}{\tkal~$\sim$ \tnif} & \root{ʃbr}& ʃavar & `broke' & niʃbar & `got broken'\\
+	& & \root{\dgs{k}r}& kara & `tore' & nikra & `got torn'\\
+	& & \root{mtx}& matax & `stretched' & nimtax & `got stretched'\\\hline
+\multirow{3}{*}{b.} & \multirow{3}{*}{\tpie~$\sim$ \thit} & \root{pr\dgs{k}}& pirek & `dismantled' & hitparek & `fell apart' \\
+	& & \root{p{\ts}{\ts}}& po{\ts}e{\ts} & `detonated' & hitpo{\ts}e{\ts} & `exploded'\\
+	& & \root{bʃl} & biʃel & `cooked' & hitbaʃel & `got cooked'\\
+\end{tabular}
+}
+\xe
+
+The idea that non-active marking tracks intransitive morphology is certainly not new, nor is the technical innovation of a non-active variant of Voice: \cite{schaefer08} and \cite{layering15} have most notably made the case for a system contrasting Voice with non-active (``expletive'' or ``middle'') Voice, and I will return to a direct comparison with that theory in Chapter~\ref{chap:aas}. What this chapter does aim to achieve is a number of interrelated goals, as already practiced in the previous chapter: to provide a thorough description of the facts, to motivate a particular analysis, and to highlight points of divergence from existing work in preparation for the discussion in the second part of this book.
+
+This chapter is the longest in the book, encompassing three different syntactic configurations and at least four semantic interpretation possibilities across two morphophonological templates. The names I have given these constructions are intended to be transparent and easy to compare with work on other languages. With that in mind, the richness of the system could also be confusing. What is important in terms of the big picture is that the two kinds of vPs discussed so far (one with {\va} and one without it) can merge with the non-active head {\vz}, and not just with regular Voice as in the previous chapter. In addition, there is a prepositional counterpart to this head, namely {\pz}, which derives another kind of construction -- the figure reflexive. And finally, pure reflexives are only possible when {\va} is in the structure. The table in~(\nextx) provides a preview.
+\ex \begin{tabular}{ll|cc}
+	\multicolumn{2}{c|}{Construction}	& {\tnif}	& {\thit} \\\hline
+\multirow{3}{*}{Non-active} & Anticausative	& {\vz}	& {\va}, {\vz}\\
+	& Inchoative & {\vz}	& {\va}, {\vz}\\
+	& Passive &	{\vz}	&	---\\\hline
+Active & Figure reflexive	& {\pz}	& {\va}, {\pz}\\\hline
+Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
+\end{tabular}
+\xe
+
+These constructions are explored as follows. In Section~\ref{vz:tnif} I identify the anticausatives, inchoatives and figure reflexives of {\tnif} (this last group underwriting a novel generalization). Section~\ref{vz:vz} analyzes the first two and Section~\ref{vz:pz} analyzes figure reflexives. Section~\ref{vz:interim} briefly summarizes the picture for {\tnif}. I then move to the right-hand side of the table, {\thit}, in Section~\ref{vz:thit}, and its analysis in Section~\ref{vz:va}: anticausatives, inchoatives and reflexives are analyzed in Section~\ref{vz:va:vzva}; figure reflexives are discussed in Section~\ref{vz:va:pzva}. The empirical and analytical picture is recapped in Section~\ref{vz:sum}. Section~\ref{vz:others} then compares the Trivalent approach with other treatments in the literature, at which point I take stock and preview the next chapter.
+
+\section{\tnif: Descriptive generalizations} \label{vz:tnif}
+The so-called ``middle'' template {\tnif} is traditionally viewed as a passive one. This is a mischaracterization. While it is true that many verbs in {\tnif} have passive readings, these verbs are often mediopassive, compatible with a passive or anticausative reading. Furthermore, a large group of verbs in {\tnif} have decidedly different syntactic and semantic behavior: they are active verbs, ``figure reflexives'' in the terminology of \cite{wood14nllt}. I lay out both classes of verbs and the diagnostics used to classify them. Their uniform morphology will receive a non-uniform syntactic analysis in Sections~\ref{vz:vz} and~\ref{vz:pz}.
+
+	\subsection{Non-active verbs} \label{vz:tnif:nact}
+Most verbs in {\tnif} have \textbf{passive} readings in that they are the passive variant of an active verb in~{\tkal}. This is the majority group of verbs in {\tnif} and probably the reason why the template is traditionally viewed as passive. A few examples are given on the right-hand side of~(\nextx).
+\ex\label{ex:vz:tnif-pass}Examples of passives in {\tnif}:\\
+\begin{tabular}{c|>{\em}ll|>{\em}ll}
+Root & \multicolumn{2}{c|}{{\tkal} Causative} & \multicolumn{2}{c}{{\tnif} Anticausative} \\\hline
+\root{'mr} & amar & `said' & neemar & `was said' \\
+\root{bxn} & baxan & `examined' & nivxan & `was examined' \\
+\root{rtsx} & ratsax & `murdered' & nirtsax & `was murdered' \\
+\root{\dgs{k}b'} & kava & `set, decided' & nikba & `was decided'\\
+\end{tabular}
+\xe
+
+This section also concerns verbs like those on the right-hand side of~(\nextx), which I call \textbf{anticausative}. Intuitively, these are verbs which convey the unaccusative variant of an existing active or stative verb in {\tkal}.
+\ex\label{ex:vz:tnif-anticaus}Examples of anticausatives in {\tnif}:\\
+\begin{tabular}{c|>{\em}ll|>{\em}ll}
+Root & \multicolumn{2}{c|}{{\tkal} verb} & \multicolumn{2}{c}{{\tnif} Anticausative} \\\hline
+\root{gmr} & gamar & `ended' & nigmar  & 'ended' \\
+\root{dl\dgs{k}} & dalak & `was lit' & nidlak & `lit up' \\
+\root{t\dgs{k}'} & taka & `jammed' & nitka & `got stuck' \\
+\end{tabular}
+\xe
+
+The forms in~(\blastx)--(\lastx) are unambiguous, in that \emph{nimtax} does not pass the anticausativity tests described below, only the passive ones. However, many verbs are \textbf{ambiguous} between the two readings, like those in~(\nextx).
+\ex\label{ex:vz:tnif-passanticaus}Examples of ambiguity between anticausative and passive in {\tnif}:\\
+\begin{tabular}{c|>{\em}ll|>{\em}ll}
+Root & \multicolumn{2}{c|}{{\tkal} verb} & \multicolumn{2}{c}{{\tnif} Anticausative} \\\hline
+\root{ʃbr}	&	ʃavar & `broke' &  niʃbar  & `broke / got broken' \\
+\root{sgr} & sagar & `closed' & nisgar  & `closed / got closed'\\
+\root{m'k} & maax & `squished' & nimax & `squished / got squished' \\
+\end{tabular}
+\xe
+
+But this section also concerns verbs like those on the right-hand side of~(\nextx). These \textbf{inchoatives} do not alternate with a variant in {\tkal}.
+\ex\label{ex:vz:tnif-inch}Examples of inchoatives in {\tnif}:\\
+\begin{tabular}{c|>{\em}ll|>{\em}ll}
+Root & \multicolumn{2}{c|}{{\tkal} Causative} & \multicolumn{2}{c}{{\tnif} Inchoative} \\\hline
+\root{rdm} & \multicolumn{2}{c|}{---} & nirdam & `fell asleep'\\
+\root{'lm} & \multicolumn{2}{c|}{---} & neelam & `disappeared'\\
+\root{kxd} & \multicolumn{2}{c|}{---} & nikxad & `went extinct'\\
+\end{tabular}
+\xe
+
+
+Out of 415 verbs in {\tnif} classified by \cite{ahdoutkastner19nels}, 275 have only passive readings, 196 have only anticasuative or inchoative readings, and 88 are ambiguous (leading to totals above 415). I will return to the quantitative summary in Section~\ref{vz:tnif:sum}.
+
+In what follows I apply the diagnostics introduced in Chapter~\ref{voice:tkal:nact}: compatibility with Agent-oriented adverbs (Section~\ref{vz:tnif:nact:adv}) and the two unaccusativity tests, VS order and the possessive dative (Section~\ref{vz:tnif:nact:unacc}). I also make use of diagnostics particular to passive configurations. All of the tests are consistent with the claim that the verbs classified as anticausative and inchoative have no Agent, hence are unaccusative, and that the verbs classified as passives have an implicit Agent (or an explicit \emph{by}-phrase Agent).
+
+	\subsubsection{Adverbial modifiers} \label{vz:tnif:nact:adv}
+Agent-oriented adverbs are incompatible with anticausatives~(\nextx) but possible with passives in the passive templates~(\anextx a) and in {\tnif}~(\anextx b).
+\pex 
+	\a	\ljudge{*} \begingl
+		\gla ha-{\ts}amid \textbf{niʃbar} be-mejomanut//
+		\glb the-bracelet broke.\gsc{MID} in-skill//
+		\glft (int. 'The bracelet was dismantled skillfully')//
+		\endgl
+	\a \ljudge{??} \begingl
+		\gla dana \textbf{nirdem-a} be-xavana//
+		\glb Dana fell.asleep.\gsc{MID-F} on-purpose//
+		\glft (int. `Dana fell asleep on purpose')//
+		\endgl
+\xe
+\pex
+	\a	\begingl
+		\gla ha-ʃaon \textbf{porak} be-zehirut//
+		\glb the-watch dismantled.\gsc{INTNS.PASS} in-caution//
+		\glft `The watch was dismantled carefully.'//
+		\endgl
+	\a
+		\begingl
+		\gla ha-hatsaa \textbf{nivxen-a} be-xaʃaʃ//
+		\glb the-suggestion.\gsc{F} examined.\gsc{MID}-\gsc{F} in-fear//
+		\glft `The suggestion was considered cautiously.'//
+		\endgl
+\xe
+
+Anticausatives are also incompatible with \emph{by}-phrases, which would otherwise refer to an Agent~(\nextx). These are naturally possible with passives~(\anextx).
+\pex
+	\a \ljudge{*} \begingl
+		\gla ha-{\ts}amid \textbf{niʃbar} al-jedej ha-{\ts}oref//
+		\glb the-bracelet broke.\gsc{MID} by the-jeweler//
+		\glft (int. 'The bracelet was dismantled by the jeweler')//
+	\endgl
+	\a \ljudge{*} \begingl
+		\gla dana \textbf{nirdem-a} al-jedej \{ha-xom / ha-kosem-et\}//
+		\glb Dana fell.asleep.\gsc{MID-F} by the-heat {} the-magician-\gsc{F}//
+		\glft (int. `Dana fainted/fell asleep due to the heat/due to the magician')//
+	\endgl
+\xe
+\pex
+	\a \begingl
+		\gla ha-ʃaon \textbf{porak} al-jedej ha-{\ts}oref//
+		\glb the-watch dismantled.\gsc{INTNS.PASS} by the-jeweler//
+		\glft `The watch was dismantled by the jeweler.'//
+		\endgl
+	\a \begingl
+		\gla ha-mitmodedim \textbf{nivxen-u} al-jedej ha-ʃofetet//
+		\glb the-contestants examined.\gsc{MID}-\gsc{PL} by the-referee//
+		\glft `The contestants were judged by the referee.'//
+		\endgl
+\xe
+
+The `by itself' test can be assumed to diagnose the non-existence of an external argument, regardless of whether the external argument is explicit (as in transitive verbs) or implicit (as in passives). The test is valid with anticausatives and inchoatives, (\nextx), but not with direct objects of transitive verbs, (\anextx a), or with passive verbs, (\anextx b).
+\pex
+	\a \begingl
+		\gla ha-kise \textbf{niʃbar} me-a{\ts}mo//
+	     \glb the-chair broke.\gsc{MID} from-itself//
+	     \glft  'The chair fell apart (of its own accord).'//
+    \endgl
+	\a \begingl
+		\gla ha-klavlav \textbf{nirdam} me-a{\ts}mo//
+		\glb the-puppy fell.asleep.\gsc{MID} from-itself//
+		\glft `The puppy fell asleep of his own accord.'//
+	\endgl
+\xe
+\pex
+    \a \ljudge{*} \begingl
+	    \gla miri \textbf{ʃavr-a} et ha-kise me-a{\ts}mo.//
+	    \glb Miri broke.\gsc{SMPL}-\gsc{F} \gsc{ACC} the-chair from-itself//
+	    \glft (int. 'Miri broke the chair of its own accord')//
+    \endgl
+    \a \ljudge{*} \begingl
+	    \gla moed ha-bxina \textbf{nikba} me-a{\ts}mo.//
+	    \glb date.of the-exam decided.\gsc{MID} from-itself//
+	    \glft (int. 'The date of the exam was set of its own accord')//
+   \endgl
+\xe
+    
+And as expected, passives allow control by the implied external argument (see \citealt{williams15} and \citealt{bhattpancheva17} for qualifications to this test):
+\ex \begingl
+	\gla ha-delet \textbf{nisger-a} kedej limnoa me-ha-xatul lehikanes la-xeder//
+	\glb the-door closed.\gsc{MID}-\gsc{F.SG} in.order to.prevent from-the-cat to.enter.\gsc{MID} to.the-room//
+	\glft `The door was closed to prevent the cat from entering the room'//
+	\endgl
+\xe
+    
+The tests thus far indicate that anticausatives and inchoatives in {\tnif} do not have an external argument, while passives do.
+
+	\subsubsection{Unaccusativity diagnostics} \label{vz:tnif:nact:unacc}
+Anticausatives and inchoatives in {\tnif} allow VS order:
+\pex 
+	\a \begingl
+		\gla \textbf{nigmer-a} kol ha-bamba//
+		\glb ended.\gsc{MID}-\gsc{F} all the-bamba//
+		\glft `The bamba snack ran out.'//
+		\endgl
+	\a \begingl
+		\gla \textbf{neelm-u} me-ha-sifrija ʃloʃa kraxim ʃel britanika//
+		\glb disappeared.\gsc{MID}-\gsc{3PL} from-the-library three volumes of Britannica//
+		\glft `Three volumes of Encyclopedia Britannica disappeared from the library.' \trailingcitation{\citep[142]{shlonsky87}}//
+		\endgl
+\xe
+
+As noted by \citet[148]{shlonsky87}, VS order with passives is generally fine but less so when the Agent is specified.
+\ex \begingl
+	\gla \textbf{neexal} le-ruti ha-kiwi (*al-jedej ha-xatul)//
+	\glb ate.\gsc{MID} to-Ruti the-kiwi by the-cat//
+	\glft `Ruti's kiwi was eaten.'//
+	\endgl
+\xe
+  
+Anticausative and inchoative verbs in {\tnif} are compatible with the possessive dative, again because it presumably targets the internal argument.
+\pex
+	\a 	\begingl
+		\gla \textbf{niʃbar} l-i ha-ʃaon//
+		\glb broke.\gsc{MID} to-me the-watch//
+		\glft `My watch broke.'//
+		\endgl
+	\a 	\begingl
+		\gla \textbf{nirdam} l-i ha-kelev al ha-regel, ma laasot?//
+		\glb fell.asleep.\gsc{MID} to-me the-dog on the-leg what to.do//
+		\glft `My dog fell asleep on my lap, what should I do?'//
+		\endgl
+\xe
+
+Taken together, these tests establish that anticausatives and inchoatives are unaccusative but the passive verbs are not (since the latter disallow `by itself'). A common assumption in the Hebrew literature is that verbs in this template are all non-active, but we will next consider another class of verbs in {\tnif}, the figure reflexives, which behave differently with regard to these tests.
+
+	\subsection{Figure reflexives} \label{vz:tnif:figrefl}
+It has been commonly assumed that verbs in {\tnif} are medio-passive (non-active), but it can be shown that there is another class of verbs in this template whose properties are quite different. These verbs do have an external argument and also take an obligatory prepositional phrase as their complement. Whereas a typical prepositional phrase has a Figure and a Ground, roughly the subject and object of the preposition (Chapter~\ref{intro:sketch:heads}), in these verbs the Figure is not explicitly named as a separate argument. It is, however, coreferential with the Agent of the verb. Verbs like these are called \emph{figure reflexives}, which is the term coined by \cite{wood14nllt} for a similar phenomenon in Icelandic. The name itself is meant to invoke the Figure-like, reflexive-like interpretation of a Figure in a prepositional phrase when it is the complement of certain verbs.\label{r1:3:2}
+
+Figure reflexives in {\tnif} include verbs such as those in (\nextx); all require a PP complement. Based on the diagnostics discussed here, \cite{ahdoutkastner19nels} have found that 74 of the 415 verbs in {\tnif} are figure reflexive, or ambiguous between a non-active and a figure reflexive reading. Some of these verbs are fairly recent (e.g.~\emph{nirʃam le-} `signed up for'), indicating that we are not dealing simply with a long list of lexicalized exceptions. Nevertheless, this class of verbs was not recognized prior to \cite{kastner16phd}, as far as I can tell.
+\ex\label{ex:vz:figrefl} \begin{tabular}{l>{\em}lll}
+	a.& nixnas &  *(\emph{le-}) & `entered (into)'\\
+	b.& nidxaf & *(\emph{derex/le-})  & `pushed his way through/into' \\
+	c.& nirʃam & *(\emph{le-})  & `signed up for' \\
+	d.& nilxam & *(\emph{be-}) & `fought (with)' \\
+	e.& neexaz & *(\emph{be-}) & `held on to' \\
+    \end{tabular}
+\xe
+
+I will repeat the diagnostics from Sections~\ref{vz:tnif:nact:adv}--\ref{vz:tnif:nact:unacc}---showing that figure reflexives pattern the opposite way from non-actives---before proceeding to discuss the complement to the verb.
+
+		\subsubsection{Adverbial modifiers} \label{vz:tnif:figrefl:adv}
+Agent-oriented adverbs are possible with figure reflexives:
+\ex\label{ex:vz:nixnesa}\begingl
+	\gla dana \textbf{nixnes-a} la-kita be-bitaxon//
+	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom in-confidence//
+	\glft `Dana confidently entered the classroom.'//
+	\endgl
+\xe
+
+`By itself' is not possible with figure reflexives:
+\ex \begingl
+	\gla\ljudge{*}dana \textbf{nixnes-a} la-xeder me-a{\ts}ma/me-a{\ts}mo//
+	\glb Dana entered.\gsc{MID}-\gsc{F} to.the-room from-herself/itself//
+	\endgl
+\xe
+
+\emph{By}-phrases are an irrelevant diagnostic when the external argument is explicit.
+
+		\subsubsection{Unaccusativity diagnostics} \label{vz:tnif:figrefl:unacc}
+Figure reflexives fail the accepted unaccusativity diagnostics, unlike non-active verbs in {\tnif}. \textbf{VS order} is unavailable, again being grammatical but resulting in ``stylistic inversion'':
+\ex \begingl
+	\gla\ljudge{\#}\textbf{nixnes-u} ʃaloʃ xajal-ot la-kita//
+	\glb entered.\gsc{MID}-\gsc{3PL} three soldiers-\gsc{F.PL} to.the-classroom//
+	\glft (int. 'Three soldiers entered the classroom.')//
+	\endgl
+\xe
+
+The \textbf{possessive dative} is likewise incompatible with figure reflexives; example~(\nextx) is infelicitous on a reading where the cat is the speaker's.
+\ex \begingl
+	\gla\ljudge{\#}ha-xatul \textbf{nixnas} l-i la-xeder (kol ha-zman), ma laasot?//
+	\glb the-cat enters.\gsc{MID} to-me to.the-room (all the-time) what to.do//
+	\glft (int. 'My cat keeps coming into into my room, what should I do?')//
+	\endgl
+\xe
+
+\citet[134]{shlonsky87} provided the pair in~(\nextx), noting in a footnote that \emph{lehikans} `to enter' is not unaccusative (an observation he credited Hagit Borer with), but he did not pursue the matter further.
+\pex
+	\a \ljudge{*} \begingl
+		\gla be-emtsa ha-seret \textbf{nixnes-u} li jeladim raaʃanim//
+		\glb in-middle.of the-movie entered.\gsc{MID}-\gsc{F} to.me children noisy//
+		\glft (int.~`In the middle of the movie (there) entered noisy children and it aggravated me')//
+		\endgl
+	\a \begingl
+		\gla be-emtsa ha-seret \textbf{nikre-u} li ha-mixnasaim//
+		\glb in.middle.of the-movie tore.\gsc{MID}-\gsc{F} to.me the-pants.\gsc{PL}//
+		\glft `In the middle of the movie my pants tore.'//
+		\endgl
+\xe
+
+This brief series of tests indicates that the subject of figure reflexives is a true agent, unlike the non-actives which share the same morphology.\footnote{It is unclear to what extent the episodic plural is compatible with figure reflexives:
+\ex \judge{??} \begingl
+	\gla \textbf{nixnas-im} pitom la-ulam!//
+	\glb enter.\gsc{MID.PRES}-\gsc{PL.M} suddenly to.the-hall!//
+	\glft (int.~`people are entering the hall all of a sudden!')//
+	\endgl
+\xe}
+That is one main difference. The second is the complement of these verbs, as I discuss next.
+
+	\subsubsection{Indirect objects} \label{vz:tnif:figrefl:pp}
+The novel observation is that figure reflexives take an obligatory prepositional phrase. The list in~(\nextx) is repeated from~(\ref{ex:vz:figrefl}). Importantly, the PP complements for these verbs cannot be left out. For example, omitting the PP from~(\ref{ex:vz:nixnesa}) above results in ungrammaticality, (\anextx a).
+\ex \begin{tabular}{l>{\em}lll}
+	a.& nixnas &  *(\emph{le-}) & `entered (into)'\\
+	b.& nidxaf & *(\emph{derex/le-})  & `pushed his way through/into' \\
+	c.& nirʃam & *(\emph{le-})  & `signed up for' \\
+	d.& nilxam & *(\emph{be-}) & `fought (with)' \\
+	e.& neexaz & *(\emph{be-}) & `held on to' \\
+    \end{tabular}
+\xe
+
+\pex Prepositional phrase complements (indirect objects) to figure reflexives are obligatory:
+	\a \begingl
+		\gla dana \textbf{nixnes-a} *(la-kita)//
+		\glb Dana entered.\gsc{MID}-\gsc{F} to.the-classroom//
+		\glft `Dana confidently entered the classroom.'//
+	\endgl
+	\a \begingl
+		\gla ahed \textbf{nilxem-a} *(be-avlot)//
+		\glb Ahed fought.\gsc{MID}-\gsc{F} in-wrongs//
+		\glft `Ahed fought wrongdoings.'//
+	\endgl
+\xe
+
+This claim has not been made before in either the traditional grammars or contemporary work, as far as I know (the closest are \citealt[87]{berman78}, who stated that some verbs show ''ingression'', and \citealt{schwarzwald08}, who noted that some verbs in this template are active).\footnote{See \cite{neeleman97} for PP complements in Dutch and English.} Hagit Borer (p.c.) notes that~(\nextx) is fine with no overt complement, even though I claim that the PP is obligatory:
+\ex \begingl
+	\gla tafsik le-hidaxef!//
+	\glb stop.\gsc{CAUS} to-push.\gsc{MID}.\gsc{INF}//
+	\glft `Stop pushing (your way in)!'//
+	\endgl
+\xe
+
+This example has the main verb in the imperative (or rather, in the future form, which is used for the imperative reading of most verbs in Modern Hebrew; cf.~\citealt{batel02lang}). I suspect that this is a general pattern because in English, too, obligatory complements can be dropped in imperatives:
+\pex
+	\a Itamar nagged *(Hagit).
+	\a Quit nagging!
+\xe
+
+The resulting generalization is that external arguments in {\tnif} are possible if and only if a prepositional phrase is required. In Section~\ref{vz:pz} I show how this generalization can be derived from the structure.
+
+	\subsection{Interim summary: \tnif} \label{vz:tnif:sum}
+Verbs in {\tnif} can be classified according to their syntactic behavior and derivational relationship to other verbs. Anticausatives, inchoatives and passives are non-active; figure reflexives are active. Passives have an implied external argument, while anticausatives and inchoatives do not. And of these two, only anticausatives stand in an alternation with a verb in {\tkal}. Looking at things structurally, anticausatives and inchoatives are unaccusative (no external argument); passives are passive (implied external argument); and figure reflexives are unergative (require an external argument).
+
+Based on the diagnostics above, \cite{ahdoutkastner19nels} were able to classify 415 verbs with a high degree of certainty (out of 462 in total), with the breakdown in~(\nextx).\footnote{These findings the result of work by Odelia Ahdout as part of \citet{ahdout19phd}.} It can be seen from the first row, for example, that 91 verbs in {\tnif} have only unaccusative readings, like those in~(\ref{ex:vz:tnif-anticaus}). Since some verbs are ambiguous between a number of readings like those in~(\ref{ex:vz:tnif-passanticaus}), the total number of verbs with an unaccusative reading is 196 (first column). These numbers are not given here as part of any quantitative claim, only to demonstrate that all classes are well-attested in the language (but without factoring anything like token frequency into the equation). Additional examples can be found in \cite{ahdoutkastner19nels}.
+
+\ex
+\begin{tabular}{l|ccc|r|r@{.}l}
+				& \multicolumn{3}{c|}{Construction}	& N	& \multicolumn{2}{c}{\%} \\
+				 	& Unaccusative	& Passive & Figure reflexive & & \multicolumn{2}{c}{} \\\hline\hline
+Only unaccusative			&	+			& ---			&	---		&	91	&	21&9\% \\
+Only mediopassive			&	+			& +				& ---		&	78	&	18&8\% \\
+Only passive					&	---			& +				&	---		&	172	& 41&4\% \\\hline
+Only Figure reflexive		& ---			& ---			& +			& 32	& 7&7\% \\\hline
+Ambiguous unacc/unerg	& +				& ---			& +			& 17	& 4&1\% \\
+Ambiguous pass/unerg	& ---			& +				& +			& 15	& 3&6\% \\
+Three-way ambiguous		& +				& +				& +			& 10	& 2&4\% \\\hline\hline
+Total per construction		& 196		&	275				& 74 & \multicolumn{3}{l}{} \\
+
+\end{tabular}
+\xe
+
+Before concluding the empirical exposition of {\tnif}, a few counterexamples should be noted. As far as I could find, these are the only verbs which do not fit cleanly into the classes surveyed above. There are two verbs of emission, \emph{neenax} and \emph{neenak}, both of which mean `sighed, groaned, moaned'. Verbs of emission are generally unergative in Hebrew \citep{siloni12,gafter14li} but these verbs do not take a PP complement. The two verbs \emph{nizak} and \emph{nexpaz} `rushed, hurried' take a clausal complement, probably a TP, rather than a PP. See \citet[126]{kastner16phd} for brief discussion and speculation. And the verb \emph{nexgar} `buckled up' seems to have a purely reflexive reading, rather than non-active or figure reflexive.
+
+These points for further research aside, the generalizations about {\tnif} are as follows. In terms of the constructions we see associated with this template, we have found all manner of non-active verbs as well as figure reflexives. What we never find in this template is simple transitive structures consisting of a subject, verb and direct object. There are also no purely reflexive verbs (this will contrast with {\thit} later in the chapter). In terms of alternations, many active (and stative) verbs in {\tkal} have a non-active alternation with {\tnif}. A summary of these points is presented in~(\nextx).
+
+\hammer{
+\pex \label{ex:gen-tnif}\textbf{Generalizations about {\tnif}}
+	\a \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
+\xe
+}
+
+The non-active verbs are analyzed next, in Section~\ref{vz:vz}. Figure reflexives are analyzed in Section~\ref{vz:pz}.
+
+
+\section{\vz} \label{vz:vz}
+In order to explain the behavior of non-active verbs in {\tnif} I propose the head {\vz}. This non-active variant of Unspecified Voice is defined in brief in~(\nextx). The syntax of {\vz} is similar to that of ``middle Voice'', ``non-active Voice'', ``expletive'' Voice or Voice$_{\{\}}$ of much related work in that it does not license a specifier \citep{lidz01,schaefer08,alexiadoudoron12,layering15,bruening13,wood15springer,myler16mit,kastnerzu17}. Its semantics does not introduce an open Agent role, and the Vocabulary Item spelling it out manifests as the template {\tnif}, and not as {\tkal}. The rest of this section engages more directly with the syntax, semantics and phonology of this element. In Section \ref{vz:va:vzva} I will refine the picture slightly by explaining what happens when {\va} is added to the structure.
+
+\pex \textbf{\vz}
+	\a A Voice head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.\\
+    As typically assumed for unaccusative little \emph{v} or unaccusative Voice, {\vz} does not assign accusative case either itself by feature checking \citep{chomsky95} or through the calculation of dependent case \citep{marantz91}.
+	\a \denote{\vz}\phantom{.} = $\begin{cases}
+		\lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
+		\lambda P$_{<s,t>}$.P & \\
+		\end{cases}$
+	\a {\vz} \lra~{\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va:vzva})
+\xe
+
+This basic distinction between Voice and {\vz} in the syntax thus feeds differences across the interfaces: the spell-out is different, the semantics is different and the syntax of the resulting constructions is different. 
+
+	\subsection{Syntax} \label{vz:vz:syn}
+Voice and {\vz} function in a way familiar from the work cited immediately above. External arguments are not referenced in the core vP; the position they are merged in (Spec,VoiceP) is licensed by Voice in the syntax and their thematic role (Agent) is introduced by Voice in the semantics. What this means is that a vP is a predicate of events (potentially transitive ones) with no inherent reference to the thematic role of Agent stemming from the syntax.
+
+Continuing with an example from the previous chapter, we have seen that the verb \emph{ʃavar} `broke' in {\tkal} is made up of a vP, denoting a set of breaking events, and the head Voice that introduces an external argument, (\nextx).
+\ex \emph{XaYaZ}, \emph{ʃavar} 'broke' \\
+\Tree
+	[.VoiceP
+		[.DP ]
+		[.
+			[.Voice ]
+			[.vP
+				[.v
+					[.\root{ʃbr} ]
+					[.v ]
+				]
+				[.DP ]
+			]
+		]
+	]		
+\xe
+
+Merging {\vz} instead of Voice should give us the same basic breaking event with no external argument, since {\vz} does not allow a DP to be merged in its specifier. These are precisely the \textbf{anticausatives}: verbs which differ minimally from their active alternants in that no external argument is introduced. Continuing our example, the grammar can build a core vP as above (verbalizer, root and internal argument) and merge {\vz}. This configuration gives us \emph{niʃbar} `broke' in~(\nextx). Since no external argument can be merged in the specifier of {\vz}, the structure in~(\nextx) is unaccusative. The crossed out specifier position is used as notation to make this explicit.
+\ex {\tnif}, \emph{niʃbar} 'got broken' \\
+\Tree
+	[.VoiceP
+		[.{---} ]
+		[.
+			[.{\textbf{\vz}\\\emph{ni-}} ]
+			[.vP
+				[.v
+					[.\root{ʃbr} ]
+					[.v ]
+				]
+				[.DP ]
+			]
+		]
+	]		
+\xe
+
+The idea that verbs in this template are anticausative variants of those in {\tkal} is not new. However, the explicit morphosyntactic implementation is novel (see also \citealt{kastner17gjgl}), providing a necessary backdrop for the analyses of figure reflexives and reflexives coming up.
+
+The same structure derives \textbf{passives} in {\tnif}. I subscribe to the view according to which the implicit external argument of the passive is not projected in the syntax at all (\citealt{layering15}; see \citealt{bhattpancheva17} for discussion). The analysis of {\tnif} provides support for this view, since otherwise {\vz} would need to have two distinct syntactic specifications (no specifier or implicit Agent).
+
+In terms of structure, \textbf{inchoatives} are identical to anticausatives and passives. The only difference is that the underlying vP does not have an interpretation with Voice, a matter of the semantic interpretation, coming up next.
+
+Two brief points should be mentioned here. First, the relevant feature on Voice has been characterized as [$\pm$D] throughout. This raises the immediate question of whether PPs are possible in Spec,{\vz}. Hebrew does not have PP subjects of the Slavic type, so the question is moot; if it turns out that a different EPP-like feature needs to be used, not much will change in the theory. The second point is that in a trivalent theory of Voice, {\vz} prohibits something from merging in its specifier. This is not the same as the bivalent theories mentioned above, in which Expletive Voice does not project a specifier. This conceptual difference, and the empirical differences it brings up, are addressed in Chapter~\ref{chap:aas}.
+
+	\subsection{Semantics} \label{vz:vz:sem}
+The denotations of {\vz} are as follows:
+\ex \label{ex:vz-sem}\denote{\vz}\phantom{.} = $\begin{cases}
+		\text{a.} \lambda P \lambda e \exists x.\text{Agent}(x,e) \& P(e) & / \text{\{\root{rtsx} `murder', \root{'mr} ‘say’, \dots\}}\\
+		\text{b.} \lambda P$_{<s,t>}$.P & \\
+		\end{cases}$
+\xe
+Two issues need to be unpacked. The first is the difference between unaccusatives and passives. The second has to do with the composition of inchoatives.
+
+The LF rules in~(\lastx) demonstrate a case of contextual allosemy: a functional head has one interpretation in one context, and another in another context. Specifically, I assume that the default function of {\vz} is the identity function in~(\lastx b): it takes an event of breaking, for example, and does not modify it. Crucially, it does not add an Agent role.
+
+Some roots (in fact many of them) derive passive verbs when combining with {\tnif}. This situation is similar to that of Greek, where verbs with the non-active suffix might be unaccusative or passive. In saying this I am simplifying the empirical picture considerably but the core point remains that a non-active head is underspecified with regards to passive and unaccusative readings. \cite{alexiadoudoron12} made this point explicit for Hebrew and Greek, and \cite{layering15} elaborated on it for Greek. The rules in~(\lastx) implement this intuition formally.\footnote{Although I do not have any formally insightful way of modeling the cases of ambiguity broached earlier. Perhaps both clauses of~(\ref{ex:vz-sem}) need to be contextualized to lists of roots.}
+
+The second issue in the semantics of {\vz} has to do with composing inchoatives. In what follows I delve a bit deeper into inchoatives in an attempt to understand how a compositional syntax/semantics works in these cases, where there is no alternating active verb and no obvious vP for {\vz} to combine with, followed by some crosslinguistic parallels. Readers who are not troubled by the compositional details may want to skip ahead to section~\ref{vz:vz:phono}, on the morphophonology of {\vz}.
+
+  		\subsubsection{Null allosemy in inchoatives} \label{vz:inch:analysis}
+Recall the relevant semantics of {\vz}:
+\ex \denote{\vz} = $\lambda P$_{<s,t>}$.P$
+\xe
+This works well when the underlying vP is an event of breaking a glass, like in our running example. In principle, we expect the vP to describe an event which might then receive an Agent (with Voice) or not ({\vz}). But what if there is no [Voice vP] structure, i.e.~no active verb in {\tkal}, as in \emph{nirdam} `fell asleep'? It is not derived from a causative verb *\emph{radam} because there is no such verb (nor has there been in the history of the language, as far as I know).
+
+Two solutions come to mind, though I will not adjudicate between them. The first assumes that the vP does exist with its own semantics but cannot combine with Voice for arbitrary reasons. The second assumes that {\vz} is what selects the meaning of the root (rather than v).
+
+\paragraph{No licensing of Voice.} One recurrent issue in the morphology of Semitic languages is that not every root can appear in every possible template. At some level a root must list which functional heads it can combine with; let us call this ``licensing'' in a way which does not commit to any specific implementation. For example, \root{ʃbr} licenses Voice (\emph{ʃavar} `broke'), {\va} (\emph{ʃiber} `broke to pieces') and {\vz} (\emph{niʃbar} `was broken'), but not {\vd} of Chapter~\ref{chap:vd} (*\emph{heʃbir}). Every root must list this kind of information; the morphological system is riddled with such arbitrary gaps.
+
+It could be, then, that the minimal vP in~(\nextx) is a valid syntactic object, awaiting some element at the Voice layer in order to satisfy some well-formedness condition (be it morphological or phonological; recall that the Voice layer introduces the stem vowels).
+\ex
+	\Tree
+	[.vP
+		[.v
+			[.\root{rdm} ]
+			[.v ]
+		]
+		[.DP ]
+	]
+\xe
+
+Then, \root{rdm} simply does not license Unspecified Voice; accordingly, there is no verb *\emph{radam}. But this root can still combine with {\vz} if it does license it. The rule of interpretation above does not need to be changed. The cost is acknowledging the idiosyncrasy of the system to a greater degree than before: why is it that precisely these roots do not license Voice and do license {\vz}? Is there some lexical-semantic generalization to be made? Can we find cases of the core vP embedded under another category head? Can Unspecified Voice be added in innovations? I leave these questions open.
+
+\paragraph{Weakening the Arad/Marantz Hypothesis.} Theories of Voice like the current one or that of \cite{layering15} usually adopt the so-called \textbf{Arad/Marantz Hypothesis} \citep{elenasamioti14}, according to which the first categorizing head merging with a root selects the meaning of the root \citep{arad03,marantz13}. For verbs, this is always v. What we could assume instead is that certain configurations allow for interpretations of the root conditioned by a high functional head (in this case {\vz}) over a lower functional head (v). The theory involved is one in which meaning is calculated over semantically contentful elements only, just as allomorphy is calculated over phonologically contentful (overt) elements (\citealt{embick10} et seq, but compare \citealt{kastnermoskal18}).
+
+Consider anticausatives once more. In~(\ref{ex:vz:allosemy-decaus}a), the combination of v and \root{ʃbr} results in a contentful combination, the predicate of breaking events. The root can have various related meanings, but at this point in the derivation its meaning has been chosen. As a consequence, any higher material will in principle only be able to manipulate this meaning \citep{arad03}, not select another meaning of the root (this point will be expanded in Chapter~\ref{vd:caus}). {\vz} has a syntactic function: it blocks merger of a DP in its specifier. As a result, the VoiceP will be interpreted as a detransitivized version of the vP,~(\ref{ex:vz:allosemy-decaus}b).
+\pex Locality in interpretation: anticausatives.\label{ex:vz:allosemy-decaus}
+    \a {[}v \root{ʃbr}~\!] = $\lambda$x$\lambda$e.\emph{break}(e) \& Theme(x,e)
+    \a {[} \textbf{\vz} [\emph{break}] ] = \emph{niʃbar} `got broken'
+\xe
+
+If a given root combines with v to be verbalized, it is possible that v introduces an event variable but carries no additional semantic content when combined with this root. No verb results in this configuration,~(\ref{ex:vz:allosemy-incho}a). As a result, the next functional head will have a chance to select the interpretation of the root, as with {\vz} in~(\ref{ex:vz:allosemy-incho}b). In a sense, the root selects for a specific additional functional head.
+\pex Locality in interpretation: inchoatives.\label{ex:vz:allosemy-incho}
+    \a {[}v \root{rdm}~\!] = undefined
+    \a {[} \textbf{\vz} [(v) \root{rdm}~\!] ] = `fell asleep'
+\xe
+
+\subsubsection{Null allosemy crosslinguistically}
+These are the inchoatives treated here, but similar constructions can be found in Romance languages. \cite{burzio86} observes what he calls an ``inherently reflexive'' verb which requires the nonactive clitic \emph{si} (Italian \gsc{SE}). The glosses are his.
+\pex
+	\a \begingl
+		\gla Giovanni \textbf{si} sbaglia//
+		\glb Giovanni himself mistakes//
+		\glft `Giovanni is mistaken.'//
+	\endgl
+	
+	\a \ljudge{*} \begingl
+		\gla Giovanni sbaglia Piero//
+		\glb Giovanni mistakes Piero//
+		\glft (int. `Giovanni mistakes Piero')\trailingcitation{(\citealt[39]{burzio86}, Italian)}//
+	\endgl
+\xe
+\ex
+	\begingl
+		\gla Giovanni \textbf{se} ne pentir\'a//
+		\glb Giovanni himself of.it will.repent//
+		\glft `Giovanni will be sorry for it.'//
+	\endgl
+\xe
+\ex
+	\begingl
+		\gla Giovanni ci \textbf{si} \'e arrangiato//
+		\glb Giovanni there himself is managed//
+		\glft `Giovanni has managed it.'\trailingcitation{(\citealt[70]{burzio86}, Italian)}//
+	\endgl
+\xe
+
+The forms *\emph{sbaglia} and *\emph{pentir\'a} are not possible without \gsc{SE}; some verbs simply require \gsc{SE} or the equivalent nonactive marker in their language, however encoded.\footnote{The facts are slightly more complicated: \emph{sbaglia} `mistake' is possible in certain contexts but I believe that the generalization about \emph{pentirsi} `repent' is robust \citep[40]{burzio86}.}
+
+The famous case of deponents in Latin is similar: as discussed by various authors (e.g.~\citealt{xuetal07}), deponents are verbs with nonactive morphology but active syntax. Although they appear with a nonactive suffix, the verbs themselves are unergative or transitive. The deponent verb \emph{sequor} `to follow' is syntactically transitive but has no morphologically active forms:
+\pex
+    \a Regular Latin alternation:\\
+        \emph{amo-r} `I am loved' $<$ \emph{am\=o} `I love'
+    \a Deponent Latin verb:\\
+        \emph{sequo-r} `I follow' $\nless$ *\emph{sequ\=o} `I follow'
+\xe
+
+Similar patterns have been discussed for various Indo-European languages by \cite{aronoff94}, \cite{embick04}, \cite{kallulli13}, \cite{wood15springer}, \cite{kastnerzu17} and \cite{grestenberger18}, among many others. While the analyses differ, what these cases all have in common is that individual roots require nonactive morphology.
+
+Turning to another possible crosslinguistic parallel with inchoatives, it has been pointed out that in some languages, verbalizing suffixes do not contribute eventive semantics in certain environments. That is, they are phonologically overt but semantically null, a slightly different situation than ours. \citet{elenasamioti13,elenasamioti14} document a pattern in Greek in which certain adjectives can only be derived if a verbalizing suffix is added to the root first. Crucially, there is no eventive semantics (unlike with our inchoatives); no weaving is entailed for~(\ref{ex:elena1}) nor planting for~(\ref{ex:elena2}). {The authors suggest that -\emph{tos} requires an eventive vP as its base, which is not possible with nominal roots like `weave' and `plant'.}
+\ex \label{ex:elena1} \emph{if-an-tos} weave-\gsc{VBLZ}-\gsc{ADJ} `woven'
+\xe
+\ex \label{ex:elena2} \emph{fit-ef-tos} plant-\gsc{VBLZ}-\gsc{ADJ} `planted' \hfill \citep[97]{elenasamioti14}
+\xe
+In fact, the part of the structure consisting of the root and verbalizer might not even result in an acceptable verb \citep[100]{elenasamioti14}:
+\ex \emph{kamban-a} `bell' $\sim$ ??\emph{kamban-iz-o} `bell (v)' $\sim$ \emph{kamban-is-tos} `sounding like a bell'
+\xe
+
+In a similar vein, \cite{marantz13} argues that an \emph{atomized individual} need not have undergone atomization, and analyzes a similar phenomenon in Japanese ``continuative'' forms that must be vacuously verbalized first{ before being nominalized} \citep{volpe05}. \cite{anagnostopoulou14thli} extends this idea of a semantically null exponent to cases like -\emph{ify}- in \emph{the class\underline{ifie}ds} (but see \citealt{borer14lingua} for a dissenting view).
+
+In sum, we have evidence that v can be active in the semantics without selecting the meaning of the root, allowing a higher {\vz} head to derive nonactive verbs directly from the root rather than from an existing verb. Crucially here, though, little v still introduces an event variable.
+
+	
+	\subsection{Phonology} \label{vz:vz:phono}
+The basic Vocabulary Item for {\vz} can be given using the shorthand in~(\nextx). The remainder of this section provides some Vocabulary Items and schematic derivations which make the division of morphological labor between {\vz} and T more explicit.
+\ex {\vz} \lra~{\tnif}
+\xe
+
+\label{r1:3:3}The ingredients of the template \emph{\tnif} consist of the prefix \emph{ni-} in the past tense, a person/number/gender-conditioned allomorph in the future, and certain stem vowels. A full paradigm is given in~(\nextx) and similar paradigms can be found elsewhere, e.g.~\cite{schwarzwald08}. What is not often mentioned in the literature---and what I have failed to note in \cite{kastner18nllt} myself---is that a process of de-spirantization applies in {\tnif} as well, namely in the ``imperfect'' forms (future, infinitive, imperative and nominalization), whereby the first root consonant does not spirantize (\dgs{X}). I will not provide an analysis of this aspect of the system but I do note that an analysis in terms of a floating feature can be implemented, docking onto the first consonant along the lines of [--cont]_{\text{\gsc{ACT}}} on \dgs{Y} for {\va} in {\tpie} and {\thit} (Chapter~\ref{voice:va:phono}).
+
+\ex
+\raisebox{-4.5em}{
+	\begin{small}
+		\begin{tabular}{|l||l|l||l|l||l|l|} \hline
+			& \multicolumn{2}{c||}{Past} & \multicolumn{2}{c||}{Present} &  \multicolumn{2}{c|}{Future} \\\hline
+			& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\\hline\hline
+			1\gsc{SG} & \multicolumn{2}{c||}{niXYaZ-ti} & niXYaZ & niXYeZ-et & \multicolumn{2}{c|}{e-\dgs{X}aYeZ/ji-\dgs{X}aYeZ}\\\hline
+			1\gsc{PL} & \multicolumn{2}{c||}{niXYaZ-nu} & niXYaZ-im & niXYaZ-ot & \multicolumn{2}{c|}{ni-\dgs{X}aYeZ}  \\\hline\hline
+			2\gsc{SG} & niXYaZ-ta & niXYaZ-t & niXYaZ & niXYeZ-et & ti-\dgs{X}aYeZ & ti-\dgs{X}aYZ-i\\\hline
+			2\gsc{PL} & niXYaZ-tem & niXYaZ-ten/tem & niXYaZ-im & niXYaZ-ot & \multicolumn{2}{c|}{ti-\dgs{X}aYZ-u}\\\hline\hline
+			3\gsc{SG} & niXYaZ & niXYeZ-a & niXYaZ & niXYeZ-et & ji-\dgs{X}aYeZ & ti-\dgs{X}aYeZ\\\hline
+			3\gsc{PL} & \multicolumn{2}{c||}{niXYeZ-u} & niXYaZ-im & niXYaZ-ot & \multicolumn{2}{c|}{ji-\dgs{X}aYZ-u}\\\hline
+		\end{tabular}
+	\end{small}
+}
+\xe
+
+Generally speaking, the form of the affix is determined by the Tense and phi-features on T. The stem vowel can be seen as \emph{-a-}, with the allomorphy \emph{-e-} in the future forms and in present feminine.\footnote{Naturally it is also possible to consider \emph{-e} the default form and \emph{-a-} the contextual variant. To the extent that this question is theoretically interesting, one would want to consider the status of the ``imperfect'' stems mentioned immediately above. The other \emph{-e-} stem vowels in the paradigm are likely epenthetic, as in \cite{kastner18nllt}.}
+\ex The spell-out of {\vz} is conditioned by T:\\
+\begin{tabular}{lllll}
+	a.& T[Past,& 3\gsc{SG.M}] & \textbf{ni}-gmar & `he ended' \\
+	b.& T[Fut,& 3\gsc{SG.M}] & \textbf{ji}-gam\textbf{e}r & `he will end' \\
+	c.& T[Past,& 2\gsc{SG.F}] & \textbf{ni}-gmar-t & `you.\gsc{F} ended'\\
+	d.& T[Fut,& 2\gsc{SG.F}] & \textbf{ti}-ganr-i & `you.\gsc{F} will end'\\
+	e.& T[Pres,& \gsc{F}] & nigm\textbf{e}r-et & `\{I am / you are / she is\} ending'\\
+\end{tabular}
+\xe
+
+We can briefly derive \emph{jigamer} `he will end' and \emph{tigamer} `she will end' as follows. First, the Vocabulary Items.
+
+\ex \root{gmr} \lra~\emph{gmr}
+\xe 
+\ex v \lra~(covert)
+\xe
+
+\ex \label{vi:vz} {\vz} \lra $\begin{cases}
+\text{a.~\emph{i,a,e}} & \text{/ T[Fut] \trace}\\
+\text{b.~\emph{i,a,e}} & \text{/ T[Pres, F] \trace}\\
+\text{c.~\emph{ni,a}} & \\
+\end{cases}$
+\xe
+
+\pex
+	\a 3\gsc{SG.M} \lra~\emph{j} / {\trace} T[Fut]
+	\a 3\gsc{SG.F} \lra~\emph{t} / {\trace} T[Fut]
+\xe
+
+This last set of VIs might seem complicated, but it is necessary in order to maintain uniform VIs for certain agreement affixes across templates; see Chapter~\ref{vz:va:vzva}. This is one of a number of choice points in the phonological analysis which I will not defend here, since my focus is not on the morphophonology per se.
+
+The prosodic well-formedness constraints discussed in \cite{kastner18nllt} ensure that the vowels are inserted into the right ``slots'': \emph{jigamer} rather than *\emph{jiaegmr} or *\emph{jigaemr}. A simplified version of the phonological derivations:
+\pex
+	\a j + /i,a,e-gmr/ $\rightarrow$ j + [i.ga.mer] $\rightarrow$ [ji.ga.mer]
+	\a t + /i,a,e-gmr/ $\rightarrow$ t + [i.ga.mer] $\rightarrow$ [ti.ga.mer]
+\xe
+
+Finally, {\vz} has the allomorph {\thit} in the context of {\va}; see Section \ref{vz:va:vzva}.
+
+
+\section{\pz} \label{vz:pz}
+The previous section analyzed the non-active verbs of {\tnif} using the head {\vz}. This section tackles the figure reflexives; recall that these are active (agentive) verbs which obligatorily take a prepositional phrase as the complement to the verb. I propose that the head {\pz} is to {\vz} as \textit{p} is to Voice: it fails to syntactically license an external argument \emph{of a preposition}. Recall that I assume a layered theory of prepositions, according to which P introduces the ``internal argument'' of the preposition, the Ground, and \textit{p} introduces its ``external argument'', the Figure.
+
+Much of the analysis here follows the analysis of similar constructions in Icelandic proposed by \cite{wood15springer}. Here are the basics:
+\pex \textbf{\pz}
+	\a A \textit{p} head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.
+    \a \denote{\pz} = \denote{\emph{p}} = λxλs.Figure(x,s)
+	\a {\pz} {\lra} {\tnif} \hfill (with the allomorph {\thit} to follow in Section \ref{vz:va:pzva})
+\xe
+I discuss the syntax and semantics together in what follows.
+
+	\subsection{Syntax and semantics} \label{vz:pz:syn}	
+		\subsubsection{Ordinary prepositions}
+As noted above, I adopt the idea that subjects of prepositional phrases are introduced by a separate functional head, a suggestion which has already been made in various guises by a number of researchers interested in the structure of prepositional phrases \citep{vanriemsdijk90,rooryck96,koopman97,gehrke08phd,dendikken03,dendikken10}. In particular, \cite{svenonius03,svenonius07,svenonius10} implements this idea using the functional head \emph{p}. Borrowing terminology from \cite{talmy78} and related work, Likening the \emph{p}P to VoiceP, \cite{wood14nllt,wood15springer} suggests a parallelism: just like the verb assigns the semantic role of Theme to its complement, P assigns the semantic role of \textbf{Ground}. And just like Voice assigns the semantic role of Agent to its specifier, \emph{p} assigns the semantic role of \textbf{Figure} to its own specifier.
+
+The dashed arrows in~(\nextx) show the assignment of semantic (thematic) roles in this system.\footnote{I take it for given that thematic roles are semantic functions but that something like the traditional theta-role does not exist \citep{schaefer08,layering15,wood14nllt,wood15springer,woodmarantz17,myler16mit,kastner17gjgl}; see the background given in Chapter~\ref{chap:intro}.} 
+\pex
+	\a 
+ \Tree
+	 [.\emph{p}P
+	 	[.DP\\\emph{the book}\\{\tikz{\node (Fig) {\textbf{\textsc{figure}}};}} ]
+	 	[
+	 		[.{\tikz{\node (p) {\emph{p}};}} ]
+	 		[.PP
+	 			[.P\\{\tikz{\node (P) {\emph{on}};}} ]
+	 			[.DP\\\emph{the table}\\{\tikz{\node (Ground) {\textbf{\textsc{ground}}};}} ]
+	 		]
+	 	]
+	 ]
+	\begin{tikzpicture}[overlay]
+	\draw[dashed,thick,->] (p) .. controls +(south east:1) and +(east:1) .. (Fig);
+	\draw[dashed,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	\end{tikzpicture}
+	\a     \denote{Voice}  =  λxλe.Agent(x,e) 
+	\a     \denote{\emph{p}}  =  λxλs.Figure(x,s) 
+\xe
+
+An ordinary prepositional phrase in Hebrew is given in~(\nextx), for a verb in {\tkal}. As seen in the previous chapter, the structure comprises the root, v and Unspecified Voice.
+\pex
+	\a \begingl
+		\gla marsel sam {ts}aa{ts}ua al ha-smixa//
+		\glb Marcel put toy on the-blanket//
+		\glft `Marcel put a toy on the blanket.'//
+		\endgl
+	\a \Tree
+		[.VoiceP
+		   [.{DP\\\emph{marsel}\\\textsc{agent}} ]
+		   [
+				[.Voice ]
+		        [
+					[.v
+						[.{\root{sjm}} ]
+						[.v ]
+		            ]
+					[.\emph{p}P
+		                  [.DP\\\emph{{ts}aa{ts}ua}\\{`toy'}\\\textsc{figure} ]
+		                  [
+		                      [.\emph{p} ]
+		                      [.PP
+			                      [.P\\\emph{al}\\{`on'} ]
+			                      \qroof{\emph{ha-smixa}\\{`the blanket'}\\\textsc{ground}}.DP
+		                      ]
+		                  ]
+		              ]
+		          ]
+		   ]
+		]
+\xe
+
+			\subsubsection{Figure reflexives} \label{vz:pz:syn:figrefl}	
+Following \cite{wood15springer}, I postulate a variant of \emph{p}, namely {\pz}, which prohibits the Merge of a DP in Spec,\emph{p}P, (\nextx).
+\pex \textbf{\pz:}
+	\a A \emph{p} head with a [--D] feature, prohibiting anything with a [D] feature from merging in its specifier.
+    \a \denote{\pz} = \denote{\textit{p}} = λxλs.Figure(x,s)
+\xe
+
+In the current system, a given head might impose a semantic requirement which is usually fulfilled immediately if the parallel syntactic requirement is met. For example, Voice might introduce an Agent role and license Spec,VoiceP, such that the argument in the latter saturates the former. But it is also possible for a semantic predicate to be satisfied later on in the derivation, in \emph{delayed saturation}. Such cases have been recently identified (sometimes as ``delayed gratification'') in work on French \citep{schaefer12}, Icelandic \citep{wood14nllt,wood15springer}, English, Quechua \citep{myler16mit}, Japanese \citep{woodmarantz17} and Choctaw \citep{tyler19}, although the idea that a predicate may be saturated in delayed fashion is not new in and of itself \citep{higginbotham85}.
+
+Consider first the existing analysis of Icelandic. Figure reflexives in this language can appear in two configurations, one with a clitic -\emph{st} which does not concern us here \citep{wood14nllt}, and the other without it, as in~(\nextx):
+\ex\label{ex:vz:is-figrefl}
+	 \begingl
+	 \gla Hann labbaði inn í herbergið//
+	 \glb he.\gsc{NOM} strolled in to room.the.\gsc{ACC}//
+	 \glft `He strolled into the room.'\trailingcitation{\citep[168]{wood15springer}}//
+	 \endgl
+\xe
+
+On \citeauthor{wood15springer}’s (\citeyear{wood15springer}) analysis, the role of Figure is not saturated within the \emph{p}P, since no DP is possible in Spec,{\pz}P. Rather, an argument introduced later, in Spec,VoiceP, saturates this predicate. The schematic structure in~(\nextx) shows the assignment of semantic roles using dashed arrows.
+\ex
+		 \Tree
+		 [.VoiceP
+			 [.{DP\\\tikz{\node (Agent) {\textsc{agent}};}\\\tikz{\node (Figup) {\textsc{figure}};}} ]
+			 [
+				 [.\tikz{\node (Voice) {Voice};} ]
+				 [
+					 [.v ]
+					 [.\emph{p}P
+						 [.\tikz{\node (Figdown) {---};} ]
+						 [
+							 [.\tikz{\node (pz) {\pz};} ]
+							 [.PP
+								 [.\tikz{\node (P) {P};} ]
+								 [.{DP\\\tikz{\node (Ground) {\textsc{ground}};}} ]
+							]
+						]
+					]
+				]
+			]
+		]
+	  \begin{tikzpicture}[overlay]
+	  \draw[dashed,thick,->] (Voice) .. controls +(north west:1) and +(north east:1) .. (Agent);
+	  \draw[dashed,thick,->] (P) .. controls +(south west:1) and +(west:1) .. (Ground);
+	  \draw[dashed,thick,->] (pz) .. controls +(south:1) and +(south:2) .. (Figup);
+	  \draw[dashed,thick,->] (pz) .. controls +(south west:1) and +(south west:1) .. node{\LARGE $\times$}(Figdown);
+	  \end{tikzpicture}		    
+\xe
+
+The structure for~(\ref{ex:vz:is-figrefl}) is given in~(\ref{tree:vz:is-figrefl}), adapted from \citet[170]{wood15springer}. \citeauthor{wood15springer}'s insight is that there is no argument filling Spec,{\pz}P which can saturate the Figure role of {\pz}. The next DP merged in the structure, \emph{hann} `he', will then saturate both Voice's semantic role (Agent) and the role of Figure introduced by {\pz}. A variety of diagnostics for Icelandic show that the verb is agentive, with the DP \emph{Hann} merged in Spec,VoiceP, just like Hebrew figure reflexives are agentive.
+\ex \label{tree:vz:is-figrefl}
+		\Tree
+		[.VoiceP
+			[.{DP\\{\emph{hann}}\\`he'\\\textsc{agent}\\\textsc{figure}} ]
+			[
+				[.Voice\\{(assigns Agent)} ]
+				[
+					[.v
+						[.{\root{\gsc{STROLL}}} ]
+						[.v ]
+					]
+					[.{\pz}
+							[.\emph{p}\\{(assigns Figure)} ]
+							\qroof{\emph{inn} \dots}.PP
+					]
+				]
+			]
+		]
+\xe
+
+Returning to Hebrew, we can adopt this proposal and give the derivation in~(\nextx) for a verb like \emph{nixnas le}- `entered’ in {\tnif}, where {\pz} introduces a Figure semantically but does not introduce an argument in the syntax.
+\pex
+	\a  \begingl
+	\gla oren nixnas la-xeder//
+	\glb Oren entered.\gsc{MID} to.the-room//
+	\glft `Oren entered the room.'//
+	\endgl
+	\a \hspace{-5em}
+\scalebox{0.8}{
+\Tree
+    [.{VoiceP\\ λe∃s.\underline{Agent(Oren,e)} \& \underline{Figure(Oren,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
+       [.{DP\\\emph{oren}} ]
+       [.{λxλe∃s.\underline{Agent(x,e)} \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)}
+           [.{Voice\\ λxλe.Agent(x,e)} ]
+           [.{vP\\ λxλe∃s.\underline{Figure(x,s)} \& \underline{in(s,room)} \& enter(e) \& Cause(e,s)}
+              [.{v\\ λPλe∃s.P(s) \& enter(e) \& Cause(e,s)}
+	             [.\root{kns} ]
+	             [.v ]
+              ]
+              [.{\emph{p}P\\ λxλs.Figure(x,s) \& \underline{in(s,room)}}
+                  [.{\pz\\ λxλs.Figure(x,s)\\ \emph{ni-}} ]
+                  \qroof{λs.in(s,room)}.PP
+              ]
+          ]
+       ]
+    ]
+}
+\xe
+
+In~(\lastx) The \emph{p}P is composed via Event Identification, the vP via Function Composition (cf.~Restrict of \citealt{chungladusaw04}), and the VoiceP again via Event Identification.
+
+The two main consequences of this configuration are that an external argument may be merged in Spec,VoiceP and that the obligatory prepositional phrase does not have a subject of its own. The generalization on figure reflexives can now be derived: external arguments in {\tnif} saturate the Figure role of an otherwise subjectless preposition. While in Icelandic {\vz} has overt reflexes \citep[Ch.~3.2]{wood15springer} and {\pz} is silent, in Hebrew we find morphological support for both.
+
+It is interesting to note that {\pz} still introduces a Figure role despite prohibiting a specifier. In this it is similar to ``free variable'' proposals in which Voice introduces the Agent role in the semantics but no specifier in the syntax \citep{legate14,akkus19jl}.
+
+One would be justified in wondering whether some other argument might intervene between vP and Voice, in which case it would be able to saturate the Figure role. High applicatives would have been relevant here, but Hebrew has been argued to have only the possessive dative as a low applicative for internal arguments \citep[46]{pylkkanen08}, meaning that the ApplP would be too low to influence derivation of the figure reflexive. The affected reading of these datives, however, actually implies a different structure for unergatives \citep[59]{pylkkanen08}, the nature of which is still unclear. See \cite{barashersiegalboneh15,barashersiegalboneh16} for some ideas.
+	
+	\subsection{Phonology} \label{vz:pz:phono}
+In Hebrew, {\vz} and {\pz} are spelled out identically: a prefix (\emph{ni}-) and the relevant stem vowels, resulting in {\tnif}. This should not be an accident. In Section~\ref{vz:interim} and in Chapter~\ref{chap:i} I return to the idea that these are one and the same head, \emph{i}*, differing only in its height of attachment.
+
+This section concludes with an extended note on linearization and head movement. I have argued that {\vz} starts off high, above v and the root, while {\pz} starts off below them. Despite their different attachment sites, {\vz} and {\pz} are pronounced identically, as a prefix to the verb and certain vocalic readjustments.
+\ex\label{tree:headmovement}
+a. \begin{minipage}[t]{0.4\textwidth}
+	Anticausatives in \tnif~with \vz:\\
+	\scalebox{0.85}{
+	\Tree
+ 	[.TP
+	 	[.T ]
+	 	[.VoiceP
+	 		[.{---} ]
+	 		[
+	 			[.{\vz\\\fbox{\emph{ni-}}} ]
+	 			[
+	 				[.v
+	 					[.\root{root} ]
+	 					[.v ]
+	 				]
+	 				[.DP ]
+	 			]
+	 		]
+	 	]
+	 ]
+ 	}
+\end{minipage}
+\begin{minipage}[t]{0.01\textwidth}
+	\phantom{x}
+\end{minipage}
+b. \begin{minipage}[t]{0.45\textwidth}
+	Figure reflexives in \tnif~with \pz:\\
+ 	\scalebox{0.85}{
+	\Tree
+ 	[.TP
+	 	[.DP ]
+	 	[
+		 	[.T ]
+		 	[.VoiceP
+		 		[.\sout{DP} ]
+		 		[
+		 			[.Voice ]
+		 			[
+		 				[.v
+		 				    [.\root{root} ]
+		 				    [.v ]
+		 				]
+		 				[.\emph{p}P
+			 				[.{---} ]
+			 				[
+				 				[.{\pz\\\fbox{\emph{ni-}}} ]
+				 				[.PP
+					 				[.P ]
+					 				[.DP ]
+					 			]
+					 		]
+					 	]
+		 			]
+		 		]
+		 	]
+		 ]
+	]
+ 	}
+\end{minipage}
+\xe
+Not much needs to be said about the affixation in~(\ref{tree:headmovement}a) since the structure can be linearized as is: one morphophonological cycle combines the root with Voice and associated elements, and a second cycle attaches the prefix T (Chapter~\ref{voice:voice:phono} and~\citealt{kastner18nllt}). The phonological material on T might end up as a suffix rather than prefix due to general phonological constraints of the language (for example, if T is purely vocalic).
+
+This is a different kind of theory than that of \cite{shlonsky89} and \cite{ritter95} who assume that all affixation results from head movement of the verb, ``picking up'' affixes as it moves up the syntactic tree \citep{pollock89} and eventually reaching the tense affixes on T.
+
+Not all analyses assume that V reaches T in Hebrew. According to \cite{borer95} and \cite{landau06}, Hebrew V may raise to T in cases of ellipsis and VP-fronting, but not necessarily in the general case. For \citeauthor{landau06}, this V-to-T movement is driven by T's need to express inflectional features, which appear on T in Hebrew but may lower to V in other languages or be expressed via \emph{do}-support in English. Implementing affixation using Agree between T and V absolves V of having to adjoin to T itself.
+
+Returning to~(\ref{tree:headmovement}b), a challenge arises if we try to linearize {\pz} between the root and T. The problem is that {\pz} should be pronounced in the same position as {\vz} is in~(\ref{tree:headmovement}a). The phonological consequences go beyond just one exponent which needs to be placed correctly: in \tnif~the prefix itself is conditioned by T.
+\ex The spell-out of \pz~is conditioned by T:\\
+	\begin{tabular}{lllll}
+	a.& T[Past,& 3\gsc{SG.M}] & \textbf{ni}-xnas & `he entered' \\
+	b.& T[Fut,& 3\gsc{SG.M}] & \textbf{ji}-kan\textbf{e}s & `he will enter' \\
+	c.& T[Past,& 2\gsc{SG.F}] & \textbf{ni}-xnas-\textbf{t} & `you.\gsc{F} entered'\\
+	d.& T[Fut,& 2\gsc{SG.F}] & \textbf{ti}-kans-\textbf{i} & `you.\gsc{F} will enter'\\
+	\end{tabular}
+\xe
+Under the assumptions of the current theory, {\pz} needs to be local to T in order to correctly spell out its own prefix and add vowels to the stem.
+
+Standard head movement could raise {\pz} and adjoin it to v (or Voice via v), deriving the correct morpheme order. The problem is not empirical but conceptual: all other morphological derivations in the Trivalent theory proceed without head movement, by simply linearizing structure under explicit phonological constraints. Here we would require {\pz} to raise (perhaps obligatory for \textit{p} as well). What feature drives this movement? Any feature that accounts for solely this movement would be suspiciously stipulative. But if head movement is more common, does the complex head then raise further, to Voice and then to T? A theory which allows phonological words to be read directly off the structure, but which also allows construction of phonological words by head movement, runs the risk of being too permissive.
+
+Attempts to derive head movement effects have led to various proposals which I cannot contrast here. The operation Conflation \citep{halekeyser02,harley13oup} adjoins only the phonology of a complement onto that of its sister, similar to Local Dislocation. This operation can be thought of as purely phonological Incorporation \citep{baker85,baker88}. See \citet[Ch.~2.5]{rimell12} for an evaluation.
+
+Another theoretical proposal is that of head movement as remnant movement \citep{koopmanszabolcsi00,koopman05,koopman15u20}. On this approach all affixes are heads which take their base as a complement. Suffixes are endowed with an EPP feature raising their complement to Spec, resulting in the affix spelling out to the right of the stem. For this proposal to work, the structure in~(\ref{tree:headmovement}b) would need to be changed since \pz, as a prefix, needs to take v+\root{root} as its complement: [{\pz} [v [v \root{root}~\!] [PP]]]. But now it is not clear where the prepositional object PP appears. PP is, by hypothesis, the complement of \emph{p}; if we treated it as the complement of v, we would be abandoning the little \emph{p} hypothesis, leaving us with no morpheme to spell out the \emph{ni-} prefix in the first place.
+
+One other kind of mechanism for exceptional tweaking of individual morphemes in the morphophonology is Local Dislocation~\citep{embicknoyer01}. This mechanism swaps the linear order of two adjacent morphemes at spell-out. Local Dislocation is assumed to apply after Vocabulary Insertion; I keep the syntactic labels in~(\nextx) for consistency of exposition.
+\pex
+	\a Linearized structure:\\
+		T-Voice-v-\root{root}-\pz
+	\a Local Dislocation:\\
+		$\Rightarrow$ T-Voice-v-\textbf{\pz-\root{root}}
+	\a Pruning of silent exponents:\\
+		$\Rightarrow$ T-\pz-\root{root}
+\xe
+At the end of the day, the analysis in~(\lastx) simply formalizes the idea that {\pz} is a prefix.
+
+Local Dislocation happens after VI, so {\pz} will not be able to be conditioned properly by T. Instead, I could assume that the actual VI for {\pz} is \emph{i}-, and the \emph{n}- prefix a partial exponent of T; but this entire setup grinds to a halt once {\va} intervenes between the two as in {\thit}:
+\ex T-Voice-{\va}-v-\pz-\root{root}
+\xe
+
+None of the alternatives are particularly satisfying. I assume head movement and leave matters as is.
+
+
+\section{Interlude: From {\tnif} to {\thit}} \label{vz:interim}
+We have seen that verbal forms in {\tnif} are in principle compatible with internal and external arguments, though not within the same verb (there are no transitive verbs in {\tnif}):
+\hammer{
+\pex \label{ex:gen-tnif2}\textbf{Generalizations about {\tnif}}
+	\a \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
+\xe
+}
+I proposed that two distinct verb classes exist which share the same morphology. For non-active verbs, with no external argument, it was suggested that {\vz} blocks the introduction of an external argument and triggers {\tnif} morphology. For figure reflexives, with an agent and an obligatory PP complement, I claimed that {\pz} introduces the PP but does not supply a subject of its own for the preposition, while also triggering {\tnif} morphology. This analysis falls within a view of argument structure which distinguishes syntactic features, such as the requirement for a specifier, from semantic roles, such as the requirement for an Agent or a Figure.
+
+In line with the basic root hypothesis of DM, none of the derivations go from a verb in {\tkal} to a verb in {\tnif}; to the extent that the Trivalent proposal is more explanatory than existing ones (and I believe it is, as I claim concretely in Section~\ref{vz:others}), it provides support for this assumption. In particular, {\tnif} is not one morpheme: it is a collection of identical morphophonological forms masking a variety of different structural configurations.
+
+Importantly, the feature [--D] is used on both {\vz} and {\pz}. I have already alluded to the idea that the only difference between the two verb classes in {\tnif} is the height of attachment of the [--D] feature; in other words, that {\vz} and {\pz} are the same head, except that {\vz} is what we label it when it combines with vP and {\pz} is what we label it when it combines with a PP. Recently, \cite{woodmarantz17} have proposed that heads such as Voice, Appl and \emph{p} are indeed contextual variants of the same functional head, which they call \emph{i}*. On their view, ``Voice'' is simply the name we give to \emph{i}* which takes a vP complement, ``high Appl'' is the name we give to \emph{i}* which takes a vP complement and is in turn embedded in a higher \emph{i}* (itself being Voice), ``\emph{p}'' is the name we give to an \emph{i}* which takes a PP complement, and so on. I return to this idea in Chapter~\ref{chap:i}.
+
+The next section re-introduces the agentive modifier {\va} from the previous chapter and explores its interaction with {\vz}. Some of these interactions are more obvious, as with figure reflexives ({\va} + {\pz}). Others require slight tweaks to our understanding of specific elements, as with anticausatives; and others are more interesting still, as with reflexive verbs. There are no reflexive verbs in {\tnif}. The current theory will provide an answer to the ``how'' question of how these verbs appear in {\thit} as well as an answer to the ``why'' question of why {\thit} and not {\tnif}: reflexivity requires a theme (\vz) which is agentive (\va). In general, the parallels between {\tkal} and {\thif} on the one hand, and {\tpie} and {\thit} on the other hand, will reflect the layering assumption which is at the core of the current work. 
+
+
+\section{\thit: Descriptive generalizations} \label{vz:thit}
+The ``intensive middle'' template {\thit} is traditionally viewed as the reflexive template. Yet reflexive verbs form only a small part of it. I will first show how it houses anticausative and inchoative verbs, similarly to {\tnif}, but not passives. I then look briefly at figure reflexives, which appear in both {\tnif} and {\thit}, and true reflexives, which only appear in this template. Section~\ref{vz:va} analyzes these patterns in terms as combinations of the modifier {\va} from Chapter~\ref{voice:va} with {\vz} or {\pz}.
+
+This template is also considered to be a natural one for reciprocal verbs, but \cite{barashersiegal16mmm} has shown that reciprocalization is licensed by strategies which do not have to do with the specific template; see also \cite{siloni12} and \cite{poortmanetal18}. Because the relationship between templates and reciprocals is indirect, I will not discuss their place in the current theory.
+ 
+
+	\subsection{Non-active verbs} \label{vz:thit:nact}
+A few non-active verbs in {\thit} are given in~(\nextx), anticausatives in~(\nextx a--c) and inchoatives in~(\nextx d--f).
+\ex
+\begin{tabular}{lc|>{\em}ll|>{\em}ll}
+& Root & \multicolumn{2}{c|}{{\tpie} active} & \multicolumn{2}{c}{{\thit} non-active} \\\hline
+a.& \root{pr\dgs{k}}& pirek & `dismantled' & hitparek & `fell apart' \\
+b.& \root{p{\ts}{\ts}}& po{\ts}e{\ts} & `detonated' & hitpo{\ts}e{\ts} & `exploded'\\
+c.& \root{bʃl} & biʃel & `cooked' & hitbaʃel & `got cooked'\\\hline
+d.& \root{'lf}& \multicolumn{2}{c|}{---} & hitalef & `fainted' \\
+e.& \root{'tʃ}& \multicolumn{2}{c|}{---} & hitateʃ & `sneezed'\\
+f.& \root{'rk} & \multicolumn{2}{c|}{---} & hitarex & `grew longer'\\
+\end{tabular}
+\xe
+
+\textbf{Anticausatives} in {\thit} alternate with causatives in {\tpie}:
+\pex\label{ex:vz:anticaus-va}\textit{Anticausative}
+	\a \begingl
+		\gla josi \textbf{biʃel} marak.//
+		\glb Yossi cooked.\gsc{INTNS} soup//
+		\glft `Yossi cooked some soup.'//
+	\endgl
+	
+	\a \begingl
+		\gla ha-marak \textbf{hitbaʃel} ba-ʃemeʃ.//
+		\glb the-soup got.cooked.\gsc{INTNS.\gsc{MID}} in.the-sun//
+		\glft `The soup cooked in the sun.'//
+	\endgl
+\xe
+
+As expected, they are incompatible with agent-oriented adverbs and \emph{by}-phrases:
+\ex \ljudge{*} \begingl
+	\gla ha-{\ts}amid \textbf{hitparek} \{al-jedej ha-{\ts}oref / be-mejomanut\}//
+	\glb the-bracelet dismantled.\gsc{INTNS.MID} by the-jeweler {} in-skill//
+	\glft (int. `The bracelet was dismantled by the jeweler/skillfully')//
+	\endgl
+\xe
+
+They are compatible with `by itself':
+\ex \begingl
+	\gla ha-{\ts}amid \textbf{hitparek} \underline{me-a{\ts}mo}//
+	\glb the-bracelet dismantled.\gsc{INTNS.MID} from-itself//
+	\glft `The bracelet fell apart of its own accord.'//
+	\endgl
+\xe
+
+As expected, they are also compatible with the two unaccusativity diagnostics introduced earlier,  VS order (\nextx) and the possessive dative (\anextx).
+\ex\label{ex:vs-anticaus} \begingl
+	\gla \textbf{hitpark-u} \underline{ʃloʃa} \underline{galgalim} be-ʃmone ba-boker//
+	\glb dismantled.\gsc{INTNS.MID}-\gsc{3PL} three wheels in-eight in.the-morning//
+	\glft `Three wheels fell apart at 8am.'//
+	\endgl
+\xe
+
+\ex
+\begingl
+\gla \textbf{hitparek} \underline{l-i} ha-ʃaon//
+\glb dismantled.\gsc{INTNS.\gsc{MID}} to-me the-watch//
+\glft `My watch broke.'//
+\endgl
+\xe
+
+Note in this context that this view of anticausatives in {\thit} as alternants of an agentive transitive verb in {\tpie} is unexpected under a certain conception which has proven popular in previous work on argument structure. The purported generalization is that decausativization can only occur if the external argument of the causative verb is not specified with respect to its thematic role, i.e.~can be a Cause \citep{unaccusativity95,reinhart02}. If verbs in {\tpie} are indeed agentive, but can nonetheless be decausativized into an anticausative in {\thit}, this generalization will need to be amended, but I will not do that here; see \citet[52]{layering15} for an overview of related work and ideas.
+
+Continuing on to \textbf{inchoatives}, they pattern with anticausatives. They are incompatible with agent-oriented adverbs and \emph{by}-phrases:
+\pex
+		\a \ljudge{*} \begingl
+			\gla josi \textbf{hitalef} al-jedej ha-kosem//
+			\glb Yossi passed.out.\gsc{INTNS.\gsc{MID}} by the-magician//
+			\glft (int. `Yossi fainted by the magician')//
+		\endgl
+		\a \ljudge{??} \begingl
+			\gla josi \textbf{hitalef} \underline{be-mejomanut}//
+			\glb Yossi passed.out.\gsc{INTNS.\gsc{MID}} in-skill//
+			\glft (int. `Yossi fainted skillfully')//
+		\endgl
+\xe
+
+\pex 
+	\a \label{ex:incho1} \begingl
+	\gla sara \textbf{hitatʃ-a} \{me-ha-avak / ??be-xavana\}//
+	\glb Sarah sneezed.\gsc{INTNS.\gsc{MID}-F} \phantom{\{}from-the-dust {} \phantom{??}on-purpose//
+	\glft `Sarah sneezed because of the dust/??on purpose'//
+	\endgl
+\xe
+
+They are compatible with `by itself', although this is less evident with animate arguments:
+\pex \label{ex:thit-inch-byitself}
+	\a My current visit in Israel was supposed to last a bit longer than two weeks,\footnote{
+		\url{https://www.maveze.co.il/\%d7\%9e\%d7\%95\%d7\%a8-\%d7\%9b\%d7\%94\%d7\%9f-\%d7\%91\%d7\%a7\%d7\%99\%d7\%a6\%d7\%95\%d7\%a8-\%d7\%99\%d7\%a6\%d7\%90\%d7\%aa\%d7\%99-\%d7\%a2\%d7\%9d-\%d7\%9c\%d7\%99\%d7\%9b\%d7\%95\%d7\%93\%d7\%a0\%d7\%99\%d7\%a7/}, retrieved July 2019.}\\
+		\begingl
+			\gla aval \textbf{hitarex} \underline{me-a{\ts}mo} od va-od//
+			\glb but lengthened.\gsc{INTNS.MID} from-itself more and-more//
+			\glft `but kept getting longer and longer.'//
+		\endgl
+	\a \ljudge{??}
+		\begingl
+			\gla ha-kalb-a \textbf{hitatʃ-a} \underline{me-a{\ts}ma}//
+			\glb the-dog-\gsc{F} sneezed.\gsc{INTNS.MID}-\gsc{F} from-herself//
+			\glft (int.~`The dog sneezed unintentionally')//
+		\endgl
+\xe
+
+And they pass the unaccusativity diagnotics:
+\ex
+	\begingl
+	\gla \textbf{hitalf-u} \underline{ʃloʃa} \underline{xajalim} ba-hafgana//
+	\glb fainted.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three soldiers in.the-protest//
+	\glft `Three soldiers fainted during the protest.'\trailingcitation{\citep[397]{reinhartsiloni05}}//
+	\endgl
+\xe
+\ex \begingl
+	\gla \textbf{hitarx-u} \underline{l-i} kol ha-bikurim//
+	\glb lengthened.\gsc{INTNS.MID}-\gsc{3PL} to-me all the-visits//
+	\glft `All of my visits got longer.'//
+	\endgl
+\xe
+
+Curiously, there are \textbf{no passive verbs} in {\thit}. No verb can be used with a \emph{by}-phrase to get a passive reading, nor can some entailment relevant to an implicit agent be obtained.\footnote{I suspect that a wug test would show this even for nonce verbs, but have not attempted such an experiment. Odelia Ahdout (p.c.) notes the following counterexamples from her comprehensive database which do seem to have passive readings: \emph{hitstava} `was ordered', \emph{hitbatsa/hitbatsea} `was carried out', \emph{hitbakeʃ} `was asked', \emph{hitbaser} `was informed', \emph{hitkabel} `was received' and perhaps also \emph{hitbarex} `was blessed'. If these are true counterexamples then perhaps there is no structural reason for the paucity of passive verbs in {\thit}, though this low rate should still receive some other kind of explanation.}
+\ex	\ljudge{*} \begingl
+	\gla ha-{\ts}amid \textbf{hitparek} kedej lekabel pi{\ts}uj me-ha-bituax//
+	\glb the-bracelet dismantled.\gsc{INTNS.MID} in.order to.receive.\gsc{INTNS} compensation from-the-insurance//
+	\glft (int.~`The bracelet was dismantled in order to collect the insurance')//
+	\endgl
+\xe
+
+Based on the diagnostics used throughout this mongraph, the non-active verbs in {\thit} are demonstrably unaccusative.
+
+	\subsection{Figure reflexives} \label{vz:thit:figrefl}
+Figure reflexives in {\thit} are compatible with agent-oriented adverbs.
+\pex\label{ex:vz:figrefl-va}\textit{Figure reflexive}
+	\a \begingl
+		\gla bjartur hiʃtaxel (be-xavana) derex ha-kahal / la-xeder//
+		\glb Bjartur squeezed.\gsc{INTNS}.\gsc{MID} in-purpose through the-crowd {} to.the-room//
+		\glft `Bjartur squeezed (his way) on purpose through the crowd/into the room.'//
+		\endgl
+	\a \begingl
+		\gla ha-xatul hitnapel al ha-regel ʃeli (be-zaam)//
+		\glb the-cat pounced.\gsc{INTNS}.\gsc{MID} on the-foot mine in-wrath//
+		\glft `The cat angrily pounced on my foot.'//
+		\endgl
+\xe
+
+They do not pass the unaccusativity diagnostics.
+\ex \ljudge{\#} \begingl
+		\gla hitnapel ha-xatul al ha-regel ʃeli//
+		\glb pounced.\gsc{INTNS}.\gsc{MID} the-cat on the-foot mine//
+		\glft `Once the cat pounced on my foot, then...'\\
+			(does not mean: `The cat pounced angrily on my foot.')//
+	\endgl
+\xe
+\ex \ljudge{*} \begingl
+	\gla ha-xatul hitnapel la-mita al ha-sadin//
+	\glb the-cat pounced.\gsc{INTNS.MID} to.the-bed on the-sheet//
+	\glft (int.~`The cat pounced on the bed's bedsheet')//
+	\endgl
+\xe
+
+As with figure reflexives in {\tnif}, many of these verbs denote events of directed motion, (\nextx a), but there are other kind of activities as well, each with its own obligatory preposition, (\nextx b--c). It must also be acknowledged that not all have truly agentive meanings (\nextx d).\footnote{\cite{siloni08} claims that simple unergatives exist in {\thit}, but my view of the psych-verbs she presents is that they too require a PP complement, e.g.~\emph{hitbajeʃ *(me)-} `was shy (of)'.}
+\pex
+	\a \begingl
+		\gla bjartur hiʃtaxel *(derex ha-kahal / la-xeder)//
+		\glb Bjartur squeezed.\gsc{INTNS}.\gsc{MID} through the-crowd {} to.the-room//
+		\glft `Bjartur squeezed (his way) through the crowd/into the room.'//
+		\endgl
+	\a \begingl
+		\gla ha-xatul hitnapel *(al ha-regel ʃeli) //
+		\glb the-cat pounced.\gsc{INTNS}.\gsc{MID} on the-foot mine //
+		\glft `The cat angrily pounced on my foot.'//
+		\endgl
+	\a \begingl
+		\gla ahed hitmard-a *(neged ha-avlot)//
+		\glb Ahed rebelled.\gsc{INTNS}.\gsc{MID}-\gsc{F} against the-wrongs//
+		\glft `Ahed rebelled against the wrongs.'//
+		\endgl
+	\a \begingl
+		\gla ha-melex hitmaker *(le-samim)//
+		\glb the-king got.addicted.\gsc{INTNS.MID} to-drugs//
+		\glft `The King got addicted to drugs.'//
+		\endgl
+\xe
+
+What is particularly interesting is that these figure reflexives share morphological marking---\thit---with actual reflexives (which do not exist in {\tnif}). These are discussed next.
+
+	\subsection{Reflexives} \label{vz:thit:refl}
+By ``reflexive verbs'' I mean canonical reflexive verbs as in~(\nextx):
+\ex \textbf{Canonical reflexive verb}\\
+	(i) A monovalent verb whose DP internal argument X is interpreted as both Agent and Theme, \textbf{and} (ii) where no other argument Y (implicit or explicit) can be interpreted as Agent or Theme, \textbf{and} (iii) where the structure involves no pronominal elements such as \emph{himself}.
+\xe
+
+The definition in~(\lastx) confines our discussion to reflexives that are morphologically marked, rather than construction that can use another strategy such as anaphora. As noted earlier, reflexive verbs in Hebrew are only attested in \thit. A sample is given in~(\nextx).
+\ex\label{ex:refl}\emph{hitgaleax} `shaved himself', \emph{hitraxets} `washed himself', \emph{hitnagev} `toweled himself down', \emph{hitaper} `applied makeup to himself', \emph{hitnadev} `volunteered himself'.
+\xe
+
+Reflexive verbs in {\thit} may~(\nextx) or may not~(\anextx) have a causative variant in {\tpie}:
+\pex\label{ex:vz:refl-va}
+	\a \begingl
+		\gla jitsxak \textbf{iper} et tomi//
+		\glb Yitzhak made.up.\gsc{INTNS} \gsc{ACC} Tommy//
+		\glft `Yitzhak applied make-up to Tommy.'//
+	\endgl
+	
+	\a \begingl
+		\gla tomi \textbf{hitaper}//
+		\glb Tommy made.up.\gsc{INTNS.\gsc{MID}}//
+		\glft `Tommy put on make-up' (*`Tommy got make-up applied to him')//
+	\endgl
+\xe
+
+\pex\label{ex:vz:refl-va2}
+	\a \ljudge{*?} \begingl
+		\gla jitsxak \textbf{kileax} et tomi//
+		\glb Yitzhak \root{\dgs{k}lx}.\gsc{INTNS}.Past \gsc{ACC} Tommy//
+		\glft (int.~`Yitzhak showered Tommy')//
+	\endgl
+	\a \begingl
+		\gla tomi \textbf{hitkaleax}//
+		\glb Tommy showered.\gsc{INTNS.\gsc{MID}}//
+		\glft `Tommy showered' (*`Tommy got showered')//
+	\endgl
+\xe
+
+In Hebrew, verbs like those in~(\ref{ex:refl}) are only possible in {\thit}. Reflexive verbs often pose puzzles in various languages, since these are cases in which one argument appears to have two thematic roles, agent and patient. The degree to which this configuration is tracked by the morphology varies by language. English shows no morphological difference between (\nextx a--b), even in though the readings clearly differ.
+\pex \a \emph{Dana kicked.}\\
+		$\nRightarrow$ Dana kicked herself.
+	\a \emph{Dana shaved}.\\
+		$\Rightarrow$ Dana shaved herself.
+\xe
+
+While some languages, like English, do not differentiate morphologically between verbs like \emph{shave} and verbs like \emph{kick}, many languages do express reflexivity through morphological means. I will argue in Section~\ref{vz:va:vzva:refl} that the reflexive morphology of Hebrew reflects an internal composition of agentivity (\va) with no independent external argument (\vz), based on \cite{kastner17gjgl}.
+
+Crosslinguistically, templates like {\tnif} and {\thit} from this chapter are reminiscent of non-active markers such as Romance \gsc{SE}, German \emph{sich}, Russian \emph{-sja} and the Greek non-active suffix \gsc{NACT}. Crosslinguistic work shows that this kind of marking is often syncretic between anticausatives, inchoatives, passives, middles, reciprocals and reflexives \citep{geniusiene87,klaiman91,alexiadoudoron12,kastnerzu17}. Yet unlike languages like French, for instance, where \gsc{se} might be ambiguous between a number of readings (reflexive, reciprocal and anticausative), {\thit} is never ambiguous in Hebrew for a given root.\footnote{See \cite{kastner17gjgl} for one possible counterexample, the verb \emph{hitnaka} `cleaned up'.} For while French \emph{se} can be used in reflexive, reciprocal and non-active contexts with a variety of predicates~(\nextx), Hebrew {\thit} is unambiguous in that a verb like \emph{hitlabeʃ} `got dressed' is only reflexive~(\anextx). It cannot be used in an anticausative context, as shown by its incompatibility with `by itself'.
+\pex
+	\textit{French reflexives and reciprocals, after} \citet[839]{labelle08}\\
+	\begingl
+	\gla Les enfants \glemph{se} sont tous soigneusement \textbf{lav\'es}.//
+	\glb the children \gsc{SE} are all carefully washed.\gsc{3PL}//
+	\glft `The children all washed each other carefully' \hfill [reciprocal]\\
+	`The children all washed themselves carefully' \hfill [reflexive]//
+	\endgl
+
+	\a \textit{French middle} \citep[835]{labelle08}\\
+	\begingl
+	\gla Cette robe \glemph{se} \textbf{lave} facilement.//
+	\glb this dress \gsc{SE} wash-\gsc{3S} easily//
+	\glft `This dress washes easily.'//
+	\endgl
+	
+	\a \textit{French anticausative} \citep[835]{labelle08}\\
+	\begingl
+	\gla Le vase \glemph{se} \textbf{brise}.//
+	\glb the vase \gsc{SE} breaks-\gsc{3S}//
+	\glft `The vase is breaking.'//
+	\endgl
+\xe
+
+\ex
+	\begingl
+	\gla luk ve-pjer \textbf{hitlabʃ-u}. (*me-a{ts}mam)//
+	\glb Luc and-Pierre dressed.up.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} \phantom{(*}from-themselves//
+	\glft `Luc and Pierre got dressed' \hfill [reflexive only]//
+	\endgl
+\xe
+
+Implementing the rest of our diagnostics, we see that reflexives straightforwardly allow Agent-oriented adverbs (\nextx).
+\ex
+	\begingl
+		\gla josi \textbf{hitgaleax} \{be-mejomanut / likrat ha-reajon\}//
+		\glb Yossi shaved.\gsc{INTNS}.\gsc{MID} in-skill {} towards the-interview //
+		\glft `Yossi shaved skillfully / in preparation for his interview.'//
+	\endgl
+\xe
+
+They do not allow `by itself', which is already degraded with animate arguments as we saw in~(\ref{ex:thit-inch-byitself}b).
+\ex \ljudge{*}
+	\begingl
+		\gla josi \textbf{hitgaleax} \underline{me-a{\ts}mo}//
+		\glb Yossi shaved.\gsc{INTNS}.\gsc{MID} from-himself//
+		\glft (int.~`Yossi's shaving happened to him')//
+	\endgl
+\xe
+
+They also do not pass the unaccusativity diagnostics.
+\ex \textit{VS order}\\
+	\begingl
+	\gla \ljudge{\#}\textbf{hitkalx-u} \underline{ʃloʃa} \underline{xatulim} be-arba ba-boker//
+	\glb showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} three cats in-four in.the-morning//
+	\glft (int. `Three cats washed themselves at 4am.')//
+	\endgl
+\xe
+
+\ex \textit{Possessive dative}\\
+	\begingl 
+	\gla \ljudge{\#}ʃloʃa xatulim \textbf{hitkalx-u} \underline{l-i} be-arba ba-boker//
+	\glb three cats showered.\gsc{INTNS.\gsc{MID}}-\gsc{3PL} to-me in-four in.the-morning//
+	\glft `Three cats washed themselves at 4am and I was adversely affected.'\\
+		(\# int. `My three cats washed themselves at 4am.')//
+	\endgl
+\xe
+
+\ex \emph{Episodic plural}\\
+	\begingl
+	\gla \textbf{mitapr-im} ba-rexov, bo lirot!//
+	\glb make.up.\gsc{INTNS.MID}-\gsc{PL.M} in.the-street come see//
+	\glft `People are applying make-up in the street, come see!'//
+	\endgl
+\xe
+
+To summarize the empirical overview of {\thit}, it is similar to {\tnif} in some respects and different in others. It, too, creates anticausatives and inchoatives (but no passives). It allows for figure reflexives and also for canonical reflexives. What we never see---again like in {\tnif}---is a simple transitive construction consisting of subject, verb and direct object:\footnote{One distinct counterexample is \emph{hitstarex} `needed'; see \citet[130ff16]{harveskayne12}.}
+
+\hammer{
+\pex \label{ex:gen-thit}\textbf{Generalizations about {\thit}}
+	\a \textbf{Configurations:} Verbs appear in unaccusative, figure reflexive and reflexive structures; but not in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}.
+\xe
+}
+
+This constellation of facts can be accounted for once we clarify the composition of {\va} and {\vz}. The root also plays an important part, as alluded to above, but that aspect of the data will not be discussed in depth here.
+
+
+\section{Adding {\va} to [--D]} \label{vz:va}
+The data above highlights the puzzle of reflexive verbs: why are they possible in {\thit} and only in {\thit}? In this section I provide analyses of the phenomena above, all based on the idea that this template is morphosyntactically (and hence morphophonologically) the most complex. Reviewing the analysis in \cite{kastner17gjgl}, I will propose that reflexives and anticausatives share an unaccusative structure, but that the root constrains the derivation in a specific way. Reflexive verbs are argued to be the result of unaccusative syntax (\vz) with an agentive modifier (\va) and particular, self-oriented lexical semantics. The crucial point for our overall purposes is that the reflexive readings fall out from the unique combinatorics of {\vz} and {\va}, a combination of elements which no other ``template'' can provide.
+
+Section~\ref{vz:va:vzva} analyzes the combination of {\va} with {\vz}, yielding non-active verbs and reflexives. Section~\ref{vz:va:pzva} rounds off the picture with the derivation of figure reflexives.
+
+	\subsection{{\va} + {\vz}} \label{vz:va:vzva}
+		\subsubsection{Non-active verbs} \label{vz:va:vzva:nact}
+Syntactic structure building proceeds as usual. We will see this by deriving the alternation between causative \emph{pirek} in {\tpie} and anticausative \emph{hitparek} in {\thit}. The combination of {\va} and vP predicts that an event expressed by [{\va} vP] can either receive an external argument, if we merge Voice, or not, if we merge {\vz}. This state of affairs is exactly what we find; much of the literature talks of {\tpie} and {\thit} alternating (\citealt{doron03}, \citealt{arad05}, as well as much previous work and the traditional grammars).
+
+\pex
+	\a Core vP\\
+      \scalebox{1}{
+			\Tree
+   	     [.vP
+                [.{\va} ]
+                [.vP
+                    [.v
+                        [.\root{prk} ]
+                        [.v ]
+                    ]
+                    [.DP ]
+                ]
+             ]
+       }
+
+	
+	
+	\a \emph{pirek} `dismantled'\\
+	        \scalebox{1}{
+				\Tree
+		        [.VoiceP
+		            [.DP ]
+		            [
+		                [.Voice ]
+		                [.vP
+			                [.{\va} ]
+			                [.vP
+			                    [.v
+			                        [.\root{prk} ]
+			                        [.v ]
+			                    ]
+			                    [.DP ]
+			                ]
+			             ]
+		            ]
+		        ]
+		        }
+	\a \emph{hitparek} `fell apart'\\
+     \scalebox{1}{
+			\Tree
+      [.VoiceP
+          [.{---} ]
+          [
+              [.{\vz} ]
+              [.vP
+	              [.{\va} ]
+	              [.vP
+	                  [.v
+	                      [.\root{prk} ]
+	                      [.v ]
+	                  ]
+	                  [.DP ]
+	              ]
+	           ]
+          ]
+      ]
+      }
+	
+\xe
+
+The semantics relevant to {\va} is repeated in~(\nextx):
+\pex \denote{Voice} = 
+	\a $\lambda$P.P \phantom{agent(x,e)xxx} / \trace~ \{ \root{npl} `\root{\gsc{FALL}}', \root{kpa} `\root{\gsc{FREEZE}}' , \dots \}
+	\a $\lambda$x$\lambda$e.Agent(x,e) or $\lambda$x$\lambda$e.Cause(x,e)
+	\a $\lambda$x$\lambda$e.\text{Agent}(x,e) / \trace~\va
+\xe
+
+In this section we will see two allosemes of {\vz}, one the identity function we are familiar with (\nextx c) and one the agentive version we would expect from {\va} (\nextx a). The passive alloseme (\nextx b) is repeated for completeness, but there is no rule invoking it in the context of {\va}.
+\pex \label{ex:vz-denote}
+	\a \denote{\vz} \lra~$\lambda$x$\lambda$e.Agent(x,e) / \trace~\va
+	\a \denote{\vz} \lra~$\lambda$P$\lambda$e$\exists$x.Agent(x,e) \& P(e) / \trace~\{\root{rtsx} `murder', \root{'mr} `say’, \dots\}
+	\a \denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P
+\xe
+
+When we put the pieces together, however, we find that we do not get \textbf{anticausative} (causative but non-agentive) semantics. The translations in~(\lastx) cannot be the whole story because (\lastx a) straightforwardly entails agentive semantics for verbs in {\thit}.
+
+\cite{kastner17gjgl} proposes that the rule of allosemy in~(\ref{ex:vz:thit-impov}) removes the agentivity requirement of {\va}~for roots such as \root{pr\dgs{k}} which give anticausatives. \cite{kastner16phd,kastner17gjgl} develops a view of roots according to which their lexical semantics determines, at least in part, whether they will trigger the rule in~(\ref{ex:vz:thit-impov}). This change renders the resulting verb \emph{hitparek} `fell apart' anticausative, rather than a potential reflexive such as `tore himself to pieces'.
+\ex\label{ex:vz:thit-impov}\denote{\va~\!} $\rightarrow$ {\zero} / {\vz} \trace~\{\root{XYZ} | 
+ \root{XYZ} $\in$ 
+ \\ \phantom{a} \hfill 
+	\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
+\xe
+The process can be likened to impoverishment \citep{bonet91,noyer98} in the semantic component (cf.~\citealt{nevins15roots}).
+
+Another way of encoding this information would have been to build it right back into the denotations of Voice, as in~(\nextx):
+\ex Addition to~(\blastx), to be rejected:\\
+	\denote{\vz} \lra~$\lambda$P$_{<s,t>}$.P / \trace~{\va} \{\root{pr\dgs{k}} `\gsc{DISMANTLE}', \root{bʃl} `\gsc{COOK}', \root{pts ts} `\gsc{EXPLODE}', \dots\}
+\xe
+The problem here is one of locality: the root is separated from {\vz} by {\va}. Existing theories of contextual allosemy maintain a strict linear adjacency requirement between trigger and alloseme \citep{marantz13,kastner16phd}. The kind of action-at-a-distance typical of roots licensing a head is more similar to impoverishment, which again happens at a distance.
+
+To summarize informally, {\va} brings in an agentive requirement, but it is also close enough to the root for certain roots to disable this requirement. It is probably no accident that these roots relate to events which are ``other-oriented'' like dismantling and cooking; see \cite{kastner17gjgl} for additional discussion of this point. But whatever the formal analysis, the current system explains why anticausatives in {\thit} look like de-transitivized versions of causatives in {\tpie}: {\vz} is added to the same structure (vP) that regular Voice would have been added to.
+
+With anticausatives explained, not much remains to be said about \textbf{inchoatives} beyond the discussion of those in {\tnif} from Section~\ref{vz:vz:sem}. And finally, \textbf{passives} do not arise either. This behavior is captured by the rules in~(\ref{ex:vz-denote}) but is not explained by them (we could just as well have written a rule generating the passive alloseme of {\vz} in the context of {\va}). I have no deeper explanation to propose at this point. Returning to a simple composition of {\vz} and {\va}, however, leads us to an understanding of reflexives.
+
+		\subsubsection{Reflexives} \label{vz:va:vzva:refl}
+The intuition behind the analysis of reflexives is as follows: reflexive verbs in {\thit} consist of an unaccusative structure with extra agentive semantics. This combination is only possible if the internal argument is allowed to saturate the semantic function of an external argument by delayed saturation, in the way formalized here.
+
+The structure and semantic derivation in~(\ref{tree:vz:thit-refl}) fleshes out the derivation of the reflexive verb in~(\ref{ex:vz:thit-refl}).
+\ex \label{ex:vz:thit-refl}
+\begingl
+\gla dani \textbf{hitraxets}.//
+\glb Danny washed.\gsc{INTNS.\gsc{MID}}//
+\glft `Danny washed (himself).'//
+\endgl
+\xe
+
+The argument DP, `Danny', starts off as the internal argument. No external argument is merged in the specifier of {\vz} and the structure is built up as usual. Nevertheless, the specifier of T needs to be filled because of a syntactic requirement, namely the EPP. The internal argument then raises directly to Spec,TP in order to satisfy the EPP, checking the syntactic feature but also satisfying the Agent role of {\vz} in delayed saturation (Section~\ref{vz:pz:syn:figrefl}).
+
+\ex \label{tree:vz:thit-refl}
+\hspace{-7em}
+\scalebox{0.8}{
+	\Tree
+	[.{TP\\λe.\emph{wash}(e) \& Theme(Danny,e) \& \underline{Agent(Danny,e}) \& Past(e)}
+		[.\tikz{\node (SpecTP) {DP};}\\\emph{Dani} ]
+		[.{λxλe.\emph{\emph{wash}}(e) \& Theme(Danny,e) \& Agent(x,e) \& \underline{Past(e)}}
+			[.{\phantom{xx}T\phantom{xx}\\λe.Past(e)\footnotemark} ]
+			[.{VoiceP\\λxλe.\emph{wash}(e) \& Theme(Danny,e) \& Agent(x,e)}
+				[.--- ]
+				[.{λxλe.\emph{wash}(e) \& Theme(Danny,e) \& \underline{Agent(x,e)}}
+					[.{\vz\\λxλe.Agent(x,e)} ]
+					[.
+						[.{\va} ]
+						[.{vP\\λe.\emph{wash}(e) \& Theme(\underline{Danny},e)}
+							[.v\\{λxλe.\emph{wash}(e) \& Theme(x,e)}
+								[.\root{rxts}\\\gsc{WASH} ]
+								[.v ]
+							]
+						[.\tikz{\node (Obj) {DP};} ]
+						]
+					]
+				]
+			]
+		]
+	]
+
+    \begin{tikzpicture}[overlay]
+   	\draw[thick,->] (Obj) .. controls +(south:9) and +(south west:8) .. (SpecTP);
+    \end{tikzpicture}
+}
+\xe
+\footnotetext{The exact denotation of T is immaterial here.}
+
+\vspace{2em}
+
+The crucial points in this derivation are the VoiceP node and Spec,TP: after the internal argument raises to Spec,TP, the derivation can converge. The resulting picture is similar to that painted by \cite{spathasetal15} for certain reflexive verbs in Greek, where the agentive modifier \emph{afto} combines with non-active Voice to derive a reflexive reading; see \cite{spathasetal15} or \cite{kastner17gjgl} for further details on the Greek.\footnote{{\va} is different than Greek \emph{afto}, and {\vz} different from Greek Non-active Voice in a number of respects I cannot treat here but list for future reference. (i) Greek non-active is passive-like in Naturally Reflexive Verbs (\emph{wash}) and Naturally Disjoint Verbs (\emph{accuse/praise/destroy}). (ii) \emph{Afto} is only possible with Non-Active Voice, whereas {\va} can combine with Unspecified Voice. (iii) The combination of \emph{Afto} and Non-active Voice always yields reflexives. (iv) \emph{Afto} only combines with Naturally Disjoint Verbs.}
+
+Like with figure reflexives, one would be justified in wondering whether other material between vP and TP could intervene, disrupting this derivation. And like with figure reflexives, if we try to think of how applicatives fit in we see that the exact nature of the possessor dative is unclear. If we treat the construction as transitive (since there is an internal argument), the possessor dative is a low applicative, meaning that the ApplP would be too low to influence the derivation. In any case the possessor DP never raises out of its applicative PP to Spec,TP, a configuration which would have disrupted this derivation. And if we were to treat this construction as unergative (one argument with an Agent role) then the nature of the dative is different \citep{barashersiegalboneh15,barashersiegalboneh16}.
+
+What about clauses smaller than TP? Embedded clauses in Hebrew are either full CPs with an overt complementizer such as \emph{ʃe-} `that' or infinitival clauses. Hebrew verbs have an infinitival prefix, \emph{le-}, which presumably spells out T, indicating that the TP layer is intact.
+\ex
+	\begingl
+	\gla josi ra{\ts}a \textbf{le-hitkaleax}//
+	\glb Yossi wanted to-shower.\gsc{INTNS.MID}//
+	\glft `Yossi wanted to take a shower.'//
+	\endgl
+\xe
+
+This leaves us with nominalizations. It is standard to assume that nominalizations preserving the argument structure of the underlying verb are derived by merging a nominalizer with the verbal constituent, here VoiceP (as discussed in Chapter~\ref{passn:n}). In this case there really is no embedded T layer.
+
+I can imagine two scenarios here, both promising but neither more convincing than the other at this point. The first is that if n projects a covert \emph{pro} as the external argument, then this DP will be able to take on the open Agent role.\footnote{This is the standard assumption for nominalizations at the moment, as recapped in Chapter~\ref{passn:n}. On a theory in which n existentially closes over the Agent, the derivation might still be able to go through, depending on specific assumptions regarding Spec,n and the compositional semantics.} The second is simply a prediction that reflexives in {\thit} should not have a valid nominalization. This claim has not been made before (as far as I know) and the data is unclear, judging by a few informal consultations:
+\pex
+	\a \ljudge{\%} \begingl
+		\gla \textbf{hitgalxut-o} ʃel dani lemeʃex eser dakot hergiza otanu//
+		\glb shave.\gsc{INTNS.MID.NMLZ}-of of Danny during ten minutes annoyed.\gsc{CAUS} us//
+		\glft (int.~`Danny's shaving for ten minutes annoyed us')//
+	\endgl
+	\a \ljudge{\%} \begingl
+		\gla \textbf{ha-histarkut} / \textbf{ha-hitaprut} he-mejumenet ʃel ha-jeled//
+		\glb the-comb.\gsc{INTNS.MID.NMLZ} {} the-makeup.\gsc{INTNS.MID.NMLZ} the-skilled of the-boy//
+		\glft (int.~`the boy's skilled combing / application of makeup')//
+	\endgl
+\xe 
+A much larger set of verbs would have to be tested in order to fully understand the pattern.
+
+On another note, I have been treating reflexives as underlyingly unaccusative even though they pass agentivity diagnostics and fail unaccusativity diagnostics. The question is what these diagnostics are actually diagnosing. Assuming that the agentivity diagnostics are semantic in nature concords with the current analysis, since the Agent role is saturated (this is why passives pass these tests). The unaccusativity diagnostics are more complicated: \cite{kastner17gjgl} summarizes evidence indicating that the requirement for the possessive dative might be semantic as well, and further speculates that VS order only obtains with surface unaccusatives (where the internal argument remains low; see \citealt{unaccusativity95}).
+
+Overall, the analysis showcases how complex structure ({\vz} and {\va}~\!) correlates with complex meaning and complex morphology. On the meaning side of things, reflexives in Hebrew do not come from a dedicated functional or lexical item. There must be some conspiracy of factors in order to derive a reflexive reading. The complex structure is tracked by complex morphology: verbs in {\thit} have a number of distinguishing morphophonological properties, namely the prefix, the non-spirantized medial root consonant \dgs{Y}, and the stem vowels inherent to the template.
+
+A verb like \emph{titnadev} `she will volunteer' is derived as follows (see \citealt{kastner18nllt}):
+\ex
+    \Tree
+        	[.TP
+        	[ ]
+        	[
+        		[.{T+Agr}
+        		  [.T\\{[Fut]} ]
+        		  [.\gsc{3SG.F}\\{\emph{t-}} ]
+        		]
+        		[.VoiceP
+        		    [.{---} ]
+        		    [.
+        			    [.{\vz\\\emph{it-,a,e}} ]
+        			    [.
+        			    	[.{\va} ]
+        			    	[.
+	        				    [.v
+	        					    [.\root{ndv} ]
+	        					    [.v ]
+	        					]
+	        				    [.DP ]
+	        				]
+        			    ]
+        		    ]
+        		]
+        	]
+        	]
+\xe
+
+\pex\label{ex:titpane2}Vocabulary Items:
+    \a \root{ndv} \lra~\emph{ndv}
+    \a \va~\lra~[--cont]$_{\gsc{ACT}}$ / {\trace}~\{ \root{XYZ} $|$ Y $\in$ p, b, k \}
+    \a \vz~\lra~\emph{it},\emph{a,e} / T[Fut,\gsc{3SG.F}] {\trace} \va
+    \a 3\gsc{SG.F} \lra~ \emph{t} / {\trace} T[Fut]\\
+\xe
+
+\ex Phonology:\\
+ 	t + /it-a,e-ndv/ $\rightarrow$ t + [it.na.dev] $\rightarrow$ [tit.na.dev]
+\xe
+    
+	\subsection{{\va} + {\pz}} \label{vz:va:pzva}
+The final piece of the jigsaw is figure reflexives in {\thit}. At this point, it is easy to see where this piece fits. The semantics of a figure reflexive {\pz} is augmented by the agentive requirement of {\va}. Everything said about the semantics and phonology of these elements continues to hold; a representative derivation is given in~(\nextx).
+
+\pex
+	\a  \begingl
+	\gla bjartur hiʃtaxel la-xeder//
+	\glb Bjartur squeezed.\gsc{INTNS.MID} to.the-room//
+	\glft `Bjartur squeezed his way into the room.'//
+	\endgl
+	\a
+\xe
+\hspace{-5em}
+\scalebox{0.8}{
+\Tree
+    [.{VoiceP\\ λe∃s.\underline{Agent(Bjartur,e)} \& \underline{Figure(Bjartur,s)} \& in(s,room) \& enter(e) \& Cause(e,s)}
+       [.{DP\\\emph{bjartur}} ]
+       [.{λxλe∃s.\underline{Agent(x,e)} \& Figure(x,s) \& in(s,room) \& enter(e) \& Cause(e,s)}
+           [.{Voice\\ λxλe.Agent(x,e)} ]
+			[.vP
+				[.{\va} ]
+	           [.{vP\\ λxλe∃s.\underline{Figure(x,s)} \& \underline{in(s,room)} \& enter(e) \& Cause(e,s)}
+	              [.{v\\ λPλe∃s.P(s) \& enter(e) \& Cause(e,s)}
+		             [.\root{ʃxl} ]
+		             [.v ]
+	              ]
+	              [.{\emph{p}P\\ λxλs.Figure(x,s) \& \underline{in(s,room)}}
+	                  [.{\pz\\ λxλs.Figure(x,s)\\ \emph{ni-}} ]
+	                  \qroof{λs.in(s,room)}.PP
+	              ]
+	          ]
+	        ]
+       ]
+    ]
+}
+\xe
+
+Having concluded the analytical part of this chapter, I summarize the findings in Section~\ref{vz:sum}. Some alternatives are mentioned in Section~\ref{vz:others}, followed by a bigger-picture view of where this fits within the monograph.
+
+
+\section{Summary of generalizations and claims} \label{vz:sum}
+The generalizations about each of {\tnif} and {\thit} are repeated in~(\nextx)--(\anextx).
+\hammer{
+\pex \label{ex:gen-tnif-sum}\textbf{Generalizations about {\tnif}}
+	\a \textbf{Configurations:} Verbs appear in unaccusative, passive and figure reflexive structures; but never in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or passive versions of verbs in {\tkal}.
+\xe
+}
+
+\hammer{
+\pex \label{ex:gen-thit-sum}\textbf{Generalizations about {\thit}}
+	\a \textbf{Configurations:} Verbs appear in unaccusative, figure reflexive and reflexive structures; but not in a simple transitive configuration.
+	\a \textbf{Alternations:} Some verbs are anticausative or reflexive versions of verbs in {\tpie}.
+\xe
+}
+
+Remember, however, that ``template'' is a descriptive term for certain morphophonological forms. The traditional view is that a template is a morphological primitive with its own uniform phonology, syntax and semantics. The assumptions in this book are different: verbs are built up syntactically, and it could be that some structures end up with similar or even identical morphology. But the real distinction is between syntactic structures (and their interpretation). The anticausatives and figure reflexives that share the template {\tnif} are no more related syntactically than the English past tense verb and past participle sharing the suffix -\emph{ed}; perhaps there is an underlying similarity there, but it would need to be argued for.
+
+The summary table from the introductory section recaps:
+\ex \begin{tabular}{ll|cc}
+	\multicolumn{2}{c|}{Construction}	& {\tnif}	& {\thit} \\\hline
+\multirow{3}{*}{Non-active} & Anticausative	& {\vz}	& {\va}, {\vz}\\
+	& Inchoative & {\vz}	& {\va}, {\vz}\\
+	& Passive &	{\vz}	&	---\\\hline
+Active & Figure reflexive	& {\pz}	& {\va}, {\pz}\\\hline
+Reflexive & Reflexive	& ---	& {\va}, {\vz}\\
+\end{tabular}
+\xe
+
+It is not accurate to call {\tnif} a ``passive'' template, nor is {\thit} the ``reflexive'' template. These constructions are possible, but what is more important is the structures giving rise to them. In addition, the existence of figure reflexives has been documented and analyzed, providing support for a non-uniform analysis of superficially similar intransitive forms.
+
+Reflexive verbs appear only in the template {\thit}, a fact which had not previously received any formal analysis. In a system such as the one put forward in this book, combining the agentivity requirement of {\va} with the single-argumenthood of {\vz} derives this pattern. This analysis receives additional confirmation in the morphology, where the spell-out of both {\va} and {\vz} can be seen.
+
+The analyses in this chapter call into question any attempt to view templates as independent morphemes as well as other decompositional accounts. Some of these vies are challenged next.
+
+
+\section{Discussion and outlook} \label{vz:others}
+The theory of trivalent Voice leads us to an ``emergent'' view of templates, according to which they arise from the combination of functional heads.
+
+The traditional approach to Semitic templates has been to treat them as independent atomic elements, i.e.~morphemes. Contemporary work in this vein spans highly divergent implementations but includes \cite{arad03,arad05}, who decomposed verbal templates into flavors of v, spell-outs of Voice and conjugation classes; \cite{borer13oup}, for whom different templates are different ``functors''; \cite{aronoff94,aronoff07}, who identifies templates with conjugation classes; and \cite{reinhartsiloni05}, \cite{schwarzwald08} and \cite{laks11,laks14}, whose lexicalist accounts similarly grant morphemic status to verbal templates.
+
+As far as morphemic analyses are concerned, an overarching problem is that a given template does not have a deterministic syntax nor does it have a deterministic semantics. The morphemic analysis would have to say that {\tnif} is ambiguous between a non-active and figure reflexive reading, or that {\thit} is three-way ambiguous between an anticausative, figure reflexive and canonical reflexive. Two crucial problems then arise. The first is that not all verbs in these templates are ambiguous. The second is that the existing readings are an accident; the templates could just as well have been ambiguous between a transitive and a reflexive reading, but no Hebrew template has this property. Decompositional theories have principled explanations for what is and is not possible, as with {\tnif} where we have shown a morphological correlation between lack of Agent and lack of Figure. In contrast, a morphemic theory might be unnecessarily powerful and would arbitrarily list what each template, and perhaps each verb, may do. To see this, I will consider two major theories of Hebrew morphology, those of \cite{doron03,doron13voice} and \cite{arad03,arad05}. See \cite{kastnertucker19cup} for additional background and theoretical discussion.
+
+These two alternative theories are exemplified below using the three-way alternation between a transitive verb in {\tkal}, an ``intensive'' transitive in {\tpie} and an anticasuative in {\thit}. The relevant data are as follows:
+\pex \label{ex:to-derive}
+\a \begingl
+	\gla ha-mar{\ts}a \textbf{kav'}-a et moed ha-bxina//
+	\glb the-lecturer.\gsc{F} \textbf{set.\gsc{SMPL}}-\gsc{F} \gsc{ACC} date.of the-exam//
+	\glft `The lecturer set the exam date.'//
+	\endgl
+\a \begingl
+	\gla e\textesh{}et ro\textesh{} ha-mem\textesh{}ala \textbf{kib'}-a et maamad-a ba-xevra//
+	\glb wife.of head.of the-government \textbf{set.\gsc{INTNS}}-\gsc{F} \gsc{ACC} standing-hers in.the-society//
+	\glft `The Prime Minister's wife cemented her place in society.'//
+	\endgl
+\a \begingl
+	\gla maamad e\textesh{}et ro\textesh{} ha-mem\textesh{}ala \textbf{hitkabea} ba-xevra//
+	\glb standing.of wife.of head.of the-government \textbf{set.\gsc{INTNS.MID}} in.the-society//
+	\glft `The Prime Minister's wife status in society was established.'//
+	\endgl
+\xe
+
+In the Trivalent theory, this three-way alternation is built on the core vP. Merging Voice gives the simple transitive verb~(\ref{tree:to-derive-ik}a). Attaching {\va} to the vP modifies its semantics, (\ref{tree:to-derive-ik}b). Merging {\vz} instead of Voice gives the anticausative variant~(\ref{tree:to-derive-ik}c). I use ``EA'' for the external argument DP and ``IA'' for the internal argument DP in order to avoid ambiguity below.
+\pex \label{tree:to-derive-ik}
+	\a 
+		\emph{kava} `set':\\
+				\Tree
+				[.VoiceP
+					[.EA ]
+					[.
+						[.Voice ]
+						[.vP
+							[.v
+								[.\root{kb'} ]
+								[.v ]
+							]
+							[.IA ]
+						]
+					]
+				]			
+		\a \emph{kibea} `cemented':\\
+				\Tree
+				[.VoiceP
+					[.EA ]
+					[.
+						[.Voice ]
+						[.vP
+							[.{\va} ]
+							[.vP
+								[.v
+									[.\root{kb'} ]
+									[.v ]
+								]
+								[.IA ]
+							]
+						]
+					]
+				]
+		\a \emph{hitkabea} `was cemented':\\
+				\Tree
+				[.VoiceP
+					[.EA ]
+					[.
+						[.{\vz} ]
+						[.vP
+							[.{\va} ]
+							[.vP
+								[.v
+									[.\root{kb'} ]
+									[.v ]
+								]
+								[.IA ]
+							]
+						]
+					]
+				]			
+\xe
+
+	\subsection{Distributed morphosemantics \citep{doron03}} \label{vz:others:ed}
+Within the decompositional theories, the most obvious alternative is the morphosemantic system of \cite{doron03}, a direct forebear to the current theory. That system was the first to identify basic non-templatic elements that combine compositionally in order to form Hebrew verbs. For example, a MIDDLE head $\mu$ was used to derive the ``middle'' template {\tnif}, where I make use of {\vz}.
+
+		\subsubsection{The three-way alternation}
+Let us see how the alternations in~(\ref{ex:to-derive}) are derived. In this theory, the root provides the basic semantics and introduces the internal argument itself. Little v introduces the external argument and the Agent role (like our Voice). This combination yields~(\ref{tree:to-derive-doron}a). The head \textsc{intns} is the inspiration for {\va}, modifying the event and adding an Agent role if none was there yet. This head also spells out {\tpie}, as in~(\ref{tree:to-derive-doron}b). The alternation, then, ``happens'' very low, at the level of root-attachment. Adding the non-active head \textsc{mid} instead of v removes the requirement for an Agent and spells out {\thit} together with the \textsc{intns} head, (\ref{tree:to-derive-doron}c). Note how the internal argument now merges later.
+\pex \label{tree:to-derive-doron}
+	\a \emph{kava} `set':\\
+		\Tree
+		[.
+			[.EA ]
+			[.
+				[.v ]
+				[.\root{kb'}
+					[.\root{kb'} ]
+					[.IA ]
+				]
+			]
+		]
+	\a	\emph{kibea} `cemented':\\
+		\Tree
+		[.
+			[.EA ]
+			[.
+				[.v ]
+				[.\textsc{intns}
+					[.
+						[.\textsc{intns} ]
+						[.\root{kb'} ]
+					]
+					[.IA ]
+				]
+			]
+		]
+	\a
+		\emph{hitkabea} `was cemented':\\
+		\Tree
+		[.
+			[.IA ]
+			[.
+				[.\textsc{mid} ]
+				[.\textsc{intns}
+					[.\textsc{intns} ]
+					[.\root{kb'} ]
+				]
+			]
+		]
+\xe
+
+The important conceptual difference is that my elements are syntactic whereas those in \cite{doron03} can be characterized as morphosemantic: each one had a distinct semantic role, but what regulates the syntactic licensing of arguments remained unclear. A \citeauthor{doron03}-style system takes the semantics as its starting point, attempting to reach the templates from syntactic-semantic primitives signified by the functional heads. Such a system runs into the basic problem of Semitic morphology: one cannot map the phonology directly onto the semantics. For example, there is no way in which a causative verb has a unique morphophonological exponent.
+
+		\subsubsection{Additional issues}
+On the empirical side more concretely, the morphosemantic theory did not engage with figure reflexives directly but instead derived all reflexive readings using a \gsc{REFL} head. This is not a useful morphosyntactic construct since it cannot distinguish, on its own, between a figure reflexive, a reflexive verb such as `shave’ and a construction with an anaphor such as `shave yourself’. Yet we have seen that figure reflexives have specific syntactic and semantic characteristics which distinguish them from intransitive reflexives like \emph{hitgaleax} `he shaved’ (the latter, for instance, does not require or even allow a prepositional phrase complement).
+
+A similar problem arises when \citet[60]{doron03} derives reflexives in {\thit} by assuming that a head \gsc{MID} assigns the Agent role for this root. This explains why \emph{histager} `secluded himself' is agentive, hence reflexive. However, if the only relevant elements are {\vz} and the root, then a verb in the same root in {\tnif} (where I have {\vz} and \citealt{doron03} has \gsc{MID}) is also predicted to be agentive. This expectation is incorrect: \emph{nisgar} `closed' is unaccusative. That analysis is almost a mirror image of the one presented here: while I let {\va} add agentivity to a structure with \vz, thereby deriving reflexives, the morphosemantic account invokes added agentivity for certain roots, bypassing the syntax in ways that lead to false predictions.
+
+While each part of this problem could be overcome on its own, the system as a whole has little to say about the unaccusative (for anticausatives) and unergative (for reflexives) characteristics of verbs in {\thit}, since it is not based strictly in the syntax. I conclude, then, that ``templates'' are the by-product of functional heads combining in the syntax in systematic ways, in support of the general system developed in this book. Where we have made progress is by flipping one of the assumptions on its head: that the primitives have strict syntactic content and flexible semantic content, rather than strict semantic content and unclear syntactic content.
+
+	\subsection{Templates as morphemic elements} \label{vz:others:morph}
+The most explicit analysis other than \citeauthor{doron03}'s with which the Trivalent proposal can be contrasted is the foundational work by \cite{arad03,arad05}. Unlike \citeauthor{doron03}'s work and the current proposal, \cite{arad05}'s work attempted to scale back some of the structural commitments about alternations.
+
+		\subsubsection{The three-way alternation}
+Syntactically, a standard structure in \cite{arad05} is built up using a root, v and Voice. The verbalizer v additionally has four semantic ``flavors''. The template is divided phonologically into a prosodic skeleton on v and vowels on Voice. In order to fit these morphosyntactic pieces, a number of additional assumptions are required. First, roots select the templates they appear in, as a given root may idiosyncratically appear only with certain templates (as in the current theory). Second, there are four syntactic flavors of v: unmarked, stative, inchoative and causative, in order to account for the argument structural correlates of the templates. Finally, in order to specify which templates alternate with which, Arad must stipulate conjugation classes. For example, in Conjugation Class 4, {\tpie} is the causative variant and {\thit} is the inchoative variant \citep[220]{arad05}. It is assumed that the anticausative alternation goes from inchoative to causative.
+		
+What this theory then does is specify spell-out rules using two sets of diacritics: which template a given flavor of v spells out, and which conjugation class this variant participates in.\footnote{\citet[227ff41]{arad05} claims that the diacritics are notationally equivalent to rules in the Encyclopedia, allowing them to interpret large segments of syntactic structure.} A subset of the spell-out rules is reproduced next, with the ones relevant to the examples in~(\ref{ex:to-derive}) highlighted \citep[230--231]{arad05}. Rules for individual templates are given first in each block, followed by rules for conjugation classes.
+
+\pex Distributed Conjugation Diacritics in \cite{arad05}: \label{ex:arad-classes}
+\begin{multicols}{2}
+	\a  v$_{unmarked}$:\\
+			\textbf{$\alpha$ $\rightarrow$ {\tkal}}\\
+			$\beta$ $\rightarrow$ {\tnif}\\
+			$\gamma$ $\rightarrow$ {\tpie}\\
+			$\delta$ $\rightarrow$ {\thif}\\
+			$\epsilon$ $\rightarrow$ {\thit}
+	\a v$_{inch}$:\\
+			$\alpha$ $\rightarrow$ {\tkal}\\
+			\dots \\
+			\textbf{$\epsilon$ $\rightarrow$ {\thit}}\\
+			\dots \\
+			\textbf{Conjugation 4 $\rightarrow$ {\thit}}\\
+			\dots
+		\columnbreak
+	\a v$_{stat}$:\\
+			$\alpha$ $\rightarrow$ {\tkal}\\
+			Class 3 $\rightarrow$ {\tkal}\\
+			Class 5 $\rightarrow$ {\tkal}
+	\a v$_{caus}$:\\
+			\textbf{$\gamma$ $\rightarrow$ {\tpie}}\\
+			$\epsilon$ $\rightarrow$ {\thif}\\
+			Conjugation 1 $\rightarrow$ {\tkal}\\
+			\dots \\
+			\textbf{Conjugation 4 $\rightarrow$ {\tpie}}\\
+			\dots
+	\end{multicols}
+\xe
+
+Causative \emph{kava} `set' is derived by applying the relevant rule from~(\ref{ex:arad-classes}a), which essentially allows a root to appear in {\tkal}. The alternation between {\tkal} and {\tpie} is not considered grammatical enough to be formalized in this theory, so we move to the alternation between \emph{kibea} `cemented' and \emph{hitkabea} `was cemented'. This is an alternation in which the former verb is causative and the latter anticausative, and so we find the causative template in~(\ref{ex:arad-classes}d) and the anticausative (``inchoative'') template in~(\ref{ex:arad-classes}b). The two are matched up in Conjugation Class 4. Using the correct flavors of v and the correct conjugation class ensures that only attested interpretations of the templates arise. There are no stative verbs in {\tpie} or {\thit}, for example, because stative v only has rules that insert {\tkal}. 
+
+Since the goal of this work is to reduce the amount of generality encoded by the system, the technical outcome is appropriate. This does mean, however, that the theory ends up with functional structure which does not determine argument structure but is simply correlated with it, unlike in the current approach. In addition, most of the syntactic work is carried out by the flavors of v, but these have no unique spell-out, raising the question of whether there is any independent motivation for them beyond accounting for the conjugation classes themselves. Almost by design, this theory of Hebrew cannot easily be adapted to the morphology of any non-Semitic language.
+
+		\subsubsection{Additional issues}
+Syntactic and lexicalist accounts both need to stipulate that only a subset of roots (or stems) licenses reflexive derivations. What is at issue here is the status of the template. The general problem with morphemic approaches to templates is that a given template simply does not have a deterministic syntax or semantics, as already seen time and time again in the last two chapters. \citet[197]{arad05} and \citet[564]{borer13oup} actually speculate that a configurational approach (like the current theory) might be more viable than a feature-based or functor-based approach. As far as the treatment of reflexives is concerned, morphemic accounts can go no further than stipulating that {\thit} is the template for reflexive verbs.
+
+	\subsection{Conclusion} \label{vz:others:conc}
+This chapter considered a range of data and constructions in Hebrew, some familiar and some new, providing analyses based on the premise that the verbal templates are not atomic morphological elements. Instead, the trivalent theory of Voice allows us to distinguish Unspecified Voice from {\vz}, as well as their relationship to the core vP. Thinking in terms of features on heads lets us make use of {\pz}, and the data in both Hebrew and other languages suggests a partly lexical, partly functional element {\va}.
+
+The kinds of questions asked here were of the following type: if {\thit} were simply a morphological primitive \citep{reinhartsiloni05}, why would it be the only one to allow for reflexive verbs? And why should it have complex morphology? If {\tnif} were a morphological primitive, how can it allow for both non-active and active constructions? These facts make sense under the current decompositional view, in which functional heads build up verbs in the syntax. Certain correlations can then be explained: that {\thit} is both morphophonologically and semantically complex, for example, or that reflexives and anticausatives appear to have a shared base. The system developed here provides answers based on functional heads required elsewhere in the grammar.
+
+In the next chapter I develop the system further, examining the ``causative'' template {\thif} and the last value of Voice, {\vd}, in similar fashion to this chapter and the previous one.
