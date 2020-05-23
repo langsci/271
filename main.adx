@@ -5,9 +5,9 @@
 \indexentry {Schäfer, Florian|hyperpage}{4}
 \indexentry {Koontz-Garboden, Andrew|hyperpage}{4}
 \indexentry {Alexiadou, Artemis|hyperpage}{4}
-\indexentry {Haspelmath, Martin|hyperpage}{4}
-\indexentry {Levin, Beth|hyperpage}{4}
-\indexentry {Rappaport Hovav, Malka|hyperpage}{4}
+\indexentry {Haspelmath, Martin|hyperpage}{5}
+\indexentry {Levin, Beth|hyperpage}{5}
+\indexentry {Rappaport Hovav, Malka|hyperpage}{5}
 \indexentry {Koontz-Garboden, Andrew|hyperpage}{5}
 \indexentry {Labelle, Marie|hyperpage}{5}
 \indexentry {Schäfer, Florian|hyperpage}{5}
@@ -55,7 +55,7 @@
 \indexentry {Prince, Alan S.|hyperpage}{9}
 \indexentry {McCarthy, John J.|hyperpage}{9}
 \indexentry {McCarthy, John J.|hyperpage}{9}
-\indexentry {McCarthy, John J.|hyperpage}{9}
+\indexentry {McCarthy, John J.|hyperpage}{10}
 \indexentry {McCarthy, John J.|hyperpage}{10}
 \indexentry {Berman, Ruth|hyperpage}{10}
 \indexentry {Berman, Ruth|hyperpage}{10}
@@ -80,7 +80,7 @@
 \indexentry {Kastner, Itamar|hyperpage}{10}
 \indexentry {Kastner, Itamar|hyperpage}{10}
 \indexentry {Tucker, Matthew A.|hyperpage}{10}
-\indexentry {Schwarzwald, Ora (Rodrigue)|hyperpage}{10}
+\indexentry {Schwarzwald, Ora (Rodrigue)|hyperpage}{11}
 \indexentry {Schwarzwald, Ora (Rodrigue)|hyperpage}{11}
 \indexentry {Berman, Ruth|hyperpage}{11}
 \indexentry {Moore-Cantwell, Claire|hyperpage}{11}
@@ -106,8 +106,8 @@
 \indexentry {Halle, Morris|hyperpage}{13}
 \indexentry {Marantz, Alec|hyperpage}{13}
 \indexentry {Chomsky, Noam|hyperpage}{13}
-\indexentry {Marantz, Alec|hyperpage}{13}
-\indexentry {Arad, Maya|hyperpage}{13}
+\indexentry {Marantz, Alec|hyperpage}{14}
+\indexentry {Arad, Maya|hyperpage}{14}
 \indexentry {Arad, Maya|hyperpage}{14}
 \indexentry {Embick, David|hyperpage}{14}
 \indexentry {Marantz, Alec|hyperpage}{14}
@@ -119,11 +119,11 @@
 \indexentry {Gouskova, Maria|hyperpage}{14}
 \indexentry {Marantz, Alec|hyperpage}{14}
 \indexentry {Kratzer, Angelika|hyperpage}{14}
-\indexentry {Kratzer, Angelika|hyperpage}{14}
-\indexentry {Chomsky, Noam|hyperpage}{14}
 \indexentry {Johnson, Kyle|hyperpage}{14}
 \indexentry {Alexiadou, Artemis|hyperpage}{14}
 \indexentry {Schäfer, Florian|hyperpage}{14}
+\indexentry {Kratzer, Angelika|hyperpage}{15}
+\indexentry {Chomsky, Noam|hyperpage}{15}
 \indexentry {Kratzer, Angelika|hyperpage}{15}
 \indexentry {Wood, Jim|hyperpage}{15}
 \indexentry {Belletti, Adriana|hyperpage}{15}
@@ -168,14 +168,14 @@
 \indexentry {Harbour, Daniel|hyperpage}{19}
 \indexentry {Gouskova, Maria|hyperpage}{19}
 \indexentry {Bobaljik, Jonathan D.|hyperpage}{19}
-\indexentry {Gouskova, Maria|hyperpage}{19}
-\indexentry {Pak, Marjorie|hyperpage}{19}
+\indexentry {Gouskova, Maria|hyperpage}{20}
+\indexentry {Pak, Marjorie|hyperpage}{20}
 \indexentry {Embick, David|hyperpage}{20}
 \indexentry {Marantz, Alec|hyperpage}{20}
 \indexentry {Kastner, Itamar|hyperpage}{20}
-\indexentry {Baker, Mark|hyperpage}{20}
-\indexentry {Muysken, Pieter|hyperpage}{20}
-\indexentry {Wallace, Katherine|hyperpage}{20}
+\indexentry {Baker, Mark|hyperpage}{21}
+\indexentry {Muysken, Pieter|hyperpage}{21}
+\indexentry {Wallace, Katherine|hyperpage}{21}
 \indexentry {Zukoff, Sam|hyperpage}{21}
 \indexentry {Kastner, Itamar|hyperpage}{21}
 \indexentry {Oltra Massuet, Isabel|hyperpage}{21}
@@ -246,7 +246,7 @@
 \indexentry {Borer, Hagit|hyperpage}{40}
 \indexentry {Chomsky, Noam|hyperpage}{41}
 \indexentry {Marantz, Alec|hyperpage}{41}
-\indexentry {Pylkk{ä}nen, Liina|hyperpage}{43}
+\indexentry {Pylkkänen, Liina|hyperpage}{43}
 \indexentry {Koopman, Hilda|hyperpage}{43}
 \indexentry {Svenonius, Peter|hyperpage}{43}
 \indexentry {Gehrke, Berit|hyperpage}{43}
@@ -461,7 +461,7 @@
 \indexentry {Myler, Neil|hyperpage}{88}
 \indexentry {Kastner, Itamar|hyperpage}{88}
 \indexentry {Wood, Jim|hyperpage}{89}
-\indexentry {Sch{ä}fer, Florian|hyperpage}{89}
+\indexentry {Schäfer, Florian|hyperpage}{89}
 \indexentry {Wood, Jim|hyperpage}{89}
 \indexentry {Wood, Jim|hyperpage}{89}
 \indexentry {Myler, Neil|hyperpage}{90}
@@ -479,8 +479,8 @@
 \indexentry {Wood, Jim|hyperpage}{92}
 \indexentry {Legate, Julie Anne|hyperpage}{92}
 \indexentry {Akkus, Faruk|hyperpage}{92}
-\indexentry {Pylkk{ä}nen, Liina|hyperpage}{92}
-\indexentry {Pylkk{ä}nen, Liina|hyperpage}{92}
+\indexentry {Pylkkänen, Liina|hyperpage}{92}
+\indexentry {Pylkkänen, Liina|hyperpage}{92}
 \indexentry {Bar-Asher Siegal, Elitzur|hyperpage}{92}
 \indexentry {Boneh, Nora|hyperpage}{92}
 \indexentry {Bar-Asher Siegal, Elitzur|hyperpage}{92}
@@ -888,7 +888,7 @@
 \indexentry {Alexiadou, Artemis|hyperpage}{201}
 \indexentry {Alexiadou, Artemis|hyperpage}{201}
 \indexentry {Kratzer, Angelika|hyperpage}{201}
-\indexentry {Pylkk{ä}nen, Liina|hyperpage}{201}
+\indexentry {Pylkkänen, Liina|hyperpage}{201}
 \indexentry {Wood, Jim|hyperpage}{203}
 \indexentry {Wood, Jim|hyperpage}{203}
 \indexentry {Myler, Neil|hyperpage}{203}
@@ -907,7 +907,7 @@
 \indexentry {Schäfer, Florian|hyperpage}{207}
 \indexentry {Legate, Julie Anne|hyperpage}{207}
 \indexentry {Akkus, Faruk|hyperpage}{207}
-\indexentry {Pylkk{ä}nen, Liina|hyperpage}{207}
+\indexentry {Pylkkänen, Liina|hyperpage}{207}
 \indexentry {Wood, Jim|hyperpage}{207}
 \indexentry {Marantz, Alec|hyperpage}{207}
 \indexentry {Kastner, Itamar|hyperpage}{210}
@@ -1009,7 +1009,7 @@
 \indexentry {Harbour, Daniel|hyperpage}{229}
 \indexentry {Harbour, Daniel|hyperpage}{229}
 \indexentry {Schäfer, Florian|hyperpage}{229}
-\indexentry {Sch{ä}fer, Florian|hyperpage}{229}
+\indexentry {Schäfer, Florian|hyperpage}{229}
 \indexentry {Schäfer, Florian|hyperpage}{229}
 \indexentry {Grohmann, Kleanthes K.|hyperpage}{229}
 \indexentry {Baier, Nicholas|hyperpage}{229}
