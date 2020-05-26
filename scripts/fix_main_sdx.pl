@@ -1,6 +1,7 @@
 #! /usr/bin/perl -w
 ## Fix main.sdx which has entries of the form \indexentry {\isi {term}}
-## Run this, then makeindex -o main.snd main.sdx.fix
+## Usage: perl scripts/fix_main_sdx.pl main_sdx <name_of_file>
+## Run this, then makeindex -o main.snd <name_of_file>
 use 5.010;
 use strict;
 use utf8;
@@ -8,7 +9,7 @@ use open ':std', ':encoding(utf8)';
 #use File::Slurp::Unicode;
 
 my $filename = "main.sdx";
-my $outfile = shift or die "Output file (could be the same)?";
+my $outfile = shift or die "Specify output file (can overwrite main.sdx)";
 my @entire_document;
 
 open(my $fh, "<", $filename) or die "Cannot open main.sdx";
