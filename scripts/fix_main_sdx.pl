@@ -1,6 +1,6 @@
 #! /usr/bin/perl -w
 ## Fix main.sdx which has entries of the form \indexentry {\isi {term}}
-## Usage: perl scripts/fix_main_sdx.pl main_sdx <name_of_file>
+## Usage: perl scripts/fix_main_sdx.pl main.sdx <name_of_file>
 ## Run this, then makeindex -o main.snd <name_of_file>
 use 5.010;
 use strict;
