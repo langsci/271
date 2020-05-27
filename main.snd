@@ -18,7 +18,6 @@
 		\hyperindexformat{\infn {3}}{207}, \hyperpage{207}, 
 		\hyperindexformat{\infn {4}}{230}, 
 		\hyperpage{230--233}
-  \item agent, \hyperpage{231}
   \item agentivity, \hyperpage{34}, \hyperindexformat{\infn {2}}{35}, 
 		\hyperpage{35}, \hyperpage{40}, \hyperpage{51--55}, 
 		\hyperpage{63}, \hyperpage{71}, \hyperpage{73}, 
@@ -27,9 +26,9 @@
 		\hyperpage{128}
   \item Agree, \hyperpage{94}, \hyperpage{136}, \hyperpage{228}, 
 		\hyperpage{231--233}
-  \item allomorph, \hyperpage{86}
   \item allomorphy, \hyperpage{20, 21}, \hyperpage{46}, \hyperpage{60}, 
-		\hyperpage{64}, \hyperpage{192, 193}, \hyperpage{210}
+		\hyperpage{64}, \hyperpage{86}, \hyperpage{192, 193}, 
+		\hyperpage{210}
   \item allosemy, \hyperpage{21, 22}, \hyperindexformat{\infn {4}}{45}, 
 		\hyperpage{45}, \hyperpage{81}, \hyperpage{107}, 
 		\hyperindexformat{\infn {2}}{204}, \hyperpage{204}
@@ -72,9 +71,7 @@
 		\hyperpage{200}, \hyperpage{231}
   \item conjugation class, \hyperpage{5}, \hyperpage{7}, 
 		\hyperpage{114}, \hyperpage{119, 120}, 
-		\hyperpage{154--156}, \hyperpage{214}, \hyperpage{228}, 
-		\hyperpage{263}
-  \item conjugation\is {conjugation class} class, \hyperpage{119, 120}
+		\hyperpage{154--156}, \hyperpage{214}, \hyperpage{228}
   \item contextual allomorphy, 
 		\hyperindexformat{\see {allomorphy}}{237}
   \item contextual allosemy, \hyperindexformat{\see {allosemy}}{237}

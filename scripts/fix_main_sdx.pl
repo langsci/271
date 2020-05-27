@@ -20,6 +20,8 @@ while (my $line = <$fh>) {
 	}
 	else {
 		$line =~ s/\\isi \{(.*?)\}/$1/;
+    	$line =~ s/agent\|hyperpage/Agent\|hyperpage/; # small-caps AGENT seems to go lowercase
+
 	}
 	push (@entire_document, $line);
 	#print $outfh $line;
