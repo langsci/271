@@ -523,11 +523,11 @@ The basic paradigm is outlined in Table~\ref{tab:2-3:kal}; for more examples see
 \label{r1:2:1}The intuition expressed by some authors is that if there are no overt affixes, there might not be any functional material closing off some morphological domain, and so the root will be relatively unconstrained in the phonology. For \cite{ussishkin05}, for example, the fact that strong prosodic constraints hold in all \emph{other} templates exhibits effects typical of The Emergence of The Unmarked, since they are derived by overt affixation. See discussion of such verbs and their roots also by \cite{laks11}, \cite{borer13oup}, \cite{borer15roots}, \cite{tucker15roots} and \cite{kastner18nllt}.}
 
 \begin{table}
-\fittable{
-	\begin{tabularx}{\textwidth}{lllllll}
+\fittable{%
+	\begin{tabular}{lllllll}
  \lsptoprule
-		& \multicolumn{2}{c}{Past} & \multicolumn{2}{c}{Present} &  \multicolumn{2}{c}{Future} \\\midrule
-		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\
+		& \multicolumn{2}{c}{Past} & \multicolumn{2}{c}{Present} &  \multicolumn{2}{c}{Future}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+		& \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}} & \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}} & \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}}\\\midrule
 		1\gsc{SG} & \multicolumn{2}{c}{XaYaZ-ti} & XoYeZ & XoYeZ-et & \multicolumn{2}{c}{e-XYoZ/ji-XYoZ}\\
 		1\gsc{PL} & \multicolumn{2}{c}{XaYaZ-nu} & XoYZ-im & XoYZ-ot & \multicolumn{2}{c}{ni-XYoZ}  \\\tablevspace
 		2\gsc{SG} & XaYaZ-ta & XaYaZ-t & XoYeZ & XoYeZ-et & ti-XYoZ & ti-XYeZ-i\\
@@ -535,12 +535,12 @@ The basic paradigm is outlined in Table~\ref{tab:2-3:kal}; for more examples see
 		3\gsc{SG} & XaYaZ & XaYZ-a & XoYeZ & XoYeZ-et & ji-XYoZ & ti-XYoZ\\
 		3\gsc{PL} & \multicolumn{2}{c}{XaYZ-u} & XoYZ-im & XoYZ-ot & \multicolumn{2}{c}{ji-XYeZ-u}\\
 \lspbottomrule
- 	\end{tabularx}
-}
-	\caption{Inflectional paradigm for {\tkal}}
-	\label{tab:2-3:kal}
+ 	\end{tabular}}
+	\caption{Inflectional paradigm for {\tkal}\label{tab:2-3:kal}}
 \end{table}
+
 What I assume throughout is that the stem vowels spell out Voice and that affixes spell out T+Agr (Chapter~\ref{intro:arch:inter}). Since Voice is local to T+Agr, T+Agr can condition \isi{allomorphy} on the vowels, symbolized by the dotted arrow in~(\ref{tree:loc1}). As a result, different phi-feature values condition different stem vowels as in Table~\ref{tab:2-3:kal}. This aspect of the theory is based on \cite{katie13} and explored more fully in \cite{kastner18nllt}.
+
  \begin{exe}
  \ex  \label{tree:loc1} 
  \begin{xlist} 
@@ -689,8 +689,9 @@ To understand the syntax-semantics of {\tpie}, consider the pairs in~(\ref{ex:va
 \z 
 
 What other readings do verbs in {\tpie} have? This template is traditionally called the ``intensive'' because of alternations such as those above and in Table~\ref{table:voice:piel-meanings} a--c, but it can also house pluractional verbs, d--f, and various others, g--i:
+
 \begin{table}
-	\begin{tabularx}{\textwidth}{llllll}
+	\begin{tabular}{llllll}
  \lsptoprule
 	 & & \multicolumn{2}{c}{\tkal} &  \multicolumn{2}{c}{\tpie}\\\midrule
 	a.& \root{ʃbr} & ʃavar & `broke' & ʃiber & `broke to pieces'\\
@@ -699,15 +700,15 @@ What other readings do verbs in {\tpie} have? This template is traditionally cal
 
  	d.& \root{hlx} & halax & `walked' & hilex & `walked around'\\
  	e.& \root{r\dgs{k}d} & rakad & `danced' & riked & `danced around'\\
-  	f.& \root{\dgs{k}fts} & kafats & `jumped' & kipets/kiftsets & `jumped around'\\\tablevspace
+  	f.& \root{\dgs{k}fts} & kafats & `jumped' & kipets/ & `jumped around'\\
+  	  &                   &        &         &  kiftsets& \\\tablevspace
 
   	g. & \root{tps} & \multicolumn{2}{c}{---} & tipes & `climbed'\\
 	h. & \root{ltf} & \multicolumn{2}{c}{---} & litef & `petted'\\
 	i. & \root{\dgs{k}bl} & \multicolumn{2}{c}{---} & kibel & `received'\\
 \lspbottomrule
- 	\end{tabularx}
-\caption{Pretheoretical classification of some verbs in {\tpie}}
-\label{table:voice:piel-meanings} 
+ 	\end{tabular}
+\caption{Pretheoretical classification of some verbs in {\tpie}\label{table:voice:piel-meanings}}
 \end{table}
 
 In all cases, the verbs are active: either unergative or \isi{transitive}. And in all cases, the external argument is agentive. In some examples this contrast is clear: a storm cannot ``intensively'' break a window to bits.
@@ -1116,8 +1117,9 @@ Given that {\va} has been just argued to be a root, assigning a semantics to it 
 While this formalization aims to be explicit, I have taken a few shortcuts. As already argued for by \cite{layering15}, it is the vP which provides the \isi{causative} component, not Voice. The formalization in~(\ref{ex:2n61}) is meant to indicate that both Causers and Agents are compatible with Voice, but that only Agents are possible once {\va} is in the structure. 
 
 Let us expand the analysis a bit more: what readings does {\va} make available? Some examples are given in Table~\ref{table:voice:piel-meanings2}, repeated from Table~\ref{table:voice:piel-meanings}. While {\tpie} is traditionally called the ``intensive'' template, it can also house pluractional verbs, d--f, and various others which do not alternate with forms in {\tkal}, g--i.
+
 \begin{table}
-	\begin{tabularx}{\textwidth}{llllll}
+	\begin{tabular}{llllll}
 		\lsptoprule
 		& & \multicolumn{2}{c}{\tkal} &  \multicolumn{2}{c}{\tpie}\\\midrule
 		a.& \root{ʃbr} & ʃavar & `broke' & ʃiber & `broke to pieces'\\
@@ -1126,15 +1128,15 @@ Let us expand the analysis a bit more: what readings does {\va} make available? 
 		
 		d.& \root{hlx} & halax & `walked' & hilex & `walked around'\\
 		e.& \root{r\dgs{k}d} & rakad & `danced' & riked & `danced around'\\
-		f.& \root{\dgs{k}fts} & kafats & `jumped' & kipets/kiftsets & `jumped around'\\\tablevspace
+		f.& \root{\dgs{k}fts} & kafats & `jumped' & kipets/ & `jumped around'\\
+		  &                   &        &          & kiftsets& \\\tablevspace
 		
 		g. & \root{tps} & \multicolumn{2}{c}{---} & tipes & `climbed'\\
 		h. & \root{ltf} & \multicolumn{2}{c}{---} & litef & `petted'\\
 		i. & \root{\dgs{k}bl} & \multicolumn{2}{c}{---} & kibel & `received'\\
 		\lspbottomrule
-	\end{tabularx}
-	\caption{Pretheoretical classification of some verbs in {\tpie}}
-	\label{table:voice:piel-meanings2} 
+	\end{tabular}
+	\caption{Pretheoretical classification of some verbs in {\tpie}\label{table:voice:piel-meanings2}}
 \end{table}
 
 The pluractional readings and underived verbs have potentially interesting theoretical consequences, which will be touched on here before moving on to the phonological contribution of {\va}.
@@ -1159,9 +1161,9 @@ In the examples in~(\ref{ex:2n62}) the event does not entail change of state, un
  \begin{exe}
  \ex  \label{ex:2n63}
  \begin{xlist} 
- 	\ex   \textbf{Other-oriented roots (change of state)} such as \root{\gsc{BREAK}} and \root{\gsc{PRODUCE}}: pluralization of the object. 
- 	\ex   \textbf{Activity roots} or \textbf{self-oriented roots} such as \root{\gsc{RUN}} and \root{\gsc{JUMP}}: pluralization of the spatio-temporal aspects of the event. 
- 	\ex  \textbf{Other cases:} no pluralization. 
+ 	\ex   \textit{Other-oriented roots (change of state)} such as \root{\gsc{BREAK}} and \root{\gsc{PRODUCE}}: pluralization of the object. 
+ 	\ex   \textit{Activity roots} or \textit{self-oriented roots} such as \root{\gsc{RUN}} and \root{\gsc{JUMP}}: pluralization of the spatio-temporal aspects of the event. 
+ 	\ex   \textit{Other cases:} no pluralization. 
  \z
 \z 
 
@@ -1197,11 +1199,11 @@ In these examples an external argument is still required, regardless of whether 
 The morphophonology of {\tpie} consist of two parts that distinguish it from other templates: different stem vowels and the way it bleeds a regular phonological process of \isi{spirantization}. In Modern Hebrew, /p/, /b/ and /k/ spirantize to [f], [v] and [x] postvocalically \citep{adam02,temkinmartinez08wccfl,gouskova12nllt}, a process that applies to nonce words as well \citep{temkinmartinzemuellner16}. An example of this process was seen above in~(\ref{ex:va-piel1}a--b), where /b/ spirantizes to [v] after a vowel except if {\va} is also in the structure. The inflectional paradigm for {\tpie} in three tenses is given in Table~\ref{tab:2-5:piel}.
 
 \begin{table}
-\fittable{
-	\begin{tabularx}{\textwidth}{lllllll}
+\fittable{%
+	\begin{tabular}{lllllll}
  \lsptoprule
-		& \multicolumn{2}{c}{Past} & \multicolumn{2}{c}{Present} &  \multicolumn{2}{c}{Future} \\\midrule
-		& \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} & \gsc{M} & \gsc{F} \\
+		& \multicolumn{2}{c}{Past} & \multicolumn{2}{c}{Present} &  \multicolumn{2}{c}{Future}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+		& \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}} & \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}} & \multicolumn{1}{c}{\gsc{M}} & \multicolumn{1}{c}{\gsc{F}}\\\midrule
 		1\gsc{SG} & \multicolumn{2}{c}{Xi\dgs{Y}aZ-ti} & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & \multicolumn{2}{c}{a-Xa\dgs{Y}eZ/je-Xa\dgs{Y}eZ}\\
 		1\gsc{PL} & \multicolumn{2}{c}{Xi\dgs{Y}aZ-nu} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c}{ne-Xa\dgs{Y}eZ}  \\\tablevspace
 		2\gsc{SG} & Xi\dgs{Y}aZ-ta & Xi\dgs{Y}aZ-t & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & te-Xa\dgs{Y}eZ & te-Xa\dgs{Y}Z-i\\
@@ -1209,10 +1211,8 @@ The morphophonology of {\tpie} consist of two parts that distinguish it from oth
 		3\gsc{SG} & Xi\dgs{Y}eZ & Xi\dgs{Y}Z-a & me-Xa\dgs{Y}eZ & me-Xa\dgs{Y}eZ-et & je-Xa\dgs{Y}eZ & te-Xa\dgs{Y}eZ\\
 		3\gsc{PL} & \multicolumn{2}{c}{Xi\dgs{Y}Z-u} & me-Xa\dgs{Y}Z-im & me-Xa\dgs{Y}Z-ot & \multicolumn{2}{c}{je-Xa\dgs{Y}Z-u}\\
 \lspbottomrule
- 	\end{tabularx}
-}
-	\caption{Inflectional paradigm for {\tpie}}
-	\label{tab:2-5:piel}
+ 	\end{tabular}}
+	\caption{Inflectional paradigm for {\tpie}\label{tab:2-5:piel}}
 \end{table}
 
 VIs can be assigned similarly to how this was done for Voice in Section~\ref{voice:voice:phono}. The difference is that since {\va} is adjacent to Voice, it can condition \isi{allomorphy} of the vowels; this is what we see in Table~\ref{tab:2-5:piel} , where the stem vowels are different for {\tpie} than for {\tkal}. However, {\tpie} is separated from T by overt Voice (the vowels), so the agreement affixes are correctly predicted to be identical across the templates.
