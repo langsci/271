@@ -37,9 +37,9 @@ My definition of a \textsc{\isi{passive}} verb is given in~(\ref{ex:5:1}). It is
  \z
 \z 
 
-I would like to clarify right from the start that what is often descriptively called ``the \isi{passive}'' is not necessarily what I mean by my formal definition. One often reads about the ``\isi{passive}'' in Romance languages (as with \emph{se} in \ili{French}), in \ili{Greek} or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the \ili{Kannada} non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to \isi{passive} \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we obtain when we use a dedicated \isi{passive} head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting also of \ili{Classical Greek}, some Semitic languages and \ili{Fula}. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Chapter~\ref{vz:vz}) and the head Pass which I implement next.
+I would like to clarify right from the start that what is often descriptively called ``the \isi{passive}'' is not necessarily what I mean by my formal definition. One often reads about the ``\isi{passive}'' in Romance languages (as with \emph{se} in \ili{French}), in \ili{Greek} or in various other languages and language families. But this term is used pretheoretically and as a matter of convenience: the element tracked by French \emph{se}, Greek non-active morphology, the \ili{Kannada} non-active suffix \citep{lidz01} and so on is a non-active Voice head. As argued by \cite{alexiadoudoron12} and \citet[123]{layering15}, and emphasized again by \cite{spathasetal15} and \cite{kastnerzu17}, there are two structures which can give rise to \isi{passive} \emph{readings}. One is a VoiceP with a non-active Voice head, as in Greek, Romance and many other languages. The other is what we obtain when we use a dedicated \isi{passive} head, Pass. This is the case in English, German and a few other languages.\footnote{The list is not very long, consisting also of \ili{Classical Greek}, some Semitic languages and \ili{Fula}. See \cite{klaiman91} and \cite{alexiadoudoron12}.} Hebrew, as we have seen, has both options \citep{alexiadoudoron12}: existential closure as an alloseme of {\vz} (Section~\ref{vz:vz}) and the head Pass which I implement next.
 
-The literature suggests a number of characteristics of passives which can be used as diagnostics \citep{bakeretal89,sichel09,spathasetal15}, a few of which were already used in Chapter~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent\is{Agent}~(\ref{ex:pass-by-en}), allow agent\is{Agent}-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent\is{Agent} and theme. Existential binding of the implicit agent\is{Agent} means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
+The literature suggests a number of characteristics of passives which can be used as diagnostics \citep{bakeretal89,sichel09,spathasetal15}, a few of which were already used in Section~\ref{vz:tnif:nact}. Passive verbs/clauses can take \emph{by}-phrases specifying the agent\is{Agent}~(\ref{ex:pass-by-en}), allow agent\is{Agent}-oriented adverbs~(\ref{ex:pass-adv-en}), allow control into adjunct clauses~(\ref{ex:pass-pro-en}) and show disjoint reference effects~(\ref{ex:pass-dre-en}), i.e.~no coreference of agent\is{Agent} and theme. Existential binding of the implicit agent\is{Agent} means that it itself cannot be controlled or bound~(\ref{ex:pass-bind-en}).
 
  \begin{exe}
 \ex  \label{ex:pass-by-en}The ship was sunk (by Bill). 
@@ -53,14 +53,14 @@ The literature suggests a number of characteristics of passives which can be use
  \z
 \z 
 
-Synthesizing the existing literature on \isi{passive} heads \citep{bruening13,layering15}, I formalize Pass as follows. In the \textbf{syntax}, Pass merges above Voice. It is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the \isi{passive} head.
+Synthesizing the existing literature on \isi{passive} heads \citep{bruening13,layering15}, I formalize Pass as follows. In the \textit{syntax}, Pass merges above Voice. It is incompatible with merger of a DP in Spec,VoiceP immediately below it. \cite{bruening13} implements this constraint as a selectional requirement on the size of the VoiceP combining with the \isi{passive} head.
 
 In the \textit{semantics}, Pass likewise brings about existential closure over an implicit external argument, (\ref{ex:5n7}). There are two ways of formalizing this idea. The one I adopt is that of \cite{bruening13}, where Pass takes the VoiceP as its argument and closes off the \isi{Agent} role:
 
  \begin{exe}
 \ex  \label{ex:5n7}\denote{Pass} = λPλe∃x.Agent(x,e) \& P(e) 
  \z 
-This denotation is identical to what I suggested for the \isi{passive} alloseme of {\vz} in Chapter~\ref{vz:vz:sem}, (\ref{ex:pass-sem}).
+This denotation is identical to what I suggested for the \isi{passive} alloseme of {\vz} in Section~\ref{vz:vz:sem}, (\ref{ex:pass-sem}).
  \begin{exe}
 	\ex  \label{ex:pass-sem}\denote{\vz} = 
 	\begin{xlist}
@@ -420,7 +420,7 @@ In active forms, the finite verb often contrasts with a combination of copula an
  
  \z
 \z 
-\cite{doron00} shows that \textbf{verbs are not allowed after a copula}, so the forms in (\ref{ex:pres-act}b) must be adjectives or nominals. They can be used when the participle is used in a generic context as a noun, as in ``eater of vermin'' (\ref{ex:pres-act2}a) or ``recorder of things'' (\ref{ex:pres-act2}b). This is to be expected if the complement of the copula in~(\ref{ex:pres-act2}) is a participle.
+\cite{doron00} shows that \textit{verbs are not allowed after a copula}, so the forms in (\ref{ex:pres-act}b) must be adjectives or nominals. They can be used when the participle is used in a generic context as a noun, as in ``eater of vermin'' (\ref{ex:pres-act2}a) or ``recorder of things'' (\ref{ex:pres-act2}b). This is to be expected if the complement of the copula in~(\ref{ex:pres-act2}) is a participle.
  \begin{exe}
  \ex  \label{ex:pres-act2} 
  \begin{xlist} 
@@ -508,7 +508,7 @@ Passive participles, being adjectival passives, can take on idiomatic readings r
  \z
 \z 
 
-Second, synthetic passives force \textbf{disjoint readings} in which the external argument and the internal argument cannot refer to the same entity \citep{bakeretal89}. The adjectival form~(\ref{ex:disjoint}a), with the participle, allows coreference whereas the verbal form~(\ref{ex:disjoint}b) does not \citep[720]{sichel09}:
+Second, synthetic passives force \textit{disjoint readings} in which the external argument and the internal argument cannot refer to the same entity \citep{bakeretal89}. The adjectival form~(\ref{ex:disjoint}a), with the participle, allows coreference whereas the verbal form~(\ref{ex:disjoint}b) does not \citep[720]{sichel09}:
  \begin{exe}
  \ex  \label{ex:disjoint} 
  \begin{xlist} 
@@ -640,7 +640,7 @@ Two of these patterns are homopohonous with the present-tense (participle) verba
 	\end{minipage}
  \z 
 
-An alternative would be to assume that even these stative adjectives have underlying verbal structure, except that this structure is not interpreted. This approach is reminiscent of the inchoatives and the Greek facts mentioned in Chapter~\ref{vz:vz:sem}. Perhaps in the Hebrew cases above there is only one adjectivizing head \emph{a}, which takes a verbal structure that is not interpreted. I do not have particular reason to support one view or the other, and so I stick to the analyses in~(\ref{ex:adj-tpie})--(\ref{ex:adj-thif}) simply because they involve less structure. The same point can be made for complex event nominals in the next section. Note, however, that this alternative should then extend to English cases such as (\ref{ex:adj-en}b): what is to stop us from assuming underlying verbal structure in \emph{closed} which is simply not interpreted before being adjectivized by -\emph{ed}?
+An alternative would be to assume that even these stative adjectives have underlying verbal structure, except that this structure is not interpreted. This approach is reminiscent of the inchoatives and the Greek facts mentioned in Section~\ref{vz:vz:sem}. Perhaps in the Hebrew cases above there is only one adjectivizing head \emph{a}, which takes a verbal structure that is not interpreted. I do not have particular reason to support one view or the other, and so I stick to the analyses in~(\ref{ex:adj-tpie}--\ref{ex:adj-thif}) simply because they involve less structure. The same point can be made for complex event nominals in the next section. Note, however, that this alternative should then extend to English cases such as (\ref{ex:adj-en}b): what is to stop us from assuming underlying verbal structure in \emph{closed} which is simply not interpreted before being adjectivized by -\emph{ed}?
 
 		\subsubsection{Adjectival passives}
 The difference between stative adjectives and adjectival passives is that the latter embed VoiceP. The internal argument of adjectival passives has been argued by \citet[386]{bruening14nllt} to be an Operator, bound by the noun interpreted as the argument. Implementing this for Hebrew gives us structures like the following (where the exact nature of the copula is irrelevant). Like with stem vowels in verbs, I assume that the stem vowels originate on Voice and are conditioned by the embedding \emph{a} head.
@@ -782,7 +782,7 @@ What remains is to see what special interactions arise from the combination of o
  \z
 \z 
 
-And while all three \textbf{adjectival \isi{passive}} forms are \emph{compatible} with external arguments, \citet[175]{doron14adj} observes that (resultative) adjectival passives in ``\isi{causative}'' {\mhuf} \emph{require} an implied \isi{Causer} to be interpreted, even if it is implicit and not overtly represented. So, while an adjectival \isi{passive} in {\mpua} does not entail the existence of a \isi{Causer}, (\ref{ex:sportaim}a), every adjectival \isi{passive} in {\mhuf} does, (\ref{ex:sportaim}b). In a telling near-minimal pair, the athletes in~(\ref{ex:sportaim}a) might have trained on their own, but the athletes in~(\ref{ex:sportaim}b) must have been trained through some kind of organized program.
+And while all three \textit{adjectival \isi{passive}} forms are \emph{compatible} with external arguments, \citet[175]{doron14adj} observes that (resultative) adjectival passives in ``\isi{causative}'' {\mhuf} \emph{require} an implied \isi{Causer} to be interpreted, even if it is implicit and not overtly represented. So, while an adjectival \isi{passive} in {\mpua} does not entail the existence of a \isi{Causer}, (\ref{ex:sportaim}a), every adjectival \isi{passive} in {\mhuf} does, (\ref{ex:sportaim}b). In a telling near-minimal pair, the athletes in~(\ref{ex:sportaim}a) might have trained on their own, but the athletes in~(\ref{ex:sportaim}b) must have been trained through some kind of organized program.
  \begin{exe}
  \ex \label{ex:sportaim} 
  \begin{xlist} 

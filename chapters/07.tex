@@ -17,7 +17,7 @@ The two questions I posed regarding verbal templates were as follows:
 	\item What templates does a given template alternate with (and why)?
 \end{itemize}
 
-The summary of this work is divided into the empirical generalizations which an adequate theory of Hebrew morphology must derive, and the formal system I have implemented to do so. Readers who have jumped directly to this section may want to consult Chapter~\ref{intro:arch} for some formal background.
+The summary of this work is divided into the empirical generalizations which an adequate theory of Hebrew morphology must derive, and the formal system I have implemented to do so. Readers who have jumped directly to this section may want to consult Section~\ref{intro:arch} for some formal background.
 
 \subsection{Summary of generalizations}
 Every description or discussion of Hebrew morphology begins with the templatic system. The current book was also organized this way, laying out the empirical landscape template by template. The list below recaps the generalizations made about each template.
@@ -105,29 +105,29 @@ Instead of talking about templates, I have proposed that we talk about syntactic
  \begin{exe}
  \ex  \label{ex:7n7}Overt Voice heads in Hebrew 
  \begin{xlist} 
- \ex  \textbf{{\vd}:} requires a DP in its specifier. 
- \ex  \textbf{{\vz}:} prohibits a DP in its specifier. 
- \ex  \textbf{Unspecified Voice:} places no restrictions on its specifier. 
+ \ex  {\vd}: requires a DP in its specifier. 
+ \ex  {\vz}: prohibits a DP in its specifier. 
+ \ex  Unspecified Voice: places no restrictions on its specifier. 
  \z
 \z 
 
 Acknowledging the existence of an overt agentive modifier whose semantics is difficult to pin down but which does not seem to be active in the syntax adds {\va} to our toolbox.
  \begin{exe}
-\ex  \textbf{{\va}:} an overt modifier adding \textsc{action} (agentive) semantics to an event. In practice, this often creates a requirement for an Agent role to be saturated. 
+\ex  {\va}: an overt modifier adding \textsc{action} (agentive) semantics to an event. In practice, this often creates a requirement for an Agent role to be saturated. 
  \z 
 
 Assuming that \isi{prepositional phrases} are derived similarly to verbs gives us the functional head \textit{p} and its [\textminus{}D] variant {\pz} (more on this in Section~\ref{i:i:i}).
  \begin{exe}
  \ex  
  \begin{xlist} 
- 	\ex  \textbf{\textit{p}:} the prepositional equivalent of Voice; introduces the Figure role (the subject of a preposition). 
- 	\ex  \textbf{{\pz}:} prohibits a DP in its specifier. 
+ 	\ex  \textit{p}: the prepositional equivalent of Voice; introduces the Figure role (the subject of a preposition). 
+ 	\ex  {\pz}: prohibits a DP in its specifier. 
  \z
 \z 
 
 The \isi{passive} head Pass rounds off the picture.
  \begin{exe}
-\ex  \textbf{Pass:} prevents the projection of an argument in Spec,VoiceP and closes off the Agent role existentially in the semantics. 
+\ex  Pass: prevents the projection of an argument in Spec,VoiceP and closes off the Agent role existentially in the semantics. 
  \z 
 
 When these elements are combined, the resulting picture is not the confusing one in Table~\ref{table:sum-naive} but the principled one in Table~\ref{table:summary-syn-rep2}. These elements and the values of their features explain what structures give rise to what spell-outs, or in other words, what \textsc{configurations} a given template is possible in.
@@ -461,11 +461,11 @@ In my inherently biased view these goals have been reached; the generalizations,
 	\subsection{Open questions}
 The study of Hebrew does not conclude with this book, of course; even if everything I proposed were correct -- which it is surely not -- there would still remain many open questions for the study of this language and Semitic as a whole, not to mention argument structure in general. Here are the most pressing ones.
 
-First, the data and generalizations. Even though I have tried to base my generalizations on as much data as possible, I was not always able to quantitatively examine the entire verbal lexicon of Hebrew. When this was possible, as with {\tnif} in Chapter~\ref{vz:tnif} or {\thif} in Chapter~\ref{vd:thif}, I have provided exact counts. But it is important to keep in mind that even these numbers cannot be considered authoritative, since the way I classify a given verb might be different than another analyst's. The trailblazing works of \cite{doron03} and \cite{arad05} make it clear just how much variation one can find between different roots; so when I suggest that verbs in {\thit} are unambiguous between readings whereas those in {\tnif} might be associated with different readings, the door is always open for counterexamples.
+First, the data and generalizations. Even though I have tried to base my generalizations on as much data as possible, I was not always able to quantitatively examine the entire verbal lexicon of Hebrew. When this was possible, as with {\tnif} in Section~\ref{vz:tnif} or {\thif} in Section~\ref{vd:thif}, I have provided exact counts. But it is important to keep in mind that even these numbers cannot be considered authoritative, since the way I classify a given verb might be different than another analyst's. The trailblazing works of \cite{doron03} and \cite{arad05} make it clear just how much variation one can find between different roots; so when I suggest that verbs in {\thit} are unambiguous between readings whereas those in {\tnif} might be associated with different readings, the door is always open for counterexamples.
 
 This is particularly the case given that a few such observations are not predicted by the current system. I have no explanation to offer for this difference between {\thit} and {\tnif}. Furthermore, {\tnif} verbs allow for \isi{passive} readings but those in {\thit} might not. While I can encode this difference in the rules of semantic interpretations, I have not offered an explicit analysis.
 
-\label{r1:6:4}Zooming out even more, one major component of the system which has been relegated to arbitrary listing in the current theory is the role of roots. Formally, I have not provided an explicit theory of how a given root licenses a given functional head (or vice versa) beyond encoding co-occurrence in VI lists. And empirically, even though authors throughout the ages have emphasized that Semitic roots are simply idiosyncratic, a number of possible avenues for further exploration remain. Here and there I have noted places where the lexical semantics of the root seems to influence its place in a formal ontology. These include the pluractional events of {\tpie}, the divide between anticausatives and reflexives in {\thit}, the degree achievements and the forms of causation in {\thif}, the change-of-state adjectival passives of Chapter~\ref{passn:adjpass}, and quite clearly the passives in {\tnif}. It remains to be seen whether other cases can be attributed to the lexical semantics of the underlying event  \citep[114]{kastner16phd}.
+\label{r1:6:4}Zooming out even more, one major component of the system which has been relegated to arbitrary listing in the current theory is the role of roots. Formally, I have not provided an explicit theory of how a given root licenses a given functional head (or vice versa) beyond encoding co-occurrence in VI lists. And empirically, even though authors throughout the ages have emphasized that Semitic roots are simply idiosyncratic, a number of possible avenues for further exploration remain. Here and there I have noted places where the lexical semantics of the root seems to influence its place in a formal ontology. These include the pluractional events of {\tpie}, the divide between anticausatives and reflexives in {\thit}, the degree achievements and the forms of causation in {\thif}, the change-of-state adjectival passives of Section~\ref{passn:adjpass}, and quite clearly the passives in {\tnif}. It remains to be seen whether other cases can be attributed to the lexical semantics of the underlying event  \citep[114]{kastner16phd}.
 
 Similarly, the question of root meaning in general is one we are only beginning to scratch the surface of. I will not belabor the point here, as it has recently come back to the fore; see \cite{harley14thlia} for a good starting point and \cite{kastnertucker19cup} for an outline of the current state of affairs.
 Beyond formal work, computational modeling might provide new insights into how roots cluster in an abstract n-dimensional space.
