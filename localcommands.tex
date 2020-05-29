@@ -1,6 +1,8 @@
 \newcommand{\appref}[1]{Appendix \ref{#1}}
 \newcommand{\fnref}[1]{Footnote \ref{#1}} 
 
+
+\setcounter{tocdepth}{5}
 \newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
         width  = \textwidth,
 	height = .3\textheight,
@@ -12,7 +14,6 @@
         ]}{\end{axis}}
         
 \newcommand{\langscibar}[1]{\addplot+ table [x=i, y=#1] {\mydata};\addlegendentry{#1};}
-
 \newcommand{\langscidata}[1]{\pgfplotstableread{#1}\mydata;}
 
 %%%%% USER COMMANDS %%%%%
@@ -30,7 +31,7 @@
 \newcommand\glemph[1]{\textbf{#1}}
 \newcommand\glemphu[1]{\underline{#1}}
 %emphasis in summaries
-\newcommand\hammer[1]{\begin{center}\fbox{\parbox{0.9\linewidth}{\centering \textsf{#1}}}\end{center}}
+% \newcommand\hammer[1]{\begin{center}\fbox{\parbox{0.9\linewidth}{\centering \textsf{#1}}}\end{center}}
 
 % pifont
 \newcommand{\cmark}{\ding{51}}% 52
@@ -38,7 +39,7 @@
 \newcommand{\hand}{\ding{43}}
 
 \newcommand\trace{\rule[-0.5ex]{0.5cm}{.4pt}}
-\newcommand\zero{\O{}}
+\newcommand\zero{∅}
 \newcommand\gsc[1]{\textsc{\lowercase{#1}}} %for glossing in small caps - comment out to return to caps
 \renewcommand\root[1]{$\sqrt{\text{#1}}$}
 %	\newcommand\olive[1]{\textcolor{olive}{#1}}
