@@ -26,7 +26,7 @@ In argument structure alternations such as~(\ref{ex:6:1}), it is not accurate to
 
  \begin{exe}
 \ex  \label{ex:6n2}
-\begin{multicols}{2}\raggedcolumns
+{\columnsep=-.5cm\begin{multicols}{2}\raggedcolumns
 \ea
 \Tree
 		[.vP
@@ -45,7 +45,7 @@ In argument structure alternations such as~(\ref{ex:6:1}), it is not accurate to
 	]
 ]
 \z
-\end{multicols}
+\end{multicols}}
  \z 
 
 There is therefore no single direction of derivation which is marked\is{markedness} by the morphology across languages: some languages mark the \isi{transitive} variants, others mark the intransitive variants, and sometimes both variants are marked\is{markedness} in the same language (as we have already seen for Hebrew).
@@ -61,7 +61,7 @@ In addition to the morphological reasoning, \cite{layering15} provide a series o
 
 The \isi{causative} component is thereby dissociated from the external argument, the latter being introduced in an additional structural layer. Voice is the functional head enabling this layer, both in terms of \isi{licensing} Spec,VoiceP in the syntax and in opening the semantic predicate \isi{Agent}. This much suffices to account for the English alternation.
 
-	\subsection{The transitivity of Voice} \label{aas:layering:features}
+	\subsection{The transitivity of Voice} \label{aas:layering:features}\largerpage[2]
 The second tenet of \isi{Layering} is informed by alternations in additional languages. The existence of marked\is{markedness} anticausatives as in~(\ref{ex:6n4}) raises the question of what their morphology is tracking in the syntax.
  \begin{exe}
 \ex   
@@ -76,8 +76,10 @@ The second tenet of \isi{Layering} is informed by alternations in additional lan
 The important consequence is that there are five possible configurations. Four are derived using Voice, depending on whether it is syntactically active and whether it is semantically thematic. The fifth is the complete lack of Voice, as suggested for unmarked\is{markedness} anticausatives. With this basic setup, \isi{Layering} is able to handle cases in which syntactic elements like expletives do not involve thematic roles as well as cases in which the anticausative variant is marked\is{markedness} morphologically, as we will see below. Taken together, the two main components of Layering combine to provide substantial empirical coverage and theoretical insight.
 
 Let us get to the details. Assuming that Voice may or may not have a [D] feature, and that it may or may not introduce an \isi{Agent}, the four-celled typology of \citet[109]{layering15} emerges in Table~\ref{table:typo-layer}.
+
 \begin{table}
-\begin{tabularx}{\textwidth}{cllll}
+\small
+\begin{tabular}{cllll}
  \lsptoprule
 	& \multicolumn{2}{c}{Syntax D}	& 	\multicolumn{2}{c}{Syntax {\zero}} \\\midrule
 Semantics & 	a.&	Thematic active 	&	b.&	Thematic non-active\\
@@ -116,14 +118,14 @@ Semantics & 	c.&	Expletive active 	&	d.&	Expletive non-active\\
 ]
 \\
 \lspbottomrule
- \end{tabularx}
-	\caption{The typology of the Layering approach}
-	\label{table:typo-layer} 
+ \end{tabular}
+	\caption{The typology of the Layering approach\label{table:typo-layer}}
 \end{table}
 
 This typology can be augmented by including the Voiceless unmarked\is{markedness} anticausative, vP, giving us the full table in Table~\ref{table:typo-layer-all}.
+
 \begin{table}
-\begin{tabularx}{\textwidth}{cllllll}
+\fittable{\begin{tabular}{cllllll}
  \lsptoprule
 	& \multicolumn{2}{L{4cm}}{Syntax D}	&  \multicolumn{2}{L{1.5cm}}{vP}	& \multicolumn{2}{L{4cm}}{Syntax {\zero}} \\\midrule
 Semantics	 & 		a.	&	&			b.	&& 	c. & \\
@@ -165,9 +167,8 @@ Semantics	 & 		d.		& &			e.	& &	f. & \\
 ]
 \\
 \lspbottomrule
- \end{tabularx}
-	\caption{The typology of Voice under Layering}
-	\label{table:typo-layer-all} 
+ \end{tabular}}
+	\caption{The typology of Voice under Layering\label{table:typo-layer-all}}
 \end{table}
 
 I examine the cells one by one. The structure in cell~a is a straightforward \isi{transitive} derivation, at least since \cite{kratzer96} and \cite{pylkkanen08}. The [D] feature on Voice licenses a DP in its specifier, and the agent\is{Agent} role is introduced in the semantics (notated here simply as λx).
@@ -209,8 +210,10 @@ This technical difference aside, in what follows I address more substantive diff
 	
 	\subsection{The trivalency of transitivity} \label{aas:compare:features}
 The two systems ended up looking as shown in Tables~\ref{table:typo-layer-all2} and~\ref{table:typo-feat}.
+
 \begin{table}
-	\begin{tabularx}{\textwidth}{cllllll}
+\small
+	\begin{tabular}{cllllll}
 		\lsptoprule
 		& \multicolumn{2}{L{4cm}}{Syntax D}	&  \multicolumn{2}{L{1.5cm}}{vP}	& \multicolumn{2}{L{4cm}}{Syntax {\zero}} \\\midrule
 		Sem	 & 		a.	&	&			b.	&& 	c. & \\
@@ -252,15 +255,14 @@ The two systems ended up looking as shown in Tables~\ref{table:typo-layer-all2} 
 		]
 		\\
 		\lspbottomrule
-	\end{tabularx}
-	\caption{The typology of Voice under Layering}
-	\label{table:typo-layer-all2} 
+	\end{tabular}
+	\caption{The typology of Voice under Layering\label{table:typo-layer-all2}}
 \end{table}
 
 \begin{table}
-\begin{tabularx}{\textwidth}{clL{3cm}lllL{3cm}}
+\fittable{\begin{tabular}{cllllll}
  \lsptoprule
-	& \multicolumn{2}{L{3cm}}{\vd}	&  \multicolumn{2}{L{3cm}}{Voice}	& \multicolumn{2}{L{3cm}}{\vz} \\\midrule
+	& \multicolumn{2}{l}{\vd}	&  \multicolumn{2}{l}{Voice}	& \multicolumn{2}{l}{\vz} \\\midrule
 Sem	 & 		a.	&	&			b.	&& 	c. & \\
 λx 	 & 
 &\Tree
@@ -302,12 +304,12 @@ Sem	 & 		d.		& &			e.	& &	f. & \\
 	]
 \\
 \lspbottomrule
- \end{tabularx}
-	\caption{The Trivalent typology}
-	\label{table:typo-feat}
+ \end{tabular}}
+	\caption{The Trivalent typology\label{table:typo-feat}}	
 \end{table}
 
 While the semantics of the cells in \isi{Layering} is deterministic (modulo existential closure), the Trivalent Theory relies on contextual \isi{allosemy} of the Voice head.\footnote{\isi{Layering} can also be formalized using \isi{allosemy}, as in~\cite{schaefer17oup}.} Its semantics looks broadly as in~(\ref{ex:6n8}), summarizing what we have seen in previous chapters:
+
  \begin{exe}
  \ex  \label{ex:6n8}Semantics (abstracting away from Agent $\neq$ Causer): 
  \begin{xlist} 
@@ -325,7 +327,7 @@ While the semantics of the cells in \isi{Layering} is deterministic (modulo exis
 
 There are two points to be made about how powerful the current approach is: first, that it has all the empirical coverage necessary for the \isi{Layering} patterns. Very little has to be said in order to maintain the coverage of \isi{Layering} as applied to English, German and Greek. For instance, expletive constructions in Germanic and Romance are derived by simply adding the expletive in Spec,VoiceP, as in cell~e of Table~\ref{table:typo-feat}.
 
-\label{r1:6:2}The second is that this power actually comes from a system that is just as constrained as Layering (if not more so). While in Layering all features may combine freely, in the Trivalent Theory semantic interpretation tracks the syntactic feature on the functional head: barring exceptional cases, the active head {\vd} has an agentive reading and the non-active head {\vz} has either a non-active reading or a passive reading. So {\vd} does not have a straightforward non-active alloseme, and {\vz} is the only one with a passive alloseme. In this sense, at least, the interpretation of these heads is natural.
+\label{r1:6:2}The second is that this power actually comes from a system that is just as constrained as Layering (if not more so). While in Layering all features may combine freely, in the Trivalent Theory semantic interpretation tracks the syntactic feature on the functional head: barring exceptional cases, the active head {\vd} has an agentive reading and the non-active head {\vz} has either a non-active reading or a passive reading. So {\vd} does not have a straightforward non-active alloseme, and {\vz} is the only one with a passive alloseme. In this sense, at least, the interpretation of these heads is natural.\largerpage[-2]
 
 I take this correlation to be a welcome result, though I will not attempt to derive how the syntax feeds the semantics in this way. With that in mind, however, one might still wonder whether cells~c and~e in Table~\ref{table:typo-feat} could be possible. In fact, we have already seen that these configurations are possible, but only when additional \emph{syntactic} constraints are at play.
 
@@ -335,7 +337,8 @@ The second case is cell~d in Table~\ref{table:typo-feat}, a situation in which a
 
 As a final point of comparison before returning to Hebrew, it is important to consider how \isi{Layering} allows languages to pick and choose between features to be combined. For example, \ili{Greek} passives are derived as in Table~\ref{table:typo-layer-all2}, where existential closure applies to the open \isi{Agent} role. \cite{schaefer17oup} later adopts a position similar to the one here, whereby ∃x is another possible semantic value for Voice heads, thus removing the need for existential closure of λx. 
 
-Either way, given that existential closure can apply at some level as in Greek, the question arises of why it does not apply in situations where an overt DP appears. Specifically, there is nothing to prevent an expletive such as German \emph{sich} from being the DP in cell~a of Table~\ref{table:typo-layer-all2}. The expletive would not have a semantic role to saturate, but an \isi{Agent} would still be entailed. The result should be a construction with an expletive whose reading is not anticausative but \isi{passive}. Yet this is impossible in \ili{German}:
+Either way, given that existential closure can apply at some level as in Greek, the question arises of why it does not apply in situations where an overt DP appears. Specifically, there is nothing to prevent an expletive such as German \emph{sich} from being the DP in cell~a of Table~\ref{table:typo-layer-all2}. The expletive would not have a semantic role to saturate, but an \isi{Agent} would still be entailed. The result should be a construction with an expletive whose reading is not anticausative but \isi{passive}. Yet this is impossible in \ili{German}:\largerpage[-2]
+
  \begin{exe}
 \ex  
 [] 	{\label{ex:6n9} \gll Die T\"ur hat sich (*absichtlich) ge\"offnet, (*um das Zimmer zu l\"uften).\\
@@ -355,6 +358,7 @@ In the Trivalent Theory, these issues do not arise, because the dichotomy of the
 The last issue to be tackled here is whether the Trivalent Theory is a necessary development. Could we tweak \isi{Layering} to account for the patterns analyzed in this book?
 
 Recall that Hebrew has trivalent morphological marking, and, crucially, that verbs in {\tkal} might be unaccusative or \isi{transitive} (Chapter~\ref{chap:voice}); see Table~\ref{table:aas:alternations-heb2}.
+
 \begin{table}
 	\begin{tabular}{llllll}
  \lsptoprule
@@ -398,7 +402,7 @@ One final alternative would maintain the basics of \isi{Layering} while placing 
 
 \label{r1:g:2c2}As mentioned already, in the Trivalent system [D] acts as a feature that needs to be checked or as a sort of ``filter'', rather than as a structure-building feature. Work in the Layering tradition -- most explicitly that of \cite{schaefer08} and \cite{wood15springer} -- differentiates between Voice with \{D\}, which necessarily projects a specifier, and Voice with empty \{\}, which does not. Recent discussions with Jim Wood (p.c.~Sep--Nov 2019) helped clarify how this specific view of [D] and Merge could be maintained in the face of the Hebrew data. I present this alternative first in Section~\ref{aas:jim:pros}, and then list my reasons for rejecting it in Section~\ref{aas:jim:cons}.
 
-Since much of the discussion will have to do with \textsc{triplets}, let us recall the empirical picture. The most complicated cases are those where a given root occurs in the three templates {\tkal}, {\tnif} and {\thif}. These are the ones I take to be simplest structurally, as they do not involve {\va} or Pass. As far as I know, there is no curated list of all such triplets in Hebrew. Searching the database of \cite{ehrenfeld12}, I found 147 roots that are instantiated in all three templates out of 1,875 roots in total. Not all of these make for clear triplets, and so I searched for good examples by hand. Table~\ref{table:aas:triplets} lists the ten clearest cases I have found, in which a semantic relationship holds between all three forms and at least two of these are transparently related.
+Since much of the discussion will have to do with \textsc{triplets}, let us recall the empirical picture. The most complicated cases are those where a given root occurs in the three templates {\tkal}, {\tnif} and {\thif}. These are the ones I take to be simplest structurally, as they do not involve {\va} or Pass. As far as I know, there is no curated list of all such triplets in Hebrew. Searching the database of \cite{ehrenfeld12}, I found 147 roots that are instantiated in all three templates out of 1,875 roots in total. Not all of these make for clear triplets, and so I searched for good examples by hand. Table~\ref{table:aas:triplets} (page \pageref{table:aas:triplets}) lists the ten clearest cases I have found, in which a semantic relationship holds between all three forms and at least two of these are transparently related.
 
 \begin{table}
 \fittable{\begin{tabular}{ll>{\itshape}ll>{\itshape}ll>{\itshape}ll}
@@ -424,6 +428,7 @@ j.& \root{raj} & raa 	& `saw' 	& nira 	& `was seen' 	& hera 	& `showed'\\
 This alternative attempts to maintain the structure-building view of [D], whereby there is no \isi{Unspecified Voice}, only {\vds} which projects a specifier, and {\vzs} which does not. The [D] feature, like any other feature, can undergo \isi{Impoverishment}.
 
 The most basic spell-out rules, to be revised immediately, are in~(\ref{ex:6n10}). The \isi{transitive} Voice head is spelled out as the ``\isi{causative}'' template {\thif}, and the non-active Voice head as the non-active template (\tnif).
+
  \begin{exe}
  \ex  \label{ex:6n10}Initial VIs (to be revised) 
  \begin{xlist} 
@@ -493,7 +498,7 @@ I have tried to lay out this alternative as explicitly as possible so that its s
 
 These strengths are outweighed by the weaknesses, in my eyes, and these are of a conceptual as well as empirical nature. Starting with the use of \isi{Impoverishment}, the following points arise. First, since the choice of template for a given root has syntactic an semantic effects, this means that \isi{Impoverishment} would have to apply in the syntax proper and not early in Spell-Out, as commonly assumed, where it does not have semantic effects (e.g.~\citealt{harbour03}). Second, \isi{Impoverishment} would need to be triggered by particular roots and not by marked\is{markedness} features or feature combinations. Third, this would only happen some of the time, because many roots can appear in more than one template, e.g.~in both {\thif} and {\tkal}. This last point could be discounted due to the use of Appl\is{applicative}, which is the next point of discussion.
 
-As already mentioned, the definition of the semantics of Appl\is{applicative} might be stretched fairly thin, depending on which specific cases it should be applied to. In addition, even in the cases in which an \isi{applicative} \emph{semantics} is easier to motivate, an \isi{applicative} \emph{syntax} is only optional. That is to say, even in row~i of Table~\ref{table:aas:triplets} -- \emph{hekri} `read out' -- a Goal argument does not have to be expressed. This issue could be addressed by assuming that an expletive Appl\is{applicative}$_{\text{\{\}}}$ is possible (\citealt{wood15springer}; p.c.) with no argument introduced in its specifier.
+As already mentioned, the definition of the semantics of Appl\is{applicative} might be stretch\-ed fairly thin, depending on which specific cases it should be applied to. In addition, even in the cases in which an \isi{applicative} \emph{semantics} is easier to motivate, an \isi{applicative} \emph{syntax} is only optional. That is to say, even in row~i of Table~\ref{table:aas:triplets} -- \emph{hekri} `read out' -- a Goal argument does not have to be expressed. This issue could be addressed by assuming that an expletive Appl\is{applicative}$_{\text{\{\}}}$ is possible (\citealt{wood15springer}; p.c.) with no argument introduced in its specifier.
 
 As a last conceptual point, the system as a whole makes reference to an additional mechanism sorting out triplets, namely the diacritic/feature [F]. Taken together, this approach is increasingly reminiscent of \cite{arad05}, where the grammar lists the conjugation\is{conjugation class} classes a given root participates in. It is also noteworthy that Appl\is{applicative} and [F] form a natural class somehow. 
 
