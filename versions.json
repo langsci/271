@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Voice at the interfaces",
-		"authors": [{"name": "Itamar Kastner"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2020-04-22T18:11:30.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Itamar Kastner"}], "title": "Voice at the interfaces", "publishedAt": "2020-04-22T18:11:30.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "Voice at the interfaces", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2020-07-28T10:21:05.637803", "authors": [{"name": "Itamar Kastner"}]}]}
